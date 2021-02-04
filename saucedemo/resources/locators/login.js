@@ -1,5 +1,0 @@
-export const USERNAME = "[data-test='username']"
-export const PASSWORD = "[data-test='password']"
-export const PASSWORD = "[id='login-button']"
-export const ACCEPTED_USERNAMES = "[id='login_credentials']"
-export const ACCEPTED_PASSWORD = "[id='login_password']"
