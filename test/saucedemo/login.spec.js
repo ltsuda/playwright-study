@@ -43,4 +43,26 @@ describe("Sauce login demo", () => {
       "Epic sadface: Sorry, this user has been locked out."
     )
   })
+
+  it("shows user name is required error", async () => {
+    await loginPage.loginWithoutUser()
+    await page.waitForSelector(loginLocators.ERROR)
+    lockedUserError = await loginPage.getErrorFromPage()
+    expect(lockedUserError).to.be.equal("Epic sadface: Username is required")
+  })
+
+  it("shows user and password doesn't match", async () => {
+    await loginPage.loginWithWrongCredentials()
+    await page.waitForSelector(loginLocators.ERROR)
+    lockedUserError = await loginPage.getErrorFromPage()
+    expect(lockedUserError).to.be.equal(
+      "Epic sadface: Username and password do not match any user in this service"
+    )
+  })
+
+  it("navigate to inventory page", async () => {
+    await loginPage.login()
+    inventoryPage = await page.url()
+    expect(inventoryPage).to.be.equal(process.env.SAUCE_INVENTORY_URL)
+  })
 })

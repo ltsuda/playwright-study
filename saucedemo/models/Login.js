@@ -38,7 +38,15 @@ class LoginPage {
     return this.login(this.performanceGlitchUser, this.password.pop())
   }
 
-  async login(user, password) {
+  loginWithoutUser() {
+    return this.login("", this.password.pop())
+  }
+
+  loginWithWrongCredentials() {
+    return this.login("noname", this.password.pop())
+  }
+
+  async login(user = this.standardUser, password = this.password.pop()) {
     await this.page.fill(loginLocators.USERNAME, user)
     await this.page.fill(loginLocators.PASSWORD, password)
     await this.page.click(loginLocators.BTN_LOGIN)
