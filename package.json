@@ -1,0 +1,29 @@
+{
+  "name": "playwright-study",
+  "version": "1.0.0",
+  "description": "Multipurpose Playwright study repository",
+  "main": ".eslintrc.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.19.0",
+    "mocha": "^8.2.1",
+    "playwright": "^1.8.0"
+  },
+  "scripts": {
+    "test-sauce": "mocha ./test/saucedemo/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ltsuda/playwright-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ltsuda/playwright-study/issues"
+  },
+  "homepage": "https://github.com/ltsuda/playwright-study#readme"
+}
