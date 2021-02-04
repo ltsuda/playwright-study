@@ -1,13 +1,17 @@
-const constants = require("../resources/locators/loginLocators")
+const loginLocators = require("../resources/locators/loginLocators")
 
 class LoginPage {
   constructor(page) {
     this.page = page
+    this.standardUser = "standard_user"
+    this.lockedUser = "locked_out_user"
+    this.problemUser = "problem_user"
+    this.performanceGlitchUser = "performance_glitch_user"
     this.acceptedUsers = [
-      "standard_user",
-      "locked_out_user",
-      "problem_user",
-      "performance_glitch_user",
+      this.standardUser,
+      this.lockedUser,
+      this.problemUser,
+      this.performanceGlitchUser,
     ]
     this.password = ["secret_sauce"]
   }
@@ -18,14 +22,42 @@ class LoginPage {
     )
   }
 
+  loginWithStandardUser() {
+    return this.login(this.standardUser, this.password.pop())
+  }
+
+  loginWithLockedUser() {
+    return this.login(this.lockedUser, this.password.pop())
+  }
+
+  loginWithProblemUser() {
+    return this.login(this.problemUser, this.password.pop())
+  }
+
+  loginWithPerformanceGlitchUser() {
+    return this.login(this.performanceGlitchUser, this.password.pop())
+  }
+
+  async login(user, password) {
+    await this.page.fill(loginLocators.USERNAME, user)
+    await this.page.fill(loginLocators.PASSWORD, password)
+    await this.page.click(loginLocators.BTN_LOGIN)
+  }
+
   async getAcceptedUsersFromPage() {
-    let acceptedUsers = await this.page.innerText(constants.ACCEPTED_USERNAMES)
+    let acceptedUsers = await this.page.innerText(
+      loginLocators.ACCEPTED_USERNAMES
+    )
     return acceptedUsers.split("\n").filter(Boolean).slice(1)
   }
 
   async getPasswordFromPage() {
-    let password = await this.page.innerText(constants.ACCEPTED_PASSWORD)
+    let password = await this.page.innerText(loginLocators.ACCEPTED_PASSWORD)
     return password.split("\n").filter(Boolean).slice(1)
+  }
+
+  async getErrorFromPage() {
+    return await this.page.innerText(loginLocators.ERROR)
   }
 }
 
