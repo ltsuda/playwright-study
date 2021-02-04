@@ -14,6 +14,7 @@
     "playwright": "^1.8.0"
   },
   "scripts": {
+    "test": "mocha -r dotenv/config ./test/**/*.js",
     "test-sauce": "mocha -r dotenv/config ./test/saucedemo/**/*.js"
   },
   "repository": {
