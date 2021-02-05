@@ -1,5 +1,5 @@
 const { chromium } = require("playwright")
-const { LoginPage } = require("../../saucedemo/models/Login")
+const { LoginPage } = require("../../saucedemo/models/LoginPage")
 const { expect } = require("chai")
 
 let browser, context, page, loginPage
