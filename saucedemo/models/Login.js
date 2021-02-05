@@ -1,6 +1,12 @@
-const loginLocators = require("../resources/locators/loginLocators")
-
 class LoginPage {
+  // locators
+  static locUsername = "[data-test='username']"
+  static locPassword = "[data-test='password']"
+  static locBtnLogin = "[id='login-button']"
+  static locAcceptedUsernames = "[id='login_credentials']"
+  static locAcceptedPassword = "[class='login_password']"
+  static locError = "[data-test='error']"
+
   constructor(page) {
     this.page = page
     this.standardUser = "standard_user"
@@ -22,50 +28,50 @@ class LoginPage {
     )
   }
 
-  loginWithStandardUser() {
-    return this.login(this.standardUser, this.password.pop())
+  async loginWithStandardUser() {
+    await this.login(this.standardUser, this.password.pop())
   }
 
-  loginWithLockedUser() {
-    return this.login(this.lockedUser, this.password.pop())
+  async loginWithLockedUser() {
+    await this.login(this.lockedUser, this.password.pop())
   }
 
-  loginWithProblemUser() {
-    return this.login(this.problemUser, this.password.pop())
+  async loginWithProblemUser() {
+    await this.login(this.problemUser, this.password.pop())
   }
 
-  loginWithPerformanceGlitchUser() {
-    return this.login(this.performanceGlitchUser, this.password.pop())
+  async loginWithPerformanceGlitchUser() {
+    await this.login(this.performanceGlitchUser, this.password.pop())
   }
 
-  loginWithoutUser() {
-    return this.login("", this.password.pop())
+  async loginWithoutUser() {
+    await this.login("", this.password.pop())
   }
 
-  loginWithWrongCredentials() {
-    return this.login("noname", this.password.pop())
+  async loginWithWrongCredentials() {
+    await this.login("noname", this.password.pop())
   }
 
   async login(user = this.standardUser, password = this.password.pop()) {
-    await this.page.fill(loginLocators.USERNAME, user)
-    await this.page.fill(loginLocators.PASSWORD, password)
-    await this.page.click(loginLocators.BTN_LOGIN)
+    await this.page.fill(LoginPage.locUsername, user)
+    await this.page.fill(LoginPage.locPassword, password)
+    await this.page.click(LoginPage.locBtnLogin)
   }
 
   async getAcceptedUsersFromPage() {
     let acceptedUsers = await this.page.innerText(
-      loginLocators.ACCEPTED_USERNAMES
+      LoginPage.locAcceptedUsernames
     )
     return acceptedUsers.split("\n").filter(Boolean).slice(1)
   }
 
   async getPasswordFromPage() {
-    let password = await this.page.innerText(loginLocators.ACCEPTED_PASSWORD)
+    let password = await this.page.innerText(LoginPage.locAcceptedPassword)
     return password.split("\n").filter(Boolean).slice(1)
   }
 
   async getErrorFromPage() {
-    return await this.page.innerText(loginLocators.ERROR)
+    return await this.page.innerText(LoginPage.locError)
   }
 }
 
