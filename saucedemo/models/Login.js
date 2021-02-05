@@ -22,28 +22,28 @@ class LoginPage {
     )
   }
 
-  loginWithStandardUser() {
-    return this.login(this.standardUser, this.password.pop())
+  async loginWithStandardUser() {
+    await this.login(this.standardUser, this.password.pop())
   }
 
-  loginWithLockedUser() {
-    return this.login(this.lockedUser, this.password.pop())
+  async loginWithLockedUser() {
+    await this.login(this.lockedUser, this.password.pop())
   }
 
-  loginWithProblemUser() {
-    return this.login(this.problemUser, this.password.pop())
+  async loginWithProblemUser() {
+    await this.login(this.problemUser, this.password.pop())
   }
 
-  loginWithPerformanceGlitchUser() {
-    return this.login(this.performanceGlitchUser, this.password.pop())
+  async loginWithPerformanceGlitchUser() {
+    await this.login(this.performanceGlitchUser, this.password.pop())
   }
 
-  loginWithoutUser() {
-    return this.login("", this.password.pop())
+  async loginWithoutUser() {
+    await this.login("", this.password.pop())
   }
 
-  loginWithWrongCredentials() {
-    return this.login("noname", this.password.pop())
+  async loginWithWrongCredentials() {
+    await this.login("noname", this.password.pop())
   }
 
   async login(user = this.standardUser, password = this.password.pop()) {

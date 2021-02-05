@@ -60,7 +60,7 @@ describe("Sauce login demo", () => {
     )
   })
 
-  it("navigate to inventory page", async () => {
+  it("navigates to inventory page after successful login", async () => {
     await loginPage.login()
     inventoryPage = await page.url()
     expect(inventoryPage).to.be.equal(process.env.SAUCE_INVENTORY_URL)
