@@ -21,7 +21,7 @@ describe("Sauce inventory demo", () => {
     loggedPage = new LoginPage(page)
     await loggedPage.navigate()
     await loggedPage.loginWithStandardUser()
-    await page.waitForLoadState()
+    await page.waitForLoadState("networkidle")
     inventoryPage = new InventoryPage(page)
   })
 
