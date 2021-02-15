@@ -15,7 +15,7 @@
   },
   "scripts": {
     "test": "mocha -r dotenv/config ./test/**/*.js",
-    "test-sauce": "mocha -r dotenv/config ./test/saucedemo/**/*.js"
+    "test-sauce": "mocha --timeout 10000 -r dotenv/config ./test/saucedemo/**/*.js"
   },
   "repository": {
     "type": "git",
