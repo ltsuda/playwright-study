@@ -8,6 +8,7 @@ const PRODUCT_NAME = "[class='inventory_item_name']"
 const PRODUCT_DESCRIPTION = "[class='inventory_item_desc']"
 const PRODUCT_PRICE = "[class='inventory_item_price']"
 const BTN_ADD_TO_CART = "[class='btn_primary btn_inventory']"
+const BTN_REMOVE_FROM_CART = "[class='btn_secondary btn_inventory']"
 const FOOTER_SOCIALS = "[footer >> .social]"
 const FOOTER_TWITTER = "[footer >> .social_twitter >> text=Twitter]"
 const FOOTER_FACEBOOK = "[footer >> .social_facebook >> text=Facebook]"
@@ -24,6 +25,7 @@ module.exports = {
   PRODUCT_DESCRIPTION,
   PRODUCT_PRICE,
   BTN_ADD_TO_CART,
+  BTN_REMOVE_FROM_CART,
   FOOTER_SOCIALS,
   FOOTER_TWITTER,
   FOOTER_FACEBOOK,

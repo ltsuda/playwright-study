@@ -124,6 +124,10 @@ class InventoryPage {
     await this.page.click(inventoryLocators.BTN_ADD_TO_CART)
     return product
   }
+
+  async removeFirstProductFromCart() {
+    await this.page.click(inventoryLocators.BTN_REMOVE_FROM_CART)
+  }
 }
 
 module.exports = { InventoryPage }

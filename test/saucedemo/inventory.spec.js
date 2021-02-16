@@ -73,4 +73,14 @@ describe("Sauce inventory demo", () => {
     await inventoryPage.addFirstProductToCart()
     expect(await inventoryPage.getCartBadge()).to.be.equal("1")
   })
+
+  it("cart badge number should be removed", async () => {
+    await inventoryPage.addFirstProductToCart()
+    await inventoryPage.removeFirstProductFromCart()
+    const hasBadge = await page.waitForSelector(
+      inventoryLocators.INVENTORY_CART_BADGE,
+      { state: "detached" }
+    )
+    expect(hasBadge).to.be.null
+  })
 })
