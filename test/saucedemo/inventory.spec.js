@@ -74,6 +74,17 @@ describe("Sauce inventory demo", () => {
     expect(await inventoryPage.getCartBadge()).to.be.equal("1")
   })
 
+  it("shows add to cart button", async () => {
+    const addToCartButton = await page.$(inventoryLocators.BTN_ADD_TO_CART)
+    expect(addToCartButton).not.to.be.null
+  })
+
+  it("shows remove button", async () => {
+    await inventoryPage.addFirstProductToCart()
+    const removeButton = await page.$(inventoryLocators.BTN_REMOVE_FROM_CART)
+    expect(removeButton).not.to.be.null
+  })
+
   it("cart badge number should be removed", async () => {
     await inventoryPage.addFirstProductToCart()
     await inventoryPage.removeFirstProductFromCart()
