@@ -9,6 +9,14 @@ let browser, context, page, loginPage
 describe("Sauce inventory demo", () => {
   before(async () => {
     browser = await chromium.launch()
+    context = await browser.newContext()
+    page = await context.newPage()
+    loggedPage = new LoginPage(page)
+    await loggedPage.navigate()
+    await loggedPage.loginWithStandardUser()
+    await page.waitForLoadState()
+    await loggedPage.saveSessionStorage()
+    await context.close()
   })
 
   after(async () => {
@@ -19,10 +27,9 @@ describe("Sauce inventory demo", () => {
     context = await browser.newContext()
     page = await context.newPage()
     loggedPage = new LoginPage(page)
-    await loggedPage.navigate()
-    await loggedPage.loginWithStandardUser()
-    await page.waitForLoadState("networkidle")
+    await loggedPage.loadSessionStorage()
     inventoryPage = new InventoryPage(page)
+    await inventoryPage.navigate()
   })
 
   afterEach(async () => {

@@ -67,6 +67,25 @@ class LoginPage {
   async getErrorFromPage() {
     return await this.page.innerText(loginLocators.ERROR)
   }
+
+  async saveSessionStorage() {
+    const sessionStorage = await this.page.evaluate(() =>
+      JSON.stringify(sessionStorage)
+    )
+    process.env.SESSION_STORAGE = sessionStorage
+  }
+
+  async loadSessionStorage() {
+    const sessionStorage = process.env.SESSION_STORAGE
+    await this.page.addInitScript((storage) => {
+      if (window.location.hostname === "www.saucedemo.com") {
+        const entries = JSON.parse(storage)
+        Object.keys(entries).forEach((key) => {
+          window.sessionStorage.setItem(key, entries[key])
+        })
+      }
+    }, sessionStorage)
+  }
 }
 
 module.exports = { LoginPage }
