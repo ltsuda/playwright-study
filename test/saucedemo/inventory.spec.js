@@ -37,7 +37,8 @@ describe("Sauce inventory demo", () => {
   })
 
   it("should be at Inventory page", async () => {
-    expect(await page.url()).to.be.equal(process.env.SAUCE_INVENTORY_URL)
+    const url = await page.url()
+    expect(url).to.be.equal(process.env.SAUCE_INVENTORY_URL)
   })
 
   it("shows a list of items", async () => {
