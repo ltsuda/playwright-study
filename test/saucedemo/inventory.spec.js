@@ -3,6 +3,7 @@ const { chromium } = require("playwright")
 const { LoginPage } = require("../../saucedemo/models/LoginPage")
 const { InventoryPage } = require("../../saucedemo/models/InventoryPage")
 const { expect } = require("chai")
+const fs = require("fs")
 
 let browser, context, page, loginPage
 
@@ -11,23 +12,28 @@ describe("Sauce inventory demo", () => {
     browser = await chromium.launch()
     context = await browser.newContext()
     page = await context.newPage()
-    loggedPage = new LoginPage(page)
+    loggedPage = new LoginPage(page, context)
     await loggedPage.navigate()
     await loggedPage.loginWithStandardUser()
     await page.waitForLoadState()
-    await loggedPage.saveSessionStorage()
+    await loggedPage.saveCookies()
     await context.close()
   })
 
   after(async () => {
     await browser.close()
+    try {
+      fs.unlinkSync("cookies.json")
+    } catch (error) {
+      console.log(error)
+    }
   })
 
   beforeEach(async () => {
     context = await browser.newContext()
     page = await context.newPage()
-    loggedPage = new LoginPage(page)
-    await loggedPage.loadSessionStorage()
+    loggedPage = new LoginPage(page, context)
+    await loggedPage.loadCookies()
     inventoryPage = new InventoryPage(page)
     await inventoryPage.navigate()
   })

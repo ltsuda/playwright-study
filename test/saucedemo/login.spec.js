@@ -17,7 +17,7 @@ describe("Sauce login demo", () => {
   beforeEach(async () => {
     context = await browser.newContext()
     page = await context.newPage()
-    loginPage = new LoginPage(page)
+    loginPage = new LoginPage(page, context)
     await loginPage.navigate()
   })
 

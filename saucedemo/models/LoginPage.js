@@ -1,8 +1,10 @@
 const loginLocators = require("../resources/locators/loginLocators")
+const fs = require("fs")
 
 class LoginPage {
-  constructor(page) {
+  constructor(page, context) {
     this.page = page
+    this.context = context
     this.standardUser = "standard_user"
     this.lockedUser = "locked_out_user"
     this.problemUser = "problem_user"
@@ -68,23 +70,16 @@ class LoginPage {
     return await this.page.innerText(loginLocators.ERROR)
   }
 
-  async saveSessionStorage() {
-    const sessionStorage = await this.page.evaluate(() =>
-      JSON.stringify(sessionStorage)
-    )
-    process.env.SESSION_STORAGE = sessionStorage
+  async saveCookies() {
+    const cookies = await this.context.cookies()
+    const cookieJson = JSON.stringify(cookies)
+    fs.writeFileSync("cookies.json", cookieJson)
   }
 
-  async loadSessionStorage() {
-    const sessionStorage = process.env.SESSION_STORAGE
-    await this.page.addInitScript((storage) => {
-      if (window.location.hostname === "www.saucedemo.com") {
-        const entries = JSON.parse(storage)
-        Object.keys(entries).forEach((key) => {
-          window.sessionStorage.setItem(key, entries[key])
-        })
-      }
-    }, sessionStorage)
+  async loadCookies() {
+    const cookies = fs.readFileSync("cookies.json", "utf8")
+    const deserializedCookies = JSON.parse(cookies)
+    await this.context.addCookies(deserializedCookies)
   }
 }
 
