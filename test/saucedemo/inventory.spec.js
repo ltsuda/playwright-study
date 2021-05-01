@@ -1,103 +1,89 @@
-const inventoryLocators = require("../../saucedemo/resources/locators/inventoryLocators")
 const { chromium } = require("playwright")
-const { LoginPage } = require("../../saucedemo/models/LoginPage")
-const { InventoryPage } = require("../../saucedemo/models/InventoryPage")
 const { expect } = require("chai")
-const fs = require("fs")
+const {
+  loginAndSaveCookies,
+  loadCookies,
+} = require("../../saucedemo/utils/utils")
+const {
+  InventoryController,
+} = require("../../saucedemo/pages/inventory/controller")
 
-let browser, context, page, loginPage
+let browser, context, page, inventoryController
 
-describe("Sauce inventory demo", () => {
+const itemsName = [
+  "Sauce Labs Backpack",
+  "Sauce Labs Bike Light",
+  "Sauce Labs Bolt T-Shirt",
+  "Sauce Labs Fleece Jacket",
+  "Sauce Labs Onesie",
+  "Test.allTheThings() T-Shirt (Red)",
+]
+
+describe("Saucedemo InventoryPage", () => {
   before(async () => {
     browser = await chromium.launch()
-    context = await browser.newContext()
-    page = await context.newPage()
-    loggedPage = new LoginPage(page, context)
-    await loggedPage.navigate()
-    await loggedPage.loginWithStandardUser()
-    await page.waitForLoadState()
-    await loggedPage.saveCookies()
-    await context.close()
+    await loginAndSaveCookies(browser)
   })
 
   after(async () => {
     await browser.close()
-    try {
-      fs.unlinkSync("cookies.json")
-    } catch (error) {
-      console.log(error)
-    }
   })
 
   beforeEach(async () => {
     context = await browser.newContext()
+    await loadCookies(context)
     page = await context.newPage()
-    loggedPage = new LoginPage(page, context)
-    await loggedPage.loadCookies()
-    inventoryPage = new InventoryPage(page)
-    await inventoryPage.navigate()
+    inventoryController = new InventoryController(page)
+    await inventoryController.navigate()
   })
 
   afterEach(async () => {
     await context.close()
   })
 
-  it("should be at Inventory page", async () => {
-    const url = await page.url()
-    expect(url).to.be.equal(process.env.SAUCE_INVENTORY_URL)
+  it("should be at Inventory page after login", async () => {
+    expect(await page.url()).to.be.eq(process.env.SAUCE_INVENTORY_URL)
   })
 
-  it("shows a list of items", async () => {
-    productCount = await inventoryPage.getProductsCount()
-    expect(productCount).greaterThan(0)
+  it("should show a list of items", async () => {
+    const itemsCount = await inventoryController.getItemsCount()
+    expect(itemsCount).to.be.eq(itemsName.length)
   })
 
-  it("should be sorted from A-Z", async () => {
-    productNameList = await inventoryPage.getProductsName()
-    expect(productNameList).be.equal(productNameList.sort())
+  it("should show items sorted alphabetically", async () => {
+    const names = await inventoryController.getItemsNamesByIndex("all")
+    expect(names).to.be.eql(itemsName.sort())
   })
 
-  it("could sort product list from Z-A", async () => {
-    await inventoryPage.sortProductList(inventoryPage.sortOptions.Z_A)
-    productNameList = await inventoryPage.getProductsName()
-    expect(productNameList).be.equal(productNameList.reverse())
+  it("should be possible to sort items from Z to A", async () => {
+    await inventoryController.sortZA()
+    const names = await inventoryController.getItemsNamesByIndex("all")
+    expect(names).to.be.eql(itemsName.sort().reverse())
   })
 
-  it("could sort product list from Lower to Higher value", async () => {
-    await inventoryPage.sortProductList(inventoryPage.sortOptions.LowHigh)
-    productPriceList = await inventoryPage.getProductsPrice()
-    expect(productPriceList).be.equal(productPriceList.sort())
+  it("should be possible to sort items prices from Low to High", async () => {
+    await inventoryController.sortLowHigh()
+    const prices = await inventoryController.getItemsPricesByIndex("all")
+    expect(prices).to.be.eql(prices.sort())
   })
 
-  it("could sort product list from Higher to Lower value", async () => {
-    await inventoryPage.sortProductList(inventoryPage.sortOptions.HighLow)
-    productPriceList = await inventoryPage.getProductsPrice()
-    expect(productPriceList).be.equal(productPriceList.reverse())
+  it("should be possible to sort items prices from High to Low", async () => {
+    await inventoryController.sortHighLow()
+    const prices = await inventoryController.getItemsPricesByIndex("all")
+    expect(prices).to.be.eql(prices.sort().reverse())
   })
 
-  it("shows cart badge number", async () => {
-    await inventoryPage.addFirstProductToCart()
-    expect(await inventoryPage.getCartBadge()).to.be.equal("1")
+  it("should be possible to add product to cart", async () => {
+    await inventoryController.addRandomItemToCart()
+    const badgeNumber = await inventoryController.getCartBadge()
+    expect(badgeNumber).to.be.eq("1")
   })
 
-  it("shows add to cart button", async () => {
-    const addToCartButton = await page.$(inventoryLocators.BTN_ADD_TO_CART)
-    expect(addToCartButton).not.to.be.null
-  })
-
-  it("shows remove button", async () => {
-    await inventoryPage.addFirstProductToCart()
-    const removeButton = await page.$(inventoryLocators.BTN_REMOVE_FROM_CART)
-    expect(removeButton).not.to.be.null
-  })
-
-  it("cart badge number should be removed", async () => {
-    await inventoryPage.addFirstProductToCart()
-    await inventoryPage.removeFirstProductFromCart()
-    const hasBadge = await page.waitForSelector(
-      inventoryLocators.INVENTORY_CART_BADGE,
-      { state: "detached" }
-    )
-    expect(hasBadge).to.be.null
+  it("should be possible to remove product from cart", async () => {
+    await inventoryController.addRandomItemToCart()
+    const badgeNumber = await inventoryController.getCartBadge()
+    expect(badgeNumber).to.be.eq("1")
+    await inventoryController.removeRandomItemFromCart()
+    expect(await inventoryController.components.cartBadge()).to.be.null
   })
 })

@@ -1,11 +1,10 @@
-const loginLocators = require("../../saucedemo/resources/locators/loginLocators")
 const { chromium } = require("playwright")
-const { LoginPage } = require("../../saucedemo/models/LoginPage")
 const { expect } = require("chai")
+const { LoginController } = require("../../saucedemo/pages/login/controller")
 
-let browser, context, page, loginPage
+let browser, context, page, loginController
 
-describe("Sauce login demo", () => {
+describe("Saucedemo LoginPage", () => {
   before(async () => {
     browser = await chromium.launch()
   })
@@ -17,52 +16,52 @@ describe("Sauce login demo", () => {
   beforeEach(async () => {
     context = await browser.newContext()
     page = await context.newPage()
-    loginPage = new LoginPage(page, context)
-    await loginPage.navigate()
+    loginController = new LoginController(page)
+    await loginController.navigate()
   })
 
   afterEach(async () => {
     await context.close()
   })
 
-  it("shows accepted users", async () => {
-    acceptedUsers = await loginPage.getAcceptedUsersFromPage()
-    expect(acceptedUsers).eql(loginPage.acceptedUsers)
+  it("should show accepted users", async () => {
+    acceptedUsers = await loginController.getAcceptedUsersFromPage()
+    expect(acceptedUsers).eql(loginController.acceptedUsers)
   })
 
-  it("shows system password", async () => {
-    systemPassword = await loginPage.getPasswordFromPage()
-    expect(systemPassword).eql(loginPage.password)
+  it("should show application password", async () => {
+    systemPassword = await loginController.getPasswordFromPage()
+    expect(systemPassword).eql(loginController.password)
   })
 
-  it("shows locked user error", async () => {
-    await loginPage.loginWithLockedUser()
-    await page.waitForSelector(loginLocators.ERROR)
-    lockedUserError = await loginPage.getErrorFromPage()
+  it("should show locked user error", async () => {
+    await loginController.loginWithLockedUser()
+    await page.waitForSelector(loginController.locators.error)
+    lockedUserError = await loginController.getErrorMessage()
     expect(lockedUserError).to.be.equal(
       "Epic sadface: Sorry, this user has been locked out."
     )
   })
 
-  it("shows user name is required error", async () => {
-    await loginPage.loginWithoutUser()
-    await page.waitForSelector(loginLocators.ERROR)
-    lockedUserError = await loginPage.getErrorFromPage()
-    expect(lockedUserError).to.be.equal("Epic sadface: Username is required")
+  it("should show username is required error", async () => {
+    await loginController.loginWithoutUser()
+    await page.waitForSelector(loginController.locators.error)
+    errorMessage = await loginController.getErrorMessage()
+    expect(errorMessage).to.be.equal("Epic sadface: Username is required")
   })
 
-  it("shows user and password doesn't match", async () => {
-    await loginPage.loginWithWrongCredentials()
-    await page.waitForSelector(loginLocators.ERROR)
-    lockedUserError = await loginPage.getErrorFromPage()
-    expect(lockedUserError).to.be.equal(
+  it("should show username and password doesn't match", async () => {
+    await loginController.loginWithWrongCredential()
+    await page.waitForSelector(loginController.locators.error)
+    errorMessage = await loginController.getErrorMessage()
+    expect(errorMessage).to.be.equal(
       "Epic sadface: Username and password do not match any user in this service"
     )
   })
 
-  it("navigates to inventory page after successful login", async () => {
-    await loginPage.login()
-    inventoryPage = await page.url()
-    expect(inventoryPage).to.be.equal(process.env.SAUCE_INVENTORY_URL)
+  it("should navigate to inventory page after successful login", async () => {
+    await loginController.loginWithStandardUser()
+    inventoryURL = await page.url()
+    expect(inventoryURL).to.be.equal(process.env.SAUCE_INVENTORY_URL)
   })
 })

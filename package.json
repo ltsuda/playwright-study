@@ -11,11 +11,11 @@
     "dotenv": "^8.2.0",
     "eslint": "^7.24.0",
     "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2",
     "playwright": "^1.10.0"
   },
   "scripts": {
-    "test": "mocha --timeout 10000 -r dotenv/config ./test/**/*.js",
-    "test-sauce": "mocha --timeout 10000 -r dotenv/config ./test/saucedemo/**/*.js"
+    "test": "mocha --reporter mochawesome --timeout 10000 -r dotenv/config ./test/**/*.js"
   },
   "repository": {
     "type": "git",
