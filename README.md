@@ -13,3 +13,4 @@ Multipurpose Playwright study repository
 - [x] Add login's page test and resources
 - [ ] Add overview's page test and resources
 - [ ] Refactor resources to have common components within its own file
+- [ ] Refactor to use Playwright Test Runner since v1.12
