@@ -8,11 +8,11 @@
   },
   "devDependencies": {
     "chai": "^4.3.4",
-    "dotenv": "^8.2.0",
-    "eslint": "^7.24.0",
-    "mocha": "^8.3.2",
+    "dotenv": "^8.6.0",
+    "eslint": "^7.30.0",
+    "mocha": "^8.4.0",
     "mochawesome": "^6.2.2",
-    "playwright": "^1.10.0"
+    "playwright": "^1.12.3"
   },
   "scripts": {
     "test": "mocha --reporter mochawesome --timeout 10000 -r dotenv/config ./test/**/*.js"
