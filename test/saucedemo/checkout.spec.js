@@ -81,6 +81,6 @@ describe("Saucedemo CheckoutPage: @checkout", () => {
     await checkoutController.fillLastName("Bong")
     await checkoutController.fillPostalCode("555-5555")
     await checkoutController.continueCheckout()
-    expect(await page.url()).to.be.eq(process.env.SAUCE_CHECKOUT_OVERVIEW_URL)
+    expect(await page.url()).to.be.eq(process.env.SAUCE_OVERVIEW_URL)
   })
 })
