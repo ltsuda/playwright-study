@@ -1,4 +1,4 @@
-const { InventoryComponents } = require("../inventory/components")
+const { InventoryController } = require("../inventory/controller")
 const { CartComponents, cartLocators } = require("./components")
 const { randomInt } = require("../../utils/utils")
 
@@ -18,7 +18,7 @@ class CartController {
   async continueShopping() {
     const continueButton = await this.components.continueShoppingButton()
     await continueButton.click()
-    return new InventoryComponents(this.page)
+    return new InventoryController(this.page)
   }
 
   async goToCheckout() {
