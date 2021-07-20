@@ -5,12 +5,11 @@ Multipurpose Playwright study repository
 
 
 ## Todo
-- [ ] Add cart's page test and resources
+- [x] Add cart's page test and resources
 - [ ] Add checkout's page test and resources
+- [ ] Add overview's page test and resources
 - [ ] Add complete's page test and resources
 - [x] Add inventory's page test and resources
-- [ ] Add inventoryItem's page test and resources
 - [x] Add login's page test and resources
-- [ ] Add overview's page test and resources
 - [ ] Refactor resources to have common components within its own file
-- [ ] Refactor to use Playwright Test Runner since v1.12
+- [ ] Refactor to use Playwright Test Runner (since v1.12) instead of mocha
