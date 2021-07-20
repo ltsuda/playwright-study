@@ -1,4 +1,5 @@
-const { CheckoutComponents, checkoutLocators} = require("./components")
+const { CheckoutComponents, checkoutLocators } = require("./components")
+const { OverviewController } = require("../overview/controller")
 
 class CheckoutController {
   constructor(page) {
@@ -15,6 +16,7 @@ class CheckoutController {
   async continueCheckout() {
     const continueElement = await this.components.continueButton()
     await continueElement.click()
+    return new OverviewController(this.page)
   }
 
   async closeError() {
@@ -41,10 +43,9 @@ class CheckoutController {
     const postalCodeElement = await this.components.postalCodeInput()
     await postalCodeElement.fill(postalCode)
   }
-
 }
 
 module.exports = {
   CheckoutController,
-  checkoutLocators
+  checkoutLocators,
 }

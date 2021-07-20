@@ -56,7 +56,8 @@ class CartController {
       )
       const description = await descriptionElement.innerText()
       const priceElement = await itemElement.$(this.locators.cartItemPrice)
-      const price = await priceElement.innerText()
+      let price = await priceElement.innerText()
+      price = price.replace("$", "")
 
       items.push({
         name: name,
