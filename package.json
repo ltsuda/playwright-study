@@ -15,7 +15,8 @@
     "playwright": "^1.12.3"
   },
   "scripts": {
-    "test": "mocha --reporter mochawesome --timeout 10000 -r dotenv/config ./test/**/*.js"
+    "test": "mocha --reporter mochawesome --timeout 10000 -r dotenv/config ./test/**/*.js",
+    "test-match": "mocha --grep $MATCH --timeout 10000 -r dotenv/config ./test/**/*.js"
   },
   "repository": {
     "type": "git",
