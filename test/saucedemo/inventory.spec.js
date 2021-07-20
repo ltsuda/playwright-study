@@ -19,7 +19,7 @@ const itemsName = [
   "Test.allTheThings() T-Shirt (Red)",
 ]
 
-describe("Saucedemo InventoryPage", () => {
+describe("Saucedemo InventoryPage: @inventory", () => {
   before(async () => {
     browser = await chromium.launch()
     await loginAndSaveCookies(browser)

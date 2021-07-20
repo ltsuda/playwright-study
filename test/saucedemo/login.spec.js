@@ -4,7 +4,7 @@ const { LoginController } = require("../../saucedemo/pages/login/controller")
 
 let browser, context, page, loginController
 
-describe("Saucedemo LoginPage", () => {
+describe("Saucedemo LoginPage: @login", () => {
   before(async () => {
     browser = await chromium.launch()
   })
