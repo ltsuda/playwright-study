@@ -91,24 +91,14 @@ class InventoryController {
     const itemsElements = await this.components.items()
     const randomElement = itemsElements[randomItem]
 
-    const name = await randomElement.$eval(
-      this.locators.itemsName,
-      (element) => {
-        element.innerText
-      }
+    const nameElement = await randomElement.$(this.locators.itemsName)
+    const name = await nameElement.innerText()
+    const descriptionElement = await randomElement.$(
+      this.locators.itemsDescription
     )
-    const description = await randomElement.$eval(
-      this.locators.itemsDescription,
-      (element) => {
-        element.innerText
-      }
-    )
-    const price = await randomElement.$eval(
-      this.locators.itemsPrice,
-      (element) => {
-        element.innerText
-      }
-    )
+    const description = await descriptionElement.innerText()
+    const priceElement = await randomElement.$(this.locators.itemsPrice)
+    const price = await priceElement.innerText()
 
     const addToCartButton = await randomElement.$(this.locators.addToCart)
     await addToCartButton.click()
