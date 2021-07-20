@@ -24,7 +24,6 @@ class CartController {
   async goToCheckout() {
     const checkoutButton = await this.components.checkoutButton()
     await checkoutButton.click()
-    return new CheckoutController(this.page)
   }
 
   async _getItemsText(elements) {
@@ -93,4 +92,5 @@ class CartController {
 
 module.exports = {
   CartController,
+  cartLocators,
 }

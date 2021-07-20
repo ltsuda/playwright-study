@@ -34,7 +34,7 @@ describe("Saucedemo CartPage: @cart", () => {
     await context.close()
   })
 
-  it("should be at Cart page when click at the cart button", async () => {
+  it("should be at Cart page when clicking at the cart button", async () => {
     await inventoryController.goToCart()
     expect(await page.url()).to.be.eq(process.env.SAUCE_CART_URL)
   })
