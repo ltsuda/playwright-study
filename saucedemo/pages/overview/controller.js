@@ -1,5 +1,5 @@
 const { OverviewComponents, overviewLocators } = require("./components")
-const { randomInt } = require("../../utils/utils")
+const { CompletedController } = require("../completed/controller")
 
 class OverviewController {
   constructor(page) {
@@ -16,6 +16,7 @@ class OverviewController {
   async finishCheckout() {
     const finishCheckoutButton = await this.components.finishCheckoutButton()
     await finishCheckoutButton.click()
+    return new CompletedController(this.page)
   }
 
   async _getItemsText(elements) {

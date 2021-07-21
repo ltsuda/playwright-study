@@ -8,7 +8,7 @@ Multipurpose Playwright study repository
 - [x] Add cart's page test and resources
 - [x] Add checkout's page test and resources
 - [x] Add overview's page test and resources
-- [ ] Add complete's page test and resources
+- [x] Add completed's page test and resources
 - [x] Add inventory's page test and resources
 - [x] Add login's page test and resources
 - [ ] Refactor resources to have common components within its own file
