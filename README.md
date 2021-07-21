@@ -6,8 +6,8 @@ Multipurpose Playwright study repository
 
 ## Todo
 - [x] Add cart's page test and resources
-- [ ] Add checkout's page test and resources
-- [ ] Add overview's page test and resources
+- [x] Add checkout's page test and resources
+- [x] Add overview's page test and resources
 - [ ] Add complete's page test and resources
 - [x] Add inventory's page test and resources
 - [x] Add login's page test and resources
