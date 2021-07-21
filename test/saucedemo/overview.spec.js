@@ -19,7 +19,7 @@ let browser,
   inventoryController,
   checkoutController,
   overviewController,
-  item
+  addedItem
 
 describe("Saucedemo OverviewPage: @overview", () => {
   before(async () => {
