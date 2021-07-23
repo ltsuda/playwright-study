@@ -5,8 +5,6 @@ const inventoryLocators = {
   itemsDescription: "[class='inventory_item_desc']",
   itemsPrice: "[class='inventory_item_price']",
   sortItems: "[class='product_sort_container']",
-  cart: "[class='shopping_cart_link']",
-  cartBadge: "[class='shopping_cart_badge']",
   addToCart: "text=/add to cart/i",
   removeFromCart: "text=/remove/i",
 }
@@ -48,16 +46,6 @@ class InventoryComponents {
 
   async sortItems() {
     return await this.page.$(inventoryLocators.sortItems)
-  }
-
-  async cart() {
-    return await this.page.$(inventoryLocators.cart)
-  }
-
-  async cartBadge() {
-    return await this.page.$(
-      `${inventoryLocators.cart}` + ">" + `${inventoryLocators.cartBadge}`
-    )
   }
 
   async addToCartButtons() {

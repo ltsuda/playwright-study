@@ -117,16 +117,6 @@ class InventoryController {
       removeFromCartElements[randomInt(removeFromCartElements.length)]
     await randomElement.click()
   }
-
-  async getCartBadge() {
-    const badgeElement = await this.components.cartBadge()
-    return await badgeElement.innerText()
-  }
-
-  async goToCart() {
-    const cartButtonElement = await this.components.cart()
-    await cartButtonElement.click()
-  }
 }
 
 module.exports = { InventoryController }
