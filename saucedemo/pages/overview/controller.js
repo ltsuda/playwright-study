@@ -1,10 +1,14 @@
 const { OverviewComponents, overviewLocators } = require("./components")
 const { CompletedController } = require("../completed/controller")
+const { PrimaryHeaderController } = require("../primaryHeader/controller")
+const { SecondaryHeaderController } = require("../secondaryHeader/controller")
 
 class OverviewController {
   constructor(page) {
     this.page = page
     this.components = new OverviewComponents(this.page)
+    this.primaryHeaderController = new PrimaryHeaderController(this.page)
+    this.secondaryHeaderController = new SecondaryHeaderController(this.page)
     this.locators = overviewLocators
   }
 

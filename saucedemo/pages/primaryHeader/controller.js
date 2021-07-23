@@ -54,6 +54,4 @@ class PrimaryHeaderController {
     await cartButtonElement.click()
   }
 }
-module.exports = {
-  PrimaryHeaderController,
-}
+module.exports = { PrimaryHeaderController }

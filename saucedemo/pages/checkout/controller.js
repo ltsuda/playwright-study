@@ -1,10 +1,14 @@
 const { CheckoutComponents, checkoutLocators } = require("./components")
 const { OverviewController } = require("../overview/controller")
+const { PrimaryHeaderController } = require("../primaryHeader/controller")
+const { SecondaryHeaderController } = require("../secondaryHeader/controller")
 
 class CheckoutController {
   constructor(page) {
     this.page = page
     this.components = new CheckoutComponents(this.page)
+    this.primaryHeaderController = new PrimaryHeaderController(this.page)
+    this.secondaryHeaderController = new SecondaryHeaderController(this.page)
     this.locators = checkoutLocators
   }
 
