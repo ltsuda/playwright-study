@@ -44,13 +44,16 @@ class PrimaryHeaderController {
     await closeMenuElement.click()
   }
 
-  async getCartBadge() {
+  async getCartBadgeIfExists() {
     const badgeElement = await this.components.cartBadge()
+    if ((await badgeElement) == null) {
+      return null
+    }
     return await badgeElement.innerText()
   }
 
   async goToCart() {
-    const cartButtonElement = await this.components.cart()
+    const cartButtonElement = await this.components.cartLink()
     await cartButtonElement.click()
   }
 }

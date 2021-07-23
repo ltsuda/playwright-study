@@ -52,12 +52,14 @@ class PrimaryHeaderComponents {
   }
 
   async cartLink() {
-    return await this.page.$(inventoryLocators.cart)
+    return await this.page.$(primaryHeaderLocators.cartLink)
   }
 
   async cartBadge() {
     return await this.page.$(
-      `${inventoryLocators.cart}` + ">" + `${inventoryLocators.cartBadge}`
+      `${primaryHeaderLocators.cartLink}` +
+        ">" +
+        `${primaryHeaderLocators.cartBadge}`
     )
   }
 }
