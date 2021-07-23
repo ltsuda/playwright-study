@@ -2,15 +2,7 @@ const fs = require("fs")
 const { LoginController } = require("../../saucedemo/pages/login/controller")
 
 async function saveCookies(context) {
-  const cookies = await context.cookies()
-  const cookieJson = JSON.stringify(cookies)
-  fs.writeFileSync("cookies.json", cookieJson)
-}
-
-async function loadCookies(context) {
-  const cookies = fs.readFileSync("cookies.json", "utf8")
-  const deserializedCookies = JSON.parse(cookies)
-  await context.addCookies(deserializedCookies)
+  await context.storageState({ path: "auth.json" })
 }
 
 async function loginAndSaveCookies(browser) {
@@ -30,6 +22,5 @@ function randomInt(max) {
 module.exports = {
   loginAndSaveCookies,
   saveCookies,
-  loadCookies,
   randomInt,
 }

@@ -1,9 +1,6 @@
 const { chromium } = require("playwright")
 const { expect } = require("chai")
-const {
-  loginAndSaveCookies,
-  loadCookies,
-} = require("../../saucedemo/utils/utils")
+const { loginAndSaveCookies } = require("../../saucedemo/utils/utils")
 const { CartController } = require("../../saucedemo/pages/cart/controller")
 const {
   InventoryController,
@@ -22,8 +19,7 @@ describe("Saucedemo CartPage: @cart", () => {
   })
 
   beforeEach(async () => {
-    context = await browser.newContext()
-    await loadCookies(context)
+    context = await browser.newContext({ storageState: "auth.json" })
     page = await context.newPage()
     inventoryController = new InventoryController(page)
     cartController = new CartController(page)
