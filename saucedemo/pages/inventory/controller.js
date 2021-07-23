@@ -1,4 +1,5 @@
 const { InventoryComponents, inventoryLocators } = require("./components")
+const { SecondaryHeaderController } = require("../secondaryHeader/controller")
 const { randomInt } = require("../../utils/utils")
 
 const sortOptions = Object.freeze({
@@ -12,6 +13,7 @@ class InventoryController {
   constructor(page) {
     this.page = page
     this.components = new InventoryComponents(this.page)
+    this.secondaryHeaderController = new SecondaryHeaderController(this.page)
     this.locators = inventoryLocators
     this.sortOptions = sortOptions
   }
@@ -24,7 +26,8 @@ class InventoryController {
   }
 
   async _sortItems(option) {
-    const sortElement = await this.components.sortItems()
+    const sortElement =
+      await this.secondaryHeaderController.components.sortItemsDropdown()
     await sortElement.selectOption(option)
   }
 

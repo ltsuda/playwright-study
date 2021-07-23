@@ -4,7 +4,6 @@ const inventoryLocators = {
   itemsImage: "[class='inventory_item_img'] >> img",
   itemsDescription: "[class='inventory_item_desc']",
   itemsPrice: "[class='inventory_item_price']",
-  sortItems: "[class='product_sort_container']",
   addToCart: "text=/add to cart/i",
   removeFromCart: "text=/remove/i",
 }
@@ -42,10 +41,6 @@ class InventoryComponents {
     return await this.page.$$(
       `${inventoryLocators.items}` + ">>" + `${inventoryLocators.itemsPrice}`
     )
-  }
-
-  async sortItems() {
-    return await this.page.$(inventoryLocators.sortItems)
   }
 
   async addToCartButtons() {
