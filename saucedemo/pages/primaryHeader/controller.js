@@ -2,7 +2,6 @@ const {
   PrimaryHeaderComponents,
   primaryHeaderLocators,
 } = require("./components")
-const { InventoryController } = require("../inventory/controller")
 const { LoginController } = require("../login/controller")
 
 class PrimaryHeaderController {
@@ -25,7 +24,6 @@ class PrimaryHeaderController {
   async goToInventoryPage() {
     const closeMenuElement = this.components.hamburguerMenuAllItemsLink()
     await closeMenuElement.click()
-    return new InventoryController(this.page)
   }
 
   async goToSauceLabsSite() {
