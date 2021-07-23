@@ -1,4 +1,3 @@
-const fs = require("fs")
 const { LoginController } = require("../../saucedemo/pages/login/controller")
 
 async function saveCookies(context) {
