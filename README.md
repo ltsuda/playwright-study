@@ -11,5 +11,6 @@ Multipurpose Playwright study repository
 - [x] Add completed's page test and resources
 - [x] Add inventory's page test and resources
 - [x] Add login's page test and resources
+- [ ] Add item detail's page test and resources
 - [ ] Refactor resources to have common components within its own file
 - [ ] Refactor to use Playwright Test Runner (since v1.12) instead of mocha
