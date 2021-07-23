@@ -9,9 +9,6 @@ const inventoryLocators = {
   cartBadge: "[class='shopping_cart_badge']",
   addToCart: "text=/add to cart/i",
   removeFromCart: "text=/remove/i",
-  footerTwitter: ".footer >> .social_twitter > a",
-  footerFacebook: ".footer >> .social_facebook > a",
-  footerLinkdin: ".footer >> .social_linkedin > a",
 }
 
 class InventoryComponents {
@@ -75,18 +72,6 @@ class InventoryComponents {
         ">>" +
         `${inventoryLocators.removeFromCart}`
     )
-  }
-
-  async footerTwitter() {
-    return await this.page.$(inventoryLocators.footerTwitter)
-  }
-
-  async footerFacebook() {
-    return await this.page.$(inventoryLocators.footerFacebook)
-  }
-
-  async footerLinkdin() {
-    return await this.page.$(inventoryLocators.footerLinkdin)
   }
 }
 
