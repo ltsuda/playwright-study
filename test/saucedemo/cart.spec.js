@@ -46,14 +46,18 @@ describe("Saucedemo CartPage: @cart", () => {
     const badgeCount =
       await inventoryController.primaryHeaderController.getCartBadgeIfExists()
     await inventoryController.primaryHeaderController.goToCart()
-    const itemsInCartCount = await cartController.getCartItemsCount()
+    const itemsInCartCount = await cartController.itemController.getItemsCount(
+      "cart"
+    )
     expect(itemsInCartCount).to.be.eq(parseInt(badgeCount))
   })
 
   it("should be possible to add an item into the cart", async () => {
     const addedItem = await inventoryController.addRandomItemToCart()
     await inventoryController.primaryHeaderController.goToCart()
-    const itemsInCart = await cartController.getItemObjects()
+    const itemsInCart = await cartController.itemController.getItemObjects(
+      "cart"
+    )
     expect(itemsInCart[0]).to.be.eql(addedItem)
   })
 })

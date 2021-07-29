@@ -52,7 +52,7 @@ class InventoryController {
   }
 
   async addRandomItemToCart() {
-    const itemsCount = await this.itemController.getItemsCount()
+    const itemsCount = await this.itemController.getItemsCount("inventory")
     const randomItem = randomInt(itemsCount)
     const itemsElements = await this.itemController.components.items()
     const randomElement = itemsElements[randomItem]

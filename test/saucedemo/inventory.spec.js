@@ -42,7 +42,9 @@ describe("Saucedemo InventoryPage: @inventory", () => {
   })
 
   it("should show a list of items", async () => {
-    const itemsCount = await inventoryController.itemController.getItemsCount()
+    const itemsCount = await inventoryController.itemController.getItemsCount(
+      "inventory"
+    )
     expect(itemsCount).to.be.eq(itemsName.length)
   })
 

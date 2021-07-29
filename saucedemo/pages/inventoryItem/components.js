@@ -1,4 +1,5 @@
 const inventoryItemLocators = {
+  cartItem: "[class='cart_item']",
   item: "[class='inventory_item']",
   itemName: "[class='inventory_item_name']",
   itemImage: "[class='inventory_item_img'] >> img",
@@ -12,8 +13,20 @@ class InventoryItemComponents {
     this.page = page
   }
 
-  async items() {
-    return await this.page.$$(inventoryItemLocators.item)
+  switchItemLocator(fromPage) {
+    switch (fromPage) {
+      case "cart":
+        return inventoryItemLocators.cartItem
+      case "inventory":
+        return inventoryItemLocators.item
+      default:
+        return inventoryItemLocators.item
+    }
+  }
+
+  async items(fromPage = "inventory") {
+    const locator = this.switchItemLocator(fromPage)
+    return await this.page.$$(locator)
   }
 
   async itemsName() {

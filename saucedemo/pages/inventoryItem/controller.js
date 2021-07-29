@@ -11,8 +11,8 @@ class InventoryItemController {
     this.locators = inventoryItemLocators
   }
 
-  async getItemsCount() {
-    const itemsElements = await this.components.items()
+  async getItemsCount(fromPage) {
+    const itemsElements = await this.components.items(fromPage)
     return itemsElements.length
   }
 
@@ -48,8 +48,8 @@ class InventoryItemController {
     return index == "all" ? priceString : priceString[index]
   }
 
-  async getItemObjects() {
-    const itemsElements = await this.components.items()
+  async getItemObjects(fromPage = "inventory") {
+    const itemsElements = await this.components.items(fromPage)
     let items = []
     for (const itemElement of itemsElements) {
       const nameElement = await itemElement.$(this.locators.itemName)
