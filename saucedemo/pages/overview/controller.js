@@ -23,59 +23,6 @@ class OverviewController {
     return new CompletedController(this.page)
   }
 
-  async _getItemsText(elements) {
-    const texts = []
-
-    for (const element of elements) {
-      texts.push(await element.innerText())
-    }
-    return texts
-  }
-
-  async getCheckoutItems() {
-    const itemsElements = await this.components.items()
-    return itemsElements.length
-  }
-
-  async getItemsName() {
-    const nameElements = await this.components.itemsName()
-    return await this._getItemsText(nameElements)
-  }
-
-  async getPaymentText() {
-    const paymentElement = await this.components.paymentInfoText()
-    return await paymentElement.innerText()
-  }
-
-  async getShippingText() {
-    const shippingElement = await this.components.shippingInfoText()
-    return await shippingElement.innerText()
-  }
-
-  async getItemObjects() {
-    const itemsElements = await this.components.items()
-    let items = []
-    for (const itemElement of itemsElements) {
-      const nameElement = await itemElement.$(this.locators.overviewItemName)
-      const name = await nameElement.innerText()
-      const descriptionElement = await itemElement.$(
-        this.locators.overviewItemDescription
-      )
-      const description = await descriptionElement.innerText()
-      const priceElement = await itemElement.$(this.locators.overviewItemPrice)
-      let price = await priceElement.innerText()
-      price = price.replace("$", "")
-
-      items.push({
-        name: name,
-        description: description,
-        price: price,
-      })
-    }
-
-    return items
-  }
-
   async getSubtotal() {
     const subtotalElement = await this.components.subtotalText()
     let subtotal = await subtotalElement.innerText()

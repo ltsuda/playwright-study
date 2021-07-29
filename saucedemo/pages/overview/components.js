@@ -1,9 +1,4 @@
 const overviewLocators = {
-  overviewItem: "[class='cart_item']",
-  overviewItemQty: "[class='cart_quantity']",
-  overviewItemName: "[class='inventory_item_name']",
-  overviewItemDescription: "[class='inventory_item_desc']",
-  overviewItemPrice: "[class='inventory_item_price']",
   cancelCheckout: "[data-test='cancel']",
   finishCheckout: "[data-test='finish']",
   summaryInfo: "[class='summary_info']",
@@ -52,42 +47,6 @@ class OverviewComponents {
       `${overviewLocators.summaryInfo}` +
         ">>" +
         `${overviewLocators.totalPrice}`
-    )
-  }
-
-  async items() {
-    return await this.page.$$(overviewLocators.overviewItem)
-  }
-
-  async itemsPrice() {
-    return await this.page.$$(
-      `${overviewLocators.overviewItem}` +
-        ">>" +
-        `${overviewLocators.overviewItemPrice}`
-    )
-  }
-
-  async itemsName() {
-    return await this.page.$$(
-      `${overviewLocators.overviewItem}` +
-        ">>" +
-        `${overviewLocators.overviewItemName}`
-    )
-  }
-
-  async itemsDescription() {
-    return await this.page.$$(
-      `${overviewLocators.overviewItem}` +
-        ">>" +
-        `${overviewLocators.overviewItemDescription}`
-    )
-  }
-
-  async itemsQuantity() {
-    return await this.page.$$(
-      `${overviewLocators.overviewItem}` +
-        ">>" +
-        `${overviewLocators.overviewItemQty}`
     )
   }
 
