@@ -58,7 +58,9 @@ describe("Saucedemo OverviewPage: @overview", () => {
   })
 
   it("should have the added items on the Overview Checkout", async () => {
-    const overviewItem = await overviewController.getItemObjects()
+    const overviewItem = await overviewController.itemController.getItemObjects(
+      "cart"
+    )
     expect(overviewItem[0]).to.be.eql(addedItem)
   })
 
