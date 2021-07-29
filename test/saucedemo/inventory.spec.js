@@ -42,30 +42,36 @@ describe("Saucedemo InventoryPage: @inventory", () => {
   })
 
   it("should show a list of items", async () => {
-    const itemsCount = await inventoryController.getItemsCount()
+    const itemsCount = await inventoryController.itemController.getItemsCount()
     expect(itemsCount).to.be.eq(itemsName.length)
   })
 
   it("should show items sorted alphabetically", async () => {
-    const names = await inventoryController.getItemsNamesByIndex("all")
+    const names = await inventoryController.itemController.getItemsNamesByIndex(
+      "all"
+    )
     expect(names).to.be.eql(itemsName.sort())
   })
 
   it("should be possible to sort items from Z to A", async () => {
     await inventoryController.sortZA()
-    const names = await inventoryController.getItemsNamesByIndex("all")
+    const names = await inventoryController.itemController.getItemsNamesByIndex(
+      "all"
+    )
     expect(names).to.be.eql(itemsName.sort().reverse())
   })
 
   it("should be possible to sort items prices from Low to High", async () => {
     await inventoryController.sortLowHigh()
-    const prices = await inventoryController.getItemsPricesByIndex("all")
+    const prices =
+      await inventoryController.itemController.getItemsPricesByIndex("all")
     expect(prices).to.be.eql(prices.sort())
   })
 
   it("should be possible to sort items prices from High to Low", async () => {
     await inventoryController.sortHighLow()
-    const prices = await inventoryController.getItemsPricesByIndex("all")
+    const prices =
+      await inventoryController.itemController.getItemsPricesByIndex("all")
     expect(prices).to.be.eql(prices.sort().reverse())
   })
 
@@ -81,7 +87,7 @@ describe("Saucedemo InventoryPage: @inventory", () => {
     const badgeNumber =
       await inventoryController.primaryHeaderController.getCartBadgeIfExists()
     expect(badgeNumber).to.be.eq("1")
-    await inventoryController.removeRandomItemFromCart()
+    await inventoryController.itemController.removeRandomItemFromCart()
     expect(
       await inventoryController.primaryHeaderController.getCartBadgeIfExists()
     ).to.be.null
