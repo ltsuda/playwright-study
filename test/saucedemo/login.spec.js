@@ -25,19 +25,19 @@ describe("Saucedemo LoginPage: @login", () => {
   })
 
   it("should show accepted users", async () => {
-    acceptedUsers = await loginController.getAcceptedUsersFromPage()
+    const acceptedUsers = await loginController.getAcceptedUsersText()
     expect(acceptedUsers).eql(loginController.acceptedUsers)
   })
 
   it("should show application password", async () => {
-    systemPassword = await loginController.getPasswordFromPage()
+    const systemPassword = await loginController.getPasswordText()
     expect(systemPassword).eql(loginController.password)
   })
 
   it("should show locked user error", async () => {
     await loginController.loginWithLockedUser()
-    await page.waitForSelector(loginController.locators.error)
-    lockedUserError = await loginController.getErrorMessage()
+    await page.waitForSelector(loginController.locators.errorText)
+    const lockedUserError = await loginController.getErrorMessageText()
     expect(lockedUserError).to.be.equal(
       "Epic sadface: Sorry, this user has been locked out."
     )
@@ -45,15 +45,15 @@ describe("Saucedemo LoginPage: @login", () => {
 
   it("should show username is required error", async () => {
     await loginController.loginWithoutUser()
-    await page.waitForSelector(loginController.locators.error)
-    errorMessage = await loginController.getErrorMessage()
+    await page.waitForSelector(loginController.locators.errorText)
+    const errorMessage = await loginController.getErrorMessageText()
     expect(errorMessage).to.be.equal("Epic sadface: Username is required")
   })
 
   it("should show username and password doesn't match", async () => {
     await loginController.loginWithWrongCredential()
-    await page.waitForSelector(loginController.locators.error)
-    errorMessage = await loginController.getErrorMessage()
+    await page.waitForSelector(loginController.locators.errorText)
+    const errorMessage = await loginController.getErrorMessageText()
     expect(errorMessage).to.be.equal(
       "Epic sadface: Username and password do not match any user in this service"
     )
@@ -61,7 +61,7 @@ describe("Saucedemo LoginPage: @login", () => {
 
   it("should navigate to inventory page after successful login", async () => {
     await loginController.loginWithStandardUser()
-    inventoryURL = await page.url()
+    const inventoryURL = await page.url()
     expect(inventoryURL).to.be.equal(process.env.SAUCE_INVENTORY_URL)
   })
 })

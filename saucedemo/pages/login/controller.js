@@ -25,60 +25,63 @@ class LoginController {
   }
 
   async fillUserName(username) {
-    await this.page.fill(this.locators.username, username)
+    const usernameElement = await this.components.usernameInput()
+    await usernameElement.fill(username)
   }
 
   async fillPassword(password) {
-    await this.page.fill(this.locators.password, password)
+    const passwordElement = await this.components.passwordInput()
+    await passwordElement.fill(password)
   }
 
-  async clickLogin() {
-    await this.page.click(this.locators.loginButton)
+  async submitLogin() {
+    const loginElement = await this.components.loginButton()
+    await loginElement.click()
   }
 
-  async login(username, password) {
+  async _login(username, password) {
     await this.fillUserName(username)
     await this.fillPassword(password)
-    await this.clickLogin()
+    await this.submitLogin()
   }
 
   async loginWithStandardUser() {
-    await this.login(this.standardUser, this.password)
+    await this._login(this.standardUser, this.password)
   }
 
   async loginWithLockedUser() {
-    await this.login(this.lockedUser, this.password)
+    await this._login(this.lockedUser, this.password)
   }
 
   async loginWithProblemUser() {
-    await this.login(this.problemUser, this.password)
+    await this._login(this.problemUser, this.password)
   }
 
   async loginWithPerformanceGlitchUser() {
-    await this.login(this.performanceGlitchUser, this.password)
+    await this._login(this.performanceGlitchUser, this.password)
   }
 
   async loginWithoutUser() {
-    await this.login("", this.password)
+    await this._login("", this.password)
   }
 
   async loginWithWrongCredential() {
-    await this.login("noname", this.password)
+    await this._login("noname", this.password)
   }
 
-  async getErrorMessage() {
-    const errorElement = await this.components.errorMessage()
+  async getErrorMessageText() {
+    const errorElement = await this.components.errorMessageText()
     return await errorElement.innerText()
   }
 
-  async getAcceptedUsersFromPage() {
-    let acceptedUsers = await this.components.acceptedUsers()
+  async getAcceptedUsersText() {
+    let acceptedUsers = await this.components.acceptedUsersText()
     acceptedUsers = await acceptedUsers.innerText()
     return acceptedUsers.split("\n").filter(Boolean).slice(1)
   }
 
-  async getPasswordFromPage() {
-    let acceptedPassword = await this.components.acceptedPassword()
+  async getPasswordText() {
+    let acceptedPassword = await this.components.acceptedPasswordText()
     acceptedPassword = await acceptedPassword.innerText()
     return acceptedPassword.split("\n").filter(Boolean).slice(1).pop()
   }

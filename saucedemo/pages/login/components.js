@@ -1,10 +1,10 @@
 const loginLocators = {
-  username: "[data-test='username']",
-  password: "[data-test='password']",
-  error: "[data-test='error']",
+  usernameInput: "[data-test='username']",
+  passwordInput: "[data-test='password']",
+  errorText: "[data-test='error']",
   loginButton: "[id='login-button']",
-  acceptedUsers: "[id='login_credentials']",
-  acceptedPassword: "[class='login_password']",
+  acceptedUsersText: "[id='login_credentials']",
+  acceptedPasswordText: "[class='login_password']",
 }
 
 class LoginComponents {
@@ -12,16 +12,28 @@ class LoginComponents {
     this.page = page
   }
 
-  async acceptedUsers() {
-    return await this.page.$(loginLocators.acceptedUsers)
+  async acceptedUsersText() {
+    return await this.page.$(loginLocators.acceptedUsersText)
   }
 
-  async acceptedPassword() {
-    return await this.page.$(loginLocators.acceptedPassword)
+  async acceptedPasswordText() {
+    return await this.page.$(loginLocators.acceptedPasswordText)
   }
 
-  async errorMessage() {
-    return await this.page.$(loginLocators.error)
+  async errorMessageText() {
+    return await this.page.$(loginLocators.errorText)
+  }
+
+  async usernameInput() {
+    return await this.page.$(loginLocators.usernameInput)
+  }
+
+  async passwordInput() {
+    return await this.page.$(loginLocators.passwordInput)
+  }
+
+  async loginButton() {
+    return await this.page.$(loginLocators.loginButton)
   }
 }
 
