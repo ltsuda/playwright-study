@@ -12,14 +12,14 @@ class CompletedController {
     this.locators = completedLocators
   }
 
-  async backHome() {
+  async navigateBackHome() {
     const backHomeButton = await this.components.completedBackButton()
     await backHomeButton.click()
     return new InventoryController(this.page)
   }
 
   async getHeaderText() {
-    const headerElement = await this.components.completedHeader()
+    const headerElement = await this.components.completedHeaderText()
     return await headerElement.innerText()
   }
 

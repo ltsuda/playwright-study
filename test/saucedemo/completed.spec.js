@@ -53,7 +53,7 @@ describe("Saucedemo CompletedPage: @completed", () => {
   })
 
   it("should be back at Inventory page when click at the Back Home button", async () => {
-    await completedController.backHome()
+    await completedController.navigateBackHome()
     expect(await page.url()).to.be.eq(process.env.SAUCE_INVENTORY_URL)
   })
 

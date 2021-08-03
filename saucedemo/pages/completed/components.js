@@ -1,6 +1,6 @@
 const completedLocators = {
   completedContainer: "[class='checkout_complete_container']",
-  completedHeader: "[class='complete-header']",
+  completedHeaderText: "[class='complete-header']",
   completedText: "[class='complete-text']",
   completedImage: "[class='pony_express']",
   completedBackButton: "[data-test='back-to-products']",
@@ -11,11 +11,11 @@ class CompletedComponents {
     this.page = page
   }
 
-  async completedHeader() {
+  async completedHeaderText() {
     return await this.page.$(
       `${completedLocators.completedContainer}` +
         ">>" +
-        `${completedLocators.completedHeader}`
+        `${completedLocators.completedHeaderText}`
     )
   }
 
