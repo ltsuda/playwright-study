@@ -10,8 +10,8 @@ class SecondaryHeaderController {
     this.locators = secondaryHeaderLocators
   }
 
-  async getTitle() {
-    const titleElement = await this.components.title()
+  async getTitleText() {
+    const titleElement = await this.components.titleText()
     return await titleElement.innerText()
   }
 }

@@ -31,7 +31,7 @@ class InventoryController {
 
   async _sortItems(option) {
     const sortElement =
-      await this.secondaryHeaderController.components.sortItemsDropdown()
+      await this.secondaryHeaderController.components.sortDropdown()
     await sortElement.selectOption(option)
   }
 
