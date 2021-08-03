@@ -31,7 +31,7 @@ describe("Saucedemo CartPage: @cart", () => {
   })
 
   it("should be at Cart page when clicking at the cart button", async () => {
-    await inventoryController.primaryHeaderController.goToCart()
+    await inventoryController.primaryHeaderController.navigateToCart()
     expect(await page.url()).to.be.eq(process.env.SAUCE_CART_URL)
   })
 
@@ -45,7 +45,7 @@ describe("Saucedemo CartPage: @cart", () => {
     await inventoryController.addRandomItemToCart()
     const badgeCount =
       await inventoryController.primaryHeaderController.getCartBadgeIfExists()
-    await inventoryController.primaryHeaderController.goToCart()
+    await inventoryController.primaryHeaderController.navigateToCart()
     const itemsInCartCount = await cartController.itemController.getItemsCount(
       "cart"
     )
@@ -54,7 +54,7 @@ describe("Saucedemo CartPage: @cart", () => {
 
   it("should be possible to add an item into the cart", async () => {
     const addedItem = await inventoryController.addRandomItemToCart()
-    await inventoryController.primaryHeaderController.goToCart()
+    await inventoryController.primaryHeaderController.navigateToCart()
     const itemsInCart = await cartController.itemController.getItemObjects(
       "cart"
     )

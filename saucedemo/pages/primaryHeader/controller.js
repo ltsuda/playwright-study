@@ -11,48 +11,49 @@ class PrimaryHeaderController {
     this.locators = primaryHeaderLocators
   }
 
-  async openHamburguerMenu() {
-    const menuElement = this.components.hamburguerMenuButton()
+  async openMenu() {
+    const menuElement = this.components.menuButton()
     await menuElement.click()
   }
 
-  async closeHamburguerMenu() {
-    const closeMenuElement = this.components.closeHamburguerMenu()
+  async closeMenu() {
+    const closeMenuElement = this.components.menuCloseButton()
     await closeMenuElement.click()
   }
 
-  async goToInventoryPage() {
-    const closeMenuElement = this.components.hamburguerMenuAllItemsLink()
+  async navigateToInventory() {
+    const closeMenuElement = this.components.menuAllItemsLink()
     await closeMenuElement.click()
   }
 
-  async goToSauceLabsSite() {
-    const closeMenuElement = this.components.hamburguerMenuAboutLink()
+  async navigateToSauceLabsSite() {
+    const closeMenuElement = this.components.menuAboutLink()
     await closeMenuElement.click()
   }
 
   async logout() {
-    const closeMenuElement = this.components.hamburguerMenuLogoutLink()
+    const closeMenuElement = this.components.menuLogoutLink()
     await closeMenuElement.click()
     return new LoginController(this.page)
   }
 
   async resetState() {
-    const closeMenuElement = this.components.resetState()
+    const closeMenuElement = this.components.menuResetStateLink()
     await closeMenuElement.click()
   }
 
   async getCartBadgeIfExists() {
-    const badgeElement = await this.components.cartBadge()
+    const badgeElement = await this.components.cartBadgeText()
     if ((await badgeElement) == null) {
       return null
     }
     return await badgeElement.innerText()
   }
 
-  async goToCart() {
+  async navigateToCart() {
     const cartButtonElement = await this.components.cartLink()
     await cartButtonElement.click()
   }
 }
+
 module.exports = { PrimaryHeaderController }

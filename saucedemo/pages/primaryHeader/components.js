@@ -1,17 +1,17 @@
 const primaryHeaderLocators = {
-  hamburguerMenuButton: "primary_header >> react-burger-menu-btn",
-  hamburguerMenuCloseButton:
+  menuButton: "primary_header >> react-burger-menu-btn",
+  menuCloseButton:
     "primary_header >> bm-menu-wrap >> react-burger-cross-btn",
-  hamburguerMenuAllItemsLink:
+  menuAllItemsLink:
     "primary_header >> bm-item-list > inventory_sidebar_link",
-  hamburguerMenuAboutLink:
+  menuAboutLink:
     "primary_header >> bm-item-list > about_sidebar_link",
-  hamburguerMenuLogoutLink:
+  menuLogoutLink:
     "primary_header >> bm-item-list > logout_sidebar_link",
-  hamburguerMenuResetStateLink:
+  menuResetStateLink:
     "primary_header >> bm-item-list > reset_sidebar_link",
   cartLink: "[class='shopping_cart_link']",
-  cartBadge: "[class='shopping_cart_badge']",
+  cartBadgeText: "[class='shopping_cart_badge']",
 }
 
 class PrimaryHeaderComponents {
@@ -19,35 +19,35 @@ class PrimaryHeaderComponents {
     this.page = page
   }
 
-  async hamburguerMenuButton() {
-    return await this.page.$(this.primaryHeaderLocators.hamburguerMenuButton)
+  async menuButton() {
+    return await this.page.$(this.primaryHeaderLocators.menuButton)
   }
 
-  async hamburguerMenuCloseButton() {
+  async menuCloseButton() {
     return await this.page.$(
-      this.primaryHeaderLocators.hamburguerMenuCloseButton
+      this.primaryHeaderLocators.menuCloseButton
     )
   }
 
-  async hamburguerMenuAllItemsLink() {
+  async menuAllItemsLink() {
     return await this.page.$(
-      this.primaryHeaderLocators.hamburguerMenuAllItemsLink
+      this.primaryHeaderLocators.menuAllItemsLink
     )
   }
 
-  async hamburguerMenuAboutLink() {
-    return await this.page.$(this.primaryHeaderLocators.hamburguerMenuAboutLink)
+  async menuAboutLink() {
+    return await this.page.$(this.primaryHeaderLocators.menuAboutLink)
   }
 
-  async hamburguerMenuLogoutLink() {
+  async menuLogoutLink() {
     return await this.page.$(
-      this.primaryHeaderLocators.hamburguerMenuLogoutLink
+      this.primaryHeaderLocators.menuLogoutLink
     )
   }
 
-  async hamburguerMenuResetStateLink() {
+  async menuResetStateLink() {
     return await this.page.$(
-      this.primaryHeaderLocators.hamburguerMenuResetStateLink
+      this.primaryHeaderLocators.menuResetStateLink
     )
   }
 
@@ -55,11 +55,11 @@ class PrimaryHeaderComponents {
     return await this.page.$(primaryHeaderLocators.cartLink)
   }
 
-  async cartBadge() {
+  async cartBadgeText() {
     return await this.page.$(
       `${primaryHeaderLocators.cartLink}` +
         ">" +
-        `${primaryHeaderLocators.cartBadge}`
+        `${primaryHeaderLocators.cartBadgeText}`
     )
   }
 }
