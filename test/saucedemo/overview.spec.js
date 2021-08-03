@@ -37,7 +37,7 @@ describe("Saucedemo OverviewPage: @overview", () => {
     await inventoryController.navigate()
     addedItem = await inventoryController.addRandomItemToCart()
     await inventoryController.primaryHeaderController.navigateToCart()
-    await cartController.goToCheckout()
+    await cartController.navigateToCheckout()
     await checkoutController.fillFirstName("John")
     await checkoutController.fillLastName("Bong")
     await checkoutController.fillPostalCode("555-5555")

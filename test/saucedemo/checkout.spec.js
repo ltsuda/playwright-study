@@ -34,7 +34,7 @@ describe("Saucedemo CheckoutPage: @checkout", () => {
     await inventoryController.addRandomItemToCart()
     await inventoryController.primaryHeaderController.navigateToCart()
     cartController = new CartController(page)
-    await cartController.goToCheckout()
+    await cartController.navigateToCheckout()
     checkoutController = new CheckoutController(page)
   })
 

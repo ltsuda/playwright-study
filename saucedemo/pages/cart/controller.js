@@ -27,7 +27,7 @@ class CartController {
     return new InventoryController(this.page)
   }
 
-  async goToCheckout() {
+  async navigateToCheckout() {
     const checkoutButton = await this.components.checkoutButton()
     await checkoutButton.click()
   }

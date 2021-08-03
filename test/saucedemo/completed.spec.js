@@ -36,7 +36,7 @@ describe("Saucedemo CompletedPage: @completed", () => {
     checkoutController = new CheckoutController(page)
     await inventoryController.navigate()
     await inventoryController.primaryHeaderController.navigateToCart()
-    await cartController.goToCheckout()
+    await cartController.navigateToCheckout()
     await checkoutController.fillFirstName("John")
     await checkoutController.fillLastName("Bong")
     await checkoutController.fillPostalCode("555-5555")

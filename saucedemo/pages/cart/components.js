@@ -1,6 +1,6 @@
 const cartLocators = {
-  continueShopping: "[data-test='continue-shopping']",
-  checkout: "[data-test='checkout']",
+  continueShoppingButton: "[data-test='continue-shopping']",
+  checkoutButton: "[data-test='checkout']",
 }
 
 class CartComponents {
@@ -9,11 +9,11 @@ class CartComponents {
   }
 
   async continueShoppingButton() {
-    return await this.page.$(cartLocators.continueShopping)
+    return await this.page.$(cartLocators.continueShoppingButton)
   }
 
   async checkoutButton() {
-    return await this.page.$(cartLocators.checkout)
+    return await this.page.$(cartLocators.checkoutButton)
   }
 }
 
