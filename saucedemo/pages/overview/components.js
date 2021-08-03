@@ -1,12 +1,12 @@
 const overviewLocators = {
-  cancelCheckout: "[data-test='cancel']",
-  finishCheckout: "[data-test='finish']",
-  summaryInfo: "[class='summary_info']",
-  paymentInfo: "text=/saucecard #31337/i",
-  shippingInfo: "text=/FREE PONY EXPRESS DELIVERY!/i",
-  subtotal: "[class='summary_subtotal_label']",
-  tax: "[class='summary_tax_label']",
-  totalPrice: "[class='summary_total_label']",
+  cancelCheckoutButton: "[data-test='cancel']",
+  finishCheckoutButton: "[data-test='finish']",
+  summaryInfoContainer: "[class='summary_info']",
+  paymentInfoText: "text=/saucecard #31337/i",
+  shippingInfoText: "text=/FREE PONY EXPRESS DELIVERY!/i",
+  subtotalText: "[class='summary_subtotal_label']",
+  taxText: "[class='summary_tax_label']",
+  totalPriceText: "[class='summary_total_label']",
 }
 
 class OverviewComponents {
@@ -16,46 +16,50 @@ class OverviewComponents {
 
   async paymentInfoText() {
     return await this.page.$(
-      `${overviewLocators.summaryInfo}` +
+      `${overviewLocators.summaryInfoContainer}` +
         ">>" +
-        `${overviewLocators.paymentInfo}`
+        `${overviewLocators.paymentInfoText}`
     )
   }
 
   async shippingInfoText() {
     return await this.page.$(
-      `${overviewLocators.summaryInfo}` +
+      `${overviewLocators.summaryInfoContainer}` +
         ">>" +
-        `${overviewLocators.shippingInfo}`
+        `${overviewLocators.shippingInfoText}`
     )
   }
 
   async subtotalText() {
     return await this.page.$(
-      `${overviewLocators.summaryInfo}` + ">>" + `${overviewLocators.subtotal}`
+      `${overviewLocators.summaryInfoContainer}` +
+        ">>" +
+        `${overviewLocators.subtotalText}`
     )
   }
 
   async taxText() {
     return await this.page.$(
-      `${overviewLocators.summaryInfo}` + ">>" + `${overviewLocators.tax}`
+      `${overviewLocators.summaryInfoContainer}` +
+        ">>" +
+        `${overviewLocators.taxText}`
     )
   }
 
   async totalPriceText() {
     return await this.page.$(
-      `${overviewLocators.summaryInfo}` +
+      `${overviewLocators.summaryInfoContainer}` +
         ">>" +
-        `${overviewLocators.totalPrice}`
+        `${overviewLocators.totalPriceText}`
     )
   }
 
   async cancelCheckoutButton() {
-    return await this.page.$(overviewLocators.cancelCheckout)
+    return await this.page.$(overviewLocators.cancelCheckoutButton)
   }
 
   async finishCheckoutButton() {
-    return await this.page.$(overviewLocators.finishCheckout)
+    return await this.page.$(overviewLocators.finishCheckoutButton)
   }
 }
 
