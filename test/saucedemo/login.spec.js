@@ -25,19 +25,19 @@ describe("Saucedemo LoginPage: @login", () => {
   })
 
   it("should show accepted users", async () => {
-    const acceptedUsers = await loginController.getAcceptedUsersText()
+    const acceptedUsers = await loginController.getAcceptedUsers()
     expect(acceptedUsers).eql(loginController.acceptedUsers)
   })
 
   it("should show application password", async () => {
-    const systemPassword = await loginController.getPasswordText()
+    const systemPassword = await loginController.getPassword()
     expect(systemPassword).eql(loginController.password)
   })
 
   it("should show locked user error", async () => {
     await loginController.loginWithLockedUser()
     await page.waitForSelector(loginController.locators.errorText)
-    const lockedUserError = await loginController.getErrorMessageText()
+    const lockedUserError = await loginController.getErrorMessage()
     expect(lockedUserError).to.be.equal(
       "Epic sadface: Sorry, this user has been locked out."
     )
@@ -46,14 +46,14 @@ describe("Saucedemo LoginPage: @login", () => {
   it("should show username is required error", async () => {
     await loginController.loginWithoutUser()
     await page.waitForSelector(loginController.locators.errorText)
-    const errorMessage = await loginController.getErrorMessageText()
+    const errorMessage = await loginController.getErrorMessage()
     expect(errorMessage).to.be.equal("Epic sadface: Username is required")
   })
 
   it("should show username and password doesn't match", async () => {
     await loginController.loginWithWrongCredential()
     await page.waitForSelector(loginController.locators.errorText)
-    const errorMessage = await loginController.getErrorMessageText()
+    const errorMessage = await loginController.getErrorMessage()
     expect(errorMessage).to.be.equal(
       "Epic sadface: Username and password do not match any user in this service"
     )

@@ -29,7 +29,7 @@ class CheckoutController {
   }
 
   async getErrorMessage() {
-    const errorElement = await this.components.errorMessage()
+    const errorElement = await this.components.errorMessageText()
     return await errorElement.innerText()
   }
 

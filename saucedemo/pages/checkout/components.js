@@ -1,11 +1,11 @@
 const checkoutLocators = {
   checkoutForm: "[class='checkout_info']",
-  firstName: "[data-test='firstName']",
-  lastName: "[data-test='lastName']",
-  postalCode: "[data-test='postalCode']",
+  firstNameInput: "[data-test='firstName']",
+  lastNameInput: "[data-test='lastName']",
+  postalCodeInput: "[data-test='postalCode']",
   cancelButton: "[data-test='cancel']",
   continueButton: "[data-test='continue']",
-  errorMessage: "[data-test='error']",
+  errorMessageText: "[data-test='error']",
   errorButton: "[data-test='error-button']",
 }
 
@@ -26,21 +26,21 @@ class CheckoutComponents {
     return this.page.$(checkoutLocators.errorButton)
   }
 
-  async errorMessage() {
-    return this.page.$(checkoutLocators.errorMessage)
+  async errorMessageText() {
+    return this.page.$(checkoutLocators.errorMessageText)
   }
 
   async firstNameInput() {
     return this.page.$(
       `${checkoutLocators.checkoutForm}` +
         ">>" +
-        `${checkoutLocators.firstName}`
+        `${checkoutLocators.firstNameInput}`
     )
   }
 
   async lastNameInput() {
     return this.page.$(
-      `${checkoutLocators.checkoutForm}` + ">>" + `${checkoutLocators.lastName}`
+      `${checkoutLocators.checkoutForm}` + ">>" + `${checkoutLocators.lastNameInput}`
     )
   }
 
@@ -48,7 +48,7 @@ class CheckoutComponents {
     return this.page.$(
       `${checkoutLocators.checkoutForm}` +
         ">>" +
-        `${checkoutLocators.postalCode}`
+        `${checkoutLocators.postalCodeInput}`
     )
   }
 }

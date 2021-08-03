@@ -69,18 +69,18 @@ class LoginController {
     await this._login("noname", this.password)
   }
 
-  async getErrorMessageText() {
+  async getErrorMessage() {
     const errorElement = await this.components.errorMessageText()
     return await errorElement.innerText()
   }
 
-  async getAcceptedUsersText() {
+  async getAcceptedUsers() {
     let acceptedUsers = await this.components.acceptedUsersText()
     acceptedUsers = await acceptedUsers.innerText()
     return acceptedUsers.split("\n").filter(Boolean).slice(1)
   }
 
-  async getPasswordText() {
+  async getPassword() {
     let acceptedPassword = await this.components.acceptedPasswordText()
     acceptedPassword = await acceptedPassword.innerText()
     return acceptedPassword.split("\n").filter(Boolean).slice(1).pop()
