@@ -1,8 +1,8 @@
-const { InventoryController } = require("../inventory/controller")
-const { CartComponents, cartLocators } = require("./components")
-const { PrimaryHeaderController } = require("../primaryHeader/controller")
-const { SecondaryHeaderController } = require("../secondaryHeader/controller")
-const { InventoryItemController } = require("../inventoryItem/controller")
+const { InventoryController } = require('../inventory/controller')
+const { CartComponents, cartLocators } = require('./components')
+const { PrimaryHeaderController } = require('../primaryHeader/controller')
+const { SecondaryHeaderController } = require('../secondaryHeader/controller')
+const { InventoryItemController } = require('../inventoryItem/controller')
 
 class CartController {
   constructor(page) {
@@ -16,9 +16,7 @@ class CartController {
   }
 
   async navigate() {
-    await this.page.goto(
-      process.env.SAUCE_CART_URL || "https://www.saucedemo.com/cart.html"
-    )
+    await this.page.goto(process.env.SAUCE_CART_URL || 'https://www.saucedemo.com/cart.html')
   }
 
   async continueShopping() {

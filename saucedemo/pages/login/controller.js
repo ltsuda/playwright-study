@@ -1,27 +1,20 @@
-const { LoginComponents, loginLocators } = require("./components")
+const { LoginComponents, loginLocators } = require('./components')
 
 class LoginController {
   constructor(page) {
     this.page = page
     this.components = new LoginComponents(this.page)
     this.locators = loginLocators
-    this.standardUser = "standard_user"
-    this.lockedUser = "locked_out_user"
-    this.problemUser = "problem_user"
-    this.performanceGlitchUser = "performance_glitch_user"
-    this.acceptedUsers = [
-      this.standardUser,
-      this.lockedUser,
-      this.problemUser,
-      this.performanceGlitchUser,
-    ]
-    this.password = "secret_sauce"
+    this.standardUser = 'standard_user'
+    this.lockedUser = 'locked_out_user'
+    this.problemUser = 'problem_user'
+    this.performanceGlitchUser = 'performance_glitch_user'
+    this.acceptedUsers = [this.standardUser, this.lockedUser, this.problemUser, this.performanceGlitchUser]
+    this.password = 'secret_sauce'
   }
 
   async navigate() {
-    await this.page.goto(
-      process.env.SAUCE_LOGIN_URL || "https://www.saucedemo.com/"
-    )
+    await this.page.goto(process.env.SAUCE_LOGIN_URL || 'https://www.saucedemo.com/')
   }
 
   async fillUserName(username) {
@@ -62,11 +55,11 @@ class LoginController {
   }
 
   async loginWithoutUser() {
-    await this._login("", this.password)
+    await this._login('', this.password)
   }
 
   async loginWithWrongCredential() {
-    await this._login("noname", this.password)
+    await this._login('noname', this.password)
   }
 
   async getErrorMessage() {
@@ -77,13 +70,13 @@ class LoginController {
   async getAcceptedUsers() {
     let acceptedUsers = await this.components.acceptedUsersText()
     acceptedUsers = await acceptedUsers.innerText()
-    return acceptedUsers.split("\n").filter(Boolean).slice(1)
+    return acceptedUsers.split('\n').filter(Boolean).slice(1)
   }
 
   async getPassword() {
     let acceptedPassword = await this.components.acceptedPasswordText()
     acceptedPassword = await acceptedPassword.innerText()
-    return acceptedPassword.split("\n").filter(Boolean).slice(1).pop()
+    return acceptedPassword.split('\n').filter(Boolean).slice(1).pop()
   }
 }
 

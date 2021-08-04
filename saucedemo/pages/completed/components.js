@@ -1,9 +1,9 @@
 const completedLocators = {
-  completedContainer: "[class='checkout_complete_container']",
-  completedHeaderText: "[class='complete-header']",
-  completedText: "[class='complete-text']",
-  completedImage: "[class='pony_express']",
-  completedBackButton: "[data-test='back-to-products']",
+  completedContainer: '[class="checkout_complete_container"]',
+  completedHeaderText: '[class="complete-header"]',
+  completedText: '[class="complete-text"]',
+  completedImage: '[class="pony_express"]',
+  completedBackButton: '[data-test="back-to-products"]',
 }
 
 class CompletedComponents {
@@ -13,33 +13,21 @@ class CompletedComponents {
 
   async completedHeaderText() {
     return await this.page.$(
-      `${completedLocators.completedContainer}` +
-        ">>" +
-        `${completedLocators.completedHeaderText}`
+      `${completedLocators.completedContainer}` + '>>' + `${completedLocators.completedHeaderText}`
     )
   }
 
   async completedText() {
-    return await this.page.$(
-      `${completedLocators.completedContainer}` +
-        ">>" +
-        `${completedLocators.completedText}`
-    )
+    return await this.page.$(`${completedLocators.completedContainer}` + '>>' + `${completedLocators.completedText}`)
   }
 
   async completedImage() {
-    return await this.page.$(
-      `${completedLocators.completedContainer}` +
-        ">>" +
-        `${completedLocators.completedImage}`
-    )
+    return await this.page.$(`${completedLocators.completedContainer}` + '>>' + `${completedLocators.completedImage}`)
   }
 
   async completedBackButton() {
     return await this.page.$(
-      `${completedLocators.completedContainer}` +
-        ">>" +
-        `${completedLocators.completedBackButton}`
+      `${completedLocators.completedContainer}` + '>>' + `${completedLocators.completedBackButton}`
     )
   }
 }

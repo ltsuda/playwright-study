@@ -1,4 +1,4 @@
-const { FooterComponents, footerLocators } = require("./components")
+const { FooterComponents, footerLocators } = require('./components')
 
 class FooterController {
   constructor(page) {
@@ -9,22 +9,22 @@ class FooterController {
 
   async getTwitterLink() {
     const socialElement = await this.components.twitterLink()
-    return await socialElement.getAttribute("href")
+    return await socialElement.getAttribute('href')
   }
 
   async getFacebookLink() {
     const socialElement = await this.components.facebookLink()
-    return await socialElement.getAttribute("href")
+    return await socialElement.getAttribute('href')
   }
 
   async getLinkedinLink() {
     const socialElement = await this.components.linkedinLink()
-    return await socialElement.getAttribute("href")
+    return await socialElement.getAttribute('href')
   }
 
   async getRobotImage() {
     const socialElement = await this.components.robotImage()
-    return await socialElement.getAttribute("src")
+    return await socialElement.getAttribute('src')
   }
 
   async getCopyrightText() {

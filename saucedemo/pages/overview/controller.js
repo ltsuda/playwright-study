@@ -1,8 +1,8 @@
-const { OverviewComponents, overviewLocators } = require("./components")
-const { CompletedController } = require("../completed/controller")
-const { PrimaryHeaderController } = require("../primaryHeader/controller")
-const { SecondaryHeaderController } = require("../secondaryHeader/controller")
-const { InventoryItemController } = require("../inventoryItem/controller")
+const { OverviewComponents, overviewLocators } = require('./components')
+const { CompletedController } = require('../completed/controller')
+const { PrimaryHeaderController } = require('../primaryHeader/controller')
+const { SecondaryHeaderController } = require('../secondaryHeader/controller')
+const { InventoryItemController } = require('../inventoryItem/controller')
 
 class OverviewController {
   constructor(page) {
@@ -38,21 +38,21 @@ class OverviewController {
   async getSubtotal() {
     const subtotalElement = await this.components.subtotalText()
     let subtotal = await subtotalElement.innerText()
-    subtotal = parseFloat(subtotal.replace("Item total: $", ""))
+    subtotal = parseFloat(subtotal.replace('Item total: $', ''))
     return parseFloat(subtotal.toFixed(2))
   }
 
   async getTax() {
     const taxElement = await this.components.taxText()
     let tax = await taxElement.innerText()
-    tax = parseFloat(tax.replace("Tax: $", ""))
+    tax = parseFloat(tax.replace('Tax: $', ''))
     return parseFloat(tax.toFixed(2))
   }
 
   async getTotalPrice() {
     const priceElement = await this.components.totalPriceText()
     let total = await priceElement.innerText()
-    total = parseFloat(total.replace("Total: $", ""))
+    total = parseFloat(total.replace('Total: $', ''))
     return parseFloat(total.toFixed(2))
   }
 

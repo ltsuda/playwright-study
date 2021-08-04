@@ -1,7 +1,4 @@
-const {
-  SecondaryHeaderComponents,
-  secondaryHeaderLocators,
-} = require("./components")
+const { SecondaryHeaderComponents, secondaryHeaderLocators } = require('./components')
 
 class SecondaryHeaderController {
   constructor(page) {

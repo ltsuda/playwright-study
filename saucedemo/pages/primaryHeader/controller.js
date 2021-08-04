@@ -1,8 +1,5 @@
-const {
-  PrimaryHeaderComponents,
-  primaryHeaderLocators,
-} = require("./components")
-const { LoginController } = require("../login/controller")
+const { PrimaryHeaderComponents, primaryHeaderLocators } = require('./components')
+const { LoginController } = require('../login/controller')
 
 class PrimaryHeaderController {
   constructor(page) {

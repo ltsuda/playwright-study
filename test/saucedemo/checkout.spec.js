@@ -1,22 +1,13 @@
-const { chromium } = require("playwright")
-const { expect } = require("chai")
-const { loginAndSaveCookies } = require("../../saucedemo/utils/utils")
-const { CartController } = require("../../saucedemo/pages/cart/controller")
-const {
-  InventoryController,
-} = require("../../saucedemo/pages/inventory/controller")
-const {
-  CheckoutController,
-} = require("../../saucedemo/pages/checkout/controller")
+const { chromium } = require('playwright')
+const { expect } = require('chai')
+const { loginAndSaveCookies } = require('../../saucedemo/utils/utils')
+const { CartController } = require('../../saucedemo/pages/cart/controller')
+const { InventoryController } = require('../../saucedemo/pages/inventory/controller')
+const { CheckoutController } = require('../../saucedemo/pages/checkout/controller')
 
-let browser,
-  context,
-  page,
-  checkoutController,
-  cartController,
-  inventoryController
+let browser, context, page, checkoutController, cartController, inventoryController
 
-describe("Saucedemo CheckoutPage: @checkout", () => {
+describe('Saucedemo CheckoutPage: @checkout', () => {
   before(async () => {
     browser = await chromium.launch()
     await loginAndSaveCookies(browser)
@@ -27,7 +18,7 @@ describe("Saucedemo CheckoutPage: @checkout", () => {
   })
 
   beforeEach(async () => {
-    context = await browser.newContext({ storageState: "auth.json" })
+    context = await browser.newContext({ storageState: 'auth.json' })
     page = await context.newPage()
     inventoryController = new InventoryController(page)
     await inventoryController.navigate()
@@ -42,40 +33,40 @@ describe("Saucedemo CheckoutPage: @checkout", () => {
     await context.close()
   })
 
-  it("should be at Checkout page", async () => {
+  it('should be at Checkout page', async () => {
     expect(await page.url()).to.be.eq(process.env.SAUCE_CHECKOUT_URL)
   })
 
-  it("should go back to Cart if cancel checkout", async () => {
+  it('should go back to Cart if cancel checkout', async () => {
     await checkoutController.cancelCheckout()
     expect(await page.url()).to.be.eq(process.env.SAUCE_CART_URL)
   })
 
-  it("should show firstName error message if empty", async () => {
+  it('should show firstName error message if empty', async () => {
     await checkoutController.continueCheckout()
     const errorMessage = await checkoutController.getErrorMessage()
-    expect(errorMessage).to.be.eq("Error: First Name is required")
+    expect(errorMessage).to.be.eq('Error: First Name is required')
   })
 
-  it("should show lastName error message if empty", async () => {
-    await checkoutController.fillFirstName("John")
+  it('should show lastName error message if empty', async () => {
+    await checkoutController.fillFirstName('John')
     await checkoutController.continueCheckout()
     const errorMessage = await checkoutController.getErrorMessage()
-    expect(errorMessage).to.be.eq("Error: Last Name is required")
+    expect(errorMessage).to.be.eq('Error: Last Name is required')
   })
 
-  it("should show postalCode error message if empty", async () => {
-    await checkoutController.fillFirstName("John")
-    await checkoutController.fillLastName("Bong")
+  it('should show postalCode error message if empty', async () => {
+    await checkoutController.fillFirstName('John')
+    await checkoutController.fillLastName('Bong')
     await checkoutController.continueCheckout()
     const errorMessage = await checkoutController.getErrorMessage()
-    expect(errorMessage).to.be.eq("Error: Postal Code is required")
+    expect(errorMessage).to.be.eq('Error: Postal Code is required')
   })
 
-  it("should go to Checkout Overview page", async () => {
-    await checkoutController.fillFirstName("John")
-    await checkoutController.fillLastName("Bong")
-    await checkoutController.fillPostalCode("555-5555")
+  it('should go to Checkout Overview page', async () => {
+    await checkoutController.fillFirstName('John')
+    await checkoutController.fillLastName('Bong')
+    await checkoutController.fillPostalCode('555-5555')
     await checkoutController.continueCheckout()
     expect(await page.url()).to.be.eq(process.env.SAUCE_OVERVIEW_URL)
   })

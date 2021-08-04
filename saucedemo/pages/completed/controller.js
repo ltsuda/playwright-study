@@ -1,7 +1,7 @@
-const { CompletedComponents, completedLocators } = require("./components")
-const { InventoryController } = require("../inventory/controller")
-const { PrimaryHeaderController } = require("../primaryHeader/controller")
-const { SecondaryHeaderController } = require("../secondaryHeader/controller")
+const { CompletedComponents, completedLocators } = require('./components')
+const { InventoryController } = require('../inventory/controller')
+const { PrimaryHeaderController } = require('../primaryHeader/controller')
+const { SecondaryHeaderController } = require('../secondaryHeader/controller')
 
 class CompletedController {
   constructor(page) {
@@ -30,7 +30,7 @@ class CompletedController {
 
   async getCompletedImage() {
     const imageElement = await this.components.completedImage()
-    return await imageElement.getAttribute("src")
+    return await imageElement.getAttribute('src')
   }
 }
 

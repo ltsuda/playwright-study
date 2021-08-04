@@ -1,7 +1,7 @@
 const secondaryHeaderLocators = {
-  secondaryHeaderContainer: "header_secondary_container",
-  titleText: "title",
-  sortDropdown: "[data-test='product_sort_container']",
+  secondaryHeaderContainer: 'header_secondary_container',
+  titleText: 'title',
+  sortDropdown: '[data-test="product_sort_container"]',
 }
 
 class SecondaryHeaderComponents {
@@ -11,9 +11,7 @@ class SecondaryHeaderComponents {
 
   async titleText() {
     return await this.page.$(
-      `${secondaryHeaderLocators.secondaryHeaderContainer}` +
-        ">>" +
-        `${secondaryHeaderLocators.titleText}`
+      `${secondaryHeaderLocators.secondaryHeaderContainer}` + '>>' + `${secondaryHeaderLocators.titleText}`
     )
   }
 
