@@ -5,12 +5,20 @@ const { CartController } = require('../../saucedemo/pages/cart/controller')
 const { InventoryController } = require('../../saucedemo/pages/inventory/controller')
 const { CheckoutController } = require('../../saucedemo/pages/checkout/controller')
 
-let browser, context, page, cartController, inventoryController, checkoutController, overviewController, addedItem
+let browser,
+  context,
+  page,
+  cartController,
+  inventoryController,
+  checkoutController,
+  overviewController,
+  addedItem,
+  timestamp
 
 describe('Saucedemo OverviewPage: @overview', () => {
   before(async () => {
     browser = await chromium.launch()
-    await loginAndSaveCookies(browser)
+    timestamp = await loginAndSaveCookies(browser)
   })
 
   after(async () => {
@@ -18,7 +26,7 @@ describe('Saucedemo OverviewPage: @overview', () => {
   })
 
   beforeEach(async () => {
-    context = await browser.newContext({ storageState: 'auth.json' })
+    context = await browser.newContext({ storageState: `output/auth_${timestamp}.json` })
     page = await context.newPage()
     inventoryController = new InventoryController(page)
     cartController = new CartController(page)

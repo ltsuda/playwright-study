@@ -3,7 +3,7 @@ const { expect } = require('chai')
 const { loginAndSaveCookies } = require('../../saucedemo/utils/utils')
 const { InventoryController } = require('../../saucedemo/pages/inventory/controller')
 
-let browser, context, page, inventoryController
+let browser, context, page, inventoryController, timestamp
 
 const itemsName = [
   'Sauce Labs Backpack',
@@ -17,7 +17,7 @@ const itemsName = [
 describe('Saucedemo InventoryPage: @inventory', () => {
   before(async () => {
     browser = await chromium.launch()
-    await loginAndSaveCookies(browser)
+    timestamp = await loginAndSaveCookies(browser)
   })
 
   after(async () => {
@@ -25,7 +25,7 @@ describe('Saucedemo InventoryPage: @inventory', () => {
   })
 
   beforeEach(async () => {
-    context = await browser.newContext({ storageState: 'auth.json' })
+    context = await browser.newContext({ storageState: `output/auth_${timestamp}.json` })
     page = await context.newPage()
     inventoryController = new InventoryController(page)
     await inventoryController.navigate()

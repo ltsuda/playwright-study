@@ -1,7 +1,7 @@
 const { LoginController } = require('../../saucedemo/pages/login/controller')
 
-async function saveCookies(context) {
-  await context.storageState({ path: 'auth.json' })
+async function saveCookies(context, timestamp) {
+  await context.storageState({ path: `output/auth_${timestamp}.json` })
 }
 
 async function loginAndSaveCookies(browser) {
@@ -10,8 +10,11 @@ async function loginAndSaveCookies(browser) {
   const loginController = new LoginController(page)
   await loginController.navigate()
   await loginController.loginWithStandardUser()
-  await saveCookies(context)
+  const timestamp = Date.now()
+  await saveCookies(context, timestamp)
   await context.close()
+
+  return timestamp
 }
 
 function randomInt(max) {
