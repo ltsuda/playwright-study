@@ -1,6 +1,6 @@
 const { inventoryLocators } = require('./components')
 const { NavigationBarController } = require('../navigationBar/controller')
-const { SecondaryHeaderController } = require('../secondaryHeader/controller')
+const { TitleHeaderController } = require('../titleHeader/controller')
 const { InventoryItemController } = require('../inventoryItem/controller')
 const { randomInt } = require('../../utils/utils')
 
@@ -16,7 +16,7 @@ class InventoryController {
     this.page = page
     this.itemController = new InventoryItemController(this.page)
     this.navigationBarController = new NavigationBarController(this.page)
-    this.secondaryHeaderController = new SecondaryHeaderController(this.page)
+    this.titleHeaderController = new TitleHeaderController(this.page)
     this.locators = inventoryLocators
     this.itemLocators = this.itemController.locators
   }
@@ -26,7 +26,7 @@ class InventoryController {
   }
 
   async _sortItems(option) {
-    const sortElement = await this.secondaryHeaderController.components.sortDropdown()
+    const sortElement = await this.titleHeaderController.components.sortDropdown()
     await sortElement.selectOption(option)
   }
 

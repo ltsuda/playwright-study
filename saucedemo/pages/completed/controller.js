@@ -1,14 +1,14 @@
 const { CompletedComponents, completedLocators } = require('./components')
 const { InventoryController } = require('../inventory/controller')
 const { NavigationBarController } = require('../navigationBar/controller')
-const { SecondaryHeaderController } = require('../secondaryHeader/controller')
+const { TitleHeaderController } = require('../titleHeader/controller')
 
 class CompletedController {
   constructor(page) {
     this.page = page
     this.components = new CompletedComponents(this.page)
     this.navigationBarController = new NavigationBarController(this.page)
-    this.secondaryHeaderController = new SecondaryHeaderController(this.page)
+    this.titleHeaderController = new TitleHeaderController(this.page)
     this.locators = completedLocators
   }
 
