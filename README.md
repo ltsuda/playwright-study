@@ -11,6 +11,7 @@ Multipurpose Playwright study repository
 - [x] Add completed's page test and resources
 - [x] Add inventory's page test and resources
 - [x] Add login's page test and resources
+- [x] Add footer's test and resources
 - [ ] Add item detail's page test and resources
 - [ ] Add hamburger menu's page test and resources
 - [x] Refactor resources to have common components within its own file

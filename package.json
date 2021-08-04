@@ -7,11 +7,12 @@
     "test": "test"
   },
   "devDependencies": {
+    "@playwright/test": "^1.13.1",
     "chai": "^4.3.4",
     "dotenv": "^8.6.0",
     "eslint": "^7.30.0",
     "mocha": "^8.4.0",
-    "playwright": "^1.13.0",
+    "playwright": "^1.13.1",
     "prettier": "^2.3.2"
   },
   "scripts": {
