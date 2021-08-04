@@ -1,4 +1,4 @@
-const { InventoryComponents, inventoryLocators } = require("./components")
+const { inventoryLocators } = require("./components")
 const { PrimaryHeaderController } = require("../primaryHeader/controller")
 const { SecondaryHeaderController } = require("../secondaryHeader/controller")
 const { InventoryItemController } = require("../inventoryItem/controller")
@@ -14,7 +14,6 @@ const sortOptions = Object.freeze({
 class InventoryController {
   constructor(page) {
     this.page = page
-    this.components = new InventoryComponents(this.page)
     this.itemController = new InventoryItemController(this.page)
     this.primaryHeaderController = new PrimaryHeaderController(this.page)
     this.secondaryHeaderController = new SecondaryHeaderController(this.page)
@@ -57,17 +56,17 @@ class InventoryController {
     const itemsElements = await this.itemController.components.items()
     const randomElement = itemsElements[randomItem]
 
-    const nameElement = await randomElement.$(this.itemLocators.itemName)
+    const nameElement = await randomElement.$(this.itemLocators.itemNameText)
     const name = await nameElement.innerText()
     const descriptionElement = await randomElement.$(
-      this.itemLocators.itemDescription
+      this.itemLocators.itemDescriptionText
     )
     const description = await descriptionElement.innerText()
-    const priceElement = await randomElement.$(this.itemLocators.itemPrice)
+    const priceElement = await randomElement.$(this.itemLocators.itemPriceText)
     let price = await priceElement.innerText()
     price = price.replace("$", "")
 
-    const addToCartButton = await randomElement.$(this.locators.addToCart)
+    const addToCartButton = await randomElement.$(this.locators.addToCartButton)
     await addToCartButton.click()
 
     return {

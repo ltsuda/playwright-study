@@ -49,31 +49,29 @@ describe("Saucedemo InventoryPage: @inventory", () => {
   })
 
   it("should show items sorted alphabetically", async () => {
-    const names = await inventoryController.itemController.getItemsNamesByIndex(
-      "all"
-    )
+    const names =
+      await inventoryController.itemController.getItemsNameTextByIndex("all")
     expect(names).to.be.eql(itemsName.sort())
   })
 
   it("should be possible to sort items from Z to A", async () => {
     await inventoryController.sortZA()
-    const names = await inventoryController.itemController.getItemsNamesByIndex(
-      "all"
-    )
+    const names =
+      await inventoryController.itemController.getItemsNameTextByIndex("all")
     expect(names).to.be.eql(itemsName.sort().reverse())
   })
 
   it("should be possible to sort items prices from Low to High", async () => {
     await inventoryController.sortLowHigh()
     const prices =
-      await inventoryController.itemController.getItemsPricesByIndex("all")
+      await inventoryController.itemController.getItemsPriceTextByIndex("all")
     expect(prices).to.be.eql(prices.sort())
   })
 
   it("should be possible to sort items prices from High to Low", async () => {
     await inventoryController.sortHighLow()
     const prices =
-      await inventoryController.itemController.getItemsPricesByIndex("all")
+      await inventoryController.itemController.getItemsPriceTextByIndex("all")
     expect(prices).to.be.eql(prices.sort().reverse())
   })
 

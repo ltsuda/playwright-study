@@ -29,13 +29,13 @@ class InventoryItemController {
     }
   }
 
-  async getItemsNamesByIndex(index) {
-    const nameElements = await this.components.itemsName()
+  async getItemsNameTextByIndex(index) {
+    const nameElements = await this.components.itemsNameText()
     return await this._getItemsTextByIndex(nameElements, index)
   }
 
-  async getItemsPricesByIndex(index) {
-    const priceElements = await this.components.itemsPrice()
+  async getItemsPriceTextByIndex(index) {
+    const priceElements = await this.components.itemsPriceText()
     var prices = await this._getItemsTextByIndex(priceElements, index)
     var priceString = []
 
@@ -48,17 +48,17 @@ class InventoryItemController {
     return index == "all" ? priceString : priceString[index]
   }
 
-  async getItemObjects(fromPage = "inventory") {
+  async getItemsObject(fromPage = "inventory") {
     const itemsElements = await this.components.items(fromPage)
     let items = []
     for (const itemElement of itemsElements) {
-      const nameElement = await itemElement.$(this.locators.itemName)
+      const nameElement = await itemElement.$(this.locators.itemNameText)
       const name = await nameElement.innerText()
       const descriptionElement = await itemElement.$(
-        this.locators.itemDescription
+        this.locators.itemDescriptionText
       )
       const description = await descriptionElement.innerText()
-      const priceElement = await itemElement.$(this.locators.itemPrice)
+      const priceElement = await itemElement.$(this.locators.itemPriceText)
       let price = await priceElement.innerText()
       price = price.replace("$", "")
 
@@ -73,7 +73,7 @@ class InventoryItemController {
   }
 
   async removeRandomItemFromCart() {
-    const removeFromElements = await this.components.removeItemButtons()
+    const removeFromElements = await this.components.removeItemsButton()
     const randomElement =
       removeFromElements[randomInt(removeFromElements.length)]
     await randomElement.click()

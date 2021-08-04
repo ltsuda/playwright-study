@@ -55,7 +55,7 @@ describe("Saucedemo CartPage: @cart", () => {
   it("should be possible to add an item into the cart", async () => {
     const addedItem = await inventoryController.addRandomItemToCart()
     await inventoryController.primaryHeaderController.navigateToCart()
-    const itemsInCart = await cartController.itemController.getItemObjects(
+    const itemsInCart = await cartController.itemController.getItemsObject(
       "cart"
     )
     expect(itemsInCart[0]).to.be.eql(addedItem)

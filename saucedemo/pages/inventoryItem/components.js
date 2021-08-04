@@ -1,11 +1,10 @@
 const inventoryItemLocators = {
-  cartItem: "[class='cart_item']",
-  item: "[class='inventory_item']",
-  itemName: "[class='inventory_item_name']",
-  itemImage: "[class='inventory_item_img'] >> img",
-  itemDescription: "[class='inventory_item_desc']",
-  itemPrice: "[class='inventory_item_price']",
-  itemRemoveButton: "text=/remove/i",
+  cartItemContainer: "[class='cart_item']",
+  itemContainer: "[class='inventory_item']",
+  itemNameText: "[class='inventory_item_name']",
+  itemDescriptionText: "[class='inventory_item_desc']",
+  itemPriceText: "[class='inventory_item_price']",
+  removeButton: "text=/remove/i",
 }
 
 class InventoryItemComponents {
@@ -16,11 +15,11 @@ class InventoryItemComponents {
   switchItemLocator(fromPage) {
     switch (fromPage) {
       case "cart":
-        return inventoryItemLocators.cartItem
+        return inventoryItemLocators.cartItemContainer
       case "inventory":
-        return inventoryItemLocators.item
+        return inventoryItemLocators.itemContainer
       default:
-        return inventoryItemLocators.item
+        return inventoryItemLocators.itemContainer
     }
   }
 
@@ -29,43 +28,27 @@ class InventoryItemComponents {
     return await this.page.$$(locator)
   }
 
-  async itemsName() {
+  async itemsNameText() {
     return await this.page.$$(
-      `${inventoryItemLocators.item}` +
+      `${inventoryItemLocators.itemContainer}` +
         ">>" +
-        `${inventoryItemLocators.itemName}`
+        `${inventoryItemLocators.itemNameText}`
     )
   }
 
-  async itemsImage() {
+  async itemsPriceText() {
     return await this.page.$$(
-      `${inventoryItemLocators.item}` +
+      `${inventoryItemLocators.itemContainer}` +
         ">>" +
-        `${inventoryItemLocators.itemImage}`
+        `${inventoryItemLocators.itemPriceText}`
     )
   }
 
-  async itemsDescription() {
+  async removeItemsButton() {
     return await this.page.$$(
-      `${inventoryItemLocators.item}` +
+      `${inventoryItemLocators.itemContainer}` +
         ">>" +
-        `${inventoryItemLocators.itemDescription}`
-    )
-  }
-
-  async itemsPrice() {
-    return await this.page.$$(
-      `${inventoryItemLocators.item}` +
-        ">>" +
-        `${inventoryItemLocators.itemPrice}`
-    )
-  }
-
-  async removeItemButtons() {
-    return await this.page.$$(
-      `${inventoryItemLocators.item}` +
-        ">>" +
-        `${inventoryItemLocators.itemRemoveButton}`
+        `${inventoryItemLocators.removeButton}`
     )
   }
 }
