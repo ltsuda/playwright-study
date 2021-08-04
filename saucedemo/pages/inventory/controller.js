@@ -2,6 +2,7 @@ const { inventoryLocators } = require('./components')
 const { NavigationBarController } = require('../navigationBar/controller')
 const { TitleHeaderController } = require('../titleHeader/controller')
 const { InventoryItemController } = require('../inventoryItem/controller')
+const { FooterController } = require('../footer/controller')
 const { randomInt } = require('../../utils/utils')
 
 const sortOptions = Object.freeze({
@@ -17,6 +18,7 @@ class InventoryController {
     this.itemController = new InventoryItemController(this.page)
     this.navigationBarController = new NavigationBarController(this.page)
     this.titleHeaderController = new TitleHeaderController(this.page)
+    this.footerController = new FooterController(this.page)
     this.locators = inventoryLocators
     this.itemLocators = this.itemController.locators
   }

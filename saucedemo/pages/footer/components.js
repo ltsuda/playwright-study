@@ -2,13 +2,13 @@ const footerLocators = {
   twitterSocialLink: '.footer >> .social_twitter > a',
   facebookSocialLink: '.footer >> .social_facebook > a',
   linkdinSocialLink: '.footer >> .social_linkedin > a',
-  copyrightText: '.footer >> footer_copy',
-  footerImage: '.footer >> footer_robot',
+  copyrightText: '.footer >> .footer_copy',
+  footerImage: '.footer >> .footer_robot',
 }
 
 class FooterComponents {
   constructor(page) {
-    this.page
+    this.page = page
   }
 
   async twitterLink() {

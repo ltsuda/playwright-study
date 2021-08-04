@@ -80,4 +80,29 @@ describe('Saucedemo InventoryPage: @inventory', () => {
     await inventoryController.itemController.removeRandomItemFromCart()
     expect(await inventoryController.navigationBarController.getCartBadgeIfExists()).to.be.null
   })
+
+  it('should have Twitter link on footer', async () => {
+    const twitterHref = await inventoryController.footerController.getTwitterLink()
+    expect(twitterHref).to.be.eq('https://twitter.com/saucelabs')
+  })
+
+  it('should have Facebook link on footer', async () => {
+    const facebookHref = await inventoryController.footerController.getFacebookLink()
+    expect(facebookHref).to.be.eq('https://www.facebook.com/saucelabs')
+  })
+
+  it('should have LinkedIn link on footer', async () => {
+    const linkedinHref = await inventoryController.footerController.getLinkedinLink()
+    expect(linkedinHref).to.be.eq('https://www.linkedin.com/company/sauce-labs/')
+  })
+
+  it('should have Swag Bot image on footer', async () => {
+    const swagRobotImage = await inventoryController.footerController.getRobotImage()
+    expect(swagRobotImage).to.be.eq('/static/media/SwagBot_Footer_graphic.2e87acec.png')
+  })
+
+  it('should have Copyright text on footer', async () => {
+    const copyrightText = await inventoryController.footerController.getCopyrightText()
+    expect(copyrightText).to.be.eq('© 2021 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy')
+  })
 })

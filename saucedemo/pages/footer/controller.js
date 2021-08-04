@@ -33,4 +33,4 @@ class FooterController {
   }
 }
 
-module.export = { FooterController }
+module.exports = { FooterController }
