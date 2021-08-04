@@ -1,6 +1,6 @@
 const { chromium } = require('playwright')
 const { expect } = require('chai')
-const { LoginController } = require('../../saucedemo/pages/login/controller')
+const { LoginController } = require('../saucedemo/pages/login/controller')
 
 let browser, context, page, loginController
 

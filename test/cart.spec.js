@@ -1,8 +1,8 @@
 const { chromium } = require('playwright')
 const { expect } = require('chai')
-const { loginAndSaveCookies } = require('../../saucedemo/utils/utils')
-const { CartController } = require('../../saucedemo/pages/cart/controller')
-const { InventoryController } = require('../../saucedemo/pages/inventory/controller')
+const { loginAndSaveCookies } = require('../saucedemo/utils/utils')
+const { CartController } = require('../saucedemo/pages/cart/controller')
+const { InventoryController } = require('../saucedemo/pages/inventory/controller')
 
 let browser, context, page, cartController, inventoryController, timestamp
 

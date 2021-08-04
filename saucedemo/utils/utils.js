@@ -1,4 +1,4 @@
-const { LoginController } = require('../../saucedemo/pages/login/controller')
+const { LoginController } = require('../pages/login/controller')
 
 async function saveCookies(context, timestamp) {
   await context.storageState({ path: `output/auth_${timestamp}.json` })
