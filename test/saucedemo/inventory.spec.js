@@ -69,15 +69,15 @@ describe('Saucedemo InventoryPage: @inventory', () => {
 
   it('should be possible to add product to cart', async () => {
     await inventoryController.addRandomItemToCart()
-    const badgeNumber = await inventoryController.primaryHeaderController.getCartBadgeIfExists()
+    const badgeNumber = await inventoryController.navigationBarController.getCartBadgeIfExists()
     expect(badgeNumber).to.be.eq('1')
   })
 
   it('should be possible to remove product from cart', async () => {
     await inventoryController.addRandomItemToCart()
-    const badgeNumber = await inventoryController.primaryHeaderController.getCartBadgeIfExists()
+    const badgeNumber = await inventoryController.navigationBarController.getCartBadgeIfExists()
     expect(badgeNumber).to.be.eq('1')
     await inventoryController.itemController.removeRandomItemFromCart()
-    expect(await inventoryController.primaryHeaderController.getCartBadgeIfExists()).to.be.null
+    expect(await inventoryController.navigationBarController.getCartBadgeIfExists()).to.be.null
   })
 })

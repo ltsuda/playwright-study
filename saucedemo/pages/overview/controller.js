@@ -1,6 +1,6 @@
 const { OverviewComponents, overviewLocators } = require('./components')
 const { CompletedController } = require('../completed/controller')
-const { PrimaryHeaderController } = require('../primaryHeader/controller')
+const { NavigationBarController } = require('../navigationBar/controller')
 const { SecondaryHeaderController } = require('../secondaryHeader/controller')
 const { InventoryItemController } = require('../inventoryItem/controller')
 
@@ -9,7 +9,7 @@ class OverviewController {
     this.page = page
     this.components = new OverviewComponents(this.page)
     this.itemController = new InventoryItemController(this.page)
-    this.primaryHeaderController = new PrimaryHeaderController(this.page)
+    this.navigationBarController = new NavigationBarController(this.page)
     this.secondaryHeaderController = new SecondaryHeaderController(this.page)
     this.locators = overviewLocators
     this.itemLocators = this.itemController.locators

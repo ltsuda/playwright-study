@@ -1,11 +1,11 @@
-const { PrimaryHeaderComponents, primaryHeaderLocators } = require('./components')
+const { NavigationBarComponents, navigationBarLocators } = require('./components')
 const { LoginController } = require('../login/controller')
 
-class PrimaryHeaderController {
+class NavigationBarController {
   constructor(page) {
     this.page = page
-    this.components = new PrimaryHeaderComponents(this.page)
-    this.locators = primaryHeaderLocators
+    this.components = new NavigationBarComponents(this.page)
+    this.locators = navigationBarLocators
   }
 
   async openMenu() {
@@ -53,4 +53,4 @@ class PrimaryHeaderController {
   }
 }
 
-module.exports = { PrimaryHeaderController }
+module.exports = { NavigationBarController }

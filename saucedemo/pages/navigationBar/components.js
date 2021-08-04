@@ -1,4 +1,4 @@
-const primaryHeaderLocators = {
+const navigationBarLocators = {
   menuButton: 'primary_header >> react-burger-menu-btn',
   menuCloseButton: 'primary_header >> bm-menu-wrap >> react-burger-cross-btn',
   menuAllItemsLink: 'primary_header >> bm-item-list > inventory_sidebar_link',
@@ -9,45 +9,45 @@ const primaryHeaderLocators = {
   cartBadgeText: '[class="shopping_cart_badge"]',
 }
 
-class PrimaryHeaderComponents {
+class NavigationBarComponents {
   constructor(page) {
     this.page = page
   }
 
   async menuButton() {
-    return await this.page.$(this.primaryHeaderLocators.menuButton)
+    return await this.page.$(this.navigationBarLocators.menuButton)
   }
 
   async menuCloseButton() {
-    return await this.page.$(this.primaryHeaderLocators.menuCloseButton)
+    return await this.page.$(this.navigationBarLocators.menuCloseButton)
   }
 
   async menuAllItemsLink() {
-    return await this.page.$(this.primaryHeaderLocators.menuAllItemsLink)
+    return await this.page.$(this.navigationBarLocators.menuAllItemsLink)
   }
 
   async menuAboutLink() {
-    return await this.page.$(this.primaryHeaderLocators.menuAboutLink)
+    return await this.page.$(this.navigationBarLocators.menuAboutLink)
   }
 
   async menuLogoutLink() {
-    return await this.page.$(this.primaryHeaderLocators.menuLogoutLink)
+    return await this.page.$(this.navigationBarLocators.menuLogoutLink)
   }
 
   async menuResetStateLink() {
-    return await this.page.$(this.primaryHeaderLocators.menuResetStateLink)
+    return await this.page.$(this.navigationBarLocators.menuResetStateLink)
   }
 
   async cartLink() {
-    return await this.page.$(primaryHeaderLocators.cartLink)
+    return await this.page.$(navigationBarLocators.cartLink)
   }
 
   async cartBadgeText() {
-    return await this.page.$(`${primaryHeaderLocators.cartLink}` + '>' + `${primaryHeaderLocators.cartBadgeText}`)
+    return await this.page.$(`${navigationBarLocators.cartLink}` + '>' + `${navigationBarLocators.cartBadgeText}`)
   }
 }
 
 module.exports = {
-  PrimaryHeaderComponents,
-  primaryHeaderLocators,
+  NavigationBarComponents,
+  navigationBarLocators,
 }

@@ -1,6 +1,6 @@
 const { InventoryController } = require('../inventory/controller')
 const { CartComponents, cartLocators } = require('./components')
-const { PrimaryHeaderController } = require('../primaryHeader/controller')
+const { NavigationBarController } = require('../navigationBar/controller')
 const { SecondaryHeaderController } = require('../secondaryHeader/controller')
 const { InventoryItemController } = require('../inventoryItem/controller')
 
@@ -9,7 +9,7 @@ class CartController {
     this.page = page
     this.components = new CartComponents(this.page)
     this.itemController = new InventoryItemController(this.page)
-    this.primaryHeaderController = new PrimaryHeaderController(this.page)
+    this.navigationBarController = new NavigationBarController(this.page)
     this.secondaryHeaderController = new SecondaryHeaderController(this.page)
     this.locators = cartLocators
     this.itemLocators = this.itemController.locators

@@ -1,5 +1,5 @@
 const { inventoryLocators } = require('./components')
-const { PrimaryHeaderController } = require('../primaryHeader/controller')
+const { NavigationBarController } = require('../navigationBar/controller')
 const { SecondaryHeaderController } = require('../secondaryHeader/controller')
 const { InventoryItemController } = require('../inventoryItem/controller')
 const { randomInt } = require('../../utils/utils')
@@ -15,7 +15,7 @@ class InventoryController {
   constructor(page) {
     this.page = page
     this.itemController = new InventoryItemController(this.page)
-    this.primaryHeaderController = new PrimaryHeaderController(this.page)
+    this.navigationBarController = new NavigationBarController(this.page)
     this.secondaryHeaderController = new SecondaryHeaderController(this.page)
     this.locators = inventoryLocators
     this.itemLocators = this.itemController.locators
