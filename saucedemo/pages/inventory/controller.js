@@ -1,7 +1,7 @@
 const { inventoryLocators } = require('./components')
+const { InventoryItemController } = require('../inventoryItem/controller')
 const { NavigationBarController } = require('../navigationBar/controller')
 const { TitleHeaderController } = require('../titleHeader/controller')
-const { InventoryItemController } = require('../inventoryItem/controller')
 const { FooterController } = require('../footer/controller')
 const { randomInt } = require('../../utils/utils')
 
@@ -19,12 +19,12 @@ class InventoryController {
     this.navigationBarController = new NavigationBarController(this.page)
     this.titleHeaderController = new TitleHeaderController(this.page)
     this.footerController = new FooterController(this.page)
-    this.locators = inventoryLocators
     this.itemLocators = this.itemController.locators
+    this.locators = inventoryLocators
   }
 
   async navigate() {
-    await this.page.goto(process.env.SAUCE_INVENTORY_URL || 'https://www.saucedemo.com/inventory.html')
+    await this.page.goto('/inventory.html')
   }
 
   async _sortItems(option) {
