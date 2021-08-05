@@ -1,14 +1,9 @@
 const { CheckoutComponents, checkoutLocators } = require('./components')
-const { OverviewController } = require('../overview/controller')
-const { NavigationBarController } = require('../navigationBar/controller')
-const { TitleHeaderController } = require('../titleHeader/controller')
 
 class CheckoutController {
   constructor(page) {
     this.page = page
     this.components = new CheckoutComponents(this.page)
-    this.navigationBarController = new NavigationBarController(this.page)
-    this.titleHeaderController = new TitleHeaderController(this.page)
     this.locators = checkoutLocators
   }
 
@@ -19,13 +14,11 @@ class CheckoutController {
   async cancelCheckout() {
     const cancelElement = await this.components.cancelButton()
     await cancelElement.click()
-    // TODO: How can I return CartController instance without circular dependency?
   }
 
   async continueCheckout() {
     const continueElement = await this.components.continueButton()
     await continueElement.click()
-    return new OverviewController(this.page)
   }
 
   async closeError() {
