@@ -6,16 +6,16 @@ const { CartController } = require('../saucedemo/pages/cart/controller')
 const { CheckoutController } = require('../saucedemo/pages/checkout/controller')
 const { OverviewController } = require('../saucedemo/pages/overview/controller')
 
-let context,
-  inventoryController,
-  inventoryItemController,
-  cartController,
-  checkoutController,
-  overviewController,
-  timestamp
-
 test.describe('Saucedemo CheckoutPage: @checkout', () => {
-  test.beforeAll(async ({ browser }) => {
+  let context,
+    inventoryController,
+    inventoryItemController,
+    cartController,
+    checkoutController,
+    overviewController,
+    timestamp
+
+    test.beforeAll(async ({ browser }) => {
     timestamp = await loginAndSaveCookies(browser)
   })
 
