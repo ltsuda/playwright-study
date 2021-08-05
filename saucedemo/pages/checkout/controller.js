@@ -8,7 +8,7 @@ class CheckoutController {
   }
 
   async navigate() {
-    await this.page.goto('/checkout-step-one.html')
+    await this.page.goto('/checkout-step-one.html', 'networkidle')
   }
 
   async cancelCheckout() {

@@ -1,10 +1,11 @@
 const { test, expect } = require('@playwright/test')
 const { loginAndSaveCookies } = require('../saucedemo/utils/utils')
-const { CheckoutController } = require('../saucedemo/pages/checkout/controller')
-
-let context, inventoryController, checkoutController, overviewController, completedController, timestamp
+const { InventoryController } = require('../saucedemo/pages/inventory/controller')
+const { CompletedController } = require('../saucedemo/pages/completed/controller')
 
 test.describe('Saucedemo CompletedPage:  @completed', () => {
+  let context, inventoryController, completedController, timestamp
+
   test.beforeAll(async ({ browser }) => {
     timestamp = await loginAndSaveCookies(browser)
   })
@@ -12,13 +13,9 @@ test.describe('Saucedemo CompletedPage:  @completed', () => {
   test.beforeEach(async ({ browser, baseURL, page }) => {
     context = await browser.newContext({ baseURL: baseURL, storageState: `output/auth/auth_${timestamp}.json` })
     page = await context.newPage()
-    checkoutController = new CheckoutController(page)
-    await checkoutController.navigate()
-    await checkoutController.fillFirstName('John')
-    await checkoutController.fillLastName('Bong')
-    await checkoutController.fillPostalCode('555-5555')
-    overviewController = await checkoutController.continueCheckout()
-    completedController = await overviewController.finishCheckout()
+    inventoryController = new InventoryController(page)
+    completedController = new CompletedController(page)
+    await completedController.navigate()
   })
 
   test.afterEach(async () => {
@@ -30,7 +27,7 @@ test.describe('Saucedemo CompletedPage:  @completed', () => {
   })
 
   test('should be back at Inventory page when click at the Back Home button', async () => {
-    inventoryController = await completedController.navigateBackHome()
+    await completedController.navigateBackHome()
     expect(await inventoryController.page.url()).toBe('https://www.saucedemo.com/inventory.html')
   })
 

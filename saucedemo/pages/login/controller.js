@@ -14,7 +14,7 @@ class LoginController {
   }
 
   async navigate() {
-    await this.page.goto('https://www.saucedemo.com/')
+    await this.page.goto('https://www.saucedemo.com/', 'networkidle')
   }
 
   async fillUserName(username) {

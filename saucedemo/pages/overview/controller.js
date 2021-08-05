@@ -16,7 +16,7 @@ class OverviewController {
   }
 
   async navigate() {
-    await this.page.goto('/checkout-step-two.html')
+    await this.page.goto('/checkout-step-two.html', 'networkidle')
   }
 
   async cancelCheckout() {

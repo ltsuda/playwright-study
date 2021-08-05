@@ -4,7 +4,7 @@ class InventoryController {
   }
 
   async navigate() {
-    await this.page.goto('/inventory.html')
+    await this.page.goto('/inventory.html', 'networkidle')
   }
 }
 

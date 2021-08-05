@@ -8,7 +8,7 @@ class CartController {
   }
 
   async navigate() {
-    await this.page.goto('/cart.html')
+    await this.page.goto('/cart.html', 'networkidle')
   }
 
   async continueShopping() {
