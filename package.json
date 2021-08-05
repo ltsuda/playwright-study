@@ -8,16 +8,13 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.13.1",
-    "chai": "^4.3.4",
-    "dotenv": "^8.6.0",
     "eslint": "^7.30.0",
-    "mocha": "^8.4.0",
     "playwright": "^1.13.1",
     "prettier": "^2.3.2"
   },
   "scripts": {
-    "test": "mocha --timeout 10000 -r dotenv/config ./test/**/*.js",
-    "test-match": "mocha --grep $MATCH --timeout 10000 -r dotenv/config ./test/**/*.js",
+    "test": "npx playwright test",
+    "test-match": "npx playwright test --grep $MATCH",
     "format-prettier": "prettier --print-width 120 --no-semi --single-quote --write **/*.js"
   },
   "repository": {
