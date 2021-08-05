@@ -5,6 +5,7 @@ const { TitleHeaderController } = require('../saucedemo/pages/titleHeader/contro
 const { InventoryController } = require('../saucedemo/pages/inventory/controller')
 const { InventoryItemController } = require('../saucedemo/pages/inventoryItem/controller')
 const { FooterController } = require('../saucedemo/pages/footer/controller')
+const { CartController } = require('../saucedemo/pages/cart/controller')
 
 test.describe('Saucedemo InventoryPage: @inventory', () => {
   let context, navigationBarController, inventoryController, inventoryItemController, footerController, timestamp
@@ -29,6 +30,7 @@ test.describe('Saucedemo InventoryPage: @inventory', () => {
     titleHeaderController = new TitleHeaderController(page)
     inventoryController = new InventoryController(page)
     inventoryItemController = new InventoryItemController(page)
+    cartController = new CartController(page)
     footerController = new FooterController(page)
     await inventoryController.navigate()
   })
@@ -39,6 +41,11 @@ test.describe('Saucedemo InventoryPage: @inventory', () => {
 
   test('should be at Inventory page after login', async () => {
     expect(await inventoryController.page.url()).toBe('https://www.saucedemo.com/inventory.html')
+  })
+
+  test('should be at Cart page when clicking at the cart button', async () => {
+    await navigationBarController.navigateToCart()
+    expect(await cartController.page.url()).toBe('https://www.saucedemo.com/cart.html')
   })
 
   test('should show a list of items', async () => {

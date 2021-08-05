@@ -34,11 +34,6 @@ test.describe('Saucedemo CartPage: @cart', () => {
     await context.close()
   })
 
-  test('should be at Cart page when clicking at the cart button', async () => {
-    await navigationBarController.navigateToCart()
-    expect(await cartController.page.url()).toBe('https://www.saucedemo.com/cart.html')
-  })
-
   test('should be back at Inventory page when click at the continue shopping button', async () => {
     await cartController.navigate()
     await cartController.continueShopping()
