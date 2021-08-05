@@ -12,9 +12,14 @@ class CheckoutController {
     this.locators = checkoutLocators
   }
 
+  async navigate() {
+    await this.page.goto('/checkout-step-one.html')
+  }
+
   async cancelCheckout() {
     const cancelElement = await this.components.cancelButton()
     await cancelElement.click()
+    // TODO: How can I return CartController instance without circular dependency?
   }
 
   async continueCheckout() {
