@@ -3,6 +3,7 @@ const { CartComponents, cartLocators } = require('./components')
 const { NavigationBarController } = require('../navigationBar/controller')
 const { TitleHeaderController } = require('../titleHeader/controller')
 const { InventoryItemController } = require('../inventoryItem/controller')
+const { CheckoutController } = require('../checkout/controller')
 
 class CartController {
   constructor(page) {
@@ -16,7 +17,7 @@ class CartController {
   }
 
   async navigate() {
-    await this.page.goto(process.env.SAUCE_CART_URL || 'https://www.saucedemo.com/cart.html')
+    await this.page.goto('/cart.html')
   }
 
   async continueShopping() {
@@ -28,6 +29,7 @@ class CartController {
   async navigateToCheckout() {
     const checkoutButton = await this.components.checkoutButton()
     await checkoutButton.click()
+    return new CheckoutController(this.page)
   }
 }
 
