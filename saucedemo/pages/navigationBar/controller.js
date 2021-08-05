@@ -50,6 +50,7 @@ class NavigationBarController {
   async navigateToCart() {
     const cartButtonElement = await this.components.cartLink()
     await cartButtonElement.click()
+    // TODO: How can I return CartController instance without circular dependency?
   }
 }
 
