@@ -10,8 +10,8 @@ test.describe('Saucedemo CheckoutPage: @checkout', () => {
     timestamp = await loginAndSaveCookies(browser)
   })
 
-  test.beforeEach(async ({ browser, baseURL, page}) => {
-    context = await browser.newContext({ baseURL: baseURL, storageState: `output/auth_${timestamp}.json` })
+  test.beforeEach(async ({ browser, baseURL, page }) => {
+    context = await browser.newContext({ baseURL: baseURL, storageState: `output/auth/auth_${timestamp}.json` })
     page = await context.newPage()
     inventoryController = new InventoryController(page)
     await inventoryController.navigate()

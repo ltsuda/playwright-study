@@ -10,7 +10,7 @@ test.describe('Saucedemo CompletedPage:  @completed', () => {
   })
 
   test.beforeEach(async ({ browser, baseURL, page }) => {
-    context = await browser.newContext({ baseURL: baseURL, storageState: `output/auth_${timestamp}.json` })
+    context = await browser.newContext({ baseURL: baseURL, storageState: `output/auth/auth_${timestamp}.json` })
     page = await context.newPage()
     checkoutController = new CheckoutController(page)
     await checkoutController.navigate()

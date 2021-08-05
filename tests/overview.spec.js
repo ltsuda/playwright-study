@@ -12,7 +12,7 @@ test.describe('Saucedemo OverviewPage: @overview', () => {
   })
 
   test.beforeEach(async ({ browser, baseURL, page }) => {
-    context = await browser.newContext({ baseURL: baseURL, storageState: `output/auth_${timestamp}.json` })
+    context = await browser.newContext({ baseURL: baseURL, storageState: `output/auth/auth_${timestamp}.json` })
     page = await context.newPage()
     inventoryController = new InventoryController(page)
     cartController = new CartController(page)

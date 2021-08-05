@@ -1,7 +1,7 @@
 const { LoginController } = require('../pages/login/controller')
 
 async function saveCookies(context, timestamp) {
-  await context.storageState({ path: `output/auth_${timestamp}.json` })
+  await context.storageState({ path: `output/auth/auth_${timestamp}.json` })
 }
 
 async function loginAndSaveCookies(browser) {
