@@ -18,6 +18,7 @@ class OverviewController {
   async cancelCheckout() {
     const cancelCheckoutButton = await this.components.cancelCheckoutButton()
     await cancelCheckoutButton.click()
+    return this.itemController
   }
 
   async finishCheckout() {
