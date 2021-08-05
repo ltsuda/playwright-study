@@ -1,12 +1,12 @@
 const { test, expect } = require('@playwright/test')
 const { loginAndSaveCookies } = require('../saucedemo/utils/utils')
-const { CartController } = require('../saucedemo/pages/cart/controller')
 const { InventoryController } = require('../saucedemo/pages/inventory/controller')
-const { CheckoutController } = require('../saucedemo/pages/checkout/controller')
-
-let context, cartController, inventoryController, checkoutController, overviewController, addedItem, timestamp
+const { InventoryItemController } = require('../saucedemo/pages/inventoryItem/controller')
+const { OverviewController } = require('../saucedemo/pages/overview/controller')
 
 test.describe('Saucedemo OverviewPage: @overview', () => {
+  let context, inventoryController, inventoryItemController, overviewController, timestamp, addedItem
+
   test.beforeAll(async ({ browser }) => {
     timestamp = await loginAndSaveCookies(browser)
   })
@@ -15,16 +15,11 @@ test.describe('Saucedemo OverviewPage: @overview', () => {
     context = await browser.newContext({ baseURL: baseURL, storageState: `output/auth/auth_${timestamp}.json` })
     page = await context.newPage()
     inventoryController = new InventoryController(page)
-    cartController = new CartController(page)
-    checkoutController = new CheckoutController(page)
+    inventoryItemController = new InventoryItemController(page)
+    overviewController = new OverviewController(page)
     await inventoryController.navigate()
-    addedItem = await inventoryController.addRandomItemToCart()
-    await inventoryController.navigationBarController.navigateToCart()
-    await cartController.navigateToCheckout()
-    await checkoutController.fillFirstName('John')
-    await checkoutController.fillLastName('Bong')
-    await checkoutController.fillPostalCode('555-5555')
-    overviewController = await checkoutController.continueCheckout()
+    addedItem = await inventoryItemController.addRandomItemToCart()
+    await overviewController.navigate()
   })
 
   test.afterEach(async () => {
@@ -40,8 +35,13 @@ test.describe('Saucedemo OverviewPage: @overview', () => {
     expect(await inventoryController.page.url()).toBe('https://www.saucedemo.com/inventory.html')
   })
 
+  test('should be at Completed page when click at the finish button', async () => {
+    await overviewController.finishCheckout()
+    expect(await inventoryController.page.url()).toBe('https://www.saucedemo.com/checkout-complete.html')
+  })
+
   test('should have the added items on the Overview Checkout', async () => {
-    const overviewItem = await overviewController.itemController.getItemsObject('cart')
+    const overviewItem = await inventoryItemController.getItemsObject('cart')
     expect(overviewItem[0]).toStrictEqual(addedItem)
   })
 

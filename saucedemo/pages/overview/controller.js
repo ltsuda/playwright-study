@@ -15,6 +15,10 @@ class OverviewController {
     this.itemLocators = this.itemController.locators
   }
 
+  async navigate() {
+    await this.page.goto('/checkout-step-two.html')
+  }
+
   async cancelCheckout() {
     const cancelCheckoutButton = await this.components.cancelCheckoutButton()
     await cancelCheckoutButton.click()
