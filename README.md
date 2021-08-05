@@ -15,4 +15,5 @@ Multipurpose Playwright study repository
 - [ ] Add item detail's page test and resources
 - [ ] Add hamburger menu's page test and resources
 - [x] Refactor resources to have common components within its own file
-- [ ] Refactor to use Playwright Test Runner (since v1.12) instead of mocha
+- [x] Refactor to use Playwright Test Runner (since v1.12) instead of mocha
+- [ ] Refactor to add playwright fixtures
