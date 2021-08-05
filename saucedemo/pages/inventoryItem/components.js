@@ -4,6 +4,7 @@ const inventoryItemLocators = {
   itemNameText: '[class="inventory_item_name"]',
   itemDescriptionText: '[class="inventory_item_desc"]',
   itemPriceText: '[class="inventory_item_price"]',
+  addToCartButton: 'text=/add to cart/i',
   removeButton: 'text=/remove/i',
 }
 

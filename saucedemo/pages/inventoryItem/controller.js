@@ -86,6 +86,30 @@ class InventoryItemController {
 
     return totalPrice.toFixed(2)
   }
+
+  async addRandomItemToCart() {
+    const itemsCount = await this.getItemsCount('inventory')
+    const randomItem = randomInt(itemsCount)
+    const itemsElements = await this.components.items()
+    const randomElement = itemsElements[randomItem]
+
+    const nameElement = await randomElement.$(this.locators.itemNameText)
+    const name = await nameElement.innerText()
+    const descriptionElement = await randomElement.$(this.locators.itemDescriptionText)
+    const description = await descriptionElement.innerText()
+    const priceElement = await randomElement.$(this.locators.itemPriceText)
+    let price = await priceElement.innerText()
+    price = price.replace('$', '')
+
+    const addToCartButton = await randomElement.$(this.locators.addToCartButton)
+    await addToCartButton.click()
+
+    return {
+      name: name,
+      description: description,
+      price: price,
+    }
+  }
 }
 
 module.exports = { InventoryItemController }

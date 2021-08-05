@@ -1,19 +1,23 @@
 const { test, expect } = require('@playwright/test')
 const { loginAndSaveCookies } = require('../saucedemo/utils/utils')
+const { NavigationBarController } = require('../saucedemo/pages/navigationBar/controller')
+const { TitleHeaderController } = require('../saucedemo/pages/titleHeader/controller')
 const { InventoryController } = require('../saucedemo/pages/inventory/controller')
-
-let context, inventoryController, timestamp
-
-const itemsName = [
-  'Sauce Labs Backpack',
-  'Sauce Labs Bike Light',
-  'Sauce Labs Bolt T-Shirt',
-  'Sauce Labs Fleece Jacket',
-  'Sauce Labs Onesie',
-  'Test.allTheThings() T-Shirt (Red)',
-]
+const { InventoryItemController } = require('../saucedemo/pages/inventoryItem/controller')
+const { FooterController } = require('../saucedemo/pages/footer/controller')
 
 test.describe('Saucedemo InventoryPage: @inventory', () => {
+  let context, navigationBarController, inventoryController, inventoryItemController, footerController, timestamp
+
+  const itemsName = [
+    'Sauce Labs Backpack',
+    'Sauce Labs Bike Light',
+    'Sauce Labs Bolt T-Shirt',
+    'Sauce Labs Fleece Jacket',
+    'Sauce Labs Onesie',
+    'Test.allTheThings() T-Shirt (Red)',
+  ]
+
   test.beforeAll(async ({ browser }) => {
     timestamp = await loginAndSaveCookies(browser)
   })
@@ -21,7 +25,11 @@ test.describe('Saucedemo InventoryPage: @inventory', () => {
   test.beforeEach(async ({ browser, baseURL, page }) => {
     context = await browser.newContext({ baseURL: baseURL, storageState: `output/auth/auth_${timestamp}.json` })
     page = await context.newPage()
+    navigationBarController = new NavigationBarController(page)
+    titleHeaderController = new TitleHeaderController(page)
     inventoryController = new InventoryController(page)
+    inventoryItemController = new InventoryItemController(page)
+    footerController = new FooterController(page)
     await inventoryController.navigate()
   })
 
@@ -34,66 +42,60 @@ test.describe('Saucedemo InventoryPage: @inventory', () => {
   })
 
   test('should show a list of items', async () => {
-    expect(await inventoryController.itemController.getItemsCount('inventory')).toBe(itemsName.length)
+    expect(await inventoryItemController.getItemsCount('inventory')).toBe(itemsName.length)
   })
 
   test('should show items sorted alphabetically', async () => {
-    expect(await inventoryController.itemController.getItemsNameTextByIndex('all')).toStrictEqual(itemsName.sort())
+    expect(await inventoryItemController.getItemsNameTextByIndex('all')).toStrictEqual(itemsName.sort())
   })
 
   test('should be possible to sort items from Z to A', async () => {
-    await inventoryController.sortZA()
-    expect(await inventoryController.itemController.getItemsNameTextByIndex('all')).toStrictEqual(
-      itemsName.sort().reverse()
-    )
+    await titleHeaderController.sortZA()
+    expect(await inventoryItemController.getItemsNameTextByIndex('all')).toStrictEqual(itemsName.sort().reverse())
   })
 
   test('should be possible to sort items prices from Low to High', async () => {
-    await inventoryController.sortLowHigh()
-    const prices = await inventoryController.itemController.getItemsPriceTextByIndex('all')
+    await titleHeaderController.sortLowHigh()
+    const prices = await inventoryItemController.getItemsPriceTextByIndex('all')
     expect(prices).toBe(prices.sort())
   })
 
   test('should be possible to sort items prices from High to Low', async () => {
-    await inventoryController.sortHighLow()
-    const prices = await inventoryController.itemController.getItemsPriceTextByIndex('all')
+    await titleHeaderController.sortHighLow()
+    const prices = await inventoryItemController.getItemsPriceTextByIndex('all')
     expect(prices).toBe(prices.sort().reverse())
   })
 
   test('should be possible to add product to cart', async () => {
-    await inventoryController.addRandomItemToCart()
-    expect(await inventoryController.navigationBarController.getCartBadgeIfExists()).toBe('1')
+    await inventoryItemController.addRandomItemToCart()
+    expect(await navigationBarController.getCartBadgeIfExists()).toBe('1')
   })
 
   test('should be possible to remove product from cart', async () => {
-    await inventoryController.addRandomItemToCart()
-    expect(await inventoryController.navigationBarController.getCartBadgeIfExists()).toBe('1')
-    await inventoryController.itemController.removeRandomItemFromCart()
-    expect(await inventoryController.navigationBarController.getCartBadgeIfExists()).toBeNull()
+    await inventoryItemController.addRandomItemToCart()
+    expect(await navigationBarController.getCartBadgeIfExists()).toBe('1')
+    await inventoryItemController.removeRandomItemFromCart()
+    expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()
   })
 
   test('should have Twitter link on footer', async () => {
-    expect(await inventoryController.footerController.getTwitterLink()).toBe('https://twitter.com/saucelabs')
+    expect(await footerController.getTwitterLink()).toBe('https://twitter.com/saucelabs')
   })
 
   test('should have Facebook link on footer', async () => {
-    expect(await inventoryController.footerController.getFacebookLink()).toBe('https://www.facebook.com/saucelabs')
+    expect(await footerController.getFacebookLink()).toBe('https://www.facebook.com/saucelabs')
   })
 
   test('should have LinkedIn link on footer', async () => {
-    expect(await inventoryController.footerController.getLinkedinLink()).toBe(
-      'https://www.linkedin.com/company/sauce-labs/'
-    )
+    expect(await footerController.getLinkedinLink()).toBe('https://www.linkedin.com/company/sauce-labs/')
   })
 
   test('should have Swag Bot image on footer', async () => {
-    expect(await inventoryController.footerController.getRobotImage()).toBe(
-      '/static/media/SwagBot_Footer_graphic.2e87acec.png'
-    )
+    expect(await footerController.getRobotImage()).toBe('/static/media/SwagBot_Footer_graphic.2e87acec.png')
   })
 
   test('should have Copyright text on footer', async () => {
-    expect(await inventoryController.footerController.getCopyrightText()).toBe(
+    expect(await footerController.getCopyrightText()).toBe(
       '© 2021 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy'
     )
   })
