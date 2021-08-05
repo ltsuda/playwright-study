@@ -81,7 +81,7 @@ test.describe('Saucedemo InventoryPage: @inventory', () => {
   test('should be possible to remove product from cart', async () => {
     await inventoryItemController.addRandomItemToCart()
     expect(await navigationBarController.getCartBadgeIfExists()).toBe('1')
-    await inventoryItemController.removeRandomItemFromCart()
+    await inventoryItemController.removeRandomItemFromCart('inventory')
     expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()
   })
 

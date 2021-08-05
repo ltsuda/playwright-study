@@ -5,6 +5,7 @@ const { TitleHeaderController } = require('../saucedemo/pages/titleHeader/contro
 const { InventoryController } = require('../saucedemo/pages/inventory/controller')
 const { InventoryItemController } = require('../saucedemo/pages/inventoryItem/controller')
 const { CartController } = require('../saucedemo/pages/cart/controller')
+const { CheckoutController } = require('../saucedemo/pages/checkout/controller')
 
 test.describe('Saucedemo CartPage: @cart', () => {
   let context,
@@ -27,6 +28,7 @@ test.describe('Saucedemo CartPage: @cart', () => {
     inventoryController = new InventoryController(page)
     inventoryItemController = new InventoryItemController(page)
     cartController = new CartController(page)
+    checkoutController = new CheckoutController(page)
     await inventoryController.navigate()
   })
 
@@ -38,6 +40,12 @@ test.describe('Saucedemo CartPage: @cart', () => {
     await cartController.navigate()
     await cartController.continueShopping()
     expect(await inventoryController.page.url()).toBe('https://www.saucedemo.com/inventory.html')
+  })
+
+  test('should be at Checkout page when click at the checkout button', async () => {
+    await cartController.navigate()
+    await cartController.navigateToCheckout()
+    expect(await checkoutController.page.url()).toBe('https://www.saucedemo.com/checkout-step-one.html')
   })
 
   test('should match cart badge with items in cart', async () => {
@@ -53,5 +61,13 @@ test.describe('Saucedemo CartPage: @cart', () => {
     await navigationBarController.navigateToCart()
     const itemsInCart = await inventoryItemController.getItemsObject('cart')
     expect(itemsInCart[0]).toStrictEqual(addedItem)
+  })
+
+  test('should be possible to remove product from cart', async () => {
+    await inventoryItemController.addRandomItemToCart()
+    await navigationBarController.navigateToCart()
+    expect(await navigationBarController.getCartBadgeIfExists()).toBe('1')
+    await inventoryItemController.removeRandomItemFromCart('cart')
+    expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()
   })
 })

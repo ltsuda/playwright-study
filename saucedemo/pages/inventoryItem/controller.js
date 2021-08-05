@@ -67,8 +67,8 @@ class InventoryItemController {
     return items
   }
 
-  async removeRandomItemFromCart() {
-    const removeFromElements = await this.components.removeItemsButton()
+  async removeRandomItemFromCart(fromPage) {
+    const removeFromElements = await this.components.removeItemsButton(fromPage)
     const randomElement = removeFromElements[randomInt(removeFromElements.length)]
     await randomElement.click()
   }

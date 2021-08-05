@@ -39,8 +39,9 @@ class InventoryItemComponents {
     )
   }
 
-  async removeItemsButton() {
-    return await this.page.$$(`${inventoryItemLocators.itemContainer}` + '>>' + `${inventoryItemLocators.removeButton}`)
+  async removeItemsButton(fromPage) {
+    const locator = this.switchItemLocator(fromPage)
+    return await this.page.$$(`${locator}` + '>>' + `${inventoryItemLocators.removeButton}`)
   }
 }
 
