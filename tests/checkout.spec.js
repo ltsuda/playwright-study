@@ -5,6 +5,7 @@ const { InventoryItemController } = require('../saucedemo/pages/inventoryItem/co
 const { CartController } = require('../saucedemo/pages/cart/controller')
 const { CheckoutController } = require('../saucedemo/pages/checkout/controller')
 const { OverviewController } = require('../saucedemo/pages/overview/controller')
+const { PAGES, PERSONAL_INFO, ERRORS } = require('../saucedemo/utils/consts')
 
 test.describe('Saucedemo CheckoutPage: @checkout', () => {
   let context,
@@ -15,7 +16,7 @@ test.describe('Saucedemo CheckoutPage: @checkout', () => {
     overviewController,
     timestamp
 
-    test.beforeAll(async ({ browser }) => {
+  test.beforeAll(async ({ browser }) => {
     timestamp = await loginAndSaveCookies(browser)
   })
 
@@ -37,37 +38,37 @@ test.describe('Saucedemo CheckoutPage: @checkout', () => {
   })
 
   test('should be at Checkout page', async () => {
-    expect(await checkoutController.page.url()).toBe('https://www.saucedemo.com/checkout-step-one.html')
+    expect(await checkoutController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
   })
 
   test('should go back to Cart if cancel checkout', async () => {
     await checkoutController.cancelCheckout()
-    expect(await cartController.page.url()).toBe('https://www.saucedemo.com/cart.html')
+    expect(await cartController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.CART}`)
   })
 
   test('should show firstName error message if empty', async () => {
     await checkoutController.continueCheckout()
-    expect(await checkoutController.getErrorMessage()).toBe('Error: First Name is required')
+    expect(await checkoutController.getErrorMessage()).toBe(ERRORS.PERSONAL_FIRSTNAME)
   })
 
   test('should show lastName error message if empty', async () => {
-    await checkoutController.fillFirstName('John')
+    await checkoutController.fillFirstName(PERSONAL_INFO.USER1.FIRST_NAME)
     await checkoutController.continueCheckout()
-    expect(await checkoutController.getErrorMessage()).toBe('Error: Last Name is required')
+    expect(await checkoutController.getErrorMessage()).toBe(ERRORS.PERSONAL_LASTNAME)
   })
 
   test('should show postalCode error message if empty', async () => {
-    await checkoutController.fillFirstName('John')
-    await checkoutController.fillLastName('Bong')
+    await checkoutController.fillFirstName(PERSONAL_INFO.USER1.FIRST_NAME)
+    await checkoutController.fillLastName(PERSONAL_INFO.USER1.LAST_NAME)
     await checkoutController.continueCheckout()
-    expect(await checkoutController.getErrorMessage()).toBe('Error: Postal Code is required')
+    expect(await checkoutController.getErrorMessage()).toBe(ERRORS.PERSONAL_ZIP)
   })
 
   test('should go to Checkout Overview page', async () => {
-    await checkoutController.fillFirstName('John')
-    await checkoutController.fillLastName('Bong')
-    await checkoutController.fillPostalCode('555-5555')
+    await checkoutController.fillFirstName(PERSONAL_INFO.USER1.FIRST_NAME)
+    await checkoutController.fillLastName(PERSONAL_INFO.USER1.LAST_NAME)
+    await checkoutController.fillPostalCode(PERSONAL_INFO.USER1.ZIP)
     await checkoutController.continueCheckout()
-    expect(await overviewController.page.url()).toBe('https://www.saucedemo.com/checkout-step-two.html')
+    expect(await overviewController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.OVERVIEW}`)
   })
 })

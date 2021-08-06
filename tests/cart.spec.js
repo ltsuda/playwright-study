@@ -6,6 +6,7 @@ const { InventoryController } = require('../saucedemo/pages/inventory/controller
 const { InventoryItemController } = require('../saucedemo/pages/inventoryItem/controller')
 const { CartController } = require('../saucedemo/pages/cart/controller')
 const { CheckoutController } = require('../saucedemo/pages/checkout/controller')
+const { PAGES } = require('../saucedemo/utils/consts')
 
 test.describe('Saucedemo CartPage: @cart', () => {
   let context,
@@ -39,13 +40,13 @@ test.describe('Saucedemo CartPage: @cart', () => {
   test('should be back at Inventory page when click at the continue shopping button', async () => {
     await cartController.navigate()
     await cartController.continueShopping()
-    expect(await inventoryController.page.url()).toBe('https://www.saucedemo.com/inventory.html')
+    expect(await inventoryController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
   })
 
   test('should be at Checkout page when click at the checkout button', async () => {
     await cartController.navigate()
     await cartController.navigateToCheckout()
-    expect(await checkoutController.page.url()).toBe('https://www.saucedemo.com/checkout-step-one.html')
+    expect(await checkoutController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
   })
 
   test('should match cart badge with items in cart', async () => {

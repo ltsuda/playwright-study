@@ -1,4 +1,5 @@
 const { CompletedComponents, completedLocators } = require('./components')
+const { PAGES } = require('../../utils/consts')
 
 class CompletedController {
   constructor(page) {
@@ -8,7 +9,7 @@ class CompletedController {
   }
 
   async navigate() {
-    await this.page.goto('/checkout-complete.html', 'networkidle')
+    await this.page.goto(PAGES.COMPLETED, 'networkidle')
   }
 
   async navigateBackHome() {

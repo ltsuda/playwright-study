@@ -1,20 +1,21 @@
 const { LoginComponents, loginLocators } = require('./components')
+const { PAGES, CREDENTIALS } = require('../../utils/consts')
 
 class LoginController {
   constructor(page) {
     this.page = page
     this.components = new LoginComponents(this.page)
     this.locators = loginLocators
-    this.standardUser = 'standard_user'
-    this.lockedUser = 'locked_out_user'
-    this.problemUser = 'problem_user'
-    this.performanceGlitchUser = 'performance_glitch_user'
-    this.acceptedUsers = [this.standardUser, this.lockedUser, this.problemUser, this.performanceGlitchUser]
-    this.password = 'secret_sauce'
+    this.standardUser = CREDENTIALS.USERS.STANDARD
+    this.lockedUser = CREDENTIALS.USERS.LOCKED
+    this.problemUser = CREDENTIALS.USERS.PROBLEM
+    this.performanceGlitchUser = CREDENTIALS.USERS.PERFORMANCE
+    this.acceptedUsers = Object.values(CREDENTIALS.USERS)
+    this.password = CREDENTIALS.PASSWORD
   }
 
   async navigate() {
-    await this.page.goto('https://www.saucedemo.com/', 'networkidle')
+    await this.page.goto(`${PAGES.BASEURL}${PAGES.LOGIN}`, 'networkidle')
   }
 
   async fillUserName(username) {

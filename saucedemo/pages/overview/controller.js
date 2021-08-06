@@ -1,34 +1,25 @@
 const { OverviewComponents, overviewLocators } = require('./components')
-const { CompletedController } = require('../completed/controller')
-const { NavigationBarController } = require('../navigationBar/controller')
-const { TitleHeaderController } = require('../titleHeader/controller')
-const { InventoryItemController } = require('../inventoryItem/controller')
+const { PAGES } = require('../../utils/consts')
 
 class OverviewController {
   constructor(page) {
     this.page = page
     this.components = new OverviewComponents(this.page)
-    this.itemController = new InventoryItemController(this.page)
-    this.navigationBarController = new NavigationBarController(this.page)
-    this.titleHeaderController = new TitleHeaderController(this.page)
     this.locators = overviewLocators
-    this.itemLocators = this.itemController.locators
   }
 
   async navigate() {
-    await this.page.goto('/checkout-step-two.html', 'networkidle')
+    await this.page.goto(PAGES.OVERVIEW, 'networkidle')
   }
 
   async cancelCheckout() {
     const cancelCheckoutButton = await this.components.cancelCheckoutButton()
     await cancelCheckoutButton.click()
-    return this.itemController
   }
 
   async finishCheckout() {
     const finishCheckoutButton = await this.components.finishCheckoutButton()
     await finishCheckoutButton.click()
-    return new CompletedController(this.page)
   }
 
   async getPaymentText() {

@@ -1,4 +1,5 @@
 const { CheckoutComponents, checkoutLocators } = require('./components')
+const { PAGES } = require('../../utils/consts')
 
 class CheckoutController {
   constructor(page) {
@@ -8,7 +9,7 @@ class CheckoutController {
   }
 
   async navigate() {
-    await this.page.goto('/checkout-step-one.html', 'networkidle')
+    await this.page.goto(PAGES.CHECKOUT, 'networkidle')
   }
 
   async cancelCheckout() {

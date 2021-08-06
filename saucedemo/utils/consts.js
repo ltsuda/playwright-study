@@ -1,0 +1,70 @@
+const PAGES = {
+  BASEURL: 'https://www.saucedemo.com',
+  LOGIN: '',
+  INVENTORY: '/inventory.html',
+  CART: '/cart.html',
+  CHECKOUT: '/checkout-step-one.html',
+  OVERVIEW: '/checkout-step-two.html',
+  COMPLETED: '/checkout-complete.html',
+}
+
+const SOCIAL_LINKS = {
+  TWITTER: 'https://twitter.com/saucelabs',
+  FACEBOOK: 'https://www.facebook.com/saucelabs',
+  LINKEDIN: 'https://www.linkedin.com/company/sauce-labs/',
+  ABOUT: 'https://saucelabs.com',
+}
+
+const CREDENTIALS = {
+  USERS: {
+    STANDARD: 'standard_user',
+    LOCKED: 'locked_out_user',
+    PROBLEM: 'problem_user',
+    PERFORMANCE: 'performance_glitch_user',
+  },
+  PASSWORD: 'secret_sauce',
+}
+
+const PERSONAL_INFO = {
+  USER1: {
+    FIRST_NAME: 'John',
+    LAST_NAME: 'Doe',
+    ZIP: '555-5555',
+  },
+}
+
+const PRODUCTS = {
+  BACKPACK: 'Sauce Labs Backpack',
+  BIKELIGHT: 'Sauce Labs Bike Light',
+  BOLT_TSHIRT: 'Sauce Labs Bolt T-Shirt',
+  JACKET: 'Sauce Labs Fleece Jacket',
+  ONESIE: 'Sauce Labs Onesie',
+  ALL_TSHIRT: 'Test.allTheThings() T-Shirt (Red)',
+}
+
+const ERRORS = {
+  LOGIN_USER: 'Epic sadface: Username is required',
+  LOGIN_LOCKED: 'Epic sadface: Sorry, this user has been locked out.',
+  LOGIN_CREDENTIALS: 'Epic sadface: Username and password do not match any user in this service',
+  PERSONAL_FIRSTNAME: 'Error: First Name is required',
+  PERSONAL_LASTNAME: 'Error: Last Name is required',
+  PERSONAL_ZIP: 'Error: Postal Code is required',
+}
+
+const MESSAGES = {
+  COMPLETED_THANKS: 'THANK YOU FOR YOUR ORDER',
+  COMPLETED_DISPATCH: 'Your order has been dispatched, and will arrive just as fast as the pony can get there!',
+  COPYRIGHT: '© 2021 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy',
+  OVERVIEW_CARD: 'SauceCard #31337',
+  OVERVIEW_SHIPMENT: 'FREE PONY EXPRESS DELIVERY!',
+}
+
+module.exports = {
+  PAGES,
+  SOCIAL_LINKS,
+  CREDENTIALS,
+  PERSONAL_INFO,
+  PRODUCTS,
+  ERRORS,
+  MESSAGES,
+}

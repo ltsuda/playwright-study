@@ -2,6 +2,7 @@ const { test, expect } = require('@playwright/test')
 const { loginAndSaveCookies } = require('../saucedemo/utils/utils')
 const { InventoryController } = require('../saucedemo/pages/inventory/controller')
 const { CompletedController } = require('../saucedemo/pages/completed/controller')
+const { PAGES, MESSAGES } = require('../saucedemo/utils/consts')
 
 test.describe('Saucedemo CompletedPage:  @completed', () => {
   let context, inventoryController, completedController, timestamp
@@ -23,22 +24,20 @@ test.describe('Saucedemo CompletedPage:  @completed', () => {
   })
 
   test('should be at Completed page', async () => {
-    expect(await completedController.page.url()).toBe('https://www.saucedemo.com/checkout-complete.html')
+    expect(await completedController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.COMPLETED}`)
   })
 
   test('should be back at Inventory page when click at the Back Home button', async () => {
     await completedController.navigateBackHome()
-    expect(await inventoryController.page.url()).toBe('https://www.saucedemo.com/inventory.html')
+    expect(await inventoryController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
   })
 
   test('should have a thank you header message', async () => {
-    expect(await completedController.getHeaderText()).toBe('THANK YOU FOR YOUR ORDER')
+    expect(await completedController.getHeaderText()).toBe(MESSAGES.COMPLETED_THANKS)
   })
 
   test('should have a completed order message', async () => {
-    expect(await completedController.getCompletedText()).toBe(
-      'Your order has been dispatched, and will arrive just as fast as the pony can get there!'
-    )
+    expect(await completedController.getCompletedText()).toBe(MESSAGES.COMPLETED_DISPATCH)
   })
 
   test('should have a completed order image', async () => {

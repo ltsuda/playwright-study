@@ -1,4 +1,5 @@
 const { CartComponents, cartLocators } = require('./components')
+const { PAGES } = require('../../utils/consts')
 
 class CartController {
   constructor(page) {
@@ -8,7 +9,7 @@ class CartController {
   }
 
   async navigate() {
-    await this.page.goto('/cart.html', 'networkidle')
+    await this.page.goto(PAGES.CART, 'networkidle')
   }
 
   async continueShopping() {

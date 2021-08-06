@@ -3,6 +3,7 @@ const { loginAndSaveCookies } = require('../saucedemo/utils/utils')
 const { InventoryController } = require('../saucedemo/pages/inventory/controller')
 const { InventoryItemController } = require('../saucedemo/pages/inventoryItem/controller')
 const { OverviewController } = require('../saucedemo/pages/overview/controller')
+const { PAGES, MESSAGES } = require('../saucedemo/utils/consts')
 
 test.describe('Saucedemo OverviewPage: @overview', () => {
   let context, inventoryController, inventoryItemController, overviewController, timestamp, addedItem
@@ -27,17 +28,17 @@ test.describe('Saucedemo OverviewPage: @overview', () => {
   })
 
   test('should be at Overview page', async () => {
-    expect(await overviewController.page.url()).toBe('https://www.saucedemo.com/checkout-step-two.html')
+    expect(await overviewController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.OVERVIEW}`)
   })
 
   test('should be back at Inventory page when click at the cancel button', async () => {
     await overviewController.cancelCheckout()
-    expect(await inventoryController.page.url()).toBe('https://www.saucedemo.com/inventory.html')
+    expect(await inventoryController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
   })
 
   test('should be at Completed page when click at the finish button', async () => {
     await overviewController.finishCheckout()
-    expect(await inventoryController.page.url()).toBe('https://www.saucedemo.com/checkout-complete.html')
+    expect(await inventoryController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.COMPLETED}`)
   })
 
   test('should have the added items on the Overview Checkout', async () => {
@@ -46,11 +47,11 @@ test.describe('Saucedemo OverviewPage: @overview', () => {
   })
 
   test('should have the payment card information', async () => {
-    expect(await overviewController.getPaymentText()).toBe('SauceCard #31337')
+    expect(await overviewController.getPaymentText()).toBe(MESSAGES.OVERVIEW_CARD)
   })
 
   test('should have the shipping information', async () => {
-    expect(await overviewController.getShippingText()).toBe('FREE PONY EXPRESS DELIVERY!')
+    expect(await overviewController.getShippingText()).toBe(MESSAGES.OVERVIEW_SHIPMENT)
   })
 
   test('should have the subtotal (total before tax)', async () => {
