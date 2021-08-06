@@ -1,19 +1,17 @@
 const { test, expect } = require('@playwright/test')
-const { loginAndSaveCookies } = require('../saucedemo/utils/utils')
 const { InventoryController } = require('../saucedemo/pages/inventory/controller')
 const { InventoryItemController } = require('../saucedemo/pages/inventoryItem/controller')
 const { OverviewController } = require('../saucedemo/pages/overview/controller')
-const { PAGES, MESSAGES } = require('../saucedemo/utils/consts')
+const { PAGES, MESSAGES, CREDENTIALS } = require('../saucedemo/utils/consts')
 
 test.describe('Saucedemo OverviewPage: @overview', () => {
-  let context, inventoryController, inventoryItemController, overviewController, timestamp, addedItem
-
-  test.beforeAll(async ({ browser }) => {
-    timestamp = await loginAndSaveCookies(browser)
-  })
+  let context, inventoryController, inventoryItemController, overviewController, addedItem
 
   test.beforeEach(async ({ browser, baseURL, page }) => {
-    context = await browser.newContext({ baseURL: baseURL, storageState: `output/auth/auth_${timestamp}.json` })
+    context = await browser.newContext({
+      baseURL: baseURL,
+      storageState: { cookies: [{ name: 'session-username', value: `${CREDENTIALS.USERS.STANDARD}`, url: baseURL }] },
+    })
     page = await context.newPage()
     inventoryController = new InventoryController(page)
     inventoryItemController = new InventoryItemController(page)

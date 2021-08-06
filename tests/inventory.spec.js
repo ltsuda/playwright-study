@@ -1,22 +1,20 @@
 const { test, expect } = require('@playwright/test')
-const { loginAndSaveCookies } = require('../saucedemo/utils/utils')
 const { NavigationBarController } = require('../saucedemo/pages/navigationBar/controller')
 const { TitleHeaderController } = require('../saucedemo/pages/titleHeader/controller')
 const { InventoryController } = require('../saucedemo/pages/inventory/controller')
 const { InventoryItemController } = require('../saucedemo/pages/inventoryItem/controller')
 const { FooterController } = require('../saucedemo/pages/footer/controller')
 const { CartController } = require('../saucedemo/pages/cart/controller')
-const { PAGES, PRODUCTS, SOCIAL_LINKS, MESSAGES } = require('../saucedemo/utils/consts')
+const { PAGES, PRODUCTS, SOCIAL_LINKS, MESSAGES, CREDENTIALS } = require('../saucedemo/utils/consts')
 
 test.describe('Saucedemo InventoryPage: @inventory', () => {
-  let context, navigationBarController, inventoryController, inventoryItemController, footerController, timestamp
-
-  test.beforeAll(async ({ browser }) => {
-    timestamp = await loginAndSaveCookies(browser)
-  })
+  let context, navigationBarController, inventoryController, inventoryItemController, footerController
 
   test.beforeEach(async ({ browser, baseURL, page }) => {
-    context = await browser.newContext({ baseURL: baseURL, storageState: `output/auth/auth_${timestamp}.json` })
+    context = await browser.newContext({
+      baseURL: baseURL,
+      storageState: { cookies: [{ name: 'session-username', value: `${CREDENTIALS.USERS.STANDARD}`, url: baseURL }] },
+    })
     page = await context.newPage()
     navigationBarController = new NavigationBarController(page)
     titleHeaderController = new TitleHeaderController(page)
