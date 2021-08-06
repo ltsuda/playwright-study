@@ -16,4 +16,7 @@ Multipurpose Playwright study repository
 - [ ] Add hamburger menu's page test and resources
 - [x] Refactor resources to have common components within its own file
 - [x] Refactor to use Playwright Test Runner (since v1.12) instead of mocha
+- [x] Replace save/load authentication method with setting storageState directly into browser context
+- [x] Add consts file and replace hard-coded values with them
+- [ ] Add cart product directly into browser context: see 'TODO' comments
 - [ ] Refactor to add playwright fixtures

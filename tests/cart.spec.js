@@ -47,6 +47,7 @@ test.describe('Saucedemo CartPage: @cart', () => {
   })
 
   test('should match cart badge with items in cart', async () => {
+    // TODO: replace steps with fixture and cart product in session state
     await inventoryItemController.addRandomItemToCart()
     await navigationBarController.navigateToCart()
     expect(await inventoryItemController.getItemsCount('cart')).toBe(
@@ -62,6 +63,7 @@ test.describe('Saucedemo CartPage: @cart', () => {
   })
 
   test('should be possible to remove product from cart', async () => {
+    // TODO: replace steps with fixture and cart product in session state
     await inventoryItemController.addRandomItemToCart()
     await navigationBarController.navigateToCart()
     expect(await navigationBarController.getCartBadgeIfExists()).toBe('1')

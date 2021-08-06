@@ -40,6 +40,7 @@ test.describe('Saucedemo OverviewPage: @overview', () => {
   })
 
   test('should have the added items on the Overview Checkout', async () => {
+    // TODO: replace steps with fixture and cart product in session state
     const overviewItem = await inventoryItemController.getItemsObject('cart')
     expect(overviewItem[0]).toStrictEqual(addedItem)
   })
@@ -53,15 +54,18 @@ test.describe('Saucedemo OverviewPage: @overview', () => {
   })
 
   test('should have the subtotal (total before tax)', async () => {
+    // TODO: replace steps with fixture and cart product in session state
     const subtotal = await overviewController.getSubtotal()
     expect(String(subtotal)).toBe(parseFloat(addedItem.price).toFixed(2))
   })
 
   test('should have the tax calculated as 8% of subtotal', async () => {
+    // TODO: replace steps with fixture and cart product in session state
     expect(await overviewController.getTax()).toBe(await overviewController.calculateTax())
   })
 
   test('should have the total calculated as subtotal + tax', async () => {
+    // TODO: replace steps with fixture and cart product in session state
     const calculatedTotal = await overviewController.calculateTotal()
     const totalFromPage = await overviewController.getTotalPrice()
     expect(String(totalFromPage)).toBe(calculatedTotal.toFixed(2))
