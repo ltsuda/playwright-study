@@ -29,14 +29,14 @@ class InventoryItemComponents {
     return await this.page.$$(locator)
   }
 
-  async itemsNameText() {
-    return await this.page.$$(`${inventoryItemLocators.itemContainer}` + '>>' + `${inventoryItemLocators.itemNameText}`)
+  async itemsNameText(fromPage) {
+    const locator = this.switchItemLocator(fromPage)
+    return await this.page.$$(`${locator}` + '>>' + `${inventoryItemLocators.itemNameText}`)
   }
 
-  async itemsPriceText() {
-    return await this.page.$$(
-      `${inventoryItemLocators.itemContainer}` + '>>' + `${inventoryItemLocators.itemPriceText}`
-    )
+  async itemsPriceText(fromPage) {
+    const locator = this.switchItemLocator(fromPage)
+    return await this.page.$$(`${locator}` + '>>' + `${inventoryItemLocators.itemPriceText}`)
   }
 
   async removeItemsButton(fromPage) {

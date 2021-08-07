@@ -33,13 +33,22 @@ const PERSONAL_INFO = {
   },
 }
 
-const PRODUCTS = {
+const PRODUCTS_NAMES = {
   BACKPACK: 'Sauce Labs Backpack',
   BIKELIGHT: 'Sauce Labs Bike Light',
   BOLT_TSHIRT: 'Sauce Labs Bolt T-Shirt',
   JACKET: 'Sauce Labs Fleece Jacket',
   ONESIE: 'Sauce Labs Onesie',
   ALL_TSHIRT: 'Test.allTheThings() T-Shirt (Red)',
+}
+
+const PRODUCTS_INDEX = {
+  BACKPACK: 4,
+  BIKELIGHT: 0,
+  BOLT_TSHIRT: 1,
+  JACKET: 5,
+  ONESIE: 2,
+  ALL_TSHIRT: 3,
 }
 
 const ERRORS = {
@@ -64,7 +73,8 @@ module.exports = {
   SOCIAL_LINKS,
   CREDENTIALS,
   PERSONAL_INFO,
-  PRODUCTS,
+  PRODUCTS_NAMES,
+  PRODUCTS_INDEX,
   ERRORS,
   MESSAGES,
 }

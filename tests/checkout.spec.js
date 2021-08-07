@@ -1,66 +1,69 @@
 const { test, expect } = require('@playwright/test')
-const { InventoryController } = require('../saucedemo/pages/inventory/controller')
-const { InventoryItemController } = require('../saucedemo/pages/inventoryItem/controller')
-const { CartController } = require('../saucedemo/pages/cart/controller')
 const { CheckoutController } = require('../saucedemo/pages/checkout/controller')
-const { OverviewController } = require('../saucedemo/pages/overview/controller')
 const { PAGES, PERSONAL_INFO, ERRORS, CREDENTIALS } = require('../saucedemo/utils/consts')
+const { setSession } = require('../saucedemo/utils/utils')
 
 test.describe('Saucedemo CheckoutPage: @checkout', () => {
-  let context, inventoryController, inventoryItemController, cartController, checkoutController, overviewController
-
-  test.beforeEach(async ({ browser, baseURL, page }) => {
-    context = await browser.newContext({
-      baseURL: baseURL,
-      storageState: { cookies: [{ name: 'session-username', value: `${CREDENTIALS.USERS.STANDARD}`, url: baseURL }] },
-    })
-    page = await context.newPage()
-    inventoryController = new InventoryController(page)
-    inventoryItemController = new InventoryItemController(page)
-    cartController = new CartController(page)
+  test.beforeEach(async ({ page }) => {
     checkoutController = new CheckoutController(page)
-    overviewController = new OverviewController(page)
-    await inventoryController.navigate()
-    await inventoryItemController.addRandomItemToCart()
-    await checkoutController.navigate()
   })
 
-  test.afterEach(async () => {
-    await context.close()
+  test('should be at Checkout page', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CHECKOUT,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
+    expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
   })
 
-  test('should be at Checkout page', async () => {
-    expect(await checkoutController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
-  })
-
-  test('should go back to Cart if cancel checkout', async () => {
+  test('should go back to Cart if cancel checkout', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CHECKOUT,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
     await checkoutController.cancelCheckout()
-    expect(await cartController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.CART}`)
+    expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.CART}`)
   })
 
-  test('should show firstName error message if empty', async () => {
+  test('should show firstName error message if empty', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CHECKOUT,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
     await checkoutController.continueCheckout()
     expect(await checkoutController.getErrorMessage()).toBe(ERRORS.PERSONAL_FIRSTNAME)
   })
 
-  test('should show lastName error message if empty', async () => {
+  test('should show lastName error message if empty', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CHECKOUT,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
     await checkoutController.fillFirstName(PERSONAL_INFO.USER1.FIRST_NAME)
     await checkoutController.continueCheckout()
     expect(await checkoutController.getErrorMessage()).toBe(ERRORS.PERSONAL_LASTNAME)
   })
 
-  test('should show postalCode error message if empty', async () => {
+  test('should show postalCode error message if empty', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CHECKOUT,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
     await checkoutController.fillFirstName(PERSONAL_INFO.USER1.FIRST_NAME)
     await checkoutController.fillLastName(PERSONAL_INFO.USER1.LAST_NAME)
     await checkoutController.continueCheckout()
     expect(await checkoutController.getErrorMessage()).toBe(ERRORS.PERSONAL_ZIP)
   })
 
-  test('should go to Checkout Overview page', async () => {
+  test('should go to Checkout Overview page', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CHECKOUT,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
     await checkoutController.fillFirstName(PERSONAL_INFO.USER1.FIRST_NAME)
     await checkoutController.fillLastName(PERSONAL_INFO.USER1.LAST_NAME)
     await checkoutController.fillPostalCode(PERSONAL_INFO.USER1.ZIP)
     await checkoutController.continueCheckout()
-    expect(await overviewController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.OVERVIEW}`)
+    expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.OVERVIEW}`)
   })
 })

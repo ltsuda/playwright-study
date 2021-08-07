@@ -12,10 +12,6 @@ test.describe('Saucedemo LoginPage: @login', () => {
     await loginController.navigate()
   })
 
-  test.afterEach(async () => {
-    await loginController.page.close()
-  })
-
   test('should be at the login url', async () => {
     expect(await loginController.page.url()).toBe(`${PAGES.BASEURL}/`)
   })

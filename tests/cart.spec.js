@@ -1,71 +1,69 @@
 const { test, expect } = require('@playwright/test')
 const { NavigationBarController } = require('../saucedemo/pages/navigationBar/controller')
-const { TitleHeaderController } = require('../saucedemo/pages/titleHeader/controller')
 const { InventoryController } = require('../saucedemo/pages/inventory/controller')
 const { InventoryItemController } = require('../saucedemo/pages/inventoryItem/controller')
 const { CartController } = require('../saucedemo/pages/cart/controller')
 const { CheckoutController } = require('../saucedemo/pages/checkout/controller')
-const { PAGES, CREDENTIALS } = require('../saucedemo/utils/consts')
+const { PAGES, CREDENTIALS, PRODUCTS_INDEX } = require('../saucedemo/utils/consts')
+const { setSession } = require('../saucedemo/utils/utils')
 
 test.describe('Saucedemo CartPage: @cart', () => {
-  let context,
-    navigationBarController,
-    titleHeaderController,
-    inventoryController,
-    inventoryItemController,
-    cartController
+  let navigationBarController, inventoryController, inventoryItemController, cartController
 
-  test.beforeEach(async ({ browser, baseURL, page }) => {
-    context = await browser.newContext({
-      baseURL: baseURL,
-      storageState: { cookies: [{ name: 'session-username', value: `${CREDENTIALS.USERS.STANDARD}`, url: baseURL }] },
-    })
-    page = await context.newPage()
+  test.beforeEach(async ({ page }) => {
     navigationBarController = new NavigationBarController(page)
-    titleHeaderController = new TitleHeaderController(page)
     inventoryController = new InventoryController(page)
     inventoryItemController = new InventoryItemController(page)
     cartController = new CartController(page)
     checkoutController = new CheckoutController(page)
-    await inventoryController.navigate()
   })
 
-  test.afterEach(async () => {
-    await context.close()
-  })
-
-  test('should be back at Inventory page when click at the continue shopping button', async () => {
-    await cartController.navigate()
+  test('should be back at Inventory page when click at the continue shopping button', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CART,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
     await cartController.continueShopping()
-    expect(await inventoryController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
+    expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
   })
 
-  test('should be at Checkout page when click at the checkout button', async () => {
-    await cartController.navigate()
+  test('should be at Checkout page when click at the checkout button', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CART,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
     await cartController.navigateToCheckout()
-    expect(await checkoutController.page.url()).toBe(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
+    expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
   })
 
-  test('should match cart badge with items in cart', async () => {
-    // TODO: replace steps with fixture and cart product in session state
-    await inventoryItemController.addRandomItemToCart()
-    await navigationBarController.navigateToCart()
+  test('should match cart badge with items in cart', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CART,
+      username: CREDENTIALS.USERS.STANDARD,
+      products: [PRODUCTS_INDEX.BOLT_TSHIRT],
+    })
     expect(await inventoryItemController.getItemsCount('cart')).toBe(
       parseInt(await navigationBarController.getCartBadgeIfExists())
     )
   })
 
-  test('should be possible to add an item into the cart', async () => {
+  test('should be possible to add an item into the cart', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.INVENTORY,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
     const addedItem = await inventoryItemController.addRandomItemToCart()
     await navigationBarController.navigateToCart()
     const itemsInCart = await inventoryItemController.getItemsObject('cart')
     expect(itemsInCart[0]).toStrictEqual(addedItem)
   })
 
-  test('should be possible to remove product from cart', async () => {
-    // TODO: replace steps with fixture and cart product in session state
-    await inventoryItemController.addRandomItemToCart()
-    await navigationBarController.navigateToCart()
+  test('should be possible to remove product from cart', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CART,
+      username: CREDENTIALS.USERS.STANDARD,
+      products: [PRODUCTS_INDEX.ONESIE],
+    })
     expect(await navigationBarController.getCartBadgeIfExists()).toBe('1')
     await inventoryItemController.removeRandomItemFromCart('cart')
     expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()

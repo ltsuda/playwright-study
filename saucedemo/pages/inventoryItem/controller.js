@@ -26,13 +26,13 @@ class InventoryItemController {
     }
   }
 
-  async getItemsNameTextByIndex(index) {
-    const nameElements = await this.components.itemsNameText()
+  async getItemsNameTextByIndex(index, fromPage) {
+    const nameElements = await this.components.itemsNameText(fromPage)
     return await this._getItemsTextByIndex(nameElements, index)
   }
 
-  async getItemsPriceTextByIndex(index) {
-    const priceElements = await this.components.itemsPriceText()
+  async getItemsPriceTextByIndex(index, fromPage) {
+    const priceElements = await this.components.itemsPriceText(fromPage)
     var prices = await this._getItemsTextByIndex(priceElements, index)
     var priceString = []
 
