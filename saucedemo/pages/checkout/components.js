@@ -6,7 +6,6 @@ const checkoutLocators = {
   cancelButton: '[data-test="cancel"]',
   continueButton: '[data-test="continue"]',
   errorMessageText: '[data-test="error"]',
-  errorButton: '[data-test="error-button"]',
 }
 
 class CheckoutComponents {
@@ -20,10 +19,6 @@ class CheckoutComponents {
 
   async continueButton() {
     return await this.page.$(checkoutLocators.continueButton)
-  }
-
-  async closeErrorButton() {
-    return this.page.$(checkoutLocators.errorButton)
   }
 
   async errorMessageText() {

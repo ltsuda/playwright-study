@@ -47,14 +47,6 @@ class LoginController {
     await this._login(this.lockedUser, this.password)
   }
 
-  async loginWithProblemUser() {
-    await this._login(this.problemUser, this.password)
-  }
-
-  async loginWithPerformanceGlitchUser() {
-    await this._login(this.performanceGlitchUser, this.password)
-  }
-
   async loginWithoutUser() {
     await this._login('', this.password)
   }

@@ -22,11 +22,6 @@ class CheckoutController {
     await continueElement.click()
   }
 
-  async closeError() {
-    const closeErrorElement = await this.components.closeErrorButton()
-    await closeErrorElement.click()
-  }
-
   async getErrorMessage() {
     const errorElement = await this.components.errorMessageText()
     return await errorElement.innerText()

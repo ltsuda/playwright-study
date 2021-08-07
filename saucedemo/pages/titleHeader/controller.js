@@ -24,10 +24,6 @@ class TitleHeaderController {
     await sortElement.selectOption(option)
   }
 
-  async sortAZ() {
-    await this._sortItems(sortOptions.A_Z)
-  }
-
   async sortZA() {
     await this._sortItems(sortOptions.Z_A)
   }
