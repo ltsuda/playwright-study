@@ -5,6 +5,7 @@ Multipurpose Playwright study repository
 
 
 ## Todo
+- [ ] Update README with project's details
 - [x] Add cart's page test and resources
 - [x] Add checkout's page test and resources
 - [x] Add overview's page test and resources
@@ -18,5 +19,5 @@ Multipurpose Playwright study repository
 - [x] Refactor to use Playwright Test Runner (since v1.12) instead of mocha
 - [x] Replace save/load authentication method with setting storageState directly into browser context
 - [x] Add consts file and replace hard-coded values with them
-- [ ] Add cart product directly into browser context: see 'TODO' comments
-- [ ] Refactor to add playwright fixtures
+- [x] Add cart product directly into browser context: see 'TODO' comments
+- [x] Refactor to add playwright fixtures
