@@ -2,6 +2,7 @@ const PAGES = {
   BASEURL: 'https://www.saucedemo.com',
   LOGIN: '',
   INVENTORY: '/inventory.html',
+  INVENTORY_ITEM: '/inventory-item.html',
   CART: '/cart.html',
   CHECKOUT: '/checkout-step-one.html',
   OVERVIEW: '/checkout-step-two.html',

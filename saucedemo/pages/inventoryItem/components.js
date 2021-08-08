@@ -1,11 +1,13 @@
 const inventoryItemLocators = {
   cartItemContainer: '[class="cart_item"]',
+  detailsItemContainer: '[class="inventory_details_container"]',
   itemContainer: '[class="inventory_item"]',
-  itemNameText: '[class="inventory_item_name"]',
-  itemDescriptionText: '[class="inventory_item_desc"]',
+  itemNameText: '.inventory_item_name',
+  itemDescriptionText: '.inventory_item_desc',
   itemPriceText: '[class="inventory_item_price"]',
   addToCartButton: 'text=/add to cart/i',
   removeButton: 'text=/remove/i',
+  backToProductsButton: '[data-test="back-to-products"]',
 }
 
 class InventoryItemComponents {
@@ -19,6 +21,8 @@ class InventoryItemComponents {
         return inventoryItemLocators.cartItemContainer
       case 'inventory':
         return inventoryItemLocators.itemContainer
+      case 'details':
+        return inventoryItemLocators.detailsItemContainer
       default:
         return inventoryItemLocators.itemContainer
     }
@@ -31,17 +35,34 @@ class InventoryItemComponents {
 
   async itemsNameText(fromPage) {
     const locator = this.switchItemLocator(fromPage)
-    return await this.page.$$(`${locator}` + '>>' + `${inventoryItemLocators.itemNameText}`)
+    const itemLocator =
+      fromPage == 'details'
+        ? inventoryItemLocators.itemNameText.replace('item', 'details')
+        : inventoryItemLocators.itemNameText
+    return await this.page.$$(`${locator}` + '>>' + `${itemLocator}`)
   }
 
   async itemsPriceText(fromPage) {
     const locator = this.switchItemLocator(fromPage)
-    return await this.page.$$(`${locator}` + '>>' + `${inventoryItemLocators.itemPriceText}`)
+    const itemLocator =
+      fromPage == 'details'
+        ? inventoryItemLocators.itemPriceText.replace('_', '_details_')
+        : inventoryItemLocators.itemPriceText
+    return await this.page.$$(`${locator}` + '>>' + `${itemLocator}`)
+  }
+
+  async addToCartButton(fromPage) {
+    const locator = this.switchItemLocator(fromPage)
+    return await this.page.$(`${locator}` + '>>' + `${inventoryItemLocators.addToCartButton}`)
   }
 
   async removeItemsButton(fromPage) {
     const locator = this.switchItemLocator(fromPage)
     return await this.page.$$(`${locator}` + '>>' + `${inventoryItemLocators.removeButton}`)
+  }
+
+  async backToProductsButton() {
+    return await this.page.$(inventoryItemLocators.backToProductsButton)
   }
 }
 

@@ -65,20 +65,22 @@ test.describe('Saucedemo CartPage: @cart', () => {
       products: [PRODUCTS_INDEX.ONESIE],
     })
     expect(await navigationBarController.getCartBadgeIfExists()).toBe('1')
-    await inventoryItemController.removeRandomItemFromCart('cart')
+    await inventoryItemController.removeFromCart('cart')
     expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()
   })
 
-  test('should be possible to open sidemenu', async ({ page }) => {
+  test('should be possible to open sidemenu @slow', async ({ page }) => {
     await setSession(page, {
       path: PAGES.CART,
       username: CREDENTIALS.USERS.STANDARD,
     })
     await navigationBarController.openMenu()
+    const sideMenuElement = await navigationBarController.components.sideMenu()
+    await sideMenuElement.waitForElementState('stable')
     expect(await navigationBarController.isSidemenuVisible()).toBeTruthy()
   })
 
-  test('should be possible to close sidemenu clickint at the X button', async ({ page }) => {
+  test('should be possible to close sidemenu clicking at the X button @slow', async ({ page }) => {
     await setSession(page, {
       path: PAGES.CART,
       username: CREDENTIALS.USERS.STANDARD,

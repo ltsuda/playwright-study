@@ -96,7 +96,7 @@ test.describe('Saucedemo InventoryPage: @inventory', () => {
       path: PAGES.INVENTORY,
       username: CREDENTIALS.USERS.STANDARD,
     })
-    await inventoryItemController.addRandomItemToCart()
+    await inventoryItemController.addToCart('inventory')
     expect(await navigationBarController.getCartBadgeIfExists()).toBe('1')
   })
 
@@ -107,7 +107,7 @@ test.describe('Saucedemo InventoryPage: @inventory', () => {
       products: [PRODUCTS_INDEX.ALL_TSHIRT],
     })
     expect(await navigationBarController.getCartBadgeIfExists()).toBe('1')
-    await inventoryItemController.removeRandomItemFromCart('inventory')
+    await inventoryItemController.removeFromCart('inventory')
     expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()
   })
 

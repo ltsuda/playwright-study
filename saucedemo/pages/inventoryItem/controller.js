@@ -49,11 +49,19 @@ class InventoryItemController {
     const itemsElements = await this.components.items(fromPage)
     let items = []
     for (const itemElement of itemsElements) {
-      const nameElement = await itemElement.$(this.locators.itemNameText)
+      const namelocator =
+        fromPage == 'details' ? this.locators.itemNameText.replace('item', 'details') : this.locators.itemNameText
+      const nameElement = await itemElement.$(namelocator)
       const name = await nameElement.innerText()
-      const descriptionElement = await itemElement.$(this.locators.itemDescriptionText)
+      const descriptionLocator =
+        fromPage == 'details'
+          ? this.locators.itemDescriptionText.replace('item', 'details')
+          : this.locators.itemDescriptionText
+      const descriptionElement = await itemElement.$(descriptionLocator)
       const description = await descriptionElement.innerText()
-      const priceElement = await itemElement.$(this.locators.itemPriceText)
+      const pricelocator =
+        fromPage == 'details' ? this.locators.itemPriceText.replace('item', 'details') : this.locators.itemPriceText
+      const priceElement = await itemElement.$(pricelocator)
       let price = await priceElement.innerText()
       price = price.replace('$', '')
 
@@ -109,6 +117,21 @@ class InventoryItemController {
       description: description,
       price: price,
     }
+  }
+
+  async backToProducts() {
+    const backToProductsButton = await this.components.backToProductsButton()
+    await backToProductsButton.click()
+  }
+
+  async addToCart(fromPage = 'details') {
+    const addToCartButton = await this.components.addToCartButton(fromPage)
+    await addToCartButton.click()
+  }
+
+  async removeFromCart(fromPage = 'details') {
+    const removeFromElements = await this.components.removeItemsButton(fromPage)
+    await removeFromElements[0].click()
   }
 }
 
