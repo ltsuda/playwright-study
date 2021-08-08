@@ -15,7 +15,7 @@ class LoginController {
   }
 
   async navigate() {
-    await this.page.goto(`${PAGES.BASEURL}${PAGES.LOGIN}`, 'networkidle')
+    await this.page.goto(`${PAGES.LOGIN}`, 'networkidle')
   }
 
   async fillUserName(username) {

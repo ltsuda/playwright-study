@@ -18,7 +18,7 @@ async function setSession(page, data = {}) {
     },
     [username, productsContent]
   )
-  await page.goto(`${BASEURL}${path}`, 'networkidle')
+  await page.goto(`${path}`, 'networkidle')
 }
 
 module.exports = {
