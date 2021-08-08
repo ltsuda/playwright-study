@@ -1,5 +1,4 @@
 const { NavigationBarComponents, navigationBarLocators } = require('./components')
-const { LoginController } = require('../login/controller')
 
 class NavigationBarController {
   constructor(page) {
@@ -9,34 +8,33 @@ class NavigationBarController {
   }
 
   async openMenu() {
-    const menuElement = this.components.menuButton()
+    const menuElement = await this.components.menuButton()
     await menuElement.click()
   }
 
   async closeMenu() {
-    const closeMenuElement = this.components.menuCloseButton()
+    const closeMenuElement = await this.components.menuCloseButton()
     await closeMenuElement.click()
   }
 
-  async navigateToInventory() {
-    const closeMenuElement = this.components.menuAllItemsLink()
-    await closeMenuElement.click()
+  async allItems() {
+    const allItemMenuElement = await this.components.menuAllItemsLink()
+    await allItemMenuElement.click()
   }
 
-  async navigateToSauceLabsSite() {
-    const closeMenuElement = this.components.menuAboutLink()
-    await closeMenuElement.click()
+  async about() {
+    const aboutElement = await this.components.menuAboutLink()
+    await aboutElement.click()
   }
 
   async logout() {
-    const closeMenuElement = this.components.menuLogoutLink()
-    await closeMenuElement.click()
-    return new LoginController(this.page)
+    const logoutMenuElement = await this.components.menuLogoutLink()
+    await logoutMenuElement.click()
   }
 
   async resetState() {
-    const closeMenuElement = this.components.menuResetStateLink()
-    await closeMenuElement.click()
+    const resetMenuElement = await this.components.menuResetStateLink()
+    await resetMenuElement.click()
   }
 
   async getCartBadgeIfExists() {
@@ -50,6 +48,11 @@ class NavigationBarController {
   async navigateToCart() {
     const cartButtonElement = await this.components.cartLink()
     await cartButtonElement.click()
+  }
+
+  async isSidemenuVisible() {
+    const sideMenuElement = await this.components.sideMenu()
+    return await sideMenuElement.isVisible()
   }
 }
 

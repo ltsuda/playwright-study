@@ -6,13 +6,13 @@ const PAGES = {
   CHECKOUT: '/checkout-step-one.html',
   OVERVIEW: '/checkout-step-two.html',
   COMPLETED: '/checkout-complete.html',
+  ABOUT: 'https://saucelabs.com/',
 }
 
 const SOCIAL_LINKS = {
   TWITTER: 'https://twitter.com/saucelabs',
   FACEBOOK: 'https://www.facebook.com/saucelabs',
   LINKEDIN: 'https://www.linkedin.com/company/sauce-labs/',
-  ABOUT: 'https://saucelabs.com',
 }
 
 const CREDENTIALS = {

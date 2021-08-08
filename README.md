@@ -14,7 +14,7 @@ Multipurpose Playwright study repository
 - [x] Add login's page test and resources
 - [x] Add footer's test and resources
 - [ ] Add item detail's page test and resources
-- [ ] Add hamburger menu's page test and resources
+- [x] Add side menu's page test and resources
 - [x] Refactor resources to have common components within its own file
 - [x] Refactor to use Playwright Test Runner (since v1.12) instead of mocha
 - [x] Replace save/load authentication method with setting storageState directly into browser context

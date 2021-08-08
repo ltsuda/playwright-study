@@ -1,10 +1,11 @@
 const navigationBarLocators = {
-  menuButton: 'primary_header >> react-burger-menu-btn',
-  menuCloseButton: 'primary_header >> bm-menu-wrap >> react-burger-cross-btn',
-  menuAllItemsLink: 'primary_header >> bm-item-list > inventory_sidebar_link',
-  menuAboutLink: 'primary_header >> bm-item-list > about_sidebar_link',
-  menuLogoutLink: 'primary_header >> bm-item-list > logout_sidebar_link',
-  menuResetStateLink: 'primary_header >> bm-item-list > reset_sidebar_link',
+  sideMenu: '.bm-menu-wrap',
+  menuButton: '#react-burger-menu-btn',
+  menuCloseButton: '.bm-cross-button',
+  menuAllItemsLink: '#inventory_sidebar_link',
+  menuAboutLink: '#about_sidebar_link',
+  menuLogoutLink: '#logout_sidebar_link',
+  menuResetStateLink: '#reset_sidebar_link',
   cartLink: '[class="shopping_cart_link"]',
   cartBadgeText: '[class="shopping_cart_badge"]',
 }
@@ -14,28 +15,32 @@ class NavigationBarComponents {
     this.page = page
   }
 
+  async sideMenu() {
+    return await this.page.$(navigationBarLocators.sideMenu)
+  }
+
   async menuButton() {
-    return await this.page.$(this.navigationBarLocators.menuButton)
+    return await this.page.$(navigationBarLocators.menuButton)
   }
 
   async menuCloseButton() {
-    return await this.page.$(this.navigationBarLocators.menuCloseButton)
+    return await this.page.$(navigationBarLocators.menuCloseButton)
   }
 
   async menuAllItemsLink() {
-    return await this.page.$(this.navigationBarLocators.menuAllItemsLink)
+    return await this.page.$(navigationBarLocators.menuAllItemsLink)
   }
 
   async menuAboutLink() {
-    return await this.page.$(this.navigationBarLocators.menuAboutLink)
+    return await this.page.$(navigationBarLocators.menuAboutLink)
   }
 
   async menuLogoutLink() {
-    return await this.page.$(this.navigationBarLocators.menuLogoutLink)
+    return await this.page.$(navigationBarLocators.menuLogoutLink)
   }
 
   async menuResetStateLink() {
-    return await this.page.$(this.navigationBarLocators.menuResetStateLink)
+    return await this.page.$(navigationBarLocators.menuResetStateLink)
   }
 
   async cartLink() {

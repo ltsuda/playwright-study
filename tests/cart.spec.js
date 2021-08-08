@@ -68,4 +68,68 @@ test.describe('Saucedemo CartPage: @cart', () => {
     await inventoryItemController.removeRandomItemFromCart('cart')
     expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()
   })
+
+  test('should be possible to open sidemenu', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CART,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
+    await navigationBarController.openMenu()
+    expect(await navigationBarController.isSidemenuVisible()).toBeTruthy()
+  })
+
+  test('should be possible to close sidemenu clickint at the X button', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CART,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
+    await navigationBarController.openMenu()
+    const sideMenuElement = await navigationBarController.components.sideMenu()
+    await sideMenuElement.waitForElementState('stable')
+    await navigationBarController.closeMenu()
+    await sideMenuElement.waitForElementState('hidden')
+    expect(await navigationBarController.isSidemenuVisible()).toBeFalsy()
+  })
+
+  test('should remove cart items when clicking at the reset state link on menu', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CART,
+      username: CREDENTIALS.USERS.STANDARD,
+      products: [PRODUCTS_INDEX.ALL_TSHIRT, PRODUCTS_INDEX.BOLT_TSHIRT],
+    })
+    expect(await navigationBarController.getCartBadgeIfExists()).toBe('2')
+    await navigationBarController.openMenu()
+    await navigationBarController.resetState()
+    expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()
+  })
+
+  test('should back at Invetory page when clicking at the all items link on menu', async ({ baseURL, page }) => {
+    await setSession(page, {
+      path: PAGES.CART,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
+    await navigationBarController.openMenu()
+    await navigationBarController.allItems()
+    expect(page.url()).toBe(`${baseURL}${PAGES.INVENTORY}`)
+  })
+
+  test('should navigate to SauceLabs page when clicking at the about link on menu @slow', async ({ page }) => {
+    await setSession(page, {
+      path: PAGES.CART,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
+    await navigationBarController.openMenu()
+    await navigationBarController.about()
+    expect(page.url()).toBe(PAGES.ABOUT)
+  })
+
+  test('should be at Login page when clicking at the logout link on menu', async ({ baseURL, page }) => {
+    await setSession(page, {
+      path: PAGES.CART,
+      username: CREDENTIALS.USERS.STANDARD,
+    })
+    await navigationBarController.openMenu()
+    await navigationBarController.logout()
+    expect(page.url()).toBe(`${baseURL}/`)
+  })
 })
