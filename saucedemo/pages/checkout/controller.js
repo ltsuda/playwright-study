@@ -1,5 +1,5 @@
 const { CheckoutComponents, checkoutLocators } = require('./components')
-const { PAGES } = require('../../utils/consts')
+const { PAGES, PERSONAL_INFO } = require('../../utils/consts')
 
 class CheckoutController {
   constructor(page) {
@@ -40,6 +40,17 @@ class CheckoutController {
   async fillPostalCode(postalCode) {
     const postalCodeElement = await this.components.postalCodeInput()
     await postalCodeElement.fill(postalCode)
+  }
+
+  async submitCheckout(
+    firstName = PERSONAL_INFO.USER1.FIRST_NAME,
+    lastName = PERSONAL_INFO.USER1.LAST_NAME,
+    postalCode = PERSONAL_INFO.USER1.ZIP
+  ) {
+    await this.fillFirstName(firstName)
+    await this.fillLastName(lastName)
+    await this.fillPostalCode(postalCode)
+    await this.continueCheckout()
   }
 }
 

@@ -6,6 +6,8 @@ Multipurpose Playwright study repository
 
 ## Todo
 - [ ] Update README with project's details
+- [ ] Add Visual tests using Playwright .toMatchSnapshot matcher
+- [ ] Add Smoke tests checking for *_container and title elements
 - [x] Add cart's page test and resources
 - [x] Add checkout's page test and resources
 - [x] Add overview's page test and resources
