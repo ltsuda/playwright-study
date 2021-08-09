@@ -13,8 +13,9 @@
     "prettier": "^2.3.2"
   },
   "scripts": {
-    "test": "npx playwright test",
-    "test-match": "npx playwright test --grep $MATCH",
+    "test": "npx playwright test --project 'Chromium HD'",
+    "test-match": "npx playwright test --grep $MATCH --project 'Chromium HD'",
+    "test-all": "npx playwright test",
     "format-prettier": "prettier --print-width 120 --no-semi --single-quote --write '**/*.js'"
   },
   "repository": {
