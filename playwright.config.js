@@ -17,7 +17,7 @@ const config = {
 
   projects: [
     {
-      name: 'Chromium HD',
+      name: 'chromium-hd',
       outputDir: '../test-results/chromium-hd/',
       use: {
         viewport: { width: 1280, height: 720 },
@@ -25,7 +25,7 @@ const config = {
       },
     },
     {
-      name: 'Chromium Full HD',
+      name: 'chromium-fhd',
       outputDir: '../test-results/chromium-fhd/',
       use: {
         viewport: { width: 1920, height: 1080 },
@@ -33,7 +33,7 @@ const config = {
       },
     },
     {
-      name: 'Chrome HD',
+      name: 'chrome-hd',
       outputDir: '../test-results/chrome-hd/',
       use: {
         viewport: { width: 1280, height: 720 },
@@ -42,7 +42,7 @@ const config = {
       },
     },
     {
-      name: 'Chrome Full HD',
+      name: 'chrome-fhd',
       outputDir: '../test-results/chrome-fhd/',
       use: {
         viewport: { width: 1920, height: 1080 },
@@ -53,16 +53,18 @@ const config = {
     // TODO: Test other browsers
     // FIXME: Test fails with page not loaded (white page) or missing elements
     // {
-    //     name: 'Firefox',
-    //     outputDir: 'output/firefox/',
-    //     use: {
-    //         browserName: 'firefox',
-    //     }
+    //   name: 'firefox-hd',
+    //   outputDir: 'output/firefox/',
+    //   use: {
+    //     viewport: { width: 1280, height: 720 },
+    //     browserName: 'firefox',
+    //   },
     // },
     // {
-    //     name: 'WebKit',
+    //     name: 'webkit-hd',
     //     outputDir: 'output/webkit/',
     //     use: {
+    //       viewport: { width: 1280, height: 720 },
     //         browserName: 'webkit',
     //     }
     // },

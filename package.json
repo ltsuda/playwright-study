@@ -13,10 +13,10 @@
     "prettier": "^2.3.2"
   },
   "scripts": {
-    "test": "npx playwright test --project 'Chromium HD'",
-    "test:match": "npx playwright test --grep $MATCH --project 'Chromium HD'",
-    "test:visual": "npx playwright test --grep @visual",
-    "test:all": "npx playwright test",
+    "test": "npx playwright test --grep-invert '@visual' --project 'chromium-hd'",
+    "test:match": "npx playwright test --grep-invert '@visual' --grep $MATCH --project 'chromium-hd'",
+    "test:visual": "npx playwright test --grep @visual --project 'chromium-hd'",
+    "test:all": "npx playwright test --grep-invert '@visual'",
     "format-prettier": "prettier --print-width 120 --no-semi --single-quote --write '**/*.js'"
   },
   "repository": {
