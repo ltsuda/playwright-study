@@ -38,7 +38,7 @@ test.describe('Saucedemo OverviewPage: @overview', () => {
     expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.COMPLETED}`)
   })
 
-  test('should have the added items on the Overview Checkout', async ({ page }) => {
+  test('should have the added items on the Overview Checkout @smoke', async ({ page }) => {
     await setSession(page, {
       path: PAGES.OVERVIEW,
       username: CREDENTIALS.USERS.STANDARD,

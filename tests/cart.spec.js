@@ -47,7 +47,7 @@ test.describe('Saucedemo CartPage: @cart', () => {
     )
   })
 
-  test('should be possible to add an item into the cart', async ({ page }) => {
+  test('should be possible to add an item into the cart @smoke', async ({ page }) => {
     await setSession(page, {
       path: PAGES.INVENTORY,
       username: CREDENTIALS.USERS.STANDARD,
@@ -69,7 +69,7 @@ test.describe('Saucedemo CartPage: @cart', () => {
     expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()
   })
 
-  test('should be possible to open sidemenu @slow', async ({ page }) => {
+  test('should be possible to open sidemenu @slow @smoke', async ({ page }) => {
     await setSession(page, {
       path: PAGES.CART,
       username: CREDENTIALS.USERS.STANDARD,

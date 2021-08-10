@@ -44,7 +44,7 @@ test.describe('Saucedemo LoginPage: @login', () => {
     expect(await loginController.getErrorMessage()).toEqual(ERRORS.LOGIN_CREDENTIALS)
   })
 
-  test('should navigate to inventory page after successful login', async () => {
+  test('should navigate to inventory page after successful login @smoke', async () => {
     await loginController.loginWithStandardUser()
     expect(await inventoryController.page.url()).toEqual(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
   })

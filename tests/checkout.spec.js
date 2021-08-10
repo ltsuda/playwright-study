@@ -55,7 +55,7 @@ test.describe('Saucedemo CheckoutPage: @checkout', () => {
     expect(await checkoutController.getErrorMessage()).toBe(ERRORS.PERSONAL_ZIP)
   })
 
-  test('should go to Checkout Overview page', async ({ page }) => {
+  test('should go to Checkout Overview page @smoke', async ({ page }) => {
     await setSession(page, {
       path: PAGES.CHECKOUT,
       username: CREDENTIALS.USERS.STANDARD,

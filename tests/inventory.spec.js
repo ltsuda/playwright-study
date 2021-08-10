@@ -42,7 +42,7 @@ test.describe('Saucedemo InventoryPage: @inventory', () => {
     expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.CART}`)
   })
 
-  test('should show a list of items', async ({ page }) => {
+  test('should show a list of items @smoke', async ({ page }) => {
     await setSession(page, {
       path: PAGES.INVENTORY,
       username: CREDENTIALS.USERS.STANDARD,
@@ -91,7 +91,7 @@ test.describe('Saucedemo InventoryPage: @inventory', () => {
     expect(prices).toBe(prices.sort().reverse())
   })
 
-  test('should be possible to add product to cart', async ({ page }) => {
+  test('should be possible to add product to cart @smoke', async ({ page }) => {
     await setSession(page, {
       path: PAGES.INVENTORY,
       username: CREDENTIALS.USERS.STANDARD,

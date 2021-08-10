@@ -16,6 +16,8 @@
     "test": "npx playwright test --grep-invert '@visual' --project 'chromium-hd'",
     "test:match": "npx playwright test --grep-invert '@visual' --grep $MATCH --project 'chromium-hd'",
     "test:visual": "npx playwright test --grep @visual --project 'chromium-hd'",
+    "test:e2e": "npx playwright test --grep @e2e --project 'chromium-hd'",
+    "test:smoke": "npx playwright test --grep @smoke --project 'chromium-hd'",
     "test:all": "npx playwright test --grep-invert '@visual'",
     "format-prettier": "prettier --print-width 120 --no-semi --single-quote --write '**/*.js'"
   },
