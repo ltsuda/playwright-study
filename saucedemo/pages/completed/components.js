@@ -11,6 +11,10 @@ class CompletedComponents {
     this.page = page
   }
 
+  async completedContainer() {
+    return await this.page.$(completedLocators.completedContainer)
+  }
+
   async completedHeaderText() {
     return await this.page.$(
       `${completedLocators.completedContainer}` + '>>' + `${completedLocators.completedHeaderText}`

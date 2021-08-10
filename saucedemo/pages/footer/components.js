@@ -1,4 +1,5 @@
 const footerLocators = {
+  footerContainer: '.footer',
   twitterSocialLink: '.footer >> .social_twitter > a',
   facebookSocialLink: '.footer >> .social_facebook > a',
   linkdinSocialLink: '.footer >> .social_linkedin > a',
@@ -9,6 +10,10 @@ const footerLocators = {
 class FooterComponents {
   constructor(page) {
     this.page = page
+  }
+
+  async footerContainer() {
+    return await this.page.$(footerLocators.footerContainer)
   }
 
   async twitterLink() {

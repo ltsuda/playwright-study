@@ -12,6 +12,11 @@ class OverviewController {
     await this.page.goto(PAGES.OVERVIEW, 'networkidle')
   }
 
+  async screenIsVisible() {
+    const overviewContainerElement = await this.components.overviewContainer()
+    await overviewContainerElement.isVisible()
+  }
+
   async cancelCheckout() {
     const cancelCheckoutButton = await this.components.cancelCheckoutButton()
     await cancelCheckoutButton.click()

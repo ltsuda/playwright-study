@@ -18,6 +18,13 @@ class LoginController {
     await this.page.goto(`${PAGES.LOGIN}`, 'networkidle')
   }
 
+  async screenIsVisible() {
+    const loginContainerElement = await this.components.loginContainer()
+    const credentialsContainerElement = await this.components.credentialsContainer()
+    await loginContainerElement.isVisible()
+    await credentialsContainerElement.isVisible()
+  }
+
   async fillUserName(username) {
     const usernameElement = await this.components.usernameInput()
     await usernameElement.fill(username)

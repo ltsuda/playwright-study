@@ -12,6 +12,11 @@ class CartController {
     await this.page.goto(PAGES.CART, 'networkidle')
   }
 
+  async screenIsVisible() {
+    const cartContainerElement = await this.components.cartContainer()
+    await cartContainerElement.isVisible()
+  }
+
   async continueShopping() {
     const continueButton = await this.components.continueShoppingButton()
     await continueButton.click()

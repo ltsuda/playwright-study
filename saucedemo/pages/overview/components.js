@@ -1,4 +1,5 @@
 const overviewLocators = {
+  overviewContainer: '.checkout_summary_container',
   cancelCheckoutButton: '[data-test="cancel"]',
   finishCheckoutButton: '[data-test="finish"]',
   summaryInfoContainer: '[class="summary_info"]',
@@ -12,6 +13,10 @@ const overviewLocators = {
 class OverviewComponents {
   constructor(page) {
     this.page = page
+  }
+
+  async overviewContainer() {
+    return await this.page.$(overviewLocators.overviewContainer)
   }
 
   async paymentInfoText() {

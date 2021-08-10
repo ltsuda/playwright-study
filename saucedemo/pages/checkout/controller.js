@@ -12,6 +12,11 @@ class CheckoutController {
     await this.page.goto(PAGES.CHECKOUT, 'networkidle')
   }
 
+  async screenIsVisible() {
+    const checkoutContainerElement = await this.components.checkoutContainer()
+    await checkoutContainerElement.isVisible()
+  }
+
   async cancelCheckout() {
     const cancelElement = await this.components.cancelButton()
     await cancelElement.click()

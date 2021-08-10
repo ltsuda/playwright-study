@@ -1,4 +1,5 @@
 const checkoutLocators = {
+  checkoutContainer: '.checkout_info_container',
   checkoutForm: '[class="checkout_info"]',
   firstNameInput: '[data-test="firstName"]',
   lastNameInput: '[data-test="lastName"]',
@@ -11,6 +12,10 @@ const checkoutLocators = {
 class CheckoutComponents {
   constructor(page) {
     this.page = page
+  }
+
+  async checkoutContainer() {
+    return await this.page.$(checkoutLocators.checkoutContainer)
   }
 
   async cancelButton() {

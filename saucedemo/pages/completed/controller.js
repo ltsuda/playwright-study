@@ -12,6 +12,11 @@ class CompletedController {
     await this.page.goto(PAGES.COMPLETED, 'networkidle')
   }
 
+  async screenIsVisible() {
+    const completedContainerElement = await this.components.completedContainer()
+    await completedContainerElement.isVisible()
+  }
+
   async navigateBackHome() {
     const backHomeButton = await this.components.completedBackButton()
     await backHomeButton.click()

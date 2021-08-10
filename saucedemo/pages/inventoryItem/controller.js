@@ -8,6 +8,16 @@ class InventoryItemController {
     this.locators = inventoryItemLocators
   }
 
+  async screenIsVisible() {
+    const itemDetailContainerElement = await this.components.itemDetailContainer()
+    await itemDetailContainerElement.isVisible()
+  }
+
+  async screenItemIsVisible() {
+    const cartItemContainerElement = await this.components.cartItemContainer()
+    await cartItemContainerElement.isVisible()
+  }
+
   async getItemsCount(fromPage) {
     const itemsElements = await this.components.items(fromPage)
     return itemsElements.length

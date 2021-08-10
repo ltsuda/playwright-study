@@ -7,6 +7,11 @@ class FooterController {
     this.locators = footerLocators
   }
 
+  async componentIsVisible() {
+    const footerContainerElement = await this.components.footerContainer()
+    await footerContainerElement.isVisible()
+  }
+
   async getTwitterLink() {
     const socialElement = await this.components.twitterLink()
     return await socialElement.getAttribute('href')

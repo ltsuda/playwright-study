@@ -1,9 +1,11 @@
 const config = {
   testDir: 'tests',
   // retries: 3,
-  timeout: 10000,
   reporter: process.env.CI ? 'dot' : 'list',
   workers: process.env.CI ? 2 : undefined,
+  expect: {
+    toMatchSnapshot: { threshold: 0.2 },
+  },
 
   use: {
     headless: true,

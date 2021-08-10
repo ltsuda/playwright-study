@@ -1,5 +1,5 @@
 const inventoryItemLocators = {
-  cartItemContainer: '[class="cart_item"]',
+  cartItemContainer: '.cart_item',
   detailsItemContainer: '[class="inventory_details_container"]',
   itemContainer: '[class="inventory_item"]',
   itemNameText: '.inventory_item_name',
@@ -26,6 +26,14 @@ class InventoryItemComponents {
       default:
         return inventoryItemLocators.itemContainer
     }
+  }
+
+  async itemDetailContainer() {
+    return await this.page.$(inventoryItemLocators.detailsItemContainer)
+  }
+
+  async cartItemContainer() {
+    return await this.page.$(inventoryItemLocators.cartItemContainer)
   }
 
   async items(fromPage = 'inventory') {

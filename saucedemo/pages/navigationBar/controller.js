@@ -7,6 +7,16 @@ class NavigationBarController {
     this.locators = navigationBarLocators
   }
 
+  async componentIsVisible() {
+    const navContainerElement = await this.components.navContainer()
+    await navContainerElement.isVisible()
+  }
+
+  async componenDetailIsVisible() {
+    const navDetailContainerElement = await this.components.navDetailContainer()
+    await navDetailContainerElement.isVisible()
+  }
+
   async openMenu() {
     const menuElement = await this.components.menuButton()
     await menuElement.click()

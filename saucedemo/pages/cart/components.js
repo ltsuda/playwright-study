@@ -1,4 +1,5 @@
 const cartLocators = {
+  cartContainer: '.cart_contents_container',
   continueShoppingButton: "[data-test='continue-shopping']",
   checkoutButton: "[data-test='checkout']",
 }
@@ -6,6 +7,10 @@ const cartLocators = {
 class CartComponents {
   constructor(page) {
     this.page = page
+  }
+
+  async cartContainer() {
+    return await this.page.$(cartLocators.cartContainer)
   }
 
   async continueShoppingButton() {

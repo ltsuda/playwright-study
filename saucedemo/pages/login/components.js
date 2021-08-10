@@ -1,4 +1,6 @@
 const loginLocators = {
+  loginContainer: '.login_wrapper',
+  credentialsContainer: '.login_credentials_wrap',
   usernameInput: "[data-test='username']",
   passwordInput: "[data-test='password']",
   errorText: "[data-test='error']",
@@ -10,6 +12,14 @@ const loginLocators = {
 class LoginComponents {
   constructor(page) {
     this.page = page
+  }
+
+  async loginContainer() {
+    return await this.page.$(loginLocators.loginContainer)
+  }
+
+  async credentialsContainer() {
+    return await this.page.$(loginLocators.credentialsContainer)
   }
 
   async acceptedUsersText() {

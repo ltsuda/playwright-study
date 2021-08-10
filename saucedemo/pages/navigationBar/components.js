@@ -1,4 +1,6 @@
 const navigationBarLocators = {
+  navContainer: '.header_container',
+  navDetailContainer: '.header_container.inventory_details',
   sideMenu: '.bm-menu-wrap',
   menuButton: '#react-burger-menu-btn',
   menuCloseButton: '.bm-cross-button',
@@ -13,6 +15,14 @@ const navigationBarLocators = {
 class NavigationBarComponents {
   constructor(page) {
     this.page = page
+  }
+
+  async navContainer() {
+    return await this.page.$(navigationBarLocators.navContainer)
+  }
+
+  async navDetailContainer() {
+    return await this.page.$(navigationBarLocators.navDetailContainer)
   }
 
   async sideMenu() {
