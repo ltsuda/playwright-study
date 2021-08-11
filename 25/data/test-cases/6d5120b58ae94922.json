@@ -1,0 +1,76 @@
+{
+  "uid" : "6d5120b58ae94922",
+  "name" : "should have the added items on the Overview Checkout @smoke",
+  "fullName" : "should have the added items on the Overview Checkout @smoke",
+  "historyId" : "chromium-fhd overview.spec.js Saucedemo OverviewPage: @overview should have the added items on the Overview Checkout @smoke",
+  "time" : {
+    "start" : 1628708747725,
+    "stop" : 1628708748896,
+    "duration" : 1171
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "7a4baa8d3a24ef5a",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/24//#testresult/7a4baa8d3a24ef5a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707831241,
+          "stop" : 1628707832161,
+          "duration" : 920
+        }
+      }, {
+        "uid" : "fb87675a2767638b",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/23//#testresult/fb87675a2767638b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707319817,
+          "stop" : 1628707320786,
+          "duration" : 969
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6d5120b58ae94922.json",
+  "parameterValues" : [ ]
+}
