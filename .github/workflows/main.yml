@@ -21,7 +21,7 @@ jobs:
       - run: npm ci
       - run: npx playwright install
       - run: npx playwright install-deps
-      - run: npm test:ci
+      - run: npm run test:ci
 
       - name: Upload allure-results
         uses: actions/upload-artifact@v2.2.4
