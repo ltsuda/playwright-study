@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "666fdf8106a39793b928e91ac1049c3f",
+    "name" : "chromium-hd",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 58,
+      "unknown" : 0,
+      "total" : 58
+    }
+  } ]
+}

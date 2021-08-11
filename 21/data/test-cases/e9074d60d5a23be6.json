@@ -1,0 +1,67 @@
+{
+  "uid" : "e9074d60d5a23be6",
+  "name" : "should have LinkedIn link on footer",
+  "fullName" : "should have LinkedIn link on footer",
+  "historyId" : "chromium-hd inventory.spec.js Saucedemo InventoryPage: @inventory should have LinkedIn link on footer",
+  "time" : {
+    "start" : 1628706578263,
+    "stop" : 1628706579361,
+    "duration" : 1098
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "b943b52225a86c43",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/20//#testresult/b943b52225a86c43",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628705874008,
+          "stop" : 1628705875342,
+          "duration" : 1334
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e9074d60d5a23be6.json",
+  "parameterValues" : [ ]
+}

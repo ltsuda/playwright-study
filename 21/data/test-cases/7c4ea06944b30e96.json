@@ -1,0 +1,67 @@
+{
+  "uid" : "7c4ea06944b30e96",
+  "name" : "should remove cart items when clicking at the reset state link on menu",
+  "fullName" : "should remove cart items when clicking at the reset state link on menu",
+  "historyId" : "chromium-hd cart.spec.js Saucedemo CartPage: @cart should remove cart items when clicking at the reset state link on menu",
+  "time" : {
+    "start" : 1628706564439,
+    "stop" : 1628706565768,
+    "duration" : 1329
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "cart.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CartPage: @cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "c750ffa3288f7a16",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/20//#testresult/c750ffa3288f7a16",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628705850792,
+          "stop" : 1628705852523,
+          "duration" : 1731
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7c4ea06944b30e96.json",
+  "parameterValues" : [ ]
+}
