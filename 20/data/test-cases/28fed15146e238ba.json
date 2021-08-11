@@ -1,0 +1,47 @@
+{
+  "uid" : "28fed15146e238ba",
+  "name" : "should be possible to add an item into the cart @smoke",
+  "fullName" : "should be possible to add an item into the cart @smoke",
+  "historyId" : "chrome-fhd cart.spec.js Saucedemo CartPage: @cart should be possible to add an item into the cart @smoke",
+  "time" : {
+    "start" : 1628705960122,
+    "stop" : 1628705962245,
+    "duration" : 2123
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "cart.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CartPage: @cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "28fed15146e238ba.json",
+  "parameterValues" : [ ]
+}

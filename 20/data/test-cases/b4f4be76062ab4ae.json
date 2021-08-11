@@ -1,0 +1,47 @@
+{
+  "uid" : "b4f4be76062ab4ae",
+  "name" : "should be back at Inventory page when click at the Back Home button",
+  "fullName" : "should be back at Inventory page when click at the Back Home button",
+  "historyId" : "chromium-hd completed.spec.js Saucedemo CompletedPage:  @completed should be back at Inventory page when click at the Back Home button",
+  "time" : {
+    "start" : 1628705848662,
+    "stop" : 1628705849903,
+    "duration" : 1241
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "completed.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CompletedPage:  @completed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b4f4be76062ab4ae.json",
+  "parameterValues" : [ ]
+}

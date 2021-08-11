@@ -1,0 +1,47 @@
+{
+  "uid" : "2035e362cbed7d18",
+  "name" : "should be possible to sort items from Z to A",
+  "fullName" : "should be possible to sort items from Z to A",
+  "historyId" : "chrome-fhd inventory.spec.js Saucedemo InventoryPage: @inventory should be possible to sort items from Z to A",
+  "time" : {
+    "start" : 1628705979229,
+    "stop" : 1628705980580,
+    "duration" : 1351
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2035e362cbed7d18.json",
+  "parameterValues" : [ ]
+}

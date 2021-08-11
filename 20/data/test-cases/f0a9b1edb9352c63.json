@@ -1,0 +1,47 @@
+{
+  "uid" : "f0a9b1edb9352c63",
+  "name" : "should go to Checkout Overview page @smoke",
+  "fullName" : "should go to Checkout Overview page @smoke",
+  "historyId" : "chrome-fhd checkout.spec.js Saucedemo CheckoutPage: @checkout should go to Checkout Overview page @smoke",
+  "time" : {
+    "start" : 1628705965157,
+    "stop" : 1628705966336,
+    "duration" : 1179
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "checkout.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CheckoutPage: @checkout"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f0a9b1edb9352c63.json",
+  "parameterValues" : [ ]
+}

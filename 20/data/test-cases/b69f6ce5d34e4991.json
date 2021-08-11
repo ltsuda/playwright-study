@@ -1,0 +1,47 @@
+{
+  "uid" : "b69f6ce5d34e4991",
+  "name" : "should have Swag Bot image on footer",
+  "fullName" : "should have Swag Bot image on footer",
+  "historyId" : "chromium-hd inventory.spec.js Saucedemo InventoryPage: @inventory should have Swag Bot image on footer",
+  "time" : {
+    "start" : 1628705875343,
+    "stop" : 1628705876726,
+    "duration" : 1383
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b69f6ce5d34e4991.json",
+  "parameterValues" : [ ]
+}

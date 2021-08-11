@@ -1,0 +1,47 @@
+{
+  "uid" : "c3795a983c91a1e2",
+  "name" : "should be at Overview page",
+  "fullName" : "should be at Overview page",
+  "historyId" : "chromium-hd overview.spec.js Saucedemo OverviewPage: @overview should be at Overview page",
+  "time" : {
+    "start" : 1628705870373,
+    "stop" : 1628705871069,
+    "duration" : 696
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c3795a983c91a1e2.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,47 @@
+{
+  "uid" : "4d221c01e889f5c9",
+  "name" : "should match cart badge with items in cart",
+  "fullName" : "should match cart badge with items in cart",
+  "historyId" : "chromium-fhd cart.spec.js Saucedemo CartPage: @cart should match cart badge with items in cart",
+  "time" : {
+    "start" : 1628705881765,
+    "stop" : 1628705882841,
+    "duration" : 1076
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "cart.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CartPage: @cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4d221c01e889f5c9.json",
+  "parameterValues" : [ ]
+}

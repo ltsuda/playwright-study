@@ -1,0 +1,47 @@
+{
+  "uid" : "df06fe34710b1179",
+  "name" : "should show username is required error",
+  "fullName" : "should show username is required error",
+  "historyId" : "chrome-hd login.spec.js Saucedemo LoginPage: @login should show username is required error",
+  "time" : {
+    "start" : 1628705948770,
+    "stop" : 1628705949646,
+    "duration" : 876
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "login.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo LoginPage: @login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "df06fe34710b1179.json",
+  "parameterValues" : [ ]
+}

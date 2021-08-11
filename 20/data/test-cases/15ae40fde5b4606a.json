@@ -1,0 +1,47 @@
+{
+  "uid" : "15ae40fde5b4606a",
+  "name" : "should be possible to sort items prices from Low to High",
+  "fullName" : "should be possible to sort items prices from Low to High",
+  "historyId" : "chrome-fhd inventory.spec.js Saucedemo InventoryPage: @inventory should be possible to sort items prices from Low to High",
+  "time" : {
+    "start" : 1628705980581,
+    "stop" : 1628705981657,
+    "duration" : 1076
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "15ae40fde5b4606a.json",
+  "parameterValues" : [ ]
+}

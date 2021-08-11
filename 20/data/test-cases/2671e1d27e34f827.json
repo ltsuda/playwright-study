@@ -1,0 +1,47 @@
+{
+  "uid" : "2671e1d27e34f827",
+  "name" : "should navigate to product's detail page when clicking at it",
+  "fullName" : "should navigate to product's detail page when clicking at it",
+  "historyId" : "chromium-fhd inventoryDetails.spec.js Saucedemo InventoryPage: @details should navigate to product's detail page when clicking at it",
+  "time" : {
+    "start" : 1628705904747,
+    "stop" : 1628705907340,
+    "duration" : 2593
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "inventoryDetails.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @details"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2671e1d27e34f827.json",
+  "parameterValues" : [ ]
+}

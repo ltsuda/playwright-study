@@ -1,0 +1,47 @@
+{
+  "uid" : "ad33eb251dde7517",
+  "name" : "should be back at Inventory page when click at the continue shopping button",
+  "fullName" : "should be back at Inventory page when click at the continue shopping button",
+  "historyId" : "chromium-fhd cart.spec.js Saucedemo CartPage: @cart should be back at Inventory page when click at the continue shopping button",
+  "time" : {
+    "start" : 1628705878860,
+    "stop" : 1628705880470,
+    "duration" : 1610
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "cart.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CartPage: @cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ad33eb251dde7517.json",
+  "parameterValues" : [ ]
+}

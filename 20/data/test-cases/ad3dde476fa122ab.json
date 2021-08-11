@@ -1,0 +1,47 @@
+{
+  "uid" : "ad3dde476fa122ab",
+  "name" : "should be at the login url",
+  "fullName" : "should be at the login url",
+  "historyId" : "chromium-hd login.spec.js Saucedemo LoginPage: @login should be at the login url",
+  "time" : {
+    "start" : 1628705865158,
+    "stop" : 1628705865703,
+    "duration" : 545
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "login.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo LoginPage: @login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ad3dde476fa122ab.json",
+  "parameterValues" : [ ]
+}

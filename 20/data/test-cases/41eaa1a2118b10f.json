@@ -1,0 +1,47 @@
+{
+  "uid" : "41eaa1a2118b10f",
+  "name" : "should have the tax calculated as 8% of subtotal",
+  "fullName" : "should have the tax calculated as 8% of subtotal",
+  "historyId" : "chromium-hd overview.spec.js Saucedemo OverviewPage: @overview should have the tax calculated as 8% of subtotal",
+  "time" : {
+    "start" : 1628705877604,
+    "stop" : 1628705878602,
+    "duration" : 998
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "41eaa1a2118b10f.json",
+  "parameterValues" : [ ]
+}
