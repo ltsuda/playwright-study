@@ -1,0 +1,67 @@
+{
+  "uid" : "bc7162464c24ba4d",
+  "name" : "should have Swag Bot image on footer",
+  "fullName" : "should have Swag Bot image on footer",
+  "historyId" : "chrome-hd inventory.spec.js Saucedemo InventoryPage: @inventory should have Swag Bot image on footer",
+  "time" : {
+    "start" : 1628707857838,
+    "stop" : 1628707858942,
+    "duration" : 1104
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "5cf122f77ddbfb40",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/23//#testresult/5cf122f77ddbfb40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707356096,
+          "stop" : 1628707357122,
+          "duration" : 1026
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "bc7162464c24ba4d.json",
+  "parameterValues" : [ ]
+}

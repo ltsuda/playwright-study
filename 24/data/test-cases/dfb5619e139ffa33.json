@@ -1,0 +1,67 @@
+{
+  "uid" : "dfb5619e139ffa33",
+  "name" : "should be possible to sort items from Z to A",
+  "fullName" : "should be possible to sort items from Z to A",
+  "historyId" : "chrome-fhd inventory.spec.js Saucedemo InventoryPage: @inventory should be possible to sort items from Z to A",
+  "time" : {
+    "start" : 1628707877527,
+    "stop" : 1628707878154,
+    "duration" : 627
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "a27b5d4fef040d01",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/23//#testresult/a27b5d4fef040d01",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707377805,
+          "stop" : 1628707379049,
+          "duration" : 1244
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "dfb5619e139ffa33.json",
+  "parameterValues" : [ ]
+}

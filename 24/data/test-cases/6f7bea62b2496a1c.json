@@ -1,0 +1,67 @@
+{
+  "uid" : "6f7bea62b2496a1c",
+  "name" : "should show lastName error message if empty",
+  "fullName" : "should show lastName error message if empty",
+  "historyId" : "chrome-hd checkout.spec.js Saucedemo CheckoutPage: @checkout should show lastName error message if empty",
+  "time" : {
+    "start" : 1628707838863,
+    "stop" : 1628707839671,
+    "duration" : 808
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "checkout.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CheckoutPage: @checkout"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "f0106f6f1753241a",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/23//#testresult/f0106f6f1753241a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707331379,
+          "stop" : 1628707332295,
+          "duration" : 916
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6f7bea62b2496a1c.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,67 @@
+{
+  "uid" : "9df5e94f99ac4a19",
+  "name" : "should be at Inventory page after login",
+  "fullName" : "should be at Inventory page after login",
+  "historyId" : "chromium-fhd inventory.spec.js Saucedemo InventoryPage: @inventory should be at Inventory page after login",
+  "time" : {
+    "start" : 1628707814039,
+    "stop" : 1628707814730,
+    "duration" : 691
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "993e65e4a71c553b",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/23//#testresult/993e65e4a71c553b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707303609,
+          "stop" : 1628707304648,
+          "duration" : 1039
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9df5e94f99ac4a19.json",
+  "parameterValues" : [ ]
+}

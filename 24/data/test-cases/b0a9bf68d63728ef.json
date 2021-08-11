@@ -1,0 +1,67 @@
+{
+  "uid" : "b0a9bf68d63728ef",
+  "name" : "should be possible to open sidemenu @slow @smoke",
+  "fullName" : "should be possible to open sidemenu @slow @smoke",
+  "historyId" : "chrome-fhd cart.spec.js Saucedemo CartPage: @cart should be possible to open sidemenu @slow @smoke",
+  "time" : {
+    "start" : 1628707865583,
+    "stop" : 1628707866941,
+    "duration" : 1358
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "cart.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CartPage: @cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "c0bee213240550b6",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/23//#testresult/c0bee213240550b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707364734,
+          "stop" : 1628707366228,
+          "duration" : 1494
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b0a9bf68d63728ef.json",
+  "parameterValues" : [ ]
+}

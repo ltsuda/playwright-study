@@ -1,0 +1,67 @@
+{
+  "uid" : "988d8391fc29b38c",
+  "name" : "should be at Checkout page when click at the checkout button",
+  "fullName" : "should be at Checkout page when click at the checkout button",
+  "historyId" : "chrome-hd cart.spec.js Saucedemo CartPage: @cart should be at Checkout page when click at the checkout button",
+  "time" : {
+    "start" : 1628707832093,
+    "stop" : 1628707832760,
+    "duration" : 667
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "cart.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CartPage: @cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "ae7f976be0cf240",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/23//#testresult/ae7f976be0cf240",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707329719,
+          "stop" : 1628707330475,
+          "duration" : 756
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "988d8391fc29b38c.json",
+  "parameterValues" : [ ]
+}
