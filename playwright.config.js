@@ -1,7 +1,7 @@
 const config = {
   testDir: 'tests',
   retries: 3,
-  reporter: process.env.CI ? 'dot' :  [['line'], ['allure-playwright']],
+  reporter: process.env.CI ? 'dot' :  [['line'], ['experimental-allure-playwright']],
   workers: process.env.CI ? 2 : undefined,
   expect: {
     toMatchSnapshot: { threshold: 0.2 },

@@ -23,6 +23,14 @@ jobs:
       - run: npx playwright install-deps
       - run: npm test
 
+      - name: List files in the repository
+        run: |
+          ls -lah ${{ github.workspace }}
+
+      - name: List files in the repository
+        run: |
+          ls -lah tests
+
       - name: Upload allure-results
         uses: actions/upload-artifact@v2.2.4
         with:
