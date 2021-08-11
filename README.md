@@ -1,4 +1,4 @@
-![.github/workflows/playwright.yml](https://github.com/ltsuda/playwright-study/workflows/.github/workflows/playwright.yml/badge.svg?branch=main)
+[![Playwright-CI](https://github.com/ltsuda/playwright-study/actions/workflows/main.yml/badge.svg)](https://github.com/ltsuda/playwright-study/actions/workflows/main.yml)
 
 # playwright-study
 Multipurpose Playwright study repository
@@ -24,3 +24,4 @@ Multipurpose Playwright study repository
 - [x] Add consts file and replace hard-coded values with them
 - [x] Add cart product directly into browser context: see 'TODO' comments
 - [x] Refactor to add playwright fixtures
+- [x] Add allure-playwright. Credits to https://elaichenkov.medium.com/allure-report-integration-with-playwright-8c1570c67dda
