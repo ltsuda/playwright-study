@@ -1,0 +1,47 @@
+{
+  "uid" : "81564260953f47ae",
+  "name" : "should show firstName error message if empty",
+  "fullName" : "should show firstName error message if empty",
+  "historyId" : "chromium-hd checkout.spec.js Saucedemo CheckoutPage: @checkout should show firstName error message if empty",
+  "time" : {
+    "start" : 1628707255671,
+    "stop" : 1628707256579,
+    "duration" : 908
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "checkout.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CheckoutPage: @checkout"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "81564260953f47ae.json",
+  "parameterValues" : [ ]
+}

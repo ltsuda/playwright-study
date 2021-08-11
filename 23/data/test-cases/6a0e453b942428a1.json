@@ -1,0 +1,47 @@
+{
+  "uid" : "6a0e453b942428a1",
+  "name" : "User should be able to login with a valid credentials @e2e-login",
+  "fullName" : "User should be able to login with a valid credentials @e2e-login",
+  "historyId" : "chrome-hd e2e.spec.js Saucedemo E2E: @e2e User should be able to login with a valid credentials @e2e-login",
+  "time" : {
+    "start" : 1628707337896,
+    "stop" : 1628707338686,
+    "duration" : 790
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "e2e.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo E2E: @e2e"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6a0e453b942428a1.json",
+  "parameterValues" : [ ]
+}

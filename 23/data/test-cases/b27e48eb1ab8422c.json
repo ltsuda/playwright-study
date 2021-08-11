@@ -1,0 +1,47 @@
+{
+  "uid" : "b27e48eb1ab8422c",
+  "name" : "should remove cart items when clicking at the reset state link on menu",
+  "fullName" : "should remove cart items when clicking at the reset state link on menu",
+  "historyId" : "chrome-fhd cart.spec.js Saucedemo CartPage: @cart should remove cart items when clicking at the reset state link on menu",
+  "time" : {
+    "start" : 1628707368290,
+    "stop" : 1628707369777,
+    "duration" : 1487
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "cart.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CartPage: @cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b27e48eb1ab8422c.json",
+  "parameterValues" : [ ]
+}

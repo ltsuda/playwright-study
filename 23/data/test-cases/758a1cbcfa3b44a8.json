@@ -1,0 +1,47 @@
+{
+  "uid" : "758a1cbcfa3b44a8",
+  "name" : "should be possible to remove product from cart",
+  "fullName" : "should be possible to remove product from cart",
+  "historyId" : "chromium-fhd inventory.spec.js Saucedemo InventoryPage: @inventory should be possible to remove product from cart",
+  "time" : {
+    "start" : 1628707314519,
+    "stop" : 1628707316647,
+    "duration" : 2128
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "758a1cbcfa3b44a8.json",
+  "parameterValues" : [ ]
+}

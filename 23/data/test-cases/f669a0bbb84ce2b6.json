@@ -1,0 +1,47 @@
+{
+  "uid" : "f669a0bbb84ce2b6",
+  "name" : "should show a list of items @smoke",
+  "fullName" : "should show a list of items @smoke",
+  "historyId" : "chrome-hd inventory.spec.js Saucedemo InventoryPage: @inventory should show a list of items @smoke",
+  "time" : {
+    "start" : 1628707343863,
+    "stop" : 1628707344927,
+    "duration" : 1064
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f669a0bbb84ce2b6.json",
+  "parameterValues" : [ ]
+}

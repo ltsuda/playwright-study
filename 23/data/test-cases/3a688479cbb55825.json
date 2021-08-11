@@ -1,0 +1,47 @@
+{
+  "uid" : "3a688479cbb55825",
+  "name" : "should have LinkedIn link on footer",
+  "fullName" : "should have LinkedIn link on footer",
+  "historyId" : "chrome-fhd inventory.spec.js Saucedemo InventoryPage: @inventory should have LinkedIn link on footer",
+  "time" : {
+    "start" : 1628707387012,
+    "stop" : 1628707388063,
+    "duration" : 1051
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3a688479cbb55825.json",
+  "parameterValues" : [ ]
+}

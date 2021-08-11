@@ -1,0 +1,47 @@
+{
+  "uid" : "8f1423a5bd4e7bd8",
+  "name" : "should have the total calculated as subtotal + tax",
+  "fullName" : "should have the total calculated as subtotal + tax",
+  "historyId" : "chromium-fhd overview.spec.js Saucedemo OverviewPage: @overview should have the total calculated as subtotal + tax",
+  "time" : {
+    "start" : 1628707324181,
+    "stop" : 1628707324769,
+    "duration" : 588
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8f1423a5bd4e7bd8.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,47 @@
+{
+  "uid" : "cabe6647de0a064e",
+  "name" : "should go to Checkout Overview page @smoke",
+  "fullName" : "should go to Checkout Overview page @smoke",
+  "historyId" : "chrome-hd checkout.spec.js Saucedemo CheckoutPage: @checkout should go to Checkout Overview page @smoke",
+  "time" : {
+    "start" : 1628707333153,
+    "stop" : 1628707334223,
+    "duration" : 1070
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "checkout.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CheckoutPage: @checkout"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cabe6647de0a064e.json",
+  "parameterValues" : [ ]
+}

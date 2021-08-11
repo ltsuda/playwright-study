@@ -1,0 +1,47 @@
+{
+  "uid" : "64a208ce4e5cd6c6",
+  "name" : "should be at Completed page when click at the finish button",
+  "fullName" : "should be at Completed page when click at the finish button",
+  "historyId" : "chrome-fhd overview.spec.js Saucedemo OverviewPage: @overview should be at Completed page when click at the finish button",
+  "time" : {
+    "start" : 1628707385801,
+    "stop" : 1628707386849,
+    "duration" : 1048
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "64a208ce4e5cd6c6.json",
+  "parameterValues" : [ ]
+}

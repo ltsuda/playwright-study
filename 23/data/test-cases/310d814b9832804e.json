@@ -1,0 +1,47 @@
+{
+  "uid" : "310d814b9832804e",
+  "name" : "should have the subtotal (total before tax)",
+  "fullName" : "should have the subtotal (total before tax)",
+  "historyId" : "chromium-hd overview.spec.js Saucedemo OverviewPage: @overview should have the subtotal (total before tax)",
+  "time" : {
+    "start" : 1628707285585,
+    "stop" : 1628707286482,
+    "duration" : 897
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "310d814b9832804e.json",
+  "parameterValues" : [ ]
+}

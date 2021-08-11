@@ -1,0 +1,47 @@
+{
+  "uid" : "9a214a613ad7a3d8",
+  "name" : "should go back to Cart if cancel checkout",
+  "fullName" : "should go back to Cart if cancel checkout",
+  "historyId" : "chrome-hd checkout.spec.js Saucedemo CheckoutPage: @checkout should go back to Cart if cancel checkout",
+  "time" : {
+    "start" : 1628707329518,
+    "stop" : 1628707330500,
+    "duration" : 982
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "checkout.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CheckoutPage: @checkout"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9a214a613ad7a3d8.json",
+  "parameterValues" : [ ]
+}
