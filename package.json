@@ -8,18 +8,22 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.13.1",
+    "allure-commandline": "^2.13.8",
+    "allure-playwright": "^2.0.0-beta.11",
     "eslint": "^7.30.0",
-    "playwright": "^1.13.1",
     "prettier": "^2.3.2"
   },
   "scripts": {
-    "test": "npx playwright test --grep-invert '@visual' --project 'chromium-hd'",
-    "test:match": "npx playwright test --grep-invert '@visual' --grep $MATCH --project 'chromium-hd'",
-    "test:visual": "npx playwright test --grep @visual --project 'chromium-hd'",
-    "test:e2e": "npx playwright test --grep @e2e --project 'chromium-hd'",
-    "test:smoke": "npx playwright test --grep @smoke --project 'chromium-hd'",
-    "test:all": "npx playwright test --grep-invert '@visual'",
-    "format-prettier": "prettier --print-width 120 --no-semi --single-quote --write '**/*.js'"
+    "test": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --project 'chromium-hd'",
+    "test:match": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --grep $MATCH --project 'chromium-hd'",
+    "test:visual": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep @visual --project 'chromium-hd'",
+    "test:e2e": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep @e2e --project 'chromium-hd'",
+    "test:smoke": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep @smoke --project 'chromium-hd'",
+    "test:ci": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' || :",
+    "format-prettier": "prettier --print-width 120 --no-semi --single-quote --write '**/*.js'",
+    "allure:generate": "npx allure generate ./test-results --clean -o ./allure-reports",
+    "allure:open": "npx allure open ./allure-reports",
+    "posttest:ci": "npm run allure:generate"
   },
   "repository": {
     "type": "git",

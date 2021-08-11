@@ -1,0 +1,57 @@
+name: Playwright-CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js/Playwright Test environment
+        uses: actions/setup-node@v2.4.0
+        with:
+          node-version: '14'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install
+      - run: npx playwright install-deps
+      - run: npm run test:ci
+
+      - name: Upload allure-results
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: test-results
+          path: test-results
+          retention-days: 20
+
+      - name: Checkout Github pages history
+        uses: actions/checkout@v2.3.4
+        if: always()
+        continue-on-error: true
+        with:
+          path: gh-pages
+          ref: gh-pages
+
+      - name: Generate Allure Report
+        uses: simple-elf/allure-report-action@v1.5
+        if: always()
+        id: allure-report
+        with:
+          allure_results: test-results
+          allure_report: allure-report
+          allure_history: allure-history
+          gh_pages: gh-pages
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
