@@ -1,7 +1,7 @@
 const config = {
   testDir: 'tests',
-  // retries: 3,
-  reporter: process.env.CI ? 'dot' : 'list',
+  retries: 3,
+  reporter: process.env.CI ? 'dot' :  [['line'], ['allure-playwright']],
   workers: process.env.CI ? 2 : undefined,
   expect: {
     toMatchSnapshot: { threshold: 0.2 },
@@ -10,15 +10,14 @@ const config = {
   use: {
     headless: true,
     baseURL: 'https://www.saucedemo.com',
-    // screenshot: 'only-on-failure',
-    // trace: 'retain-on-failure',
+    screenshot: 'only-on-failure',
+    trace: 'retain-on-failure',
     // video: 'retain-on-failure',
   },
 
   projects: [
     {
       name: 'chromium-hd',
-      outputDir: '../test-results/chromium-hd/',
       use: {
         viewport: { width: 1280, height: 720 },
         browserName: 'chromium',
@@ -26,7 +25,6 @@ const config = {
     },
     {
       name: 'chromium-fhd',
-      outputDir: '../test-results/chromium-fhd/',
       use: {
         viewport: { width: 1920, height: 1080 },
         browserName: 'chromium',
@@ -34,7 +32,6 @@ const config = {
     },
     {
       name: 'chrome-hd',
-      outputDir: '../test-results/chrome-hd/',
       use: {
         viewport: { width: 1280, height: 720 },
         browserName: 'chromium',
@@ -43,7 +40,6 @@ const config = {
     },
     {
       name: 'chrome-fhd',
-      outputDir: '../test-results/chrome-fhd/',
       use: {
         viewport: { width: 1920, height: 1080 },
         browserName: 'chromium',
@@ -54,7 +50,6 @@ const config = {
     // FIXME: Test fails with page not loaded (white page) or missing elements
     // {
     //   name: 'firefox-hd',
-    //   outputDir: 'output/firefox/',
     //   use: {
     //     viewport: { width: 1280, height: 720 },
     //     browserName: 'firefox',
@@ -62,7 +57,6 @@ const config = {
     // },
     // {
     //     name: 'webkit-hd',
-    //     outputDir: 'output/webkit/',
     //     use: {
     //       viewport: { width: 1280, height: 720 },
     //         browserName: 'webkit',
