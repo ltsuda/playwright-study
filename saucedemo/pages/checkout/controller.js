@@ -53,8 +53,8 @@ class CheckoutController {
     }
 
     /**
-     * Get error message text
-     * @returns checkout's error message
+     * Get error message
+     * @returns checkout's error message text
      */
     async getErrorMessage() {
         const errorElement = await this.components.errorMessageText()
