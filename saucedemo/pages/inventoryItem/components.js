@@ -1,80 +1,80 @@
 const inventoryItemLocators = {
-  cartItemContainer: '.cart_item',
-  detailsItemContainer: '[class="inventory_details_container"]',
-  itemContainer: '[class="inventory_item"]',
-  itemNameText: '.inventory_item_name',
-  itemDescriptionText: '.inventory_item_desc',
-  itemPriceText: '[class="inventory_item_price"]',
-  addToCartButton: 'text=/add to cart/i',
-  removeButton: 'text=/remove/i',
-  backToProductsButton: '[data-test="back-to-products"]',
+    cartItemContainer: ".cart_item",
+    detailsItemContainer: "[class='inventory_details_container']",
+    itemContainer: "[class='inventory_item']",
+    itemNameText: ".inventory_item_name",
+    itemDescriptionText: ".inventory_item_desc",
+    itemPriceText: "[class='inventory_item_price']",
+    addToCartButton: "text=/add to cart/i",
+    removeButton: "text=/remove/i",
+    backToProductsButton: "[data-test='back-to-products']",
 }
 
 class InventoryItemComponents {
-  constructor(page) {
-    this.page = page
-  }
-
-  switchItemLocator(fromPage) {
-    switch (fromPage) {
-      case 'cart':
-        return inventoryItemLocators.cartItemContainer
-      case 'inventory':
-        return inventoryItemLocators.itemContainer
-      case 'details':
-        return inventoryItemLocators.detailsItemContainer
-      default:
-        return inventoryItemLocators.itemContainer
+    constructor(page) {
+        this.page = page
     }
-  }
 
-  async itemDetailContainer() {
-    return await this.page.$(inventoryItemLocators.detailsItemContainer)
-  }
+    switchItemLocator(fromPage) {
+        switch (fromPage) {
+        case "cart":
+            return inventoryItemLocators.cartItemContainer
+        case "inventory":
+            return inventoryItemLocators.itemContainer
+        case "details":
+            return inventoryItemLocators.detailsItemContainer
+        default:
+            return inventoryItemLocators.itemContainer
+        }
+    }
 
-  async cartItemContainer() {
-    return await this.page.$(inventoryItemLocators.cartItemContainer)
-  }
+    async itemDetailContainer() {
+        return await this.page.$(inventoryItemLocators.detailsItemContainer)
+    }
 
-  async items(fromPage = 'inventory') {
-    const locator = this.switchItemLocator(fromPage)
-    return await this.page.$$(locator)
-  }
+    async cartItemContainer() {
+        return await this.page.$(inventoryItemLocators.cartItemContainer)
+    }
 
-  async itemsNameText(fromPage) {
-    const locator = this.switchItemLocator(fromPage)
-    const itemLocator =
-      fromPage == 'details'
-        ? inventoryItemLocators.itemNameText.replace('item', 'details')
-        : inventoryItemLocators.itemNameText
-    return await this.page.$$(`${locator}` + '>>' + `${itemLocator}`)
-  }
+    async items(fromPage = "inventory") {
+        const locator = this.switchItemLocator(fromPage)
+        return await this.page.$$(locator)
+    }
 
-  async itemsPriceText(fromPage) {
-    const locator = this.switchItemLocator(fromPage)
-    const itemLocator =
-      fromPage == 'details'
-        ? inventoryItemLocators.itemPriceText.replace('_', '_details_')
-        : inventoryItemLocators.itemPriceText
-    return await this.page.$$(`${locator}` + '>>' + `${itemLocator}`)
-  }
+    async itemsNameText(fromPage) {
+        const locator = this.switchItemLocator(fromPage)
+        const itemLocator =
+      fromPage == "details"
+          ? inventoryItemLocators.itemNameText.replace("item", "details")
+          : inventoryItemLocators.itemNameText
+        return await this.page.$$(`${locator}` + ">>" + `${itemLocator}`)
+    }
 
-  async addToCartButton(fromPage) {
-    const locator = this.switchItemLocator(fromPage)
-    return await this.page.$(`${locator}` + '>>' + `${inventoryItemLocators.addToCartButton}`)
-  }
+    async itemsPriceText(fromPage) {
+        const locator = this.switchItemLocator(fromPage)
+        const itemLocator =
+      fromPage == "details"
+          ? inventoryItemLocators.itemPriceText.replace("_", "_details_")
+          : inventoryItemLocators.itemPriceText
+        return await this.page.$$(`${locator}` + ">>" + `${itemLocator}`)
+    }
 
-  async removeItemsButton(fromPage) {
-    const locator = this.switchItemLocator(fromPage)
-    return await this.page.$$(`${locator}` + '>>' + `${inventoryItemLocators.removeButton}`)
-  }
+    async addToCartButton(fromPage) {
+        const locator = this.switchItemLocator(fromPage)
+        return await this.page.$(`${locator}` + ">>" + `${inventoryItemLocators.addToCartButton}`)
+    }
 
-  async backToProductsButton() {
-    return await this.page.$(inventoryItemLocators.backToProductsButton)
-  }
+    async removeItemsButton(fromPage) {
+        const locator = this.switchItemLocator(fromPage)
+        return await this.page.$$(`${locator}` + ">>" + `${inventoryItemLocators.removeButton}`)
+    }
+
+    async backToProductsButton() {
+        return await this.page.$(inventoryItemLocators.backToProductsButton)
+    }
 }
 
 module.exports = {
-  InventoryItemComponents,
-  inventoryItemLocators,
+    InventoryItemComponents,
+    inventoryItemLocators,
 }

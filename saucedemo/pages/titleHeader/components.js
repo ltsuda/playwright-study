@@ -1,24 +1,24 @@
 const titleHeaderLocators = {
-  titleHeaderContainer: 'header_secondary_container',
-  titleText: 'title',
-  sortDropdown: '[data-test="product_sort_container"]',
+    titleHeaderContainer: "header_secondary_container",
+    titleText: "title",
+    sortDropdown: "[data-test='product_sort_container']",
 }
 
 class TitleHeaderComponents {
-  constructor(page) {
-    this.page = page
-  }
+    constructor(page) {
+        this.page = page
+    }
 
-  async titleText() {
-    return await this.page.$(`${titleHeaderLocators.titleHeaderContainer}` + '>>' + `${titleHeaderLocators.titleText}`)
-  }
+    async titleText() {
+        return await this.page.$(`${titleHeaderLocators.titleHeaderContainer}` + ">>" + `${titleHeaderLocators.titleText}`)
+    }
 
-  async sortDropdown() {
-    return await this.page.$(titleHeaderLocators.sortDropdown)
-  }
+    async sortDropdown() {
+        return await this.page.$(titleHeaderLocators.sortDropdown)
+    }
 }
 
 module.exports = {
-  TitleHeaderComponents,
-  titleHeaderLocators,
+    TitleHeaderComponents,
+    titleHeaderLocators,
 }

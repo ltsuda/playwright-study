@@ -1,18 +1,18 @@
 const inventoryLocators = {
-  inventoryContainer: '#inventory_container',
+    inventoryContainer: "#inventory_container",
 }
 
 class InventoryComponents {
-  constructor(page) {
-    this.page = page
-  }
+    constructor(page) {
+        this.page = page
+    }
 
-  async inventoryContainer() {
-    return await this.page.$(inventoryLocators.inventoryContainer)
-  }
+    async inventoryContainer() {
+        return await this.page.$(inventoryLocators.inventoryContainer)
+    }
 }
 
 module.exports = {
-  InventoryComponents,
-  inventoryLocators,
+    InventoryComponents,
+    inventoryLocators,
 }
