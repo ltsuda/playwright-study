@@ -10,7 +10,7 @@
     "@playwright/test": "^1.13.1",
     "allure-commandline": "^2.13.8",
     "allure-playwright": "^2.0.0-beta.11",
-    "eslint": "^7.30.0",
+    "eslint": "^7.32.0",
     "prettier": "^2.3.2"
   },
   "scripts": {
@@ -20,7 +20,6 @@
     "test:e2e": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep @e2e --project 'chromium-hd'",
     "test:smoke": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep @smoke --project 'chromium-hd'",
     "test:ci": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' || :",
-    "format-prettier": "prettier --print-width 120 --no-semi --single-quote --write '**/*.js'",
     "allure:generate": "npx allure generate ./test-results --clean -o ./allure-reports",
     "allure:open": "npx allure open ./allure-reports",
     "posttest:ci": "npm run allure:generate"
