@@ -112,17 +112,21 @@ class InventoryItemController {
         let items = []
         for (const itemElement of itemsElements) {
             const namelocator =
-        fromPage == "details" ? this.locators.itemNameText.replace("item", "details") : this.locators.itemNameText
+                fromPage == "details"
+                    ? this.locators.itemNameText.replace("item", "details")
+                    : this.locators.itemNameText
             const nameElement = await itemElement.$(namelocator)
             const name = await nameElement.innerText()
             const descriptionLocator =
-        fromPage == "details"
-            ? this.locators.itemDescriptionText.replace("item", "details")
-            : this.locators.itemDescriptionText
+                fromPage == "details"
+                    ? this.locators.itemDescriptionText.replace("item", "details")
+                    : this.locators.itemDescriptionText
             const descriptionElement = await itemElement.$(descriptionLocator)
             const description = await descriptionElement.innerText()
             const pricelocator =
-        fromPage == "details" ? this.locators.itemPriceText.replace("item", "details") : this.locators.itemPriceText
+                fromPage == "details"
+                    ? this.locators.itemPriceText.replace("item", "details")
+                    : this.locators.itemPriceText
             const priceElement = await itemElement.$(pricelocator)
             let price = await priceElement.innerText()
             price = price.replace("$", "")

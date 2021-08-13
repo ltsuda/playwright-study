@@ -46,7 +46,11 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
         )
     })
 
-    test("should be possible to sort items from Z to A", async ({ inventoryItemController, titleHeaderController, page }) => {
+    test("should be possible to sort items from Z to A", async ({
+        inventoryItemController,
+        titleHeaderController,
+        page,
+    }) => {
         await setSession(page, {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
@@ -57,7 +61,11 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
         )
     })
 
-    test("should be possible to sort items prices from Low to High", async ({ inventoryItemController, titleHeaderController, page }) => {
+    test("should be possible to sort items prices from Low to High", async ({
+        inventoryItemController,
+        titleHeaderController,
+        page,
+    }) => {
         await setSession(page, {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
@@ -67,7 +75,11 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
         expect(prices).toBe(prices.sort())
     })
 
-    test("should be possible to sort items prices from High to Low", async ({ inventoryItemController, titleHeaderController, page }) => {
+    test("should be possible to sort items prices from High to Low", async ({
+        inventoryItemController,
+        titleHeaderController,
+        page,
+    }) => {
         await setSession(page, {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
@@ -77,7 +89,11 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
         expect(prices).toBe(prices.sort().reverse())
     })
 
-    test("should be possible to add product to cart @smoke", async ({ inventoryItemController, navigationBarController, page }) => {
+    test("should be possible to add product to cart @smoke", async ({
+        inventoryItemController,
+        navigationBarController,
+        page,
+    }) => {
         await setSession(page, {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
@@ -86,11 +102,15 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
         expect(await navigationBarController.getCartBadgeIfExists()).toBe("1")
     })
 
-    test("should be possible to remove product from cart", async ({ inventoryItemController, navigationBarController, page }) => {
+    test("should be possible to remove product from cart", async ({
+        inventoryItemController,
+        navigationBarController,
+        page,
+    }) => {
         await setSession(page, {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
-            products: [ PRODUCTS_INDEX.ALL_TSHIRT ],
+            products: [PRODUCTS_INDEX.ALL_TSHIRT],
         })
         expect(await navigationBarController.getCartBadgeIfExists()).toBe("1")
         await inventoryItemController.removeFromCart("inventory")

@@ -12,7 +12,10 @@ test.describe("Saucedemo CompletedPage:  @completed", () => {
         expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.COMPLETED}`)
     })
 
-    test("should be back at Inventory page when click at the Back Home button", async ({ completedController, page }) => {
+    test("should be back at Inventory page when click at the Back Home button", async ({
+        completedController,
+        page,
+    }) => {
         await setSession(page, {
             path: PAGES.COMPLETED,
             username: CREDENTIALS.USERS.STANDARD,

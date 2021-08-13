@@ -50,7 +50,9 @@ class CompletedComponents {
      * @returns {ElementHandle} ElementHandle for 'completedText' locator
      */
     async completedText() {
-        return await this.page.$(`${completedLocators.completedContainer}` + ">>" + `${completedLocators.completedText}`)
+        return await this.page.$(
+            `${completedLocators.completedContainer}` + ">>" + `${completedLocators.completedText}`
+        )
     }
 
     /**
@@ -58,7 +60,9 @@ class CompletedComponents {
      * @returns {ElementHandle} ElementHandle for 'errorMessageText' locator
      */
     async completedImage() {
-        return await this.page.$(`${completedLocators.completedContainer}` + ">>" + `${completedLocators.completedImage}`)
+        return await this.page.$(
+            `${completedLocators.completedContainer}` + ">>" + `${completedLocators.completedImage}`
+        )
     }
 
     /**

@@ -34,7 +34,7 @@ test.describe("Saucedemo OverviewPage: @overview", () => {
         await setSession(page, {
             path: PAGES.OVERVIEW,
             username: CREDENTIALS.USERS.STANDARD,
-            products: [ PRODUCTS_INDEX.BOLT_TSHIRT ],
+            products: [PRODUCTS_INDEX.BOLT_TSHIRT],
         })
         const overviewItem = await inventoryItemController.getItemsNameTextByIndex("all", "cart")
         expect(overviewItem[0]).toStrictEqual(PRODUCTS_NAMES.BOLT_TSHIRT)
@@ -60,7 +60,7 @@ test.describe("Saucedemo OverviewPage: @overview", () => {
         await setSession(page, {
             path: PAGES.OVERVIEW,
             username: CREDENTIALS.USERS.STANDARD,
-            products: [ PRODUCTS_INDEX.BOLT_TSHIRT ],
+            products: [PRODUCTS_INDEX.BOLT_TSHIRT],
         })
         const subtotal = await overviewController.getSubtotal()
         expect(String(subtotal)).toBe(parseFloat("15.99").toFixed(2))
@@ -70,7 +70,7 @@ test.describe("Saucedemo OverviewPage: @overview", () => {
         await setSession(page, {
             path: PAGES.OVERVIEW,
             username: CREDENTIALS.USERS.STANDARD,
-            products: [ PRODUCTS_INDEX.BOLT_TSHIRT ],
+            products: [PRODUCTS_INDEX.BOLT_TSHIRT],
         })
         expect(await overviewController.getTax()).toBe(await overviewController.calculateTax())
     })
@@ -79,7 +79,7 @@ test.describe("Saucedemo OverviewPage: @overview", () => {
         await setSession(page, {
             path: PAGES.OVERVIEW,
             username: CREDENTIALS.USERS.STANDARD,
-            products: [ PRODUCTS_INDEX.BOLT_TSHIRT ],
+            products: [PRODUCTS_INDEX.BOLT_TSHIRT],
         })
         const calculatedTotal = await overviewController.calculateTotal()
         const totalFromPage = await overviewController.getTotalPrice()

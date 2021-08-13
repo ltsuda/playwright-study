@@ -68,11 +68,12 @@ class OverviewController {
     async getShippingText() {
         const shippingElement = await this.components.shippingInfoText()
         return await shippingElement.innerText()
+    }
 
     /**
      * Get subtotal value
      * @returns {String} subtotal value element text
-     */}
+     */
     async getSubtotal() {
         const subtotalElement = await this.components.subtotalText()
         let subtotal = await subtotalElement.innerText()

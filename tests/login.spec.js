@@ -3,7 +3,6 @@ const test = require("../saucedemo/pages/pageFixtures")
 const { PAGES, ERRORS } = require("../saucedemo/utils/consts")
 
 test.describe("Saucedemo LoginPage: @login", () => {
-
     test.beforeEach(async ({ loginController }) => {
         await loginController.navigate()
     })
@@ -40,7 +39,10 @@ test.describe("Saucedemo LoginPage: @login", () => {
         expect(await loginController.getErrorMessage()).toEqual(ERRORS.LOGIN_CREDENTIALS)
     })
 
-    test("should navigate to inventory page after successful login @smoke", async ({ loginController, inventoryController }) => {
+    test("should navigate to inventory page after successful login @smoke", async ({
+        loginController,
+        inventoryController,
+    }) => {
         await loginController.loginWithStandardUser()
         expect(await inventoryController.page.url()).toEqual(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
     })

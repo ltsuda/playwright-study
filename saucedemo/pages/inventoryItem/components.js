@@ -37,14 +37,14 @@ class InventoryItemComponents {
      */
     switchItemLocator(fromPage) {
         switch (fromPage) {
-        case "cart":
-            return inventoryItemLocators.cartItemContainer
-        case "inventory":
-            return inventoryItemLocators.itemContainer
-        case "details":
-            return inventoryItemLocators.detailsItemContainer
-        default:
-            return inventoryItemLocators.itemContainer
+            case "cart":
+                return inventoryItemLocators.cartItemContainer
+            case "inventory":
+                return inventoryItemLocators.itemContainer
+            case "details":
+                return inventoryItemLocators.detailsItemContainer
+            default:
+                return inventoryItemLocators.itemContainer
         }
     }
 
@@ -80,9 +80,9 @@ class InventoryItemComponents {
     async itemsNameText(fromPage) {
         const locator = this.switchItemLocator(fromPage)
         const itemLocator =
-      fromPage == "details"
-          ? inventoryItemLocators.itemNameText.replace("item", "details")
-          : inventoryItemLocators.itemNameText
+            fromPage == "details"
+                ? inventoryItemLocators.itemNameText.replace("item", "details")
+                : inventoryItemLocators.itemNameText
         return await this.page.$$(`${locator}` + ">>" + `${itemLocator}`)
     }
 
@@ -93,9 +93,9 @@ class InventoryItemComponents {
     async itemsPriceText(fromPage) {
         const locator = this.switchItemLocator(fromPage)
         const itemLocator =
-      fromPage == "details"
-          ? inventoryItemLocators.itemPriceText.replace("_", "_details_")
-          : inventoryItemLocators.itemPriceText
+            fromPage == "details"
+                ? inventoryItemLocators.itemPriceText.replace("_", "_details_")
+                : inventoryItemLocators.itemPriceText
         return await this.page.$$(`${locator}` + ">>" + `${itemLocator}`)
     }
 

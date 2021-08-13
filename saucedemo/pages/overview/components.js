@@ -44,7 +44,9 @@ class OverviewComponents {
      * @returns {String} payment card element text
      */
     async paymentInfoText() {
-        return await this.page.$(`${overviewLocators.summaryInfoContainer}` + ">>" + `${overviewLocators.paymentInfoText}`)
+        return await this.page.$(
+            `${overviewLocators.summaryInfoContainer}` + ">>" + `${overviewLocators.paymentInfoText}`
+        )
     }
 
     /**
@@ -52,7 +54,9 @@ class OverviewComponents {
      * @returns {String} shipment element text
      */
     async shippingInfoText() {
-        return await this.page.$(`${overviewLocators.summaryInfoContainer}` + ">>" + `${overviewLocators.shippingInfoText}`)
+        return await this.page.$(
+            `${overviewLocators.summaryInfoContainer}` + ">>" + `${overviewLocators.shippingInfoText}`
+        )
     }
 
     /**
@@ -76,7 +80,9 @@ class OverviewComponents {
      * @returns {String} total price element text
      */
     async totalPriceText() {
-        return await this.page.$(`${overviewLocators.summaryInfoContainer}` + ">>" + `${overviewLocators.totalPriceText}`)
+        return await this.page.$(
+            `${overviewLocators.summaryInfoContainer}` + ">>" + `${overviewLocators.totalPriceText}`
+        )
     }
 
     /**

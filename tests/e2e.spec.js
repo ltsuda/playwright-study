@@ -7,12 +7,26 @@ test.describe("Saucedemo E2E: @e2e", () => {
         await page.goto(baseURL)
     })
 
-    test("User should be able to login with a valid credentials @e2e-login", async ({ baseURL, loginController, page }) => {
+    test("User should be able to login with a valid credentials @e2e-login", async ({
+        baseURL,
+        loginController,
+        page,
+    }) => {
         await loginController.loginWithStandardUser()
         expect(page.url()).toBe(`${baseURL}${PAGES.INVENTORY}`)
     })
 
-    test("User should be able to complete a purchase @e2e-purchase", async ({ baseURL, cartController, checkoutController, completedController, inventoryItemController, loginController, navigationBarController, overviewController, page }) => {
+    test("User should be able to complete a purchase @e2e-purchase", async ({
+        baseURL,
+        cartController,
+        checkoutController,
+        completedController,
+        inventoryItemController,
+        loginController,
+        navigationBarController,
+        overviewController,
+        page,
+    }) => {
         await loginController.loginWithStandardUser()
         expect(page.url()).toBe(`${baseURL}${PAGES.INVENTORY}`)
 

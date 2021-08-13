@@ -30,15 +30,15 @@ async function setSession(page, data = {}) {
     await page.goto(BASEURL, "networkidle")
 
     await page.evaluate(
-        ([ username, productsContent ]) => {
+        ([username, productsContent]) => {
             const cookie = `session-username=${username}`
-            const storage = [ "cart-contents", productsContent ]
+            const storage = ["cart-contents", productsContent]
             /* eslint-disable no-undef */
             document.cookie = cookie
             window.localStorage.setItem(...storage)
             /* eslint-enable no-undef */
         },
-        [ username, productsContent ]
+        [username, productsContent]
     )
     await page.goto(`${path}`, "networkidle")
 }

@@ -4,7 +4,11 @@ const { PAGES, PRODUCTS_INDEX, CREDENTIALS } = require("../saucedemo/utils/const
 const { setSession } = require("../saucedemo/utils/utils")
 
 test.describe("Saucedemo InventoryPage: @details", () => {
-    test("should be at Inventory page when clicking at the back to products", async ({ baseURL, inventoryItemController, page }) => {
+    test("should be at Inventory page when clicking at the back to products", async ({
+        baseURL,
+        inventoryItemController,
+        page,
+    }) => {
         await setSession(page, {
             path: `${PAGES.INVENTORY_ITEM}?id=${PRODUCTS_INDEX.ALL_TSHIRT}`,
             username: CREDENTIALS.USERS.STANDARD,
@@ -25,7 +29,11 @@ test.describe("Saucedemo InventoryPage: @details", () => {
         expect(items[0]).toStrictEqual(itemDetail[0])
     })
 
-    test("should be possible to add the product to cart", async ({ inventoryItemController, navigationBarController, page }) => {
+    test("should be possible to add the product to cart", async ({
+        inventoryItemController,
+        navigationBarController,
+        page,
+    }) => {
         await setSession(page, {
             path: `${PAGES.INVENTORY_ITEM}?id=${PRODUCTS_INDEX.BIKELIGHT}`,
             username: CREDENTIALS.USERS.STANDARD,
@@ -34,7 +42,11 @@ test.describe("Saucedemo InventoryPage: @details", () => {
         expect(await navigationBarController.getCartBadgeIfExists()).toBe("1")
     })
 
-    test("should be possible to remove the product from cart", async ({ inventoryItemController, navigationBarController, page }) => {
+    test("should be possible to remove the product from cart", async ({
+        inventoryItemController,
+        navigationBarController,
+        page,
+    }) => {
         await setSession(page, {
             path: `${PAGES.INVENTORY_ITEM}?id=${PRODUCTS_INDEX.BIKELIGHT}`,
             username: CREDENTIALS.USERS.STANDARD,

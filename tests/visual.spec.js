@@ -76,14 +76,14 @@ test.describe("Saucedemo Visual: @visual", () => {
         await setSession(page, {
             path: PAGES.CART,
             username: CREDENTIALS.USERS.STANDARD,
-            products: [ PRODUCTS_INDEX.BACKPACK ],
+            products: [PRODUCTS_INDEX.BACKPACK],
         })
         await cartController.screenIsVisible()
         await inventoryItemController.screenItemIsVisible()
         expect(await page.screenshot({ fullPage: true })).toMatchSnapshot("cart-item-screen.png")
     })
 
-    test("Checkout page shows correct elements", async ({  checkoutController, page }) => {
+    test("Checkout page shows correct elements", async ({ checkoutController, page }) => {
         await setSession(page, {
             path: PAGES.CHECKOUT,
             username: CREDENTIALS.USERS.STANDARD,
@@ -105,7 +105,7 @@ test.describe("Saucedemo Visual: @visual", () => {
         await setSession(page, {
             path: PAGES.OVERVIEW,
             username: CREDENTIALS.USERS.STANDARD,
-            products: [ PRODUCTS_INDEX.ALL_TSHIRT ],
+            products: [PRODUCTS_INDEX.ALL_TSHIRT],
         })
         await overviewController.screenIsVisible()
         expect(await page.screenshot({ fullPage: true })).toMatchSnapshot("overview-item-screen.png")

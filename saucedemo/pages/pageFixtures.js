@@ -40,5 +40,5 @@ module.exports = base.test.extend({
     },
     titleHeaderController: async ({ page }, use) => {
         await use(new TitleHeaderController(page))
-    }
+    },
 })
