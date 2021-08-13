@@ -1,0 +1,85 @@
+{
+  "uid" : "5adeac59d52d82fe",
+  "name" : "should be possible to sort items from Z to A",
+  "fullName" : "should be possible to sort items from Z to A",
+  "historyId" : "chromium-fhd inventory.spec.js Saucedemo InventoryPage: @inventory should be possible to sort items from Z to A",
+  "time" : {
+    "start" : 1628833944641,
+    "stop" : 1628833945873,
+    "duration" : 1232
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "683bc91e1b0cdb83",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/25//#testresult/683bc91e1b0cdb83",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628708736970,
+          "stop" : 1628708738542,
+          "duration" : 1572
+        }
+      }, {
+        "uid" : "8ccdd9dbd96c145f",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/24//#testresult/8ccdd9dbd96c145f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707817219,
+          "stop" : 1628707817950,
+          "duration" : 731
+        }
+      }, {
+        "uid" : "4d025c39167f40b9",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/23//#testresult/4d025c39167f40b9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707308824,
+          "stop" : 1628707309982,
+          "duration" : 1158
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5adeac59d52d82fe.json",
+  "parameterValues" : [ ]
+}

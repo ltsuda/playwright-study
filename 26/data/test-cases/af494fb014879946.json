@@ -1,0 +1,85 @@
+{
+  "uid" : "af494fb014879946",
+  "name" : "should be possible to add product to cart @smoke",
+  "fullName" : "should be possible to add product to cart @smoke",
+  "historyId" : "chrome-fhd inventory.spec.js Saucedemo InventoryPage: @inventory should be possible to add product to cart @smoke",
+  "time" : {
+    "start" : 1628834007739,
+    "stop" : 1628834009425,
+    "duration" : 1686
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "9ba8eb1e633ef7a8",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/25//#testresult/9ba8eb1e633ef7a8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628708815465,
+          "stop" : 1628708817405,
+          "duration" : 1940
+        }
+      }, {
+        "uid" : "cec6fb2a59f8d35b",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/24//#testresult/cec6fb2a59f8d35b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707880013,
+          "stop" : 1628707881730,
+          "duration" : 1717
+        }
+      }, {
+        "uid" : "6f124cc8f95f22dd",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/23//#testresult/6f124cc8f95f22dd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707381212,
+          "stop" : 1628707383001,
+          "duration" : 1789
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "af494fb014879946.json",
+  "parameterValues" : [ ]
+}

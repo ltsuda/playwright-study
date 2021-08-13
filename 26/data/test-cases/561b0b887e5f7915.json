@@ -1,0 +1,85 @@
+{
+  "uid" : "561b0b887e5f7915",
+  "name" : "should be at the login url",
+  "fullName" : "should be at the login url",
+  "historyId" : "chrome-hd login.spec.js Saucedemo LoginPage: @login should be at the login url",
+  "time" : {
+    "start" : 1628833981769,
+    "stop" : 1628833982204,
+    "duration" : 435
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "login.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo LoginPage: @login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "9936e41fc87348d",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/25//#testresult/9936e41fc87348d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628708780733,
+          "stop" : 1628708781211,
+          "duration" : 478
+        }
+      }, {
+        "uid" : "c7d7a5a8c309a99b",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/24//#testresult/c7d7a5a8c309a99b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707852490,
+          "stop" : 1628707852736,
+          "duration" : 246
+        }
+      }, {
+        "uid" : "2b3e8d0f42a2c4b9",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/23//#testresult/2b3e8d0f42a2c4b9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707348880,
+          "stop" : 1628707349239,
+          "duration" : 359
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "561b0b887e5f7915.json",
+  "parameterValues" : [ ]
+}
