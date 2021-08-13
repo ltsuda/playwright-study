@@ -1,28 +1,56 @@
+/* eslint-disable no-unused-vars */
+const { Page } = require("@playwright/test")
+/* eslint-enable no-unused-vars */
 const { InventoryItemComponents, inventoryItemLocators } = require("./components")
 const { randomInt } = require("../../utils/utils")
 
+/**
+ * Class representing the Inventory's item elements interations
+ */
 class InventoryItemController {
+    /**
+     * Create the InventoryItem controller
+     * @param {Page} page - playwright browser's page\
+     * See {@link https://playwright.dev/docs/api/class-page}
+     * @param {InventoryItemComponents} components - class with elementsHandle of the InventoryItem elements
+     */
     constructor(page) {
         this.page = page
         this.components = new InventoryItemComponents(this.page)
         this.locators = inventoryItemLocators
     }
 
+    /**
+     * Validate if "itemDetailContainer" element is visible
+     */
     async screenIsVisible() {
         const itemDetailContainerElement = await this.components.itemDetailContainer()
         await itemDetailContainerElement.isVisible()
     }
 
+    /**
+     * Validate if "cartItemContainer" element is visible
+     */
     async screenItemIsVisible() {
         const cartItemContainerElement = await this.components.cartItemContainer()
         await cartItemContainerElement.isVisible()
     }
 
+    /**
+     * Get the number of items' elements
+     * @param {String} fromPage - the page that is calling this function like
+     * 'cart' or 'inventory
+     * @returns {number} - number of items
+     */
     async getItemsCount(fromPage) {
         const itemsElements = await this.components.items(fromPage)
         return itemsElements.length
     }
 
+    /**
+     * Get an item's property text or a list of them
+     * @returns {String[]|String} - a text or a list of texts
+     */
     async _getItemsTextByIndex(elements, index) {
         const texts = []
 
@@ -36,11 +64,27 @@ class InventoryItemController {
         }
     }
 
+    /**
+     * Get an item's name text or a list of name texts
+     * @param {number|String} index - the index of the item or the string 'all'
+     * to get a list of the names
+     * @param {String} fromPage - the page that is calling this function like
+     * 'cart' or 'inventory
+     * @returns {String[]|String} - a name or list of names
+     */
     async getItemsNameTextByIndex(index, fromPage) {
         const nameElements = await this.components.itemsNameText(fromPage)
         return await this._getItemsTextByIndex(nameElements, index)
     }
 
+    /**
+     * Get an item's price text or a list of price texts
+     * @param {number|String} index - the index of the item or the string 'all'
+     * to get a list of the price
+     * @param {String} fromPage - the page that is calling this function like
+     * 'cart' or 'inventory
+     * @returns {String[]|String} - a price or list of price
+     */
     async getItemsPriceTextByIndex(index, fromPage) {
         const priceElements = await this.components.itemsPriceText(fromPage)
         var prices = await this._getItemsTextByIndex(priceElements, index)
@@ -55,6 +99,13 @@ class InventoryItemController {
         return index == "all" ? priceString : priceString[index]
     }
 
+    /**
+     * Get an item's object
+     * @param {String} [fromPage="inventory"] - the page that is calling this function like
+     * 'cart' or 'inventory
+     * @returns {Object[]} - a list of item's object containing
+     * their name, description and price
+     */
     async getItemsObject(fromPage = "inventory") {
         const itemsElements = await this.components.items(fromPage)
         let items = []
@@ -85,26 +136,20 @@ class InventoryItemController {
         return items
     }
 
+    /**
+     * Click at the "Remove" button
+     */
     async removeRandomItemFromCart(fromPage) {
         const removeFromElements = await this.components.removeItemsButton(fromPage)
         const randomElement = removeFromElements[randomInt(removeFromElements.length)]
         await randomElement.click()
     }
 
-    async getTotalPrice() {
-    // as the system locks at 1 unit per product, so we can get all prices without
-    // having to relate it to any product, just add them to get the total
-        const priceElements = await this.components.itemsPrice()
-        var prices = await this._getItemsTextByIndex(priceElements, "all")
-        var totalPrice = 0
-        prices.forEach((price) => {
-            const priceString = price.replace("$", "")
-            totalPrice = parseFloat(totalPrice) + parseFloat(priceString)
-        })
-
-        return totalPrice.toFixed(2)
-    }
-
+    /**
+     * Click at the "Add to cart" button
+     * @returns {Object} - an item's object containing
+     * its name, description and price
+     */
     async addRandomItemToCart() {
         const itemsCount = await this.getItemsCount("inventory")
         const randomItem = randomInt(itemsCount)
@@ -129,16 +174,25 @@ class InventoryItemController {
         }
     }
 
+    /**
+     * Click at the "Back to products" button
+     */
     async backToProducts() {
         const backToProductsButton = await this.components.backToProductsButton()
         await backToProductsButton.click()
     }
 
+    /**
+     * Click at the "Add to cart" button
+     */
     async addToCart(fromPage = "details") {
         const addToCartButton = await this.components.addToCartButton(fromPage)
         await addToCartButton.click()
     }
 
+    /**
+     * Click at the "Remove" button
+     */
     async removeFromCart(fromPage = "details") {
         const removeFromElements = await this.components.removeItemsButton(fromPage)
         await removeFromElements[0].click()
