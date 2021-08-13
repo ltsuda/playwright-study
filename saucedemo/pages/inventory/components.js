@@ -26,7 +26,7 @@ class InventoryComponents {
 
     /**
      * Get the inventory's container ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'inventoryContainer' locator
+     * @returns {ElementHandle} ElementHandle for 'inventoryContainer' locator
      */
     async inventoryContainer() {
         return await this.page.$(inventoryLocators.inventoryContainer)

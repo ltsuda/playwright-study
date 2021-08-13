@@ -27,7 +27,7 @@ class LoginComponents {
 
     /**
      * Get the Login's container ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'loginContainer' locator
+     * @returns {ElementHandle} ElementHandle for 'loginContainer' locator
      */
     async loginContainer() {
         return await this.page.$(loginLocators.loginContainer)
@@ -35,7 +35,7 @@ class LoginComponents {
 
     /**
      * Get the credentials container's ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'credentialsContainer' locator
+     * @returns {ElementHandle} ElementHandle for 'credentialsContainer' locator
      */
     async credentialsContainer() {
         return await this.page.$(loginLocators.credentialsContainer)
@@ -43,7 +43,7 @@ class LoginComponents {
 
     /**
      * Get the credentials text's ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'acceptedUsersText' locator
+     * @returns {ElementHandle} ElementHandle for 'acceptedUsersText' locator
      */
     async acceptedUsersText() {
         return await this.page.$(loginLocators.acceptedUsersText)
@@ -51,7 +51,7 @@ class LoginComponents {
 
     /**
      * Get the password text's ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'acceptedPasswordText' locator
+     * @returns {ElementHandle} ElementHandle for 'acceptedPasswordText' locator
      */
     async acceptedPasswordText() {
         return await this.page.$(loginLocators.acceptedPasswordText)
@@ -59,7 +59,7 @@ class LoginComponents {
 
     /**
      * Get the error message text's ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'errorText' locator
+     * @returns {ElementHandle} ElementHandle for 'errorText' locator
      */
     async errorMessageText() {
         return await this.page.$(loginLocators.errorText)
@@ -67,7 +67,7 @@ class LoginComponents {
 
     /**
      * Get the checkout's username input ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'usernameInput' locator
+     * @returns {ElementHandle} ElementHandle for 'usernameInput' locator
      */
     async usernameInput() {
         return await this.page.$(loginLocators.usernameInput)
@@ -75,7 +75,7 @@ class LoginComponents {
 
     /**
      * Get the checkout's password input ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'passwordInput' locator
+     * @returns {ElementHandle} ElementHandle for 'passwordInput' locator
      */
     async passwordInput() {
         return await this.page.$(loginLocators.passwordInput)
@@ -83,7 +83,7 @@ class LoginComponents {
 
     /**
      * Get the login button ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'loginButton' locator
+     * @returns {ElementHandle} ElementHandle for 'loginButton' locator
      */
     async loginButton() {
         return await this.page.$(loginLocators.loginButton)

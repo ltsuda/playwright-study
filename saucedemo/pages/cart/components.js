@@ -27,7 +27,7 @@ class CartComponents {
 
     /**
      * Get the cart's container ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'cartContainer' locator
+     * @returns {ElementHandle} ElementHandle for 'cartContainer' locator
      */
     async cartContainer() {
         return await this.page.$(cartLocators.cartContainer)
@@ -35,7 +35,7 @@ class CartComponents {
 
     /**
      * Get the cart's container ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'continueShoppingButton' locator
+     * @returns {ElementHandle} ElementHandle for 'continueShoppingButton' locator
      */
     async continueShoppingButton() {
         return await this.page.$(cartLocators.continueShoppingButton)
@@ -43,7 +43,7 @@ class CartComponents {
 
     /**
      * Get the cart's container ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'checkoutButton' locator
+     * @returns {ElementHandle} ElementHandle for 'checkoutButton' locator
      */
     async checkoutButton() {
         return await this.page.$(cartLocators.checkoutButton)

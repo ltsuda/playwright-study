@@ -32,7 +32,7 @@ class CheckoutComponents {
 
     /**
      * Get the checkout's container ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'checkoutContainer' locator
+     * @returns {ElementHandle} ElementHandle for 'checkoutContainer' locator
      */
     async checkoutContainer() {
         return await this.page.$(checkoutLocators.checkoutContainer)
@@ -40,7 +40,7 @@ class CheckoutComponents {
 
     /**
      * Get the checkout's cancel button ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'cancelButton' locator
+     * @returns {ElementHandle} ElementHandle for 'cancelButton' locator
      */
     async cancelButton() {
         return await this.page.$(checkoutLocators.cancelButton)
@@ -48,7 +48,7 @@ class CheckoutComponents {
 
     /**
      * Get the checkout's continue button ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'continueButton' locator
+     * @returns {ElementHandle} ElementHandle for 'continueButton' locator
      */
     async continueButton() {
         return await this.page.$(checkoutLocators.continueButton)
@@ -56,7 +56,7 @@ class CheckoutComponents {
 
     /**
      * Get the checkout's error message text ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'errorMessageText' locator
+     * @returns {ElementHandle} ElementHandle for 'errorMessageText' locator
      */
     async errorMessageText() {
         return this.page.$(checkoutLocators.errorMessageText)
@@ -64,7 +64,7 @@ class CheckoutComponents {
 
     /**
      * Get the checkout's first name input ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'firstNameInput' locator
+     * @returns {ElementHandle} ElementHandle for 'firstNameInput' locator
      */
     async firstNameInput() {
         return this.page.$(`${checkoutLocators.checkoutForm}` + ">>" + `${checkoutLocators.firstNameInput}`)
@@ -72,7 +72,7 @@ class CheckoutComponents {
 
     /**
      * Get the checkout's last name input ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'lastNameInput' locator
+     * @returns {ElementHandle} ElementHandle for 'lastNameInput' locator
      */
     async lastNameInput() {
         return this.page.$(`${checkoutLocators.checkoutForm}` + ">>" + `${checkoutLocators.lastNameInput}`)
@@ -80,7 +80,7 @@ class CheckoutComponents {
 
     /**
      * Get the checkout's postal code input ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'postalCodeInput' locator
+     * @returns {ElementHandle} ElementHandle for 'postalCodeInput' locator
      */
     async postalCodeInput() {
         return this.page.$(`${checkoutLocators.checkoutForm}` + ">>" + `${checkoutLocators.postalCodeInput}`)

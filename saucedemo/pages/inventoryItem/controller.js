@@ -40,7 +40,7 @@ class InventoryItemController {
      * Get the number of items' elements
      * @param {String} fromPage - the page that is calling this function like
      * 'cart' or 'inventory
-     * @returns {number} - number of items
+     * @returns {number} number of items
      */
     async getItemsCount(fromPage) {
         const itemsElements = await this.components.items(fromPage)
@@ -49,7 +49,7 @@ class InventoryItemController {
 
     /**
      * Get an item's property text or a list of them
-     * @returns {String[]|String} - a text or a list of texts
+     * @returns {String[]|String} a text or a list of texts
      */
     async _getItemsTextByIndex(elements, index) {
         const texts = []
@@ -70,7 +70,7 @@ class InventoryItemController {
      * to get a list of the names
      * @param {String} fromPage - the page that is calling this function like
      * 'cart' or 'inventory
-     * @returns {String[]|String} - a name or list of names
+     * @returns {String[]|String} a name or list of names
      */
     async getItemsNameTextByIndex(index, fromPage) {
         const nameElements = await this.components.itemsNameText(fromPage)
@@ -83,7 +83,7 @@ class InventoryItemController {
      * to get a list of the price
      * @param {String} fromPage - the page that is calling this function like
      * 'cart' or 'inventory
-     * @returns {String[]|String} - a price or list of price
+     * @returns {String[]|String} a price or list of price
      */
     async getItemsPriceTextByIndex(index, fromPage) {
         const priceElements = await this.components.itemsPriceText(fromPage)
@@ -103,7 +103,7 @@ class InventoryItemController {
      * Get an item's object
      * @param {String} [fromPage="inventory"] - the page that is calling this function like
      * 'cart' or 'inventory
-     * @returns {Object[]} - a list of item's object containing
+     * @returns {Object[]} a list of item's object containing
      * their name, description and price
      */
     async getItemsObject(fromPage = "inventory") {
@@ -138,6 +138,8 @@ class InventoryItemController {
 
     /**
      * Click at the "Remove" button
+     * @param {String} [fromPage="inventory"] - the page that is calling this function like
+     * 'cart' or 'inventory
      */
     async removeRandomItemFromCart(fromPage) {
         const removeFromElements = await this.components.removeItemsButton(fromPage)
@@ -147,7 +149,7 @@ class InventoryItemController {
 
     /**
      * Click at the "Add to cart" button
-     * @returns {Object} - an item's object containing
+     * @returns {Object} an item's object containing
      * its name, description and price
      */
     async addRandomItemToCart() {
@@ -184,6 +186,8 @@ class InventoryItemController {
 
     /**
      * Click at the "Add to cart" button
+     * @param {String} [fromPage="inventory"] - the page that is calling this function like
+     * 'cart' or 'inventory
      */
     async addToCart(fromPage = "details") {
         const addToCartButton = await this.components.addToCartButton(fromPage)
@@ -192,6 +196,8 @@ class InventoryItemController {
 
     /**
      * Click at the "Remove" button
+     * @param {String} [fromPage="inventory"] - the page that is calling this function like
+     * 'cart' or 'inventory
      */
     async removeFromCart(fromPage = "details") {
         const removeFromElements = await this.components.removeItemsButton(fromPage)

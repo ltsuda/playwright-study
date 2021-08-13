@@ -34,7 +34,7 @@ class InventoryItemComponents {
 
     /**
      * Select which container selector based on the page
-     * @returns {ElementHandle} - ElementHandle for a container locator
+     * @returns {ElementHandle} ElementHandle for a container locator
      */
     switchItemLocator(fromPage) {
         switch (fromPage) {
@@ -51,7 +51,7 @@ class InventoryItemComponents {
 
     /**
      * Get the inventory item detail's container ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'detailsItemContainer' locator
+     * @returns {ElementHandle} ElementHandle for 'detailsItemContainer' locator
      */
     async itemDetailContainer() {
         return await this.page.$(inventoryItemLocators.detailsItemContainer)
@@ -59,7 +59,7 @@ class InventoryItemComponents {
 
     /**
      * Get the inventory item cart's container ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'cartItemContainer' locator
+     * @returns {ElementHandle} ElementHandle for 'cartItemContainer' locator
      */
     async cartItemContainer() {
         return await this.page.$(inventoryItemLocators.cartItemContainer)
@@ -67,7 +67,7 @@ class InventoryItemComponents {
 
     /**
      * Get a list of item's container ElementHandles
-     * @returns {ElementHandle[]} - a list of ElementHandle for a container locator
+     * @returns {ElementHandle[]} a list of ElementHandle for a container locator
      */
     async items(fromPage = "inventory") {
         const locator = this.switchItemLocator(fromPage)
@@ -76,7 +76,7 @@ class InventoryItemComponents {
 
     /**
      * Get a list of item's name ElementHandles
-     * @returns {ElementHandle[]} - a list of ElementHandle for a 'itemNameText' locator
+     * @returns {ElementHandle[]} a list of ElementHandle for a 'itemNameText' locator
      */
     async itemsNameText(fromPage) {
         const locator = this.switchItemLocator(fromPage)
@@ -89,7 +89,7 @@ class InventoryItemComponents {
 
     /**
      * Get a list of item's price ElementHandles
-     * @returns {ElementHandle[]} - a list of ElementHandle for a 'itemPriceText' locator
+     * @returns {ElementHandle[]} a list of ElementHandle for a 'itemPriceText' locator
      */
     async itemsPriceText(fromPage) {
         const locator = this.switchItemLocator(fromPage)
@@ -102,7 +102,7 @@ class InventoryItemComponents {
 
     /**
      * Get the add to cart button ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'addToCartButton' locator
+     * @returns {ElementHandle} ElementHandle for 'addToCartButton' locator
      */
     async addToCartButton(fromPage) {
         const locator = this.switchItemLocator(fromPage)
@@ -111,7 +111,7 @@ class InventoryItemComponents {
 
     /**
      * Get the remove from cart button ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'removeButton' locator
+     * @returns {ElementHandle} ElementHandle for 'removeButton' locator
      */
     async removeItemsButton(fromPage) {
         const locator = this.switchItemLocator(fromPage)
@@ -120,7 +120,7 @@ class InventoryItemComponents {
 
     /**
      * Get the back to products button ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'backToProductsButton' locator
+     * @returns {ElementHandle} ElementHandle for 'backToProductsButton' locator
      */
     async backToProductsButton() {
         return await this.page.$(inventoryItemLocators.backToProductsButton)

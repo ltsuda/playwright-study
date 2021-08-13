@@ -46,7 +46,7 @@ class CompletedController {
 
     /**
      * Get header thank you message inside completedContainer
-     * @returns header element text
+     * @returns {String} header element text
      */
     async getHeaderText() {
         const headerElement = await this.components.completedHeaderText()
@@ -55,7 +55,7 @@ class CompletedController {
 
     /**
      * Get order dispatched message inside completedContainer
-     * @returns completed element text
+     * @returns {String} completed element text
      */
     async getCompletedText() {
         const completedElement = await this.components.completedText()
@@ -64,7 +64,7 @@ class CompletedController {
 
     /**
      * Get completed image source inside completedContainer
-     * @returns image's source URL
+     * @returns {String} image's source URL
      */
     async getCompletedImage() {
         const imageElement = await this.components.completedImage()

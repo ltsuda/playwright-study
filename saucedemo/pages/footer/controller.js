@@ -30,7 +30,7 @@ class FooterController {
 
     /**
      * Get Twitter link
-     * @returns href Twitter's URL
+     * @returns {String} href Twitter's URL
      */
     async getTwitterLink() {
         const socialElement = await this.components.twitterLink()
@@ -39,7 +39,7 @@ class FooterController {
 
     /**
      * Get Facebook link
-     * @returns href Facebook's URL
+     * @returns {String} href Facebook's URL
      */
     async getFacebookLink() {
         const socialElement = await this.components.facebookLink()
@@ -48,7 +48,7 @@ class FooterController {
 
     /**
      * Get LinkedIn link
-     * @returns href LinkedIn's URL
+     * @returns {String} href LinkedIn's URL
      */
     async getLinkedinLink() {
         const socialElement = await this.components.linkedinLink()
@@ -57,7 +57,7 @@ class FooterController {
 
     /**
      * Get Robot image source
-     * @returns image's source URL
+     * @returns {String} image's source URL
      */
     async getRobotImage() {
         const socialElement = await this.components.robotImage()
@@ -66,7 +66,7 @@ class FooterController {
 
     /**
      * Get copyright text
-     * @returns copyright's element text
+     * @returns {String} copyright's element text
      */
     async getCopyrightText() {
         const socialElement = await this.components.copyrightText()

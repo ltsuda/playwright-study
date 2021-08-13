@@ -30,7 +30,7 @@ class CompletedComponents {
 
     /**
      * Get the checkout-completed's container ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'completedContainer' locator
+     * @returns {ElementHandle} ElementHandle for 'completedContainer' locator
      */
     async completedContainer() {
         return await this.page.$(completedLocators.completedContainer)
@@ -38,7 +38,7 @@ class CompletedComponents {
 
     /**
      * Get the checkout-completed's header text ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'completedHeaderText' locator
+     * @returns {ElementHandle} ElementHandle for 'completedHeaderText' locator
      */
     async completedHeaderText() {
         return await this.page.$(
@@ -48,7 +48,7 @@ class CompletedComponents {
 
     /**
      * Get the checkout-completed's completed text ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'completedText' locator
+     * @returns {ElementHandle} ElementHandle for 'completedText' locator
      */
     async completedText() {
         return await this.page.$(`${completedLocators.completedContainer}` + ">>" + `${completedLocators.completedText}`)
@@ -56,7 +56,7 @@ class CompletedComponents {
 
     /**
      * Get the checkout-completed's completed image ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'errorMessageText' locator
+     * @returns {ElementHandle} ElementHandle for 'errorMessageText' locator
      */
     async completedImage() {
         return await this.page.$(`${completedLocators.completedContainer}` + ">>" + `${completedLocators.completedImage}`)
@@ -64,7 +64,7 @@ class CompletedComponents {
 
     /**
      * Get the checkout-completed's back to home button ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'completedBackButton' locator
+     * @returns {ElementHandle} ElementHandle for 'completedBackButton' locator
      */
     async completedBackButton() {
         return await this.page.$(

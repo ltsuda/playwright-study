@@ -31,7 +31,7 @@ class FooterComponents {
 
     /**
      * Get the footer's container ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'footerContainer' locator
+     * @returns {ElementHandle} ElementHandle for 'footerContainer' locator
      */
     async footerContainer() {
         return await this.page.$(footerLocators.footerContainer)
@@ -39,7 +39,7 @@ class FooterComponents {
 
     /**
      * Get the footer's header text ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'completedHeaderText' locator
+     * @returns {ElementHandle} ElementHandle for 'completedHeaderText' locator
      */
     async twitterLink() {
         return await this.page.$(footerLocators.twitterSocialLink)
@@ -47,7 +47,7 @@ class FooterComponents {
 
     /**
      * Get the footer's facebook link ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'facebookSocialLink' locator
+     * @returns {ElementHandle} ElementHandle for 'facebookSocialLink' locator
      */
     async facebookLink() {
         return await this.page.$(footerLocators.facebookSocialLink)
@@ -55,7 +55,7 @@ class FooterComponents {
 
     /**
      * Get the footer's linkedin link ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'linkdinSocialLink' locator
+     * @returns {ElementHandle} ElementHandle for 'linkdinSocialLink' locator
      */
     async linkedinLink() {
         return await this.page.$(footerLocators.linkdinSocialLink)
@@ -63,7 +63,7 @@ class FooterComponents {
 
     /**
      * Get the footer's copyright text ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'copyrightText' locator
+     * @returns {ElementHandle} ElementHandle for 'copyrightText' locator
      */
     async copyrightText() {
         return await this.page.$(footerLocators.copyrightText)
@@ -71,7 +71,7 @@ class FooterComponents {
 
     /**
      * Get the footer's robot image ElementHandle
-     * @returns {ElementHandle} - ElementHandle for 'footerImage' locator
+     * @returns {ElementHandle} ElementHandle for 'footerImage' locator
      */
     async robotImage() {
         return await this.page.$(footerLocators.footerImage)
