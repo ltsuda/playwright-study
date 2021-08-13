@@ -1,20 +1,10 @@
-const { test, expect } = require("@playwright/test")
-const { NavigationBarController } = require("../saucedemo/pages/navigationBar/controller")
-const { InventoryItemController } = require("../saucedemo/pages/inventoryItem/controller")
-const { CartController } = require("../saucedemo/pages/cart/controller")
+const { expect } = require("@playwright/test")
+const test = require("../saucedemo/pages/pageFixtures")
 const { PAGES, CREDENTIALS, PRODUCTS_INDEX } = require("../saucedemo/utils/consts")
 const { setSession } = require("../saucedemo/utils/utils")
 
 test.describe("Saucedemo CartPage: @cart", () => {
-    let navigationBarController, inventoryItemController, cartController
-
-    test.beforeEach(async ({ page }) => {
-        navigationBarController = new NavigationBarController(page)
-        inventoryItemController = new InventoryItemController(page)
-        cartController = new CartController(page)
-    })
-
-    test("should be back at Inventory page when click at the continue shopping button", async ({ page }) => {
+    test("should be back at Inventory page when click at the continue shopping button", async ({ cartController, page }) => {
         await setSession(page, {
             path: PAGES.CART,
             username: CREDENTIALS.USERS.STANDARD,
@@ -23,7 +13,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
         expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
     })
 
-    test("should be at Checkout page when click at the checkout button", async ({ page }) => {
+    test("should be at Checkout page when click at the checkout button", async ({ cartController, page }) => {
         await setSession(page, {
             path: PAGES.CART,
             username: CREDENTIALS.USERS.STANDARD,
@@ -32,7 +22,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
         expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
     })
 
-    test("should match cart badge with items in cart", async ({ page }) => {
+    test("should match cart badge with items in cart", async ({ inventoryItemController, navigationBarController, page }) => {
         await setSession(page, {
             path: PAGES.CART,
             username: CREDENTIALS.USERS.STANDARD,
@@ -43,7 +33,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
         )
     })
 
-    test("should be possible to add an item into the cart @smoke", async ({ page }) => {
+    test("should be possible to add an item into the cart @smoke", async ({ inventoryItemController, navigationBarController, page }) => {
         await setSession(page, {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
@@ -54,7 +44,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
         expect(itemsInCart[0]).toStrictEqual(addedItem)
     })
 
-    test("should be possible to remove product from cart", async ({ page }) => {
+    test("should be possible to remove product from cart", async ({ inventoryItemController, navigationBarController, page }) => {
         await setSession(page, {
             path: PAGES.CART,
             username: CREDENTIALS.USERS.STANDARD,
@@ -65,7 +55,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
         expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()
     })
 
-    test("should be possible to open sidemenu @slow @smoke", async ({ page }) => {
+    test("should be possible to open sidemenu @slow @smoke", async ({ navigationBarController,page }) => {
         await setSession(page, {
             path: PAGES.CART,
             username: CREDENTIALS.USERS.STANDARD,
@@ -76,7 +66,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
         expect(await navigationBarController.isSidemenuVisible()).toBeTruthy()
     })
 
-    test("should be possible to close sidemenu clicking at the X button @slow", async ({ page }) => {
+    test("should be possible to close sidemenu clicking at the X button @slow", async ({ navigationBarController, page }) => {
         await setSession(page, {
             path: PAGES.CART,
             username: CREDENTIALS.USERS.STANDARD,
@@ -89,7 +79,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
         expect(await navigationBarController.isSidemenuVisible()).toBeFalsy()
     })
 
-    test("should remove cart items when clicking at the reset state link on menu", async ({ page }) => {
+    test("should remove cart items when clicking at the reset state link on menu", async ({ navigationBarController, page }) => {
         await setSession(page, {
             path: PAGES.CART,
             username: CREDENTIALS.USERS.STANDARD,
@@ -101,7 +91,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
         expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()
     })
 
-    test("should back at Invetory page when clicking at the all items link on menu", async ({ baseURL, page }) => {
+    test("should back at Invetory page when clicking at the all items link on menu", async ({ baseURL, navigationBarController, page }) => {
         await setSession(page, {
             path: PAGES.CART,
             username: CREDENTIALS.USERS.STANDARD,
@@ -111,7 +101,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
         expect(page.url()).toBe(`${baseURL}${PAGES.INVENTORY}`)
     })
 
-    test("should navigate to SauceLabs page when clicking at the about link on menu @slow", async ({ page }) => {
+    test("should navigate to SauceLabs page when clicking at the about link on menu @slow", async ({ navigationBarController, page }) => {
         await setSession(page, {
             path: PAGES.CART,
             username: CREDENTIALS.USERS.STANDARD,
@@ -121,7 +111,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
         expect(page.url()).toBe(PAGES.ABOUT)
     })
 
-    test("should be at Login page when clicking at the logout link on menu", async ({ baseURL, page }) => {
+    test("should be at Login page when clicking at the logout link on menu", async ({ baseURL, navigationBarController, page }) => {
         await setSession(page, {
             path: PAGES.CART,
             username: CREDENTIALS.USERS.STANDARD,

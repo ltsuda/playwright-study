@@ -1,39 +1,18 @@
-const { test, expect } = require("@playwright/test")
-const { CartController } = require("../saucedemo/pages/cart/controller")
-const { CheckoutController } = require("../saucedemo/pages/checkout/controller")
-const { CompletedController } = require("../saucedemo/pages/completed/controller")
-const { InventoryItemController } = require("../saucedemo/pages/inventoryItem/controller")
-const { LoginController } = require("../saucedemo/pages/login/controller")
-const { NavigationBarController } = require("../saucedemo/pages/navigationBar/controller")
-const { OverviewController } = require("../saucedemo/pages/overview/controller")
+const { expect } = require("@playwright/test")
+const test = require("../saucedemo/pages/pageFixtures")
 const { PAGES, MESSAGES } = require("../saucedemo/utils/consts")
 
 test.describe("Saucedemo E2E: @e2e", () => {
-    let cartController,
-        checkoutController,
-        completedController,
-        inventoryItemController,
-        loginController,
-        navigationBarController,
-        overviewController
-
     test.beforeEach(async ({ baseURL, page }) => {
-        cartController = new CartController(page)
-        checkoutController = new CheckoutController(page)
-        completedController = new CompletedController(page)
-        inventoryItemController = new InventoryItemController(page)
-        loginController = new LoginController(page)
-        navigationBarController = new NavigationBarController(page)
-        overviewController = new OverviewController(page)
         await page.goto(baseURL)
     })
 
-    test("User should be able to login with a valid credentials @e2e-login", async ({ baseURL, page }) => {
+    test("User should be able to login with a valid credentials @e2e-login", async ({ baseURL, loginController, page }) => {
         await loginController.loginWithStandardUser()
         expect(page.url()).toBe(`${baseURL}${PAGES.INVENTORY}`)
     })
 
-    test("User should be able to complete a purchase @e2e-purchase", async ({ baseURL, page }) => {
+    test("User should be able to complete a purchase @e2e-purchase", async ({ baseURL, cartController, checkoutController, completedController, inventoryItemController, loginController, navigationBarController, overviewController, page }) => {
         await loginController.loginWithStandardUser()
         expect(page.url()).toBe(`${baseURL}${PAGES.INVENTORY}`)
 

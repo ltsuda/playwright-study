@@ -1,14 +1,9 @@
-const { test, expect } = require("@playwright/test")
-const { CheckoutController } = require("../saucedemo/pages/checkout/controller")
+const { expect } = require("@playwright/test")
+const test = require("../saucedemo/pages/pageFixtures")
 const { PAGES, PERSONAL_INFO, ERRORS, CREDENTIALS } = require("../saucedemo/utils/consts")
 const { setSession } = require("../saucedemo/utils/utils")
 
 test.describe("Saucedemo CheckoutPage: @checkout", () => {
-    let checkoutController
-    test.beforeEach(async ({ page }) => {
-        checkoutController = new CheckoutController(page)
-    })
-
     test("should be at Checkout page", async ({ page }) => {
         await setSession(page, {
             path: PAGES.CHECKOUT,
@@ -17,7 +12,7 @@ test.describe("Saucedemo CheckoutPage: @checkout", () => {
         expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
     })
 
-    test("should go back to Cart if cancel checkout", async ({ page }) => {
+    test("should go back to Cart if cancel checkout", async ({ checkoutController, page }) => {
         await setSession(page, {
             path: PAGES.CHECKOUT,
             username: CREDENTIALS.USERS.STANDARD,
@@ -26,7 +21,7 @@ test.describe("Saucedemo CheckoutPage: @checkout", () => {
         expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.CART}`)
     })
 
-    test("should show firstName error message if empty", async ({ page }) => {
+    test("should show firstName error message if empty", async ({ checkoutController, page }) => {
         await setSession(page, {
             path: PAGES.CHECKOUT,
             username: CREDENTIALS.USERS.STANDARD,
@@ -35,7 +30,7 @@ test.describe("Saucedemo CheckoutPage: @checkout", () => {
         expect(await checkoutController.getErrorMessage()).toBe(ERRORS.PERSONAL_FIRSTNAME)
     })
 
-    test("should show lastName error message if empty", async ({ page }) => {
+    test("should show lastName error message if empty", async ({ checkoutController, page }) => {
         await setSession(page, {
             path: PAGES.CHECKOUT,
             username: CREDENTIALS.USERS.STANDARD,
@@ -45,7 +40,7 @@ test.describe("Saucedemo CheckoutPage: @checkout", () => {
         expect(await checkoutController.getErrorMessage()).toBe(ERRORS.PERSONAL_LASTNAME)
     })
 
-    test("should show postalCode error message if empty", async ({ page }) => {
+    test("should show postalCode error message if empty", async ({ checkoutController, page }) => {
         await setSession(page, {
             path: PAGES.CHECKOUT,
             username: CREDENTIALS.USERS.STANDARD,
@@ -56,7 +51,7 @@ test.describe("Saucedemo CheckoutPage: @checkout", () => {
         expect(await checkoutController.getErrorMessage()).toBe(ERRORS.PERSONAL_ZIP)
     })
 
-    test("should go to Checkout Overview page @smoke", async ({ page }) => {
+    test("should go to Checkout Overview page @smoke", async ({ checkoutController, page }) => {
         await setSession(page, {
             path: PAGES.CHECKOUT,
             username: CREDENTIALS.USERS.STANDARD,
