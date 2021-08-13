@@ -37,7 +37,7 @@ class OverviewController {
     }
 
     /**
-     * Click at the "Cancel checkout" button
+     * Click at the Cancel checkout button
      */
     async cancelCheckout() {
         const cancelCheckoutButton = await this.components.cancelCheckoutButton()
@@ -45,7 +45,7 @@ class OverviewController {
     }
 
     /**
-     * Click at the "Finish" button
+     * Click at the Finish button
      */
     async finishCheckout() {
         const finishCheckoutButton = await this.components.finishCheckoutButton()
@@ -103,7 +103,7 @@ class OverviewController {
     }
 
     /**
-     * Calculate subtotal by multiplying the subtotal by 80%
+     * Calculate tax value by multiplying the subtotal by 80%
      * @returns {String} calculated tax value
      */
     async calculateTax() {

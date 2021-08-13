@@ -31,7 +31,7 @@ class TitleHeaderController {
     }
 
     /**
-     * Select a sort order on the dropdown
+     * Select a sort order on the dropdown element
      * @param {sortOptions} option - order option to sort items
      * @private
      */
@@ -55,7 +55,7 @@ class TitleHeaderController {
     }
 
     /**
-     * Select sort from High to Low price option to sort items* Select a sort order on the dropdown
+     * Select sort from High to Low price option to sort items
      */
     async sortHighLow() {
         await this._sortItems(sortOptions.HighLow)

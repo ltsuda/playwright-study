@@ -39,7 +39,7 @@ class CheckoutComponents {
     }
 
     /**
-     * Get the checkout's cancel button ElementHandle
+     * Get the cancel button ElementHandle
      * @returns {ElementHandle} ElementHandle for 'cancelButton' locator
      */
     async cancelButton() {
@@ -47,7 +47,7 @@ class CheckoutComponents {
     }
 
     /**
-     * Get the checkout's continue button ElementHandle
+     * Get the continue button ElementHandle
      * @returns {ElementHandle} ElementHandle for 'continueButton' locator
      */
     async continueButton() {
@@ -55,7 +55,7 @@ class CheckoutComponents {
     }
 
     /**
-     * Get the checkout's error message text ElementHandle
+     * Get the error message text ElementHandle
      * @returns {ElementHandle} ElementHandle for 'errorMessageText' locator
      */
     async errorMessageText() {
@@ -63,7 +63,7 @@ class CheckoutComponents {
     }
 
     /**
-     * Get the checkout's first name input ElementHandle
+     * Get the first name input ElementHandle
      * @returns {ElementHandle} ElementHandle for 'firstNameInput' locator
      */
     async firstNameInput() {
@@ -71,7 +71,7 @@ class CheckoutComponents {
     }
 
     /**
-     * Get the checkout's last name input ElementHandle
+     * Get the last name input ElementHandle
      * @returns {ElementHandle} ElementHandle for 'lastNameInput' locator
      */
     async lastNameInput() {
@@ -79,7 +79,7 @@ class CheckoutComponents {
     }
 
     /**
-     * Get the checkout's postal code input ElementHandle
+     * Get the postal code input ElementHandle
      * @returns {ElementHandle} ElementHandle for 'postalCodeInput' locator
      */
     async postalCodeInput() {

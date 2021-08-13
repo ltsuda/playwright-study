@@ -14,7 +14,6 @@ const inventoryLocators = {
  * See {@link https://playwright.dev/docs/api/class-elementhandle}
  */
 class InventoryComponents {
-
     /**
      * Create the Inventory ElementsHandle
      * @param {Page} page - playwright browser's page\

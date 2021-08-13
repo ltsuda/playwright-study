@@ -37,7 +37,7 @@ class CompletedController {
     }
 
     /**
-     * Click at the "Back Home" button
+     * Click at the Back Home button
      */
     async navigateBackHome() {
         const backHomeButton = await this.components.completedBackButton()

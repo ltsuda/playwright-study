@@ -19,7 +19,6 @@ const footerLocators = {
  * See {@link https://playwright.dev/docs/api/class-elementhandle}
  */
 class FooterComponents {
-
     /**
      * Create the Footer ElementsHandle
      * @param {Page} page - playwright browser's page\
@@ -38,15 +37,15 @@ class FooterComponents {
     }
 
     /**
-     * Get the footer's header text ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'completedHeaderText' locator
+     * Get the twitter link ElementHandle
+     * @returns {ElementHandle} ElementHandle for 'twitterSocialLink' locator
      */
     async twitterLink() {
         return await this.page.$(footerLocators.twitterSocialLink)
     }
 
     /**
-     * Get the footer's facebook link ElementHandle
+     * Get the facebook link ElementHandle
      * @returns {ElementHandle} ElementHandle for 'facebookSocialLink' locator
      */
     async facebookLink() {
@@ -54,7 +53,7 @@ class FooterComponents {
     }
 
     /**
-     * Get the footer's linkedin link ElementHandle
+     * Get the linkedin link ElementHandle
      * @returns {ElementHandle} ElementHandle for 'linkdinSocialLink' locator
      */
     async linkedinLink() {
@@ -62,7 +61,7 @@ class FooterComponents {
     }
 
     /**
-     * Get the footer's copyright text ElementHandle
+     * Get the copyright text ElementHandle
      * @returns {ElementHandle} ElementHandle for 'copyrightText' locator
      */
     async copyrightText() {
@@ -70,7 +69,7 @@ class FooterComponents {
     }
 
     /**
-     * Get the footer's robot image ElementHandle
+     * Get the robot image ElementHandle
      * @returns {ElementHandle} ElementHandle for 'footerImage' locator
      */
     async robotImage() {

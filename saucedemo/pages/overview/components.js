@@ -23,7 +23,7 @@ const overviewLocators = {
  */
 class OverviewComponents {
     /**
-     * Create the Pverview ElementsHandle
+     * Create the Overview ElementsHandle
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
      */

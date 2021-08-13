@@ -66,7 +66,7 @@ class LoginComponents {
     }
 
     /**
-     * Get the checkout's username input ElementHandle
+     * Get the username input ElementHandle
      * @returns {ElementHandle} ElementHandle for 'usernameInput' locator
      */
     async usernameInput() {
@@ -74,7 +74,7 @@ class LoginComponents {
     }
 
     /**
-     * Get the checkout's password input ElementHandle
+     * Get the password input ElementHandle
      * @returns {ElementHandle} ElementHandle for 'passwordInput' locator
      */
     async passwordInput() {

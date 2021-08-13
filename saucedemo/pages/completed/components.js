@@ -18,7 +18,6 @@ const completedLocators = {
  * See {@link https://playwright.dev/docs/api/class-elementhandle}
  */
 class CompletedComponents {
-
     /**
      * Create the Checkout Completed ElementsHandle
      * @param {Page} page - playwright browser's page\
@@ -37,7 +36,7 @@ class CompletedComponents {
     }
 
     /**
-     * Get the checkout-completed's header text ElementHandle
+     * Get the header text ElementHandle
      * @returns {ElementHandle} ElementHandle for 'completedHeaderText' locator
      */
     async completedHeaderText() {
@@ -47,7 +46,7 @@ class CompletedComponents {
     }
 
     /**
-     * Get the checkout-completed's completed text ElementHandle
+     * Get the completed description text ElementHandle
      * @returns {ElementHandle} ElementHandle for 'completedText' locator
      */
     async completedText() {
@@ -55,7 +54,7 @@ class CompletedComponents {
     }
 
     /**
-     * Get the checkout-completed's completed image ElementHandle
+     * Get the completed image ElementHandle
      * @returns {ElementHandle} ElementHandle for 'errorMessageText' locator
      */
     async completedImage() {
@@ -63,7 +62,7 @@ class CompletedComponents {
     }
 
     /**
-     * Get the checkout-completed's back to home button ElementHandle
+     * Get the back to home button ElementHandle
      * @returns {ElementHandle} ElementHandle for 'completedBackButton' locator
      */
     async completedBackButton() {

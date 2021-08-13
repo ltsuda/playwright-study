@@ -25,7 +25,7 @@ const navigationBarLocators = {
  */
 class NavigationBarComponents {
     /**
-     * Create the Footer ElementsHandle
+     * Create the NavigationBar ElementsHandle
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
      */
@@ -50,7 +50,7 @@ class NavigationBarComponents {
     }
 
     /**
-     * Get the sidemenu's container ElementHandle
+     * Get the sidemenu container's ElementHandle
      * @returns {ElementHandle} ElementHandle for 'sideMenu' locator
      */
     async sideMenu() {

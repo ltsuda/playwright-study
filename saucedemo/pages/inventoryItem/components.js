@@ -22,7 +22,6 @@ const inventoryItemLocators = {
  * See {@link https://playwright.dev/docs/api/class-elementhandle}
  */
 class InventoryItemComponents {
-
     /**
      * Create the Inventory item ElementsHandle
      * @param {Page} page - playwright browser's page\
@@ -66,8 +65,8 @@ class InventoryItemComponents {
     }
 
     /**
-     * Get a list of item's container ElementHandles
-     * @returns {ElementHandle[]} a list of ElementHandle for a container locator
+     * Get a list of items container's ElementHandles
+     * @returns {ElementHandle[]} a list of ElementHandle for the list of item's container locator
      */
     async items(fromPage = "inventory") {
         const locator = this.switchItemLocator(fromPage)
@@ -75,7 +74,7 @@ class InventoryItemComponents {
     }
 
     /**
-     * Get a list of item's name ElementHandles
+     * Get a list of items name's ElementHandles
      * @returns {ElementHandle[]} a list of ElementHandle for a 'itemNameText' locator
      */
     async itemsNameText(fromPage) {
@@ -88,7 +87,7 @@ class InventoryItemComponents {
     }
 
     /**
-     * Get a list of item's price ElementHandles
+     * Get a list of items price's ElementHandles
      * @returns {ElementHandle[]} a list of ElementHandle for a 'itemPriceText' locator
      */
     async itemsPriceText(fromPage) {

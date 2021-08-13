@@ -4,7 +4,6 @@ const { Page } = require("@playwright/test")
 const { CartComponents, cartLocators } = require("./components")
 const { PAGES } = require("../../utils/consts")
 
-
 /**
  * Class representing the Cart's page interations
  */

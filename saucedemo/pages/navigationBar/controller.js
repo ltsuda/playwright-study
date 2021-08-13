@@ -8,8 +8,11 @@ const { NavigationBarComponents, navigationBarLocators } = require("./components
  */
 class NavigationBarController {
     /**
-     * Class representing playwright's ElementHandles for the navigationbar elements\
-     * See {@link https://playwright.dev/docs/api/class-elementhandle}
+     * Create the NavigationBar controller
+     * @param {Page} page - playwright browser's page\
+     * See {@link https://playwright.dev/docs/api/class-page}
+     * @param {NavigationBarComponents} components - class with elementsHandle of the navigationbar elements
+     * @param {Object} locators - page's selectors
      */
     constructor(page) {
         this.page = page

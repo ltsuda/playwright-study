@@ -34,7 +34,7 @@ class CartComponents {
     }
 
     /**
-     * Get the cart's container ElementHandle
+     * Get the continue shopping button ElementHandle
      * @returns {ElementHandle} ElementHandle for 'continueShoppingButton' locator
      */
     async continueShoppingButton() {
@@ -42,7 +42,7 @@ class CartComponents {
     }
 
     /**
-     * Get the cart's container ElementHandle
+     * Get the checkout button ElementHandle
      * @returns {ElementHandle} ElementHandle for 'checkoutButton' locator
      */
     async checkoutButton() {

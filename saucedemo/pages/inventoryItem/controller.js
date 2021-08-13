@@ -50,6 +50,7 @@ class InventoryItemController {
     /**
      * Get an item's property text or a list of them
      * @returns {String[]|String} a text or a list of texts
+     * @private
      */
     async _getItemsTextByIndex(elements, index) {
         const texts = []
@@ -137,7 +138,7 @@ class InventoryItemController {
     }
 
     /**
-     * Click at the "Remove" button
+     * Click at the remove button
      * @param {String} [fromPage="inventory"] - the page that is calling this function like
      * 'cart' or 'inventory
      */
@@ -148,9 +149,8 @@ class InventoryItemController {
     }
 
     /**
-     * Click at the "Add to cart" button
-     * @returns {Object} an item's object containing
-     * its name, description and price
+     * Click at the add to cart button
+     * @returns {Object} the object containing its name, description and price that was added to cart
      */
     async addRandomItemToCart() {
         const itemsCount = await this.getItemsCount("inventory")
@@ -177,7 +177,7 @@ class InventoryItemController {
     }
 
     /**
-     * Click at the "Back to products" button
+     * Click at the back to products button
      */
     async backToProducts() {
         const backToProductsButton = await this.components.backToProductsButton()
@@ -185,7 +185,7 @@ class InventoryItemController {
     }
 
     /**
-     * Click at the "Add to cart" button
+     * Click at the add to cart button
      * @param {String} [fromPage="inventory"] - the page that is calling this function like
      * 'cart' or 'inventory
      */
@@ -195,7 +195,7 @@ class InventoryItemController {
     }
 
     /**
-     * Click at the "Remove" button
+     * Click at the remove button
      * @param {String} [fromPage="inventory"] - the page that is calling this function like
      * 'cart' or 'inventory
      */

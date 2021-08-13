@@ -68,7 +68,7 @@ class LoginController {
     }
 
     /**
-     * Click at the "Login" button
+     * Click at the Login button
      */
     async submitLogin() {
         const loginElement = await this.components.loginButton()
@@ -76,9 +76,10 @@ class LoginController {
     }
 
     /**
-     * Fill up username ans password inputs and click at the "Login" button
+     * Fill up username and password inputs and click at the Login button
      * @param {String} username - the username credential
      * @param {String} password - the password credential
+     * @private
      */
     async _login(username, password) {
         await this.fillUserName(username)
@@ -87,28 +88,28 @@ class LoginController {
     }
 
     /**
-     * Fill up username ans password inputs with the starndard credentials and click at the "Login" button
+     * Fill up username and password inputs with the starndard credentials and click at the Login button
      */
     async loginWithStandardUser() {
         await this._login(this.standardUser, this.password)
     }
 
     /**
-     * Fill up username ans password inputs with the locked user credentials and click at the "Login" button
+     * Fill up username and password inputs with the locked user credentials and click at the Login button
      */
     async loginWithLockedUser() {
         await this._login(this.lockedUser, this.password)
     }
 
     /**
-     * Fill up only the password input and click at the "Login" button
+     * Fill up only the password input and click at the Login button
      */
     async loginWithoutUser() {
         await this._login("", this.password)
     }
 
     /**
-     * Fill up the username and the password input with a invalid user and click at the "Login" button
+     * Fill up the username and the password input with a invalid user and click at the Login button
      */
     async loginWithWrongCredential() {
         await this._login("noname", this.password)

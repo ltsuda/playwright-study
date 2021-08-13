@@ -37,7 +37,7 @@ class CheckoutController {
     }
 
     /**
-     * Click at the "Cancel checkout" button
+     * Click at the Cancel checkout button
      */
     async cancelCheckout() {
         const cancelElement = await this.components.cancelButton()
@@ -45,7 +45,7 @@ class CheckoutController {
     }
 
     /**
-     * Click at the "Continue" button
+     * Click at the Continue button
      */
     async continueCheckout() {
         const continueElement = await this.components.continueButton()
@@ -86,7 +86,7 @@ class CheckoutController {
     }
 
     /**
-     * Fill up first name, last name and postal code inputs and click at the "Continue" button
+     * Fill up first name, last name and postal code inputs and click at the Continue button
      */
     async submitCheckout(
         firstName = PERSONAL_INFO.USER1.FIRST_NAME,
