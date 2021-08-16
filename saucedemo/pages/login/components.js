@@ -1,96 +1,101 @@
 /* eslint-disable no-unused-vars */
-const { Page, ElementHandle } = require("@playwright/test")
+const { Page, Locator } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
-const loginLocators = {
+
+/**
+ * Object representing Login's HTML selectors
+ */
+const loginSelectors = {
     loginContainer: ".login_wrapper",
     credentialsContainer: ".login_credentials_wrap",
     usernameInput: "[data-test='username']",
     passwordInput: "[data-test='password']",
     errorText: "[data-test='error']",
-    loginButton: "[id='login-button']",
-    acceptedUsersText: "[id='login_credentials']",
-    acceptedPasswordText: "[class='login_password']",
+    loginButton: "#login-button",
+    acceptedUsersText: "#login_credentials",
+    acceptedPasswordText: ".login_password",
 }
 
 /**
- * Object representing Login's HTML selectors
+ * Class representing playwright's Locators from /login.html page\
+ * See {@link https://playwright.dev/docs/api/class-locator}
  */
 class LoginComponents {
     /**
-     * Create the Login ElementsHandle
+     * Create the Login Locators
      * @param {Page} page - playwright browser's page\
-     * See {@link https://playwright.dev/docs/api/class-page}
+     * See {@link https://playwright.dev/docs/api/class-page}  for the Locator API
      */
     constructor(page) {
         this.page = page
     }
 
     /**
-     * Get the Login's container ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'loginContainer' locator
+     * Get the Login's container Locator
+     * @returns {Locator} Locator for 'loginContainer' class
      */
     async loginContainer() {
-        return await this.page.$(loginLocators.loginContainer)
+        return await this.page.locator(loginSelectors.loginContainer)
     }
 
     /**
-     * Get the credentials container's ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'credentialsContainer' locator
+     * Get the credentials container's Locator
+     * @returns {Locator} Locator for 'credentialsContainer' class
      */
     async credentialsContainer() {
-        return await this.page.$(loginLocators.credentialsContainer)
+        return await this.page.locator(loginSelectors.credentialsContainer)
     }
 
     /**
-     * Get the credentials text's ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'acceptedUsersText' locator
+     * Get the credentials text's Locator
+     * @returns {Locator} Locator for 'acceptedUsersText' id
      */
     async acceptedUsersText() {
-        return await this.page.$(loginLocators.acceptedUsersText)
+        return await this.page.locator(loginSelectors.acceptedUsersText)
     }
 
     /**
-     * Get the password text's ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'acceptedPasswordText' locator
+     * Get the password text's Locator
+     * @returns {Locator} Locator for 'acceptedPasswordText' class
      */
     async acceptedPasswordText() {
-        return await this.page.$(loginLocators.acceptedPasswordText)
+        return await this.page.locator(loginSelectors.acceptedPasswordText)
     }
 
     /**
-     * Get the error message text's ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'errorText' locator
+     * Get the error message text's Locator
+     * @returns {Locator} Locator for 'errorText' data-test selector
      */
     async errorMessageText() {
-        return await this.page.$(loginLocators.errorText)
+        return await this.page.locator(loginSelectors.errorText)
     }
 
     /**
-     * Get the username input ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'usernameInput' locator
+     * Get the username input Locator
+     * @returns {Locator} Locator for 'usernameInput' data-test selector
      */
     async usernameInput() {
-        return await this.page.$(loginLocators.usernameInput)
+        return await this.page.locator(loginSelectors.usernameInput)
     }
 
     /**
-     * Get the password input ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'passwordInput' locator
+     * Get the password input Locator
+     * @returns {Locator} Locator for 'passwordInput' data-test selector
      */
     async passwordInput() {
-        return await this.page.$(loginLocators.passwordInput)
+        return await this.page.locator(loginSelectors.passwordInput)
     }
 
     /**
-     * Get the login button ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'loginButton' locator
+     * Get the login button Locator
+     * @returns {Locator} Locator for 'loginButton' id
      */
     async loginButton() {
-        return await this.page.$(loginLocators.loginButton)
+        return await this.page.locator(loginSelectors.loginButton)
     }
 }
 
 module.exports = {
     LoginComponents,
-    loginLocators,
+    loginSelectors,
 }

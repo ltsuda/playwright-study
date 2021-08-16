@@ -23,19 +23,19 @@ test.describe("Saucedemo LoginPage: @login", () => {
 
     test("should show locked user error", async ({ loginController }) => {
         await loginController.loginWithLockedUser()
-        await loginController.page.waitForSelector(loginController.locators.errorText)
+        await loginController.page.waitForSelector(loginController.selectors.errorText)
         expect(await loginController.getErrorMessage()).toEqual(ERRORS.LOGIN_LOCKED)
     })
 
     test("should show username is required error", async ({ loginController }) => {
         await loginController.loginWithoutUser()
-        await loginController.page.waitForSelector(loginController.locators.errorText)
+        await loginController.page.waitForSelector(loginController.selectors.errorText)
         expect(await loginController.getErrorMessage()).toEqual(ERRORS.LOGIN_USER)
     })
 
     test("should show username and password doesn't match", async ({ loginController }) => {
         await loginController.loginWithWrongCredential()
-        await loginController.page.waitForSelector(loginController.locators.errorText)
+        await loginController.page.waitForSelector(loginController.selectors.errorText)
         expect(await loginController.getErrorMessage()).toEqual(ERRORS.LOGIN_CREDENTIALS)
     })
 
