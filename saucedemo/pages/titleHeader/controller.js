@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 const { Page } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
-const { TitleHeaderComponents, titleHeaderLocators } = require("./components")
+const { TitleHeaderComponents, titleHeaderSelectors } = require("./components")
 
 /**
  * Object representing the dropdown select values
@@ -14,20 +14,20 @@ const sortOptions = Object.freeze({
 })
 
 /**
- * Object representing Title header's HTML selectors
+ * Class representing the Title header element's interations
  */
 class TitleHeaderController {
     /**
      * Create the TitleHeader controller
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
-     * @param {TitleHeaderComponents} components - class with elementsHandle of the title header elements
-     * @param {Object} locators - page's selectors
+     * @param {TitleHeaderComponents} components - class with Locators of the title header elements
+     * @param {Object} selectors - page's selectors
      */
     constructor(page) {
         this.page = page
         this.components = new TitleHeaderComponents(this.page)
-        this.locators = titleHeaderLocators
+        this.selectors = titleHeaderSelectors
     }
 
     /**
@@ -36,8 +36,8 @@ class TitleHeaderController {
      * @private
      */
     async _sortItems(option) {
-        const sortElement = await this.components.sortDropdown()
-        await sortElement.selectOption(option)
+        const sortSelector = await this.components.sortDropdown()
+        await sortSelector.selectOption(option)
     }
 
     /**
