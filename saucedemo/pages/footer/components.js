@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
-const { Page, ElementHandle } = require("@playwright/test")
+const { Page, Locator } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
 
 /**
  * Object representing Footer's HTML selectors
  */
-const footerLocators = {
+const footerSelectors = {
     footerContainer: ".footer",
     twitterSocialLink: ".footer >> .social_twitter > a",
     facebookSocialLink: ".footer >> .social_facebook > a",
@@ -15,12 +15,12 @@ const footerLocators = {
 }
 
 /**
- * Class representing playwright's ElementHandles for the footer elements\
- * See {@link https://playwright.dev/docs/api/class-elementhandle}
+ * Class representing playwright's Locators for the footer elements\
+ * See {@link https://playwright.dev/docs/api/class-Locator}
  */
 class FooterComponents {
     /**
-     * Create the Footer ElementsHandle
+     * Create the Footer Locators
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
      */
@@ -29,55 +29,55 @@ class FooterComponents {
     }
 
     /**
-     * Get the footer's container ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'footerContainer' locator
+     * Get the footer's container Locator
+     * @returns {Locator} Locator for 'footerContainer' selector
      */
     async footerContainer() {
-        return await this.page.$(footerLocators.footerContainer)
+        return await this.page.locator(footerSelectors.footerContainer)
     }
 
     /**
-     * Get the twitter link ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'twitterSocialLink' locator
+     * Get the twitter link Locator
+     * @returns {Locator} Locator for 'twitterSocialLink' selector
      */
     async twitterLink() {
-        return await this.page.$(footerLocators.twitterSocialLink)
+        return await this.page.locator(footerSelectors.twitterSocialLink)
     }
 
     /**
-     * Get the facebook link ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'facebookSocialLink' locator
+     * Get the facebook link Locator
+     * @returns {Locator} Locator for 'facebookSocialLink' selector
      */
     async facebookLink() {
-        return await this.page.$(footerLocators.facebookSocialLink)
+        return await this.page.locator(footerSelectors.facebookSocialLink)
     }
 
     /**
-     * Get the linkedin link ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'linkdinSocialLink' locator
+     * Get the linkedin link Locator
+     * @returns {Locator} Locator for 'linkdinSocialLink' selector
      */
     async linkedinLink() {
-        return await this.page.$(footerLocators.linkdinSocialLink)
+        return await this.page.locator(footerSelectors.linkdinSocialLink)
     }
 
     /**
-     * Get the copyright text ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'copyrightText' locator
+     * Get the copyright text Locator
+     * @returns {Locator} Locator for 'copyrightText' selector
      */
     async copyrightText() {
-        return await this.page.$(footerLocators.copyrightText)
+        return await this.page.locator(footerSelectors.copyrightText)
     }
 
     /**
-     * Get the robot image ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'footerImage' locator
+     * Get the robot image Locator
+     * @returns {Locator} Locator for 'footerImage' selector
      */
     async robotImage() {
-        return await this.page.$(footerLocators.footerImage)
+        return await this.page.locator(footerSelectors.footerImage)
     }
 }
 
 module.exports = {
     FooterComponents,
-    footerLocators,
+    footerSelectors,
 }
