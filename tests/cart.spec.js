@@ -36,7 +36,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
             products: [PRODUCTS_INDEX.BOLT_TSHIRT],
         })
         expect(await inventoryItemController.getItemsCount("cart")).toBe(
-            parseInt(await navigationBarController.getCartBadgeIfExists())
+            parseInt(await navigationBarController.getCartBadge())
         )
     })
 
@@ -65,9 +65,9 @@ test.describe("Saucedemo CartPage: @cart", () => {
             username: CREDENTIALS.USERS.STANDARD,
             products: [PRODUCTS_INDEX.ONESIE],
         })
-        expect(await navigationBarController.getCartBadgeIfExists()).toBe("1")
+        expect(await navigationBarController.getCartBadge()).toBe("1")
         await inventoryItemController.removeFromCart("cart")
-        expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()
+        expect(await navigationBarController.hasCartBadgeLocator()).toBeFalsy()
     })
 
     test("should be possible to open sidemenu @slow @smoke", async ({ navigationBarController, page }) => {
@@ -76,8 +76,6 @@ test.describe("Saucedemo CartPage: @cart", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await navigationBarController.openMenu()
-        const sideMenuElement = await navigationBarController.components.sideMenu()
-        await sideMenuElement.waitForElementState("stable")
         expect(await navigationBarController.isSidemenuVisible()).toBeTruthy()
     })
 
@@ -90,10 +88,11 @@ test.describe("Saucedemo CartPage: @cart", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await navigationBarController.openMenu()
-        const sideMenuElement = await navigationBarController.components.sideMenu()
-        await sideMenuElement.waitForElementState("stable")
+        const sideMenuLocator = await navigationBarController.components.sideMenu()
+        const sideMenuHandle = await sideMenuLocator.elementHandle()
+        await sideMenuHandle.waitForElementState("stable")
         await navigationBarController.closeMenu()
-        await sideMenuElement.waitForElementState("hidden")
+        await sideMenuHandle.waitForElementState("hidden")
         expect(await navigationBarController.isSidemenuVisible()).toBeFalsy()
     })
 
@@ -106,10 +105,10 @@ test.describe("Saucedemo CartPage: @cart", () => {
             username: CREDENTIALS.USERS.STANDARD,
             products: [PRODUCTS_INDEX.ALL_TSHIRT, PRODUCTS_INDEX.BOLT_TSHIRT],
         })
-        expect(await navigationBarController.getCartBadgeIfExists()).toBe("2")
+        expect(await navigationBarController.getCartBadge()).toBe("2")
         await navigationBarController.openMenu()
         await navigationBarController.resetState()
-        expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()
+        expect(await navigationBarController.hasCartBadgeLocator()).toBeFalsy()
     })
 
     test("should back at Invetory page when clicking at the all items link on menu", async ({
