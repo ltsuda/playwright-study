@@ -1,25 +1,25 @@
 /* eslint-disable no-unused-vars */
-const { Page, ElementHandle } = require("@playwright/test")
+const { Page, Locator } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
 
 /**
  * Object representing Checkout Completed's HTML selectors
  */
-const completedLocators = {
-    completedContainer: "[class='checkout_complete_container']",
-    completedHeaderText: "[class='complete-header']",
-    completedText: "[class='complete-text']",
-    completedImage: "[class='pony_express']",
+const completedSelectors = {
+    completedContainer: ".checkout_complete_container",
+    completedHeaderText: ".complete-header",
+    completedText: ".complete-text",
+    completedImage: ".pony_express",
     completedBackButton: "[data-test='back-to-products']",
 }
 
 /**
- * Class representing playwright's ElementHandles from /checkout-completed.html page\
- * See {@link https://playwright.dev/docs/api/class-elementhandle}
+ * Class representing playwright's Locators from /checkout-completed.html page\
+ * See {@link https://playwright.dev/docs/api/class-locator}
  */
 class CompletedComponents {
     /**
-     * Create the Checkout Completed ElementsHandle
+     * Create the Checkout Completed Locator
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
      */
@@ -28,55 +28,55 @@ class CompletedComponents {
     }
 
     /**
-     * Get the checkout-completed's container ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'completedContainer' locator
+     * Get the checkout-completed's container Locator
+     * @returns {Locator} Locator for 'completedContainer' selector
      */
     async completedContainer() {
-        return await this.page.$(completedLocators.completedContainer)
+        return await this.page.locator(completedSelectors.completedContainer)
     }
 
     /**
-     * Get the header text ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'completedHeaderText' locator
+     * Get the header text Locator
+     * @returns {Locator} Locator for 'completedHeaderText' selector
      */
     async completedHeaderText() {
-        return await this.page.$(
-            `${completedLocators.completedContainer}` + ">>" + `${completedLocators.completedHeaderText}`
+        return await this.page.locator(
+            `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedHeaderText}`
         )
     }
 
     /**
-     * Get the completed description text ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'completedText' locator
+     * Get the completed description text Locator
+     * @returns {Locator} Locator for 'completedText' selector
      */
     async completedText() {
-        return await this.page.$(
-            `${completedLocators.completedContainer}` + ">>" + `${completedLocators.completedText}`
+        return await this.page.locator(
+            `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedText}`
         )
     }
 
     /**
-     * Get the completed image ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'errorMessageText' locator
+     * Get the completed image Locator
+     * @returns {Locator} Locator for 'errorMessageText' selector
      */
     async completedImage() {
-        return await this.page.$(
-            `${completedLocators.completedContainer}` + ">>" + `${completedLocators.completedImage}`
+        return await this.page.locator(
+            `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedImage}`
         )
     }
 
     /**
-     * Get the back to home button ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'completedBackButton' locator
+     * Get the back to home button Locator
+     * @returns {Locator} Locator for 'completedBackButton' selector
      */
     async completedBackButton() {
-        return await this.page.$(
-            `${completedLocators.completedContainer}` + ">>" + `${completedLocators.completedBackButton}`
+        return await this.page.locator(
+            `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedBackButton}`
         )
     }
 }
 
 module.exports = {
     CompletedComponents,
-    completedLocators,
+    completedSelectors,
 }

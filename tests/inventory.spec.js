@@ -114,7 +114,7 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
         })
         expect(await navigationBarController.getCartBadge()).toBe("1")
         await inventoryItemController.removeFromCart("inventory")
-        expect(await navigationBarController.hasCartBadgeLocatorLocator()).toBeFalsy()
+        expect(await navigationBarController.hasCartBadgeLocator()).toBeFalsy()
     })
 
     test("should have Twitter link on footer", async ({ footerController, page }) => {
