@@ -16,7 +16,7 @@ const footerSelectors = {
 
 /**
  * Class representing playwright's Locators for the footer elements\
- * See {@link https://playwright.dev/docs/api/class-Locator}
+ * See {@link https://playwright.dev/docs/api/class-locator}
  */
 class FooterComponents {
     /**

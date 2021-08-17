@@ -13,7 +13,7 @@ const cartSelectors = {
 
 /**
  * Class representing playwright's Locators from /cart.html page\
- * See {@link https://playwright.dev/docs/api/class-Locator}
+ * See {@link https://playwright.dev/docs/api/class-locator}
  */
 class CartComponents {
     /**
