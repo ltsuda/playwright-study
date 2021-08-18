@@ -1,0 +1,103 @@
+{
+  "uid" : "7af62bf97e54c76",
+  "name" : "should be at Completed page when click at the finish button",
+  "fullName" : "should be at Completed page when click at the finish button",
+  "historyId" : "chromium-hd overview.spec.js Saucedemo OverviewPage: @overview should be at Completed page when click at the finish button",
+  "time" : {
+    "start" : 1629309740211,
+    "stop" : 1629309741393,
+    "duration" : 1182
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "ec31334929fd1c37",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/27//#testresult/ec31334929fd1c37",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628877075846,
+          "stop" : 1628877076756,
+          "duration" : 910
+        }
+      }, {
+        "uid" : "4af4148a6e0234bb",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/26//#testresult/4af4148a6e0234bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628833920564,
+          "stop" : 1628833921454,
+          "duration" : 890
+        }
+      }, {
+        "uid" : "443097d0f512e1b5",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/25//#testresult/443097d0f512e1b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628708705825,
+          "stop" : 1628708706960,
+          "duration" : 1135
+        }
+      }, {
+        "uid" : "a2a4f05ce8f90321",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/24//#testresult/a2a4f05ce8f90321",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707794657,
+          "stop" : 1628707795518,
+          "duration" : 861
+        }
+      }, {
+        "uid" : "399053c7b9cea484",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/23//#testresult/399053c7b9cea484",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707281771,
+          "stop" : 1628707282883,
+          "duration" : 1112
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "7af62bf97e54c76.json",
+  "parameterValues" : [ ]
+}
