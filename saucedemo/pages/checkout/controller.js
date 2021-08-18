@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 const { Page } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
-const { CheckoutComponents, checkoutLocators } = require("./components")
+const { CheckoutComponents, checkoutSelectors } = require("./components")
 const { PAGES, PERSONAL_INFO } = require("../../utils/consts")
 
 /**
@@ -12,13 +12,13 @@ class CheckoutController {
      * Create the Checkout controller
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
-     * @param {CheckoutComponents} components - class with elementsHandle of the Checkout page
-     * @param {Object} locators - page's selectors
+     * @param {CheckoutComponents} components - class with Locators of the Checkout page
+     * @param {Object} selectors - page's selectors
      */
     constructor(page) {
         this.page = page
         this.components = new CheckoutComponents(this.page)
-        this.locators = checkoutLocators
+        this.selectors = checkoutSelectors
     }
 
     /**
@@ -102,5 +102,5 @@ class CheckoutController {
 
 module.exports = {
     CheckoutController,
-    checkoutLocators,
+    checkoutSelectors,
 }

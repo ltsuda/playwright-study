@@ -37,7 +37,7 @@ test.describe("Saucedemo E2E: @e2e", () => {
 
         const cartItems = await inventoryItemController.getItemsObject("cart")
         expect(cartItems[0]).toStrictEqual(item)
-        expect(await navigationBarController.getCartBadgeIfExists()).toBe(String(cartItems.length))
+        expect(await navigationBarController.getCartBadge()).toBe(String(cartItems.length))
 
         await cartController.navigateToCheckout()
         expect(page.url()).toBe(`${baseURL}${PAGES.CHECKOUT}`)

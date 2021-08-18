@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 const { Page } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
-const { FooterComponents, footerLocators } = require("./components")
+const { FooterComponents, footerSelectors } = require("./components")
 
 /**
  * Class representing the Footer's elements interations
@@ -11,13 +11,13 @@ class FooterController {
      * Create the Footer controller
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
-     * @param {CartComponents} components - class with elementsHandle of the footer elements
+     * @param {CartComponents} components - class with Locators of the footer elements
      * @param {Object} locators - page's selectors
      */
     constructor(page) {
         this.page = page
         this.components = new FooterComponents(this.page)
-        this.locators = footerLocators
+        this.selectors = footerSelectors
     }
 
     /**

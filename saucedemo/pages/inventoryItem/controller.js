@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 const { Page } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
-const { InventoryItemComponents, inventoryItemLocators } = require("./components")
+const { InventoryItemComponents, inventoryItemSelectors } = require("./components")
 const { randomInt } = require("../../utils/utils")
 
 /**
@@ -12,28 +12,29 @@ class InventoryItemController {
      * Create the InventoryItem controller
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
-     * @param {InventoryItemComponents} components - class with elementsHandle of the InventoryItem elements
+     * @param {InventoryItemComponents} components - class with elementsHandle/locators of the InventoryItem elements
+     * @param {Object} selectors - page's selectors
      */
     constructor(page) {
         this.page = page
         this.components = new InventoryItemComponents(this.page)
-        this.locators = inventoryItemLocators
+        this.selectors = inventoryItemSelectors
     }
 
     /**
      * Validate if "itemDetailContainer" element is visible
      */
     async screenIsVisible() {
-        const itemDetailContainerElement = await this.components.itemDetailContainer()
-        await itemDetailContainerElement.isVisible()
+        const itemDetailContainerLocator = await this.components.itemDetailContainer()
+        await itemDetailContainerLocator.isVisible()
     }
 
     /**
      * Validate if "cartItemContainer" element is visible
      */
     async screenItemIsVisible() {
-        const cartItemContainerElement = await this.components.cartItemContainer()
-        await cartItemContainerElement.isVisible()
+        const cartItemContainerLocator = await this.components.cartItemContainer()
+        await cartItemContainerLocator.isVisible()
     }
 
     /**
@@ -113,20 +114,20 @@ class InventoryItemController {
         for (const itemElement of itemsElements) {
             const namelocator =
                 fromPage == "details"
-                    ? this.locators.itemNameText.replace("item", "details")
-                    : this.locators.itemNameText
+                    ? this.selectors.itemNameText.replace("item", "details")
+                    : this.selectors.itemNameText
             const nameElement = await itemElement.$(namelocator)
             const name = await nameElement.innerText()
             const descriptionLocator =
                 fromPage == "details"
-                    ? this.locators.itemDescriptionText.replace("item", "details")
-                    : this.locators.itemDescriptionText
+                    ? this.selectors.itemDescriptionText.replace("item", "details")
+                    : this.selectors.itemDescriptionText
             const descriptionElement = await itemElement.$(descriptionLocator)
             const description = await descriptionElement.innerText()
             const pricelocator =
                 fromPage == "details"
-                    ? this.locators.itemPriceText.replace("item", "details")
-                    : this.locators.itemPriceText
+                    ? this.selectors.itemPriceText.replace("item", "details")
+                    : this.selectors.itemPriceText
             const priceElement = await itemElement.$(pricelocator)
             let price = await priceElement.innerText()
             price = price.replace("$", "")
@@ -147,9 +148,9 @@ class InventoryItemController {
      * 'cart' or 'inventory
      */
     async removeRandomItemFromCart(fromPage) {
-        const removeFromElements = await this.components.removeItemsButton(fromPage)
-        const randomElement = removeFromElements[randomInt(removeFromElements.length)]
-        await randomElement.click()
+        const removeFromLocator = await this.components.removeItemsButton(fromPage)
+        const randomLocator = removeFromLocator[randomInt(removeFromLocator.count())]
+        await randomLocator.click()
     }
 
     /**
@@ -162,15 +163,15 @@ class InventoryItemController {
         const itemsElements = await this.components.items()
         const randomElement = itemsElements[randomItem]
 
-        const nameElement = await randomElement.$(this.locators.itemNameText)
+        const nameElement = await randomElement.$(this.selectors.itemNameText)
         const name = await nameElement.innerText()
-        const descriptionElement = await randomElement.$(this.locators.itemDescriptionText)
+        const descriptionElement = await randomElement.$(this.selectors.itemDescriptionText)
         const description = await descriptionElement.innerText()
-        const priceElement = await randomElement.$(this.locators.itemPriceText)
+        const priceElement = await randomElement.$(this.selectors.itemPriceText)
         let price = await priceElement.innerText()
         price = price.replace("$", "")
 
-        const addToCartButton = await randomElement.$(this.locators.addToCartButton)
+        const addToCartButton = await randomElement.$(this.selectors.addToCartButton)
         await addToCartButton.click()
 
         return {
@@ -189,13 +190,13 @@ class InventoryItemController {
     }
 
     /**
-     * Click at the add to cart button
+     * Click at the first locator for the add to cart button
      * @param {String} [fromPage="inventory"] - the page that is calling this function like
      * 'cart' or 'inventory
      */
     async addToCart(fromPage = "details") {
         const addToCartButton = await this.components.addToCartButton(fromPage)
-        await addToCartButton.click()
+        await addToCartButton.first().click()
     }
 
     /**
@@ -204,8 +205,8 @@ class InventoryItemController {
      * 'cart' or 'inventory
      */
     async removeFromCart(fromPage = "details") {
-        const removeFromElements = await this.components.removeItemsButton(fromPage)
-        await removeFromElements[0].click()
+        const removeFromLocator = await this.components.removeItemsButton(fromPage)
+        await removeFromLocator.first().click()
     }
 }
 

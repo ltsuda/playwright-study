@@ -1,21 +1,21 @@
 /* eslint-disable no-unused-vars */
-const { Page, ElementHandle } = require("@playwright/test")
+const { Page, Locator } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
 
 /**
  * Object representing Inventory's HTML selectors
  */
-const inventoryLocators = {
-    inventoryContainer: "#inventory_container",
+const inventorySelectors = {
+    inventoryContainer: ".inventory_container",
 }
 
 /**
- * Class representing playwright's ElementHandles from /inventory.html page\
- * See {@link https://playwright.dev/docs/api/class-elementhandle}
+ * Class representing playwright's Locator from /inventory.html page\
+ * See {@link https://playwright.dev/docs/api/class-locator}
  */
 class InventoryComponents {
     /**
-     * Create the Inventory ElementsHandle
+     * Create the Inventory Locator
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
      */
@@ -24,15 +24,15 @@ class InventoryComponents {
     }
 
     /**
-     * Get the inventory's container ElementHandle
-     * @returns {ElementHandle} ElementHandle for 'inventoryContainer' locator
+     * Get the inventory's container Locator
+     * @returns {Locator} Locator for 'inventoryContainer' selector
      */
     async inventoryContainer() {
-        return await this.page.$(inventoryLocators.inventoryContainer)
+        return await this.page.locator(inventorySelectors.inventoryContainer)
     }
 }
 
 module.exports = {
     InventoryComponents,
-    inventoryLocators,
+    inventorySelectors,
 }

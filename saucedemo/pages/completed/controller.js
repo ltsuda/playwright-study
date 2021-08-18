@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 const { Page } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
-const { CompletedComponents, completedLocators } = require("./components")
+const { CompletedComponents, completedSelectors } = require("./components")
 const { PAGES } = require("../../utils/consts")
 
 /**
@@ -12,13 +12,13 @@ class CompletedController {
      * Create the Cart controller
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
-     * @param {CartComponents} components - class with elementsHandle of the Checkout completed page
-     * @param {Object} locators - page's selectors
+     * @param {CartComponents} components - class with Locators of the Checkout completed page
+     * @param {Object} selectors - page's selectors
      */
     constructor(page) {
         this.page = page
         this.components = new CompletedComponents(this.page)
-        this.locators = completedLocators
+        this.selectors = completedSelectors
     }
 
     /**
@@ -74,5 +74,5 @@ class CompletedController {
 
 module.exports = {
     CompletedController,
-    completedLocators,
+    completedSelectors,
 }

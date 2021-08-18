@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 const { Page } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
-const { LoginComponents, loginLocators } = require("./components")
+const { LoginComponents, loginSelectors } = require("./components")
 const { PAGES, CREDENTIALS } = require("../../utils/consts")
 
 /**
@@ -12,8 +12,9 @@ class LoginController {
      * Create the Login controller
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
-     * @param {LoginComponents} components - class with elementsHandle of the Login page
-     * @param {Object} locators - page's selectors
+     * @param {LoginComponents} components - class with Locators of the Login page\
+     * See {@link https://playwright.dev/docs/api/class-locator}
+     * @param {Object} selectors - page's selectors
      * @param {Object} standardUser - username of the standard user
      * @param {Object} lockedUser - username of the locked user
      * @param {Object} problemUser - username of the user that has some issues after login
@@ -25,7 +26,7 @@ class LoginController {
     constructor(page) {
         this.page = page
         this.components = new LoginComponents(this.page)
-        this.locators = loginLocators
+        this.selectors = loginSelectors
         this.standardUser = CREDENTIALS.USERS.STANDARD
         this.lockedUser = CREDENTIALS.USERS.LOCKED
         this.problemUser = CREDENTIALS.USERS.PROBLEM
@@ -45,34 +46,34 @@ class LoginController {
      * Validate if "loginContainer" and  "credentialsContainer" elements are visible
      */
     async screenIsVisible() {
-        const loginContainerElement = await this.components.loginContainer()
-        const credentialsContainerElement = await this.components.credentialsContainer()
-        await loginContainerElement.isVisible()
-        await credentialsContainerElement.isVisible()
+        const loginContainerSelector = await this.components.loginContainer()
+        const credentialsContainerSelector = await this.components.credentialsContainer()
+        await loginContainerSelector.isVisible()
+        await credentialsContainerSelector.isVisible()
     }
 
     /**
      * Fill up the username input
      */
     async fillUserName(username) {
-        const usernameElement = await this.components.usernameInput()
-        await usernameElement.fill(username)
+        const usernameSelector = await this.components.usernameInput()
+        await usernameSelector.fill(username)
     }
 
     /**
      * Fill up the password input
      */
     async fillPassword(password) {
-        const passwordElement = await this.components.passwordInput()
-        await passwordElement.fill(password)
+        const passwordSelector = await this.components.passwordInput()
+        await passwordSelector.fill(password)
     }
 
     /**
      * Click at the Login button
      */
     async submitLogin() {
-        const loginElement = await this.components.loginButton()
-        await loginElement.click()
+        const loginSelector = await this.components.loginButton()
+        await loginSelector.click()
     }
 
     /**
@@ -88,7 +89,7 @@ class LoginController {
     }
 
     /**
-     * Fill up username and password inputs with the starndard credentials and click at the Login button
+     * Fill up username and password inputs with the standard credentials and click at the Login button
      */
     async loginWithStandardUser() {
         await this._login(this.standardUser, this.password)
@@ -120,8 +121,8 @@ class LoginController {
      * @returns {String} login's error message text
      */
     async getErrorMessage() {
-        const errorElement = await this.components.errorMessageText()
-        return await errorElement.innerText()
+        const errorSelector = await this.components.errorMessageText()
+        return await errorSelector.innerText()
     }
 
     /**

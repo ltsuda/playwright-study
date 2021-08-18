@@ -39,7 +39,7 @@ test.describe("Saucedemo InventoryPage: @details", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await inventoryItemController.addToCart()
-        expect(await navigationBarController.getCartBadgeIfExists()).toBe("1")
+        expect(await navigationBarController.getCartBadge()).toBe("1")
     })
 
     test("should be possible to remove the product from cart", async ({
@@ -53,6 +53,6 @@ test.describe("Saucedemo InventoryPage: @details", () => {
         })
         await inventoryItemController.addToCart()
         await inventoryItemController.removeFromCart()
-        expect(await navigationBarController.getCartBadgeIfExists()).toBeNull()
+        expect(await navigationBarController.hasCartBadgeLocator()).toBeFalsy()
     })
 })
