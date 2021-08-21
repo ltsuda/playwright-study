@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 const { Page } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
-const { CartComponents, cartLocators } = require("./components")
+const { CartComponents, cartSelectors } = require("./components")
 const { PAGES } = require("../../utils/consts")
 
 /**
@@ -12,13 +12,13 @@ class CartController {
      * Create the Cart controller
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
-     * @param {CartComponents} components - class with elementsHandle of the Cart page
-     * @param {Object} locators - page's selectors
+     * @param {CartComponents} components - class with Locators of the Cart page
+     * @param {Object} selectors - page's selectors
      */
     constructor(page) {
         this.page = page
         this.components = new CartComponents(this.page)
-        this.locators = cartLocators
+        this.selectors = cartSelectors
     }
 
     /**
@@ -55,5 +55,5 @@ class CartController {
 
 module.exports = {
     CartController,
-    cartLocators,
+    cartSelectors,
 }
