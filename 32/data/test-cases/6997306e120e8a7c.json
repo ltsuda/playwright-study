@@ -1,0 +1,139 @@
+{
+  "uid" : "6997306e120e8a7c",
+  "name" : "should have the tax calculated as 8% of subtotal",
+  "fullName" : "should have the tax calculated as 8% of subtotal",
+  "historyId" : "chrome-fhd overview.spec.js Saucedemo OverviewPage: @overview should have the tax calculated as 8% of subtotal",
+  "time" : {
+    "start" : 1629748803485,
+    "stop" : 1629748804344,
+    "duration" : 859
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "74752f9149b02f11",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/31//#testresult/74752f9149b02f11",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629747103643,
+          "stop" : 1629747104475,
+          "duration" : 832
+        }
+      }, {
+        "uid" : "5da78252cc67dea7",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/30//#testresult/5da78252cc67dea7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629746992275,
+          "stop" : 1629746993311,
+          "duration" : 1036
+        }
+      }, {
+        "uid" : "73b433ca1919c674",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/29//#testresult/73b433ca1919c674",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629310269055,
+          "stop" : 1629310269759,
+          "duration" : 704
+        }
+      }, {
+        "uid" : "b62e98341864b99b",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/28//#testresult/b62e98341864b99b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629309899524,
+          "stop" : 1629309900565,
+          "duration" : 1041
+        }
+      }, {
+        "uid" : "bbeca3af53b853d",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/27//#testresult/bbeca3af53b853d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628877169483,
+          "stop" : 1628877169850,
+          "duration" : 367
+        }
+      }, {
+        "uid" : "d8bb457863836065",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/26//#testresult/d8bb457863836065",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628834015114,
+          "stop" : 1628834015818,
+          "duration" : 704
+        }
+      }, {
+        "uid" : "15421b52cb507a11",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/25//#testresult/15421b52cb507a11",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628708825825,
+          "stop" : 1628708826401,
+          "duration" : 576
+        }
+      }, {
+        "uid" : "9a0a0b5f9f484c7b",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/24//#testresult/9a0a0b5f9f484c7b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707891465,
+          "stop" : 1628707891875,
+          "duration" : 410
+        }
+      }, {
+        "uid" : "2ff54d73d21c72b6",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/23//#testresult/2ff54d73d21c72b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707389948,
+          "stop" : 1628707390631,
+          "duration" : 683
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6997306e120e8a7c.json",
+  "parameterValues" : [ ]
+}

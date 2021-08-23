@@ -1,0 +1,139 @@
+{
+  "uid" : "ce7a602aa62aabac",
+  "name" : "should show application password",
+  "fullName" : "should show application password",
+  "historyId" : "chromium-hd login.spec.js Saucedemo LoginPage: @login should show application password",
+  "time" : {
+    "start" : 1629748660460,
+    "stop" : 1629748661265,
+    "duration" : 805
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "login.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo LoginPage: @login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "8f4f4009f5b1320d",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/31//#testresult/8f4f4009f5b1320d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629746902425,
+          "stop" : 1629746903333,
+          "duration" : 908
+        }
+      }, {
+        "uid" : "9b483014f855de6d",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/30//#testresult/9b483014f855de6d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629746855409,
+          "stop" : 1629746856072,
+          "duration" : 663
+        }
+      }, {
+        "uid" : "692db2b9c4b1897f",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/29//#testresult/692db2b9c4b1897f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629310123918,
+          "stop" : 1629310124479,
+          "duration" : 561
+        }
+      }, {
+        "uid" : "8fa85dc9d558fa2e",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/28//#testresult/8fa85dc9d558fa2e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629309730663,
+          "stop" : 1629309731550,
+          "duration" : 887
+        }
+      }, {
+        "uid" : "fbc3940be369e4b0",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/27//#testresult/fbc3940be369e4b0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628877074763,
+          "stop" : 1628877075171,
+          "duration" : 408
+        }
+      }, {
+        "uid" : "ce3783f98d9e2ef9",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/26//#testresult/ce3783f98d9e2ef9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628833915962,
+          "stop" : 1628833916452,
+          "duration" : 490
+        }
+      }, {
+        "uid" : "1f9342ac189260c6",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/25//#testresult/1f9342ac189260c6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628708700046,
+          "stop" : 1628708700680,
+          "duration" : 634
+        }
+      }, {
+        "uid" : "a1dc0ac62715e701",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/24//#testresult/a1dc0ac62715e701",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707789803,
+          "stop" : 1628707790165,
+          "duration" : 362
+        }
+      }, {
+        "uid" : "d9c56891cb64595e",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/23//#testresult/d9c56891cb64595e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628707276817,
+          "stop" : 1628707277368,
+          "duration" : 551
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ce7a602aa62aabac.json",
+  "parameterValues" : [ ]
+}
