@@ -25,7 +25,7 @@ The website used in this repository is e-commerce sample from [SauceLabs Demo](h
 #### Cloning repository
 
 ```text
-https://github.com/ltsuda/playwright-study.git
+git clone https://github.com/ltsuda/playwright-study.git
 ```
 
 #### Installing dependencies
