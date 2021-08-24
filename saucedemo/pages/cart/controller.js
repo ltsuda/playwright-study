@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const { Page } = require("@playwright/test")
+const { Page, expect } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
 const { CartComponents, cartSelectors } = require("./components")
 const { PAGES } = require("../../utils/consts")
@@ -33,7 +33,7 @@ class CartController {
      */
     async screenIsVisible() {
         const cartContainerElement = await this.components.cartContainer()
-        await cartContainerElement.isVisible()
+        await expect(cartContainerElement).toBeVisible()
     }
 
     /**

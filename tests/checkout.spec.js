@@ -27,7 +27,7 @@ test.describe("Saucedemo CheckoutPage: @checkout", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await checkoutController.continueCheckout()
-        expect(await checkoutController.getErrorMessage()).toBe(ERRORS.PERSONAL_FIRSTNAME)
+        await expect(await checkoutController.components.errorMessageText()).toHaveText(ERRORS.PERSONAL_FIRSTNAME)
     })
 
     test("should show lastName error message if empty", async ({ checkoutController, page }) => {
@@ -37,7 +37,7 @@ test.describe("Saucedemo CheckoutPage: @checkout", () => {
         })
         await checkoutController.fillFirstName(PERSONAL_INFO.USER1.FIRST_NAME)
         await checkoutController.continueCheckout()
-        expect(await checkoutController.getErrorMessage()).toBe(ERRORS.PERSONAL_LASTNAME)
+        await expect(await checkoutController.components.errorMessageText()).toHaveText(ERRORS.PERSONAL_LASTNAME)
     })
 
     test("should show postalCode error message if empty", async ({ checkoutController, page }) => {
@@ -48,7 +48,7 @@ test.describe("Saucedemo CheckoutPage: @checkout", () => {
         await checkoutController.fillFirstName(PERSONAL_INFO.USER1.FIRST_NAME)
         await checkoutController.fillLastName(PERSONAL_INFO.USER1.LAST_NAME)
         await checkoutController.continueCheckout()
-        expect(await checkoutController.getErrorMessage()).toBe(ERRORS.PERSONAL_ZIP)
+        await expect(await checkoutController.components.errorMessageText()).toHaveText(ERRORS.PERSONAL_ZIP)
     })
 
     test("should go to Checkout Overview page @smoke", async ({ checkoutController, page }) => {

@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const { Page } = require("@playwright/test")
+const { Page, expect } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
 const { OverviewComponents, overviewSelectors } = require("./components")
 const { PAGES } = require("../../utils/consts")
@@ -33,7 +33,7 @@ class OverviewController {
      */
     async screenIsVisible() {
         const overviewContainerElement = await this.components.overviewContainer()
-        await overviewContainerElement.isVisible()
+        await expect(overviewContainerElement).toBeVisible()
     }
 
     /**

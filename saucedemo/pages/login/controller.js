@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const { Page } = require("@playwright/test")
+const { Page, expect } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
 const { LoginComponents, loginSelectors } = require("./components")
 const { PAGES, CREDENTIALS } = require("../../utils/consts")
@@ -48,8 +48,8 @@ class LoginController {
     async screenIsVisible() {
         const loginContainerSelector = await this.components.loginContainer()
         const credentialsContainerSelector = await this.components.credentialsContainer()
-        await loginContainerSelector.isVisible()
-        await credentialsContainerSelector.isVisible()
+        await expect(loginContainerSelector).toBeVisible()
+        await expect(credentialsContainerSelector).toBeVisible()
     }
 
     /**

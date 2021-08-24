@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const { Page } = require("@playwright/test")
+const { Page, expect } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
 const { CheckoutComponents, checkoutSelectors } = require("./components")
 const { PAGES, PERSONAL_INFO } = require("../../utils/consts")
@@ -33,7 +33,7 @@ class CheckoutController {
      */
     async screenIsVisible() {
         const checkoutContainerElement = await this.components.checkoutContainer()
-        await checkoutContainerElement.isVisible()
+        await expect(checkoutContainerElement).toBeVisible()
     }
 
     /**
@@ -50,15 +50,6 @@ class CheckoutController {
     async continueCheckout() {
         const continueElement = await this.components.continueButton()
         await continueElement.click()
-    }
-
-    /**
-     * Get error message
-     * @returns {String} checkout's error message text
-     */
-    async getErrorMessage() {
-        const errorElement = await this.components.errorMessageText()
-        return await errorElement.innerText()
     }
 
     /**

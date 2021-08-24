@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const { Page } = require("@playwright/test")
+const { Page, expect } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
 const { InventoryItemComponents, inventoryItemSelectors } = require("./components")
 const { randomInt } = require("../../utils/utils")
@@ -26,7 +26,7 @@ class InventoryItemController {
      */
     async screenIsVisible() {
         const itemDetailContainerLocator = await this.components.itemDetailContainer()
-        await itemDetailContainerLocator.isVisible()
+        await expect(itemDetailContainerLocator).toBeVisible()
     }
 
     /**
@@ -34,7 +34,7 @@ class InventoryItemController {
      */
     async screenItemIsVisible() {
         const cartItemContainerLocator = await this.components.cartItemContainer()
-        await cartItemContainerLocator.isVisible()
+        await expect(cartItemContainerLocator).toBeVisible()
     }
 
     /**

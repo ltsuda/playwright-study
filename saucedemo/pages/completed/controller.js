@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const { Page } = require("@playwright/test")
+const { Page, expect } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
 const { CompletedComponents, completedSelectors } = require("./components")
 const { PAGES } = require("../../utils/consts")
@@ -33,7 +33,7 @@ class CompletedController {
      */
     async screenIsVisible() {
         const completedContainerElement = await this.components.completedContainer()
-        await completedContainerElement.isVisible()
+        await expect(completedContainerElement).toBeVisible()
     }
 
     /**

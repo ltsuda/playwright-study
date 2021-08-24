@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const { Page } = require("@playwright/test")
+const { Page, expect } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
 const { PAGES } = require("../../utils/consts")
 const { InventoryComponents, inventorySelectors } = require("./components")
@@ -33,7 +33,7 @@ class InventoryController {
      */
     async screenIsVisible() {
         const inventoryContainerLocator = await this.components.inventoryContainer()
-        await inventoryContainerLocator.isVisible()
+        await expect(inventoryContainerLocator).toBeVisible()
     }
 }
 
