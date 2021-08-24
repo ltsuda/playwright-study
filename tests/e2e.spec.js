@@ -47,8 +47,8 @@ test.describe("Saucedemo E2E: @e2e", () => {
 
         const overviewItems = await inventoryItemController.getItemsNameTextByIndex("all", "cart")
         expect(overviewItems[0]).toBe(item.name)
-        expect(await overviewController.getPaymentText()).toBe(MESSAGES.OVERVIEW_CARD)
-        expect(await overviewController.getShippingText()).toBe(MESSAGES.OVERVIEW_SHIPMENT)
+        await expect(await overviewController.components.paymentInfoText()).toHaveText(MESSAGES.OVERVIEW_CARD)
+        await expect(await overviewController.components.shippingInfoText()).toHaveText(MESSAGES.OVERVIEW_SHIPMENT)
 
         const subtotal = await overviewController.getSubtotal()
         expect(String(subtotal)).toBe(parseFloat(item.price).toFixed(2))

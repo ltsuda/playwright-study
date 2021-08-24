@@ -70,7 +70,8 @@ const MESSAGES = {
 }
 
 const IMAGES = {
-    PANY_EXPRESS: "/static/media/pony-express.46394a5d.png"
+    PANY_EXPRESS: "/static/media/pony-express.46394a5d.png",
+    SWAG_BOT: "/static/media/SwagBot_Footer_graphic.2e87acec.png",
 }
 
 module.exports = {

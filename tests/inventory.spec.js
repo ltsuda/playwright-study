@@ -7,6 +7,7 @@ const {
     SOCIAL_LINKS,
     MESSAGES,
     CREDENTIALS,
+    IMAGES,
 } = require("../saucedemo/utils/consts")
 const { setSession } = require("../saucedemo/utils/utils")
 
@@ -122,7 +123,7 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(await footerController.getTwitterLink()).toBe(SOCIAL_LINKS.TWITTER)
+        await expect(await footerController.components.twitterLink()).toHaveAttribute("href", SOCIAL_LINKS.TWITTER)
     })
 
     test("should have Facebook link on footer", async ({ footerController, page }) => {
@@ -130,7 +131,7 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(await footerController.getFacebookLink()).toBe(SOCIAL_LINKS.FACEBOOK)
+        await expect(await footerController.components.facebookLink()).toHaveAttribute("href", SOCIAL_LINKS.FACEBOOK)
     })
 
     test("should have LinkedIn link on footer", async ({ footerController, page }) => {
@@ -138,7 +139,7 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(await footerController.getLinkedinLink()).toBe(SOCIAL_LINKS.LINKEDIN)
+        await expect(await footerController.components.linkedinLink()).toHaveAttribute("href", SOCIAL_LINKS.LINKEDIN)
     })
 
     test("should have Swag Bot image on footer", async ({ footerController, page }) => {
@@ -146,14 +147,14 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(await footerController.getRobotImage()).toBe("/static/media/SwagBot_Footer_graphic.2e87acec.png")
+        await expect(await footerController.components.robotImage()).toHaveAttribute("src", IMAGES.SWAG_BOT)
     })
 
-    test("should have Copyright text on footer", async ({ footerController, page }) => {
+    test("should have Copyright text on footer @x", async ({ footerController, page }) => {
         await setSession(page, {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(await footerController.getCopyrightText()).toBe(MESSAGES.COPYRIGHT)
+        await expect(await footerController.components.copyrightText()).toHaveText(MESSAGES.COPYRIGHT)
     })
 })

@@ -27,51 +27,6 @@ class FooterController {
         const footerContainerElement = await this.components.footerContainer()
         await expect(footerContainerElement).toBeVisible()
     }
-
-    /**
-     * Get Twitter link
-     * @returns {String} href Twitter's URL
-     */
-    async getTwitterLink() {
-        const socialElement = await this.components.twitterLink()
-        return await socialElement.getAttribute("href")
-    }
-
-    /**
-     * Get Facebook link
-     * @returns {String} href Facebook's URL
-     */
-    async getFacebookLink() {
-        const socialElement = await this.components.facebookLink()
-        return await socialElement.getAttribute("href")
-    }
-
-    /**
-     * Get LinkedIn link
-     * @returns {String} href LinkedIn's URL
-     */
-    async getLinkedinLink() {
-        const socialElement = await this.components.linkedinLink()
-        return await socialElement.getAttribute("href")
-    }
-
-    /**
-     * Get Robot image source
-     * @returns {String} image's source URL
-     */
-    async getRobotImage() {
-        const socialElement = await this.components.robotImage()
-        return await socialElement.getAttribute("src")
-    }
-
-    /**
-     * Get copyright text
-     * @returns {String} copyright's element text
-     */
-    async getCopyrightText() {
-        const socialElement = await this.components.copyrightText()
-        return await socialElement.innerText()
-    }
 }
 
 module.exports = { FooterController }

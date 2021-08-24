@@ -45,7 +45,7 @@ test.describe("Saucedemo OverviewPage: @overview", () => {
             path: PAGES.OVERVIEW,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(await overviewController.getPaymentText()).toBe(MESSAGES.OVERVIEW_CARD)
+        await expect(await overviewController.components.paymentInfoText()).toHaveText(MESSAGES.OVERVIEW_CARD)
     })
 
     test("should have the shipping information", async ({ overviewController, page }) => {
@@ -53,7 +53,7 @@ test.describe("Saucedemo OverviewPage: @overview", () => {
             path: PAGES.OVERVIEW,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(await overviewController.getShippingText()).toBe(MESSAGES.OVERVIEW_SHIPMENT)
+        await expect(await overviewController.components.shippingInfoText()).toHaveText(MESSAGES.OVERVIEW_SHIPMENT)
     })
 
     test("should have the subtotal (total before tax)", async ({ overviewController, page }) => {

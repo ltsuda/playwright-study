@@ -53,24 +53,6 @@ class OverviewController {
     }
 
     /**
-     * Get the payment card information
-     * @returns {String} payment card element text
-     */
-    async getPaymentText() {
-        const paymentElement = await this.components.paymentInfoText()
-        return await paymentElement.innerText()
-    }
-
-    /**
-     * Get the shipment information
-     * @returns {String} shipment element text
-     */
-    async getShippingText() {
-        const shippingElement = await this.components.shippingInfoText()
-        return await shippingElement.innerText()
-    }
-
-    /**
      * Get subtotal value
      * @returns {String} subtotal value element text
      */
