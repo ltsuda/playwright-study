@@ -1,6 +1,6 @@
 const { expect } = require("@playwright/test")
 const test = require("../saucedemo/pages/pageFixtures")
-const { PAGES, MESSAGES } = require("../saucedemo/utils/consts")
+const { PAGES, MESSAGES, IMAGES } = require("../saucedemo/utils/consts")
 
 test.describe("Saucedemo E2E: @e2e", () => {
     test.beforeEach(async ({ baseURL, page }) => {
@@ -61,8 +61,8 @@ test.describe("Saucedemo E2E: @e2e", () => {
         await overviewController.finishCheckout()
         expect(page.url()).toBe(`${baseURL}${PAGES.COMPLETED}`)
 
-        expect(await completedController.getHeaderText()).toBe(MESSAGES.COMPLETED_THANKS)
-        expect(await completedController.getCompletedText()).toBe(MESSAGES.COMPLETED_DISPATCH)
-        expect(await completedController.getCompletedImage()).toBe("/static/media/pony-express.46394a5d.png")
+        await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)
+        await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)
+        await expect(await completedController.components.completedImage()).toHaveAttribute("src", IMAGES.PANY_EXPRESS)
     })
 })

@@ -1,6 +1,6 @@
 const { expect } = require("@playwright/test")
 const test = require("../saucedemo/pages/pageFixtures")
-const { PAGES, MESSAGES, CREDENTIALS } = require("../saucedemo/utils/consts")
+const { PAGES, MESSAGES, CREDENTIALS, IMAGES } = require("../saucedemo/utils/consts")
 const { setSession } = require("../saucedemo/utils/utils")
 
 test.describe("Saucedemo CompletedPage:  @completed", () => {
@@ -29,7 +29,7 @@ test.describe("Saucedemo CompletedPage:  @completed", () => {
             path: PAGES.COMPLETED,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(await completedController.getHeaderText()).toBe(MESSAGES.COMPLETED_THANKS)
+        await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)
     })
 
     test("should have a completed order message", async ({ completedController, page }) => {
@@ -37,7 +37,7 @@ test.describe("Saucedemo CompletedPage:  @completed", () => {
             path: PAGES.COMPLETED,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(await completedController.getCompletedText()).toBe(MESSAGES.COMPLETED_DISPATCH)
+        await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)
     })
 
     test("should have a completed order image", async ({ completedController, page }) => {
@@ -45,6 +45,6 @@ test.describe("Saucedemo CompletedPage:  @completed", () => {
             path: PAGES.COMPLETED,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(await completedController.getCompletedImage()).toBe("/static/media/pony-express.46394a5d.png")
+        await expect(await completedController.components.completedImage()).toHaveAttribute("src", IMAGES.PANY_EXPRESS)
     })
 })

@@ -69,6 +69,10 @@ const MESSAGES = {
     OVERVIEW_SHIPMENT: "FREE PONY EXPRESS DELIVERY!",
 }
 
+const IMAGES = {
+    PANY_EXPRESS: "/static/media/pony-express.46394a5d.png"
+}
+
 module.exports = {
     PAGES,
     SOCIAL_LINKS,
@@ -78,4 +82,5 @@ module.exports = {
     PRODUCTS_INDEX,
     ERRORS,
     MESSAGES,
+    IMAGES,
 }
