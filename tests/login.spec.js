@@ -16,27 +16,28 @@ test.describe("Saucedemo LoginPage: @login", () => {
         expect(acceptedUsers).toEqual(loginController.acceptedUsers)
     })
 
-    test("should show application password", async ({ loginController }) => {
-        const systemPassword = await loginController.getPassword()
-        expect(systemPassword).toEqual(loginController.password)
+    test("should show application password ", async ({ loginController }) => {
+        const systemPassword = await loginController.components.acceptedPasswordText()
+        const passwordRegex =  new RegExp(`.*${loginController.password}`,'g')
+        await expect(systemPassword).toHaveText(passwordRegex)
     })
 
     test("should show locked user error", async ({ loginController }) => {
         await loginController.loginWithLockedUser()
         await loginController.page.waitForSelector(loginController.selectors.errorText)
-        expect(await loginController.getErrorMessage()).toEqual(ERRORS.LOGIN_LOCKED)
+        await expect(await loginController.components.errorMessageText()).toHaveText(ERRORS.LOGIN_LOCKED)
     })
 
     test("should show username is required error", async ({ loginController }) => {
         await loginController.loginWithoutUser()
         await loginController.page.waitForSelector(loginController.selectors.errorText)
-        expect(await loginController.getErrorMessage()).toEqual(ERRORS.LOGIN_USER)
+        await expect(await loginController.components.errorMessageText()).toHaveText(ERRORS.LOGIN_USER)
     })
 
     test("should show username and password doesn't match", async ({ loginController }) => {
         await loginController.loginWithWrongCredential()
         await loginController.page.waitForSelector(loginController.selectors.errorText)
-        expect(await loginController.getErrorMessage()).toEqual(ERRORS.LOGIN_CREDENTIALS)
+        await expect(await loginController.components.errorMessageText()).toHaveText(ERRORS.LOGIN_CREDENTIALS)
     })
 
     test("should navigate to inventory page after successful login @smoke", async ({

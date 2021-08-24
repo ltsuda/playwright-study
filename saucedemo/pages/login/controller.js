@@ -117,15 +117,6 @@ class LoginController {
     }
 
     /**
-     * Get error message
-     * @returns {String} login's error message text
-     */
-    async getErrorMessage() {
-        const errorSelector = await this.components.errorMessageText()
-        return await errorSelector.innerText()
-    }
-
-    /**
      * Get the list of accepted usernames
      * @returns {String[]} the list of usernames from the credentials section
      */
@@ -133,16 +124,6 @@ class LoginController {
         let acceptedUsers = await this.components.acceptedUsersText()
         acceptedUsers = await acceptedUsers.innerText()
         return acceptedUsers.split("\n").filter(Boolean).slice(1)
-    }
-
-    /**
-     * Get the system password
-     * @returns {String} the password text from the credentials section
-     */
-    async getPassword() {
-        let acceptedPassword = await this.components.acceptedPasswordText()
-        acceptedPassword = await acceptedPassword.innerText()
-        return acceptedPassword.split("\n").filter(Boolean).slice(1).pop()
     }
 }
 
