@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const { Page } = require("@playwright/test")
+const { Page, expect } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
 const { NavigationBarComponents, navigationBarSelectors } = require("./components")
 
@@ -25,7 +25,7 @@ class NavigationBarController {
      */
     async componentIsVisible() {
         const navContainerLocator = await this.components.navContainer()
-        await navContainerLocator.isVisible()
+        await expect(navContainerLocator).toBeVisible()
     }
 
     /**
@@ -33,7 +33,7 @@ class NavigationBarController {
      */
     async componenDetailIsVisible() {
         const navDetailContainerLocator = await this.components.navDetailContainer()
-        await navDetailContainerLocator.isVisible()
+        await expect(navDetailContainerLocator).toBeVisible()
     }
     /**
      * Click at the side menu button
@@ -60,14 +60,6 @@ class NavigationBarController {
     }
 
     /**
-     * Click at the About link
-     */
-    async about() {
-        const aboutLocator = await this.components.menuAboutLink()
-        await aboutLocator.click()
-    }
-
-    /**
      * Click at the Logout link
      */
     async logout() {
@@ -91,13 +83,6 @@ class NavigationBarController {
         await cartButtonLocator.click()
     }
 
-    /**
-     * Validate if sideMenu element is visible
-     */
-    async isSidemenuVisible() {
-        const sideMenuLocator = await this.components.sideMenu()
-        return await sideMenuLocator.isVisible()
-    }
 }
 
 module.exports = { NavigationBarController }

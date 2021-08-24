@@ -75,7 +75,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await navigationBarController.openMenu()
-        expect(await navigationBarController.isSidemenuVisible()).toBeTruthy()
+        await expect(await navigationBarController.components.sideMenu()).toBeVisible()
     })
 
     test("should be possible to close sidemenu clicking at the X button @slow", async ({
@@ -92,7 +92,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
         await sideMenuHandle.waitForElementState("stable")
         await navigationBarController.closeMenu()
         await sideMenuHandle.waitForElementState("hidden")
-        expect(await navigationBarController.isSidemenuVisible()).toBeFalsy()
+        await expect(await navigationBarController.components.sideMenu()).toBeHidden()
     })
 
     test("should remove cart items when clicking at the reset state link on menu", async ({
@@ -136,8 +136,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await navigationBarController.openMenu()
-        await navigationBarController.about()
-        expect(page.url()).toBe(PAGES.ABOUT)
+        await expect(await navigationBarController.components.menuAboutLink()).toHaveAttribute("href", PAGES.ABOUT)
     })
 
     test("should be at Login page when clicking at the logout link on menu", async ({

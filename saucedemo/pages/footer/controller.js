@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const { Page } = require("@playwright/test")
+const { Page, expect } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
 const { FooterComponents, footerSelectors } = require("./components")
 
@@ -25,7 +25,7 @@ class FooterController {
      */
     async componentIsVisible() {
         const footerContainerElement = await this.components.footerContainer()
-        await footerContainerElement.isVisible()
+        await expect(footerContainerElement).toBeVisible()
     }
 
     /**
