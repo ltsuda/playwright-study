@@ -35,9 +35,8 @@ test.describe("Saucedemo CartPage: @cart", () => {
             username: CREDENTIALS.USERS.STANDARD,
             products: [PRODUCTS_INDEX.BOLT_TSHIRT],
         })
-        expect(await inventoryItemController.getItemsCount("cart")).toBe(
-            parseInt(await navigationBarController.getCartBadge())
-        )
+        const itemsCount = String(await inventoryItemController.getItemsCount("cart"))
+        await expect(await navigationBarController.components.cartBadgeText()).toHaveText(itemsCount)
     })
 
     test("should be possible to add an item into the cart @smoke", async ({
@@ -65,9 +64,9 @@ test.describe("Saucedemo CartPage: @cart", () => {
             username: CREDENTIALS.USERS.STANDARD,
             products: [PRODUCTS_INDEX.ONESIE],
         })
-        expect(await navigationBarController.getCartBadge()).toBe("1")
+        await expect(await navigationBarController.components.cartBadgeText()).toHaveText("1")
         await inventoryItemController.removeFromCart("cart")
-        expect(await navigationBarController.hasCartBadgeLocator()).toBeFalsy()
+        await expect(await navigationBarController.components.cartBadgeText()).toHaveCount(0)
     })
 
     test("should be possible to open sidemenu @slow @smoke", async ({ navigationBarController, page }) => {
@@ -105,13 +104,13 @@ test.describe("Saucedemo CartPage: @cart", () => {
             username: CREDENTIALS.USERS.STANDARD,
             products: [PRODUCTS_INDEX.ALL_TSHIRT, PRODUCTS_INDEX.BOLT_TSHIRT],
         })
-        expect(await navigationBarController.getCartBadge()).toBe("2")
+        await expect(await navigationBarController.components.cartBadgeText()).toHaveText("2")
         await navigationBarController.openMenu()
         const sideMenuLocator = await navigationBarController.components.sideMenu()
         const sideMenuHandle = await sideMenuLocator.elementHandle()
         await sideMenuHandle.waitForElementState("stable")
         await navigationBarController.resetState()
-        expect(await navigationBarController.hasCartBadgeLocator()).toBeFalsy()
+        await expect(await navigationBarController.components.cartBadgeText()).toHaveCount(0)
     })
 
     test("should back at Invetory page when clicking at the all items link on menu", async ({

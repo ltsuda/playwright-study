@@ -84,24 +84,6 @@ class NavigationBarController {
     }
 
     /**
-     * Get the cart badge text
-     * @returns {String} the number of items on the cart
-     */
-    async getCartBadge() {
-        const badgeLocator = await this.components.cartBadgeText()
-        return await badgeLocator.innerText()
-    }
-
-    /**
-     * Get cartBadge locator count
-     * @returns true if badgeLocator exists
-     */
-    async hasCartBadgeLocator() {
-        const badgeLocator = await this.components.cartBadgeText()
-        return await badgeLocator.count() !== 0
-    }
-
-    /**
      * Click at the Cart icon link
      */
     async navigateToCart() {

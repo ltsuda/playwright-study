@@ -99,7 +99,7 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await inventoryItemController.addToCart("inventory")
-        expect(await navigationBarController.getCartBadge()).toBe("1")
+        await expect(await navigationBarController.components.cartBadgeText()).toHaveText("1")
     })
 
     test("should be possible to remove product from cart", async ({
@@ -112,9 +112,9 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
             username: CREDENTIALS.USERS.STANDARD,
             products: [PRODUCTS_INDEX.ALL_TSHIRT],
         })
-        expect(await navigationBarController.getCartBadge()).toBe("1")
+        await expect(await navigationBarController.components.cartBadgeText()).toHaveText("1")
         await inventoryItemController.removeFromCart("inventory")
-        expect(await navigationBarController.hasCartBadgeLocator()).toBeFalsy()
+        await expect(await navigationBarController.components.cartBadgeText()).toHaveCount(0)
     })
 
     test("should have Twitter link on footer", async ({ footerController, page }) => {
