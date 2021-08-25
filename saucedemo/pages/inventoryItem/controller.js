@@ -12,7 +12,7 @@ class InventoryItemController {
      * Create the InventoryItem controller
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
-     * @param {InventoryItemComponents} components - class with elementsHandle/locators of the InventoryItem elements
+     * @param {InventoryItemComponents} components - class with locators of the InventoryItem elements
      * @param {Object} selectors - page's selectors
      */
     constructor(page) {
@@ -38,141 +38,116 @@ class InventoryItemController {
     }
 
     /**
-     * Get the number of items' elements
+     * Get the number of item's Locator
      * @param {String} fromPage - the page that is calling this function like
      * 'cart' or 'inventory
-     * @returns {number} number of items
+     * @returns {number} number of item's locator found
      */
     async getItemsCount(fromPage) {
-        const itemsElements = await this.components.items(fromPage)
-        return itemsElements.length
+        const itemsLocator = await this.components.items(fromPage)
+        return await itemsLocator.count()
     }
 
     /**
-     * Get an item's property text or a list of them
-     * @returns {String[]|String} a text or a list of texts
-     * @private
+     * Get a list of name texts
+     * @param {String} fromPage - the page that is calling this function like
+     * 'cart' or 'inventory
+     * @returns {String[]} a list of names
      */
-    async _getItemsTextByIndex(elements, index) {
-        const texts = []
+    async getNames(fromPage) {
+        const namesLocator = await this.components.names(fromPage)
+        return await namesLocator.allInnerTexts()
+    }
 
-        for (const element of elements) {
-            texts.push(await element.innerText())
-        }
-        if (index == "all") {
-            return texts
+    /**
+     * Get a list of price texts
+     * @param {String} fromPage - the page that is calling this function like
+     * 'cart' or 'inventory
+     * @returns {String[]} a list of formated prices (without dollar sign)
+     */
+    async getPrices(fromPage) {
+        const pricesLocator = await this.components.prices(fromPage)
+        const prices = await pricesLocator.allInnerTexts()
+        return prices.map((price) => price.replace("$", ""))
+    }
+
+    /**
+     * Go to an item's detail page by clicking at its name
+     * @param {String} fromPage - the page that is calling this function like
+     * 'cart' or 'inventory
+     * @param {Number} picker - the item's index
+     */
+    async goToProductDetail(fromPage, picker) {
+        const item = await this.components.item(fromPage, picker)
+        if (typeof picker === "string") {
+            await item.click()
         } else {
-            return texts[index]
+            await item.locator(this.selectors.itemNameText).click()
         }
     }
 
     /**
-     * Get an item's name text or a list of name texts
-     * @param {number|String} index - the index of the item or the string 'all'
-     * to get a list of the names
-     * @param {String} fromPage - the page that is calling this function like
-     * 'cart' or 'inventory
-     * @returns {String[]|String} a name or list of names
-     */
-    async getItemsNameTextByIndex(index, fromPage) {
-        const nameElements = await this.components.itemsNameText(fromPage)
-        return await this._getItemsTextByIndex(nameElements, index)
-    }
-
-    /**
-     * Get an item's price text or a list of price texts
-     * @param {number|String} index - the index of the item or the string 'all'
-     * to get a list of the price
-     * @param {String} fromPage - the page that is calling this function like
-     * 'cart' or 'inventory
-     * @returns {String[]|String} a price or list of price
-     */
-    async getItemsPriceTextByIndex(index, fromPage) {
-        const priceElements = await this.components.itemsPriceText(fromPage)
-        var prices = await this._getItemsTextByIndex(priceElements, index)
-        var priceString = []
-
-        if (index > 0 || index == "all") {
-            prices.forEach((price) => {
-                priceString.push(price.replace("$", ""))
-            })
-        }
-
-        return index == "all" ? priceString : priceString[index]
-    }
-
-    /**
-     * Get an item's object
+     * Get item objects
      * @param {String} [fromPage="inventory"] - the page that is calling this function like
      * 'cart' or 'inventory
-     * @returns {Object[]} a list of item's object containing
+     * @returns {Object[]} a list of item objects containing
      * their name, description and price
      */
     async getItemsObject(fromPage = "inventory") {
-        const itemsElements = await this.components.items(fromPage)
+        const itemsCount = await this.getItemsCount(fromPage)
         let items = []
-        for (const itemElement of itemsElements) {
-            const namelocator =
-                fromPage == "details"
-                    ? this.selectors.itemNameText.replace("item", "details")
-                    : this.selectors.itemNameText
-            const nameElement = await itemElement.$(namelocator)
-            const name = await nameElement.innerText()
-            const descriptionLocator =
-                fromPage == "details"
-                    ? this.selectors.itemDescriptionText.replace("item", "details")
-                    : this.selectors.itemDescriptionText
-            const descriptionElement = await itemElement.$(descriptionLocator)
-            const description = await descriptionElement.innerText()
-            const pricelocator =
-                fromPage == "details"
-                    ? this.selectors.itemPriceText.replace("item", "details")
-                    : this.selectors.itemPriceText
-            const priceElement = await itemElement.$(pricelocator)
-            let price = await priceElement.innerText()
-            price = price.replace("$", "")
+        const nameSelector =
+            fromPage == "details" ? this.selectors.itemNameText.replace("item", "details") : this.selectors.itemNameText
+        const descSelector =
+            fromPage == "details"
+                ? this.selectors.itemDescriptionText.replace("item", "details")
+                : this.selectors.itemDescriptionText
+        const priceSelector =
+            fromPage == "details"
+                ? this.selectors.itemPriceText.replace("item", "details")
+                : this.selectors.itemPriceText
 
+        for (var picker = 0; picker < itemsCount; picker++) {
+            const item = await this.components.item(fromPage, picker)
+            const name = await item.locator(nameSelector).innerText()
+            const description = await item.locator(descSelector).innerText()
+            let price = await item.locator(priceSelector).innerText()
+            price = price.replace("$", "")
             items.push({
                 name: name,
                 description: description,
                 price: price,
             })
         }
-
         return items
     }
 
     /**
-     * Click at the remove button
-     * @param {String} [fromPage="inventory"] - the page that is calling this function like
+     * Click at a random remove button
+     * @param {String} fromPage - the page that is calling this function like
      * 'cart' or 'inventory
      */
     async removeRandomItemFromCart(fromPage) {
-        const removeFromLocator = await this.components.removeItemsButton(fromPage)
-        const randomLocator = removeFromLocator[randomInt(removeFromLocator.count())]
+        const removeButtonLocator = await this.components.removeItemsButton(fromPage)
+        const randomLocator = removeButtonLocator[randomInt(removeButtonLocator.count())]
         await randomLocator.click()
     }
 
     /**
-     * Click at the add to cart button
+     * Click at a random add to cart button
      * @returns {Object} the object containing its name, description and price that was added to cart
      */
     async addRandomItemToCart() {
-        const itemsCount = await this.getItemsCount("inventory")
-        const randomItem = randomInt(itemsCount)
-        const itemsElements = await this.components.items()
-        const randomElement = itemsElements[randomItem]
-
-        const nameElement = await randomElement.$(this.selectors.itemNameText)
-        const name = await nameElement.innerText()
-        const descriptionElement = await randomElement.$(this.selectors.itemDescriptionText)
-        const description = await descriptionElement.innerText()
-        const priceElement = await randomElement.$(this.selectors.itemPriceText)
-        let price = await priceElement.innerText()
+        const fromPage = "inventory"
+        const picker = randomInt(await this.getItemsCount(fromPage))
+        const randomItemLocator = await this.components.item(fromPage, picker)
+        const name = await randomItemLocator.locator(this.selectors.itemNameText).innerText()
+        const description = await randomItemLocator.locator(this.selectors.itemDescriptionText).innerText()
+        var price = await randomItemLocator.locator(this.selectors.itemPriceText).innerText()
         price = price.replace("$", "")
 
-        const addToCartButton = await randomElement.$(this.selectors.addToCartButton)
-        await addToCartButton.click()
+        const addButton = await randomItemLocator.locator(this.selectors.addToCartButton)
+        await addButton.click()
 
         return {
             name: name,

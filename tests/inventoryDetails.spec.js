@@ -23,10 +23,9 @@ test.describe("Saucedemo InventoryPage: @details", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         const items = await inventoryItemController.getItemsObject()
-        const itemNameElements = await inventoryItemController.components.itemsNameText()
-        await itemNameElements[0].click()
+        await inventoryItemController.goToProductDetail("inventory", PRODUCTS_INDEX.ONESIE)
         const itemDetail = await inventoryItemController.getItemsObject("details")
-        expect(items[0]).toStrictEqual(itemDetail[0])
+        expect(items[PRODUCTS_INDEX.ONESIE]).toStrictEqual(itemDetail[0])
     })
 
     test("should be possible to add the product to cart", async ({
