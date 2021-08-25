@@ -47,7 +47,7 @@ npx playwright test --project 'chromium-hd'
 npx playwright test --grep <tag>
 ```
 
-**The following scrips was tested on Ubuntu 20.04/WSL**
+**The following scripts was tested on Ubuntu 20.04/WSL**
 
 All test scripts will generate the result' files using the Allure Test Report. Too generate the report, use the following scripts:
 ```node
