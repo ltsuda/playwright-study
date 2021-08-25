@@ -37,6 +37,18 @@ npm install -D
 #### Running the tests
 In this repository there are multiple test scripts with different configurations. Please, see the `package.json/scripts` to see all options and to see the Playwright' projects, see file `playwright.config.js`
 
+**To run on Windows, use Playwright's CLI syntax directly**
+For example:
+```node
+# to run all tests on chromium with 1280x720 viewport
+npx playwright test --project 'chromium-hd'
+
+# to run all test with specific tag
+npx playwright test --grep <tag>
+```
+
+**The following scrips was tested on Ubuntu 20.04/WSL**
+
 All test scripts will generate the result' files using the Allure Test Report. Too generate the report, use the following scripts:
 ```node
 npm run allure:generate
