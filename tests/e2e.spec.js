@@ -13,7 +13,7 @@ test.describe("Saucedemo E2E: @e2e", () => {
         page,
     }) => {
         await loginController.loginWithStandardUser()
-        expect(page.url()).toBe(`${baseURL}${PAGES.INVENTORY}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)
     })
 
     test("User should be able to complete a purchase @e2e-purchase", async ({
@@ -28,22 +28,22 @@ test.describe("Saucedemo E2E: @e2e", () => {
         page,
     }) => {
         await loginController.loginWithStandardUser()
-        expect(page.url()).toBe(`${baseURL}${PAGES.INVENTORY}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)
 
         const item = await inventoryItemController.addRandomItemToCart()
 
         await cartController.navigate()
-        expect(page.url()).toBe(`${baseURL}${PAGES.CART}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.CART}`)
 
         const cartItems = await inventoryItemController.getItemsObject("cart")
         expect(cartItems[0]).toStrictEqual(item)
         await expect(await navigationBarController.components.cartBadgeText()).toHaveText(String(cartItems.length))
 
         await cartController.navigateToCheckout()
-        expect(page.url()).toBe(`${baseURL}${PAGES.CHECKOUT}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.CHECKOUT}`)
 
         await checkoutController.submitCheckout()
-        expect(page.url()).toBe(`${baseURL}${PAGES.OVERVIEW}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.OVERVIEW}`)
 
         const overviewItems = await inventoryItemController.getItemsNameTextByIndex("all", "cart")
         expect(overviewItems[0]).toBe(item.name)
@@ -59,7 +59,7 @@ test.describe("Saucedemo E2E: @e2e", () => {
         expect(String(totalFromPage)).toBe(calculatedTotal.toFixed(2))
 
         await overviewController.finishCheckout()
-        expect(page.url()).toBe(`${baseURL}${PAGES.COMPLETED}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)
 
         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)
         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)

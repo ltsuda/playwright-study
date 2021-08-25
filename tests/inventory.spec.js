@@ -17,7 +17,7 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
+        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
     })
 
     test("should be at Cart page when clicking at the cart button", async ({ navigationBarController, page }) => {
@@ -26,7 +26,7 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await navigationBarController.navigateToCart()
-        expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.CART}`)
+        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.CART}`)
     })
 
     test("should show a list of items @smoke", async ({ inventoryItemController, page }) => {
@@ -150,7 +150,7 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
         await expect(await footerController.components.robotImage()).toHaveAttribute("src", IMAGES.SWAG_BOT)
     })
 
-    test("should have Copyright text on footer @x", async ({ footerController, page }) => {
+    test("should have Copyright text on footer", async ({ footerController, page }) => {
         await setSession(page, {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,

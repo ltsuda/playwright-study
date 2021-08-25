@@ -14,7 +14,7 @@ test.describe("Saucedemo InventoryPage: @details", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await inventoryItemController.backToProducts()
-        expect(page.url()).toBe(`${baseURL}${PAGES.INVENTORY}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)
     })
 
     test("should navigate to product's detail page when clicking at it", async ({ inventoryItemController, page }) => {

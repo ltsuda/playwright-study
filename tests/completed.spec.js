@@ -9,7 +9,7 @@ test.describe("Saucedemo CompletedPage:  @completed", () => {
             path: PAGES.COMPLETED,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.COMPLETED}`)
+        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.COMPLETED}`)
     })
 
     test("should be back at Inventory page when click at the Back Home button", async ({
@@ -21,7 +21,7 @@ test.describe("Saucedemo CompletedPage:  @completed", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await completedController.navigateBackHome()
-        expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
+        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
     })
 
     test("should have a thank you header message", async ({ completedController, page }) => {

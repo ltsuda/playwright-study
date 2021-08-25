@@ -9,7 +9,7 @@ test.describe("Saucedemo OverviewPage: @overview", () => {
             path: PAGES.OVERVIEW,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.OVERVIEW}`)
+        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.OVERVIEW}`)
     })
 
     test("should be back at Inventory page when click at the cancel button", async ({ overviewController, page }) => {
@@ -18,7 +18,7 @@ test.describe("Saucedemo OverviewPage: @overview", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await overviewController.cancelCheckout()
-        expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
+        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
     })
 
     test("should be at Completed page when click at the finish button", async ({ overviewController, page }) => {
@@ -27,7 +27,7 @@ test.describe("Saucedemo OverviewPage: @overview", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await overviewController.finishCheckout()
-        expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.COMPLETED}`)
+        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.COMPLETED}`)
     })
 
     test("should have the added items on the Overview Checkout @smoke", async ({ inventoryItemController, page }) => {

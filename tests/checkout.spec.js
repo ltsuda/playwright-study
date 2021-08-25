@@ -9,7 +9,7 @@ test.describe("Saucedemo CheckoutPage: @checkout", () => {
             path: PAGES.CHECKOUT,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
+        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
     })
 
     test("should go back to Cart if cancel checkout", async ({ checkoutController, page }) => {
@@ -18,7 +18,7 @@ test.describe("Saucedemo CheckoutPage: @checkout", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await checkoutController.cancelCheckout()
-        expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.CART}`)
+        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.CART}`)
     })
 
     test("should show firstName error message if empty", async ({ checkoutController, page }) => {
@@ -60,6 +60,6 @@ test.describe("Saucedemo CheckoutPage: @checkout", () => {
         await checkoutController.fillLastName(PERSONAL_INFO.USER1.LAST_NAME)
         await checkoutController.fillPostalCode(PERSONAL_INFO.USER1.ZIP)
         await checkoutController.continueCheckout()
-        expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.OVERVIEW}`)
+        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.OVERVIEW}`)
     })
 })

@@ -13,7 +13,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await cartController.continueShopping()
-        expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
+        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
     })
 
     test("should be at Checkout page when click at the checkout button", async ({ cartController, page }) => {
@@ -22,7 +22,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await cartController.navigateToCheckout()
-        expect(page.url()).toBe(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
+        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
     })
 
     test("should match cart badge with items in cart", async ({
@@ -124,7 +124,7 @@ test.describe("Saucedemo CartPage: @cart", () => {
         })
         await navigationBarController.openMenu()
         await navigationBarController.allItems()
-        expect(page.url()).toBe(`${baseURL}${PAGES.INVENTORY}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)
     })
 
     test("should navigate to SauceLabs page when clicking at the about link on menu @slow", async ({
@@ -150,6 +150,6 @@ test.describe("Saucedemo CartPage: @cart", () => {
         })
         await navigationBarController.openMenu()
         await navigationBarController.logout()
-        expect(page.url()).toBe(`${baseURL}/`)
+        await expect(page).toHaveURL(`${baseURL}/`)
     })
 })

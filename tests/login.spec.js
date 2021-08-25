@@ -8,7 +8,7 @@ test.describe("Saucedemo LoginPage: @login", () => {
     })
 
     test("should be at the login url", async ({ loginController }) => {
-        expect(await loginController.page.url()).toBe(`${PAGES.BASEURL}/`)
+        await expect(loginController.page).toHaveURL(`${PAGES.BASEURL}/`)
     })
 
     test("should show accepted users", async ({ loginController }) => {
@@ -18,7 +18,7 @@ test.describe("Saucedemo LoginPage: @login", () => {
 
     test("should show application password ", async ({ loginController }) => {
         const systemPassword = await loginController.components.acceptedPasswordText()
-        const passwordRegex =  new RegExp(`.*${loginController.password}`,'g')
+        const passwordRegex = new RegExp(`.*${loginController.password}`, "g")
         await expect(systemPassword).toHaveText(passwordRegex)
     })
 
@@ -45,6 +45,6 @@ test.describe("Saucedemo LoginPage: @login", () => {
         inventoryController,
     }) => {
         await loginController.loginWithStandardUser()
-        expect(await inventoryController.page.url()).toEqual(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
+        await expect(inventoryController.page).toHaveURL(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
     })
 })
