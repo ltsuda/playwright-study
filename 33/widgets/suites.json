@@ -1,0 +1,48 @@
+{
+  "total" : 4,
+  "items" : [ {
+    "uid" : "666fdf8106a39793b928e91ac1049c3f",
+    "name" : "chromium-hd",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 58,
+      "unknown" : 0,
+      "total" : 58
+    }
+  }, {
+    "uid" : "ad1b8520c8089cbd2da9c3618b616c5b",
+    "name" : "chromium-fhd",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 58,
+      "unknown" : 0,
+      "total" : 58
+    }
+  }, {
+    "uid" : "8c9c7ea9902f9a66c311e2370ecba8a2",
+    "name" : "chrome-hd",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 58,
+      "unknown" : 0,
+      "total" : 58
+    }
+  }, {
+    "uid" : "37bfc42cf518dd399fad1d684dec92e4",
+    "name" : "chrome-fhd",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 58,
+      "unknown" : 0,
+      "total" : 58
+    }
+  } ]
+}
