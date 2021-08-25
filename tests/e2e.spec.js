@@ -45,7 +45,7 @@ test.describe("Saucedemo E2E: @e2e", () => {
         await checkoutController.submitCheckout()
         await expect(page).toHaveURL(`${baseURL}${PAGES.OVERVIEW}`)
 
-        const overviewItems = await inventoryItemController.getItemsNameTextByIndex("all", "cart")
+        const overviewItems = await inventoryItemController.getNames("cart")
         expect(overviewItems[0]).toBe(item.name)
         await expect(await overviewController.components.paymentInfoText()).toHaveText(MESSAGES.OVERVIEW_CARD)
         await expect(await overviewController.components.shippingInfoText()).toHaveText(MESSAGES.OVERVIEW_SHIPMENT)

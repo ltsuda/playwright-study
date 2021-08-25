@@ -42,9 +42,7 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(await inventoryItemController.getItemsNameTextByIndex("all")).toStrictEqual(
-            Object.values(PRODUCTS_NAMES).sort()
-        )
+        expect(await inventoryItemController.getNames("inventory")).toStrictEqual(Object.values(PRODUCTS_NAMES).sort())
     })
 
     test("should be possible to sort items from Z to A", async ({
@@ -57,7 +55,7 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await titleHeaderController.sortZA()
-        expect(await inventoryItemController.getItemsNameTextByIndex("all")).toStrictEqual(
+        expect(await inventoryItemController.getNames("inventory")).toStrictEqual(
             Object.values(PRODUCTS_NAMES).sort().reverse()
         )
     })
@@ -72,7 +70,7 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await titleHeaderController.sortLowHigh()
-        const prices = await inventoryItemController.getItemsPriceTextByIndex("all")
+        const prices = await inventoryItemController.getPrices("inventory")
         expect(prices).toBe(prices.sort())
     })
 
@@ -86,7 +84,7 @@ test.describe("Saucedemo InventoryPage: @inventory", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await titleHeaderController.sortHighLow()
-        const prices = await inventoryItemController.getItemsPriceTextByIndex("all")
+        const prices = await inventoryItemController.getPrices("inventory")
         expect(prices).toBe(prices.sort().reverse())
     })
 

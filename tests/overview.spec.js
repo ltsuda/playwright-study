@@ -36,8 +36,8 @@ test.describe("Saucedemo OverviewPage: @overview", () => {
             username: CREDENTIALS.USERS.STANDARD,
             products: [PRODUCTS_INDEX.BOLT_TSHIRT],
         })
-        const overviewItem = await inventoryItemController.getItemsNameTextByIndex("all", "cart")
-        expect(overviewItem[0]).toStrictEqual(PRODUCTS_NAMES.BOLT_TSHIRT)
+        const overviewItems = await inventoryItemController.getNames("cart")
+        expect(overviewItems[0]).toStrictEqual(PRODUCTS_NAMES.BOLT_TSHIRT)
     })
 
     test("should have the payment card information", async ({ overviewController, page }) => {

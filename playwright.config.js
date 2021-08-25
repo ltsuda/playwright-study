@@ -11,8 +11,8 @@ const config = {
         headless: true,
         baseURL: "https://www.saucedemo.com",
         screenshot: "only-on-failure",
-        trace: "retain-on-failure",
-        // video: 'retain-on-failure',
+        trace: "on-first-retry",
+        video: "on-first-retry",
     },
 
     projects: [

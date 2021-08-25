@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const { Page, ElementHandle, Locator } = require("@playwright/test")
+const { Page, Locator } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
 
 /**
@@ -18,13 +18,12 @@ const inventoryItemSelectors = {
 }
 
 /**
- * Class representing playwright's ElementHandles/Locators for the inventory item elements\
- * See {@link https://playwright.dev/docs/api/class-elementhandle}\
+ * Class representing playwright's Locators for the inventory item elements\
  * See {@link https://playwright.dev/docs/api/class-locator}
  */
 class InventoryItemComponents {
     /**
-     * Create the Inventory item ElementsHandle/Locators
+     * Create the Inventory item Locators
      * @param {Page} page - playwright browser's page\
      * See {@link https://playwright.dev/docs/api/class-page}
      */
@@ -66,42 +65,58 @@ class InventoryItemComponents {
     }
 
     /**
-     * Get a list of items container's ElementHandles/Locators
-     * @returns {ElementHandle[]} a list of ElementHandle for the list of item's container locator
+     * Get item's container Locator
+     * @param {String} [fromPage="inventory"] - the page that is calling this function like
+     * 'cart' or 'inventory
+     * @returns {Locator} Locator for the item's container locator
      */
     async items(fromPage = "inventory") {
         const locator = this.switchItemLocator(fromPage)
-        return await this.page.$$(locator)
+        return await this.page.locator(locator)
     }
 
     /**
-     * Get a list of items name's ElementHandles/Locators
-     * @returns {ElementHandle[]} a list of ElementHandle for a 'itemNameText' selector
+     * Get item's name Locator
+     * @param {String} [fromPage="inventory"] - the page that is calling this function like
+     * 'cart' or 'inventory
+     * @returns {Locator} Locator for the 'itemNameText' selector
      */
-    async itemsNameText(fromPage) {
-        const locator = this.switchItemLocator(fromPage)
-        const itemLocator =
-            fromPage == "details"
-                ? inventoryItemSelectors.itemNameText.replace("item", "details")
-                : inventoryItemSelectors.itemNameText
-        return await this.page.$$(`${locator}` + ">>" + `${itemLocator}`)
+    async names(fromPage = "inventory") {
+        const items = await this.items(fromPage)
+        return await items.locator(inventoryItemSelectors.itemNameText)
     }
 
     /**
-     * Get a list of items price's ElementHandles/Locators
-     * @returns {ElementHandle[]} a list of ElementHandle for a 'itemPriceText' selector
+     * Get item's price Locator
+     * @param {String} [fromPage="inventory"] - the page that is calling this function like
+     * 'cart' or 'inventory
+     * @returns {Locator} Locator for the 'itemPriceText' selector
      */
-    async itemsPriceText(fromPage) {
-        const locator = this.switchItemLocator(fromPage)
-        const itemLocator =
-            fromPage == "details"
-                ? inventoryItemSelectors.itemPriceText.replace("_", "_details_")
-                : inventoryItemSelectors.itemPriceText
-        return await this.page.$$(`${locator}` + ">>" + `${itemLocator}`)
+    async prices(fromPage = "inventory") {
+        const items = await this.items(fromPage)
+        return await items.locator(inventoryItemSelectors.itemPriceText)
+    }
+
+    /**
+     * Get a item's container Locator by its name or index
+     * @param {String} [fromPage="inventory"] - the page that is calling this function like
+     * 'cart' or 'inventory
+     * @param {Number} picker - the item's index
+     * @returns {Locator} Locator for an item based on its name or locator nth
+     */
+    async item(fromPage = "inventory", picker) {
+        const items = await this.items(fromPage)
+        if (typeof picker === "string") {
+            return await items.locator(`text=${picker}`).first()
+        } else {
+            return await items.nth(picker)
+        }
     }
 
     /**
      * Get the add to cart button Locator
+     * @param {String} fromPage - the page that is calling this function like
+     * 'cart' or 'inventory
      * @returns {Locator} Locator for 'addToCartButton' selector
      */
     async addToCartButton(fromPage) {
@@ -111,6 +126,8 @@ class InventoryItemComponents {
 
     /**
      * Get the remove from cart button Locator
+     * @param {String} fromPage - the page that is calling this function like
+     * 'cart' or 'inventory
      * @returns {Locator} Locator for 'removeButton' selector
      */
     async removeItemsButton(fromPage) {
