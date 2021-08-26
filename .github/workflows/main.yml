@@ -25,7 +25,6 @@ jobs:
 
       - name: Upload allure-results
         uses: actions/upload-artifact@v2.2.4
-        if: ${{ github.event_name == 'push' }}
         with:
           name: test-results
           path: test-results
