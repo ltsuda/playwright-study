@@ -1,0 +1,85 @@
+{
+  "uid" : "b5dcabda6d1e9305",
+  "name" : "should remove cart items when clicking at the reset state link on menu",
+  "fullName" : "should remove cart items when clicking at the reset state link on menu",
+  "historyId" : "firefox-hd cart.spec.js Saucedemo CartPage: @cart should remove cart items when clicking at the reset state link on menu",
+  "time" : {
+    "start" : 1629949447962,
+    "stop" : 1629949450338,
+    "duration" : 2376
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "firefox-hd"
+  }, {
+    "name" : "suite",
+    "value" : "cart.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CartPage: @cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "776c1f78673d1609",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/43//#testresult/776c1f78673d1609",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629942946898,
+          "stop" : 1629942949530,
+          "duration" : 2632
+        }
+      }, {
+        "uid" : "dc0a6d4d0e6dfa0b",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/42//#testresult/dc0a6d4d0e6dfa0b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629940453472,
+          "stop" : 1629940456184,
+          "duration" : 2712
+        }
+      }, {
+        "uid" : "28c6125c66e4af69",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/28c6125c66e4af69",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939886150,
+          "stop" : 1629939888678,
+          "duration" : 2528
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b5dcabda6d1e9305.json",
+  "parameterValues" : [ ]
+}

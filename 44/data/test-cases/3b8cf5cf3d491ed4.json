@@ -1,0 +1,85 @@
+{
+  "uid" : "3b8cf5cf3d491ed4",
+  "name" : "should have a completed order message",
+  "fullName" : "should have a completed order message",
+  "historyId" : "chromium-hd completed.spec.js Saucedemo CompletedPage:  @completed should have a completed order message",
+  "time" : {
+    "start" : 1629949295623,
+    "stop" : 1629949297128,
+    "duration" : 1505
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "completed.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CompletedPage:  @completed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "5eeb51dcbfe696b5",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/43//#testresult/5eeb51dcbfe696b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629942783525,
+          "stop" : 1629942785119,
+          "duration" : 1594
+        }
+      }, {
+        "uid" : "cf23a071cd79aca1",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/42//#testresult/cf23a071cd79aca1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629940305305,
+          "stop" : 1629940306848,
+          "duration" : 1543
+        }
+      }, {
+        "uid" : "6249b1d4f831396b",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/6249b1d4f831396b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939707949,
+          "stop" : 1629939709484,
+          "duration" : 1535
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3b8cf5cf3d491ed4.json",
+  "parameterValues" : [ ]
+}

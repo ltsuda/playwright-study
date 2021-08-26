@@ -1,0 +1,85 @@
+{
+  "uid" : "2c111f1280c6d03d",
+  "name" : "should be possible to add an item into the cart @smoke",
+  "fullName" : "should be possible to add an item into the cart @smoke",
+  "historyId" : "chromium-fhd cart.spec.js Saucedemo CartPage: @cart should be possible to add an item into the cart @smoke",
+  "time" : {
+    "start" : 1629949334440,
+    "stop" : 1629949336389,
+    "duration" : 1949
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "cart.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CartPage: @cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "df26cea084d17793",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/43//#testresult/df26cea084d17793",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629942824956,
+          "stop" : 1629942827137,
+          "duration" : 2181
+        }
+      }, {
+        "uid" : "2dcbd209ed7c9cfb",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/42//#testresult/2dcbd209ed7c9cfb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629940341712,
+          "stop" : 1629940343567,
+          "duration" : 1855
+        }
+      }, {
+        "uid" : "8e845bc4caf8fd7f",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/8e845bc4caf8fd7f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939749797,
+          "stop" : 1629939751762,
+          "duration" : 1965
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2c111f1280c6d03d.json",
+  "parameterValues" : [ ]
+}

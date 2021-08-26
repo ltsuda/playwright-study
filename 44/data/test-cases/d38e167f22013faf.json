@@ -1,0 +1,85 @@
+{
+  "uid" : "d38e167f22013faf",
+  "name" : "should go to Checkout Overview page @smoke",
+  "fullName" : "should go to Checkout Overview page @smoke",
+  "historyId" : "firefox-hd checkout.spec.js Saucedemo CheckoutPage: @checkout should go to Checkout Overview page @smoke",
+  "time" : {
+    "start" : 1629949449782,
+    "stop" : 1629949452065,
+    "duration" : 2283
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "firefox-hd"
+  }, {
+    "name" : "suite",
+    "value" : "checkout.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CheckoutPage: @checkout"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "68cd4219b6c3cbfe",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/43//#testresult/68cd4219b6c3cbfe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629942948264,
+          "stop" : 1629942950774,
+          "duration" : 2510
+        }
+      }, {
+        "uid" : "1f783cfb8c1d6847",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/42//#testresult/1f783cfb8c1d6847",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629940455004,
+          "stop" : 1629940457168,
+          "duration" : 2164
+        }
+      }, {
+        "uid" : "ec84ce1c34495fe4",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/ec84ce1c34495fe4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939882641,
+          "stop" : 1629939885194,
+          "duration" : 2553
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d38e167f22013faf.json",
+  "parameterValues" : [ ]
+}

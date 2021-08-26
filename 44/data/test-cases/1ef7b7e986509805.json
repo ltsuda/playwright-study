@@ -1,0 +1,85 @@
+{
+  "uid" : "1ef7b7e986509805",
+  "name" : "should have the payment card information",
+  "fullName" : "should have the payment card information",
+  "historyId" : "chrome-hd overview.spec.js Saucedemo OverviewPage: @overview should have the payment card information",
+  "time" : {
+    "start" : 1629949428068,
+    "stop" : 1629949429679,
+    "duration" : 1611
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "8a84e46cabc12a2c",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/43//#testresult/8a84e46cabc12a2c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629942924721,
+          "stop" : 1629942926356,
+          "duration" : 1635
+        }
+      }, {
+        "uid" : "6cf71b087fb32640",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/42//#testresult/6cf71b087fb32640",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629940434194,
+          "stop" : 1629940435709,
+          "duration" : 1515
+        }
+      }, {
+        "uid" : "e53666e755cb558b",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/e53666e755cb558b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939856494,
+          "stop" : 1629939858090,
+          "duration" : 1596
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1ef7b7e986509805.json",
+  "parameterValues" : [ ]
+}
