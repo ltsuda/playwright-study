@@ -1,0 +1,47 @@
+{
+  "uid" : "2c7e2360c364ffb7",
+  "name" : "should be back at Inventory page when click at the cancel button",
+  "fullName" : "should be back at Inventory page when click at the cancel button",
+  "historyId" : "webkit-hd overview.spec.js Saucedemo OverviewPage: @overview should be back at Inventory page when click at the cancel button",
+  "time" : {
+    "start" : 1629939253502,
+    "stop" : 1629939255790,
+    "duration" : 2288
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "webkit-hd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2c7e2360c364ffb7.json",
+  "parameterValues" : [ ]
+}

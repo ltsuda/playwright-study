@@ -1,0 +1,47 @@
+{
+  "uid" : "41f0940afb97efe7",
+  "name" : "should be possible to close sidemenu clicking at the X button @slow",
+  "fullName" : "should be possible to close sidemenu clicking at the X button @slow",
+  "historyId" : "firefox-hd cart.spec.js Saucedemo CartPage: @cart should be possible to close sidemenu clicking at the X button @slow",
+  "time" : {
+    "start" : 1629939138345,
+    "stop" : 1629939141691,
+    "duration" : 3346
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "firefox-hd"
+  }, {
+    "name" : "suite",
+    "value" : "cart.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CartPage: @cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "41f0940afb97efe7.json",
+  "parameterValues" : [ ]
+}
