@@ -21,8 +21,8 @@
         "allure:generate": "npx allure generate ./test-results --clean -o ./allure-reports",
         "allure:open": "npx allure open ./allure-reports",
         "posttest:ci": "npm run allure:generate",
-        "test:docker": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual'",
-        "test:docker:visual": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep @visual --project 'chromium-hd'"
+        "test:docker": "npx playwright test --grep-invert '@visual' --reporter 'dot'",
+        "test:docker:visual": "npx playwright test --grep @visual --project 'chromium-hd' --reporter 'dot'"
     },
     "repository": {
         "type": "git",
