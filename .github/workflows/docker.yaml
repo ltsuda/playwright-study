@@ -1,0 +1,77 @@
+name: Build docker images
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build_ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build image only for local ci test
+        uses: docker/build-push-action@v2
+        with:
+          file: Dockerfile
+          tags: ltsuda/playwright-study:ci
+          load: true
+          push: false
+
+      - name: Run test:docker:ci on docker
+        uses: addnab/docker-run-action@v3
+        with:
+          image: ltsuda/playwright-study:ci
+          run: npm run test:docker
+
+      - name: Build and push ci image
+        uses: docker/build-push-action@v2
+        if: ${{ github.event_name == 'push' && success() }}
+        with:
+          file: Dockerfile
+          tags: ltsuda/playwright-study:visual
+          push: true
+
+  build_visual:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build image only for local visual test
+        uses: docker/build-push-action@v2
+        with:
+          file: Dockerfile.visual
+          tags: ltsuda/playwright-study:visual
+          load: true
+          push: false
+
+      - name: Run test:docker:visual on docker
+        uses: addnab/docker-run-action@v3
+        with:
+          image: ltsuda/playwright-study:visual
+          run: npm run test:docker:visual
+
+      - name: Build and push visual image
+        uses: docker/build-push-action@v2
+        if: ${{ github.event_name == 'push' && success() }}
+        with:
+          file: Dockerfile.visual
+          tags: ltsuda/playwright-study:visual
+          push: true
