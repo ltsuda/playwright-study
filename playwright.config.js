@@ -42,15 +42,6 @@ const config = {
             },
         },
         {
-            name: "chrome-fhd",
-            outputDir: "../test-results/chrome-fhd/",
-            use: {
-                viewport: { width: 1920, height: 1080 },
-                browserName: "chromium",
-                channel: "chrome",
-            },
-        },
-        {
             name: "firefox-hd",
             outputDir: "../test-results/firefox-hd/",
             use: {
