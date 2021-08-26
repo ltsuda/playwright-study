@@ -1,0 +1,47 @@
+{
+  "uid" : "eb79735a785cfd38",
+  "name" : "should have Copyright text on footer",
+  "fullName" : "should have Copyright text on footer",
+  "historyId" : "chromium-fhd inventory.spec.js Saucedemo InventoryPage: @inventory should have Copyright text on footer",
+  "time" : {
+    "start" : 1629939796737,
+    "stop" : 1629939798811,
+    "duration" : 2074
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eb79735a785cfd38.json",
+  "parameterValues" : [ ]
+}

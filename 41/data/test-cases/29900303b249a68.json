@@ -1,0 +1,47 @@
+{
+  "uid" : "29900303b249a68",
+  "name" : "should show username and password doesn't match",
+  "fullName" : "should show username and password doesn't match",
+  "historyId" : "firefox-hd login.spec.js Saucedemo LoginPage: @login should show username and password doesn't match",
+  "time" : {
+    "start" : 1629939925086,
+    "stop" : 1629939927159,
+    "duration" : 2073
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "firefox-hd"
+  }, {
+    "name" : "suite",
+    "value" : "login.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo LoginPage: @login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "29900303b249a68.json",
+  "parameterValues" : [ ]
+}

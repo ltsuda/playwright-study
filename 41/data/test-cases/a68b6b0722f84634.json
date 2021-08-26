@@ -1,0 +1,47 @@
+{
+  "uid" : "a68b6b0722f84634",
+  "name" : "should show items sorted alphabetically",
+  "fullName" : "should show items sorted alphabetically",
+  "historyId" : "firefox-hd inventory.spec.js Saucedemo InventoryPage: @inventory should show items sorted alphabetically",
+  "time" : {
+    "start" : 1629939905608,
+    "stop" : 1629939908836,
+    "duration" : 3228
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "firefox-hd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a68b6b0722f84634.json",
+  "parameterValues" : [ ]
+}

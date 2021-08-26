@@ -1,0 +1,47 @@
+{
+  "uid" : "a24ac0bcdb3401c9",
+  "name" : "should show postalCode error message if empty",
+  "fullName" : "should show postalCode error message if empty",
+  "historyId" : "firefox-hd checkout.spec.js Saucedemo CheckoutPage: @checkout should show postalCode error message if empty",
+  "time" : {
+    "start" : 1629939880109,
+    "stop" : 1629939882641,
+    "duration" : 2532
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "firefox-hd"
+  }, {
+    "name" : "suite",
+    "value" : "checkout.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CheckoutPage: @checkout"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a24ac0bcdb3401c9.json",
+  "parameterValues" : [ ]
+}

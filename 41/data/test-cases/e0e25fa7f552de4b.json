@@ -1,0 +1,47 @@
+{
+  "uid" : "e0e25fa7f552de4b",
+  "name" : "should have the shipping information",
+  "fullName" : "should have the shipping information",
+  "historyId" : "chrome-hd overview.spec.js Saucedemo OverviewPage: @overview should have the shipping information",
+  "time" : {
+    "start" : 1629939858090,
+    "stop" : 1629939859839,
+    "duration" : 1749
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e0e25fa7f552de4b.json",
+  "parameterValues" : [ ]
+}

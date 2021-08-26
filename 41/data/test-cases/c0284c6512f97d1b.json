@@ -1,0 +1,47 @@
+{
+  "uid" : "c0284c6512f97d1b",
+  "name" : "should show application password ",
+  "fullName" : "should show application password ",
+  "historyId" : "webkit-hd login.spec.js Saucedemo LoginPage: @login should show application password ",
+  "time" : {
+    "start" : 1629939989228,
+    "stop" : 1629939990368,
+    "duration" : 1140
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "webkit-hd"
+  }, {
+    "name" : "suite",
+    "value" : "login.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo LoginPage: @login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c0284c6512f97d1b.json",
+  "parameterValues" : [ ]
+}

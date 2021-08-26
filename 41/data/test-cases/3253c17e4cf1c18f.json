@@ -1,0 +1,47 @@
+{
+  "uid" : "3253c17e4cf1c18f",
+  "name" : "should have a thank you header message",
+  "fullName" : "should have a thank you header message",
+  "historyId" : "firefox-hd completed.spec.js Saucedemo CompletedPage:  @completed should have a thank you header message",
+  "time" : {
+    "start" : 1629939890381,
+    "stop" : 1629939892822,
+    "duration" : 2441
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "firefox-hd"
+  }, {
+    "name" : "suite",
+    "value" : "completed.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CompletedPage:  @completed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3253c17e4cf1c18f.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,47 @@
+{
+  "uid" : "3b26950514a511bc",
+  "name" : "should show postalCode error message if empty",
+  "fullName" : "should show postalCode error message if empty",
+  "historyId" : "chromium-hd checkout.spec.js Saucedemo CheckoutPage: @checkout should show postalCode error message if empty",
+  "time" : {
+    "start" : 1629939698708,
+    "stop" : 1629939700542,
+    "duration" : 1834
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "checkout.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CheckoutPage: @checkout"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3b26950514a511bc.json",
+  "parameterValues" : [ ]
+}

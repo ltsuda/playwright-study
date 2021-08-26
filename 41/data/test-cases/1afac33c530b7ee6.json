@@ -1,0 +1,47 @@
+{
+  "uid" : "1afac33c530b7ee6",
+  "name" : "should be at Inventory page after login",
+  "fullName" : "should be at Inventory page after login",
+  "historyId" : "firefox-hd inventory.spec.js Saucedemo InventoryPage: @inventory should be at Inventory page after login",
+  "time" : {
+    "start" : 1629939897264,
+    "stop" : 1629939900061,
+    "duration" : 2797
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "firefox-hd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1afac33c530b7ee6.json",
+  "parameterValues" : [ ]
+}

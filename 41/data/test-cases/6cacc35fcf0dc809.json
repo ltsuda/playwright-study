@@ -1,0 +1,47 @@
+{
+  "uid" : "6cacc35fcf0dc809",
+  "name" : "should be possible to open sidemenu @slow @smoke",
+  "fullName" : "should be possible to open sidemenu @slow @smoke",
+  "historyId" : "chrome-hd cart.spec.js Saucedemo CartPage: @cart should be possible to open sidemenu @slow @smoke",
+  "time" : {
+    "start" : 1629939815753,
+    "stop" : 1629939817416,
+    "duration" : 1663
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "cart.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CartPage: @cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6cacc35fcf0dc809.json",
+  "parameterValues" : [ ]
+}
