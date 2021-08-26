@@ -1,0 +1,76 @@
+{
+  "uid" : "3d195ca96d6fa81",
+  "name" : "should be at Cart page when clicking at the cart button",
+  "fullName" : "should be at Cart page when clicking at the cart button",
+  "historyId" : "chrome-hd inventory.spec.js Saucedemo InventoryPage: @inventory should be at Cart page when clicking at the cart button",
+  "time" : {
+    "start" : 1629942902318,
+    "stop" : 1629942904023,
+    "duration" : 1705
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "7121663490b5a98c",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/42//#testresult/7121663490b5a98c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629940412614,
+          "stop" : 1629940414270,
+          "duration" : 1656
+        }
+      }, {
+        "uid" : "ef92e8a3e6379728",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/ef92e8a3e6379728",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939832339,
+          "stop" : 1629939834586,
+          "duration" : 2247
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "3d195ca96d6fa81.json",
+  "parameterValues" : [ ]
+}
