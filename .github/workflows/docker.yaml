@@ -1,4 +1,4 @@
-name: Playwright-CI
+name: Build docker images
 
 on:
   push:
@@ -8,37 +8,39 @@ on:
   workflow_dispatch:
 
 jobs:
-  # build_ci:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
+  build_ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
 
-  #     - name: Set up Docker Buildx
-  #       uses: docker/setup-buildx-action@v1
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-  #       - name: Login to DockerHub
-  #         uses: docker/login-action@v1
-  #         with:
-  #           username: ${{ secrets.DOCKERHUB_USERNAME }}
-  #           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build image only for local ci test
+        uses: docker/build-push-action@v2
+        with:
+          file: Dockerfile
+          tags: ltsuda/playwright-study:ci
+          load: true
+          push: false
 
-  # - name: Build only
-  #   uses: docker/build-push-action@v2
-  #   with:
-  #     context: .
-  #     file: Dockerfile
-  #     push: false
-  #     tags: ltsuda/playwright-tsuda:ci
+      - name: Run test:docker:ci on docker
+        uses: addnab/docker-run-action@v3
+        with:
+          image: ltsuda/playwright-study:ci
+          run: npm run test:docker:ci
 
-  # - name: Run test:docker:ci
-  #   uses: addnab/docker-run-action@v3
-  #   with:
-  #     image: ltsuda/playwright-tsuda:ci
-  #     run: npm run test:docker:ci
-
-  # - name: test push
-  #   if: success()
-  #   run: echo "passou"
+      - name: Build and push ci image
+        uses: docker/build-push-action@v2
+        if: ${{ github.event_name == 'push' && success() }}
+        with:
+          file: Dockerfile
+          tags: ltsuda/playwright-study:visual
+          push: true
 
   build_visual:
     runs-on: ubuntu-latest
@@ -56,28 +58,20 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           file: Dockerfile.visual
-          tags: ltsuda/playwright-tsuda:visual
+          tags: ltsuda/playwright-study:visual
           load: true
           push: false
 
-      - name: Run test:docker:ci on docker
+      - name: Run test:docker:visual on docker
         uses: addnab/docker-run-action@v3
         with:
-          image: ltsuda/playwright-tsuda:visual
+          image: ltsuda/playwright-study:visual
           run: npm run test:docker:visual
 
-      - name: test push
-        if: ${{ github.event_name == 'push' && success() }}
-        run: echo "passou"
-
-      - name: test if
-        if: ${{ github.event_name == 'pull_request' && success() }}
-        run: echo "passou"
-
-      - name: Build image only for local visual test
+      - name: Build and push visual image
         uses: docker/build-push-action@v2
         if: ${{ github.event_name == 'push' && success() }}
         with:
           file: Dockerfile.visual
-          tags: ltsuda/playwright-tsuda:visual
+          tags: ltsuda/playwright-study:visual
           push: true
