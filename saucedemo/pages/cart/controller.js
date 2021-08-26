@@ -25,7 +25,7 @@ class CartController {
      * Navigate to the Cart page and wait until network is idle
      */
     async navigate() {
-        await this.page.goto(PAGES.CART, "networkidle")
+        await this.page.goto(PAGES.CART, { waitUntil: "networkidle" })
     }
 
     /**

@@ -42,32 +42,21 @@ const config = {
             },
         },
         {
-            name: "chrome-fhd",
-            outputDir: "../test-results/chrome-fhd/",
+            name: "firefox-hd",
+            outputDir: "../test-results/firefox-hd/",
             use: {
-                viewport: { width: 1920, height: 1080 },
-                browserName: "chromium",
-                channel: "chrome",
+                viewport: { width: 1280, height: 720 },
+                browserName: "firefox",
             },
         },
-        // TODO: Test other browsers
-        // FIXME: Test fails with page not loaded (white page) or missing elements
-        // {
-        //   name: 'firefox-hd',
-        // outputDir: '../test-results/firefox-hd/',
-        //   use: {
-        //     viewport: { width: 1280, height: 720 },
-        //     browserName: 'firefox',
-        //   },
-        // },
-        // {
-        //     name: 'webkit-hd',
-        // outputDir: '../test-results/webkit-hd/',
-        //     use: {
-        //       viewport: { width: 1280, height: 720 },
-        //         browserName: 'webkit',
-        //     }
-        // },
+        {
+            name: "webkit-hd",
+            outputDir: "../test-results/webkit-hd/",
+            use: {
+                viewport: { width: 1280, height: 720 },
+                browserName: "webkit",
+            },
+        },
     ],
 }
 

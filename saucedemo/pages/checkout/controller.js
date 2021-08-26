@@ -25,7 +25,7 @@ class CheckoutController {
      * Navigate to the Checkout page and wait until network is idle
      */
     async navigate() {
-        await this.page.goto(PAGES.CHECKOUT, "networkidle")
+        await this.page.goto(PAGES.CHECKOUT, { waitUntil: "networkidle" })
     }
 
     /**

@@ -25,7 +25,7 @@ class CompletedController {
      * Navigate to the Checkout completed page and wait until network is idle
      */
     async navigate() {
-        await this.page.goto(PAGES.COMPLETED, "networkidle")
+        await this.page.goto(PAGES.COMPLETED, { waitUntil: "networkidle" })
     }
 
     /**
