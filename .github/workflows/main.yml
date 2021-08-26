@@ -2,9 +2,9 @@ name: Playwright-CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js/Playwright Test environment
         uses: actions/setup-node@v2.4.0
         with:
-          node-version: '14'
+          node-version: "14"
           cache: npm
       - run: npm ci
       - run: npx playwright install
@@ -25,6 +25,7 @@ jobs:
 
       - name: Upload allure-results
         uses: actions/upload-artifact@v2.2.4
+        if: ${{ github.event_name == 'push' && always() }}
         with:
           name: test-results
           path: test-results
@@ -32,7 +33,7 @@ jobs:
 
       - name: Checkout Github pages history
         uses: actions/checkout@v2.3.4
-        if: always()
+        if: ${{ github.event_name == 'push' && always() }}
         continue-on-error: true
         with:
           path: gh-pages
@@ -40,7 +41,7 @@ jobs:
 
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@v1.5
-        if: always()
+        if: ${{ github.event_name == 'push' && always() }}
         id: allure-report
         with:
           allure_results: test-results
@@ -49,7 +50,7 @@ jobs:
           gh_pages: gh-pages
 
       - name: Deploy report to Github Pages
-        if: always()
+        if: ${{ github.event_name == 'push' && always() }}
         uses: peaceiris/actions-gh-pages@v2
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}

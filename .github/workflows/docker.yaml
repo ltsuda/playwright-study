@@ -32,7 +32,7 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
           image: ltsuda/playwright-study:ci
-          run: npm run test:docker:ci
+          run: npm run test:docker
 
       - name: Build and push ci image
         uses: docker/build-push-action@v2
