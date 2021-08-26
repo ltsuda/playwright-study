@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/playwright:focal
 
 WORKDIR /tester
 
-COPY package*.json .
+COPY package*.json ./
 
 RUN npm ci
 RUN npx playwright install chrome
