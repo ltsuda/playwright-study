@@ -1,1 +1,66 @@
 
+name: Playwright-CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build_ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+#       - name: Login to DockerHub
+#         uses: docker/login-action@v1
+#         with:
+#           username: ${{ secrets.DOCKERHUB_USERNAME }}
+#           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: false
+          tags: ltsuda/playwright-tsuda:ci
+      
+      - name: Run Playwright tests on container
+        run: docker run --rm --ipc=host ltsuda/playwright-study:ci
+        
+      - name: test push
+        if: success()
+        run: echo "passou"
+
+  build_visual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+  
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+#       - name: Login to DockerHub
+#         uses: docker/login-action@v1
+#         with:
+#           username: ${{ secrets.DOCKERHUB_USERNAME }}
+#           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: false
+          tags: ltsuda/playwright-tsuda:visual
+
+      - name: Run Playwright visual tests on container
+        run: docker run --rm --ipc=host ltsuda/playwright-study:visual
+        
+      - name: test push
+        if: success()
+        run: echo "passou"
