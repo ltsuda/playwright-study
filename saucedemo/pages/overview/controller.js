@@ -25,7 +25,7 @@ class OverviewController {
      * Navigate to the Overview page and wait until network is idle
      */
     async navigate() {
-        await this.page.goto(PAGES.OVERVIEW, "networkidle")
+        await this.page.goto(PAGES.OVERVIEW, { waitUntil: "networkidle" })
     }
 
     /**

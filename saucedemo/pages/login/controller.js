@@ -39,7 +39,7 @@ class LoginController {
      * Navigate to the Login page and wait until network is idle
      */
     async navigate() {
-        await this.page.goto(`${PAGES.LOGIN}`, "networkidle")
+        await this.page.goto(`${PAGES.LOGIN}`, { waitUntil: "networkidle" })
     }
 
     /**

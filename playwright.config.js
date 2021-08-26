@@ -50,24 +50,22 @@ const config = {
                 channel: "chrome",
             },
         },
-        // TODO: Test other browsers
-        // FIXME: Test fails with page not loaded (white page) or missing elements
-        // {
-        //   name: 'firefox-hd',
-        // outputDir: '../test-results/firefox-hd/',
-        //   use: {
-        //     viewport: { width: 1280, height: 720 },
-        //     browserName: 'firefox',
-        //   },
-        // },
-        // {
-        //     name: 'webkit-hd',
-        // outputDir: '../test-results/webkit-hd/',
-        //     use: {
-        //       viewport: { width: 1280, height: 720 },
-        //         browserName: 'webkit',
-        //     }
-        // },
+        {
+            name: "firefox-hd",
+            outputDir: "../test-results/firefox-hd/",
+            use: {
+                viewport: { width: 1280, height: 720 },
+                browserName: "firefox",
+            },
+        },
+        {
+            name: "webkit-hd",
+            outputDir: "../test-results/webkit-hd/",
+            use: {
+                viewport: { width: 1280, height: 720 },
+                browserName: "webkit",
+            },
+        },
     ],
 }
 

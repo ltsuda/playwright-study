@@ -25,7 +25,7 @@ class InventoryController {
      * Navigate to the Inventory page and wait until network is idle
      */
     async navigate() {
-        await this.page.goto(PAGES.INVENTORY, "networkidle")
+        await this.page.goto(PAGES.INVENTORY, { waitUntil: "networkidle" })
     }
 
     /**

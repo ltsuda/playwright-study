@@ -27,7 +27,7 @@ async function setSession(page, data = {}) {
     const { path, products = [], username = "" } = data
     const productsContent = products.length > 0 ? JSON.stringify(products) : "[]"
 
-    await page.goto(BASEURL, "networkidle")
+    await page.goto(BASEURL, { waitUntil: "networkidle" })
 
     await page.evaluate(
         ([username, productsContent]) => {
@@ -40,7 +40,7 @@ async function setSession(page, data = {}) {
         },
         [username, productsContent]
     )
-    await page.goto(`${path}`, "networkidle")
+    await page.goto(`${path}`, { waitUntil: "networkidle" })
 }
 
 module.exports = {
