@@ -39,7 +39,7 @@ jobs:
         if: ${{ github.event_name == 'push' && success() }}
         with:
           file: Dockerfile
-          tags: ltsuda/playwright-study:visual
+          tags: ltsuda/playwright-study:ci
           push: true
 
   build_visual:
