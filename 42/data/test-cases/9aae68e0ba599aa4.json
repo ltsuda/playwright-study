@@ -1,0 +1,67 @@
+{
+  "uid" : "9aae68e0ba599aa4",
+  "name" : "should be back at Inventory page when click at the Back Home button",
+  "fullName" : "should be back at Inventory page when click at the Back Home button",
+  "historyId" : "chromium-fhd completed.spec.js Saucedemo CompletedPage:  @completed should be back at Inventory page when click at the Back Home button",
+  "time" : {
+    "start" : 1629940354416,
+    "stop" : 1629940356558,
+    "duration" : 2142
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "completed.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CompletedPage:  @completed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "862c5ca75bedd87b",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/862c5ca75bedd87b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939760864,
+          "stop" : 1629939763384,
+          "duration" : 2520
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9aae68e0ba599aa4.json",
+  "parameterValues" : [ ]
+}

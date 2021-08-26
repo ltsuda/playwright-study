@@ -1,0 +1,67 @@
+{
+  "uid" : "83c8c4efcd6a357e",
+  "name" : "should go to Checkout Overview page @smoke",
+  "fullName" : "should go to Checkout Overview page @smoke",
+  "historyId" : "chromium-fhd checkout.spec.js Saucedemo CheckoutPage: @checkout should go to Checkout Overview page @smoke",
+  "time" : {
+    "start" : 1629940351136,
+    "stop" : 1629940352817,
+    "duration" : 1681
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "checkout.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CheckoutPage: @checkout"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "c6694a04e749e8d1",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/c6694a04e749e8d1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939757406,
+          "stop" : 1629939759230,
+          "duration" : 1824
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "83c8c4efcd6a357e.json",
+  "parameterValues" : [ ]
+}

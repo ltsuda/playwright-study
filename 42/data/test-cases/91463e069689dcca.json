@@ -1,0 +1,67 @@
+{
+  "uid" : "91463e069689dcca",
+  "name" : "should have the subtotal (total before tax)",
+  "fullName" : "should have the subtotal (total before tax)",
+  "historyId" : "chromium-fhd overview.spec.js Saucedemo OverviewPage: @overview should have the subtotal (total before tax)",
+  "time" : {
+    "start" : 1629940388302,
+    "stop" : 1629940389875,
+    "duration" : 1573
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "9c9bb003083147e0",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/9c9bb003083147e0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939800543,
+          "stop" : 1629939802143,
+          "duration" : 1600
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "91463e069689dcca.json",
+  "parameterValues" : [ ]
+}

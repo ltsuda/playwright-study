@@ -1,0 +1,67 @@
+{
+  "uid" : "446dbc468f306b8b",
+  "name" : "should be at Completed page when click at the finish button",
+  "fullName" : "should be at Completed page when click at the finish button",
+  "historyId" : "firefox-hd overview.spec.js Saucedemo OverviewPage: @overview should be at Completed page when click at the finish button",
+  "time" : {
+    "start" : 1629940496591,
+    "stop" : 1629940499654,
+    "duration" : 3063
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "firefox-hd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "a4e39d514d58c297",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/a4e39d514d58c297",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939936828,
+          "stop" : 1629939939729,
+          "duration" : 2901
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "446dbc468f306b8b.json",
+  "parameterValues" : [ ]
+}

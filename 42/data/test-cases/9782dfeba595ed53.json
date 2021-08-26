@@ -1,0 +1,67 @@
+{
+  "uid" : "9782dfeba595ed53",
+  "name" : "should be possible to remove product from cart",
+  "fullName" : "should be possible to remove product from cart",
+  "historyId" : "firefox-hd cart.spec.js Saucedemo CartPage: @cart should be possible to remove product from cart",
+  "time" : {
+    "start" : 1629940445815,
+    "stop" : 1629940447970,
+    "duration" : 2155
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "firefox-hd"
+  }, {
+    "name" : "suite",
+    "value" : "cart.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CartPage: @cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "50f7a43dccf12d4f",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/50f7a43dccf12d4f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939878204,
+          "stop" : 1629939880591,
+          "duration" : 2387
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9782dfeba595ed53.json",
+  "parameterValues" : [ ]
+}

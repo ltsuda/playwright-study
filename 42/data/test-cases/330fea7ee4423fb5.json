@@ -1,0 +1,67 @@
+{
+  "uid" : "330fea7ee4423fb5",
+  "name" : "should be possible to remove the product from cart",
+  "fullName" : "should be possible to remove the product from cart",
+  "historyId" : "webkit-hd inventoryDetails.spec.js Saucedemo InventoryPage: @details should be possible to remove the product from cart",
+  "time" : {
+    "start" : 1629940543486,
+    "stop" : 1629940545633,
+    "duration" : 2147
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "webkit-hd"
+  }, {
+    "name" : "suite",
+    "value" : "inventoryDetails.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @details"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "cf7dd81d13a9dcbe",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/cf7dd81d13a9dcbe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939984679,
+          "stop" : 1629939986954,
+          "duration" : 2275
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "330fea7ee4423fb5.json",
+  "parameterValues" : [ ]
+}

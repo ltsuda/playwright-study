@@ -1,0 +1,67 @@
+{
+  "uid" : "c07e928f02cfdf3e",
+  "name" : "should be back at Inventory page when click at the continue shopping button",
+  "fullName" : "should be back at Inventory page when click at the continue shopping button",
+  "historyId" : "chrome-hd cart.spec.js Saucedemo CartPage: @cart should be back at Inventory page when click at the continue shopping button",
+  "time" : {
+    "start" : 1629940388040,
+    "stop" : 1629940391018,
+    "duration" : 2978
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "cart.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CartPage: @cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "39c4a8bc920e313e",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/39c4a8bc920e313e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939799437,
+          "stop" : 1629939808587,
+          "duration" : 9150
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c07e928f02cfdf3e.json",
+  "parameterValues" : [ ]
+}

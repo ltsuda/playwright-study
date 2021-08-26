@@ -1,0 +1,67 @@
+{
+  "uid" : "fe1c7703fe44391b",
+  "name" : "should show username is required error",
+  "fullName" : "should show username is required error",
+  "historyId" : "webkit-hd login.spec.js Saucedemo LoginPage: @login should show username is required error",
+  "time" : {
+    "start" : 1629940550531,
+    "stop" : 1629940551889,
+    "duration" : 1358
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "webkit-hd"
+  }, {
+    "name" : "suite",
+    "value" : "login.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo LoginPage: @login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "deb9072f2665cef",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/deb9072f2665cef",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939991724,
+          "stop" : 1629939993186,
+          "duration" : 1462
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fe1c7703fe44391b.json",
+  "parameterValues" : [ ]
+}

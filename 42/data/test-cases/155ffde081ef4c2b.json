@@ -1,0 +1,67 @@
+{
+  "uid" : "155ffde081ef4c2b",
+  "name" : "should have a completed order message",
+  "fullName" : "should have a completed order message",
+  "historyId" : "chromium-fhd completed.spec.js Saucedemo CompletedPage:  @completed should have a completed order message",
+  "time" : {
+    "start" : 1629940358121,
+    "stop" : 1629940359843,
+    "duration" : 1722
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-fhd"
+  }, {
+    "name" : "suite",
+    "value" : "completed.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo CompletedPage:  @completed"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "22892338c24d5e4f",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/22892338c24d5e4f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939765012,
+          "stop" : 1629939766683,
+          "duration" : 1671
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "155ffde081ef4c2b.json",
+  "parameterValues" : [ ]
+}
