@@ -8,3 +8,5 @@ RUN npm ci
 RUN npx playwright install chrome
 
 COPY . .
+
+CMD [ "npm", "run", "test:docker" ]
