@@ -19,10 +19,12 @@
         "test:smoke": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep @smoke --project 'chromium-hd'",
         "test:ci": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' || :",
         "allure:generate": "npx allure generate ./test-results --clean -o ./allure-reports",
-        "allure:open": "npx allure open ./allure-reports",
+        "allure:open": "npx allure open ./allure-reports -p 7777",
         "posttest:ci": "npm run allure:generate",
         "test:docker": "npx playwright test --grep-invert '@visual' --reporter 'dot'",
-        "test:docker:visual": "npx playwright test --grep @visual --project 'chromium-hd' --reporter 'dot'"
+        "test:docker:visual": "npx playwright test --grep @visual --project 'chromium-hd' --reporter 'dot'",
+        "test:docker:local": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --reporter=dot,allure-playwright",
+        "posttest:docker:local": "npm run allure:generate && npm run allure:open"
     },
     "repository": {
         "type": "git",
