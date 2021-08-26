@@ -33,7 +33,7 @@ jobs:
 
       - name: Checkout Github pages history
         uses: actions/checkout@v2.3.4
-        if: always() && ${{ github.event_name == 'push' }}
+        if: always()
         continue-on-error: true
         with:
           path: gh-pages
@@ -41,7 +41,7 @@ jobs:
 
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@v1.5
-        if: always() && ${{ github.event_name == 'push' }}
+        if: always()
         id: allure-report
         with:
           allure_results: test-results
@@ -50,7 +50,7 @@ jobs:
           gh_pages: gh-pages
 
       - name: Deploy report to Github Pages
-        if: always() && ${{ github.event_name == 'push' }}
+        if: always()
         uses: peaceiris/actions-gh-pages@v2
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
