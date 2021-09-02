@@ -31,7 +31,7 @@ git clone https://github.com/ltsuda/playwright-study.git
 ```
 
 #### Installing dependencies
-```node
+```bash
 npm install -D
 # this will install all necessary development packages to run the tests. See package.json to see all packages installed
 ```
@@ -41,7 +41,7 @@ In this repository there are multiple test scripts with different configurations
 
 **To run on Windows, use Playwright's CLI syntax directly**
 For example:
-```node
+```bash
 # to run all tests on chromium with 1280x720 viewport
 npx playwright test --project 'chromium-hd'
 
@@ -52,11 +52,11 @@ npx playwright test --grep <tag>
 **The following scripts was tested on Ubuntu 20.04/WSL**
 
 All test scripts will generate the result' files using the Allure Test Report. Too generate the report, use the following scripts:
-```node
+```bash
 npm run allure:generate
 ```
 This will generate ./allure-reports, then run:
-```node
+```bash
 npm run allure:open
 ...
 Server started at <http://127.0.1.1:39923/>. Press <Ctrl+C> to exit
@@ -65,18 +65,18 @@ This will start a webserver with the tests report, just ctrl+click or open the U
 
 
 Run the following script to run only the tests using the Chromium browser with 1280x720 viewport
-```node
+```bash
 npm run test
 ```
 
 To run the Visual test cases, run:
-```node
+```bash
 npm run test:visual
 ```
 This uses the golden images present at `tests/visual.spec.js-snapshots` directory and compares them with the pages during the test run
 
 To run E2E sample tests, run:
-```node
+```bash
 npm run test:e2e
 ```
 
