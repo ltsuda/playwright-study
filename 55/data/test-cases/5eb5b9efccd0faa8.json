@@ -1,0 +1,139 @@
+{
+  "uid" : "5eb5b9efccd0faa8",
+  "name" : "should have the tax calculated as 8% of subtotal",
+  "fullName" : "should have the tax calculated as 8% of subtotal",
+  "historyId" : "chromium-hd overview.spec.js Saucedemo OverviewPage: @overview should have the tax calculated as 8% of subtotal",
+  "time" : {
+    "start" : 1630551782523,
+    "stop" : 1630551784014,
+    "duration" : 1491
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "overview.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo OverviewPage: @overview"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "43119234f2270a20",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/51//#testresult/43119234f2270a20",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630003651969,
+          "stop" : 1630003653539,
+          "duration" : 1570
+        }
+      }, {
+        "uid" : "7edaeb380ce3dcf",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/50//#testresult/7edaeb380ce3dcf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630001579506,
+          "stop" : 1630001580983,
+          "duration" : 1477
+        }
+      }, {
+        "uid" : "18c03ec8fde82597",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/47//#testresult/18c03ec8fde82597",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629951911163,
+          "stop" : 1629951912855,
+          "duration" : 1692
+        }
+      }, {
+        "uid" : "305d2d73b85dc770",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/46//#testresult/305d2d73b85dc770",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629951627646,
+          "stop" : 1629951629080,
+          "duration" : 1434
+        }
+      }, {
+        "uid" : "1b815e1ee54f22de",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/45//#testresult/1b815e1ee54f22de",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629949496717,
+          "stop" : 1629949498270,
+          "duration" : 1553
+        }
+      }, {
+        "uid" : "c454664f7887a6f8",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/44//#testresult/c454664f7887a6f8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629949330374,
+          "stop" : 1629949331953,
+          "duration" : 1579
+        }
+      }, {
+        "uid" : "17663bf8a90ad172",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/43//#testresult/17663bf8a90ad172",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629942820186,
+          "stop" : 1629942821794,
+          "duration" : 1608
+        }
+      }, {
+        "uid" : "159e1435658238bb",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/42//#testresult/159e1435658238bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629940338980,
+          "stop" : 1629940340518,
+          "duration" : 1538
+        }
+      }, {
+        "uid" : "2d946e8432b065",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/2d946e8432b065",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939744581,
+          "stop" : 1629939746074,
+          "duration" : 1493
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5eb5b9efccd0faa8.json",
+  "parameterValues" : [ ]
+}
