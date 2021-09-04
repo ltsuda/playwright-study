@@ -1,3 +1,5 @@
+const { devices } = require("@playwright/test")
+
 const config = {
     testDir: "tests",
     retries: 3,
@@ -55,6 +57,20 @@ const config = {
             use: {
                 viewport: { width: 1280, height: 720 },
                 browserName: "webkit",
+            },
+        },
+        {
+            name: "iphone-8",
+            use: {
+                browserName: "webkit",
+                ...devices["iPhone 8"],
+            },
+        },
+        {
+            name: "pixel-4",
+            use: {
+                browserName: "chromium",
+                ...devices["Pixel 4"],
             },
         },
     ],
