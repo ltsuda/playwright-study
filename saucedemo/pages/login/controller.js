@@ -57,7 +57,7 @@ class LoginController {
      */
     async fillUserName(username) {
         const usernameSelector = await this.components.usernameInput()
-        await usernameSelector.fill(username)
+        await usernameSelector.type(username)
     }
 
     /**
@@ -65,7 +65,7 @@ class LoginController {
      */
     async fillPassword(password) {
         const passwordSelector = await this.components.passwordInput()
-        await passwordSelector.fill(password)
+        await passwordSelector.type(password)
     }
 
     /**

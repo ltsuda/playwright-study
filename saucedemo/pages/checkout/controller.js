@@ -57,7 +57,7 @@ class CheckoutController {
      */
     async fillFirstName(firstName) {
         const firstNameElement = await this.components.firstNameInput()
-        await firstNameElement.fill(firstName)
+        await firstNameElement.type(firstName)
     }
 
     /**
@@ -65,7 +65,7 @@ class CheckoutController {
      */
     async fillLastName(lastName) {
         const lastNameElement = await this.components.lastNameInput()
-        await lastNameElement.fill(lastName)
+        await lastNameElement.type(lastName)
     }
 
     /**
@@ -73,7 +73,7 @@ class CheckoutController {
      */
     async fillPostalCode(postalCode) {
         const postalCodeElement = await this.components.postalCodeInput()
-        await postalCodeElement.fill(postalCode)
+        await postalCodeElement.type(postalCode)
     }
 
     /**
