@@ -79,21 +79,19 @@ npm run test:e2e
 
 **Criando imagem docker para execução dos testes**
 
-Há 3 imagens docker nesse repositório mas utilizaremos somente o arquivo `Docker.local` e deixar as demais para a execução de testes no sistema de CI(Integração Contínua) já que essas não geram o relatório com os resultados
-
-A imagem `Docker.local` execute os testes, gerando tambem o relatório de testes e iniciando o servidor web  na porta 7777 para a visualização do mesmo
+A imagem `Docker` executa os testes, gerando tambem o relatório de testes e iniciando o servidor web  na porta 7777 para a visualização do mesmo
 
 Para criar a imagem e executar todos os testes, exceto o teste de UI, execute os seguintes comandos:
 ```bash
-> docker build -f Dockerfile.local . -t test:local
+> docker build -f Dockerfile . -t test:docker
 # aguarde o download e criação ...
 
 # Para executar o script padrão, utilize o comando abaixo
 # O container permanecerá em execução com o servidor web do Allure, navegue para o endereço http://localhost para visualizar o relatório dos testes e pressione CTRL+C para desligar o servidor e remover o container
 # opcionalmente é possível obter os arquivos de resultados no caso de falhas em alguns testes, basta montar um volume local interligado ao container utilizando o parametro "-v /fullpath:/tester/test-results/"
-> docker run --rm --ipc=host -p 80:7777 teste:local
+> docker run --rm --ipc=host -p 80:7777 test:docker
 
-playwright-study@1.0.0 test:docker:local /tester
+playwright-study@1.0.0 test:docker /tester
 ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --reporter=dot,allure-playwright
 
 ················································································
@@ -108,7 +106,7 @@ ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --re
 
   290 passed (2m)
 
-playwright-study@1.0.0 posttest:docker:local /tester
+playwright-study@1.0.0 posttest:docker /tester
 npm run allure:generate && npm run allure:open
 
 
@@ -127,7 +125,7 @@ Server started at <http://172.17.0.2:7777/>. Press <Ctrl+C> to exit
 
 # ou, por exemplo, se quiser utilizar outro sistema de reporte de resultado, execute diretamente o comando do Playwright CLI
 # neste caso abaixo, não será gerado o relatório do Allure Report, somente será mostrado o resultado dos testes em forma de lista
-> docker run --rm --ipc=host teste:local npx playwright test --grep-invert '@visual' --project 'chromium-hd' --reporter=list
+> docker run --rm --ipc=host test:docker npx playwright test --grep-invert '@visual' --project 'chromium-hd' --reporter=list
 ```
 
 ## Estrutura de diretórios
@@ -139,8 +137,6 @@ Server started at <http://172.17.0.2:7777/>. Press <Ctrl+C> to exit
 ├── package.json
 ├── playwright.config.js
 ├── Dockerfile
-├── Dockerfile.local
-├── Dockerfile.visual
 ├── saucedemo
 │   ├── pages
 │   │   ├── cart
@@ -168,9 +164,7 @@ Server started at <http://172.17.0.2:7777/>. Press <Ctrl+C> to exit
  - [.github/workflows](https://github.com/ltsuda/playwright-study/tree/main/.github/workflows): diretório com arquivos de fluxo de trabalho que são executados em todo evento `push` para a branch `main` ou em todo evento de `pull request` aberto.
    - main.yaml: executa todos os projetos de testes no Ubuntu, exceto os com tag @visual, gerando o relatório de resultados para o github-pages.
    - docker.yaml: cria as imagens `Dockerfile` e `Docker.visual`, executa os respectivos scripts de teste para ambas as imagens e às envia para o Dockerhub se tudo ocorrer corretamente. Este fluxo de trabalho é executado em todo evento `pull request` mas somente envia as imagens para o Dockerhub se o código é mergeado para a branch `main`.
- - [Dockerfile](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile): arquivo de imagem docker para executar todos os testes no container no processo do Github Actions.
- - [Dockerfile.local](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile.local): arquivo de imagem docker para executar localmente no caso em que o NodeJS não esteja instalado no sistema.
- - [Dockerfile.visual](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile.visual): arquivo de imagem docker para executar os testes com tag @visual no container no processo do Github Actions.
+ - [Dockerfile](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile): arquivo de imagem docker para executar localmente no caso em que o NodeJS não esteja instalado no sistema.
  - [playwright.config.js](https://github.com/ltsuda/playwright-study/blob/main/playwright.config.js): arquivo de configuração do Playwright para configurar coisas como a biblioteca de reporte de resultado, quantos `workers` a serem utilizados, criação dos projetos de teste com configurações específicas. Existem cinco projetos de testes, dois deles utilizando Chromium com resolução 1280x720 e 1920x1080 e os outros três utilizando o Chrome/Firefox/Webkit na resolução 1280x720. Veja [Configuração do Playwright](https://playwright.dev/docs/test-configuration) para aprender mais sobre as configurações disponíveis.
  - [saucedemo/pages](https://github.com/ltsuda/playwright-study/tree/main/saucedemo/pages): diretório com todos `Page Object` e `Controllers`. Os arquivos `components` possuem os seletores e funções que retornam seus [Locator](https://playwright.dev/docs/api/class-locator). Os arquivos de `controllers` são os responsáveis pela interação com os elementos das páginas ou manipulações de dados da página.
  - [saucedemo/pageFixtures.js](https://github.com/ltsuda/playwright-study/blob/main/saucedemo/pages/pageFixtures.js): arquivo com funções compartilhadas [Fixtures](https://playwright.dev/docs/test-fixtures) que extendem `test` do Playwright para instanciar todos os controller das páginas para que cada teste carregue somente os controllers necessários.
