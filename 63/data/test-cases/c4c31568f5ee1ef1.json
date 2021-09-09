@@ -1,0 +1,192 @@
+{
+  "uid" : "c4c31568f5ee1ef1",
+  "name" : "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+  "fullName" : "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+  "historyId" : "chrome-hd failSample.spec.js marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+  "time" : {
+    "start" : 1631164002993,
+    "stop" : 1631164003263,
+    "duration" : 270
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1631164002993,
+        "stop" : 1631164003106,
+        "duration" : 113
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1631164003069,
+          "stop" : 1631164003105,
+          "duration" : 36
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1631164003106,
+        "stop" : 1631164003262,
+        "duration" : 156
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1631164003107,
+          "stop" : 1631164003260,
+          "duration" : 153
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "browserContext.close",
+          "time" : {
+            "start" : 1631164003108,
+            "stop" : 1631164003122,
+            "duration" : 14
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "browserContext.close",
+            "time" : {
+              "start" : 1631164003119,
+              "stop" : 1631164003120,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          }, {
+            "name" : "browserContext.close",
+            "time" : {
+              "start" : 1631164003121,
+              "stop" : 1631164003122,
+              "duration" : 1
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ ],
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "hasContent" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 2,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : true
+        }, {
+          "name" : "browserContext.close",
+          "time" : {
+            "start" : 1631164003123,
+            "stop" : 1631164003198,
+            "duration" : 75
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 4,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "f55b776dce8d524c",
+      "name" : "video",
+      "source" : "f55b776dce8d524c.webm",
+      "type" : "video/webm",
+      "size" : 1269
+    }, {
+      "uid" : "89fbbe0b9adff9bd",
+      "name" : "trace",
+      "source" : "89fbbe0b9adff9bd.ZIP",
+      "type" : "application/zip",
+      "size" : 411
+    }, {
+      "uid" : "baae4c6ce9a19683",
+      "name" : "screenshot",
+      "source" : "baae4c6ce9a19683.png",
+      "type" : "image/png",
+      "size" : 5320
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chrome-hd"
+  }, {
+    "name" : "suite",
+    "value" : "failSample.spec.js"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c4c31568f5ee1ef1.json",
+  "parameterValues" : [ ]
+}

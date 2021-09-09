@@ -1,0 +1,4131 @@
+[ {
+  "uid" : "2759f3e5ef7a9d44",
+  "name" : "should show application password ",
+  "time" : {
+    "start" : 1631163833746,
+    "stop" : 1631163835026,
+    "duration" : 1280
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a6fc00452e55d72",
+  "name" : "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+  "time" : {
+    "start" : 1631164068988,
+    "stop" : 1631164071166,
+    "duration" : 2178
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "89617488d76d39a7",
+  "name" : "should show a list of items @smoke",
+  "time" : {
+    "start" : 1631163762830,
+    "stop" : 1631163765045,
+    "duration" : 2215
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5caa7df6b09b552d",
+  "name" : "should have Twitter link on footer",
+  "time" : {
+    "start" : 1631164117076,
+    "stop" : 1631164119147,
+    "duration" : 2071
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b8b4104de6a53ab",
+  "name" : "should have Copyright text on footer",
+  "time" : {
+    "start" : 1631164001022,
+    "stop" : 1631164002624,
+    "duration" : 1602
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e742a0fbfe65370",
+  "name" : "should navigate to product's detail page when clicking at it",
+  "time" : {
+    "start" : 1631164101660,
+    "stop" : 1631164104226,
+    "duration" : 2566
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "acadd97320f99086",
+  "name" : "should be possible to add product to cart @smoke",
+  "time" : {
+    "start" : 1631163991484,
+    "stop" : 1631163993163,
+    "duration" : 1679
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "32c8d39c1aed7db1",
+  "name" : "should be at Inventory page after login",
+  "time" : {
+    "start" : 1631164034744,
+    "stop" : 1631164037009,
+    "duration" : 2265
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "edebce43b8ad5538",
+  "name" : "should be at Inventory page after login",
+  "time" : {
+    "start" : 1631163980284,
+    "stop" : 1631163981918,
+    "duration" : 1634
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "11aedeb99b22b2ea",
+  "name" : "should be back at Inventory page when click at the Back Home button",
+  "time" : {
+    "start" : 1631163869705,
+    "stop" : 1631163871787,
+    "duration" : 2082
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9e0807c4e841d5a",
+  "name" : "should be possible to sort items prices from High to Low",
+  "time" : {
+    "start" : 1631164048798,
+    "stop" : 1631164051198,
+    "duration" : 2400
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ce114e931773ed1",
+  "name" : "should have Facebook link on footer",
+  "time" : {
+    "start" : 1631163841073,
+    "stop" : 1631163843193,
+    "duration" : 2120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28e09de0b5853e63",
+  "name" : "User should be able to complete a purchase @e2e-purchase",
+  "time" : {
+    "start" : 1631163757608,
+    "stop" : 1631163759709,
+    "duration" : 2101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f04d6507d3bbe26c",
+  "name" : "should have the shipping information",
+  "time" : {
+    "start" : 1631163957011,
+    "stop" : 1631163958580,
+    "duration" : 1569
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2838e20fcb3cbf1",
+  "name" : "should have Facebook link on footer",
+  "time" : {
+    "start" : 1631164119148,
+    "stop" : 1631164121149,
+    "duration" : 2001
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c043dd970a7d7a1f",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631163858387,
+    "stop" : 1631163860120,
+    "duration" : 1733
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c02ea6db3875b4b1",
+  "name" : "should be at Checkout page",
+  "time" : {
+    "start" : 1631164009975,
+    "stop" : 1631164013627,
+    "duration" : 3652
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45785a261154c88d",
+  "name" : "should navigate to product's detail page when clicking at it",
+  "time" : {
+    "start" : 1631163983912,
+    "stop" : 1631163985695,
+    "duration" : 1783
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b26b6be48baf2d",
+  "name" : "should be possible to add an item into the cart @smoke",
+  "time" : {
+    "start" : 1631163913432,
+    "stop" : 1631163915333,
+    "duration" : 1901
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54d8a26372a3df69",
+  "name" : "should be at Completed page when click at the finish button",
+  "time" : {
+    "start" : 1631164061633,
+    "stop" : 1631164063739,
+    "duration" : 2106
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd021c4c504187a2",
+  "name" : "should be at Checkout page when click at the checkout button",
+  "time" : {
+    "start" : 1631163853244,
+    "stop" : 1631163854948,
+    "duration" : 1704
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3fad9fed0825a8f5",
+  "name" : "should have the total calculated as subtotal + tax",
+  "time" : {
+    "start" : 1631164131325,
+    "stop" : 1631164132967,
+    "duration" : 1642
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c0eda2988f74a5d1",
+  "name" : "should show a list of items @smoke",
+  "time" : {
+    "start" : 1631164102568,
+    "stop" : 1631164104542,
+    "duration" : 1974
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e8b3b1759077736",
+  "name" : "should be at Overview page",
+  "time" : {
+    "start" : 1631164056466,
+    "stop" : 1631164058672,
+    "duration" : 2206
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d538913e81ab1665",
+  "name" : "should be at Cart page when clicking at the cart button",
+  "time" : {
+    "start" : 1631163760957,
+    "stop" : 1631163762829,
+    "duration" : 1872
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a0f69ec5717f2a2",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631163915333,
+    "stop" : 1631163916895,
+    "duration" : 1562
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c8ccb365b58a589b",
+  "name" : "should show locked user error",
+  "time" : {
+    "start" : 1631163991124,
+    "stop" : 1631163992064,
+    "duration" : 940
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aad8805bd5f2755c",
+  "name" : "should show username is required error",
+  "time" : {
+    "start" : 1631163771742,
+    "stop" : 1631163772830,
+    "duration" : 1088
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f5858f13cfb63a4f",
+  "name" : "should show postalCode error message if empty",
+  "time" : {
+    "start" : 1631164085385,
+    "stop" : 1631164087350,
+    "duration" : 1965
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7e138bb8d2b7eb6",
+  "name" : "should show locked user error",
+  "time" : {
+    "start" : 1631163887892,
+    "stop" : 1631163889030,
+    "duration" : 1138
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dcc8aff46b910a4c",
+  "name" : "should have Twitter link on footer",
+  "time" : {
+    "start" : 1631163948735,
+    "stop" : 1631163950473,
+    "duration" : 1738
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d784576fceb3015c",
+  "name" : "should have the added items on the Overview Checkout @smoke",
+  "time" : {
+    "start" : 1631164000408,
+    "stop" : 1631164001864,
+    "duration" : 1456
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "badd4d31eeef667d",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631163892561,
+    "stop" : 1631163894377,
+    "duration" : 1816
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "520eda2853b5ef62",
+  "name" : "should have the shipping information",
+  "time" : {
+    "start" : 1631163850406,
+    "stop" : 1631163852284,
+    "duration" : 1878
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "54e55d7e5a878497",
+  "name" : "should go back to Cart if cancel checkout",
+  "time" : {
+    "start" : 1631163794512,
+    "stop" : 1631163796822,
+    "duration" : 2310
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e8d3fd1be5dfd462",
+  "name" : "should navigate to product's detail page when clicking at it",
+  "time" : {
+    "start" : 1631163762081,
+    "stop" : 1631163764277,
+    "duration" : 2196
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7c014bc0c0efbd6",
+  "name" : "should navigate to inventory page after successful login @smoke",
+  "time" : {
+    "start" : 1631163839204,
+    "stop" : 1631163840704,
+    "duration" : 1500
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81ec4726e53b08b8",
+  "name" : "should have Facebook link on footer",
+  "time" : {
+    "start" : 1631163996406,
+    "stop" : 1631163997938,
+    "duration" : 1532
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7076d62d31566fad",
+  "name" : "should have LinkedIn link on footer",
+  "time" : {
+    "start" : 1631163843194,
+    "stop" : 1631163845280,
+    "duration" : 2086
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "42aa08647a33eac4",
+  "name" : "should be possible to add the product to cart",
+  "time" : {
+    "start" : 1631163985694,
+    "stop" : 1631163987246,
+    "duration" : 1552
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1c218877547a6e2",
+  "name" : "should have a completed order message",
+  "time" : {
+    "start" : 1631163753637,
+    "stop" : 1631163755079,
+    "duration" : 1442
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4e77fb349030f1ee",
+  "name" : "should have the tax calculated as 8% of subtotal",
+  "time" : {
+    "start" : 1631163854137,
+    "stop" : 1631163855909,
+    "duration" : 1772
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "166404282f26174d",
+  "name" : "should be at Login page when clicking at the logout link on menu",
+  "time" : {
+    "start" : 1631163756957,
+    "stop" : 1631163758990,
+    "duration" : 2033
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "437f9e2239ad5203",
+  "name" : "should have the payment card information",
+  "time" : {
+    "start" : 1631163783517,
+    "stop" : 1631163785132,
+    "duration" : 1615
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "642b5d9206a691a2",
+  "name" : "should have Copyright text on footer",
+  "time" : {
+    "start" : 1631163902300,
+    "stop" : 1631163904315,
+    "duration" : 2015
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "483e79750d4a338d",
+  "name" : "should show application password ",
+  "time" : {
+    "start" : 1631163769711,
+    "stop" : 1631163770623,
+    "duration" : 912
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "43827d2b1fffeee4",
+  "name" : "should be possible to add an item into the cart @smoke",
+  "time" : {
+    "start" : 1631163743609,
+    "stop" : 1631163745227,
+    "duration" : 1618
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b74d05c92870803",
+  "name" : "User should be able to login with a valid credentials @e2e-login",
+  "time" : {
+    "start" : 1631164030685,
+    "stop" : 1631164032460,
+    "duration" : 1775
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b218a99602fd2353",
+  "name" : "should be at Completed page",
+  "time" : {
+    "start" : 1631164024321,
+    "stop" : 1631164026143,
+    "duration" : 1822
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8718a1328561b1e3",
+  "name" : "should be possible to open sidemenu @slow @smoke",
+  "time" : {
+    "start" : 1631163860120,
+    "stop" : 1631163861780,
+    "duration" : 1660
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b5b519cf2735e6a",
+  "name" : "should navigate to SauceLabs page when clicking at the about link on menu @slow",
+  "time" : {
+    "start" : 1631163812264,
+    "stop" : 1631163814347,
+    "duration" : 2083
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f5f0274818618d7a",
+  "name" : "should be possible to sort items prices from High to Low",
+  "time" : {
+    "start" : 1631163989900,
+    "stop" : 1631163991485,
+    "duration" : 1585
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ef2f0f5f29ffc2a",
+  "name" : "should show locked user error",
+  "time" : {
+    "start" : 1631163943546,
+    "stop" : 1631163944590,
+    "duration" : 1044
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "376bf6cb2a325770",
+  "name" : "User should be able to login with a valid credentials @e2e-login",
+  "time" : {
+    "start" : 1631163816940,
+    "stop" : 1631163818500,
+    "duration" : 1560
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "890d0d6addf155e6",
+  "name" : "should have the payment card information",
+  "time" : {
+    "start" : 1631164001865,
+    "stop" : 1631164003291,
+    "duration" : 1426
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "69d4a00dba6acf0b",
+  "name" : "should navigate to inventory page after successful login @smoke",
+  "time" : {
+    "start" : 1631163891269,
+    "stop" : 1631163893001,
+    "duration" : 1732
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a9ea38225f746da",
+  "name" : "should be at Completed page",
+  "time" : {
+    "start" : 1631163923818,
+    "stop" : 1631163925338,
+    "duration" : 1520
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "373893c9973a07e4",
+  "name" : "User should be able to complete a purchase @e2e-purchase",
+  "time" : {
+    "start" : 1631163818500,
+    "stop" : 1631163821935,
+    "duration" : 3435
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c44e8338dff07ac",
+  "name" : "should be possible to add product to cart @smoke",
+  "time" : {
+    "start" : 1631164051197,
+    "stop" : 1631164053680,
+    "duration" : 2483
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5358d671f2bdb71b",
+  "name" : "should have Twitter link on footer",
+  "time" : {
+    "start" : 1631164056002,
+    "stop" : 1631164058549,
+    "duration" : 2547
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3643238bb9d5d009",
+  "name" : "should be at the login url",
+  "time" : {
+    "start" : 1631163940868,
+    "stop" : 1631163941749,
+    "duration" : 881
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5cd85363eeaa9bd",
+  "name" : "should be back at Inventory page when click at the cancel button",
+  "time" : {
+    "start" : 1631164058672,
+    "stop" : 1631164061633,
+    "duration" : 2961
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9be2eda2cc46fc5",
+  "name" : "should be possible to open sidemenu @slow @smoke",
+  "time" : {
+    "start" : 1631163967187,
+    "stop" : 1631163968635,
+    "duration" : 1448
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c0b3efe76018c6c3",
+  "name" : "should show postalCode error message if empty",
+  "time" : {
+    "start" : 1631163864736,
+    "stop" : 1631163866404,
+    "duration" : 1668
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "53185eda34bd6a1d",
+  "name" : "should navigate to SauceLabs page when clicking at the about link on menu @slow",
+  "time" : {
+    "start" : 1631163925967,
+    "stop" : 1631163927561,
+    "duration" : 1594
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ddd5bf2f55ad24c6",
+  "name" : "should be at the login url",
+  "time" : {
+    "start" : 1631164045952,
+    "stop" : 1631164047262,
+    "duration" : 1310
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "904b63a7b9f5b932",
+  "name" : "should show postalCode error message if empty",
+  "time" : {
+    "start" : 1631163969518,
+    "stop" : 1631163970980,
+    "duration" : 1462
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5747f53bd6410cac",
+  "name" : "should be back at Inventory page when click at the Back Home button",
+  "time" : {
+    "start" : 1631163750029,
+    "stop" : 1631163752193,
+    "duration" : 2164
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d77df29f7fd1884",
+  "name" : "should have a thank you header message",
+  "time" : {
+    "start" : 1631163810461,
+    "stop" : 1631163812621,
+    "duration" : 2160
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa456be013c9e33b",
+  "name" : "should show username is required error",
+  "time" : {
+    "start" : 1631164113154,
+    "stop" : 1631164114312,
+    "duration" : 1158
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "afbb07495d389ad5",
+  "name" : "should have a thank you header message",
+  "time" : {
+    "start" : 1631163927631,
+    "stop" : 1631163929178,
+    "duration" : 1547
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c24129babeac623c",
+  "name" : "should have the total calculated as subtotal + tax",
+  "time" : {
+    "start" : 1631163789870,
+    "stop" : 1631163791436,
+    "duration" : 1566
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c904d9eef32f21b3",
+  "name" : "should be at Inventory page after login",
+  "time" : {
+    "start" : 1631163932385,
+    "stop" : 1631163934150,
+    "duration" : 1765
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a9aa2a8d6126d8b",
+  "name" : "should be at Inventory page after login",
+  "time" : {
+    "start" : 1631163758992,
+    "stop" : 1631163760957,
+    "duration" : 1965
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d34ee46aaabaceca",
+  "name" : "should be at Completed page when click at the finish button",
+  "time" : {
+    "start" : 1631163998909,
+    "stop" : 1631164000408,
+    "duration" : 1499
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad9f00efc025a9a",
+  "name" : "should have Facebook link on footer",
+  "time" : {
+    "start" : 1631163779044,
+    "stop" : 1631163781022,
+    "duration" : 1978
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a89ab62053a6784",
+  "name" : "should have the total calculated as subtotal + tax",
+  "time" : {
+    "start" : 1631164074511,
+    "stop" : 1631164076750,
+    "duration" : 2239
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "380cebe57de129fa",
+  "name" : "should be at Inventory page when clicking at the back to products",
+  "time" : {
+    "start" : 1631163876835,
+    "stop" : 1631163879010,
+    "duration" : 2175
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "170f251b49777c17",
+  "name" : "should go to Checkout Overview page @smoke",
+  "time" : {
+    "start" : 1631163747057,
+    "stop" : 1631163748674,
+    "duration" : 1617
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "74a76b8f1bfb288",
+  "name" : "should have a completed order image",
+  "time" : {
+    "start" : 1631163755078,
+    "stop" : 1631163756477,
+    "duration" : 1399
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e4bb6a1075f1040",
+  "name" : "should show username and password doesn't match",
+  "time" : {
+    "start" : 1631163945617,
+    "stop" : 1631163946707,
+    "duration" : 1090
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b3715719d128785c",
+  "name" : "should have Facebook link on footer",
+  "time" : {
+    "start" : 1631164058550,
+    "stop" : 1631164060722,
+    "duration" : 2172
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "566929dd00dc0462",
+  "name" : "should show username is required error",
+  "time" : {
+    "start" : 1631164051284,
+    "stop" : 1631164053004,
+    "duration" : 1720
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de98403ae7c344a8",
+  "name" : "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+  "time" : {
+    "start" : 1631163849767,
+    "stop" : 1631163850342,
+    "duration" : 575
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "2188a0b7952b7461",
+  "name" : "should show username and password doesn't match",
+  "time" : {
+    "start" : 1631163772830,
+    "stop" : 1631163773937,
+    "duration" : 1107
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2201d2d4be60f819",
+  "name" : "should have a completed order message",
+  "time" : {
+    "start" : 1631163873387,
+    "stop" : 1631163875214,
+    "duration" : 1827
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff1983b3d00bc022",
+  "name" : "should be possible to remove the product from cart",
+  "time" : {
+    "start" : 1631163766127,
+    "stop" : 1631163767839,
+    "duration" : 1712
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48e9b9ba509f50cc",
+  "name" : "should be back at Inventory page when click at the continue shopping button",
+  "time" : {
+    "start" : 1631164072014,
+    "stop" : 1631164074405,
+    "duration" : 2391
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "78915b1188237754",
+  "name" : "should show lastName error message if empty",
+  "time" : {
+    "start" : 1631163918918,
+    "stop" : 1631163920482,
+    "duration" : 1564
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf258b2056808f62",
+  "name" : "should be possible to add product to cart @smoke",
+  "time" : {
+    "start" : 1631163834227,
+    "stop" : 1631163836802,
+    "duration" : 2575
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "df52fbf02c3122a2",
+  "name" : "should be back at Inventory page when click at the cancel button",
+  "time" : {
+    "start" : 1631163894526,
+    "stop" : 1631163896730,
+    "duration" : 2204
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a07a3fd10b5e30b2",
+  "name" : "should have LinkedIn link on footer",
+  "time" : {
+    "start" : 1631163952154,
+    "stop" : 1631163953854,
+    "duration" : 1700
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bbbae4c56397c265",
+  "name" : "should go to Checkout Overview page @smoke",
+  "time" : {
+    "start" : 1631163866404,
+    "stop" : 1631163868091,
+    "duration" : 1687
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2c7390d1182b03d8",
+  "name" : "should back at Invetory page when clicking at the all items link on menu",
+  "time" : {
+    "start" : 1631163866698,
+    "stop" : 1631163869281,
+    "duration" : 2583
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75255df76aec962c",
+  "name" : "should have the shipping information",
+  "time" : {
+    "start" : 1631164126372,
+    "stop" : 1631164128082,
+    "duration" : 1710
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f269320af8f21c82",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631163993163,
+    "stop" : 1631163994819,
+    "duration" : 1656
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "95be5e05d7816392",
+  "name" : "should have the payment card information",
+  "time" : {
+    "start" : 1631163899977,
+    "stop" : 1631163901513,
+    "duration" : 1536
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2479828ba9aeb376",
+  "name" : "should be possible to remove the product from cart",
+  "time" : {
+    "start" : 1631163883085,
+    "stop" : 1631163885000,
+    "duration" : 1915
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f359bb891069196b",
+  "name" : "should show lastName error message if empty",
+  "time" : {
+    "start" : 1631164083513,
+    "stop" : 1631164085384,
+    "duration" : 1871
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e30b02ced1a98ecf",
+  "name" : "should go back to Cart if cancel checkout",
+  "time" : {
+    "start" : 1631164079838,
+    "stop" : 1631164081697,
+    "duration" : 1859
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a57a66135a14fea5",
+  "name" : "should have a completed order image",
+  "time" : {
+    "start" : 1631163814796,
+    "stop" : 1631163816938,
+    "duration" : 2142
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bb210075d4b09ffe",
+  "name" : "should be possible to sort items from Z to A",
+  "time" : {
+    "start" : 1631164106467,
+    "stop" : 1631164108417,
+    "duration" : 1950
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d628dd939fd310d2",
+  "name" : "should have the shipping information",
+  "time" : {
+    "start" : 1631163785131,
+    "stop" : 1631163786702,
+    "duration" : 1571
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aaef7f4bed1451b2",
+  "name" : "should show postalCode error message if empty",
+  "time" : {
+    "start" : 1631164019914,
+    "stop" : 1631164022061,
+    "duration" : 2147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9743ed8a70133da",
+  "name" : "should be possible to add the product to cart",
+  "time" : {
+    "start" : 1631163881250,
+    "stop" : 1631163883085,
+    "duration" : 1835
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "27e0a7f1839f2425",
+  "name" : "should be at Inventory page when clicking at the back to products",
+  "time" : {
+    "start" : 1631163759711,
+    "stop" : 1631163762080,
+    "duration" : 2369
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75ff8cc50299b3cb",
+  "name" : "should be at Inventory page after login",
+  "time" : {
+    "start" : 1631163817147,
+    "stop" : 1631163819900,
+    "duration" : 2753
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ebbcb5c181f0c2df",
+  "name" : "should match cart badge with items in cart",
+  "time" : {
+    "start" : 1631164009284,
+    "stop" : 1631164011140,
+    "duration" : 1856
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3e4c6a117d2e4e8",
+  "name" : "should go back to Cart if cancel checkout",
+  "time" : {
+    "start" : 1631163859824,
+    "stop" : 1631163861427,
+    "duration" : 1603
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "809808a53b2ae86f",
+  "name" : "should be back at Inventory page when click at the Back Home button",
+  "time" : {
+    "start" : 1631163973850,
+    "stop" : 1631163975981,
+    "duration" : 2131
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "188c074d2ea23bce",
+  "name" : "User should be able to complete a purchase @e2e-purchase",
+  "time" : {
+    "start" : 1631164032460,
+    "stop" : 1631164035587,
+    "duration" : 3127
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2defd054044464d8",
+  "name" : "should be possible to close sidemenu clicking at the X button @slow",
+  "time" : {
+    "start" : 1631163968634,
+    "stop" : 1631163971206,
+    "duration" : 2572
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5dfc8af93ea166b0",
+  "name" : "should show items sorted alphabetically",
+  "time" : {
+    "start" : 1631163824946,
+    "stop" : 1631163827249,
+    "duration" : 2303
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3075f53bb9c1d84",
+  "name" : "should show locked user error",
+  "time" : {
+    "start" : 1631164049637,
+    "stop" : 1631164051284,
+    "duration" : 1647
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87ce061de93aa83c",
+  "name" : "should have the subtotal (total before tax)",
+  "time" : {
+    "start" : 1631164070137,
+    "stop" : 1631164072410,
+    "duration" : 2273
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f20bd856df65355",
+  "name" : "should have Twitter link on footer",
+  "time" : {
+    "start" : 1631163838893,
+    "stop" : 1631163841073,
+    "duration" : 2180
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "485c2760997aa89a",
+  "name" : "should be possible to add the product to cart",
+  "time" : {
+    "start" : 1631163937385,
+    "stop" : 1631163939093,
+    "duration" : 1708
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5c6f6337c035fc70",
+  "name" : "should show firstName error message if empty",
+  "time" : {
+    "start" : 1631163917382,
+    "stop" : 1631163918918,
+    "duration" : 1536
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3501cd77ad596f91",
+  "name" : "should show firstName error message if empty",
+  "time" : {
+    "start" : 1631164081698,
+    "stop" : 1631164083514,
+    "duration" : 1816
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d5956035edbd5eaa",
+  "name" : "should show application password ",
+  "time" : {
+    "start" : 1631163886921,
+    "stop" : 1631163887891,
+    "duration" : 970
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ae61307733feced",
+  "name" : "should have Swag Bot image on footer",
+  "time" : {
+    "start" : 1631163999486,
+    "stop" : 1631164001022,
+    "duration" : 1536
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ab606d19c865ca2",
+  "name" : "should be possible to sort items prices from High to Low",
+  "time" : {
+    "start" : 1631163831725,
+    "stop" : 1631163834227,
+    "duration" : 2502
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87e3f83e49588cb1",
+  "name" : "should have the total calculated as subtotal + tax",
+  "time" : {
+    "start" : 1631163906402,
+    "stop" : 1631163907902,
+    "duration" : 1500
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "667684afe051179",
+  "name" : "should be back at Inventory page when click at the Back Home button",
+  "time" : {
+    "start" : 1631164026144,
+    "stop" : 1631164028558,
+    "duration" : 2414
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5f4bc0e11f9142f9",
+  "name" : "should be at Cart page when clicking at the cart button",
+  "time" : {
+    "start" : 1631163934151,
+    "stop" : 1631163935919,
+    "duration" : 1768
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85c45f04cf0dafb6",
+  "name" : "should be at Checkout page when click at the checkout button",
+  "time" : {
+    "start" : 1631164074405,
+    "stop" : 1631164076309,
+    "duration" : 1904
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a6793cf18726ec7b",
+  "name" : "should have the payment card information",
+  "time" : {
+    "start" : 1631163848540,
+    "stop" : 1631163850406,
+    "duration" : 1866
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e52c6f3f7b5d4b8",
+  "name" : "should be possible to sort items prices from High to Low",
+  "time" : {
+    "start" : 1631163771188,
+    "stop" : 1631163773194,
+    "duration" : 2006
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b968adebba0602cf",
+  "name" : "should remove cart items when clicking at the reset state link on menu",
+  "time" : {
+    "start" : 1631163750771,
+    "stop" : 1631163752825,
+    "duration" : 2054
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "597f4d98193addc4",
+  "name" : "should navigate to inventory page after successful login @smoke",
+  "time" : {
+    "start" : 1631164054450,
+    "stop" : 1631164056464,
+    "duration" : 2014
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "569a4e5593ea3720",
+  "name" : "should show a list of items @smoke",
+  "time" : {
+    "start" : 1631163935920,
+    "stop" : 1631163937774,
+    "duration" : 1854
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd88a22734c7986",
+  "name" : "should have the tax calculated as 8% of subtotal",
+  "time" : {
+    "start" : 1631163960087,
+    "stop" : 1631163961651,
+    "duration" : 1564
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7b379e8287ee051",
+  "name" : "should have a thank you header message",
+  "time" : {
+    "start" : 1631163871788,
+    "stop" : 1631163873386,
+    "duration" : 1598
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d6767ef3a3d0878",
+  "name" : "should show accepted users",
+  "time" : {
+    "start" : 1631163768771,
+    "stop" : 1631163769712,
+    "duration" : 941
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5851b4a438801514",
+  "name" : "should have the subtotal (total before tax)",
+  "time" : {
+    "start" : 1631163786702,
+    "stop" : 1631163788299,
+    "duration" : 1597
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "43ad4a16d778a47",
+  "name" : "should have a completed order image",
+  "time" : {
+    "start" : 1631164032586,
+    "stop" : 1631164034741,
+    "duration" : 2155
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cdc14fa2552cfdea",
+  "name" : "should be possible to add product to cart @smoke",
+  "time" : {
+    "start" : 1631163890408,
+    "stop" : 1631163892561,
+    "duration" : 2153
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e883538780622372",
+  "name" : "should have a completed order message",
+  "time" : {
+    "start" : 1631164094979,
+    "stop" : 1631164096763,
+    "duration" : 1784
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "301b0eaa695fe9d4",
+  "name" : "should be possible to add product to cart @smoke",
+  "time" : {
+    "start" : 1631163944918,
+    "stop" : 1631163946797,
+    "duration" : 1879
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c4c31568f5ee1ef1",
+  "name" : "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+  "time" : {
+    "start" : 1631164002993,
+    "stop" : 1631164003263,
+    "duration" : 270
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "a8d2ca62077ac9c4",
+  "name" : "should show lastName error message if empty",
+  "time" : {
+    "start" : 1631164017827,
+    "stop" : 1631164019914,
+    "duration" : 2087
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ccb30367b7d33360",
+  "name" : "should have LinkedIn link on footer",
+  "time" : {
+    "start" : 1631164060723,
+    "stop" : 1631164063239,
+    "duration" : 2516
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9ec72c4af21f73c4",
+  "name" : "should have Facebook link on footer",
+  "time" : {
+    "start" : 1631163950473,
+    "stop" : 1631163952155,
+    "duration" : 1682
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "10f8d497a8294144",
+  "name" : "should be possible to sort items from Z to A",
+  "time" : {
+    "start" : 1631163986671,
+    "stop" : 1631163988261,
+    "duration" : 1590
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d045a5d394de9c4a",
+  "name" : "should show username and password doesn't match",
+  "time" : {
+    "start" : 1631163992958,
+    "stop" : 1631163993832,
+    "duration" : 874
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb401130017bd045",
+  "name" : "should go back to Cart if cancel checkout",
+  "time" : {
+    "start" : 1631163740583,
+    "stop" : 1631163742233,
+    "duration" : 1650
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db5b87a7e993fad7",
+  "name" : "should show application password ",
+  "time" : {
+    "start" : 1631164048444,
+    "stop" : 1631164049637,
+    "duration" : 1193
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "899efc9c7e565fef",
+  "name" : "should navigate to product's detail page when clicking at it",
+  "time" : {
+    "start" : 1631164038254,
+    "stop" : 1631164041095,
+    "duration" : 2841
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "167c68c5305b30d2",
+  "name" : "should be at Completed page",
+  "time" : {
+    "start" : 1631163748676,
+    "stop" : 1631163750029,
+    "duration" : 1353
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f1c447de709a8803",
+  "name" : "should be at Overview page",
+  "time" : {
+    "start" : 1631163995426,
+    "stop" : 1631163996841,
+    "duration" : 1415
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75aa418fbe2d82e",
+  "name" : "should be at Cart page when clicking at the cart button",
+  "time" : {
+    "start" : 1631163819901,
+    "stop" : 1631163822506,
+    "duration" : 2605
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89222ce20edbd396",
+  "name" : "should be possible to sort items prices from Low to High",
+  "time" : {
+    "start" : 1631163886266,
+    "stop" : 1631163888299,
+    "duration" : 2033
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6fac3166905a3a40",
+  "name" : "should be at Completed page",
+  "time" : {
+    "start" : 1631163806338,
+    "stop" : 1631163808375,
+    "duration" : 2037
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "89087c52c9d65e83",
+  "name" : "should show items sorted alphabetically",
+  "time" : {
+    "start" : 1631163765044,
+    "stop" : 1631163767137,
+    "duration" : 2093
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6fd834c5b1dfa46f",
+  "name" : "should have the tax calculated as 8% of subtotal",
+  "time" : {
+    "start" : 1631163788299,
+    "stop" : 1631163789870,
+    "duration" : 1571
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48dc71a95a13fbfc",
+  "name" : "should show locked user error",
+  "time" : {
+    "start" : 1631163770624,
+    "stop" : 1631163771743,
+    "duration" : 1119
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0e86073ac9dbff2",
+  "name" : "should be possible to close sidemenu clicking at the X button @slow",
+  "time" : {
+    "start" : 1631163861780,
+    "stop" : 1631163864490,
+    "duration" : 2710
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6241820a53cc6019",
+  "name" : "should have the payment card information",
+  "time" : {
+    "start" : 1631164124474,
+    "stop" : 1631164126371,
+    "duration" : 1897
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d9c036b5d0e678b",
+  "name" : "should have the added items on the Overview Checkout @smoke",
+  "time" : {
+    "start" : 1631164063739,
+    "stop" : 1631164065978,
+    "duration" : 2239
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "66165540daf5dbdd",
+  "name" : "should have the total calculated as subtotal + tax",
+  "time" : {
+    "start" : 1631163855909,
+    "stop" : 1631163857640,
+    "duration" : 1731
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a1cf707ffe69ee87",
+  "name" : "should be at Cart page when clicking at the cart button",
+  "time" : {
+    "start" : 1631163981918,
+    "stop" : 1631163983449,
+    "duration" : 1531
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "baaec591fcff68ae",
+  "name" : "User should be able to login with a valid credentials @e2e-login",
+  "time" : {
+    "start" : 1631164096099,
+    "stop" : 1631164097082,
+    "duration" : 983
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4e12f4d59f030f1",
+  "name" : "should be back at Inventory page when click at the cancel button",
+  "time" : {
+    "start" : 1631164118806,
+    "stop" : 1631164120749,
+    "duration" : 1943
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e982319db1b3424b",
+  "name" : "should have a completed order message",
+  "time" : {
+    "start" : 1631163977394,
+    "stop" : 1631163978783,
+    "duration" : 1389
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87db081f889fb18",
+  "name" : "should be possible to close sidemenu clicking at the X button @slow",
+  "time" : {
+    "start" : 1631164084056,
+    "stop" : 1631164086998,
+    "duration" : 2942
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f3de479f725891d",
+  "name" : "should be possible to sort items prices from Low to High",
+  "time" : {
+    "start" : 1631163988261,
+    "stop" : 1631163989899,
+    "duration" : 1638
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f251ecb054756876",
+  "name" : "should have Swag Bot image on footer",
+  "time" : {
+    "start" : 1631163845279,
+    "stop" : 1631163847324,
+    "duration" : 2045
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f981d50a8ae90e8a",
+  "name" : "should be possible to add the product to cart",
+  "time" : {
+    "start" : 1631163827224,
+    "stop" : 1631163829301,
+    "duration" : 2077
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "67c1e6b28bbc8fe0",
+  "name" : "should be possible to add the product to cart",
+  "time" : {
+    "start" : 1631164041095,
+    "stop" : 1631164043430,
+    "duration" : 2335
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f244eb2848093f2",
+  "name" : "should show accepted users",
+  "time" : {
+    "start" : 1631164047262,
+    "stop" : 1631164048444,
+    "duration" : 1182
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75fb1c68cf6c0a2c",
+  "name" : "should show a list of items @smoke",
+  "time" : {
+    "start" : 1631163983449,
+    "stop" : 1631163985032,
+    "duration" : 1583
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28b9f075287f5d16",
+  "name" : "should show username is required error",
+  "time" : {
+    "start" : 1631163992064,
+    "stop" : 1631163992957,
+    "duration" : 893
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "59986ded6dc47ef3",
+  "name" : "should be at Inventory page when clicking at the back to products",
+  "time" : {
+    "start" : 1631164099681,
+    "stop" : 1631164101659,
+    "duration" : 1978
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f43c6dbb22c8eafe",
+  "name" : "should be possible to remove the product from cart",
+  "time" : {
+    "start" : 1631163987246,
+    "stop" : 1631163988810,
+    "duration" : 1564
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d13ebd6ac3812a7",
+  "name" : "should be possible to close sidemenu clicking at the X button @slow",
+  "time" : {
+    "start" : 1631163748179,
+    "stop" : 1631163750772,
+    "duration" : 2593
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f82c2bb1864e702b",
+  "name" : "should have a completed order message",
+  "time" : {
+    "start" : 1631164030464,
+    "stop" : 1631164032586,
+    "duration" : 2122
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd3b3d7bc9c17045",
+  "name" : "should be at Overview page",
+  "time" : {
+    "start" : 1631164116982,
+    "stop" : 1631164118806,
+    "duration" : 1824
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a2d89549125fe157",
+  "name" : "should be possible to open sidemenu @slow @smoke",
+  "time" : {
+    "start" : 1631164015445,
+    "stop" : 1631164017464,
+    "duration" : 2019
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "20f99ba32e1c0a9e",
+  "name" : "should have the tax calculated as 8% of subtotal",
+  "time" : {
+    "start" : 1631164129712,
+    "stop" : 1631164131324,
+    "duration" : 1612
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a367b295068bece",
+  "name" : "should have LinkedIn link on footer",
+  "time" : {
+    "start" : 1631163781021,
+    "stop" : 1631163782951,
+    "duration" : 1930
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c0491e6b65f691e9",
+  "name" : "should show username and password doesn't match",
+  "time" : {
+    "start" : 1631164053005,
+    "stop" : 1631164054451,
+    "duration" : 1446
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eba8efff8bd4a8e3",
+  "name" : "should be possible to sort items prices from Low to High",
+  "time" : {
+    "start" : 1631163829461,
+    "stop" : 1631163831726,
+    "duration" : 2265
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cae8abea513aeb8a",
+  "name" : "should back at Invetory page when clicking at the all items link on menu",
+  "time" : {
+    "start" : 1631163809494,
+    "stop" : 1631163812265,
+    "duration" : 2771
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75220adc3d800b9f",
+  "name" : "should show username is required error",
+  "time" : {
+    "start" : 1631163944590,
+    "stop" : 1631163945617,
+    "duration" : 1027
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "20ffafe3b9d54806",
+  "name" : "should be at the login url",
+  "time" : {
+    "start" : 1631163831521,
+    "stop" : 1631163832703,
+    "duration" : 1182
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "37a029d101bd1fa1",
+  "name" : "should be at Inventory page when clicking at the back to products",
+  "time" : {
+    "start" : 1631163821945,
+    "stop" : 1631163824444,
+    "duration" : 2499
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef0ac120e825a70b",
+  "name" : "should be possible to sort items prices from Low to High",
+  "time" : {
+    "start" : 1631164046382,
+    "stop" : 1631164048797,
+    "duration" : 2415
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc58990645bbfeb3",
+  "name" : "should have a completed order image",
+  "time" : {
+    "start" : 1631163978784,
+    "stop" : 1631163980282,
+    "duration" : 1498
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a177666f7764b88",
+  "name" : "should have Swag Bot image on footer",
+  "time" : {
+    "start" : 1631163900368,
+    "stop" : 1631163902300,
+    "duration" : 1932
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a2080b734d22d238",
+  "name" : "should have the tax calculated as 8% of subtotal",
+  "time" : {
+    "start" : 1631164006316,
+    "stop" : 1631164007874,
+    "duration" : 1558
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5b83a6f0b8ac55b",
+  "name" : "should be at Completed page when click at the finish button",
+  "time" : {
+    "start" : 1631163780201,
+    "stop" : 1631163781962,
+    "duration" : 1761
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4693f400ecb4c4c2",
+  "name" : "should go to Checkout Overview page @smoke",
+  "time" : {
+    "start" : 1631164022060,
+    "stop" : 1631164024318,
+    "duration" : 2258
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4bf4c68ec106443",
+  "name" : "should have Facebook link on footer",
+  "time" : {
+    "start" : 1631163896300,
+    "stop" : 1631163898303,
+    "duration" : 2003
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1faa3dedb14aecfa",
+  "name" : "should show locked user error",
+  "time" : {
+    "start" : 1631164111670,
+    "stop" : 1631164113153,
+    "duration" : 1483
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5750c3a78009ad34",
+  "name" : "should be at Checkout page",
+  "time" : {
+    "start" : 1631163963565,
+    "stop" : 1631163965026,
+    "duration" : 1461
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a2e41bc53547105e",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631163836803,
+    "stop" : 1631163838888,
+    "duration" : 2085
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63015cdc58b8d0a2",
+  "name" : "should be back at Inventory page when click at the cancel button",
+  "time" : {
+    "start" : 1631163777545,
+    "stop" : 1631163780201,
+    "duration" : 2656
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26fd105c43ffe3ae",
+  "name" : "should have Twitter link on footer",
+  "time" : {
+    "start" : 1631163894377,
+    "stop" : 1631163896299,
+    "duration" : 1922
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "695c5281f49b3581",
+  "name" : "should be possible to sort items prices from Low to High",
+  "time" : {
+    "start" : 1631164108418,
+    "stop" : 1631164110549,
+    "duration" : 2131
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "42e175e4dc067349",
+  "name" : "should have a completed order message",
+  "time" : {
+    "start" : 1631163812621,
+    "stop" : 1631163814790,
+    "duration" : 2169
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40ae1af91d72671b",
+  "name" : "should match cart badge with items in cart",
+  "time" : {
+    "start" : 1631163794369,
+    "stop" : 1631163796425,
+    "duration" : 2056
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2bbb1dea4e3b297",
+  "name" : "should be at Checkout page",
+  "time" : {
+    "start" : 1631163914030,
+    "stop" : 1631163915817,
+    "duration" : 1787
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "db9259b715c3ec5a",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631164053681,
+    "stop" : 1631164056002,
+    "duration" : 2321
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "15136de4a9d19fa1",
+  "name" : "should be at Login page when clicking at the logout link on menu",
+  "time" : {
+    "start" : 1631164027914,
+    "stop" : 1631164030682,
+    "duration" : 2768
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "25410cefad47f914",
+  "name" : "should be at Cart page when clicking at the cart button",
+  "time" : {
+    "start" : 1631164037008,
+    "stop" : 1631164039255,
+    "duration" : 2247
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b077f15fdb7d2366",
+  "name" : "should show items sorted alphabetically",
+  "time" : {
+    "start" : 1631163882127,
+    "stop" : 1631163884118,
+    "duration" : 1991
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "94299f34439d9496",
+  "name" : "should show items sorted alphabetically",
+  "time" : {
+    "start" : 1631164041642,
+    "stop" : 1631164044024,
+    "duration" : 2382
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "224de1c23ebcf3b3",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631164013464,
+    "stop" : 1631164015446,
+    "duration" : 1982
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "56982ddeb888e8ce",
+  "name" : "should show firstName error message if empty",
+  "time" : {
+    "start" : 1631163742233,
+    "stop" : 1631163743792,
+    "duration" : 1559
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e748f1b1a5423cd0",
+  "name" : "should be possible to add product to cart @smoke",
+  "time" : {
+    "start" : 1631164112547,
+    "stop" : 1631164114700,
+    "duration" : 2153
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a61345dac14e762c",
+  "name" : "should be at Inventory page when clicking at the back to products",
+  "time" : {
+    "start" : 1631163981844,
+    "stop" : 1631163983911,
+    "duration" : 2067
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f572198f3f6ee1c6",
+  "name" : "should have the added items on the Overview Checkout @smoke",
+  "time" : {
+    "start" : 1631164122628,
+    "stop" : 1631164124474,
+    "duration" : 1846
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d9623c6de444624f",
+  "name" : "should have Twitter link on footer",
+  "time" : {
+    "start" : 1631163994820,
+    "stop" : 1631163996406,
+    "duration" : 1586
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e2b71d073d3e27a1",
+  "name" : "should have the shipping information",
+  "time" : {
+    "start" : 1631164003290,
+    "stop" : 1631164004731,
+    "duration" : 1441
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af64a09dbc00f106",
+  "name" : "should be at Checkout page when click at the checkout button",
+  "time" : {
+    "start" : 1631163961297,
+    "stop" : 1631163962751,
+    "duration" : 1454
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4077770a57979f88",
+  "name" : "should have the added items on the Overview Checkout @smoke",
+  "time" : {
+    "start" : 1631163898364,
+    "stop" : 1631163899978,
+    "duration" : 1614
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd23d93f7d0febf3",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631163745227,
+    "stop" : 1631163746712,
+    "duration" : 1485
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28879cb238a577ec",
+  "name" : "should show username and password doesn't match",
+  "time" : {
+    "start" : 1631163890176,
+    "stop" : 1631163891268,
+    "duration" : 1092
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d783f37b959468d",
+  "name" : "should be at Completed page",
+  "time" : {
+    "start" : 1631163972479,
+    "stop" : 1631163973851,
+    "duration" : 1372
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d868408c901eb6d",
+  "name" : "should be at Inventory page after login",
+  "time" : {
+    "start" : 1631163876337,
+    "stop" : 1631163878262,
+    "duration" : 1925
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "48931d8fb002b4a7",
+  "name" : "should be at Checkout page when click at the checkout button",
+  "time" : {
+    "start" : 1631163791875,
+    "stop" : 1631163794369,
+    "duration" : 2494
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eecd72261d84c15c",
+  "name" : "should have Copyright text on footer",
+  "time" : {
+    "start" : 1631163847325,
+    "stop" : 1631163849378,
+    "duration" : 2053
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "968aec8086ccc6f1",
+  "name" : "should be at Completed page when click at the finish button",
+  "time" : {
+    "start" : 1631163896731,
+    "stop" : 1631163898364,
+    "duration" : 1633
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33c29ddd84c807d6",
+  "name" : "should navigate to product's detail page when clicking at it",
+  "time" : {
+    "start" : 1631163935423,
+    "stop" : 1631163937384,
+    "duration" : 1961
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33ffbf37f35ec6a7",
+  "name" : "should have the subtotal (total before tax)",
+  "time" : {
+    "start" : 1631163958580,
+    "stop" : 1631163960087,
+    "duration" : 1507
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f0c8d6a48ba5017",
+  "name" : "should remove cart items when clicking at the reset state link on menu",
+  "time" : {
+    "start" : 1631164020633,
+    "stop" : 1631164022930,
+    "duration" : 2297
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7fbceff7442acb11",
+  "name" : "should be possible to open sidemenu @slow @smoke",
+  "time" : {
+    "start" : 1631163746712,
+    "stop" : 1631163748178,
+    "duration" : 1466
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5fdaeba83df2a4d5",
+  "name" : "should be at Checkout page",
+  "time" : {
+    "start" : 1631163792061,
+    "stop" : 1631163794512,
+    "duration" : 2451
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c6f6d20cbeba25e3",
+  "name" : "should have a completed order message",
+  "time" : {
+    "start" : 1631163929179,
+    "stop" : 1631163930747,
+    "duration" : 1568
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13dc91a7da53e4f4",
+  "name" : "should navigate to inventory page after successful login @smoke",
+  "time" : {
+    "start" : 1631163993831,
+    "stop" : 1631163995424,
+    "duration" : 1593
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6fb87469418a51f7",
+  "name" : "should navigate to SauceLabs page when clicking at the about link on menu @slow",
+  "time" : {
+    "start" : 1631163975725,
+    "stop" : 1631163977118,
+    "duration" : 1393
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a66ab4fbed77d855",
+  "name" : "User should be able to complete a purchase @e2e-purchase",
+  "time" : {
+    "start" : 1631163874500,
+    "stop" : 1631163876334,
+    "duration" : 1834
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "724e3c8d557c67da",
+  "name" : "should have the subtotal (total before tax)",
+  "time" : {
+    "start" : 1631163852285,
+    "stop" : 1631163854138,
+    "duration" : 1853
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e2ac7c8a2e9a834",
+  "name" : "should have the total calculated as subtotal + tax",
+  "time" : {
+    "start" : 1631163961652,
+    "stop" : 1631163963185,
+    "duration" : 1533
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8dca8e283e7d3fc2",
+  "name" : "should show accepted users",
+  "time" : {
+    "start" : 1631163941749,
+    "stop" : 1631163942635,
+    "duration" : 886
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b21bd5d4fe4a27e9",
+  "name" : "should match cart badge with items in cart",
+  "time" : {
+    "start" : 1631163742150,
+    "stop" : 1631163743609,
+    "duration" : 1459
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "838c9808ef4b6132",
+  "name" : "should be possible to remove the product from cart",
+  "time" : {
+    "start" : 1631164043430,
+    "stop" : 1631164045934,
+    "duration" : 2504
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9f67aa6a4908c3c6",
+  "name" : "should have LinkedIn link on footer",
+  "time" : {
+    "start" : 1631163997938,
+    "stop" : 1631163999486,
+    "duration" : 1548
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e340a581b446fd69",
+  "name" : "should have the shipping information",
+  "time" : {
+    "start" : 1631163901514,
+    "stop" : 1631163903045,
+    "duration" : 1531
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49fca8c77373445b",
+  "name" : "should go to Checkout Overview page @smoke",
+  "time" : {
+    "start" : 1631163922145,
+    "stop" : 1631163923816,
+    "duration" : 1671
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d2cec5f7727b0af",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631163965697,
+    "stop" : 1631163967186,
+    "duration" : 1489
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7d58e1f8753870ab",
+  "name" : "should show postalCode error message if empty",
+  "time" : {
+    "start" : 1631163745488,
+    "stop" : 1631163747056,
+    "duration" : 1568
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7b7031121df43fc3",
+  "name" : "should be back at Inventory page when click at the Back Home button",
+  "time" : {
+    "start" : 1631163808375,
+    "stop" : 1631163810461,
+    "duration" : 2086
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b1fdb206176a2237",
+  "name" : "should show application password ",
+  "time" : {
+    "start" : 1631164110501,
+    "stop" : 1631164111670,
+    "duration" : 1169
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bbe3f6303806a889",
+  "name" : "should go to Checkout Overview page @smoke",
+  "time" : {
+    "start" : 1631164087349,
+    "stop" : 1631164089495,
+    "duration" : 2146
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c772abbce9ebb7d9",
+  "name" : "should be back at Inventory page when click at the continue shopping button",
+  "time" : {
+    "start" : 1631163850779,
+    "stop" : 1631163853243,
+    "duration" : 2464
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "37e2185c0ee6b0cc",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631163798742,
+    "stop" : 1631163800946,
+    "duration" : 2204
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a2d4f99bfac5416d",
+  "name" : "should be possible to add an item into the cart @smoke",
+  "time" : {
+    "start" : 1631163796426,
+    "stop" : 1631163798743,
+    "duration" : 2317
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b705ee3f0007a4f",
+  "name" : "should be possible to remove the product from cart",
+  "time" : {
+    "start" : 1631163939092,
+    "stop" : 1631163940866,
+    "duration" : 1774
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dfb2da697088b3b6",
+  "name" : "should show items sorted alphabetically",
+  "time" : {
+    "start" : 1631164104542,
+    "stop" : 1631164106467,
+    "duration" : 1925
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a984525cf3f48ea7",
+  "name" : "should be at Inventory page when clicking at the back to products",
+  "time" : {
+    "start" : 1631164035588,
+    "stop" : 1631164038254,
+    "duration" : 2666
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4e4b4f2b670101c",
+  "name" : "should be at Login page when clicking at the logout link on menu",
+  "time" : {
+    "start" : 1631163977118,
+    "stop" : 1631163979064,
+    "duration" : 1946
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bcd285273aa07275",
+  "name" : "should navigate to product's detail page when clicking at it",
+  "time" : {
+    "start" : 1631163824444,
+    "stop" : 1631163827224,
+    "duration" : 2780
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6911850c00fd34fd",
+  "name" : "should show application password ",
+  "time" : {
+    "start" : 1631163942635,
+    "stop" : 1631163943546,
+    "duration" : 911
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "67a34f8eccff9aa5",
+  "name" : "should be possible to add the product to cart",
+  "time" : {
+    "start" : 1631164104227,
+    "stop" : 1631164106183,
+    "duration" : 1956
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9f9b6d786a48d7f4",
+  "name" : "should be at Overview page",
+  "time" : {
+    "start" : 1631163893002,
+    "stop" : 1631163894526,
+    "duration" : 1524
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "27b2305c4e7a97d9",
+  "name" : "should be possible to close sidemenu clicking at the X button @slow",
+  "time" : {
+    "start" : 1631163918442,
+    "stop" : 1631163921063,
+    "duration" : 2621
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c83676771fd33667",
+  "name" : "should be at Login page when clicking at the logout link on menu",
+  "time" : {
+    "start" : 1631164093739,
+    "stop" : 1631164096098,
+    "duration" : 2359
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3ee98cdcd6eed858",
+  "name" : "should have the total calculated as subtotal + tax",
+  "time" : {
+    "start" : 1631164007874,
+    "stop" : 1631164009381,
+    "duration" : 1507
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "adeea11c4b211134",
+  "name" : "should show accepted users",
+  "time" : {
+    "start" : 1631163885969,
+    "stop" : 1631163886921,
+    "duration" : 952
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71daf5ba3ae1ca9b",
+  "name" : "should navigate to SauceLabs page when clicking at the about link on menu @slow",
+  "time" : {
+    "start" : 1631164092005,
+    "stop" : 1631164093738,
+    "duration" : 1733
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2d3be35e767f8068",
+  "name" : "should have Swag Bot image on footer",
+  "time" : {
+    "start" : 1631163782951,
+    "stop" : 1631163784806,
+    "duration" : 1855
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88246d5de5bea463",
+  "name" : "User should be able to login with a valid credentials @e2e-login",
+  "time" : {
+    "start" : 1631163873206,
+    "stop" : 1631163874499,
+    "duration" : 1293
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff04b370df023c6f",
+  "name" : "should be at Completed page",
+  "time" : {
+    "start" : 1631164089498,
+    "stop" : 1631164091340,
+    "duration" : 1842
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d08c6e2a4cf78b6f",
+  "name" : "should be possible to sort items from Z to A",
+  "time" : {
+    "start" : 1631164044024,
+    "stop" : 1631164046382,
+    "duration" : 2358
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e9e4062461e9864f",
+  "name" : "should be possible to sort items from Z to A",
+  "time" : {
+    "start" : 1631163767137,
+    "stop" : 1631163769085,
+    "duration" : 1948
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da5a29ada1e04575",
+  "name" : "should be back at Inventory page when click at the Back Home button",
+  "time" : {
+    "start" : 1631163925338,
+    "stop" : 1631163927631,
+    "duration" : 2293
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4874389055265bc",
+  "name" : "should go back to Cart if cancel checkout",
+  "time" : {
+    "start" : 1631163915818,
+    "stop" : 1631163917382,
+    "duration" : 1564
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "99fbe8aebbf7d00c",
+  "name" : "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+  "time" : {
+    "start" : 1631163905643,
+    "stop" : 1631163913641,
+    "duration" : 7998
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b5402e7473f4ef7",
+  "name" : "should have Copyright text on footer",
+  "time" : {
+    "start" : 1631163784806,
+    "stop" : 1631163786573,
+    "duration" : 1767
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af8abc8a54ecb90a",
+  "name" : "should show username and password doesn't match",
+  "time" : {
+    "start" : 1631163837740,
+    "stop" : 1631163839204,
+    "duration" : 1464
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "deadd8f0aafe5fb9",
+  "name" : "should be at Overview page",
+  "time" : {
+    "start" : 1631163948494,
+    "stop" : 1631163949996,
+    "duration" : 1502
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3612b9d643fafd5e",
+  "name" : "User should be able to complete a purchase @e2e-purchase",
+  "time" : {
+    "start" : 1631163979976,
+    "stop" : 1631163981843,
+    "duration" : 1867
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a12c672b92745b26",
+  "name" : "should show a list of items @smoke",
+  "time" : {
+    "start" : 1631164039256,
+    "stop" : 1631164041642,
+    "duration" : 2386
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2c8ebc802f407b2",
+  "name" : "should be possible to close sidemenu clicking at the X button @slow",
+  "time" : {
+    "start" : 1631164017464,
+    "stop" : 1631164020633,
+    "duration" : 3169
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cbda52407d8df8fd",
+  "name" : "should show postalCode error message if empty",
+  "time" : {
+    "start" : 1631163920483,
+    "stop" : 1631163922146,
+    "duration" : 1663
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9273680338c56e8e",
+  "name" : "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+  "time" : {
+    "start" : 1631163737472,
+    "stop" : 1631163738456,
+    "duration" : 984
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "b0e0b6a93261fc6d",
+  "name" : "should have the tax calculated as 8% of subtotal",
+  "time" : {
+    "start" : 1631163904732,
+    "stop" : 1631163906402,
+    "duration" : 1670
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aec54984007e137e",
+  "name" : "should show lastName error message if empty",
+  "time" : {
+    "start" : 1631163863025,
+    "stop" : 1631163864735,
+    "duration" : 1710
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "14324375fd8b237c",
+  "name" : "should have LinkedIn link on footer",
+  "time" : {
+    "start" : 1631163898303,
+    "stop" : 1631163900368,
+    "duration" : 2065
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3363d1cd3ec862a0",
+  "name" : "should have the payment card information",
+  "time" : {
+    "start" : 1631164065978,
+    "stop" : 1631164068194,
+    "duration" : 2216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5dd81cd3711c9f15",
+  "name" : "should back at Invetory page when clicking at the all items link on menu",
+  "time" : {
+    "start" : 1631163923178,
+    "stop" : 1631163925968,
+    "duration" : 2790
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b818d5394699b105",
+  "name" : "should show accepted users",
+  "time" : {
+    "start" : 1631164109302,
+    "stop" : 1631164110501,
+    "duration" : 1199
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9fcbdf261f5d1fd0",
+  "name" : "should have a thank you header message",
+  "time" : {
+    "start" : 1631163752194,
+    "stop" : 1631163753637,
+    "duration" : 1443
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d93db100c93bc109",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631164080391,
+    "stop" : 1631164082239,
+    "duration" : 1848
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e85ef4a9a5c6bf57",
+  "name" : "should be back at Inventory page when click at the continue shopping button",
+  "time" : {
+    "start" : 1631163787317,
+    "stop" : 1631163791874,
+    "duration" : 4557
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1021735b26be92c5",
+  "name" : "should have a completed order image",
+  "time" : {
+    "start" : 1631163930747,
+    "stop" : 1631163932382,
+    "duration" : 1635
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9839df47cfe130c",
+  "name" : "should navigate to inventory page after successful login @smoke",
+  "time" : {
+    "start" : 1631163773937,
+    "stop" : 1631163775999,
+    "duration" : 2062
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ecc62e588c75459",
+  "name" : "should have LinkedIn link on footer",
+  "time" : {
+    "start" : 1631164121148,
+    "stop" : 1631164123075,
+    "duration" : 1927
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "97388ff0e7220cc0",
+  "name" : "should be possible to sort items prices from High to Low",
+  "time" : {
+    "start" : 1631163888299,
+    "stop" : 1631163890408,
+    "duration" : 2109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc015615e268128c",
+  "name" : "should remove cart items when clicking at the reset state link on menu",
+  "time" : {
+    "start" : 1631164086998,
+    "stop" : 1631164089478,
+    "duration" : 2480
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "519b1c62e7f82eb6",
+  "name" : "should show application password ",
+  "time" : {
+    "start" : 1631163990364,
+    "stop" : 1631163991125,
+    "duration" : 761
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f8c201a854215f15",
+  "name" : "should have the added items on the Overview Checkout @smoke",
+  "time" : {
+    "start" : 1631163781963,
+    "stop" : 1631163783517,
+    "duration" : 1554
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3bb42e9c4b066ed",
+  "name" : "should show firstName error message if empty",
+  "time" : {
+    "start" : 1631163861427,
+    "stop" : 1631163863025,
+    "duration" : 1598
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "da743c7484ee4a53",
+  "name" : "should have the subtotal (total before tax)",
+  "time" : {
+    "start" : 1631163903045,
+    "stop" : 1631163904731,
+    "duration" : 1686
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b632c6e984bc54c9",
+  "name" : "should be possible to add an item into the cart @smoke",
+  "time" : {
+    "start" : 1631163856562,
+    "stop" : 1631163858387,
+    "duration" : 1825
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd44531aee8e3d5a",
+  "name" : "should be at the login url",
+  "time" : {
+    "start" : 1631163767847,
+    "stop" : 1631163768771,
+    "duration" : 924
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58c8f68e0f8ec1b0",
+  "name" : "should have the subtotal (total before tax)",
+  "time" : {
+    "start" : 1631164004731,
+    "stop" : 1631164006316,
+    "duration" : 1585
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "660343ec776798be",
+  "name" : "should back at Invetory page when clicking at the all items link on menu",
+  "time" : {
+    "start" : 1631163752825,
+    "stop" : 1631163755321,
+    "duration" : 2496
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b54914c6fcea8649",
+  "name" : "should be at Checkout page",
+  "time" : {
+    "start" : 1631164077792,
+    "stop" : 1631164079839,
+    "duration" : 2047
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d4eae824947f598",
+  "name" : "should back at Invetory page when clicking at the all items link on menu",
+  "time" : {
+    "start" : 1631164089478,
+    "stop" : 1631164092005,
+    "duration" : 2527
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f8f15b5d82b220a8",
+  "name" : "should be at Cart page when clicking at the cart button",
+  "time" : {
+    "start" : 1631164100570,
+    "stop" : 1631164102567,
+    "duration" : 1997
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a5b483bdeca06f6",
+  "name" : "should have the added items on the Overview Checkout @smoke",
+  "time" : {
+    "start" : 1631163846673,
+    "stop" : 1631163848540,
+    "duration" : 1867
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3281e947ab8e225c",
+  "name" : "User should be able to complete a purchase @e2e-purchase",
+  "time" : {
+    "start" : 1631163931091,
+    "stop" : 1631163933206,
+    "duration" : 2115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d065fc84a3837f0",
+  "name" : "User should be able to login with a valid credentials @e2e-login",
+  "time" : {
+    "start" : 1631163979067,
+    "stop" : 1631163979976,
+    "duration" : 909
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cdc127bafbf0be5c",
+  "name" : "should navigate to inventory page after successful login @smoke",
+  "time" : {
+    "start" : 1631163946708,
+    "stop" : 1631163948493,
+    "duration" : 1785
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3cfdd062a71b3dc6",
+  "name" : "should remove cart items when clicking at the reset state link on menu",
+  "time" : {
+    "start" : 1631163806702,
+    "stop" : 1631163809493,
+    "duration" : 2791
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "70b2a79c7e05fc15",
+  "name" : "should be possible to sort items prices from High to Low",
+  "time" : {
+    "start" : 1631163943114,
+    "stop" : 1631163944919,
+    "duration" : 1805
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9200c2d9b8678062",
+  "name" : "should show postalCode error message if empty",
+  "time" : {
+    "start" : 1631163801464,
+    "stop" : 1631163803789,
+    "duration" : 2325
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d4e6e747f62d3b11",
+  "name" : "User should be able to login with a valid credentials @e2e-login",
+  "time" : {
+    "start" : 1631163929695,
+    "stop" : 1631163931091,
+    "duration" : 1396
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cd2e14e42f1b0597",
+  "name" : "should be possible to sort items from Z to A",
+  "time" : {
+    "start" : 1631163884117,
+    "stop" : 1631163886265,
+    "duration" : 2148
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fc73c17d1d5f0327",
+  "name" : "should go back to Cart if cancel checkout",
+  "time" : {
+    "start" : 1631164013628,
+    "stop" : 1631164015822,
+    "duration" : 2194
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63b8019cb8e72ba7",
+  "name" : "should be at Checkout page",
+  "time" : {
+    "start" : 1631163738909,
+    "stop" : 1631163740582,
+    "duration" : 1673
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3704e235d039f3a7",
+  "name" : "should show firstName error message if empty",
+  "time" : {
+    "start" : 1631163796823,
+    "stop" : 1631163798990,
+    "duration" : 2167
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "783641b9f32569e",
+  "name" : "should match cart badge with items in cart",
+  "time" : {
+    "start" : 1631163854949,
+    "stop" : 1631163856562,
+    "duration" : 1613
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b5f2871bb9d843c2",
+  "name" : "should be back at Inventory page when click at the cancel button",
+  "time" : {
+    "start" : 1631163996841,
+    "stop" : 1631163998909,
+    "duration" : 2068
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7ca95d4a4a6ca45",
+  "name" : "should be back at Inventory page when click at the continue shopping button",
+  "time" : {
+    "start" : 1631163958660,
+    "stop" : 1631163961296,
+    "duration" : 2636
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "98442749f0a31872",
+  "name" : "should be possible to remove the product from cart",
+  "time" : {
+    "start" : 1631164106182,
+    "stop" : 1631164108182,
+    "duration" : 2000
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "514faff1dacc195c",
+  "name" : "should be at the login url",
+  "time" : {
+    "start" : 1631163885003,
+    "stop" : 1631163885970,
+    "duration" : 967
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "115b483a309fc992",
+  "name" : "should have Swag Bot image on footer",
+  "time" : {
+    "start" : 1631163953855,
+    "stop" : 1631163955655,
+    "duration" : 1800
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "99161a118ef74790",
+  "name" : "should be at Overview page",
+  "time" : {
+    "start" : 1631163840706,
+    "stop" : 1631163842548,
+    "duration" : 1842
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e78fdb7f63f5ee90",
+  "name" : "should be possible to remove the product from cart",
+  "time" : {
+    "start" : 1631163829302,
+    "stop" : 1631163831520,
+    "duration" : 2218
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e89e128073c96f39",
+  "name" : "should be back at Inventory page when click at the continue shopping button",
+  "time" : {
+    "start" : 1631164003673,
+    "stop" : 1631164007447,
+    "duration" : 3774
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b8be02d13de6a254",
+  "name" : "should navigate to SauceLabs page when clicking at the about link on menu @slow",
+  "time" : {
+    "start" : 1631164025932,
+    "stop" : 1631164027914,
+    "duration" : 1982
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e4337fed19c4a9b",
+  "name" : "should have the payment card information",
+  "time" : {
+    "start" : 1631163955518,
+    "stop" : 1631163957011,
+    "duration" : 1493
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a329d4877b9484b",
+  "name" : "should match cart badge with items in cart",
+  "time" : {
+    "start" : 1631163911879,
+    "stop" : 1631163913432,
+    "duration" : 1553
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5755d8a695084e57",
+  "name" : "should have Copyright text on footer",
+  "time" : {
+    "start" : 1631164124991,
+    "stop" : 1631164126870,
+    "duration" : 1879
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a8c283590ed3b49",
+  "name" : "should show firstName error message if empty",
+  "time" : {
+    "start" : 1631164015823,
+    "stop" : 1631164017827,
+    "duration" : 2004
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33212826284a527f",
+  "name" : "should remove cart items when clicking at the reset state link on menu",
+  "time" : {
+    "start" : 1631163971206,
+    "stop" : 1631163973288,
+    "duration" : 2082
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88f4d7c216e9b14",
+  "name" : "should be at Checkout page when click at the checkout button",
+  "time" : {
+    "start" : 1631163740597,
+    "stop" : 1631163742150,
+    "duration" : 1553
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a462a4c16f6c970",
+  "name" : "should navigate to SauceLabs page when clicking at the about link on menu @slow",
+  "time" : {
+    "start" : 1631163755321,
+    "stop" : 1631163756956,
+    "duration" : 1635
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c32e63fef81d6e77",
+  "name" : "should show a list of items @smoke",
+  "time" : {
+    "start" : 1631163880111,
+    "stop" : 1631163882126,
+    "duration" : 2015
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aad6aabfba5409d4",
+  "name" : "should show accepted users",
+  "time" : {
+    "start" : 1631163832702,
+    "stop" : 1631163833746,
+    "duration" : 1044
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e9fd9ed3ab64854",
+  "name" : "should be at Login page when clicking at the logout link on menu",
+  "time" : {
+    "start" : 1631163870913,
+    "stop" : 1631163873201,
+    "duration" : 2288
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f1b18a39d508fa3",
+  "name" : "should be possible to add the product to cart",
+  "time" : {
+    "start" : 1631163764278,
+    "stop" : 1631163766126,
+    "duration" : 1848
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2803671ae70bef91",
+  "name" : "should have Swag Bot image on footer",
+  "time" : {
+    "start" : 1631164123075,
+    "stop" : 1631164124990,
+    "duration" : 1915
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c4dfc8ab34715f",
+  "name" : "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+  "time" : {
+    "start" : 1631163957753,
+    "stop" : 1631163958279,
+    "duration" : 526
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "24ed952a39d66cb6",
+  "name" : "should have a thank you header message",
+  "time" : {
+    "start" : 1631164028558,
+    "stop" : 1631164030465,
+    "duration" : 1907
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b87459b8e4d3cec",
+  "name" : "should be back at Inventory page when click at the Back Home button",
+  "time" : {
+    "start" : 1631164091340,
+    "stop" : 1631164093265,
+    "duration" : 1925
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a6fe2a423a30465",
+  "name" : "should be at Login page when clicking at the logout link on menu",
+  "time" : {
+    "start" : 1631163814347,
+    "stop" : 1631163817144,
+    "duration" : 2797
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2be027cd929a81c3",
+  "name" : "should have the tax calculated as 8% of subtotal",
+  "time" : {
+    "start" : 1631164072411,
+    "stop" : 1631164074512,
+    "duration" : 2101
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90b5a69f93d6074e",
+  "name" : "should have the shipping information",
+  "time" : {
+    "start" : 1631164068195,
+    "stop" : 1631164070138,
+    "duration" : 1943
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "10a968ebc61af009",
+  "name" : "should back at Invetory page when clicking at the all items link on menu",
+  "time" : {
+    "start" : 1631164022930,
+    "stop" : 1631164025932,
+    "duration" : 3002
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2a6374fe73e727a9",
+  "name" : "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+  "time" : {
+    "start" : 1631163904666,
+    "stop" : 1631163905286,
+    "duration" : 620
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "34e7c69a8401be75",
+  "name" : "should show username is required error",
+  "time" : {
+    "start" : 1631163836353,
+    "stop" : 1631163837740,
+    "duration" : 1387
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "84f92653df1ad078",
+  "name" : "should be possible to add an item into the cart @smoke",
+  "time" : {
+    "start" : 1631164011141,
+    "stop" : 1631164013463,
+    "duration" : 2322
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fb1899d0615caf5c",
+  "name" : "should be possible to add an item into the cart @smoke",
+  "time" : {
+    "start" : 1631163964149,
+    "stop" : 1631163965697,
+    "duration" : 1548
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f577d7f4d7cb9bc0",
+  "name" : "should match cart badge with items in cart",
+  "time" : {
+    "start" : 1631164076309,
+    "stop" : 1631164078218,
+    "duration" : 1909
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "35be1e4a346004f",
+  "name" : "should be possible to sort items prices from High to Low",
+  "time" : {
+    "start" : 1631164110549,
+    "stop" : 1631164112547,
+    "duration" : 1998
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c7dacdbbacbf3dc",
+  "name" : "should remove cart items when clicking at the reset state link on menu",
+  "time" : {
+    "start" : 1631163921062,
+    "stop" : 1631163923177,
+    "duration" : 2115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "358feb9713c9802a",
+  "name" : "should go back to Cart if cancel checkout",
+  "time" : {
+    "start" : 1631163965026,
+    "stop" : 1631163966524,
+    "duration" : 1498
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "46a536f0acb7afaf",
+  "name" : "should show accepted users",
+  "time" : {
+    "start" : 1631163989573,
+    "stop" : 1631163990363,
+    "duration" : 790
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "16ca87d3acbe1ff3",
+  "name" : "should be at Checkout page when click at the checkout button",
+  "time" : {
+    "start" : 1631163910366,
+    "stop" : 1631163911879,
+    "duration" : 1513
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "824a55b5ca5e521a",
+  "name" : "should show firstName error message if empty",
+  "time" : {
+    "start" : 1631163966524,
+    "stop" : 1631163968040,
+    "duration" : 1516
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d797617ab9f45c9d",
+  "name" : "should show items sorted alphabetically",
+  "time" : {
+    "start" : 1631163985032,
+    "stop" : 1631163986671,
+    "duration" : 1639
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "81ad7d80abf4cef3",
+  "name" : "should have Twitter link on footer",
+  "time" : {
+    "start" : 1631163777288,
+    "stop" : 1631163779043,
+    "duration" : 1755
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f3157f51a129ec1",
+  "name" : "should be possible to add an item into the cart @smoke",
+  "time" : {
+    "start" : 1631164078219,
+    "stop" : 1631164080390,
+    "duration" : 2171
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "869cd47693104c06",
+  "name" : "should be at Completed page when click at the finish button",
+  "time" : {
+    "start" : 1631163952320,
+    "stop" : 1631163953978,
+    "duration" : 1658
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d4873c05080ac420",
+  "name" : "should show locked user error",
+  "time" : {
+    "start" : 1631163835026,
+    "stop" : 1631163836353,
+    "duration" : 1327
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a6b49c078cc790c",
+  "name" : "should be at Checkout page when click at the checkout button",
+  "time" : {
+    "start" : 1631164007447,
+    "stop" : 1631164009284,
+    "duration" : 1837
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ee422d1e4931b5de",
+  "name" : "should have a thank you header message",
+  "time" : {
+    "start" : 1631164093264,
+    "stop" : 1631164094979,
+    "duration" : 1715
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "904fd43406d40f5f",
+  "name" : "should be possible to sort items from Z to A",
+  "time" : {
+    "start" : 1631163939543,
+    "stop" : 1631163941330,
+    "duration" : 1787
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3c80722fa8522189",
+  "name" : "should match cart badge with items in cart",
+  "time" : {
+    "start" : 1631163962750,
+    "stop" : 1631163964149,
+    "duration" : 1399
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ac0da809f08955fe",
+  "name" : "should be at Login page when clicking at the logout link on menu",
+  "time" : {
+    "start" : 1631163927562,
+    "stop" : 1631163929694,
+    "duration" : 2132
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "64af43659013efb8",
+  "name" : "should be possible to open sidemenu @slow @smoke",
+  "time" : {
+    "start" : 1631164082239,
+    "stop" : 1631164084056,
+    "duration" : 1817
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "83d70de96ccbd5b5",
+  "name" : "should go to Checkout Overview page @smoke",
+  "time" : {
+    "start" : 1631163970980,
+    "stop" : 1631163972476,
+    "duration" : 1496
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49d0166fd9899d50",
+  "name" : "should be at Completed page when click at the finish button",
+  "time" : {
+    "start" : 1631163844632,
+    "stop" : 1631163846673,
+    "duration" : 2041
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe19a87544f131f8",
+  "name" : "should show items sorted alphabetically",
+  "time" : {
+    "start" : 1631163937774,
+    "stop" : 1631163939544,
+    "duration" : 1770
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a1cd81c8f481a4c0",
+  "name" : "should back at Invetory page when clicking at the all items link on menu",
+  "time" : {
+    "start" : 1631163973289,
+    "stop" : 1631163975726,
+    "duration" : 2437
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b87bf4477f407e1",
+  "name" : "should be at Cart page when clicking at the cart button",
+  "time" : {
+    "start" : 1631163878262,
+    "stop" : 1631163880111,
+    "duration" : 1849
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a4c9c0a1c323aef",
+  "name" : "should show lastName error message if empty",
+  "time" : {
+    "start" : 1631163743792,
+    "stop" : 1631163745488,
+    "duration" : 1696
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b15955c0196a5fde",
+  "name" : "should be possible to close sidemenu clicking at the X button @slow",
+  "time" : {
+    "start" : 1631163803160,
+    "stop" : 1631163806702,
+    "duration" : 3542
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0a5cc9033ec6652",
+  "name" : "User should be able to login with a valid credentials @e2e-login",
+  "time" : {
+    "start" : 1631163756479,
+    "stop" : 1631163757608,
+    "duration" : 1129
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d4aa4a36ee2087c",
+  "name" : "User should be able to complete a purchase @e2e-purchase",
+  "time" : {
+    "start" : 1631164097082,
+    "stop" : 1631164099679,
+    "duration" : 2597
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "260ca789584ac55b",
+  "name" : "should show lastName error message if empty",
+  "time" : {
+    "start" : 1631163798991,
+    "stop" : 1631163801463,
+    "duration" : 2472
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff5eb803bbb32d7f",
+  "name" : "should show username is required error",
+  "time" : {
+    "start" : 1631163889029,
+    "stop" : 1631163890176,
+    "duration" : 1147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a9d3113f87c5805",
+  "name" : "should have a completed order image",
+  "time" : {
+    "start" : 1631163875213,
+    "stop" : 1631163876833,
+    "duration" : 1620
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "983c3a08b9611f95",
+  "name" : "should be at Completed page when click at the finish button",
+  "time" : {
+    "start" : 1631164120749,
+    "stop" : 1631164122628,
+    "duration" : 1879
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2617c9b565dde671",
+  "name" : "should be at Completed page",
+  "time" : {
+    "start" : 1631163868093,
+    "stop" : 1631163869706,
+    "duration" : 1613
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ad8b7c3d1369c9b",
+  "name" : "should show lastName error message if empty",
+  "time" : {
+    "start" : 1631163968041,
+    "stop" : 1631163969519,
+    "duration" : 1478
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b1b19ead5b8dcec",
+  "name" : "should have Copyright text on footer",
+  "time" : {
+    "start" : 1631164065543,
+    "stop" : 1631164067767,
+    "duration" : 2224
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2be074a5d6921417",
+  "name" : "should be at Inventory page when clicking at the back to products",
+  "time" : {
+    "start" : 1631163933208,
+    "stop" : 1631163935424,
+    "duration" : 2216
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e88896a0cbd625b8",
+  "name" : "should have the added items on the Overview Checkout @smoke",
+  "time" : {
+    "start" : 1631163953979,
+    "stop" : 1631163955518,
+    "duration" : 1539
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f2cb6258ad34ce62",
+  "name" : "should be at the login url",
+  "time" : {
+    "start" : 1631163988812,
+    "stop" : 1631163989574,
+    "duration" : 762
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65ed224b908a09f",
+  "name" : "should be possible to sort items from Z to A",
+  "time" : {
+    "start" : 1631163827250,
+    "stop" : 1631163829460,
+    "duration" : 2210
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ebd96bc73b559f0c",
+  "name" : "should have a thank you header message",
+  "time" : {
+    "start" : 1631163975981,
+    "stop" : 1631163977394,
+    "duration" : 1413
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18eb1ee2dac6bb9",
+  "name" : "should be back at Inventory page when click at the cancel button",
+  "time" : {
+    "start" : 1631163842548,
+    "stop" : 1631163844632,
+    "duration" : 2084
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "855c378918d45b88",
+  "name" : "should remove cart items when clicking at the reset state link on menu",
+  "time" : {
+    "start" : 1631163864491,
+    "stop" : 1631163866699,
+    "duration" : 2208
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8fd385870312c67d",
+  "name" : "should be possible to sort items prices from Low to High",
+  "time" : {
+    "start" : 1631163941330,
+    "stop" : 1631163943113,
+    "duration" : 1783
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d5e2164a6c9d3928",
+  "name" : "should be back at Inventory page when click at the cancel button",
+  "time" : {
+    "start" : 1631163949996,
+    "stop" : 1631163952320,
+    "duration" : 2324
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d06e30f4024a871f",
+  "name" : "should navigate to SauceLabs page when clicking at the about link on menu @slow",
+  "time" : {
+    "start" : 1631163869281,
+    "stop" : 1631163870912,
+    "duration" : 1631
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "74c08e311dff84a7",
+  "name" : "should show username and password doesn't match",
+  "time" : {
+    "start" : 1631164114311,
+    "stop" : 1631164115569,
+    "duration" : 1258
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9a108408856a363",
+  "name" : "should be back at Inventory page when click at the continue shopping button",
+  "time" : {
+    "start" : 1631163738133,
+    "stop" : 1631163740598,
+    "duration" : 2465
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de26c543d19380a8",
+  "name" : "should be back at Inventory page when click at the continue shopping button",
+  "time" : {
+    "start" : 1631163908238,
+    "stop" : 1631163910367,
+    "duration" : 2129
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "72c271ba68fc0a27",
+  "name" : "should have Copyright text on footer",
+  "time" : {
+    "start" : 1631163955655,
+    "stop" : 1631163957368,
+    "duration" : 1713
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1739ca2170e231a8",
+  "name" : "should be possible to open sidemenu @slow @smoke",
+  "time" : {
+    "start" : 1631163800946,
+    "stop" : 1631163803160,
+    "duration" : 2214
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c1fa7758db09b295",
+  "name" : "should be possible to sort items prices from Low to High",
+  "time" : {
+    "start" : 1631163769085,
+    "stop" : 1631163771188,
+    "duration" : 2103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8fbd6fb9ff00d83e",
+  "name" : "should be possible to open sidemenu @slow @smoke",
+  "time" : {
+    "start" : 1631163916896,
+    "stop" : 1631163918441,
+    "duration" : 1545
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "230b00e555888166",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631163775344,
+    "stop" : 1631163777287,
+    "duration" : 1943
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "69fb08f278e8c42",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631163946797,
+    "stop" : 1631163948734,
+    "duration" : 1937
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f3e7799988e98b3",
+  "name" : "should navigate to inventory page after successful login @smoke",
+  "time" : {
+    "start" : 1631164115569,
+    "stop" : 1631164116980,
+    "duration" : 1411
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "776add7388405070",
+  "name" : "should go to Checkout Overview page @smoke",
+  "time" : {
+    "start" : 1631163803788,
+    "stop" : 1631163806336,
+    "duration" : 2548
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d65502c1ae517cb3",
+  "name" : "should show a list of items @smoke",
+  "time" : {
+    "start" : 1631163822506,
+    "stop" : 1631163824946,
+    "duration" : 2440
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6c3cef7742f62d",
+  "name" : "should be possible to remove product from cart",
+  "time" : {
+    "start" : 1631164114700,
+    "stop" : 1631164117075,
+    "duration" : 2375
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9c3a259ff929a52",
+  "name" : "should be at Checkout page",
+  "time" : {
+    "start" : 1631163858060,
+    "stop" : 1631163859824,
+    "duration" : 1764
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e445ce6cac068d0b",
+  "name" : "should navigate to product's detail page when clicking at it",
+  "time" : {
+    "start" : 1631163879010,
+    "stop" : 1631163881250,
+    "duration" : 2240
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8b9c7e1ba292b0d4",
+  "name" : "should have Swag Bot image on footer",
+  "time" : {
+    "start" : 1631164063239,
+    "stop" : 1631164065543,
+    "duration" : 2304
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "184016c21ec8a66e",
+  "name" : "should be at Overview page",
+  "time" : {
+    "start" : 1631163776001,
+    "stop" : 1631163777544,
+    "duration" : 1543
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed7198cdd2323385",
+  "name" : "should have the subtotal (total before tax)",
+  "time" : {
+    "start" : 1631164128082,
+    "stop" : 1631164129712,
+    "duration" : 1630
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf8ba49fef77edee",
+  "name" : "should be at Inventory page after login",
+  "time" : {
+    "start" : 1631164098631,
+    "stop" : 1631164100570,
+    "duration" : 1939
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e9d9a9efca1c036",
+  "name" : "should have a completed order image",
+  "time" : {
+    "start" : 1631164096764,
+    "stop" : 1631164098629,
+    "duration" : 1865
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d1aa949f741a330",
+  "name" : "should be at the login url",
+  "time" : {
+    "start" : 1631164108194,
+    "stop" : 1631164109302,
+    "duration" : 1108
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0744a831058203e",
+  "name" : "should be possible to add product to cart @smoke",
+  "time" : {
+    "start" : 1631163773194,
+    "stop" : 1631163775344,
+    "duration" : 2150
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
