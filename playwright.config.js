@@ -2,7 +2,7 @@ const { devices } = require("@playwright/test")
 
 const config = {
     testDir: "tests",
-    retries: 3,
+    retries: 1,
     reporter: process.env.CI ? [["dot"], ["allure-playwright"]] : [["line"], ["allure-playwright"]],
     workers: process.env.CI ? 2 : undefined,
     expect: {
