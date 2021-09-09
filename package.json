@@ -9,7 +9,7 @@
     "devDependencies": {
         "@playwright/test": "^1.14",
         "allure-commandline": "^2.13.8",
-        "allure-playwright": "^2.0.0-beta.11"
+        "allure-playwright": "^2.0.0-beta.13"
     },
     "scripts": {
         "test": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --project 'chromium-hd'",
@@ -21,7 +21,7 @@
         "allure:generate": "npx allure generate ./test-results --clean -o ./allure-reports",
         "allure:open": "npx allure open ./allure-reports -p 7777",
         "posttest:ci": "npm run allure:generate",
-        "test:docker": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --reporter=dot,allure-playwright",
+        "test:docker": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --reporter=dot,allure-playwright ||:",
         "posttest:docker": "npm run allure:generate && npm run allure:open"
     },
     "repository": {
