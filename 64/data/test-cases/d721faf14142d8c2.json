@@ -1,0 +1,254 @@
+{
+  "uid" : "d721faf14142d8c2",
+  "name" : "User should be able to login with a valid credentials @e2e-login",
+  "fullName" : "User should be able to login with a valid credentials @e2e-login",
+  "historyId" : "pixel-4 e2e.spec.js Saucedemo E2E: @e2e User should be able to login with a valid credentials @e2e-login",
+  "time" : {
+    "start" : 1631337443146,
+    "stop" : 1631337444367,
+    "duration" : 1221
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1631337443146,
+        "stop" : 1631337443323,
+        "duration" : 177
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1631337443151,
+          "stop" : 1631337443180,
+          "duration" : 29
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.goto",
+        "time" : {
+          "start" : 1631337443180,
+          "stop" : 1631337443322,
+          "duration" : 142
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "locator.type",
+      "time" : {
+        "start" : 1631337443324,
+        "stop" : 1631337443399,
+        "duration" : 75
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.type",
+      "time" : {
+        "start" : 1631337443399,
+        "stop" : 1631337443442,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click",
+      "time" : {
+        "start" : 1631337443443,
+        "stop" : 1631337443644,
+        "duration" : 201
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toHaveURL",
+      "time" : {
+        "start" : 1631337443644,
+        "stop" : 1631337443645,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1631337443645,
+        "stop" : 1631337444367,
+        "duration" : 722
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1631337443646,
+          "stop" : 1631337444364,
+          "duration" : 718
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "browserContext.close",
+          "time" : {
+            "start" : 1631337443647,
+            "stop" : 1631337444349,
+            "duration" : 702
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "pixel-4"
+  }, {
+    "name" : "suite",
+    "value" : "e2e.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo E2E: @e2e"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "88246d5de5bea463",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/63//#testresult/88246d5de5bea463",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631163873206,
+          "stop" : 1631163874499,
+          "duration" : 1293
+        }
+      }, {
+        "uid" : "513691949bdc6b7",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/61//#testresult/513691949bdc6b7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631098116315,
+          "stop" : 1631098117592,
+          "duration" : 1277
+        }
+      }, {
+        "uid" : "b09ffcd5f0635471",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/58//#testresult/b09ffcd5f0635471",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630992871398,
+          "stop" : 1630992872904,
+          "duration" : 1506
+        }
+      }, {
+        "uid" : "affd2a0887b16a47",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/57//#testresult/affd2a0887b16a47",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630720143504,
+          "stop" : 1630720144876,
+          "duration" : 1372
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d721faf14142d8c2.json",
+  "parameterValues" : [ ]
+}
