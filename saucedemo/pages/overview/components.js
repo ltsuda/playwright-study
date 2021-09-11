@@ -36,7 +36,7 @@ class OverviewComponents {
      * @returns {Locator} Locator for 'overviewContainer' selector
      */
     async overviewContainer() {
-        return await this.page.locator(overviewSelectors.overviewContainer)
+        return this.page.locator(overviewSelectors.overviewContainer)
     }
 
     /**
@@ -44,7 +44,7 @@ class OverviewComponents {
      * @returns {String} payment card element text selector
      */
     async paymentInfoText() {
-        return await this.page.locator(
+        return this.page.locator(
             `${overviewSelectors.summaryInfoContainer}` + ">>" + `${overviewSelectors.paymentInfoText}`
         )
     }
@@ -54,7 +54,7 @@ class OverviewComponents {
      * @returns {String} shipment element text
      */
     async shippingInfoText() {
-        return await this.page.locator(
+        return this.page.locator(
             `${overviewSelectors.summaryInfoContainer}` + ">>" + `${overviewSelectors.shippingInfoText}`
         )
     }
@@ -64,7 +64,7 @@ class OverviewComponents {
      * @returns {String} subtotal element text
      */
     async subtotalText() {
-        return await this.page.locator(
+        return this.page.locator(
             `${overviewSelectors.summaryInfoContainer}` + ">>" + `${overviewSelectors.subtotalText}`
         )
     }
@@ -74,7 +74,7 @@ class OverviewComponents {
      * @returns {String} tax element text
      */
     async taxText() {
-        return await this.page.locator(`${overviewSelectors.summaryInfoContainer}` + ">>" + `${overviewSelectors.taxText}`)
+        return this.page.locator(`${overviewSelectors.summaryInfoContainer}` + ">>" + `${overviewSelectors.taxText}`)
     }
 
     /**
@@ -82,7 +82,7 @@ class OverviewComponents {
      * @returns {String} total price element text
      */
     async totalPriceText() {
-        return await this.page.locator(
+        return this.page.locator(
             `${overviewSelectors.summaryInfoContainer}` + ">>" + `${overviewSelectors.totalPriceText}`
         )
     }
@@ -92,7 +92,7 @@ class OverviewComponents {
      * @returns {Locator} Locator for 'cancelCheckoutButton' selector
      */
     async cancelCheckoutButton() {
-        return await this.page.locator(overviewSelectors.cancelCheckoutButton)
+        return this.page.locator(overviewSelectors.cancelCheckoutButton)
     }
 
     /**
@@ -100,7 +100,7 @@ class OverviewComponents {
      * @returns {Locator} Locator for 'finishCheckoutButton' selector
      */
     async finishCheckoutButton() {
-        return await this.page.locator(overviewSelectors.finishCheckoutButton)
+        return this.page.locator(overviewSelectors.finishCheckoutButton)
     }
 }
 

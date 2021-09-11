@@ -28,7 +28,7 @@ class InventoryComponents {
      * @returns {Locator} Locator for 'inventoryContainer' selector
      */
     async inventoryContainer() {
-        return await this.page.locator(inventorySelectors.inventoryContainer)
+        return this.page.locator(inventorySelectors.inventoryContainer)
     }
 }
 

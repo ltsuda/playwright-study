@@ -35,7 +35,7 @@ class LoginComponents {
      * @returns {Locator} Locator for 'loginContainer' class
      */
     async loginContainer() {
-        return await this.page.locator(loginSelectors.loginContainer)
+        return this.page.locator(loginSelectors.loginContainer)
     }
 
     /**
@@ -43,7 +43,7 @@ class LoginComponents {
      * @returns {Locator} Locator for 'credentialsContainer' class
      */
     async credentialsContainer() {
-        return await this.page.locator(loginSelectors.credentialsContainer)
+        return this.page.locator(loginSelectors.credentialsContainer)
     }
 
     /**
@@ -51,7 +51,7 @@ class LoginComponents {
      * @returns {Locator} Locator for 'acceptedUsersText' id
      */
     async acceptedUsersText() {
-        return await this.page.locator(loginSelectors.acceptedUsersText)
+        return this.page.locator(loginSelectors.acceptedUsersText)
     }
 
     /**
@@ -59,7 +59,7 @@ class LoginComponents {
      * @returns {Locator} Locator for 'acceptedPasswordText' class
      */
     async acceptedPasswordText() {
-        return await this.page.locator(loginSelectors.acceptedPasswordText)
+        return this.page.locator(loginSelectors.acceptedPasswordText)
     }
 
     /**
@@ -67,7 +67,7 @@ class LoginComponents {
      * @returns {Locator} Locator for 'errorText' data-test selector
      */
     async errorMessageText() {
-        return await this.page.locator(loginSelectors.errorText)
+        return this.page.locator(loginSelectors.errorText)
     }
 
     /**
@@ -75,7 +75,7 @@ class LoginComponents {
      * @returns {Locator} Locator for 'usernameInput' data-test selector
      */
     async usernameInput() {
-        return await this.page.locator(loginSelectors.usernameInput)
+        return this.page.locator(loginSelectors.usernameInput)
     }
 
     /**
@@ -83,7 +83,7 @@ class LoginComponents {
      * @returns {Locator} Locator for 'passwordInput' data-test selector
      */
     async passwordInput() {
-        return await this.page.locator(loginSelectors.passwordInput)
+        return this.page.locator(loginSelectors.passwordInput)
     }
 
     /**
@@ -91,7 +91,7 @@ class LoginComponents {
      * @returns {Locator} Locator for 'loginButton' id
      */
     async loginButton() {
-        return await this.page.locator(loginSelectors.loginButton)
+        return this.page.locator(loginSelectors.loginButton)
     }
 }
 

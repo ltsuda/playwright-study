@@ -35,7 +35,7 @@ class CheckoutComponents {
      * @returns {Locator} Locator for 'checkoutContainer' selector
      */
     async checkoutContainer() {
-        return await this.page.locator(checkoutSelectors.checkoutContainer)
+        return this.page.locator(checkoutSelectors.checkoutContainer)
     }
 
     /**
@@ -43,7 +43,7 @@ class CheckoutComponents {
      * @returns {Locator} Locator for 'cancelButton' selector
      */
     async cancelButton() {
-        return await this.page.locator(checkoutSelectors.cancelButton)
+        return this.page.locator(checkoutSelectors.cancelButton)
     }
 
     /**
@@ -51,7 +51,7 @@ class CheckoutComponents {
      * @returns {Locator} Locator for 'continueButton' selector
      */
     async continueButton() {
-        return await this.page.locator(checkoutSelectors.continueButton)
+        return this.page.locator(checkoutSelectors.continueButton)
     }
 
     /**

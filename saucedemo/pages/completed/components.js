@@ -32,7 +32,7 @@ class CompletedComponents {
      * @returns {Locator} Locator for 'completedContainer' selector
      */
     async completedContainer() {
-        return await this.page.locator(completedSelectors.completedContainer)
+        return this.page.locator(completedSelectors.completedContainer)
     }
 
     /**
@@ -40,7 +40,7 @@ class CompletedComponents {
      * @returns {Locator} Locator for 'completedHeaderText' selector
      */
     async completedHeaderText() {
-        return await this.page.locator(
+        return this.page.locator(
             `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedHeaderText}`
         )
     }
@@ -50,7 +50,7 @@ class CompletedComponents {
      * @returns {Locator} Locator for 'completedText' selector
      */
     async completedText() {
-        return await this.page.locator(
+        return this.page.locator(
             `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedText}`
         )
     }
@@ -60,7 +60,7 @@ class CompletedComponents {
      * @returns {Locator} Locator for 'errorMessageText' selector
      */
     async completedImage() {
-        return await this.page.locator(
+        return this.page.locator(
             `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedImage}`
         )
     }
@@ -70,7 +70,7 @@ class CompletedComponents {
      * @returns {Locator} Locator for 'completedBackButton' selector
      */
     async completedBackButton() {
-        return await this.page.locator(
+        return this.page.locator(
             `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedBackButton}`
         )
     }

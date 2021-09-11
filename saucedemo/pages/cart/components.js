@@ -30,7 +30,7 @@ class CartComponents {
      * @returns {Locator} Locator for 'cartContainer' selector
      */
     async cartContainer() {
-        return await this.page.locator(cartSelectors.cartContainer)
+        return this.page.locator(cartSelectors.cartContainer)
     }
 
     /**
@@ -38,7 +38,7 @@ class CartComponents {
      * @returns {Locator} Locator for 'continueShoppingButton' selector
      */
     async continueShoppingButton() {
-        return await this.page.locator(cartSelectors.continueShoppingButton)
+        return this.page.locator(cartSelectors.continueShoppingButton)
     }
 
     /**
@@ -46,7 +46,7 @@ class CartComponents {
      * @returns {Locator} Locator for 'checkoutButton' selector
      */
     async checkoutButton() {
-        return await this.page.locator(cartSelectors.checkoutButton)
+        return this.page.locator(cartSelectors.checkoutButton)
     }
 }
 

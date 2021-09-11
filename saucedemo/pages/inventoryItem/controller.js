@@ -146,7 +146,7 @@ class InventoryItemController {
         var price = await randomItemLocator.locator(this.selectors.itemPriceText).innerText()
         price = price.replace("$", "")
 
-        const addButton = await randomItemLocator.locator(this.selectors.addToCartButton)
+        const addButton = randomItemLocator.locator(this.selectors.addToCartButton)
         await addButton.click()
 
         return {

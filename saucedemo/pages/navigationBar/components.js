@@ -38,7 +38,7 @@ class NavigationBarComponents {
      * @returns {Locator} Locator for 'navContainer' class
      */
     async navContainer() {
-        return await this.page.locator(navigationBarSelectors.navContainer)
+        return this.page.locator(navigationBarSelectors.navContainer)
     }
 
     /**
@@ -46,7 +46,7 @@ class NavigationBarComponents {
      * @returns {Locator} Locator for 'navDetailContainer' class
      */
     async navDetailContainer() {
-        return await this.page.locator(navigationBarSelectors.navDetailContainer)
+        return this.page.locator(navigationBarSelectors.navDetailContainer)
     }
 
     /**
@@ -54,7 +54,7 @@ class NavigationBarComponents {
      * @returns {Locator} Locator for 'sideMenu' class
      */
     async sideMenu() {
-        return await this.page.locator(navigationBarSelectors.sideMenu)
+        return this.page.locator(navigationBarSelectors.sideMenu)
     }
 
     /**
@@ -62,7 +62,7 @@ class NavigationBarComponents {
      * @returns {Locator} Locator for 'menuButton' id
      */
     async menuButton() {
-        return await this.page.locator(navigationBarSelectors.menuButton)
+        return this.page.locator(navigationBarSelectors.menuButton)
     }
 
     /**
@@ -70,7 +70,7 @@ class NavigationBarComponents {
      * @returns {Locator} Locator for 'menuCloseButton' class
      */
     async menuCloseButton() {
-        return await this.page.locator(navigationBarSelectors.menuCloseButton)
+        return this.page.locator(navigationBarSelectors.menuCloseButton)
     }
 
     /**
@@ -78,7 +78,7 @@ class NavigationBarComponents {
      * @returns {Locator} Locator for 'menuAllItemsLink' id
      */
     async menuAllItemsLink() {
-        return await this.page.locator(navigationBarSelectors.menuAllItemsLink)
+        return this.page.locator(navigationBarSelectors.menuAllItemsLink)
     }
 
     /**
@@ -86,7 +86,7 @@ class NavigationBarComponents {
      * @returns {Locator} Locator for 'menuAboutLink' id
      */
     async menuAboutLink() {
-        return await this.page.locator(navigationBarSelectors.menuAboutLink)
+        return this.page.locator(navigationBarSelectors.menuAboutLink)
     }
 
     /**
@@ -94,7 +94,7 @@ class NavigationBarComponents {
      * @returns {Locator} Locator for 'menuLogoutLink' id
      */
     async menuLogoutLink() {
-        return await this.page.locator(navigationBarSelectors.menuLogoutLink)
+        return this.page.locator(navigationBarSelectors.menuLogoutLink)
     }
 
     /**
@@ -102,7 +102,7 @@ class NavigationBarComponents {
      * @returns {Locator} Locator for 'menuResetStateLink' id
      */
     async menuResetStateLink() {
-        return await this.page.locator(navigationBarSelectors.menuResetStateLink)
+        return this.page.locator(navigationBarSelectors.menuResetStateLink)
     }
 
     /**
@@ -110,7 +110,7 @@ class NavigationBarComponents {
      * @returns {Locator} Locator for 'cartLink' class
      */
     async cartLink() {
-        return await this.page.locator(navigationBarSelectors.cartLink)
+        return this.page.locator(navigationBarSelectors.cartLink)
     }
 
     /**
@@ -118,7 +118,7 @@ class NavigationBarComponents {
      * @returns {Locator} Locator for 'cartBadgeText' class
      */
     async cartBadgeText() {
-        return await this.page.locator(
+        return this.page.locator(
             `${navigationBarSelectors.cartLink}` + ">" + `${navigationBarSelectors.cartBadgeText}`
         )
     }

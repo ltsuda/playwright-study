@@ -33,7 +33,7 @@ class FooterComponents {
      * @returns {Locator} Locator for 'footerContainer' selector
      */
     async footerContainer() {
-        return await this.page.locator(footerSelectors.footerContainer)
+        return this.page.locator(footerSelectors.footerContainer)
     }
 
     /**
@@ -41,7 +41,7 @@ class FooterComponents {
      * @returns {Locator} Locator for 'twitterSocialLink' selector
      */
     async twitterLink() {
-        return await this.page.locator(footerSelectors.twitterSocialLink)
+        return this.page.locator(footerSelectors.twitterSocialLink)
     }
 
     /**
@@ -49,7 +49,7 @@ class FooterComponents {
      * @returns {Locator} Locator for 'facebookSocialLink' selector
      */
     async facebookLink() {
-        return await this.page.locator(footerSelectors.facebookSocialLink)
+        return this.page.locator(footerSelectors.facebookSocialLink)
     }
 
     /**
@@ -57,7 +57,7 @@ class FooterComponents {
      * @returns {Locator} Locator for 'linkdinSocialLink' selector
      */
     async linkedinLink() {
-        return await this.page.locator(footerSelectors.linkdinSocialLink)
+        return this.page.locator(footerSelectors.linkdinSocialLink)
     }
 
     /**
@@ -65,7 +65,7 @@ class FooterComponents {
      * @returns {Locator} Locator for 'copyrightText' selector
      */
     async copyrightText() {
-        return await this.page.locator(footerSelectors.copyrightText)
+        return this.page.locator(footerSelectors.copyrightText)
     }
 
     /**
@@ -73,7 +73,7 @@ class FooterComponents {
      * @returns {Locator} Locator for 'footerImage' selector
      */
     async robotImage() {
-        return await this.page.locator(footerSelectors.footerImage)
+        return this.page.locator(footerSelectors.footerImage)
     }
 }
 
