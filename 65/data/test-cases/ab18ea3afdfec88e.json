@@ -1,0 +1,1142 @@
+{
+  "uid" : "ab18ea3afdfec88e",
+  "name" : "User should be able to complete a purchase @e2e-purchase",
+  "fullName" : "User should be able to complete a purchase @e2e-purchase",
+  "historyId" : "chromium-hd e2e.spec.js Saucedemo E2E: @e2e User should be able to complete a purchase @e2e-purchase",
+  "time" : {
+    "start" : 1632273035458,
+    "stop" : 1632273037779,
+    "duration" : 2321
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1632273035458,
+        "stop" : 1632273035784,
+        "duration" : 326
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1632273035464,
+          "stop" : 1632273035509,
+          "duration" : 45
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.goto(https://www.saucedemo.com)",
+        "time" : {
+          "start" : 1632273035509,
+          "stop" : 1632273035783,
+          "duration" : 274
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "User login with valid credential",
+      "time" : {
+        "start" : 1632273035784,
+        "stop" : 1632273036196,
+        "duration" : 412
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.type([data-test='username'], standard_user)",
+        "time" : {
+          "start" : 1632273035785,
+          "stop" : 1632273035951,
+          "duration" : 166
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.type([data-test='password'], secret_sauce)",
+        "time" : {
+          "start" : 1632273035952,
+          "stop" : 1632273036021,
+          "duration" : 69
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.click(#login-button)",
+        "time" : {
+          "start" : 1632273036022,
+          "stop" : 1632273036196,
+          "duration" : 174
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toHaveURL",
+        "time" : {
+          "start" : 1632273036196,
+          "stop" : 1632273036196,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "user login with valid credential",
+      "time" : {
+        "start" : 1632273036197,
+        "stop" : 1632273036642,
+        "duration" : 445
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.count(.inventory_item)",
+        "time" : {
+          "start" : 1632273036197,
+          "stop" : 1632273036256,
+          "duration" : 59
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.innerText(.inventory_item >> nth=3 >> .inventory_item_name)",
+        "time" : {
+          "start" : 1632273036256,
+          "stop" : 1632273036262,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.innerText(.inventory_item >> nth=3 >> .inventory_item_desc)",
+        "time" : {
+          "start" : 1632273036262,
+          "stop" : 1632273036270,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.innerText(.inventory_item >> nth=3 >> .inventory_item_price)",
+        "time" : {
+          "start" : 1632273036270,
+          "stop" : 1632273036281,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.click(.inventory_item >> nth=3 >> text=/add to cart/i)",
+        "time" : {
+          "start" : 1632273036282,
+          "stop" : 1632273036642,
+          "duration" : 360
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "navigate to cart",
+      "time" : {
+        "start" : 1632273036642,
+        "stop" : 1632273037272,
+        "duration" : 630
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "page.goto(/cart.html)",
+        "time" : {
+          "start" : 1632273036643,
+          "stop" : 1632273037271,
+          "duration" : 628
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toHaveURL",
+        "time" : {
+          "start" : 1632273037272,
+          "stop" : 1632273037272,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "validate item in cart is the same as the one added from invetory",
+      "time" : {
+        "start" : 1632273037273,
+        "stop" : 1632273037307,
+        "duration" : 34
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.count(.cart_item)",
+        "time" : {
+          "start" : 1632273037273,
+          "stop" : 1632273037283,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.innerText(.cart_item >> nth=0 >> .inventory_item_name)",
+        "time" : {
+          "start" : 1632273037283,
+          "stop" : 1632273037290,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.innerText(.cart_item >> nth=0 >> .inventory_item_desc)",
+        "time" : {
+          "start" : 1632273037291,
+          "stop" : 1632273037295,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.innerText(.cart_item >> nth=0 >> .inventory_item_price)",
+        "time" : {
+          "start" : 1632273037295,
+          "stop" : 1632273037302,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toStrictEqual",
+        "time" : {
+          "start" : 1632273037302,
+          "stop" : 1632273037302,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toHaveText",
+        "time" : {
+          "start" : 1632273037303,
+          "stop" : 1632273037307,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "locator.textContent(.shopping_cart_link>.shopping_cart_badge)",
+          "time" : {
+            "start" : 1632273037303,
+            "stop" : 1632273037307,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 7,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "navigate to checkout",
+      "time" : {
+        "start" : 1632273037307,
+        "stop" : 1632273037331,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.click([data-test='checkout'])",
+        "time" : {
+          "start" : 1632273037307,
+          "stop" : 1632273037330,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toHaveURL",
+        "time" : {
+          "start" : 1632273037330,
+          "stop" : 1632273037331,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "fill in checkout's personal information and continue",
+      "time" : {
+        "start" : 1632273037331,
+        "stop" : 1632273037514,
+        "duration" : 183
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.type(.checkout_info>>[data-test='firstName'], John)",
+        "time" : {
+          "start" : 1632273037331,
+          "stop" : 1632273037355,
+          "duration" : 24
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.type(.checkout_info>>[data-test='lastName'], Doe)",
+        "time" : {
+          "start" : 1632273037355,
+          "stop" : 1632273037384,
+          "duration" : 29
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.type(.checkout_info>>[data-test='postalCode'], 555-5555)",
+        "time" : {
+          "start" : 1632273037385,
+          "stop" : 1632273037455,
+          "duration" : 70
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.click([data-test='continue'])",
+        "time" : {
+          "start" : 1632273037455,
+          "stop" : 1632273037513,
+          "duration" : 58
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toHaveURL",
+        "time" : {
+          "start" : 1632273037514,
+          "stop" : 1632273037514,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "validate item, payment and shipping information",
+      "time" : {
+        "start" : 1632273037514,
+        "stop" : 1632273037547,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.allInnerTexts(.cart_item >> .inventory_item_name)",
+        "time" : {
+          "start" : 1632273037517,
+          "stop" : 1632273037523,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toBe",
+        "time" : {
+          "start" : 1632273037523,
+          "stop" : 1632273037523,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toHaveText",
+        "time" : {
+          "start" : 1632273037524,
+          "stop" : 1632273037528,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "locator.textContent(.summary_info>>text=/saucecard #31337/i)",
+          "time" : {
+            "start" : 1632273037524,
+            "stop" : 1632273037528,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "expect.toHaveText",
+        "time" : {
+          "start" : 1632273037534,
+          "stop" : 1632273037547,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "locator.textContent(.summary_info>>text=/FREE PONY EXPRESS DELIVERY!/i)",
+          "time" : {
+            "start" : 1632273037534,
+            "stop" : 1632273037547,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "validate subtotal, tax and total prices",
+      "time" : {
+        "start" : 1632273037547,
+        "stop" : 1632273037594,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.innerText(.summary_info>>.summary_subtotal_label)",
+        "time" : {
+          "start" : 1632273037548,
+          "stop" : 1632273037553,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toBe",
+        "time" : {
+          "start" : 1632273037553,
+          "stop" : 1632273037553,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.innerText(.summary_info>>.summary_tax_label)",
+        "time" : {
+          "start" : 1632273037553,
+          "stop" : 1632273037557,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.innerText(.summary_info>>.summary_subtotal_label)",
+        "time" : {
+          "start" : 1632273037557,
+          "stop" : 1632273037561,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toBe",
+        "time" : {
+          "start" : 1632273037561,
+          "stop" : 1632273037561,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.innerText(.summary_info>>.summary_subtotal_label)",
+        "time" : {
+          "start" : 1632273037562,
+          "stop" : 1632273037566,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.innerText(.summary_info>>.summary_subtotal_label)",
+        "time" : {
+          "start" : 1632273037567,
+          "stop" : 1632273037570,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.innerText(.summary_info>>.summary_total_label)",
+        "time" : {
+          "start" : 1632273037571,
+          "stop" : 1632273037594,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toBe",
+        "time" : {
+          "start" : 1632273037594,
+          "stop" : 1632273037594,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 9,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "finish purchase and validate completion page",
+      "time" : {
+        "start" : 1632273037594,
+        "stop" : 1632273037660,
+        "duration" : 66
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.click([data-test='finish'])",
+        "time" : {
+          "start" : 1632273037594,
+          "stop" : 1632273037639,
+          "duration" : 45
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toHaveURL",
+        "time" : {
+          "start" : 1632273037640,
+          "stop" : 1632273037640,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toHaveText",
+        "time" : {
+          "start" : 1632273037640,
+          "stop" : 1632273037645,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "locator.textContent(.checkout_complete_container>>.complete-header)",
+          "time" : {
+            "start" : 1632273037640,
+            "stop" : 1632273037645,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "expect.toHaveText",
+        "time" : {
+          "start" : 1632273037645,
+          "stop" : 1632273037655,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "locator.textContent(.checkout_complete_container>>.complete-text)",
+          "time" : {
+            "start" : 1632273037646,
+            "stop" : 1632273037655,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "expect.toHaveAttribute",
+        "time" : {
+          "start" : 1632273037655,
+          "stop" : 1632273037660,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "locator.getAttribute(.checkout_complete_container>>.pony_express)",
+          "time" : {
+            "start" : 1632273037656,
+            "stop" : 1632273037660,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 8,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1632273037660,
+        "stop" : 1632273037779,
+        "duration" : 119
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1632273037755,
+          "stop" : 1632273037779,
+          "duration" : 24
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 62,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "chromium-hd"
+  }, {
+    "name" : "suite",
+    "value" : "e2e.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo E2E: @e2e"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 17,
+        "unknown" : 0,
+        "total" : 17
+      },
+      "items" : [ {
+        "uid" : "21c85d7bbf5b4a3b",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/64//#testresult/21c85d7bbf5b4a3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631337336176,
+          "stop" : 1631337338495,
+          "duration" : 2319
+        }
+      }, {
+        "uid" : "28e09de0b5853e63",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/63//#testresult/28e09de0b5853e63",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631163757608,
+          "stop" : 1631163759709,
+          "duration" : 2101
+        }
+      }, {
+        "uid" : "c9304c7506bc256d",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/61//#testresult/c9304c7506bc256d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631097776683,
+          "stop" : 1631097778898,
+          "duration" : 2215
+        }
+      }, {
+        "uid" : "8a7a371c0f8f27b4",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/58//#testresult/8a7a371c0f8f27b4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630992509508,
+          "stop" : 1630992512019,
+          "duration" : 2511
+        }
+      }, {
+        "uid" : "13c26982bad8ef4b",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/57//#testresult/13c26982bad8ef4b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630719792153,
+          "stop" : 1630719794329,
+          "duration" : 2176
+        }
+      }, {
+        "uid" : "8a24619dba27934e",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/56//#testresult/8a24619dba27934e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630552153263,
+          "stop" : 1630552155455,
+          "duration" : 2192
+        }
+      }, {
+        "uid" : "69dda21c167a70bf",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/55//#testresult/69dda21c167a70bf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630551752955,
+          "stop" : 1630551755127,
+          "duration" : 2172
+        }
+      }, {
+        "uid" : "11f9c8b6962cd1c3",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/51//#testresult/11f9c8b6962cd1c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630003620177,
+          "stop" : 1630003622680,
+          "duration" : 2503
+        }
+      }, {
+        "uid" : "61ad25c0b6ad7f4a",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/50//#testresult/61ad25c0b6ad7f4a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630001550502,
+          "stop" : 1630001552518,
+          "duration" : 2016
+        }
+      }, {
+        "uid" : "e39064a2dd063eb7",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/47//#testresult/e39064a2dd063eb7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629951874474,
+          "stop" : 1629951877080,
+          "duration" : 2606
+        }
+      }, {
+        "uid" : "4cfa70851508a1f4",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/46//#testresult/4cfa70851508a1f4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629951599598,
+          "stop" : 1629951601527,
+          "duration" : 1929
+        }
+      }, {
+        "uid" : "3aa04ccf09805a09",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/45//#testresult/3aa04ccf09805a09",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629949465598,
+          "stop" : 1629949467999,
+          "duration" : 2401
+        }
+      }, {
+        "uid" : "3645d62ea65dcda4",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/44//#testresult/3645d62ea65dcda4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629949299963,
+          "stop" : 1629949302304,
+          "duration" : 2341
+        }
+      }, {
+        "uid" : "fa9b4aa8129962a3",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/43//#testresult/fa9b4aa8129962a3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629942788232,
+          "stop" : 1629942790853,
+          "duration" : 2621
+        }
+      }, {
+        "uid" : "6ac33aad7f6e373f",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/42//#testresult/6ac33aad7f6e373f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629940309212,
+          "stop" : 1629940311393,
+          "duration" : 2181
+        }
+      }, {
+        "uid" : "aeda73901b415c03",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/41//#testresult/aeda73901b415c03",
+        "status" : "passed",
+        "time" : {
+          "start" : 1629939712669,
+          "stop" : 1629939715276,
+          "duration" : 2607
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ab18ea3afdfec88e.json",
+  "parameterValues" : [ ]
+}

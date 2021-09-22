@@ -1,0 +1,263 @@
+{
+  "uid" : "e0095d93e6a4be5a",
+  "name" : "should be possible to sort items from Z to A",
+  "fullName" : "should be possible to sort items from Z to A",
+  "historyId" : "pixel-4 inventory.spec.js Saucedemo InventoryPage: @inventory should be possible to sort items from Z to A",
+  "time" : {
+    "start" : 1632273392526,
+    "stop" : 1632273394602,
+    "duration" : 2076
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1632273392526,
+        "stop" : 1632273392562,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1632273392534,
+          "stop" : 1632273392562,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "page.goto(https://www.saucedemo.com)",
+      "time" : {
+        "start" : 1632273392562,
+        "stop" : 1632273393219,
+        "duration" : 657
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page.evaluate",
+      "time" : {
+        "start" : 1632273393219,
+        "stop" : 1632273393223,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page.goto(/inventory.html)",
+      "time" : {
+        "start" : 1632273393223,
+        "stop" : 1632273393915,
+        "duration" : 692
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.selectOption([data-test='product_sort_container'])",
+      "time" : {
+        "start" : 1632273393917,
+        "stop" : 1632273393960,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.allInnerTexts(.inventory_item >> .inventory_item_name)",
+      "time" : {
+        "start" : 1632273393961,
+        "stop" : 1632273393973,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toStrictEqual",
+      "time" : {
+        "start" : 1632273393974,
+        "stop" : 1632273393974,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1632273393974,
+        "stop" : 1632273394602,
+        "duration" : 628
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1632273394592,
+          "stop" : 1632273394602,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "pixel-4"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "5277e1accde90516",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/64//#testresult/5277e1accde90516",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631337451640,
+          "stop" : 1631337453816,
+          "duration" : 2176
+        }
+      }, {
+        "uid" : "cd2e14e42f1b0597",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/63//#testresult/cd2e14e42f1b0597",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631163884117,
+          "stop" : 1631163886265,
+          "duration" : 2148
+        }
+      }, {
+        "uid" : "714cb1c7759c92b9",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/61//#testresult/714cb1c7759c92b9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631098127279,
+          "stop" : 1631098129506,
+          "duration" : 2227
+        }
+      }, {
+        "uid" : "fb2a20960968d4b3",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/58//#testresult/fb2a20960968d4b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630992882230,
+          "stop" : 1630992884649,
+          "duration" : 2419
+        }
+      }, {
+        "uid" : "79f81ab9835ec518",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/57//#testresult/79f81ab9835ec518",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630720153684,
+          "stop" : 1630720156160,
+          "duration" : 2476
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e0095d93e6a4be5a.json",
+  "parameterValues" : [ ]
+}

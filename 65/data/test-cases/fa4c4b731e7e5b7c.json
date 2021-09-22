@@ -1,0 +1,278 @@
+{
+  "uid" : "fa4c4b731e7e5b7c",
+  "name" : "should show username and password doesn't match",
+  "fullName" : "should show username and password doesn't match",
+  "historyId" : "pixel-4 login.spec.js Saucedemo LoginPage: @login should show username and password doesn't match",
+  "time" : {
+    "start" : 1632273410107,
+    "stop" : 1632273411236,
+    "duration" : 1129
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1632273410107,
+        "stop" : 1632273410842,
+        "duration" : 735
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1632273410114,
+          "stop" : 1632273410166,
+          "duration" : 52
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.goto",
+        "time" : {
+          "start" : 1632273410166,
+          "stop" : 1632273410842,
+          "duration" : 676
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "locator.type([data-test='username'], noname)",
+      "time" : {
+        "start" : 1632273410843,
+        "stop" : 1632273410878,
+        "duration" : 35
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.type([data-test='password'], secret_sauce)",
+      "time" : {
+        "start" : 1632273410878,
+        "stop" : 1632273410906,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(#login-button)",
+      "time" : {
+        "start" : 1632273410907,
+        "stop" : 1632273410948,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page.waitForSelector([data-test='error'])",
+      "time" : {
+        "start" : 1632273410948,
+        "stop" : 1632273410955,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toHaveText",
+      "time" : {
+        "start" : 1632273410955,
+        "stop" : 1632273410961,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "locator.textContent([data-test='error'])",
+        "time" : {
+          "start" : 1632273410956,
+          "stop" : 1632273410961,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1632273410961,
+        "stop" : 1632273411236,
+        "duration" : 275
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1632273411216,
+          "stop" : 1632273411236,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "pixel-4"
+  }, {
+    "name" : "suite",
+    "value" : "login.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo LoginPage: @login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "8dd3a4208af40e7a",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/64//#testresult/8dd3a4208af40e7a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631337459810,
+          "stop" : 1631337460876,
+          "duration" : 1066
+        }
+      }, {
+        "uid" : "28879cb238a577ec",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/63//#testresult/28879cb238a577ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631163890176,
+          "stop" : 1631163891268,
+          "duration" : 1092
+        }
+      }, {
+        "uid" : "117388d833165ce6",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/61//#testresult/117388d833165ce6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631098133346,
+          "stop" : 1631098134523,
+          "duration" : 1177
+        }
+      }, {
+        "uid" : "26a531caea57ba45",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/58//#testresult/26a531caea57ba45",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630992889716,
+          "stop" : 1630992890897,
+          "duration" : 1181
+        }
+      }, {
+        "uid" : "5dedbc1f21337e09",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/57//#testresult/5dedbc1f21337e09",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630720161368,
+          "stop" : 1630720162510,
+          "duration" : 1142
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fa4c4b731e7e5b7c.json",
+  "parameterValues" : [ ]
+}
