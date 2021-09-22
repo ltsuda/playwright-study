@@ -3,7 +3,7 @@ const test = require("../saucedemo/pages/pageFixtures")
 const { PAGES, MESSAGES, CREDENTIALS, PRODUCTS_INDEX, PRODUCTS_NAMES } = require("../saucedemo/utils/consts")
 const { setSession } = require("../saucedemo/utils/utils")
 
-test.describe("Saucedemo OverviewPage: @overview", () => {
+test.describe.parallel("Saucedemo OverviewPage: @overview", () => {
     test("should be at Overview page", async ({ page }) => {
         await setSession(page, {
             path: PAGES.OVERVIEW,

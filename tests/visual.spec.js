@@ -3,7 +3,7 @@ const test = require("../saucedemo/pages/pageFixtures")
 const { PAGES, CREDENTIALS, PRODUCTS_INDEX } = require("../saucedemo/utils/consts")
 const { setSession } = require("../saucedemo/utils/utils")
 
-test.describe("Saucedemo Visual: @visual", () => {
+test.describe.parallel("Saucedemo Visual: @visual", () => {
     test.beforeEach(async ({ baseURL, page }) => {
         await page.goto(baseURL)
     })

@@ -3,7 +3,7 @@ const test = require("../saucedemo/pages/pageFixtures")
 const { PAGES, PRODUCTS_INDEX, CREDENTIALS } = require("../saucedemo/utils/consts")
 const { setSession } = require("../saucedemo/utils/utils")
 
-test.describe("Saucedemo InventoryPage: @details", () => {
+test.describe.parallel("Saucedemo InventoryPage: @details", () => {
     test("should be at Inventory page when clicking at the back to products", async ({
         baseURL,
         inventoryItemController,

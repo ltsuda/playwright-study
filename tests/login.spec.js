@@ -2,7 +2,7 @@ const { expect } = require("@playwright/test")
 const test = require("../saucedemo/pages/pageFixtures")
 const { PAGES, ERRORS } = require("../saucedemo/utils/consts")
 
-test.describe("Saucedemo LoginPage: @login", () => {
+test.describe.parallel("Saucedemo LoginPage: @login", () => {
     test.beforeEach(async ({ loginController }) => {
         await loginController.navigate()
     })

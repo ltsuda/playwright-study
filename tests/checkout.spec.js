@@ -3,7 +3,7 @@ const test = require("../saucedemo/pages/pageFixtures")
 const { PAGES, PERSONAL_INFO, ERRORS, CREDENTIALS } = require("../saucedemo/utils/consts")
 const { setSession } = require("../saucedemo/utils/utils")
 
-test.describe("Saucedemo CheckoutPage: @checkout", () => {
+test.describe.parallel("Saucedemo CheckoutPage: @checkout", () => {
     test("should be at Checkout page", async ({ page }) => {
         await setSession(page, {
             path: PAGES.CHECKOUT,

@@ -11,7 +11,7 @@ const {
 } = require("../saucedemo/utils/consts")
 const { setSession } = require("../saucedemo/utils/utils")
 
-test.describe("Saucedemo InventoryPage: @inventory", () => {
+test.describe.parallel("Saucedemo InventoryPage: @inventory", () => {
     test("should be at Inventory page after login", async ({ page }) => {
         await setSession(page, {
             path: PAGES.INVENTORY,

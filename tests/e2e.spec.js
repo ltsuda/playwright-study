@@ -2,7 +2,7 @@ const { expect } = require("@playwright/test")
 const test = require("../saucedemo/pages/pageFixtures")
 const { PAGES, MESSAGES, IMAGES, PERSONAL_INFO } = require("../saucedemo/utils/consts")
 
-test.describe("Saucedemo E2E: @e2e", () => {
+test.describe.parallel("Saucedemo E2E: @e2e", () => {
     test.beforeEach(async ({ baseURL, page }) => {
         await page.goto(baseURL)
     })

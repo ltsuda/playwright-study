@@ -3,7 +3,7 @@ const test = require("../saucedemo/pages/pageFixtures")
 const { PAGES, MESSAGES, CREDENTIALS, IMAGES } = require("../saucedemo/utils/consts")
 const { setSession } = require("../saucedemo/utils/utils")
 
-test.describe("Saucedemo CompletedPage:  @completed", () => {
+test.describe.parallel("Saucedemo CompletedPage:  @completed", () => {
     test("should be at Completed page", async ({ page }) => {
         await setSession(page, {
             path: PAGES.COMPLETED,
