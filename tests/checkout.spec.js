@@ -4,21 +4,21 @@ const { PAGES, PERSONAL_INFO, ERRORS, CREDENTIALS } = require("../saucedemo/util
 const { setSession } = require("../saucedemo/utils/utils")
 
 test.describe.parallel("Saucedemo CheckoutPage: @checkout", () => {
-    test("should be at Checkout page", async ({ page }) => {
+    test("should be at Checkout page", async ({ baseURL, page }) => {
         await setSession(page, {
             path: PAGES.CHECKOUT,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.CHECKOUT}`)
     })
 
-    test("should go back to Cart if cancel checkout", async ({ checkoutController, page }) => {
+    test("should go back to Cart if cancel checkout", async ({ baseURL, checkoutController, page }) => {
         await setSession(page, {
             path: PAGES.CHECKOUT,
             username: CREDENTIALS.USERS.STANDARD,
         })
         await checkoutController.cancelCheckout()
-        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.CART}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.CART}`)
     })
 
     test("should show firstName error message if empty", async ({ checkoutController, page }) => {
@@ -51,7 +51,7 @@ test.describe.parallel("Saucedemo CheckoutPage: @checkout", () => {
         await expect(await checkoutController.components.errorMessageText()).toHaveText(ERRORS.PERSONAL_ZIP)
     })
 
-    test("should go to Checkout Overview page @smoke", async ({ checkoutController, page }) => {
+    test("should go to Checkout Overview page @smoke", async ({ baseURL, checkoutController, page }) => {
         await setSession(page, {
             path: PAGES.CHECKOUT,
             username: CREDENTIALS.USERS.STANDARD,
@@ -60,6 +60,6 @@ test.describe.parallel("Saucedemo CheckoutPage: @checkout", () => {
         await checkoutController.fillLastName(PERSONAL_INFO.USER1.LAST_NAME)
         await checkoutController.fillPostalCode(PERSONAL_INFO.USER1.ZIP)
         await checkoutController.continueCheckout()
-        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.OVERVIEW}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.OVERVIEW}`)
     })
 })

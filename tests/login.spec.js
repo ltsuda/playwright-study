@@ -7,8 +7,8 @@ test.describe.parallel("Saucedemo LoginPage: @login", () => {
         await loginController.navigate()
     })
 
-    test("should be at the login url", async ({ loginController }) => {
-        await expect(loginController.page).toHaveURL(`${PAGES.BASEURL}/`)
+    test("should be at the login url", async ({ baseURL, loginController }) => {
+        await expect(loginController.page).toHaveURL(`${baseURL}/`)
     })
 
     test("should show accepted users", async ({ loginController }) => {
@@ -41,10 +41,11 @@ test.describe.parallel("Saucedemo LoginPage: @login", () => {
     })
 
     test("should navigate to inventory page after successful login @smoke", async ({
+        baseURL,
         loginController,
         inventoryController,
     }) => {
         await loginController.loginWithStandardUser()
-        await expect(inventoryController.page).toHaveURL(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
+        await expect(inventoryController.page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)
     })
 })

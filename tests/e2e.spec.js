@@ -59,7 +59,7 @@ test.describe.parallel("Saucedemo E2E: @e2e", () => {
             await checkoutController.fillLastName(PERSONAL_INFO.USER1.LAST_NAME)
             await checkoutController.fillPostalCode(PERSONAL_INFO.USER1.ZIP)
             await checkoutController.continueCheckout()
-            await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.OVERVIEW}`)
+            await expect(page).toHaveURL(`${baseURL}${PAGES.OVERVIEW}`)
         })
 
         await test.step("validate item, payment and shipping information", async () => {

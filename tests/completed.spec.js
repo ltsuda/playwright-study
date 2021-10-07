@@ -4,15 +4,16 @@ const { PAGES, MESSAGES, CREDENTIALS, IMAGES } = require("../saucedemo/utils/con
 const { setSession } = require("../saucedemo/utils/utils")
 
 test.describe.parallel("Saucedemo CompletedPage:  @completed", () => {
-    test("should be at Completed page", async ({ page }) => {
+    test("should be at Completed page", async ({ baseURL, page }) => {
         await setSession(page, {
             path: PAGES.COMPLETED,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.COMPLETED}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)
     })
 
     test("should be back at Inventory page when click at the Back Home button", async ({
+        baseURL,
         completedController,
         page,
     }) => {
@@ -21,7 +22,7 @@ test.describe.parallel("Saucedemo CompletedPage:  @completed", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await completedController.navigateBackHome()
-        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)
     })
 
     test("should have a thank you header message", async ({ completedController, page }) => {
