@@ -6,12 +6,12 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Footer's HTML selectors
  */
 const footerSelectors = {
-    footerContainer: ".footer",
-    twitterSocialLink: ".footer >> .social_twitter > a",
-    facebookSocialLink: ".footer >> .social_facebook > a",
-    linkdinSocialLink: ".footer >> .social_linkedin > a",
-    copyrightText: ".footer >> .footer_copy",
-    footerImage: ".footer >> .footer_robot",
+    footerContainer: "data-test='footer'",
+    twitterSocialLink: "data-test='link-twitter'",
+    facebookSocialLink: "data-test='link-twitter'",
+    linkdinSocialLink: "data-test='link-twitter'",
+    copyrightText: "data-test='text-copyrights'",
+    footerImage: "data-test='img-swagbot'",
 }
 
 /**
@@ -32,7 +32,7 @@ class FooterComponents {
      * Get the footer's container Locator
      * @returns {Locator} Locator for 'footerContainer' selector
      */
-     footerContainer() {
+    footerContainer() {
         return this.page.locator(footerSelectors.footerContainer)
     }
 
@@ -40,7 +40,7 @@ class FooterComponents {
      * Get the twitter link Locator
      * @returns {Locator} Locator for 'twitterSocialLink' selector
      */
-     twitterLink() {
+    twitterLink() {
         return this.page.locator(footerSelectors.twitterSocialLink)
     }
 
@@ -48,7 +48,7 @@ class FooterComponents {
      * Get the facebook link Locator
      * @returns {Locator} Locator for 'facebookSocialLink' selector
      */
-     facebookLink() {
+    facebookLink() {
         return this.page.locator(footerSelectors.facebookSocialLink)
     }
 
@@ -56,7 +56,7 @@ class FooterComponents {
      * Get the linkedin link Locator
      * @returns {Locator} Locator for 'linkdinSocialLink' selector
      */
-     linkedinLink() {
+    linkedinLink() {
         return this.page.locator(footerSelectors.linkdinSocialLink)
     }
 
@@ -64,7 +64,7 @@ class FooterComponents {
      * Get the copyright text Locator
      * @returns {Locator} Locator for 'copyrightText' selector
      */
-     copyrightText() {
+    copyrightText() {
         return this.page.locator(footerSelectors.copyrightText)
     }
 
@@ -72,7 +72,7 @@ class FooterComponents {
      * Get the robot image Locator
      * @returns {Locator} Locator for 'footerImage' selector
      */
-     robotImage() {
+    robotImage() {
         return this.page.locator(footerSelectors.footerImage)
     }
 }
