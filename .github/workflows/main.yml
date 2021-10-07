@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: recursive
 
       - name: Setup Node.js/Playwright Test environment
         uses: actions/setup-node@v2.4.0
@@ -21,6 +23,7 @@ jobs:
       - run: npm ci
       - run: npx playwright install
       - run: npx playwright install-deps
+      - run: npm run beforetest:ci
       - run: npm run test:ci
 
       - name: Upload allure-results
