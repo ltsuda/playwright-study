@@ -31,10 +31,14 @@ git clone https://github.com/ltsuda/playwright-study.git --recursive
 
 #### Installing dependencies
 ```bash
-npm install
 # this will install all necessary development packages to run the tests. See package.json to see all packages installed
-npm run beforetest
+npm install
+# to install playwright's browsers
+npx playwright install
+# to install playwright's chrome
+npx playwright install chrome
 # this will install all dependencies for the Webapp submodule
+npm run beforetest
 ```
 
 #### Running the tests
