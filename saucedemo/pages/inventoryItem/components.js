@@ -6,15 +6,14 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Inventory items' HTML selectors
  */
 const inventoryItemSelectors = {
-    cartItemContainer: ".cart_item",
-    detailsItemContainer: ".inventory_details_container",
-    itemContainer: ".inventory_item",
-    itemNameText: ".inventory_item_name",
-    itemDescriptionText: ".inventory_item_desc",
-    itemPriceText: ".inventory_item_price",
-    addToCartButton: "text=/add to cart/i",
-    removeButton: "text=/remove/i",
-    backToProductsButton: "data-test='back-to-products'",
+    cartItemContainer: "data-test='item-cart'",
+    detailsItemContainer: "data-test='inventory-details-container'",
+    itemContainer: "data-test='item-inventory'",
+    itemNameText: "data-test='item-name'",
+    itemPriceText: "data-test='item-price'",
+    addToCartButton: "data-test^='button-add-to-cart'",
+    removeButton: "data-test^='button-remove'",
+    backToProductsButton: "data-test='button-back-to-products'",
 }
 
 /**
@@ -52,7 +51,7 @@ class InventoryItemComponents {
      * Get the inventory item detail's container Locator
      * @returns {Locator} Locator for 'detailsItemContainer' selector
      */
-     itemDetailContainer() {
+    itemDetailContainer() {
         return this.page.locator(inventoryItemSelectors.detailsItemContainer)
     }
 
@@ -60,7 +59,7 @@ class InventoryItemComponents {
      * Get the inventory item cart's container Locator
      * @returns {Locator} Locator for 'cartItemContainer' selector
      */
-     cartItemContainer() {
+    cartItemContainer() {
         return this.page.locator(inventoryItemSelectors.cartItemContainer)
     }
 
@@ -70,7 +69,7 @@ class InventoryItemComponents {
      * 'cart' or 'inventory
      * @returns {Locator} Locator for the item's container locator
      */
-     items(fromPage = "inventory") {
+    items(fromPage = "inventory") {
         const locator = this.switchItemLocator(fromPage)
         return this.page.locator(locator)
     }
@@ -81,7 +80,7 @@ class InventoryItemComponents {
      * 'cart' or 'inventory
      * @returns {Locator} Locator for the 'itemNameText' selector
      */
-     names(fromPage = "inventory") {
+    names(fromPage = "inventory") {
         const items = this.items(fromPage)
         return items.locator(inventoryItemSelectors.itemNameText)
     }
@@ -92,7 +91,7 @@ class InventoryItemComponents {
      * 'cart' or 'inventory
      * @returns {Locator} Locator for the 'itemPriceText' selector
      */
-     prices(fromPage = "inventory") {
+    prices(fromPage = "inventory") {
         const items = this.items(fromPage)
         return items.locator(inventoryItemSelectors.itemPriceText)
     }
@@ -104,7 +103,7 @@ class InventoryItemComponents {
      * @param {Number} picker - the item's index
      * @returns {Locator} Locator for an item based on its name or locator nth
      */
-     item(fromPage = "inventory", picker) {
+    item(fromPage = "inventory", picker) {
         const items = this.items(fromPage)
         if (typeof picker === "string") {
             return items.locator(`text=${picker}`).first()
@@ -119,7 +118,7 @@ class InventoryItemComponents {
      * 'cart' or 'inventory
      * @returns {Locator} Locator for 'addToCartButton' selector
      */
-     addToCartButton(fromPage) {
+    addToCartButton(fromPage) {
         const locator = this.switchItemLocator(fromPage)
         return this.page.locator(`${locator}` + ">>" + `${inventoryItemSelectors.addToCartButton}`)
     }
@@ -130,7 +129,7 @@ class InventoryItemComponents {
      * 'cart' or 'inventory
      * @returns {Locator} Locator for 'removeButton' selector
      */
-     removeItemsButton(fromPage) {
+    removeItemsButton(fromPage) {
         const locator = this.switchItemLocator(fromPage)
         return this.page.locator(`${locator}` + ">>" + `${inventoryItemSelectors.removeButton}`)
     }
@@ -139,7 +138,7 @@ class InventoryItemComponents {
      * Get the back to products button Locator
      * @returns {Locator} Locator for 'backToProductsButton' selector
      */
-     backToProductsButton() {
+    backToProductsButton() {
         return this.page.locator(inventoryItemSelectors.backToProductsButton)
     }
 }
