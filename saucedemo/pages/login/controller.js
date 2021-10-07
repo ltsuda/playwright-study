@@ -46,8 +46,8 @@ class LoginController {
      * Validate if "loginContainer" and  "credentialsContainer" elements are visible
      */
     async screenIsVisible() {
-        const loginContainerSelector = await this.components.loginContainer()
-        const credentialsContainerSelector = await this.components.credentialsContainer()
+        const loginContainerSelector = this.components.loginContainer()
+        const credentialsContainerSelector = this.components.credentialsContainer()
         await expect(loginContainerSelector).toBeVisible()
         await expect(credentialsContainerSelector).toBeVisible()
     }
@@ -56,7 +56,7 @@ class LoginController {
      * Fill up the username input
      */
     async fillUserName(username) {
-        const usernameSelector = await this.components.usernameInput()
+        const usernameSelector = this.components.usernameInput()
         await usernameSelector.type(username)
     }
 
@@ -64,7 +64,7 @@ class LoginController {
      * Fill up the password input
      */
     async fillPassword(password) {
-        const passwordSelector = await this.components.passwordInput()
+        const passwordSelector = this.components.passwordInput()
         await passwordSelector.type(password)
     }
 
@@ -72,7 +72,7 @@ class LoginController {
      * Click at the Login button
      */
     async submitLogin() {
-        const loginSelector = await this.components.loginButton()
+        const loginSelector = this.components.loginButton()
         await loginSelector.click()
     }
 
@@ -121,7 +121,7 @@ class LoginController {
      * @returns {String[]} the list of usernames from the credentials section
      */
     async getAcceptedUsers() {
-        let acceptedUsers = await this.components.acceptedUsersText()
+        let acceptedUsers = this.components.acceptedUsersText()
         acceptedUsers = await acceptedUsers.innerText()
         return acceptedUsers.split("\n").filter(Boolean).slice(1)
     }

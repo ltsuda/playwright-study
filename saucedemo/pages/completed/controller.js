@@ -32,7 +32,7 @@ class CompletedController {
      * Validate if "completedContainer" element is visible
      */
     async screenIsVisible() {
-        const completedContainerElement = await this.components.completedContainer()
+        const completedContainerElement = this.components.completedContainer()
         await expect(completedContainerElement).toBeVisible()
     }
 
@@ -40,7 +40,7 @@ class CompletedController {
      * Click at the Back Home button
      */
     async navigateBackHome() {
-        const backHomeButton = await this.components.completedBackButton()
+        const backHomeButton = this.components.completedBackButton()
         await backHomeButton.click()
     }
 }

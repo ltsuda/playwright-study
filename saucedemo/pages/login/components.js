@@ -6,14 +6,14 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Login's HTML selectors
  */
 const loginSelectors = {
-    loginContainer: ".login_wrapper",
-    credentialsContainer: ".login_credentials_wrap",
-    usernameInput: "[data-test='username']",
-    passwordInput: "[data-test='password']",
-    errorText: "[data-test='error']",
-    loginButton: "#login-button",
-    acceptedUsersText: "#login_credentials",
-    acceptedPasswordText: ".login_password",
+    loginContainer: "[data-test='login-container']",
+    credentialsContainer: "[data-test='login-credentials-container']",
+    usernameInput: "[data-test='input-username']",
+    passwordInput: "[data-test='input-password']",
+    errorText: "[data-test='error-text']",
+    loginButton: "[data-test='button-login']",
+    acceptedUsersText: "[data-test='section-usernames']",
+    acceptedPasswordText: "[data-test='section-password']",
 }
 
 /**
@@ -34,7 +34,7 @@ class LoginComponents {
      * Get the Login's container Locator
      * @returns {Locator} Locator for 'loginContainer' class
      */
-    async loginContainer() {
+    loginContainer() {
         return this.page.locator(loginSelectors.loginContainer)
     }
 
@@ -42,7 +42,7 @@ class LoginComponents {
      * Get the credentials container's Locator
      * @returns {Locator} Locator for 'credentialsContainer' class
      */
-    async credentialsContainer() {
+    credentialsContainer() {
         return this.page.locator(loginSelectors.credentialsContainer)
     }
 
@@ -50,7 +50,7 @@ class LoginComponents {
      * Get the credentials text's Locator
      * @returns {Locator} Locator for 'acceptedUsersText' id
      */
-    async acceptedUsersText() {
+    acceptedUsersText() {
         return this.page.locator(loginSelectors.acceptedUsersText)
     }
 
@@ -58,7 +58,7 @@ class LoginComponents {
      * Get the password text's Locator
      * @returns {Locator} Locator for 'acceptedPasswordText' class
      */
-    async acceptedPasswordText() {
+    acceptedPasswordText() {
         return this.page.locator(loginSelectors.acceptedPasswordText)
     }
 
@@ -66,7 +66,7 @@ class LoginComponents {
      * Get the error message text's Locator
      * @returns {Locator} Locator for 'errorText' data-test selector
      */
-    async errorMessageText() {
+    errorMessageText() {
         return this.page.locator(loginSelectors.errorText)
     }
 
@@ -74,7 +74,7 @@ class LoginComponents {
      * Get the username input Locator
      * @returns {Locator} Locator for 'usernameInput' data-test selector
      */
-    async usernameInput() {
+    usernameInput() {
         return this.page.locator(loginSelectors.usernameInput)
     }
 
@@ -82,7 +82,7 @@ class LoginComponents {
      * Get the password input Locator
      * @returns {Locator} Locator for 'passwordInput' data-test selector
      */
-    async passwordInput() {
+    passwordInput() {
         return this.page.locator(loginSelectors.passwordInput)
     }
 
@@ -90,7 +90,7 @@ class LoginComponents {
      * Get the login button Locator
      * @returns {Locator} Locator for 'loginButton' id
      */
-    async loginButton() {
+    loginButton() {
         return this.page.locator(loginSelectors.loginButton)
     }
 }

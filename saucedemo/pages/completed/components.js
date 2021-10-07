@@ -31,7 +31,7 @@ class CompletedComponents {
      * Get the checkout-completed's container Locator
      * @returns {Locator} Locator for 'completedContainer' selector
      */
-    async completedContainer() {
+     completedContainer() {
         return this.page.locator(completedSelectors.completedContainer)
     }
 
@@ -39,7 +39,7 @@ class CompletedComponents {
      * Get the header text Locator
      * @returns {Locator} Locator for 'completedHeaderText' selector
      */
-    async completedHeaderText() {
+     completedHeaderText() {
         return this.page.locator(
             `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedHeaderText}`
         )
@@ -49,7 +49,7 @@ class CompletedComponents {
      * Get the completed description text Locator
      * @returns {Locator} Locator for 'completedText' selector
      */
-    async completedText() {
+     completedText() {
         return this.page.locator(
             `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedText}`
         )
@@ -59,7 +59,7 @@ class CompletedComponents {
      * Get the completed image Locator
      * @returns {Locator} Locator for 'errorMessageText' selector
      */
-    async completedImage() {
+     completedImage() {
         return this.page.locator(
             `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedImage}`
         )
@@ -69,7 +69,7 @@ class CompletedComponents {
      * Get the back to home button Locator
      * @returns {Locator} Locator for 'completedBackButton' selector
      */
-    async completedBackButton() {
+     completedBackButton() {
         return this.page.locator(
             `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedBackButton}`
         )

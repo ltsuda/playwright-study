@@ -32,7 +32,7 @@ class InventoryController {
      * Validate if "inventoryContainer" element is visible
      */
     async screenIsVisible() {
-        const inventoryContainerLocator = await this.components.inventoryContainer()
+        const inventoryContainerLocator = this.components.inventoryContainer()
         await expect(inventoryContainerLocator).toBeVisible()
     }
 }

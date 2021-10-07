@@ -52,7 +52,7 @@ class InventoryItemComponents {
      * Get the inventory item detail's container Locator
      * @returns {Locator} Locator for 'detailsItemContainer' selector
      */
-    async itemDetailContainer() {
+     itemDetailContainer() {
         return this.page.locator(inventoryItemSelectors.detailsItemContainer)
     }
 
@@ -60,7 +60,7 @@ class InventoryItemComponents {
      * Get the inventory item cart's container Locator
      * @returns {Locator} Locator for 'cartItemContainer' selector
      */
-    async cartItemContainer() {
+     cartItemContainer() {
         return this.page.locator(inventoryItemSelectors.cartItemContainer)
     }
 
@@ -70,7 +70,7 @@ class InventoryItemComponents {
      * 'cart' or 'inventory
      * @returns {Locator} Locator for the item's container locator
      */
-    async items(fromPage = "inventory") {
+     items(fromPage = "inventory") {
         const locator = this.switchItemLocator(fromPage)
         return this.page.locator(locator)
     }
@@ -81,8 +81,8 @@ class InventoryItemComponents {
      * 'cart' or 'inventory
      * @returns {Locator} Locator for the 'itemNameText' selector
      */
-    async names(fromPage = "inventory") {
-        const items = await this.items(fromPage)
+     names(fromPage = "inventory") {
+        const items = this.items(fromPage)
         return items.locator(inventoryItemSelectors.itemNameText)
     }
 
@@ -92,8 +92,8 @@ class InventoryItemComponents {
      * 'cart' or 'inventory
      * @returns {Locator} Locator for the 'itemPriceText' selector
      */
-    async prices(fromPage = "inventory") {
-        const items = await this.items(fromPage)
+     prices(fromPage = "inventory") {
+        const items = this.items(fromPage)
         return items.locator(inventoryItemSelectors.itemPriceText)
     }
 
@@ -104,12 +104,12 @@ class InventoryItemComponents {
      * @param {Number} picker - the item's index
      * @returns {Locator} Locator for an item based on its name or locator nth
      */
-    async item(fromPage = "inventory", picker) {
-        const items = await this.items(fromPage)
+     item(fromPage = "inventory", picker) {
+        const items = this.items(fromPage)
         if (typeof picker === "string") {
             return items.locator(`text=${picker}`).first()
         } else {
-            return await items.nth(picker)
+            return items.nth(picker)
         }
     }
 
@@ -119,7 +119,7 @@ class InventoryItemComponents {
      * 'cart' or 'inventory
      * @returns {Locator} Locator for 'addToCartButton' selector
      */
-    async addToCartButton(fromPage) {
+     addToCartButton(fromPage) {
         const locator = this.switchItemLocator(fromPage)
         return this.page.locator(`${locator}` + ">>" + `${inventoryItemSelectors.addToCartButton}`)
     }
@@ -130,7 +130,7 @@ class InventoryItemComponents {
      * 'cart' or 'inventory
      * @returns {Locator} Locator for 'removeButton' selector
      */
-    async removeItemsButton(fromPage) {
+     removeItemsButton(fromPage) {
         const locator = this.switchItemLocator(fromPage)
         return this.page.locator(`${locator}` + ">>" + `${inventoryItemSelectors.removeButton}`)
     }
@@ -139,7 +139,7 @@ class InventoryItemComponents {
      * Get the back to products button Locator
      * @returns {Locator} Locator for 'backToProductsButton' selector
      */
-    async backToProductsButton() {
+     backToProductsButton() {
         return this.page.locator(inventoryItemSelectors.backToProductsButton)
     }
 }

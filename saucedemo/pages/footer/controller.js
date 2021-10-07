@@ -24,7 +24,7 @@ class FooterController {
      * Validate if "footerContainer" element is visible
      */
     async componentIsVisible() {
-        const footerContainerElement = await this.components.footerContainer()
+        const footerContainerElement = this.components.footerContainer()
         await expect(footerContainerElement).toBeVisible()
     }
 }

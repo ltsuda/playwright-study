@@ -32,7 +32,7 @@ class FooterComponents {
      * Get the footer's container Locator
      * @returns {Locator} Locator for 'footerContainer' selector
      */
-    async footerContainer() {
+     footerContainer() {
         return this.page.locator(footerSelectors.footerContainer)
     }
 
@@ -40,7 +40,7 @@ class FooterComponents {
      * Get the twitter link Locator
      * @returns {Locator} Locator for 'twitterSocialLink' selector
      */
-    async twitterLink() {
+     twitterLink() {
         return this.page.locator(footerSelectors.twitterSocialLink)
     }
 
@@ -48,7 +48,7 @@ class FooterComponents {
      * Get the facebook link Locator
      * @returns {Locator} Locator for 'facebookSocialLink' selector
      */
-    async facebookLink() {
+     facebookLink() {
         return this.page.locator(footerSelectors.facebookSocialLink)
     }
 
@@ -56,7 +56,7 @@ class FooterComponents {
      * Get the linkedin link Locator
      * @returns {Locator} Locator for 'linkdinSocialLink' selector
      */
-    async linkedinLink() {
+     linkedinLink() {
         return this.page.locator(footerSelectors.linkdinSocialLink)
     }
 
@@ -64,7 +64,7 @@ class FooterComponents {
      * Get the copyright text Locator
      * @returns {Locator} Locator for 'copyrightText' selector
      */
-    async copyrightText() {
+     copyrightText() {
         return this.page.locator(footerSelectors.copyrightText)
     }
 
@@ -72,7 +72,7 @@ class FooterComponents {
      * Get the robot image Locator
      * @returns {Locator} Locator for 'footerImage' selector
      */
-    async robotImage() {
+     robotImage() {
         return this.page.locator(footerSelectors.footerImage)
     }
 }

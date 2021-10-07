@@ -27,7 +27,7 @@ class TitleHeaderComponents {
      * Get the sort dropdown Locator
      * @returns {Locator} Locator for 'sortDropdown' data-test selector
      */
-    async sortDropdown() {
+     sortDropdown() {
         return this.page.locator(titleHeaderSelectors.sortDropdown)
     }
 }

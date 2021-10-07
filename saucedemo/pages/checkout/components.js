@@ -34,7 +34,7 @@ class CheckoutComponents {
      * Get the checkout's container Locator
      * @returns {Locator} Locator for 'checkoutContainer' selector
      */
-    async checkoutContainer() {
+     checkoutContainer() {
         return this.page.locator(checkoutSelectors.checkoutContainer)
     }
 
@@ -42,7 +42,7 @@ class CheckoutComponents {
      * Get the cancel button Locator
      * @returns {Locator} Locator for 'cancelButton' selector
      */
-    async cancelButton() {
+     cancelButton() {
         return this.page.locator(checkoutSelectors.cancelButton)
     }
 
@@ -50,7 +50,7 @@ class CheckoutComponents {
      * Get the continue button Locator
      * @returns {Locator} Locator for 'continueButton' selector
      */
-    async continueButton() {
+     continueButton() {
         return this.page.locator(checkoutSelectors.continueButton)
     }
 
@@ -58,7 +58,7 @@ class CheckoutComponents {
      * Get the error message text Locator
      * @returns {Locator} Locator for 'errorMessageText' selector
      */
-    async errorMessageText() {
+     errorMessageText() {
         return this.page.locator(checkoutSelectors.errorMessageText)
     }
 
@@ -66,7 +66,7 @@ class CheckoutComponents {
      * Get the first name input Locator
      * @returns {Locator} Locator for 'firstNameInput' selector
      */
-    async firstNameInput() {
+     firstNameInput() {
         return this.page.locator(`${checkoutSelectors.checkoutForm}` + ">>" + `${checkoutSelectors.firstNameInput}`)
     }
 
@@ -74,7 +74,7 @@ class CheckoutComponents {
      * Get the last name input Locator
      * @returns {Locator} Locator for 'lastNameInput' selector
      */
-    async lastNameInput() {
+     lastNameInput() {
         return this.page.locator(`${checkoutSelectors.checkoutForm}` + ">>" + `${checkoutSelectors.lastNameInput}`)
     }
 
@@ -82,7 +82,7 @@ class CheckoutComponents {
      * Get the postal code input Locator
      * @returns {Locator} Locator for 'postalCodeInput' selector
      */
-    async postalCodeInput() {
+     postalCodeInput() {
         return this.page.locator(`${checkoutSelectors.checkoutForm}` + ">>" + `${checkoutSelectors.postalCodeInput}`)
     }
 }
