@@ -1,0 +1,290 @@
+{
+  "uid" : "9b4e6920cfc5f660",
+  "name" : "should be possible to add product to cart @smoke",
+  "fullName" : "should be possible to add product to cart @smoke",
+  "historyId" : "iphone-8 inventory.spec.js Saucedemo InventoryPage: @inventory should be possible to add product to cart @smoke",
+  "time" : {
+    "start" : 1633571128263,
+    "stop" : 1633571130747,
+    "duration" : 2484
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1633571128264,
+        "stop" : 1633571128502,
+        "duration" : 238
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1633571128279,
+          "stop" : 1633571128502,
+          "duration" : 223
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "page.goto(https://www.saucedemo.com)",
+      "time" : {
+        "start" : 1633571128502,
+        "stop" : 1633571129298,
+        "duration" : 796
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page.evaluate",
+      "time" : {
+        "start" : 1633571129299,
+        "stop" : 1633571129306,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "page.goto(/inventory.html)",
+      "time" : {
+        "start" : 1633571129307,
+        "stop" : 1633571130159,
+        "duration" : 852
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(.inventory_item>>text=/add to cart/i >> nth=0)",
+      "time" : {
+        "start" : 1633571130159,
+        "stop" : 1633571130314,
+        "duration" : 155
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toHaveText",
+      "time" : {
+        "start" : 1633571130314,
+        "stop" : 1633571130453,
+        "duration" : 139
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "object.expect.toHaveText(.shopping_cart_link>.shopping_cart_badge)",
+        "time" : {
+          "start" : 1633571130315,
+          "stop" : 1633571130452,
+          "duration" : 137
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1633571130453,
+        "stop" : 1633571130748,
+        "duration" : 295
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1633571130738,
+          "stop" : 1633571130740,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "iphone-8"
+  }, {
+    "name" : "suite",
+    "value" : "inventory.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo InventoryPage: @inventory"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 9,
+        "unknown" : 0,
+        "total" : 9
+      },
+      "items" : [ {
+        "uid" : "1b2c995547508fa5",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/67//#testresult/1b2c995547508fa5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633097658534,
+          "stop" : 1633097661588,
+          "duration" : 3054
+        }
+      }, {
+        "uid" : "1bf38c15d4a794e6",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/66//#testresult/1bf38c15d4a794e6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632770885339,
+          "stop" : 1632770887801,
+          "duration" : 2462
+        }
+      }, {
+        "uid" : "5d2860be6962d154",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/65//#testresult/5d2860be6962d154",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632273339002,
+          "stop" : 1632273341352,
+          "duration" : 2350
+        }
+      }, {
+        "uid" : "c7f0487ee7e663a4",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/64//#testresult/c7f0487ee7e663a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631337404166,
+          "stop" : 1631337406582,
+          "duration" : 2416
+        }
+      }, {
+        "uid" : "cf258b2056808f62",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/63//#testresult/cf258b2056808f62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631163834227,
+          "stop" : 1631163836802,
+          "duration" : 2575
+        }
+      }, {
+        "uid" : "48bc6f3151c52e3d",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/61//#testresult/48bc6f3151c52e3d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631098077909,
+          "stop" : 1631098080417,
+          "duration" : 2508
+        }
+      }, {
+        "uid" : "c8b430e8d3dc74b5",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/58//#testresult/c8b430e8d3dc74b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630992829797,
+          "stop" : 1630992832309,
+          "duration" : 2512
+        }
+      }, {
+        "uid" : "50ac27b79046d77d",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/57//#testresult/50ac27b79046d77d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630720103557,
+          "stop" : 1630720106142,
+          "duration" : 2585
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9b4e6920cfc5f660.json",
+  "parameterValues" : [ ]
+}
