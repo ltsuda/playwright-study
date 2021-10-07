@@ -29,13 +29,6 @@ class NavigationBarController {
     }
 
     /**
-     * Validate if "navDetailContainer" element is visible
-     */
-    async componenDetailIsVisible() {
-        const navDetailContainerLocator = this.components.navDetailContainer()
-        await expect(navDetailContainerLocator).toBeVisible()
-    }
-    /**
      * Click at the side menu button
      */
     async openMenu() {
@@ -82,7 +75,6 @@ class NavigationBarController {
         const cartButtonLocator = this.components.cartLink()
         await cartButtonLocator.click()
     }
-
 }
 
 module.exports = { NavigationBarController }

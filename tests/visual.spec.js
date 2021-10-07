@@ -28,9 +28,9 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
             path: `${PAGES.INVENTORY_ITEM}?id=${PRODUCTS_INDEX.JACKET}`,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await navigationBarController.componenDetailIsVisible()
-        const navigationBarDetailElement = await navigationBarController.components.navDetailContainer()
-        expect(await navigationBarDetailElement.screenshot({ fullPage: true })).toMatchSnapshot(
+        await navigationBarController.componentIsVisible()
+        const navigationBarElement = await navigationBarController.components.navContainer()
+        expect(await navigationBarElement.screenshot({ fullPage: true })).toMatchSnapshot(
             "navigationbar-item-screen.png"
         )
     })
