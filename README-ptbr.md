@@ -10,7 +10,7 @@ Repositório com objetivo de aprender um novo framework de testes E2E utilizando
 <img src="https://www.saucedemo.com/static/media/Login_Bot_graphic.20658452.png" width=120>
 </a>
 
-O website utilizado nesse repositório é um e-commerce de demonstração da [SauceLabs Demo](https://www.saucedemo.com/)
+O website utilizado nesse repositório é um e-commerce de demonstração da [SauceLabs Demo](https://www.saucedemo.com/) mas sendo executado localmente utilizando [Sample-app-web](https://github.com/ltsuda/sample-app-web) que é uma cópia do código fonte original
 
 
 ## Instalação e Execução
@@ -22,15 +22,18 @@ O website utilizado nesse repositório é um e-commerce de demonstração da [Sa
  - Java 8+ (Opcional) para o [allure-commandline](https://github.com/allure-framework/allure-npm#:~:text=Allure%20Commandline%20is%20a%20tool%20to%20generate%20Allure,you%20can%20get%20it%20installed%20directly%20from%20NPM.) para gerar os relatório de resultados e rodar o servidor web Allure-Reports
  - Docker (Opcional) para executar os testes em container
 
-#### Clonando o repositório
+#### Clonando o repositório e submódulos
 
 ```text
-git clone https://github.com/ltsuda/playwright-study.git
+git clone https://github.com/ltsuda/playwright-study.git --recursive
 ```
 
 #### Instalando dependências
 ```bash
-npm install -D
+npm install
+npx playwright install
+npx playwright install chrome
+npm run beforetest
 ```
 
 #### Executando os testes
@@ -156,10 +159,11 @@ Server started at <http://172.17.0.2:7777/>. Press <Ctrl+C> to exit
 │   └── utils
 │       ├── consts.js
 │       └── utils.js
-└── tests
-    ├── *.spec.js
-    └── visual.spec.js-snapshots
-        └── *.png
+├── tests
+│   ├── *.spec.js
+│   └── visual.spec.js-snapshots
+│      └── *.png
+└── webapp
 ```
  - [.github/workflows](https://github.com/ltsuda/playwright-study/tree/main/.github/workflows): diretório com arquivos de fluxo de trabalho que são executados em todo evento `push` para a branch `main` ou em todo evento de `pull request` aberto.
    - main.yaml: executa todos os projetos de testes no Ubuntu, exceto os com tag @visual, gerando o relatório de resultados para o github-pages.
@@ -171,3 +175,4 @@ Server started at <http://172.17.0.2:7777/>. Press <Ctrl+C> to exit
  - [saucedemo/utils](https://github.com/ltsuda/playwright-study/tree/main/saucedemo/utils): diretório com um arquivo que contém todas as constantes utilizadas nos testes como os caminhos das páginas (URL), mensagens de erro, etc. E outro com funções auxiliares como a que configura os cookies da página para iniciar os testes já autenticados.
  - [tests](https://github.com/ltsuda/playwright-study/tree/main/tests): diretório com todos os arquivos de teste, incluindo os testes E2E e visuais.
  - [tests/visual.spec.js-snapshots](https://github.com/ltsuda/playwright-study/tree/main/tests/visual.spec.js-snapshots): diretório com os arquivos de imagem padrões para os testes visuais onde são comparadas durante a execução dos testes.
+ - [webapp](https://github.com/ltsuda/playwright-study/tree/main/webapp): diretório com o código fonte do website saucelabs demo que é utilizado para inicializar o servidor web para execução dos testes, ao invés de utilizar o website público https://www.saucedemo.com/

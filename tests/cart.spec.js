@@ -5,6 +5,7 @@ const { setSession } = require("../saucedemo/utils/utils")
 
 test.describe.parallel("Saucedemo CartPage: @cart", () => {
     test("should be back at Inventory page when click at the continue shopping button", async ({
+        baseURL,
         cartController,
         page,
     }) => {
@@ -13,16 +14,16 @@ test.describe.parallel("Saucedemo CartPage: @cart", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await cartController.continueShopping()
-        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)
     })
 
-    test("should be at Checkout page when click at the checkout button", async ({ cartController, page }) => {
+    test("should be at Checkout page when click at the checkout button", async ({ baseURL, cartController, page }) => {
         await setSession(page, {
             path: PAGES.CART,
             username: CREDENTIALS.USERS.STANDARD,
         })
         await cartController.navigateToCheckout()
-        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.CHECKOUT}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.CHECKOUT}`)
     })
 
     test("should match cart badge with items in cart", async ({

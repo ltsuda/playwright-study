@@ -12,21 +12,25 @@ const {
 const { setSession } = require("../saucedemo/utils/utils")
 
 test.describe.parallel("Saucedemo InventoryPage: @inventory", () => {
-    test("should be at Inventory page after login", async ({ page }) => {
+    test("should be at Inventory page after login", async ({ baseURL, page }) => {
         await setSession(page, {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)
     })
 
-    test("should be at Cart page when clicking at the cart button", async ({ navigationBarController, page }) => {
+    test("should be at Cart page when clicking at the cart button", async ({
+        baseURL,
+        navigationBarController,
+        page,
+    }) => {
         await setSession(page, {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
         await navigationBarController.navigateToCart()
-        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.CART}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.CART}`)
     })
 
     test("should show a list of items @smoke", async ({ inventoryItemController, page }) => {

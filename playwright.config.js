@@ -9,9 +9,17 @@ const config = {
         toMatchSnapshot: { threshold: 0.2 },
     },
 
+    webServer: {
+        command: "npm start",
+        port: 3000,
+        timeout: 60 * 1000,
+        reuseExistingServer: !process.env.CI,
+        cwd: "webapp"
+    },
+
     use: {
         headless: true,
-        baseURL: "https://www.saucedemo.com",
+        baseURL: "http://localhost:3000",
         screenshot: "only-on-failure",
         trace: "on-first-retry",
         video: "on-first-retry",

@@ -4,30 +4,38 @@ const { PAGES, MESSAGES, CREDENTIALS, PRODUCTS_INDEX, PRODUCTS_NAMES } = require
 const { setSession } = require("../saucedemo/utils/utils")
 
 test.describe.parallel("Saucedemo OverviewPage: @overview", () => {
-    test("should be at Overview page", async ({ page }) => {
+    test("should be at Overview page", async ({ baseURL, page }) => {
         await setSession(page, {
             path: PAGES.OVERVIEW,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.OVERVIEW}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.OVERVIEW}`)
     })
 
-    test("should be back at Inventory page when click at the cancel button", async ({ overviewController, page }) => {
+    test("should be back at Inventory page when click at the cancel button", async ({
+        baseURL,
+        overviewController,
+        page,
+    }) => {
         await setSession(page, {
             path: PAGES.OVERVIEW,
             username: CREDENTIALS.USERS.STANDARD,
         })
         await overviewController.cancelCheckout()
-        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)
     })
 
-    test("should be at Completed page when click at the finish button", async ({ overviewController, page }) => {
+    test("should be at Completed page when click at the finish button", async ({
+        baseURL,
+        overviewController,
+        page,
+    }) => {
         await setSession(page, {
             path: PAGES.OVERVIEW,
             username: CREDENTIALS.USERS.STANDARD,
         })
         await overviewController.finishCheckout()
-        await expect(page).toHaveURL(`${PAGES.BASEURL}${PAGES.COMPLETED}`)
+        await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)
     })
 
     test("should have the added items on the Overview Checkout @smoke", async ({ inventoryItemController, page }) => {

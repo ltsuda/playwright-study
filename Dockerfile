@@ -9,6 +9,10 @@ COPY package*.json ./
 RUN npm ci
 RUN npx playwright install chrome
 
+COPY webapp ./webapp
+
+RUN npm run beforetest
+
 COPY . .
 
 CMD [ "npm", "run", "test:docker" ]

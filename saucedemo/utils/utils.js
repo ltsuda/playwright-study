@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 const { Page } = require("@playwright/test")
 /* eslint-enable no-unused-vars */
-const { PAGES } = require("./consts")
 
 /**
  * Choose a random integer between 0 and @max
@@ -23,11 +22,10 @@ function randomInt(max) {
  * @param {String} data.username - username credentials to authenticate on website
  */
 async function setSession(page, data = {}) {
-    const { BASEURL } = PAGES
     const { path, products = [], username = "" } = data
     const productsContent = products.length > 0 ? JSON.stringify(products) : "[]"
 
-    await page.goto(BASEURL, { waitUntil: "networkidle" })
+    await page.goto("/", { waitUntil: "networkidle" })
 
     await page.evaluate(
         ([username, productsContent]) => {

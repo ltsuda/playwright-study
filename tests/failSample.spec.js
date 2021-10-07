@@ -8,11 +8,12 @@ test.use({ video: "on", screenshot: "on", trace: "on" })
 test.fail()
 
 test("marked as 'should fail' on purpose to show expected error evidences @login @should-fail", async ({
+    baseURL,
     loginController,
     inventoryController,
 }, testInfo) => {
     test.skip(testInfo.project.name !== "chromium-hd")
     await loginController.navigate()
     await loginController.loginWithoutUser()
-    await expect(inventoryController.page).toHaveURL(`${PAGES.BASEURL}${PAGES.INVENTORY}`)
+    await expect(inventoryController.page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)
 })

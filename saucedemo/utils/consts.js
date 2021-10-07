@@ -1,5 +1,4 @@
 const PAGES = {
-    BASEURL: "https://www.saucedemo.com",
     LOGIN: "",
     INVENTORY: "/inventory.html",
     INVENTORY_ITEM: "/inventory-item.html",
