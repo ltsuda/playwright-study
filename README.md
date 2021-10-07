@@ -11,9 +11,7 @@ Repository with the purpose of learning a new E2E testing framework using Micros
 <img src="https://www.saucedemo.com/static/media/Login_Bot_graphic.20658452.png" width=120>
 </a>
 
-The website used in this repository is e-commerce sample from [SauceLabs Demo](https://www.saucedemo.com/)
-
-
+The website used in this repository is e-commerce sample from [SauceLabs Demo](https://www.saucedemo.com/) but running locally using [Sample-app-web](https://github.com/ltsuda/sample-app-web) that is a fork from the original code
 
 
 ## Installation and execution
@@ -25,16 +23,18 @@ The website used in this repository is e-commerce sample from [SauceLabs Demo](h
  - Java 8+ (Optional) for [allure-commandline](https://github.com/allure-framework/allure-npm#:~:text=Allure%20Commandline%20is%20a%20tool%20to%20generate%20Allure,you%20can%20get%20it%20installed%20directly%20from%20NPM.) to be able to generate and serve the reports
  - Docker (Optional) for running tests on container
 
-#### Cloning repository
+#### Cloning repository with submodule
 
 ```text
-git clone https://github.com/ltsuda/playwright-study.git
+git clone https://github.com/ltsuda/playwright-study.git --recursive
 ```
 
 #### Installing dependencies
 ```bash
-npm install -D
+npm install
 # this will install all necessary development packages to run the tests. See package.json to see all packages installed
+npm run beforetest
+# this will install all dependencies for the Webapp submodule
 ```
 
 #### Running the tests
@@ -160,10 +160,11 @@ Server started at <http://172.17.0.2:7777/>. Press <Ctrl+C> to exit
 │   └── utils
 │       ├── consts.js
 │       └── utils.js
-└── tests
-    ├── *.spec.js
-    └── visual.spec.js-snapshots
-        └── *.png
+├── tests
+│   ├── *.spec.js
+│   └── visual.spec.js-snapshots
+│      └── *.png
+└── webapp
 ```
  - [.github/workflows](https://github.com/ltsuda/playwright-study/tree/main/.github/workflows): directory with github workflows that runs at every `push` to main or every `pull request` open.
    - main.yaml: run all test projects on Ubuntu, except the ones with tag @visual, generates the allure report and post to github-pages
@@ -175,3 +176,4 @@ Server started at <http://172.17.0.2:7777/>. Press <Ctrl+C> to exit
  - [saucedemo/utils](https://github.com/ltsuda/playwright-study/tree/main/saucedemo/utils): directory with a file containing all constants used in the tests like all the path URLs, error messages, etc. And the other file with some utilities functions like the one that sets the page's cookie to start some tests already authenticated.
  - [tests](https://github.com/ltsuda/playwright-study/tree/main/tests): directory with all test specs files, including the e2e and visual ones.
  - [tests/visual.spec.js-snapshots](https://github.com/ltsuda/playwright-study/tree/main/tests/visual.spec.js-snapshots): directory with the golden images for the visual test cases using the chromium-hd project.
+ - [webapp](https://github.com/ltsuda/playwright-study/tree/main/webapp): directory with the saucelabs demo source code that it's used to startup the webserver to run the tests, instead of using the public website https://www.saucedemo.com/
