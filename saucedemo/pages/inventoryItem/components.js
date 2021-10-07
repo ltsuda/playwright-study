@@ -14,7 +14,7 @@ const inventoryItemSelectors = {
     itemPriceText: ".inventory_item_price",
     addToCartButton: "text=/add to cart/i",
     removeButton: "text=/remove/i",
-    backToProductsButton: "[data-test='back-to-products']",
+    backToProductsButton: "data-test='back-to-products'",
 }
 
 /**

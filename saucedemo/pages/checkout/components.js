@@ -8,12 +8,12 @@ const { Page, Locator } = require("@playwright/test")
 const checkoutSelectors = {
     checkoutContainer: ".checkout_info_container",
     checkoutForm: ".checkout_info",
-    firstNameInput: "[data-test='firstName']",
-    lastNameInput: "[data-test='lastName']",
-    postalCodeInput: "[data-test='postalCode']",
-    cancelButton: "[data-test='cancel']",
-    continueButton: "[data-test='continue']",
-    errorMessageText: "[data-test='error']",
+    firstNameInput: "data-test='firstName'",
+    lastNameInput: "data-test='lastName'",
+    postalCodeInput: "data-test='postalCode'",
+    cancelButton: "data-test='cancel'",
+    continueButton: "data-test='continue'",
+    errorMessageText: "data-test='error'",
 }
 
 /**

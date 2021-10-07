@@ -7,8 +7,8 @@ const { Page, Locator } = require("@playwright/test")
  */
 const overviewSelectors = {
     overviewContainer: ".checkout_summary_container",
-    cancelCheckoutButton: "[data-test='cancel']",
-    finishCheckoutButton: "[data-test='finish']",
+    cancelCheckoutButton: "data-test='cancel'",
+    finishCheckoutButton: "data-test='finish'",
     summaryInfoContainer: ".summary_info",
     paymentInfoText: "text=/saucecard #31337/i",
     shippingInfoText: "text=/FREE PONY EXPRESS DELIVERY!/i",

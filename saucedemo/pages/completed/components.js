@@ -10,7 +10,7 @@ const completedSelectors = {
     completedHeaderText: ".complete-header",
     completedText: ".complete-text",
     completedImage: ".pony_express",
-    completedBackButton: "[data-test='back-to-products']",
+    completedBackButton: "data-test='back-to-products'",
 }
 
 /**

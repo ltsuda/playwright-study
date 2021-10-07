@@ -6,7 +6,7 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing the Title's HTML selectors
  */
 const titleHeaderSelectors = {
-    sortDropdown: "[data-test='product_sort_container']",
+    sortDropdown: "data-test='product_sort_container'",
 }
 
 /**
