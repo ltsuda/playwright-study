@@ -6,11 +6,11 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Checkout Completed's HTML selectors
  */
 const completedSelectors = {
-    completedContainer: ".checkout_complete_container",
-    completedHeaderText: ".complete-header",
-    completedText: ".complete-text",
-    completedImage: ".pony_express",
-    completedBackButton: "data-test='back-to-products'",
+    completedContainer: "data-test='checkout-complete-container'",
+    completedHeaderText: "data-test='header-complete'",
+    completedText: "data-test='header-description'",
+    completedImage: "data-test='img-pony-express'",
+    completedBackButton: "data-test='button-back-to-products'",
 }
 
 /**
@@ -31,7 +31,7 @@ class CompletedComponents {
      * Get the checkout-completed's container Locator
      * @returns {Locator} Locator for 'completedContainer' selector
      */
-     completedContainer() {
+    completedContainer() {
         return this.page.locator(completedSelectors.completedContainer)
     }
 
@@ -39,40 +39,32 @@ class CompletedComponents {
      * Get the header text Locator
      * @returns {Locator} Locator for 'completedHeaderText' selector
      */
-     completedHeaderText() {
-        return this.page.locator(
-            `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedHeaderText}`
-        )
+    completedHeaderText() {
+        return this.page.locator(completedSelectors.completedHeaderText)
     }
 
     /**
      * Get the completed description text Locator
      * @returns {Locator} Locator for 'completedText' selector
      */
-     completedText() {
-        return this.page.locator(
-            `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedText}`
-        )
+    completedText() {
+        return this.page.locator(completedSelectors.completedText)
     }
 
     /**
      * Get the completed image Locator
      * @returns {Locator} Locator for 'errorMessageText' selector
      */
-     completedImage() {
-        return this.page.locator(
-            `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedImage}`
-        )
+    completedImage() {
+        return this.page.locator(completedSelectors.completedImage)
     }
 
     /**
      * Get the back to home button Locator
      * @returns {Locator} Locator for 'completedBackButton' selector
      */
-     completedBackButton() {
-        return this.page.locator(
-            `${completedSelectors.completedContainer}` + ">>" + `${completedSelectors.completedBackButton}`
-        )
+    completedBackButton() {
+        return this.page.locator(completedSelectors.completedBackButton)
     }
 }
 
