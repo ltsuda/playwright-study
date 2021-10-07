@@ -12,6 +12,7 @@
         "allure-playwright": "^2.0.0-beta.13"
     },
     "scripts": {
+        "beforetest": "cd webapp && npm install",
         "test": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --project 'chromium-hd'",
         "test:match": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --grep $MATCH --project 'chromium-hd'",
         "test:visual": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep @visual --project 'chromium-hd'",
