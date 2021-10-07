@@ -1,0 +1,284 @@
+{
+  "uid" : "f686e2756563bece",
+  "name" : "should navigate to inventory page after successful login @smoke",
+  "fullName" : "should navigate to inventory page after successful login @smoke",
+  "historyId" : "pixel-4 login.spec.js Saucedemo LoginPage: @login should navigate to inventory page after successful login @smoke",
+  "time" : {
+    "start" : 1633622122224,
+    "stop" : 1633622124603,
+    "duration" : 2379
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1633622122224,
+        "stop" : 1633622123268,
+        "duration" : 1044
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1633622122233,
+          "stop" : 1633622122272,
+          "duration" : 39
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.goto",
+        "time" : {
+          "start" : 1633622122272,
+          "stop" : 1633622123268,
+          "duration" : 996
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "locator.type([data-test='username'], standard_user)",
+      "time" : {
+        "start" : 1633622123269,
+        "stop" : 1633622123387,
+        "duration" : 118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.type([data-test='password'], secret_sauce)",
+      "time" : {
+        "start" : 1633622123388,
+        "stop" : 1633622123449,
+        "duration" : 61
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(#login-button)",
+      "time" : {
+        "start" : 1633622123450,
+        "stop" : 1633622123582,
+        "duration" : 132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toHaveURL",
+      "time" : {
+        "start" : 1633622123582,
+        "stop" : 1633622123583,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1633622123583,
+        "stop" : 1633622124603,
+        "duration" : 1020
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1633622124584,
+          "stop" : 1633622124603,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "pixel-4"
+  }, {
+    "name" : "suite",
+    "value" : "login.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo LoginPage: @login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "66d66b6f9857a591",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/68//#testresult/66d66b6f9857a591",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633571199922,
+          "stop" : 1633571201509,
+          "duration" : 1587
+        }
+      }, {
+        "uid" : "9a38228b8041c030",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/67//#testresult/9a38228b8041c030",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633097744724,
+          "stop" : 1633097746839,
+          "duration" : 2115
+        }
+      }, {
+        "uid" : "83a676cf0f328bed",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/66//#testresult/83a676cf0f328bed",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632770956985,
+          "stop" : 1632770958718,
+          "duration" : 1733
+        }
+      }, {
+        "uid" : "4fca10b0b0f682d8",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/65//#testresult/4fca10b0b0f682d8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632273410288,
+          "stop" : 1632273411980,
+          "duration" : 1692
+        }
+      }, {
+        "uid" : "d12606d91289d6e2",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/64//#testresult/d12606d91289d6e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631337460876,
+          "stop" : 1631337462584,
+          "duration" : 1708
+        }
+      }, {
+        "uid" : "69d4a00dba6acf0b",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/63//#testresult/69d4a00dba6acf0b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631163891269,
+          "stop" : 1631163893001,
+          "duration" : 1732
+        }
+      }, {
+        "uid" : "2a325a8d9ec4176f",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/61//#testresult/2a325a8d9ec4176f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631098134523,
+          "stop" : 1631098136189,
+          "duration" : 1666
+        }
+      }, {
+        "uid" : "c6f45c97cb0d4735",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/58//#testresult/c6f45c97cb0d4735",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630992890896,
+          "stop" : 1630992892720,
+          "duration" : 1824
+        }
+      }, {
+        "uid" : "cfa72f622e43ee52",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/57//#testresult/cfa72f622e43ee52",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630720162510,
+          "stop" : 1630720164219,
+          "duration" : 1709
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f686e2756563bece.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,284 @@
+{
+  "uid" : "b6cded51bbc37c88",
+  "name" : "User should be able to login with a valid credentials @e2e-login",
+  "fullName" : "User should be able to login with a valid credentials @e2e-login",
+  "historyId" : "iphone-8 e2e.spec.js Saucedemo E2E: @e2e User should be able to login with a valid credentials @e2e-login",
+  "time" : {
+    "start" : 1633622013177,
+    "stop" : 1633622015268,
+    "duration" : 2091
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1633622013177,
+        "stop" : 1633622014401,
+        "duration" : 1224
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1633622013197,
+          "stop" : 1633622013521,
+          "duration" : 324
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.goto(http://localhost:3000)",
+        "time" : {
+          "start" : 1633622013522,
+          "stop" : 1633622014401,
+          "duration" : 879
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "locator.type([data-test='username'], standard_user)",
+      "time" : {
+        "start" : 1633622014402,
+        "stop" : 1633622014609,
+        "duration" : 207
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.type([data-test='password'], secret_sauce)",
+      "time" : {
+        "start" : 1633622014610,
+        "stop" : 1633622014802,
+        "duration" : 192
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "locator.click(#login-button)",
+      "time" : {
+        "start" : 1633622014803,
+        "stop" : 1633622014990,
+        "duration" : 187
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "expect.toHaveURL",
+      "time" : {
+        "start" : 1633622014990,
+        "stop" : 1633622014991,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1633622014991,
+        "stop" : 1633622015268,
+        "duration" : 277
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1633622015265,
+          "stop" : 1633622015268,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "parentSuite",
+    "value" : "iphone-8"
+  }, {
+    "name" : "suite",
+    "value" : "e2e.spec.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Saucedemo E2E: @e2e"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "a79e173c41067df0",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/68//#testresult/a79e173c41067df0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633571117713,
+          "stop" : 1633571118993,
+          "duration" : 1280
+        }
+      }, {
+        "uid" : "2fb9cc857257bd26",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/67//#testresult/2fb9cc857257bd26",
+        "status" : "passed",
+        "time" : {
+          "start" : 1633097645018,
+          "stop" : 1633097646920,
+          "duration" : 1902
+        }
+      }, {
+        "uid" : "e2204b5e11cd0e47",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/66//#testresult/e2204b5e11cd0e47",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632770875253,
+          "stop" : 1632770876470,
+          "duration" : 1217
+        }
+      }, {
+        "uid" : "5dde224a509d8532",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/65//#testresult/5dde224a509d8532",
+        "status" : "passed",
+        "time" : {
+          "start" : 1632273328824,
+          "stop" : 1632273330151,
+          "duration" : 1327
+        }
+      }, {
+        "uid" : "7444d713f92585f1",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/64//#testresult/7444d713f92585f1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631337385712,
+          "stop" : 1631337386712,
+          "duration" : 1000
+        }
+      }, {
+        "uid" : "376bf6cb2a325770",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/63//#testresult/376bf6cb2a325770",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631163816940,
+          "stop" : 1631163818500,
+          "duration" : 1560
+        }
+      }, {
+        "uid" : "7a0c0fea205e81d2",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/61//#testresult/7a0c0fea205e81d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1631098058758,
+          "stop" : 1631098059962,
+          "duration" : 1204
+        }
+      }, {
+        "uid" : "ef4f4218bcd8688",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/58//#testresult/ef4f4218bcd8688",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630992808769,
+          "stop" : 1630992809841,
+          "duration" : 1072
+        }
+      }, {
+        "uid" : "def1e4d707a60dd5",
+        "reportUrl" : "https://ltsuda.github.io/playwright-study/57//#testresult/def1e4d707a60dd5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1630720083526,
+          "stop" : 1630720084683,
+          "duration" : 1157
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b6cded51bbc37c88.json",
+  "parameterValues" : [ ]
+}
