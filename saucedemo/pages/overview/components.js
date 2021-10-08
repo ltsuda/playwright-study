@@ -6,14 +6,14 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Overview's HTML selectors
  */
 const overviewSelectors = {
-    overviewContainer: "data-test='checkout-summary-container'",
-    cancelCheckoutButton: "data-test='button-cancel'",
-    finishCheckoutButton: "data-test='button-finish'",
-    paymentInfoText: "data-test='value-payment-information'",
-    shippingInfoText: "data-test='value-shipping-information'",
-    subtotalText: "data-test='label-subtotal'",
-    taxText: "data-test='label-tax'",
-    totalPriceText: "data-test='label-total'",
+    overviewContainer: "data-test=checkout-summary-container",
+    cancelCheckoutButton: "data-test=button-cancel",
+    finishCheckoutButton: "data-test=button-finish",
+    paymentInfoText: "data-test=value-payment-information",
+    shippingInfoText: "data-test=value-shipping-information",
+    subtotalText: "data-test=label-subtotal",
+    taxText: "data-test=label-tax",
+    totalPriceText: "data-test=label-total",
 }
 
 /**

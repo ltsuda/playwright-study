@@ -6,14 +6,14 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Login's HTML selectors
  */
 const loginSelectors = {
-    loginContainer: "data-test='login-container'",
-    credentialsContainer: "data-test='login-credentials-container'",
-    usernameInput: "data-test='input-username'",
-    passwordInput: "data-test='input-password'",
-    errorText: "data-test='error-text'",
-    loginButton: "data-test='button-login'",
-    acceptedUsersText: "data-test='section-usernames'",
-    acceptedPasswordText: "data-test='section-password'",
+    loginContainer: "data-test=login-container",
+    credentialsContainer: "data-test=login-credentials-container",
+    usernameInput: "data-test=input-username",
+    passwordInput: "data-test=input-password",
+    errorText: "data-test=error-text",
+    loginButton: "data-test=button-login",
+    acceptedUsersText: "data-test=section-usernames",
+    acceptedPasswordText: "data-test=section-password",
 }
 
 /**

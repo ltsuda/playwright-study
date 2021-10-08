@@ -6,16 +6,16 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Navigationbar's HTML selectors
  */
 const navigationBarSelectors = {
-    navContainer: "data-test='header-container'",
+    navContainer: "data-test=header-container",
     sideMenu: ".bm-menu-wrap",
     menuButton: "#react-burger-menu-btn",
     menuCloseButton: ".bm-cross-button",
-    menuAllItemsLink: "data-test='link-all-items'",
-    menuAboutLink: "data-test='link-about'",
-    menuLogoutLink: "data-test='link-logout'",
-    menuResetStateLink: "data-test='link-reset-state'",
-    cartLink: "data-test='link-cart'",
-    cartBadgeText: "data-test='cart-badge'",
+    menuAllItemsLink: "data-test=link-all-items",
+    menuAboutLink: "data-test=link-about",
+    menuLogoutLink: "data-test=link-logout",
+    menuResetStateLink: "data-test=link-reset-state",
+    cartLink: "data-test=link-cart",
+    cartBadgeText: "data-test=cart-badge",
 }
 
 /**
@@ -109,7 +109,7 @@ class NavigationBarComponents {
      * @returns {Locator} Locator for 'cartBadgeText' class
      */
     cartBadgeText() {
-        return this.page.locator(`${navigationBarSelectors.cartLink}` + ">" + `${navigationBarSelectors.cartBadgeText}`)
+        return this.page.locator(navigationBarSelectors.cartBadgeText)
     }
 }
 

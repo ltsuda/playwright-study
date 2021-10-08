@@ -6,7 +6,7 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Inventory's HTML selectors
  */
 const inventorySelectors = {
-    inventoryContainer: "data-test='inventory-container'",
+    inventoryContainer: "data-test=inventory-container",
 }
 
 /**

@@ -6,12 +6,12 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Footer's HTML selectors
  */
 const footerSelectors = {
-    footerContainer: "data-test='footer'",
-    twitterSocialLink: "data-test='link-twitter'",
-    facebookSocialLink: "data-test='link-twitter'",
-    linkdinSocialLink: "data-test='link-twitter'",
-    copyrightText: "data-test='text-copyrights'",
-    footerImage: "data-test='img-swagbot'",
+    footerContainer: "data-test=footer",
+    twitterSocialLink: "data-test=link-twitter",
+    facebookSocialLink: "data-test=link-facebook",
+    linkdinSocialLink: "data-test=link-linkedin",
+    copyrightText: "data-test=text-copyrights",
+    footerImage: "data-test=img-swagbot",
 }
 
 /**

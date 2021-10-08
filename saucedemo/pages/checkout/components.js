@@ -6,13 +6,13 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Checkout's HTML selectors
  */
 const checkoutSelectors = {
-    checkoutContainer: "data-test='checkout-info-container'",
-    firstNameInput: "data-test='input-first-name'",
-    lastNameInput: "data-test='input-last-name'",
-    postalCodeInput: "data-test='input-postal-code'",
-    cancelButton: "data-test='button-cancel'",
-    continueButton: "data-test='button-continue'",
-    errorMessageText: "data-test='error-text'",
+    checkoutContainer: "data-test=checkout-info-container",
+    firstNameInput: "data-test=input-first-name",
+    lastNameInput: "data-test=input-last-name",
+    postalCodeInput: "data-test=input-postal-code",
+    cancelButton: "data-test=button-cancel",
+    continueButton: "data-test=button-continue",
+    errorMessageText: "data-test=error-text",
 }
 
 /**

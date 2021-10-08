@@ -94,18 +94,11 @@ class InventoryItemController {
      * their name, description and price
      */
     async getItemsObject(fromPage = "inventory") {
-        const itemsCount = this.getItemsCount(fromPage)
+        const itemsCount = await this.getItemsCount(fromPage)
         let items = []
-        const nameSelector =
-            fromPage == "details" ? this.selectors.itemNameText.replace("item", "details") : this.selectors.itemNameText
-        const descSelector =
-            fromPage == "details"
-                ? this.selectors.itemDescriptionText.replace("item", "details")
-                : this.selectors.itemDescriptionText
-        const priceSelector =
-            fromPage == "details"
-                ? this.selectors.itemPriceText.replace("item", "details")
-                : this.selectors.itemPriceText
+        const nameSelector = this.selectors.itemNameText
+        const descSelector = this.selectors.itemDescriptionText
+        const priceSelector = this.selectors.itemPriceText
 
         for (var picker = 0; picker < itemsCount; picker++) {
             const item = this.components.item(fromPage, picker)
@@ -139,7 +132,7 @@ class InventoryItemController {
      */
     async addRandomItemToCart() {
         const fromPage = "inventory"
-        const picker = randomInt(this.getItemsCount(fromPage))
+        const picker = randomInt(await this.getItemsCount(fromPage))
         const randomItemLocator = this.components.item(fromPage, picker)
         const name = await randomItemLocator.locator(this.selectors.itemNameText).innerText()
         const description = await randomItemLocator.locator(this.selectors.itemDescriptionText).innerText()
@@ -176,11 +169,9 @@ class InventoryItemController {
 
     /**
      * Click at the remove button
-     * @param {String} [fromPage="inventory"] - the page that is calling this function like
-     * 'cart' or 'inventory
      */
-    async removeFromCart(fromPage = "details") {
-        const removeFromLocator = this.components.removeItemsButton(fromPage)
+    async removeFromCart() {
+        const removeFromLocator = this.components.removeItemsButton()
         await removeFromLocator.first().click()
     }
 }

@@ -6,11 +6,11 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Checkout Completed's HTML selectors
  */
 const completedSelectors = {
-    completedContainer: "data-test='checkout-complete-container'",
-    completedHeaderText: "data-test='header-complete'",
-    completedText: "data-test='header-description'",
-    completedImage: "data-test='img-pony-express'",
-    completedBackButton: "data-test='button-back-to-products'",
+    completedContainer: "data-test=checkout-complete-container",
+    completedHeaderText: "data-test=header-complete",
+    completedText: "data-test=header-description",
+    completedImage: "data-test=img-pony-express",
+    completedBackButton: "data-test=button-back-to-products",
 }
 
 /**

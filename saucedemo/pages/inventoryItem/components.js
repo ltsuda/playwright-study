@@ -6,14 +6,15 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Inventory items' HTML selectors
  */
 const inventoryItemSelectors = {
-    cartItemContainer: "data-test='item-cart'",
-    detailsItemContainer: "data-test='inventory-details-container'",
-    itemContainer: "data-test='item-inventory'",
-    itemNameText: "data-test='item-name'",
-    itemPriceText: "data-test='item-price'",
-    addToCartButton: "data-test^='button-add-to-cart'",
-    removeButton: "data-test^='button-remove'",
-    backToProductsButton: "data-test='button-back-to-products'",
+    cartItemContainer: "data-test=item-cart",
+    detailsItemContainer: "[data-test='inventory-details-container']",
+    itemContainer: "[data-test='item-inventory']",
+    itemNameText: "[data-test='item-name']",
+    itemDescriptionText: "[data-test='item-description']",
+    itemPriceText: "data-test=item-price",
+    addToCartButton: "[data-test^='button-add-to-cart']",
+    removeButton: "[data-test^='button-remove']",
+    backToProductsButton: "data-test=button-back-to-products",
 }
 
 /**
@@ -114,24 +115,19 @@ class InventoryItemComponents {
 
     /**
      * Get the add to cart button Locator
-     * @param {String} fromPage - the page that is calling this function like
      * 'cart' or 'inventory
      * @returns {Locator} Locator for 'addToCartButton' selector
      */
-    addToCartButton(fromPage) {
-        const locator = this.switchItemLocator(fromPage)
-        return this.page.locator(`${locator}` + ">>" + `${inventoryItemSelectors.addToCartButton}`)
+    addToCartButton() {
+        return this.page.locator(inventoryItemSelectors.addToCartButton)
     }
 
     /**
      * Get the remove from cart button Locator
-     * @param {String} fromPage - the page that is calling this function like
-     * 'cart' or 'inventory
      * @returns {Locator} Locator for 'removeButton' selector
      */
-    removeItemsButton(fromPage) {
-        const locator = this.switchItemLocator(fromPage)
-        return this.page.locator(`${locator}` + ">>" + `${inventoryItemSelectors.removeButton}`)
+    removeItemsButton() {
+        return this.page.locator(inventoryItemSelectors.removeButton)
     }
 
     /**

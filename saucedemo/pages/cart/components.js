@@ -6,9 +6,9 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Cart's HTML selectors
  */
 const cartSelectors = {
-    cartContainer: "data-test='cart-container'",
-    continueShoppingButton: "data-test='button-continue-shopping'",
-    checkoutButton: "data-test='button-checkout'",
+    cartContainer: "data-test=cart-container",
+    continueShoppingButton: "data-test=button-continue-shopping",
+    checkoutButton: "data-test=button-checkout",
 }
 
 /**

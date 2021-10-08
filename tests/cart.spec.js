@@ -66,7 +66,7 @@ test.describe.parallel("Saucedemo CartPage: @cart", () => {
             products: [PRODUCTS_INDEX.ONESIE],
         })
         await expect(await navigationBarController.components.cartBadgeText()).toHaveText("1")
-        await inventoryItemController.removeFromCart("cart")
+        await inventoryItemController.removeFromCart()
         await expect(await navigationBarController.components.cartBadgeText()).toHaveCount(0)
     })
 
