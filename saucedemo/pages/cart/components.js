@@ -6,9 +6,9 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Cart's HTML selectors
  */
 const cartSelectors = {
-    cartContainer: ".cart_contents_container",
-    continueShoppingButton: "[data-test='continue-shopping']",
-    checkoutButton: "[data-test='checkout']",
+    cartContainer: "data-test=cart-container",
+    continueShoppingButton: "data-test=button-continue-shopping",
+    checkoutButton: "data-test=button-checkout",
 }
 
 /**
@@ -29,7 +29,7 @@ class CartComponents {
      * Get the cart's container Locator
      * @returns {Locator} Locator for 'cartContainer' selector
      */
-    async cartContainer() {
+    cartContainer() {
         return this.page.locator(cartSelectors.cartContainer)
     }
 
@@ -37,7 +37,7 @@ class CartComponents {
      * Get the continue shopping button Locator
      * @returns {Locator} Locator for 'continueShoppingButton' selector
      */
-    async continueShoppingButton() {
+    continueShoppingButton() {
         return this.page.locator(cartSelectors.continueShoppingButton)
     }
 
@@ -45,7 +45,7 @@ class CartComponents {
      * Get the checkout button Locator
      * @returns {Locator} Locator for 'checkoutButton' selector
      */
-    async checkoutButton() {
+    checkoutButton() {
         return this.page.locator(cartSelectors.checkoutButton)
     }
 }

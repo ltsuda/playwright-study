@@ -6,17 +6,16 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Navigationbar's HTML selectors
  */
 const navigationBarSelectors = {
-    navContainer: ".header_container",
-    navDetailContainer: ".header_container.inventory_details",
+    navContainer: "data-test=header-container",
     sideMenu: ".bm-menu-wrap",
     menuButton: "#react-burger-menu-btn",
     menuCloseButton: ".bm-cross-button",
-    menuAllItemsLink: "#inventory_sidebar_link",
-    menuAboutLink: "#about_sidebar_link",
-    menuLogoutLink: "#logout_sidebar_link",
-    menuResetStateLink: "#reset_sidebar_link",
-    cartLink: ".shopping_cart_link",
-    cartBadgeText: ".shopping_cart_badge",
+    menuAllItemsLink: "data-test=link-all-items",
+    menuAboutLink: "data-test=link-about",
+    menuLogoutLink: "data-test=link-logout",
+    menuResetStateLink: "data-test=link-reset-state",
+    cartLink: "data-test=link-cart",
+    cartBadgeText: "data-test=cart-badge",
 }
 
 /**
@@ -37,23 +36,15 @@ class NavigationBarComponents {
      * Get the navigationbar's container Locator
      * @returns {Locator} Locator for 'navContainer' class
      */
-    async navContainer() {
+    navContainer() {
         return this.page.locator(navigationBarSelectors.navContainer)
-    }
-
-    /**
-     * Get the naviationbar detail's container Locator
-     * @returns {Locator} Locator for 'navDetailContainer' class
-     */
-    async navDetailContainer() {
-        return this.page.locator(navigationBarSelectors.navDetailContainer)
     }
 
     /**
      * Get the sidemenu container's Locator
      * @returns {Locator} Locator for 'sideMenu' class
      */
-    async sideMenu() {
+    sideMenu() {
         return this.page.locator(navigationBarSelectors.sideMenu)
     }
 
@@ -61,7 +52,7 @@ class NavigationBarComponents {
      * Get the sidemenu button Locator
      * @returns {Locator} Locator for 'menuButton' id
      */
-    async menuButton() {
+    menuButton() {
         return this.page.locator(navigationBarSelectors.menuButton)
     }
 
@@ -69,7 +60,7 @@ class NavigationBarComponents {
      * Get the close menu button Locator
      * @returns {Locator} Locator for 'menuCloseButton' class
      */
-    async menuCloseButton() {
+    menuCloseButton() {
         return this.page.locator(navigationBarSelectors.menuCloseButton)
     }
 
@@ -77,7 +68,7 @@ class NavigationBarComponents {
      * Get the all items link Locator
      * @returns {Locator} Locator for 'menuAllItemsLink' id
      */
-    async menuAllItemsLink() {
+    menuAllItemsLink() {
         return this.page.locator(navigationBarSelectors.menuAllItemsLink)
     }
 
@@ -85,7 +76,7 @@ class NavigationBarComponents {
      * Get the about link Locator
      * @returns {Locator} Locator for 'menuAboutLink' id
      */
-    async menuAboutLink() {
+    menuAboutLink() {
         return this.page.locator(navigationBarSelectors.menuAboutLink)
     }
 
@@ -93,7 +84,7 @@ class NavigationBarComponents {
      * Get the logout link Locator
      * @returns {Locator} Locator for 'menuLogoutLink' id
      */
-    async menuLogoutLink() {
+    menuLogoutLink() {
         return this.page.locator(navigationBarSelectors.menuLogoutLink)
     }
 
@@ -101,7 +92,7 @@ class NavigationBarComponents {
      * Get the reset state link Locator
      * @returns {Locator} Locator for 'menuResetStateLink' id
      */
-    async menuResetStateLink() {
+    menuResetStateLink() {
         return this.page.locator(navigationBarSelectors.menuResetStateLink)
     }
 
@@ -109,7 +100,7 @@ class NavigationBarComponents {
      * Get the cart icon link Locator
      * @returns {Locator} Locator for 'cartLink' class
      */
-    async cartLink() {
+    cartLink() {
         return this.page.locator(navigationBarSelectors.cartLink)
     }
 
@@ -117,10 +108,8 @@ class NavigationBarComponents {
      * Get the cart badge Locator
      * @returns {Locator} Locator for 'cartBadgeText' class
      */
-    async cartBadgeText() {
-        return this.page.locator(
-            `${navigationBarSelectors.cartLink}` + ">" + `${navigationBarSelectors.cartBadgeText}`
-        )
+    cartBadgeText() {
+        return this.page.locator(navigationBarSelectors.cartBadgeText)
     }
 }
 

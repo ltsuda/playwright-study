@@ -11,7 +11,7 @@ RUN npx playwright install chrome
 
 COPY webapp ./webapp
 
-RUN npm run beforetest
+RUN npm run beforetest:ci
 
 COPY . .
 

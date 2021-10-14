@@ -36,7 +36,7 @@ test.describe.parallel("Saucedemo CartPage: @cart", () => {
             username: CREDENTIALS.USERS.STANDARD,
             products: [PRODUCTS_INDEX.BOLT_TSHIRT],
         })
-        const itemsCount = String(await inventoryItemController.getItemsCount("cart"))
+        const itemsCount = String(await inventoryItemController.getItemsCount())
         await expect(await navigationBarController.components.cartBadgeText()).toHaveText(itemsCount)
     })
 
@@ -51,7 +51,7 @@ test.describe.parallel("Saucedemo CartPage: @cart", () => {
         })
         const addedItem = await inventoryItemController.addRandomItemToCart()
         await navigationBarController.navigateToCart()
-        const itemsInCart = await inventoryItemController.getItemsObject("cart")
+        const itemsInCart = await inventoryItemController.getItemsObject()
         expect(itemsInCart[0]).toStrictEqual(addedItem)
     })
 
@@ -66,7 +66,7 @@ test.describe.parallel("Saucedemo CartPage: @cart", () => {
             products: [PRODUCTS_INDEX.ONESIE],
         })
         await expect(await navigationBarController.components.cartBadgeText()).toHaveText("1")
-        await inventoryItemController.removeFromCart("cart")
+        await inventoryItemController.removeFromCart()
         await expect(await navigationBarController.components.cartBadgeText()).toHaveCount(0)
     })
 

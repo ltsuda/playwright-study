@@ -25,60 +25,52 @@ class InventoryItemController {
      * Validate if "itemDetailContainer" element is visible
      */
     async screenIsVisible() {
-        const itemDetailContainerLocator = await this.components.itemDetailContainer()
+        const itemDetailContainerLocator = this.components.itemDetailContainer()
         await expect(itemDetailContainerLocator).toBeVisible()
     }
 
     /**
-     * Validate if "cartItemContainer" element is visible
+     * Validate if "itemContainer" element is visible
      */
     async screenItemIsVisible() {
-        const cartItemContainerLocator = await this.components.cartItemContainer()
-        await expect(cartItemContainerLocator).toBeVisible()
+        const itemContainerLocator = this.components.itemContainer()
+        await expect(itemContainerLocator).toBeVisible()
     }
 
     /**
      * Get the number of item's Locator
-     * @param {String} fromPage - the page that is calling this function like
-     * 'cart' or 'inventory
      * @returns {number} number of item's locator found
      */
-    async getItemsCount(fromPage) {
-        const itemsLocator = await this.components.items(fromPage)
+    async getItemsCount() {
+        const itemsLocator = this.components.items()
         return await itemsLocator.count()
     }
 
     /**
      * Get a list of name texts
-     * @param {String} fromPage - the page that is calling this function like
-     * 'cart' or 'inventory
      * @returns {String[]} a list of names
      */
-    async getNames(fromPage) {
-        const namesLocator = await this.components.names(fromPage)
+    async getNames() {
+        const namesLocator = this.components.names()
         return await namesLocator.allInnerTexts()
     }
 
     /**
      * Get a list of price texts
-     * @param {String} fromPage - the page that is calling this function like
-     * 'cart' or 'inventory
      * @returns {String[]} a list of formated prices (without dollar sign)
      */
-    async getPrices(fromPage) {
-        const pricesLocator = await this.components.prices(fromPage)
+    async getPrices() {
+        const pricesLocator = this.components.prices()
         const prices = await pricesLocator.allInnerTexts()
         return prices.map((price) => price.replace("$", ""))
     }
 
     /**
      * Go to an item's detail page by clicking at its name
-     * @param {String} fromPage - the page that is calling this function like
-     * 'cart' or 'inventory
      * @param {Number} picker - the item's index
      */
-    async goToProductDetail(fromPage, picker) {
-        const item = await this.components.item(fromPage, picker)
+    async goToProductDetail(picker) {
+        const item = this.components.item(picker)
         if (typeof picker === "string") {
             await item.click()
         } else {
@@ -88,27 +80,18 @@ class InventoryItemController {
 
     /**
      * Get item objects
-     * @param {String} [fromPage="inventory"] - the page that is calling this function like
-     * 'cart' or 'inventory
      * @returns {Object[]} a list of item objects containing
      * their name, description and price
      */
-    async getItemsObject(fromPage = "inventory") {
-        const itemsCount = await this.getItemsCount(fromPage)
+    async getItemsObject() {
+        const itemsCount = await this.getItemsCount()
         let items = []
-        const nameSelector =
-            fromPage == "details" ? this.selectors.itemNameText.replace("item", "details") : this.selectors.itemNameText
-        const descSelector =
-            fromPage == "details"
-                ? this.selectors.itemDescriptionText.replace("item", "details")
-                : this.selectors.itemDescriptionText
-        const priceSelector =
-            fromPage == "details"
-                ? this.selectors.itemPriceText.replace("item", "details")
-                : this.selectors.itemPriceText
+        const nameSelector = this.selectors.itemNameText
+        const descSelector = this.selectors.itemDescriptionText
+        const priceSelector = this.selectors.itemPriceText
 
         for (var picker = 0; picker < itemsCount; picker++) {
-            const item = await this.components.item(fromPage, picker)
+            const item = this.components.item(picker)
             const name = await item.locator(nameSelector).innerText()
             const description = await item.locator(descSelector).innerText()
             let price = await item.locator(priceSelector).innerText()
@@ -124,11 +107,9 @@ class InventoryItemController {
 
     /**
      * Click at a random remove button
-     * @param {String} fromPage - the page that is calling this function like
-     * 'cart' or 'inventory
      */
-    async removeRandomItemFromCart(fromPage) {
-        const removeButtonLocator = await this.components.removeItemsButton(fromPage)
+    async removeRandomItemFromCart() {
+        const removeButtonLocator = this.components.removeItemsButton()
         const randomLocator = removeButtonLocator[randomInt(removeButtonLocator.count())]
         await randomLocator.click()
     }
@@ -138,9 +119,8 @@ class InventoryItemController {
      * @returns {Object} the object containing its name, description and price that was added to cart
      */
     async addRandomItemToCart() {
-        const fromPage = "inventory"
-        const picker = randomInt(await this.getItemsCount(fromPage))
-        const randomItemLocator = await this.components.item(fromPage, picker)
+        const picker = randomInt(await this.getItemsCount())
+        const randomItemLocator = this.components.item(picker)
         const name = await randomItemLocator.locator(this.selectors.itemNameText).innerText()
         const description = await randomItemLocator.locator(this.selectors.itemDescriptionText).innerText()
         var price = await randomItemLocator.locator(this.selectors.itemPriceText).innerText()
@@ -160,27 +140,23 @@ class InventoryItemController {
      * Click at the back to products button
      */
     async backToProducts() {
-        const backToProductsButton = await this.components.backToProductsButton()
+        const backToProductsButton = this.components.backToProductsButton()
         await backToProductsButton.click()
     }
 
     /**
      * Click at the first locator for the add to cart button
-     * @param {String} [fromPage="inventory"] - the page that is calling this function like
-     * 'cart' or 'inventory
      */
-    async addToCart(fromPage = "details") {
-        const addToCartButton = await this.components.addToCartButton(fromPage)
+    async addToCart() {
+        const addToCartButton = this.components.addToCartButton()
         await addToCartButton.first().click()
     }
 
     /**
      * Click at the remove button
-     * @param {String} [fromPage="inventory"] - the page that is calling this function like
-     * 'cart' or 'inventory
      */
-    async removeFromCart(fromPage = "details") {
-        const removeFromLocator = await this.components.removeItemsButton(fromPage)
+    async removeFromCart() {
+        const removeFromLocator = this.components.removeItemsButton()
         await removeFromLocator.first().click()
     }
 }

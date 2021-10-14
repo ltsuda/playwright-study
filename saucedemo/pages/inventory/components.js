@@ -6,7 +6,7 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Inventory's HTML selectors
  */
 const inventorySelectors = {
-    inventoryContainer: ".inventory_container",
+    inventoryContainer: "data-test=inventory-container",
 }
 
 /**
@@ -27,7 +27,7 @@ class InventoryComponents {
      * Get the inventory's container Locator
      * @returns {Locator} Locator for 'inventoryContainer' selector
      */
-    async inventoryContainer() {
+    inventoryContainer() {
         return this.page.locator(inventorySelectors.inventoryContainer)
     }
 }

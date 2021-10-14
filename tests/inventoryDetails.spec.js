@@ -23,8 +23,8 @@ test.describe.parallel("Saucedemo InventoryPage: @details", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         const items = await inventoryItemController.getItemsObject()
-        await inventoryItemController.goToProductDetail("inventory", PRODUCTS_INDEX.ONESIE)
-        const itemDetail = await inventoryItemController.getItemsObject("details")
+        await inventoryItemController.goToProductDetail(PRODUCTS_INDEX.ONESIE)
+        const itemDetail = await inventoryItemController.getItemsObject()
         expect(items[PRODUCTS_INDEX.ONESIE]).toStrictEqual(itemDetail[0])
     })
 

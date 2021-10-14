@@ -6,15 +6,14 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Overview's HTML selectors
  */
 const overviewSelectors = {
-    overviewContainer: ".checkout_summary_container",
-    cancelCheckoutButton: "[data-test='cancel']",
-    finishCheckoutButton: "[data-test='finish']",
-    summaryInfoContainer: ".summary_info",
-    paymentInfoText: "text=/saucecard #31337/i",
-    shippingInfoText: "text=/FREE PONY EXPRESS DELIVERY!/i",
-    subtotalText: ".summary_subtotal_label",
-    taxText: ".summary_tax_label",
-    totalPriceText: ".summary_total_label",
+    overviewContainer: "data-test=checkout-summary-container",
+    cancelCheckoutButton: "data-test=button-cancel",
+    finishCheckoutButton: "data-test=button-finish",
+    paymentInfoText: "data-test=value-payment-information",
+    shippingInfoText: "data-test=value-shipping-information",
+    subtotalText: "data-test=label-subtotal",
+    taxText: "data-test=label-tax",
+    totalPriceText: "data-test=label-total",
 }
 
 /**
@@ -35,7 +34,7 @@ class OverviewComponents {
      * Get the overview's container Locator
      * @returns {Locator} Locator for 'overviewContainer' selector
      */
-    async overviewContainer() {
+    overviewContainer() {
         return this.page.locator(overviewSelectors.overviewContainer)
     }
 
@@ -43,55 +42,47 @@ class OverviewComponents {
      * Get the payment information text Locator
      * @returns {String} payment card element text selector
      */
-    async paymentInfoText() {
-        return this.page.locator(
-            `${overviewSelectors.summaryInfoContainer}` + ">>" + `${overviewSelectors.paymentInfoText}`
-        )
+    paymentInfoText() {
+        return this.page.locator(overviewSelectors.paymentInfoText)
     }
 
     /**
      * Get the shipment information text Locator
      * @returns {String} shipment element text
      */
-    async shippingInfoText() {
-        return this.page.locator(
-            `${overviewSelectors.summaryInfoContainer}` + ">>" + `${overviewSelectors.shippingInfoText}`
-        )
+    shippingInfoText() {
+        return this.page.locator(overviewSelectors.shippingInfoText)
     }
 
     /**
      * Get the subtotal text Locator
      * @returns {String} subtotal element text
      */
-    async subtotalText() {
-        return this.page.locator(
-            `${overviewSelectors.summaryInfoContainer}` + ">>" + `${overviewSelectors.subtotalText}`
-        )
+    subtotalText() {
+        return this.page.locator(overviewSelectors.subtotalText)
     }
 
     /**
      * Get the tax text Locator
      * @returns {String} tax element text
      */
-    async taxText() {
-        return this.page.locator(`${overviewSelectors.summaryInfoContainer}` + ">>" + `${overviewSelectors.taxText}`)
+    taxText() {
+        return this.page.locator(overviewSelectors.taxText)
     }
 
     /**
      * Get the total price text Locator
      * @returns {String} total price element text
      */
-    async totalPriceText() {
-        return this.page.locator(
-            `${overviewSelectors.summaryInfoContainer}` + ">>" + `${overviewSelectors.totalPriceText}`
-        )
+    totalPriceText() {
+        return this.page.locator(overviewSelectors.totalPriceText)
     }
 
     /**
      * Get the cancel checkout button Locator
      * @returns {Locator} Locator for 'cancelCheckoutButton' selector
      */
-    async cancelCheckoutButton() {
+    cancelCheckoutButton() {
         return this.page.locator(overviewSelectors.cancelCheckoutButton)
     }
 
@@ -99,7 +90,7 @@ class OverviewComponents {
      * Get the finish purchase button Locator
      * @returns {Locator} Locator for 'finishCheckoutButton' selector
      */
-    async finishCheckoutButton() {
+    finishCheckoutButton() {
         return this.page.locator(overviewSelectors.finishCheckoutButton)
     }
 }

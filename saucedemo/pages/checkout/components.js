@@ -6,14 +6,13 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Checkout's HTML selectors
  */
 const checkoutSelectors = {
-    checkoutContainer: ".checkout_info_container",
-    checkoutForm: ".checkout_info",
-    firstNameInput: "[data-test='firstName']",
-    lastNameInput: "[data-test='lastName']",
-    postalCodeInput: "[data-test='postalCode']",
-    cancelButton: "[data-test='cancel']",
-    continueButton: "[data-test='continue']",
-    errorMessageText: "[data-test='error']",
+    checkoutContainer: "data-test=checkout-info-container",
+    firstNameInput: "data-test=input-first-name",
+    lastNameInput: "data-test=input-last-name",
+    postalCodeInput: "data-test=input-postal-code",
+    cancelButton: "data-test=button-cancel",
+    continueButton: "data-test=button-continue",
+    errorMessageText: "data-test=error-text",
 }
 
 /**
@@ -34,7 +33,7 @@ class CheckoutComponents {
      * Get the checkout's container Locator
      * @returns {Locator} Locator for 'checkoutContainer' selector
      */
-    async checkoutContainer() {
+    checkoutContainer() {
         return this.page.locator(checkoutSelectors.checkoutContainer)
     }
 
@@ -42,7 +41,7 @@ class CheckoutComponents {
      * Get the cancel button Locator
      * @returns {Locator} Locator for 'cancelButton' selector
      */
-    async cancelButton() {
+    cancelButton() {
         return this.page.locator(checkoutSelectors.cancelButton)
     }
 
@@ -50,7 +49,7 @@ class CheckoutComponents {
      * Get the continue button Locator
      * @returns {Locator} Locator for 'continueButton' selector
      */
-    async continueButton() {
+    continueButton() {
         return this.page.locator(checkoutSelectors.continueButton)
     }
 
@@ -58,7 +57,7 @@ class CheckoutComponents {
      * Get the error message text Locator
      * @returns {Locator} Locator for 'errorMessageText' selector
      */
-    async errorMessageText() {
+    errorMessageText() {
         return this.page.locator(checkoutSelectors.errorMessageText)
     }
 
@@ -66,24 +65,24 @@ class CheckoutComponents {
      * Get the first name input Locator
      * @returns {Locator} Locator for 'firstNameInput' selector
      */
-    async firstNameInput() {
-        return this.page.locator(`${checkoutSelectors.checkoutForm}` + ">>" + `${checkoutSelectors.firstNameInput}`)
+    firstNameInput() {
+        return this.page.locator(checkoutSelectors.firstNameInput)
     }
 
     /**
      * Get the last name input Locator
      * @returns {Locator} Locator for 'lastNameInput' selector
      */
-    async lastNameInput() {
-        return this.page.locator(`${checkoutSelectors.checkoutForm}` + ">>" + `${checkoutSelectors.lastNameInput}`)
+    lastNameInput() {
+        return this.page.locator(checkoutSelectors.lastNameInput)
     }
 
     /**
      * Get the postal code input Locator
      * @returns {Locator} Locator for 'postalCodeInput' selector
      */
-    async postalCodeInput() {
-        return this.page.locator(`${checkoutSelectors.checkoutForm}` + ">>" + `${checkoutSelectors.postalCodeInput}`)
+    postalCodeInput() {
+        return this.page.locator(checkoutSelectors.postalCodeInput)
     }
 }
 

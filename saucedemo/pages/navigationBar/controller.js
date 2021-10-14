@@ -24,22 +24,15 @@ class NavigationBarController {
      * Validate if "navContainer" element is visible
      */
     async componentIsVisible() {
-        const navContainerLocator = await this.components.navContainer()
+        const navContainerLocator = this.components.navContainer()
         await expect(navContainerLocator).toBeVisible()
     }
 
     /**
-     * Validate if "navDetailContainer" element is visible
-     */
-    async componenDetailIsVisible() {
-        const navDetailContainerLocator = await this.components.navDetailContainer()
-        await expect(navDetailContainerLocator).toBeVisible()
-    }
-    /**
      * Click at the side menu button
      */
     async openMenu() {
-        const menuLocator = await this.components.menuButton()
+        const menuLocator = this.components.menuButton()
         await menuLocator.click()
     }
 
@@ -47,7 +40,7 @@ class NavigationBarController {
      * Click at the close menu button
      */
     async closeMenu() {
-        const closeMenuLocator = await this.components.menuCloseButton()
+        const closeMenuLocator = this.components.menuCloseButton()
         await closeMenuLocator.click()
     }
 
@@ -55,7 +48,7 @@ class NavigationBarController {
      * Click at the All Items link
      */
     async allItems() {
-        const allItemMenuLocator = await this.components.menuAllItemsLink()
+        const allItemMenuLocator = this.components.menuAllItemsLink()
         await allItemMenuLocator.click()
     }
 
@@ -63,7 +56,7 @@ class NavigationBarController {
      * Click at the Logout link
      */
     async logout() {
-        const logoutMenuLocator = await this.components.menuLogoutLink()
+        const logoutMenuLocator = this.components.menuLogoutLink()
         await logoutMenuLocator.click()
     }
 
@@ -71,7 +64,7 @@ class NavigationBarController {
      * Click at the Reset state link
      */
     async resetState() {
-        const resetMenuLocator = await this.components.menuResetStateLink()
+        const resetMenuLocator = this.components.menuResetStateLink()
         await resetMenuLocator.click()
     }
 
@@ -79,10 +72,9 @@ class NavigationBarController {
      * Click at the Cart icon link
      */
     async navigateToCart() {
-        const cartButtonLocator = await this.components.cartLink()
+        const cartButtonLocator = this.components.cartLink()
         await cartButtonLocator.click()
     }
-
 }
 
 module.exports = { NavigationBarController }

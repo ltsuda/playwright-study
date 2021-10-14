@@ -32,7 +32,7 @@ class CartController {
      * Validate if "cartContainer" element is visible
      */
     async screenIsVisible() {
-        const cartContainerElement = await this.components.cartContainer()
+        const cartContainerElement = this.components.cartContainer()
         await expect(cartContainerElement).toBeVisible()
     }
 
@@ -40,7 +40,7 @@ class CartController {
      * Click at the "Continue Shopping" button
      */
     async continueShopping() {
-        const continueButton = await this.components.continueShoppingButton()
+        const continueButton = this.components.continueShoppingButton()
         await continueButton.click()
     }
 
@@ -48,7 +48,7 @@ class CartController {
      * Click at the "Checkout" button
      */
     async navigateToCheckout() {
-        const checkoutButton = await this.components.checkoutButton()
+        const checkoutButton = this.components.checkoutButton()
         await checkoutButton.click()
     }
 }

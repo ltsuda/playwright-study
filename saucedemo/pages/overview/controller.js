@@ -32,7 +32,7 @@ class OverviewController {
      * Validate if "overviewContainer" element is visible
      */
     async screenIsVisible() {
-        const overviewContainerElement = await this.components.overviewContainer()
+        const overviewContainerElement = this.components.overviewContainer()
         await expect(overviewContainerElement).toBeVisible()
     }
 
@@ -40,7 +40,7 @@ class OverviewController {
      * Click at the Cancel checkout button
      */
     async cancelCheckout() {
-        const cancelCheckoutButton = await this.components.cancelCheckoutButton()
+        const cancelCheckoutButton = this.components.cancelCheckoutButton()
         await cancelCheckoutButton.click()
     }
 
@@ -48,7 +48,7 @@ class OverviewController {
      * Click at the Finish button
      */
     async finishCheckout() {
-        const finishCheckoutButton = await this.components.finishCheckoutButton()
+        const finishCheckoutButton = this.components.finishCheckoutButton()
         await finishCheckoutButton.click()
     }
 
@@ -57,7 +57,7 @@ class OverviewController {
      * @returns {String} subtotal value element text
      */
     async getSubtotal() {
-        const subtotalElement = await this.components.subtotalText()
+        const subtotalElement = this.components.subtotalText()
         let subtotal = await subtotalElement.innerText()
         subtotal = parseFloat(subtotal.replace("Item total: $", ""))
         return parseFloat(subtotal.toFixed(2))
@@ -68,7 +68,7 @@ class OverviewController {
      * @returns {String} tax value element text
      */
     async getTax() {
-        const taxElement = await this.components.taxText()
+        const taxElement = this.components.taxText()
         let tax = await taxElement.innerText()
         tax = parseFloat(tax.replace("Tax: $", ""))
         return parseFloat(tax.toFixed(2))
@@ -79,7 +79,7 @@ class OverviewController {
      * @returns {String} total value element text
      */
     async getTotalPrice() {
-        const priceElement = await this.components.totalPriceText()
+        const priceElement = this.components.totalPriceText()
         let total = await priceElement.innerText()
         total = parseFloat(total.replace("Total: $", ""))
         return parseFloat(total.toFixed(2))

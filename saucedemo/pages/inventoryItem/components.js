@@ -6,15 +6,14 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Inventory items' HTML selectors
  */
 const inventoryItemSelectors = {
-    cartItemContainer: ".cart_item",
-    detailsItemContainer: ".inventory_details_container",
-    itemContainer: ".inventory_item",
-    itemNameText: ".inventory_item_name",
-    itemDescriptionText: ".inventory_item_desc",
-    itemPriceText: ".inventory_item_price",
-    addToCartButton: "text=/add to cart/i",
-    removeButton: "text=/remove/i",
-    backToProductsButton: "[data-test='back-to-products']",
+    detailsItemContainer: "data-test=inventory-details-container",
+    itemContainer: "data-test=inventory-item",
+    itemNameText: "data-test=item-name",
+    itemDescriptionText: "data-test=item-description",
+    itemPriceText: "data-test=item-price",
+    addToCartButton: "[data-test^='button-add-to-cart']",
+    removeButton: "[data-test^='button-remove']",
+    backToProductsButton: "data-test=button-back-to-products",
 }
 
 /**
@@ -32,114 +31,82 @@ class InventoryItemComponents {
     }
 
     /**
-     * Select which container selector based on the page
-     * @returns {String} container locator
-     */
-    switchItemLocator(fromPage) {
-        switch (fromPage) {
-            case "cart":
-                return inventoryItemSelectors.cartItemContainer
-            case "inventory":
-                return inventoryItemSelectors.itemContainer
-            case "details":
-                return inventoryItemSelectors.detailsItemContainer
-            default:
-                return inventoryItemSelectors.itemContainer
-        }
-    }
-
-    /**
      * Get the inventory item detail's container Locator
      * @returns {Locator} Locator for 'detailsItemContainer' selector
      */
-    async itemDetailContainer() {
+    itemDetailContainer() {
         return this.page.locator(inventoryItemSelectors.detailsItemContainer)
     }
 
     /**
-     * Get the inventory item cart's container Locator
-     * @returns {Locator} Locator for 'cartItemContainer' selector
+     * Get the inventory item container Locator
+     * @returns {Locator} Locator for 'itemContainer' selector
      */
-    async cartItemContainer() {
-        return this.page.locator(inventoryItemSelectors.cartItemContainer)
+    itemContainer() {
+        return this.page.locator(inventoryItemSelectors.itemContainer)
     }
 
     /**
      * Get item's container Locator
-     * @param {String} [fromPage="inventory"] - the page that is calling this function like
-     * 'cart' or 'inventory
      * @returns {Locator} Locator for the item's container locator
      */
-    async items(fromPage = "inventory") {
-        const locator = this.switchItemLocator(fromPage)
-        return this.page.locator(locator)
+    items() {
+        return this.page.locator(inventoryItemSelectors.itemContainer)
     }
 
     /**
      * Get item's name Locator
-     * @param {String} [fromPage="inventory"] - the page that is calling this function like
-     * 'cart' or 'inventory
      * @returns {Locator} Locator for the 'itemNameText' selector
      */
-    async names(fromPage = "inventory") {
-        const items = await this.items(fromPage)
+    names() {
+        const items = this.items()
         return items.locator(inventoryItemSelectors.itemNameText)
     }
 
     /**
      * Get item's price Locator
-     * @param {String} [fromPage="inventory"] - the page that is calling this function like
-     * 'cart' or 'inventory
      * @returns {Locator} Locator for the 'itemPriceText' selector
      */
-    async prices(fromPage = "inventory") {
-        const items = await this.items(fromPage)
+    prices() {
+        const items = this.items()
         return items.locator(inventoryItemSelectors.itemPriceText)
     }
 
     /**
      * Get a item's container Locator by its name or index
-     * @param {String} [fromPage="inventory"] - the page that is calling this function like
-     * 'cart' or 'inventory
      * @param {Number} picker - the item's index
      * @returns {Locator} Locator for an item based on its name or locator nth
      */
-    async item(fromPage = "inventory", picker) {
-        const items = await this.items(fromPage)
+    item(picker) {
+        const items = this.items()
         if (typeof picker === "string") {
             return items.locator(`text=${picker}`).first()
         } else {
-            return await items.nth(picker)
+            return items.nth(picker)
         }
     }
 
     /**
      * Get the add to cart button Locator
-     * @param {String} fromPage - the page that is calling this function like
-     * 'cart' or 'inventory
      * @returns {Locator} Locator for 'addToCartButton' selector
      */
-    async addToCartButton(fromPage) {
-        const locator = this.switchItemLocator(fromPage)
-        return this.page.locator(`${locator}` + ">>" + `${inventoryItemSelectors.addToCartButton}`)
+    addToCartButton() {
+        return this.page.locator(inventoryItemSelectors.addToCartButton)
     }
 
     /**
      * Get the remove from cart button Locator
-     * @param {String} fromPage - the page that is calling this function like
-     * 'cart' or 'inventory
      * @returns {Locator} Locator for 'removeButton' selector
      */
-    async removeItemsButton(fromPage) {
-        const locator = this.switchItemLocator(fromPage)
-        return this.page.locator(`${locator}` + ">>" + `${inventoryItemSelectors.removeButton}`)
+    removeItemsButton() {
+        return this.page.locator(inventoryItemSelectors.removeButton)
     }
 
     /**
      * Get the back to products button Locator
      * @returns {Locator} Locator for 'backToProductsButton' selector
      */
-    async backToProductsButton() {
+    backToProductsButton() {
         return this.page.locator(inventoryItemSelectors.backToProductsButton)
     }
 }

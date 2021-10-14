@@ -36,7 +36,7 @@ class TitleHeaderController {
      * @private
      */
     async _sortItems(option) {
-        const sortSelector = await this.components.sortDropdown()
+        const sortSelector = this.components.sortDropdown()
         await sortSelector.selectOption(option)
     }
 

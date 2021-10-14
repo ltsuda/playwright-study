@@ -32,7 +32,7 @@ class CheckoutController {
      * Validate if "checkoutContainer" element is visible
      */
     async screenIsVisible() {
-        const checkoutContainerElement = await this.components.checkoutContainer()
+        const checkoutContainerElement = this.components.checkoutContainer()
         await expect(checkoutContainerElement).toBeVisible()
     }
 
@@ -40,7 +40,7 @@ class CheckoutController {
      * Click at the Cancel checkout button
      */
     async cancelCheckout() {
-        const cancelElement = await this.components.cancelButton()
+        const cancelElement = this.components.cancelButton()
         await cancelElement.click()
     }
 
@@ -48,7 +48,7 @@ class CheckoutController {
      * Click at the Continue button
      */
     async continueCheckout() {
-        const continueElement = await this.components.continueButton()
+        const continueElement = this.components.continueButton()
         await continueElement.click()
     }
 
@@ -56,7 +56,7 @@ class CheckoutController {
      * Fill up First name input
      */
     async fillFirstName(firstName) {
-        const firstNameElement = await this.components.firstNameInput()
+        const firstNameElement = this.components.firstNameInput()
         await firstNameElement.type(firstName)
     }
 
@@ -64,7 +64,7 @@ class CheckoutController {
      * Fill up Last name input
      */
     async fillLastName(lastName) {
-        const lastNameElement = await this.components.lastNameInput()
+        const lastNameElement = this.components.lastNameInput()
         await lastNameElement.type(lastName)
     }
 
@@ -72,7 +72,7 @@ class CheckoutController {
      * Fill up Postal code input
      */
     async fillPostalCode(postalCode) {
-        const postalCodeElement = await this.components.postalCodeInput()
+        const postalCodeElement = this.components.postalCodeInput()
         await postalCodeElement.type(postalCode)
     }
 
