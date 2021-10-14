@@ -33,7 +33,7 @@ class InventoryController {
      */
     async screenIsVisible() {
         const inventoryContainerLocator = this.components.inventoryContainer()
-        await expect(inventoryContainerLocator).toBeVisible()
+        return await inventoryContainerLocator.isVisible()
     }
 }
 

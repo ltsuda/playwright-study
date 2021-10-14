@@ -33,7 +33,7 @@ class OverviewController {
      */
     async screenIsVisible() {
         const overviewContainerElement = this.components.overviewContainer()
-        await expect(overviewContainerElement).toBeVisible()
+        return await overviewContainerElement.isVisible()
     }
 
     /**

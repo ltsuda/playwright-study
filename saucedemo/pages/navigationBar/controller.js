@@ -25,7 +25,7 @@ class NavigationBarController {
      */
     async componentIsVisible() {
         const navContainerLocator = this.components.navContainer()
-        await expect(navContainerLocator).toBeVisible()
+        return await navContainerLocator.isVisible()
     }
 
     /**

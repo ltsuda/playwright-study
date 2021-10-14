@@ -33,7 +33,7 @@ class CheckoutController {
      */
     async screenIsVisible() {
         const checkoutContainerElement = this.components.checkoutContainer()
-        await expect(checkoutContainerElement).toBeVisible()
+        return await checkoutContainerElement.isVisible()
     }
 
     /**

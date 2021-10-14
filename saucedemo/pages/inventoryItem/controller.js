@@ -26,7 +26,7 @@ class InventoryItemController {
      */
     async screenIsVisible() {
         const itemDetailContainerLocator = this.components.itemDetailContainer()
-        await expect(itemDetailContainerLocator).toBeVisible()
+        return await itemDetailContainerLocator.isVisible()
     }
 
     /**
@@ -34,7 +34,7 @@ class InventoryItemController {
      */
     async screenItemIsVisible() {
         const itemContainerLocator = this.components.itemContainer()
-        await expect(itemContainerLocator).toBeVisible()
+        return await itemContainerLocator.isVisible()
     }
 
     /**

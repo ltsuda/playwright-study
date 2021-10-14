@@ -33,7 +33,7 @@ class CartController {
      */
     async screenIsVisible() {
         const cartContainerElement = this.components.cartContainer()
-        await expect(cartContainerElement).toBeVisible()
+        return await cartContainerElement.isVisible()
     }
 
     /**

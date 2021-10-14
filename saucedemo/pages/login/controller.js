@@ -48,8 +48,9 @@ class LoginController {
     async screenIsVisible() {
         const loginContainerSelector = this.components.loginContainer()
         const credentialsContainerSelector = this.components.credentialsContainer()
-        await expect(loginContainerSelector).toBeVisible()
-        await expect(credentialsContainerSelector).toBeVisible()
+        const loginContainerIsVisible = await loginContainerSelector.isVisible()
+        const credentialsContainerIsVisible = await credentialsContainerSelector.isVisible()
+        return loginContainerIsVisible === credentialsContainerIsVisible
     }
 
     /**

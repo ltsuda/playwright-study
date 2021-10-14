@@ -9,7 +9,7 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
     })
 
     test("Login page shows correct elements", async ({ loginController, page }) => {
-        await loginController.screenIsVisible()
+        expect(await loginController.screenIsVisible()).toBeTruthy()
         expect(await page.screenshot({ fullPage: true })).toMatchSnapshot("login-screen.png")
     })
 
@@ -18,7 +18,7 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await navigationBarController.componentIsVisible()
+        expect(await navigationBarController.componentIsVisible()).toBeTruthy()
         const navigationBarElement = await navigationBarController.components.navContainer()
         expect(await navigationBarElement.screenshot({ fullPage: true })).toMatchSnapshot("navigationbar-screen.png")
     })
@@ -28,7 +28,7 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
             path: `${PAGES.INVENTORY_ITEM}?id=${PRODUCTS_INDEX.JACKET}`,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await navigationBarController.componentIsVisible()
+        expect(await navigationBarController.componentIsVisible()).toBeTruthy()
         const navigationBarElement = await navigationBarController.components.navContainer()
         expect(await navigationBarElement.screenshot({ fullPage: true })).toMatchSnapshot(
             "navigationbar-item-screen.png"
@@ -40,7 +40,7 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await footerController.componentIsVisible()
+        expect(await footerController.componentIsVisible()).toBeTruthy()
         const footerElement = await footerController.components.footerContainer()
         expect(await footerElement.screenshot({ fullPage: true })).toMatchSnapshot("footer-screen.png")
     })
@@ -50,7 +50,7 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await inventoryController.screenIsVisible()
+        expect(await inventoryController.screenIsVisible()).toBeTruthy()
         expect(await page.screenshot({ fullPage: true })).toMatchSnapshot("inventory-screen.png")
     })
 
@@ -59,7 +59,7 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
             path: `${PAGES.INVENTORY_ITEM}?id=${PRODUCTS_INDEX.BIKELIGHT}`,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await inventoryItemController.screenIsVisible()
+        expect(await inventoryItemController.screenIsVisible()).toBeTruthy()
         expect(await page.screenshot({ fullPage: true })).toMatchSnapshot("inventoryItem-screen.png")
     })
 
@@ -68,7 +68,7 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
             path: PAGES.CART,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await cartController.screenIsVisible()
+        expect(await cartController.screenIsVisible()).toBeTruthy()
         expect(await page.screenshot({ fullPage: true })).toMatchSnapshot("cart-empty-screen.png")
     })
 
@@ -82,8 +82,8 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
             username: CREDENTIALS.USERS.STANDARD,
             products: [PRODUCTS_INDEX.BACKPACK],
         })
-        await cartController.screenIsVisible()
-        await inventoryItemController.screenItemIsVisible()
+        expect(await cartController.screenIsVisible()).toBeTruthy()
+        expect(await inventoryItemController.screenItemIsVisible()).toBeTruthy()
         expect(await page.screenshot({ fullPage: true })).toMatchSnapshot("cart-item-screen.png")
     })
 
@@ -92,7 +92,7 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
             path: PAGES.CHECKOUT,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await checkoutController.screenIsVisible()
+        expect(await checkoutController.screenIsVisible()).toBeTruthy()
         expect(await page.screenshot({ fullPage: true })).toMatchSnapshot("checkout-screen.png")
     })
 
@@ -101,7 +101,7 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
             path: PAGES.OVERVIEW,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await overviewController.screenIsVisible()
+        expect(await overviewController.screenIsVisible()).toBeTruthy()
         expect(await page.screenshot({ fullPage: true })).toMatchSnapshot("overview-empty-screen.png")
     })
 
@@ -111,7 +111,7 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
             username: CREDENTIALS.USERS.STANDARD,
             products: [PRODUCTS_INDEX.ALL_TSHIRT],
         })
-        await overviewController.screenIsVisible()
+        expect(await overviewController.screenIsVisible()).toBeTruthy()
         expect(await page.screenshot({ fullPage: true })).toMatchSnapshot("overview-item-screen.png")
     })
 
@@ -120,7 +120,7 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
             path: PAGES.COMPLETED,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await completedController.screenIsVisible()
+        expect(await completedController.screenIsVisible()).toBeTruthy()
         expect(await page.screenshot({ fullPage: true })).toMatchSnapshot("completed-screen.png")
     })
 })

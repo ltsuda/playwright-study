@@ -33,7 +33,7 @@ class CompletedController {
      */
     async screenIsVisible() {
         const completedContainerElement = this.components.completedContainer()
-        await expect(completedContainerElement).toBeVisible()
+        return await completedContainerElement.isVisible()
     }
 
     /**
