@@ -38,7 +38,7 @@ test.describe.parallel("Saucedemo InventoryPage: @inventory", () => {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(await inventoryItemController.getItemsCount("inventory")).toBe(Object.values(PRODUCTS_NAMES).length)
+        expect(await inventoryItemController.getItemsCount()).toBe(Object.values(PRODUCTS_NAMES).length)
     })
 
     test("should show items sorted alphabetically", async ({ inventoryItemController, page }) => {
@@ -46,7 +46,7 @@ test.describe.parallel("Saucedemo InventoryPage: @inventory", () => {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        expect(await inventoryItemController.getNames("inventory")).toStrictEqual(Object.values(PRODUCTS_NAMES).sort())
+        expect(await inventoryItemController.getNames()).toStrictEqual(Object.values(PRODUCTS_NAMES).sort())
     })
 
     test("should be possible to sort items from Z to A", async ({
@@ -59,9 +59,7 @@ test.describe.parallel("Saucedemo InventoryPage: @inventory", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await titleHeaderController.sortZA()
-        expect(await inventoryItemController.getNames("inventory")).toStrictEqual(
-            Object.values(PRODUCTS_NAMES).sort().reverse()
-        )
+        expect(await inventoryItemController.getNames()).toStrictEqual(Object.values(PRODUCTS_NAMES).sort().reverse())
     })
 
     test("should be possible to sort items prices from Low to High", async ({
@@ -74,7 +72,7 @@ test.describe.parallel("Saucedemo InventoryPage: @inventory", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await titleHeaderController.sortLowHigh()
-        const prices = await inventoryItemController.getPrices("inventory")
+        const prices = await inventoryItemController.getPrices()
         expect(prices).toBe(prices.sort())
     })
 
@@ -88,7 +86,7 @@ test.describe.parallel("Saucedemo InventoryPage: @inventory", () => {
             username: CREDENTIALS.USERS.STANDARD,
         })
         await titleHeaderController.sortHighLow()
-        const prices = await inventoryItemController.getPrices("inventory")
+        const prices = await inventoryItemController.getPrices()
         expect(prices).toBe(prices.sort().reverse())
     })
 
@@ -101,7 +99,7 @@ test.describe.parallel("Saucedemo InventoryPage: @inventory", () => {
             path: PAGES.INVENTORY,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await inventoryItemController.addToCart("inventory")
+        await inventoryItemController.addToCart()
         await expect(await navigationBarController.components.cartBadgeText()).toHaveText("1")
     })
 

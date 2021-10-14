@@ -44,7 +44,7 @@ test.describe.parallel("Saucedemo OverviewPage: @overview", () => {
             username: CREDENTIALS.USERS.STANDARD,
             products: [PRODUCTS_INDEX.BOLT_TSHIRT],
         })
-        const overviewItems = await inventoryItemController.getNames("cart")
+        const overviewItems = await inventoryItemController.getNames()
         expect(overviewItems[0]).toStrictEqual(PRODUCTS_NAMES.BOLT_TSHIRT)
     })
 

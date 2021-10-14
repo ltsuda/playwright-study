@@ -44,7 +44,7 @@ test.describe.parallel("Saucedemo E2E: @e2e", () => {
         })
 
         await test.step("validate item in cart is the same as the one added from invetory", async () => {
-            const cartItems = await inventoryItemController.getItemsObject("cart")
+            const cartItems = await inventoryItemController.getItemsObject()
             expect(cartItems[0]).toStrictEqual(item)
             await expect(await navigationBarController.components.cartBadgeText()).toHaveText(String(cartItems.length))
         })
@@ -63,7 +63,7 @@ test.describe.parallel("Saucedemo E2E: @e2e", () => {
         })
 
         await test.step("validate item, payment and shipping information", async () => {
-            const overviewItems = await inventoryItemController.getNames("cart")
+            const overviewItems = await inventoryItemController.getNames()
             expect(overviewItems[0]).toBe(item.name)
             await expect(await overviewController.components.paymentInfoText()).toHaveText(MESSAGES.OVERVIEW_CARD)
             await expect(await overviewController.components.shippingInfoText()).toHaveText(MESSAGES.OVERVIEW_SHIPMENT)

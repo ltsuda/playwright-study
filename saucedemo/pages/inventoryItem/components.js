@@ -6,11 +6,10 @@ const { Page, Locator } = require("@playwright/test")
  * Object representing Inventory items' HTML selectors
  */
 const inventoryItemSelectors = {
-    cartItemContainer: "data-test=item-cart",
-    detailsItemContainer: "[data-test='inventory-details-container']",
-    itemContainer: "[data-test='item-inventory']",
-    itemNameText: "[data-test='item-name']",
-    itemDescriptionText: "[data-test='item-description']",
+    detailsItemContainer: "data-test=inventory-details-container",
+    itemContainer: "data-test=inventory-item",
+    itemNameText: "data-test=item-name",
+    itemDescriptionText: "data-test=item-description",
     itemPriceText: "data-test=item-price",
     addToCartButton: "[data-test^='button-add-to-cart']",
     removeButton: "[data-test^='button-remove']",
@@ -32,23 +31,6 @@ class InventoryItemComponents {
     }
 
     /**
-     * Select which container selector based on the page
-     * @returns {String} container locator
-     */
-    switchItemLocator(fromPage) {
-        switch (fromPage) {
-            case "cart":
-                return inventoryItemSelectors.cartItemContainer
-            case "inventory":
-                return inventoryItemSelectors.itemContainer
-            case "details":
-                return inventoryItemSelectors.detailsItemContainer
-            default:
-                return inventoryItemSelectors.itemContainer
-        }
-    }
-
-    /**
      * Get the inventory item detail's container Locator
      * @returns {Locator} Locator for 'detailsItemContainer' selector
      */
@@ -57,55 +39,46 @@ class InventoryItemComponents {
     }
 
     /**
-     * Get the inventory item cart's container Locator
-     * @returns {Locator} Locator for 'cartItemContainer' selector
+     * Get the inventory item container Locator
+     * @returns {Locator} Locator for 'itemContainer' selector
      */
-    cartItemContainer() {
-        return this.page.locator(inventoryItemSelectors.cartItemContainer)
+    itemContainer() {
+        return this.page.locator(inventoryItemSelectors.itemContainer)
     }
 
     /**
      * Get item's container Locator
-     * @param {String} [fromPage="inventory"] - the page that is calling this function like
-     * 'cart' or 'inventory
      * @returns {Locator} Locator for the item's container locator
      */
-    items(fromPage = "inventory") {
-        const locator = this.switchItemLocator(fromPage)
-        return this.page.locator(locator)
+    items() {
+        return this.page.locator(inventoryItemSelectors.itemContainer)
     }
 
     /**
      * Get item's name Locator
-     * @param {String} [fromPage="inventory"] - the page that is calling this function like
-     * 'cart' or 'inventory
      * @returns {Locator} Locator for the 'itemNameText' selector
      */
-    names(fromPage = "inventory") {
-        const items = this.items(fromPage)
+    names() {
+        const items = this.items()
         return items.locator(inventoryItemSelectors.itemNameText)
     }
 
     /**
      * Get item's price Locator
-     * @param {String} [fromPage="inventory"] - the page that is calling this function like
-     * 'cart' or 'inventory
      * @returns {Locator} Locator for the 'itemPriceText' selector
      */
-    prices(fromPage = "inventory") {
-        const items = this.items(fromPage)
+    prices() {
+        const items = this.items()
         return items.locator(inventoryItemSelectors.itemPriceText)
     }
 
     /**
      * Get a item's container Locator by its name or index
-     * @param {String} [fromPage="inventory"] - the page that is calling this function like
-     * 'cart' or 'inventory
      * @param {Number} picker - the item's index
      * @returns {Locator} Locator for an item based on its name or locator nth
      */
-    item(fromPage = "inventory", picker) {
-        const items = this.items(fromPage)
+    item(picker) {
+        const items = this.items()
         if (typeof picker === "string") {
             return items.locator(`text=${picker}`).first()
         } else {
@@ -115,7 +88,6 @@ class InventoryItemComponents {
 
     /**
      * Get the add to cart button Locator
-     * 'cart' or 'inventory
      * @returns {Locator} Locator for 'addToCartButton' selector
      */
     addToCartButton() {
