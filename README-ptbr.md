@@ -31,7 +31,7 @@ git clone https://github.com/ltsuda/playwright-study.git --recursive
 #### Instalando dependências
 ```bash
 npm install
-npx playwright install
+npx playwright install && npx playwright install-deps
 npx playwright install chrome
 npm run beforetest
 ```
