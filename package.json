@@ -18,7 +18,8 @@
         "test:e2e": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep @e2e --project 'chromium-hd' || :",
         "test:smoke": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep @smoke --project 'chromium-hd' || :",
         "test:ci": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep-invert '@visual' || :",
-        "test:docker": "PWTEST_SKIP_TEST_OUTPUT=1 PLAYWRIGHT_HTML_REPORT='test-results' npx playwright test --grep-invert '@visual' --reporter=dot,html ||:"
+        "test:docker": "PWTEST_SKIP_TEST_OUTPUT=1 PLAYWRIGHT_HTML_REPORT='test-results' npx playwright test --grep-invert '@visual' --reporter=dot,html ||:",
+        "posttest:docker": "npx playwright show-report test-results"
     },
     "repository": {
         "type": "git",
