@@ -1,0 +1,557 @@
+{
+  "fileId": "f22b032084962f87bc1d771dbea9825641155620",
+  "fileName": "failSample.spec.js",
+  "tests": [
+    {
+      "testId": "f22b032084962f87bc1d771dbea9825641155620-c2e6edc90b516529c96c6c58cbc01523e6fef2aa",
+      "title": "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+      "projectName": "chromium-hd",
+      "location": {
+        "file": "failSample.spec.js",
+        "line": 10,
+        "column": 1
+      },
+      "duration": 8219,
+      "outcome": "expected",
+      "path": [
+        "failSample.spec.js:10"
+      ],
+      "results": [
+        {
+          "duration": 8219,
+          "startTime": "2021-10-22T01:40:44.194Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:40:44.195Z",
+              "duration": 440,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:40:44.519Z",
+                  "duration": 115,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto",
+              "startTime": "2021-10-22T01:40:44.637Z",
+              "duration": 1530,
+              "snippet": "   41 |     async navigate() {\n   42 |         await this.page.goto(`${PAGES.LOGIN}`, { waitUntil: \"networkidle\" })\n      |                         ^\n   43 |     }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/pages/login/controller.js",
+                "line": 42,
+                "column": 25
+              }
+            },
+            {
+              "title": "locator.type(data-test=input-username)",
+              "startTime": "2021-10-22T01:40:46.169Z",
+              "duration": 38,
+              "snippet": "   60 |         const usernameSelector = this.components.usernameInput()\n   61 |         await usernameSelector.type(username)\n      |                                ^\n   62 |     }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/pages/login/controller.js",
+                "line": 61,
+                "column": 32
+              }
+            },
+            {
+              "title": "locator.type(data-test=input-password, secret_sauce)",
+              "startTime": "2021-10-22T01:40:46.208Z",
+              "duration": 108,
+              "snippet": "   68 |         const passwordSelector = this.components.passwordInput()\n   69 |         await passwordSelector.type(password)\n      |                                ^\n   70 |     }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/pages/login/controller.js",
+                "line": 69,
+                "column": 32
+              }
+            },
+            {
+              "title": "locator.click(data-test=button-login)",
+              "startTime": "2021-10-22T01:40:46.317Z",
+              "duration": 71,
+              "snippet": "   76 |         const loginSelector = this.components.loginButton()\n   77 |         await loginSelector.click()\n      |                             ^\n   78 |     }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/pages/login/controller.js",
+                "line": 77,
+                "column": 29
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:40:46.390Z",
+              "duration": 5012,
+              "snippet": "  17 |     await loginController.loginWithoutUser()\n  18 |     await expect(inventoryController.page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                                            ^\n  19 | })",
+              "steps": [],
+              "location": {
+                "file": "failSample.spec.js",
+                "line": 18,
+                "column": 44
+              },
+              "error": "expect(received).toHaveURL(expected)\n\nExpected string: \"http://localhost:3000/inventory.html\"\nReceived string: \"http://localhost:3000/\"\n\nCall log:\n  - waiting for selector \":root\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n"
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:40:51.403Z",
+              "duration": 1010,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:40:51.554Z",
+                  "duration": 856,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "Error: expect(received).toHaveURL(expected)\n\nExpected string: \"http://localhost:3000/inventory.html\"\nReceived string: \"http://localhost:3000/\"\n\nCall log:\n  - waiting for selector \":root\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n  -   selector resolved to <html lang=\"en\">…</html>\n  -   unexpected value \"http://localhost:3000/\"\n\n\n  16 |     await loginController.navigate()\n  17 |     await loginController.loginWithoutUser()\n> 18 |     await expect(inventoryController.page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                                            ^\n  19 | })\n  20 |\n\n    at /home/runner/work/playwright-study/playwright-study/tests/failSample.spec.js:18:44\n    at WorkerRunner._runTestWithBeforeHooks (/home/runner/work/playwright-study/playwright-study/node_modules/@playwright/test/lib/workerRunner.js:478:7)",
+          "status": "failed",
+          "attachments": [
+            {
+              "name": "video",
+              "contentType": "video/webm",
+              "path": "data/536f9a9bd5d36e6f3bf733bfb199ccb8d57eeb20.webm"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/164481f07e353e1ffc670942c4762bbfa1d1c722.zip"
+            },
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "data/ea7d13613c802716205c7d6fa3966e99d9216b31.png"
+            }
+          ]
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "f22b032084962f87bc1d771dbea9825641155620-60fbcc96fd2862e79c1cf23f69f8ebe8ec1d782b",
+      "title": "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+      "projectName": "chromium-fhd",
+      "location": {
+        "file": "failSample.spec.js",
+        "line": 10,
+        "column": 1
+      },
+      "duration": 623,
+      "outcome": "skipped",
+      "path": [
+        "failSample.spec.js:10"
+      ],
+      "results": [
+        {
+          "duration": 623,
+          "startTime": "2021-10-22T01:42:32.149Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:42:32.149Z",
+              "duration": 330,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:42:32.398Z",
+                  "duration": 81,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:42:32.480Z",
+              "duration": 292,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:42:32.715Z",
+                  "duration": 55,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "skipped",
+          "attachments": [
+            {
+              "name": "video",
+              "contentType": "video/webm",
+              "path": "data/c2c8e7698ff3390d5bc27f88fdf748cbd9a23f62.webm"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/5dcb8f2e717b5423bbb3c0aa904bdedfd2417eca.zip"
+            },
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "data/83cb26b0c4755094f9fee342089012e9122a97c7.png"
+            }
+          ]
+        }
+      ],
+      "ok": false
+    },
+    {
+      "testId": "f22b032084962f87bc1d771dbea9825641155620-ff15e03bb406610c60bfc5bcc1d1ca9608d3e0da",
+      "title": "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+      "projectName": "chrome-hd",
+      "location": {
+        "file": "failSample.spec.js",
+        "line": 10,
+        "column": 1
+      },
+      "duration": 457,
+      "outcome": "skipped",
+      "path": [
+        "failSample.spec.js:10"
+      ],
+      "results": [
+        {
+          "duration": 457,
+          "startTime": "2021-10-22T01:44:08.170Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:44:08.171Z",
+              "duration": 242,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:44:08.331Z",
+                  "duration": 82,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:44:08.420Z",
+              "duration": 207,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:44:08.580Z",
+                  "duration": 45,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "skipped",
+          "attachments": [
+            {
+              "name": "video",
+              "contentType": "video/webm",
+              "path": "data/fb7dcce1ce68f907550419d9e349690cf349b496.webm"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/42c4f1cfe85af6bf97851116b9291deee7b027a9.zip"
+            },
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "data/f6aa9785bc9c7b8fd40c3f6ede6f59112a939527.png"
+            }
+          ]
+        }
+      ],
+      "ok": false
+    },
+    {
+      "testId": "f22b032084962f87bc1d771dbea9825641155620-5995e67fa8a203205c4e4ef00d33ffde76bc7dc2",
+      "title": "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+      "projectName": "firefox-hd",
+      "location": {
+        "file": "failSample.spec.js",
+        "line": 10,
+        "column": 1
+      },
+      "duration": 3317,
+      "outcome": "skipped",
+      "path": [
+        "failSample.spec.js:10"
+      ],
+      "results": [
+        {
+          "duration": 3317,
+          "startTime": "2021-10-22T01:46:30.878Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:46:30.878Z",
+              "duration": 2718,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:46:32.647Z",
+                  "duration": 948,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:46:33.596Z",
+              "duration": 598,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:46:33.995Z",
+                  "duration": 196,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "skipped",
+          "attachments": [
+            {
+              "name": "video",
+              "contentType": "video/webm",
+              "path": "data/51514d32d3ce49227ce7fd9c39423e011e8f6bb6.webm"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/866cadd9c1536b3a7f1e66b4367ea7c2b4c27364.zip"
+            },
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "data/8fc43d271bb01ae1a9adcf08f56c245808fba602.png"
+            }
+          ]
+        }
+      ],
+      "ok": false
+    },
+    {
+      "testId": "f22b032084962f87bc1d771dbea9825641155620-44e7eaa8a17c0e49ada96e502346b65c705cb0bc",
+      "title": "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+      "projectName": "webkit-hd",
+      "location": {
+        "file": "failSample.spec.js",
+        "line": 10,
+        "column": 1
+      },
+      "duration": 854,
+      "outcome": "skipped",
+      "path": [
+        "failSample.spec.js:10"
+      ],
+      "results": [
+        {
+          "duration": 854,
+          "startTime": "2021-10-22T01:48:32.831Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:48:32.831Z",
+              "duration": 653,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:48:33.244Z",
+                  "duration": 235,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:48:33.484Z",
+              "duration": 201,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:48:33.666Z",
+                  "duration": 16,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "skipped",
+          "attachments": [
+            {
+              "name": "video",
+              "contentType": "video/webm",
+              "path": "data/7cf9a9f08bb8f87277c08d72271ad5c7b73c0ae0.webm"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "data/471d20057f402e0004c82bdf94e53b07a513cbe2.zip"
+            },
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "data/5593b7296ef2aa4a34bbbf2da4f9bb2aef5a26a9.png"
+            }
+          ]
+        }
+      ],
+      "ok": false
+    },
+    {
+      "testId": "f22b032084962f87bc1d771dbea9825641155620-539624bddfb96d01af51f637d4462975cad23565",
+      "title": "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+      "projectName": "iphone-8",
+      "location": {
+        "file": "failSample.spec.js",
+        "line": 10,
+        "column": 1
+      },
+      "duration": 913,
+      "outcome": "skipped",
+      "path": [
+        "failSample.spec.js:10"
+      ],
+      "results": [
+        {
+          "duration": 913,
+          "startTime": "2021-10-22T01:50:36.279Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:50:36.281Z",
+              "duration": 717,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:50:36.693Z",
+                  "duration": 305,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:50:37.001Z",
+              "duration": 191,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:50:37.171Z",
+                  "duration": 11,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "skipped",
+          "attachments": [
+            {
+              "name": "video",
+              "contentType": "video/webm",
+              "path": "/home/runner/work/playwright-study/playwright-study/test-results/failSample-marked-as-should-fail-on-purpose-to-show-expected-error-evidences-login-should-fail-iphone-8/eed8fbc3e25675778620913efab2cc73.webm"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "/home/runner/work/playwright-study/playwright-study/test-results/failSample-marked-as-should-fail-on-purpose-to-show-expected-error-evidences-login-should-fail-iphone-8/trace.zip"
+            },
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "/home/runner/work/playwright-study/playwright-study/test-results/failSample-marked-as-should-fail-on-purpose-to-show-expected-error-evidences-login-should-fail-iphone-8/test-finished-1.png"
+            }
+          ]
+        }
+      ],
+      "ok": false
+    },
+    {
+      "testId": "f22b032084962f87bc1d771dbea9825641155620-bd20be803545117b8598f3b0dd92e4aec9c71f25",
+      "title": "marked as 'should fail' on purpose to show expected error evidences @login @should-fail",
+      "projectName": "pixel-4",
+      "location": {
+        "file": "failSample.spec.js",
+        "line": 10,
+        "column": 1
+      },
+      "duration": 658,
+      "outcome": "skipped",
+      "path": [
+        "failSample.spec.js:10"
+      ],
+      "results": [
+        {
+          "duration": 658,
+          "startTime": "2021-10-22T01:52:20.768Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:52:20.769Z",
+              "duration": 324,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:52:21.017Z",
+                  "duration": 76,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:52:21.094Z",
+              "duration": 332,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:52:21.367Z",
+                  "duration": 56,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "skipped",
+          "attachments": [
+            {
+              "name": "video",
+              "contentType": "video/webm",
+              "path": "/home/runner/work/playwright-study/playwright-study/test-results/failSample-marked-as-should-fail-on-purpose-to-show-expected-error-evidences-login-should-fail-pixel-4/6db17dea64d4c2be0d57bed9a47a7f77.webm"
+            },
+            {
+              "name": "trace",
+              "contentType": "application/zip",
+              "path": "/home/runner/work/playwright-study/playwright-study/test-results/failSample-marked-as-should-fail-on-purpose-to-show-expected-error-evidences-login-should-fail-pixel-4/trace.zip"
+            },
+            {
+              "name": "screenshot",
+              "contentType": "image/png",
+              "path": "/home/runner/work/playwright-study/playwright-study/test-results/failSample-marked-as-should-fail-on-purpose-to-show-expected-error-evidences-login-should-fail-pixel-4/test-finished-1.png"
+            }
+          ]
+        }
+      ],
+      "ok": false
+    }
+  ]
+}

@@ -1,0 +1,3695 @@
+{
+  "fileId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748",
+  "fileName": "completed.spec.js",
+  "tests": [
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-6e8d562089adf77ff9022f15c4ad119bab667078",
+      "title": "should be at Completed page",
+      "projectName": "chromium-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 7,
+        "column": 5
+      },
+      "duration": 2044,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:7",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2044,
+          "startTime": "2021-10-22T01:39:41.458Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:39:41.458Z",
+              "duration": 43,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:39:41.463Z",
+                  "duration": 38,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:39:41.502Z",
+              "duration": 1055,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:39:42.557Z",
+              "duration": 7,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:39:42.565Z",
+              "duration": 744,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:39:43.310Z",
+              "duration": 40,
+              "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 12,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:39:43.350Z",
+              "duration": 152,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:39:43.485Z",
+                  "duration": 16,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-640d5bb13bd0c4b7b478bb542903ba50e4d21edb",
+      "title": "should be back at Inventory page when click at the Back Home button",
+      "projectName": "chromium-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 15,
+        "column": 5
+      },
+      "duration": 2874,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:15",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2874,
+          "startTime": "2021-10-22T01:39:42.147Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:39:42.148Z",
+              "duration": 45,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:39:42.156Z",
+                  "duration": 37,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:39:42.194Z",
+              "duration": 1044,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:39:43.239Z",
+              "duration": 5,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:39:43.245Z",
+              "duration": 709,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "locator.click(data-test=button-back-to-products)",
+              "startTime": "2021-10-22T01:39:43.955Z",
+              "duration": 172,
+              "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/pages/completed/controller.js",
+                "line": 44,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:39:44.128Z",
+              "duration": 28,
+              "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 25,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:39:44.157Z",
+              "duration": 864,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:39:45.015Z",
+                  "duration": 6,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-4ca1893e7dec17aefe964c68f518befee673c11d",
+      "title": "should have a thank you header message",
+      "projectName": "chromium-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 28,
+        "column": 5
+      },
+      "duration": 1929,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:28",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 1929,
+          "startTime": "2021-10-22T01:39:43.502Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:39:43.502Z",
+              "duration": 46,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:39:43.506Z",
+                  "duration": 42,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:39:43.549Z",
+              "duration": 991,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:39:44.540Z",
+              "duration": 6,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:39:44.547Z",
+              "duration": 742,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:39:45.290Z",
+              "duration": 30,
+              "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 33,
+                "column": 82
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:39:45.320Z",
+              "duration": 111,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:39:45.418Z",
+                  "duration": 13,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-04df7a45729e4908537f44f3a58d628a3b7489f9",
+      "title": "should have a completed order message",
+      "projectName": "chromium-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 36,
+        "column": 5
+      },
+      "duration": 2067,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:36",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2067,
+          "startTime": "2021-10-22T01:39:45.022Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:39:45.022Z",
+              "duration": 53,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:39:45.026Z",
+                  "duration": 45,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:39:45.075Z",
+              "duration": 1157,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:39:46.233Z",
+              "duration": 5,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:39:46.238Z",
+              "duration": 717,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:39:46.955Z",
+              "duration": 24,
+              "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 41,
+                "column": 76
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:39:46.979Z",
+              "duration": 110,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:39:47.081Z",
+                  "duration": 7,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-83a55ed4b9c2f0b376d8b37535d5e2392d00662d",
+      "title": "should have a completed order image",
+      "projectName": "chromium-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 44,
+        "column": 5
+      },
+      "duration": 2037,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:44",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2037,
+          "startTime": "2021-10-22T01:39:45.432Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:39:45.432Z",
+              "duration": 73,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:39:45.441Z",
+                  "duration": 63,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:39:45.505Z",
+              "duration": 1100,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:39:46.606Z",
+              "duration": 5,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:39:46.611Z",
+              "duration": 683,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveAttribute",
+              "startTime": "2021-10-22T01:39:47.295Z",
+              "duration": 30,
+              "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 49,
+                "column": 77
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:39:47.325Z",
+              "duration": 144,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:39:47.447Z",
+                  "duration": 16,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-5397e88aba4651820cd2a37aee8d937065f91262",
+      "title": "should be at Completed page",
+      "projectName": "chromium-fhd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 7,
+        "column": 5
+      },
+      "duration": 2121,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:7",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2121,
+          "startTime": "2021-10-22T01:41:26.334Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:41:26.334Z",
+              "duration": 58,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:41:26.342Z",
+                  "duration": 50,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:41:26.393Z",
+              "duration": 1127,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:41:27.520Z",
+              "duration": 5,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:41:27.525Z",
+              "duration": 678,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:41:28.203Z",
+              "duration": 25,
+              "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 12,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:41:28.228Z",
+              "duration": 227,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:41:28.431Z",
+                  "duration": 24,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-d2568bfd285a1f3b24e2bb17c4e0c89966ee39a0",
+      "title": "should be back at Inventory page when click at the Back Home button",
+      "projectName": "chromium-fhd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 15,
+        "column": 5
+      },
+      "duration": 3480,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:15",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 3480,
+          "startTime": "2021-10-22T01:41:28.441Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:41:28.441Z",
+              "duration": 89,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:41:28.465Z",
+                  "duration": 65,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:41:28.531Z",
+              "duration": 1220,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:41:29.752Z",
+              "duration": 8,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:41:29.761Z",
+              "duration": 785,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "locator.click(data-test=button-back-to-products)",
+              "startTime": "2021-10-22T01:41:30.546Z",
+              "duration": 194,
+              "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/pages/completed/controller.js",
+                "line": 44,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:41:30.741Z",
+              "duration": 69,
+              "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 25,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:41:30.810Z",
+              "duration": 1111,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:41:31.909Z",
+                  "duration": 11,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-e89b37d8cb0af79c59d50900f08446667418989a",
+      "title": "should have a thank you header message",
+      "projectName": "chromium-fhd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 28,
+        "column": 5
+      },
+      "duration": 2342,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:28",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2342,
+          "startTime": "2021-10-22T01:41:28.456Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:41:28.456Z",
+              "duration": 70,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:41:28.469Z",
+                  "duration": 57,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:41:28.527Z",
+              "duration": 1214,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:41:29.742Z",
+              "duration": 5,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:41:29.748Z",
+              "duration": 774,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:41:30.523Z",
+              "duration": 30,
+              "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 33,
+                "column": 82
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:41:30.553Z",
+              "duration": 245,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:41:30.785Z",
+                  "duration": 12,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-09005a074ef962097511747cea7b968127ba7e91",
+      "title": "should have a completed order message",
+      "projectName": "chromium-fhd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 36,
+        "column": 5
+      },
+      "duration": 2259,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:36",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2259,
+          "startTime": "2021-10-22T01:41:30.798Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:41:30.799Z",
+              "duration": 75,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:41:30.807Z",
+                  "duration": 67,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:41:30.875Z",
+              "duration": 1156,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:41:32.032Z",
+              "duration": 5,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:41:32.037Z",
+              "duration": 791,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:41:32.829Z",
+              "duration": 24,
+              "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 41,
+                "column": 76
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:41:32.853Z",
+              "duration": 204,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:41:33.047Z",
+                  "duration": 8,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-e8fa6058371b554f38524726c442660c3fc65743",
+      "title": "should have a completed order image",
+      "projectName": "chromium-fhd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 44,
+        "column": 5
+      },
+      "duration": 2303,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:44",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2303,
+          "startTime": "2021-10-22T01:41:31.921Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:41:31.922Z",
+              "duration": 53,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:41:31.926Z",
+                  "duration": 49,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:41:31.976Z",
+              "duration": 1084,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:41:33.060Z",
+              "duration": 6,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:41:33.066Z",
+              "duration": 832,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveAttribute",
+              "startTime": "2021-10-22T01:41:33.899Z",
+              "duration": 29,
+              "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 49,
+                "column": 77
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:41:33.928Z",
+              "duration": 296,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:41:34.199Z",
+                  "duration": 25,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-0d739b92f1d4ec3f3e51960731d23d55ac913f11",
+      "title": "should be at Completed page",
+      "projectName": "chrome-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 7,
+        "column": 5
+      },
+      "duration": 1939,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:7",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 1939,
+          "startTime": "2021-10-22T01:43:08.378Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:43:08.378Z",
+              "duration": 40,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:43:08.385Z",
+                  "duration": 33,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:43:08.419Z",
+              "duration": 993,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:43:09.413Z",
+              "duration": 5,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:43:09.418Z",
+              "duration": 735,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:43:10.153Z",
+              "duration": 28,
+              "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 12,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:43:10.182Z",
+              "duration": 135,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:43:10.300Z",
+                  "duration": 16,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-97042ecd3106414d87a75367d1c91e6684bb7f3d",
+      "title": "should be back at Inventory page when click at the Back Home button",
+      "projectName": "chrome-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 15,
+        "column": 5
+      },
+      "duration": 2571,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:15",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2571,
+          "startTime": "2021-10-22T01:43:09.099Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:43:09.099Z",
+              "duration": 42,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:43:09.105Z",
+                  "duration": 36,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:43:09.142Z",
+              "duration": 996,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:43:10.141Z",
+              "duration": 5,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:43:10.147Z",
+              "duration": 754,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "locator.click(data-test=button-back-to-products)",
+              "startTime": "2021-10-22T01:43:10.902Z",
+              "duration": 113,
+              "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/pages/completed/controller.js",
+                "line": 44,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:43:11.016Z",
+              "duration": 37,
+              "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 25,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:43:11.053Z",
+              "duration": 617,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:43:11.656Z",
+                  "duration": 12,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-9de8908ba43e677d3f5f7885a4883ffb5afc43b1",
+      "title": "should have a thank you header message",
+      "projectName": "chrome-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 28,
+        "column": 5
+      },
+      "duration": 1989,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:28",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 1989,
+          "startTime": "2021-10-22T01:43:10.318Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:43:10.318Z",
+              "duration": 82,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:43:10.327Z",
+                  "duration": 73,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:43:10.401Z",
+              "duration": 1028,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:43:11.429Z",
+              "duration": 5,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:43:11.435Z",
+              "duration": 704,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:43:12.140Z",
+              "duration": 24,
+              "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 33,
+                "column": 82
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:43:12.164Z",
+              "duration": 143,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:43:12.295Z",
+                  "duration": 10,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-56f5f8528d50baaec0b4913d3704ec59ae95a0d3",
+      "title": "should have a completed order message",
+      "projectName": "chrome-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 36,
+        "column": 5
+      },
+      "duration": 1961,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:36",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 1961,
+          "startTime": "2021-10-22T01:43:11.672Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:43:11.672Z",
+              "duration": 41,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:43:11.678Z",
+                  "duration": 35,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:43:11.714Z",
+              "duration": 1012,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:43:12.727Z",
+              "duration": 6,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:43:12.733Z",
+              "duration": 738,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:43:13.472Z",
+              "duration": 24,
+              "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 41,
+                "column": 76
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:43:13.496Z",
+              "duration": 137,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:43:13.625Z",
+                  "duration": 7,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-02560daa5630dcc59325216fc03ff853b13c70aa",
+      "title": "should have a completed order image",
+      "projectName": "chrome-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 44,
+        "column": 5
+      },
+      "duration": 1908,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:44",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 1908,
+          "startTime": "2021-10-22T01:43:12.308Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:43:12.308Z",
+              "duration": 39,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:43:12.313Z",
+                  "duration": 34,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:43:12.347Z",
+              "duration": 993,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:43:13.341Z",
+              "duration": 4,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:43:13.346Z",
+              "duration": 685,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveAttribute",
+              "startTime": "2021-10-22T01:43:14.031Z",
+              "duration": 29,
+              "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 49,
+                "column": 77
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:43:14.061Z",
+              "duration": 155,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:43:14.192Z",
+                  "duration": 23,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-3c89b9790d0c7280253b1adb6dcd34850b649f69",
+      "title": "should be at Completed page",
+      "projectName": "firefox-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 7,
+        "column": 5
+      },
+      "duration": 2976,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:7",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2976,
+          "startTime": "2021-10-22T01:45:01.677Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:45:01.677Z",
+              "duration": 390,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:45:01.706Z",
+                  "duration": 361,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:45:02.068Z",
+              "duration": 1241,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:45:03.310Z",
+              "duration": 12,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:45:03.323Z",
+              "duration": 1209,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:45:04.533Z",
+              "duration": 38,
+              "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 12,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:45:04.571Z",
+              "duration": 81,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:45:04.639Z",
+                  "duration": 13,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-e1bcf9d0d26b6b839d4bcbfb32dbbc62e44c7091",
+      "title": "should be back at Inventory page when click at the Back Home button",
+      "projectName": "firefox-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 15,
+        "column": 5
+      },
+      "duration": 3720,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:15",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 3720,
+          "startTime": "2021-10-22T01:45:03.077Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:45:03.077Z",
+              "duration": 375,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:45:03.108Z",
+                  "duration": 343,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:45:03.452Z",
+              "duration": 1333,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:45:04.786Z",
+              "duration": 13,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:45:04.812Z",
+              "duration": 1217,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "locator.click(data-test=button-back-to-products)",
+              "startTime": "2021-10-22T01:45:06.030Z",
+              "duration": 172,
+              "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/pages/completed/controller.js",
+                "line": 44,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:45:06.203Z",
+              "duration": 149,
+              "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 25,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:45:06.353Z",
+              "duration": 444,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:45:06.774Z",
+                  "duration": 22,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-f527a04d840737c60a97e85350be5f6370804917",
+      "title": "should have a thank you header message",
+      "projectName": "firefox-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 28,
+        "column": 5
+      },
+      "duration": 2733,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:28",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2733,
+          "startTime": "2021-10-22T01:45:04.653Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:45:04.653Z",
+              "duration": 387,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:45:04.681Z",
+                  "duration": 358,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:45:05.040Z",
+              "duration": 1261,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:45:06.301Z",
+              "duration": 10,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:45:06.312Z",
+              "duration": 748,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:45:07.061Z",
+              "duration": 197,
+              "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 33,
+                "column": 82
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:45:07.258Z",
+              "duration": 128,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:45:07.377Z",
+                  "duration": 9,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-00dd355e8c2e15bf75c3a9637e79acb06d63106d",
+      "title": "should have a completed order message",
+      "projectName": "firefox-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 36,
+        "column": 5
+      },
+      "duration": 3134,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:36",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 3134,
+          "startTime": "2021-10-22T01:45:06.798Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:45:06.798Z",
+              "duration": 484,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:45:06.847Z",
+                  "duration": 435,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:45:07.282Z",
+              "duration": 1416,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:45:08.699Z",
+              "duration": 7,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:45:08.707Z",
+              "duration": 1101,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:45:09.810Z",
+              "duration": 38,
+              "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 41,
+                "column": 76
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:45:09.848Z",
+              "duration": 84,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:45:09.922Z",
+                  "duration": 9,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-e02df86fc8085b0ab5826a63f30db958adc75466",
+      "title": "should have a completed order image",
+      "projectName": "firefox-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 44,
+        "column": 5
+      },
+      "duration": 3081,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:44",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 3081,
+          "startTime": "2021-10-22T01:45:07.388Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:45:07.388Z",
+              "duration": 439,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:45:07.441Z",
+                  "duration": 385,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:45:07.827Z",
+              "duration": 1246,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:45:09.077Z",
+              "duration": 13,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:45:09.091Z",
+              "duration": 1148,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveAttribute",
+              "startTime": "2021-10-22T01:45:10.240Z",
+              "duration": 62,
+              "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 49,
+                "column": 77
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:45:10.302Z",
+              "duration": 167,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:45:10.455Z",
+                  "duration": 12,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-3098dde0bd7e77224890314d8313ad125bbafcc2",
+      "title": "should be at Completed page",
+      "projectName": "webkit-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 7,
+        "column": 5
+      },
+      "duration": 2246,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:7",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2246,
+          "startTime": "2021-10-22T01:47:20.987Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:47:20.987Z",
+              "duration": 250,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:47:21.017Z",
+                  "duration": 220,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:47:21.237Z",
+              "duration": 1187,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:47:22.424Z",
+              "duration": 6,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:47:22.430Z",
+              "duration": 675,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:47:23.105Z",
+              "duration": 52,
+              "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 12,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:47:23.158Z",
+              "duration": 75,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:47:23.222Z",
+                  "duration": 10,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-e6cb29d301b9c4b19d777f455365d6e2ef51f6d2",
+      "title": "should be back at Inventory page when click at the Back Home button",
+      "projectName": "webkit-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 15,
+        "column": 5
+      },
+      "duration": 3237,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:15",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 3237,
+          "startTime": "2021-10-22T01:47:23.151Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:47:23.151Z",
+              "duration": 285,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:47:23.165Z",
+                  "duration": 270,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:47:23.437Z",
+              "duration": 1328,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:47:24.766Z",
+              "duration": 7,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:47:24.774Z",
+              "duration": 845,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "locator.click(data-test=button-back-to-products)",
+              "startTime": "2021-10-22T01:47:25.620Z",
+              "duration": 227,
+              "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/pages/completed/controller.js",
+                "line": 44,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:47:25.849Z",
+              "duration": 334,
+              "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 25,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:47:26.183Z",
+              "duration": 205,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:47:26.385Z",
+                  "duration": 3,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-df267a1faac9cbc0f88a46b269bb8440bb251677",
+      "title": "should have a thank you header message",
+      "projectName": "webkit-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 28,
+        "column": 5
+      },
+      "duration": 2398,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:28",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2398,
+          "startTime": "2021-10-22T01:47:23.233Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:47:23.233Z",
+              "duration": 254,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:47:23.265Z",
+                  "duration": 213,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:47:23.487Z",
+              "duration": 1284,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:47:24.772Z",
+              "duration": 7,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:47:24.780Z",
+              "duration": 746,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:47:25.526Z",
+              "duration": 30,
+              "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 33,
+                "column": 82
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:47:25.556Z",
+              "duration": 75,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:47:25.628Z",
+                  "duration": 3,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-ca4f162c398128e97a0749ef969f50b5aace9e53",
+      "title": "should have a completed order message",
+      "projectName": "webkit-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 36,
+        "column": 5
+      },
+      "duration": 2538,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:36",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2538,
+          "startTime": "2021-10-22T01:47:25.632Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:47:25.632Z",
+              "duration": 310,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:47:25.655Z",
+                  "duration": 287,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:47:25.943Z",
+              "duration": 1415,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:47:27.359Z",
+              "duration": 5,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:47:27.364Z",
+              "duration": 674,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:47:28.038Z",
+              "duration": 73,
+              "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 41,
+                "column": 76
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:47:28.111Z",
+              "duration": 59,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:47:28.167Z",
+                  "duration": 3,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-f2bf0729c1da2db009767b494d72e7cf4999d5bb",
+      "title": "should have a completed order image",
+      "projectName": "webkit-hd",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 44,
+        "column": 5
+      },
+      "duration": 2284,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:44",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2284,
+          "startTime": "2021-10-22T01:47:26.390Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:47:26.390Z",
+              "duration": 298,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:47:26.427Z",
+                  "duration": 261,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:47:26.689Z",
+              "duration": 1164,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:47:27.854Z",
+              "duration": 5,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:47:27.860Z",
+              "duration": 706,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveAttribute",
+              "startTime": "2021-10-22T01:47:28.566Z",
+              "duration": 45,
+              "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 49,
+                "column": 77
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:47:28.611Z",
+              "duration": 62,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:47:28.670Z",
+                  "duration": 3,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-4b44fb6237735290bd609fd711734586cefdea1d",
+      "title": "should be at Completed page",
+      "projectName": "iphone-8",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 7,
+        "column": 5
+      },
+      "duration": 2142,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:7",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2142,
+          "startTime": "2021-10-22T01:49:24.091Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:49:24.091Z",
+              "duration": 198,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:49:24.098Z",
+                  "duration": 190,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:49:24.289Z",
+              "duration": 1108,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:49:25.398Z",
+              "duration": 6,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:49:25.404Z",
+              "duration": 706,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:49:26.111Z",
+              "duration": 31,
+              "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 12,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:49:26.142Z",
+              "duration": 91,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:49:26.227Z",
+                  "duration": 5,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-6ffd1dc6c1a616ff69c039def4c2dffd73fd11fc",
+      "title": "should be back at Inventory page when click at the Back Home button",
+      "projectName": "iphone-8",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 15,
+        "column": 5
+      },
+      "duration": 2782,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:15",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2782,
+          "startTime": "2021-10-22T01:49:26.233Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:49:26.234Z",
+              "duration": 244,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:49:26.249Z",
+                  "duration": 228,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:49:26.478Z",
+              "duration": 1273,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:49:27.751Z",
+              "duration": 7,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:49:27.759Z",
+              "duration": 826,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "locator.click(data-test=button-back-to-products)",
+              "startTime": "2021-10-22T01:49:28.586Z",
+              "duration": 150,
+              "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/pages/completed/controller.js",
+                "line": 44,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:49:28.737Z",
+              "duration": 139,
+              "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 25,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:49:28.877Z",
+              "duration": 138,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:49:29.012Z",
+                  "duration": 2,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-7c85ee6f6e19406771ec018164e253009ea00111",
+      "title": "should have a thank you header message",
+      "projectName": "iphone-8",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 28,
+        "column": 5
+      },
+      "duration": 3001,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:28",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 3001,
+          "startTime": "2021-10-22T01:49:27.585Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:49:27.586Z",
+              "duration": 772,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:49:28.079Z",
+                  "duration": 276,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:49:28.360Z",
+              "duration": 1324,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:49:29.685Z",
+              "duration": 7,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:49:29.692Z",
+              "duration": 751,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:49:30.445Z",
+              "duration": 43,
+              "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 33,
+                "column": 82
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:49:30.489Z",
+              "duration": 97,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:49:30.576Z",
+                  "duration": 9,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-773e44e03922ff60c9edf690e626bfb91a23433e",
+      "title": "should have a completed order message",
+      "projectName": "iphone-8",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 36,
+        "column": 5
+      },
+      "duration": 2521,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:36",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2521,
+          "startTime": "2021-10-22T01:49:29.016Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:49:29.016Z",
+              "duration": 335,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:49:29.050Z",
+                  "duration": 301,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:49:29.352Z",
+              "duration": 1255,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:49:30.608Z",
+              "duration": 5,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:49:30.613Z",
+              "duration": 785,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:49:31.399Z",
+              "duration": 37,
+              "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 41,
+                "column": 76
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:49:31.436Z",
+              "duration": 101,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:49:31.524Z",
+                  "duration": 4,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-43f66942f6e9197dbc3f4639f239a3799fadb967",
+      "title": "should have a completed order image",
+      "projectName": "iphone-8",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 44,
+        "column": 5
+      },
+      "duration": 2485,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:44",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2485,
+          "startTime": "2021-10-22T01:49:30.587Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:49:30.589Z",
+              "duration": 319,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:49:30.601Z",
+                  "duration": 307,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:49:30.909Z",
+              "duration": 1199,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:49:32.108Z",
+              "duration": 8,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:49:32.116Z",
+              "duration": 766,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveAttribute",
+              "startTime": "2021-10-22T01:49:32.883Z",
+              "duration": 74,
+              "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 49,
+                "column": 77
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:49:32.957Z",
+              "duration": 115,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:49:33.067Z",
+                  "duration": 3,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-ef712f54cd8142580b383cde3bad8d8e17b021b9",
+      "title": "should be at Completed page",
+      "projectName": "pixel-4",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 7,
+        "column": 5
+      },
+      "duration": 2271,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:7",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2271,
+          "startTime": "2021-10-22T01:51:14.441Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:51:14.442Z",
+              "duration": 47,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:51:14.446Z",
+                  "duration": 42,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:51:14.489Z",
+              "duration": 1022,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:51:15.512Z",
+              "duration": 7,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:51:15.519Z",
+              "duration": 867,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:51:16.387Z",
+              "duration": 30,
+              "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 12,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:51:16.417Z",
+              "duration": 295,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:51:16.695Z",
+                  "duration": 17,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-434a16ff1e8e61e7759a4dea357b9c2e5a2e5917",
+      "title": "should be back at Inventory page when click at the Back Home button",
+      "projectName": "pixel-4",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 15,
+        "column": 5
+      },
+      "duration": 2983,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:15",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2983,
+          "startTime": "2021-10-22T01:51:15.442Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:51:15.442Z",
+              "duration": 48,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:51:15.447Z",
+                  "duration": 43,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:51:15.491Z",
+              "duration": 1109,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:51:16.600Z",
+              "duration": 6,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:51:16.606Z",
+              "duration": 811,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "locator.click(data-test=button-back-to-products)",
+              "startTime": "2021-10-22T01:51:17.418Z",
+              "duration": 109,
+              "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/pages/completed/controller.js",
+                "line": 44,
+                "column": 30
+              }
+            },
+            {
+              "title": "expect.toHaveURL",
+              "startTime": "2021-10-22T01:51:17.528Z",
+              "duration": 37,
+              "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 25,
+                "column": 28
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:51:17.566Z",
+              "duration": 859,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:51:18.413Z",
+                  "duration": 11,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-6e37030aef10eb0826e4cd746104e181efa27742",
+      "title": "should have a thank you header message",
+      "projectName": "pixel-4",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 28,
+        "column": 5
+      },
+      "duration": 2391,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:28",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2391,
+          "startTime": "2021-10-22T01:51:16.713Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:51:16.713Z",
+              "duration": 94,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:51:16.725Z",
+                  "duration": 82,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:51:16.808Z",
+              "duration": 1047,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:51:17.856Z",
+              "duration": 5,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:51:17.861Z",
+              "duration": 868,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:51:18.730Z",
+              "duration": 28,
+              "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 33,
+                "column": 82
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:51:18.758Z",
+              "duration": 346,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:51:19.085Z",
+                  "duration": 19,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-7bd6cf85e0a00e24025df97c3de0ed3969f9afc0",
+      "title": "should have a completed order message",
+      "projectName": "pixel-4",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 36,
+        "column": 5
+      },
+      "duration": 2249,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:36",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2249,
+          "startTime": "2021-10-22T01:51:18.425Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:51:18.426Z",
+              "duration": 43,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:51:18.430Z",
+                  "duration": 38,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:51:18.469Z",
+              "duration": 1031,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:51:19.501Z",
+              "duration": 6,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:51:19.508Z",
+              "duration": 767,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveText",
+              "startTime": "2021-10-22T01:51:20.276Z",
+              "duration": 48,
+              "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 41,
+                "column": 76
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:51:20.324Z",
+              "duration": 350,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:51:20.665Z",
+                  "duration": 8,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    },
+    {
+      "testId": "988f6e58633b4e73e93ade12e1ba1e5cc09a0748-f42b794f5fbb7ec34d10d47b11331e4b7659737c",
+      "title": "should have a completed order image",
+      "projectName": "pixel-4",
+      "location": {
+        "file": "completed.spec.js",
+        "line": 44,
+        "column": 5
+      },
+      "duration": 2299,
+      "outcome": "expected",
+      "path": [
+        "completed.spec.js:44",
+        "Saucedemo CompletedPage:  @completed"
+      ],
+      "results": [
+        {
+          "duration": 2299,
+          "startTime": "2021-10-22T01:51:19.105Z",
+          "retry": 0,
+          "steps": [
+            {
+              "title": "Before Hooks",
+              "startTime": "2021-10-22T01:51:19.105Z",
+              "duration": 42,
+              "steps": [
+                {
+                  "title": "browserContext.newPage",
+                  "startTime": "2021-10-22T01:51:19.110Z",
+                  "duration": 37,
+                  "steps": []
+                }
+              ]
+            },
+            {
+              "title": "page.goto(/)",
+              "startTime": "2021-10-22T01:51:19.147Z",
+              "duration": 1117,
+              "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 28,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.evaluate",
+              "startTime": "2021-10-22T01:51:20.265Z",
+              "duration": 6,
+              "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 30,
+                "column": 16
+              }
+            },
+            {
+              "title": "page.goto(/checkout-complete.html)",
+              "startTime": "2021-10-22T01:51:20.272Z",
+              "duration": 746,
+              "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
+              "steps": [],
+              "location": {
+                "file": "../saucedemo/utils/utils.js",
+                "line": 41,
+                "column": 16
+              }
+            },
+            {
+              "title": "expect.toHaveAttribute",
+              "startTime": "2021-10-22T01:51:21.019Z",
+              "duration": 23,
+              "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
+              "steps": [],
+              "location": {
+                "file": "completed.spec.js",
+                "line": 49,
+                "column": 77
+              }
+            },
+            {
+              "title": "After Hooks",
+              "startTime": "2021-10-22T01:51:21.042Z",
+              "duration": 362,
+              "steps": [
+                {
+                  "title": "browserContext.close",
+                  "startTime": "2021-10-22T01:51:21.376Z",
+                  "duration": 28,
+                  "steps": []
+                }
+              ]
+            }
+          ],
+          "error": "",
+          "status": "passed",
+          "attachments": []
+        }
+      ],
+      "ok": true
+    }
+  ]
+}
