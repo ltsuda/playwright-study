@@ -3,7 +3,7 @@ const { devices } = require("@playwright/test")
 const config = {
     testDir: "tests",
     retries: 1,
-    reporter: process.env.CI ? [["dot"], ["allure-playwright"]] : [["line"], ["allure-playwright"]],
+    reporter: process.env.CI ? [["dot"], ["html", { outputFolder: 'test-results' }]] : [["line"], ["html", { outputFolder: 'test-results' }]],
     workers: process.env.CI ? 2 : undefined,
     expect: {
         toMatchSnapshot: { threshold: 0.2 },
