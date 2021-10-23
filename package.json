@@ -7,24 +7,19 @@
         "test": "test"
     },
     "devDependencies": {
-        "@playwright/test": "^1.15.2",
-        "allure-commandline": "^2.13.8",
-        "allure-playwright": "^2.0.0-beta.13"
+        "@playwright/test": "^1.16.1"
     },
     "scripts": {
         "beforetest": "cd webapp && npm install",
         "beforetest:ci": "cd webapp && npm ci",
-        "test": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --project 'chromium-hd'",
-        "test:match": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --grep $MATCH --project 'chromium-hd'",
-        "test:visual": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep @visual --project 'chromium-hd'",
-        "test:e2e": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep @e2e --project 'chromium-hd'",
-        "test:smoke": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep @smoke --project 'chromium-hd'",
-        "test:ci": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' || :",
-        "allure:generate": "npx allure generate ./test-results --clean -o ./allure-reports",
-        "allure:open": "npx allure open ./allure-reports -p 7777",
-        "posttest:ci": "npm run allure:generate",
-        "test:docker": "ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --reporter=dot,allure-playwright ||:",
-        "posttest:docker": "npm run allure:generate && npm run allure:open"
+        "test": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep-invert '@visual' --project 'chromium-hd'",
+        "test:match": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep-invert '@visual' --grep $MATCH --project 'chromium-hd'",
+        "test:visual": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep @visual --project 'chromium-hd'",
+        "test:e2e": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep @e2e --project 'chromium-hd'",
+        "test:smoke": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep @smoke --project 'chromium-hd'",
+        "test:ci": "PWTEST_SKIP_TEST_OUTPUT=1 npx playwright test --grep-invert '@visual' ||:",
+        "test:docker": "PWTEST_SKIP_TEST_OUTPUT=1 PLAYWRIGHT_HTML_REPORT='test-results' npx playwright test --grep-invert '@visual' --reporter=dot,html ||:",
+        "posttest:docker": "npx playwright show-report test-results"
     },
     "repository": {
         "type": "git",

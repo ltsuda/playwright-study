@@ -19,7 +19,6 @@ O website utilizado nesse repositório é um e-commerce de demonstração da [Sa
  - [git](https://git-scm.com/downloads)
  - [node 14+](https://nodejs.org/en/)
    - ou use [nvm](https://github.com/nvm-sh/nvm) para gerenciar múltiplas versões do NodeJS
- - Java 8+ (Opcional) para o [allure-commandline](https://github.com/allure-framework/allure-npm#:~:text=Allure%20Commandline%20is%20a%20tool%20to%20generate%20Allure,you%20can%20get%20it%20installed%20directly%20from%20NPM.) para gerar os relatório de resultados e rodar o servidor web Allure-Reports
  - Docker (Opcional) para executar os testes em container
 
 #### Clonando o repositório e submódulos
@@ -52,15 +51,10 @@ npx playwright test --grep <tag>
 
 **Os scripts abaixo foram testados no sistema Ubuntu 20.04/WSL**
 
-Todos os scripts geram os arquivos de resultados utilizando o framework Allure Test Report. Para gerar o relatório, utilize os scripts abaixo:
+Todos os scripts geram os arquivos de resultados utilizando o report em formato HTML. Para gerar o relatório, utilize os scripts abaixo:
 ```bash
-npm run allure:generate
-```
-Será gerado o diretório ./allure-reports, então execute:
-```bash
-npm run allure:open
-...
-Server started at <http://127.0.1.1:39923/>. Press <Ctrl+C> to exit
+npx playwright show-report test-results
+# o diretório 'test-results' está configurado no arquivo playwright.config.js
 ```
 Este comando irá iniciar um servidor web com o relatório dos testes, segure CTRL e clique no endereço ou abra o endereço diretamente em um navegador
 
@@ -82,7 +76,7 @@ npm run test:e2e
 
 **Criando imagem docker para execução dos testes**
 
-A imagem `Docker` executa os testes, gerando tambem o relatório de testes e iniciando o servidor web  na porta 7777 para a visualização do mesmo
+A imagem `Docker` executa os testes, gerando tambem o relatório de testes e iniciando o servidor web na porta 9323 para a visualização do mesmo
 
 Para criar a imagem e executar todos os testes, exceto o teste de UI, execute os seguintes comandos:
 ```bash
@@ -90,44 +84,41 @@ Para criar a imagem e executar todos os testes, exceto o teste de UI, execute os
 # aguarde o download e criação ...
 
 # Para executar o script padrão, utilize o comando abaixo
-# O container permanecerá em execução com o servidor web do Allure, navegue para o endereço http://localhost para visualizar o relatório dos testes e pressione CTRL+C para desligar o servidor e remover o container
+# O container permanecerá em execução com o servidor web aberto, navegue para o endereço http://localhost para visualizar o relatório dos testes e pressione CTRL+C para desligar o servidor e remover o container
 # opcionalmente é possível obter os arquivos de resultados no caso de falhas em alguns testes, basta montar um volume local interligado ao container utilizando o parametro "-v /fullpath:/tester/test-results/"
-> docker run --rm --ipc=host -p 80:7777 test:docker
+> docker run --rm --ipc=host -p 80:9323 test:docker
+> playwright-study@1.0.0 test:docker
+> PWTEST_SKIP_TEST_OUTPUT=1 PLAYWRIGHT_HTML_REPORT='test-results' npx playwright test --grep-invert '@visual' --reporter=dot,html ||:
 
-playwright-study@1.0.0 test:docker /tester
-ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --reporter=dot,allure-playwright
+[WebServer] Browserslist: caniuse-lite is outdated. Please run:
+[WebServer] npx browserslist@latest --update-db
 
+[WebServer] Why you should do it regularly:
+[WebServer] https://github.com/browserslist/browserslist#browsers-data-updating
 ················································································
-················································································
-················································································
-··················································
-  Slow test: [firefox-hd] › inventory.spec.js (31s)
-  Slow test: [firefox-hd] › cart.spec.js (28s)
-  Slow test: [chromium-fhd] › inventory.spec.js (28s)
-  Slow test: [webkit-hd] › inventory.spec.js (27s)
-  Slow test: [webkit-hd] › cart.spec.js (25s)
+···················································°····························
+·············°·······························································°··
+····················································°···························
+······························°·················································
+········°····
 
-  290 passed (2m)
+  Slow test: [pixel-4] › cart.spec.js (3m)
+  Slow test: [chromium-hd] › cart.spec.js (1m)
+  Slow test: [firefox-hd] › cart.spec.js (39s)
+  Slow test: [firefox-hd] › inventory.spec.js (32s)
+  Slow test: [chromium-fhd] › inventory.spec.js (30s)
 
-playwright-study@1.0.0 posttest:docker /tester
-npm run allure:generate && npm run allure:open
+  6 skipped
+  403 passed (2m)
+
+> playwright-study@1.0.0 posttest:docker
+> npx playwright show-report test-results
 
 
-playwright-study@1.0.0 allure:generate /tester
-npx allure generate ./test-results --clean -o ./allure-reports
+  Serving HTML report at http://127.0.0.1:9323. Press Ctrl+C to quit.
 
-Report successfully generated to ./allure-reports
-
-playwright-study@1.0.0 allure:open /tester
-npx allure open ./allure-reports -p 7777
-
-Starting web server...
-2021-08-26 17:04:55.761:INFO::main: Logging initialized @193ms to org.eclipse.jetty.util.log.StdErrLog
-Can not open browser because this capability is not supported on your platform. You can use the link below to open the report manually.
-Server started at <http://172.17.0.2:7777/>. Press <Ctrl+C> to exit
-
-# ou, por exemplo, se quiser utilizar outro sistema de reporte de resultado, execute diretamente o comando do Playwright CLI
-# neste caso abaixo, não será gerado o relatório do Allure Report, somente será mostrado o resultado dos testes em forma de lista
+# or, for example, if you want to change the test reporter
+# in this case, the HTML report will not be generated and the web server will not run
 > docker run --rm --ipc=host test:docker npx playwright test --grep-invert '@visual' --project 'chromium-hd' --reporter=list
 ```
 
@@ -167,7 +158,7 @@ Server started at <http://172.17.0.2:7777/>. Press <Ctrl+C> to exit
 ```
  - [.github/workflows](https://github.com/ltsuda/playwright-study/tree/main/.github/workflows): diretório com arquivos de fluxo de trabalho que são executados em todo evento `push` para a branch `main` ou em todo evento de `pull request` aberto.
    - main.yaml: executa todos os projetos de testes no Ubuntu, exceto os com tag @visual, gerando o relatório de resultados para o github-pages.
-   - docker.yaml: cria as imagens `Dockerfile` e `Docker.visual`, executa os respectivos scripts de teste para ambas as imagens e às envia para o Dockerhub se tudo ocorrer corretamente. Este fluxo de trabalho é executado em todo evento `pull request` mas somente envia as imagens para o Dockerhub se o código é mergeado para a branch `main`.
+   - docker.yaml: cria a imagem `Dockerfile`, executa os respectivos scripts das tags e2e e visual. Este fluxo de trabalho é executado em todo evento `pull request` e se o código é mergeado para a branch `main`.
  - [Dockerfile](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile): arquivo de imagem docker para executar localmente no caso em que o NodeJS não esteja instalado no sistema.
  - [playwright.config.js](https://github.com/ltsuda/playwright-study/blob/main/playwright.config.js): arquivo de configuração do Playwright para configurar coisas como a biblioteca de reporte de resultado, quantos `workers` a serem utilizados, criação dos projetos de teste com configurações específicas. Existem cinco projetos de testes, dois deles utilizando Chromium com resolução 1280x720 e 1920x1080 e os outros três utilizando o Chrome/Firefox/Webkit na resolução 1280x720. Veja [Configuração do Playwright](https://playwright.dev/docs/test-configuration) para aprender mais sobre as configurações disponíveis.
  - [saucedemo/pages](https://github.com/ltsuda/playwright-study/tree/main/saucedemo/pages): diretório com todos `Page Object` e `Controllers`. Os arquivos `components` possuem os seletores e funções que retornam seus [Locator](https://playwright.dev/docs/api/class-locator). Os arquivos de `controllers` são os responsáveis pela interação com os elementos das páginas ou manipulações de dados da página.
