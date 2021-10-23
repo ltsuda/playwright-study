@@ -20,7 +20,6 @@ The website used in this repository is e-commerce sample from [SauceLabs Demo](h
  - [git](https://git-scm.com/downloads)
  - [node 14+](https://nodejs.org/en/)
    - or use [nvm](https://github.com/nvm-sh/nvm) to manage multiple node versions
- - Java 8+ (Optional) for [allure-commandline](https://github.com/allure-framework/allure-npm#:~:text=Allure%20Commandline%20is%20a%20tool%20to%20generate%20Allure,you%20can%20get%20it%20installed%20directly%20from%20NPM.) to be able to generate and serve the reports
  - Docker (Optional) for running tests on container
 
 #### Cloning repository with submodule
@@ -56,18 +55,12 @@ npx playwright test --grep <tag>
 
 **The following scripts was tested on Ubuntu 20.04/WSL**
 
-All test scripts will generate the result' files using the Allure Test Report. Too generate the report, use the following scripts:
+All test scripts will generate the tests results using the HTML Reporter. To show the report, use the following scripts:
 ```bash
-npm run allure:generate
-```
-This will generate ./allure-reports, then run:
-```bash
-npm run allure:open
-...
-Server started at <http://127.0.1.1:39923/>. Press <Ctrl+C> to exit
+npx playwright show-report test-results
+# directory 'test-results' is configured on playwright.config.js
 ```
 This will start a webserver with the tests report, just ctrl+click or open the URL that is showing on your terminal
-
 
 Run the following script to run only the tests using the Chromium browser with 1280x720 viewport
 ```bash
@@ -87,7 +80,7 @@ npm run test:e2e
 
 **Building docker image to run the tests**
 
-The `Docker` image runs the tests with the allure-playwright reporter and starts the allure web server on port 7777 serving the tests reports.
+The `Docker` image runs the tests with the HTML reporter and starts the web server on port 9323 serving the tests reports.
 
 To build the image and run all tests projects, except visual tests, run the following commands:
 ```bash
@@ -95,44 +88,41 @@ To build the image and run all tests projects, except visual tests, run the foll
 # wait ...
 
 # To run the default node script, use the following command
-# The container will continue running with the allure webserver open, navigate to http://localhost to see the test reports and press CTRL+C to stop the webserver and remove the container
+# The container will continue running with the webserver open, navigate to http://localhost to see the test reports and press CTRL+C to stop the webserver and remove the container
 # optionally, if you want the test results in case some test fails, bind a volume to host with "-v /fullpath:/tester/test-results/" on the docker command
-> docker run --rm --ipc=host -p 80:7777 test:docker
+> docker run --rm --ipc=host -p 80:9323 test:docker
+> playwright-study@1.0.0 test:docker
+> PWTEST_SKIP_TEST_OUTPUT=1 PLAYWRIGHT_HTML_REPORT='test-results' npx playwright test --grep-invert '@visual' --reporter=dot,html ||:
 
-playwright-study@1.0.0 test:docker /tester
-ALLURE_RESULTS_DIR=test-results npx playwright test --grep-invert '@visual' --reporter=dot,allure-playwright
+[WebServer] Browserslist: caniuse-lite is outdated. Please run:
+[WebServer] npx browserslist@latest --update-db
 
+[WebServer] Why you should do it regularly:
+[WebServer] https://github.com/browserslist/browserslist#browsers-data-updating
 ················································································
-················································································
-················································································
-··················································
-  Slow test: [firefox-hd] › inventory.spec.js (31s)
-  Slow test: [firefox-hd] › cart.spec.js (28s)
-  Slow test: [chromium-fhd] › inventory.spec.js (28s)
-  Slow test: [webkit-hd] › inventory.spec.js (27s)
-  Slow test: [webkit-hd] › cart.spec.js (25s)
+···················································°····························
+·············°·······························································°··
+····················································°···························
+······························°·················································
+········°····
 
-  290 passed (2m)
+  Slow test: [pixel-4] › cart.spec.js (3m)
+  Slow test: [chromium-hd] › cart.spec.js (1m)
+  Slow test: [firefox-hd] › cart.spec.js (39s)
+  Slow test: [firefox-hd] › inventory.spec.js (32s)
+  Slow test: [chromium-fhd] › inventory.spec.js (30s)
 
-playwright-study@1.0.0 posttest:docker /tester
-npm run allure:generate && npm run allure:open
+  6 skipped
+  403 passed (2m)
+
+> playwright-study@1.0.0 posttest:docker
+> npx playwright show-report test-results
 
 
-playwright-study@1.0.0 allure:generate /tester
-npx allure generate ./test-results --clean -o ./allure-reports
-
-Report successfully generated to ./allure-reports
-
-playwright-study@1.0.0 allure:open /tester
-npx allure open ./allure-reports -p 7777
-
-Starting web server...
-2021-08-26 17:04:55.761:INFO::main: Logging initialized @193ms to org.eclipse.jetty.util.log.StdErrLog
-Can not open browser because this capability is not supported on your platform. You can use the link below to open the report manually.
-Server started at <http://172.17.0.2:7777/>. Press <Ctrl+C> to exit
+  Serving HTML report at http://127.0.0.1:9323. Press Ctrl+C to quit.
 
 # or, for example, if you want to change the test reporter
-# in this case, the allure report will not be generated and the allure server will not run
+# in this case, the HTML report will not be generated and the web server will not run
 > docker run --rm --ipc=host test:docker npx playwright test --grep-invert '@visual' --project 'chromium-hd' --reporter=list
 ```
 
@@ -171,8 +161,8 @@ Server started at <http://172.17.0.2:7777/>. Press <Ctrl+C> to exit
 └── webapp
 ```
  - [.github/workflows](https://github.com/ltsuda/playwright-study/tree/main/.github/workflows): directory with github workflows that runs at every `push` to main or every `pull request` open.
-   - main.yaml: run all test projects on Ubuntu, except the ones with tag @visual, generates the allure report and post to github-pages
-   - docker.yaml: build images `Dockerfile` and `Docker.visual`, run respective scripts for both images and push to Dockerhub if everything is OK. This workflow runs on every `pull request` but only pushes the images if code is pushed to the `main` branch.
+   - main.yaml: run all test projects on Ubuntu, except the ones with tag @visual, generates the HTML report and posts to github-pages
+   - docker.yaml: build image `Dockerfile`, run respective scripts for both e2e and visual tags. This workflow runs on every `pull request` or push to the `main` branch.
  - [Dockerfile](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile): docker image file to run locally in case of node it's not installed.
  - [playwright.config.js](https://github.com/ltsuda/playwright-study/blob/main/playwright.config.js): playwright's configuration file to setup things like which reporter library to use, how many test workers to be used, creation of test's project with specific settings. There are five test projects configured, two of them using chromium with 1280x720 and 1920x1080 viewports and three others with Chrome/Firefox/Webkit and 1280x720 resolution.
  - [saucedemo/pages](https://github.com/ltsuda/playwright-study/tree/main/saucedemo/pages): directory with all page objects and controllers files. The components file holds each page/component' selectors and functions that returns its [Locator](https://playwright.dev/docs/api/class-locator). The controller file is the one responsible for interacting with the page' elements or manipulate page's data.
