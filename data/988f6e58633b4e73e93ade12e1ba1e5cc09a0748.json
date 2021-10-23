@@ -11,7 +11,7 @@
         "line": 7,
         "column": 5
       },
-      "duration": 2044,
+      "duration": 1955,
       "outcome": "expected",
       "path": [
         "completed.spec.js:7",
@@ -19,27 +19,27 @@
       ],
       "results": [
         {
-          "duration": 2044,
-          "startTime": "2021-10-22T01:39:41.458Z",
+          "duration": 1955,
+          "startTime": "2021-10-23T02:18:27.521Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:39:41.458Z",
-              "duration": 43,
+              "startTime": "2021-10-23T02:18:27.521Z",
+              "duration": 57,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:39:41.463Z",
-                  "duration": 38,
+                  "startTime": "2021-10-23T02:18:27.525Z",
+                  "duration": 52,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:39:41.502Z",
-              "duration": 1055,
+              "startTime": "2021-10-23T02:18:27.578Z",
+              "duration": 1046,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -50,8 +50,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:39:42.557Z",
-              "duration": 7,
+              "startTime": "2021-10-23T02:18:28.625Z",
+              "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -62,8 +62,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:39:42.565Z",
-              "duration": 744,
+              "startTime": "2021-10-23T02:18:28.630Z",
+              "duration": 687,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -74,8 +74,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:39:43.310Z",
-              "duration": 40,
+              "startTime": "2021-10-23T02:18:29.317Z",
+              "duration": 39,
               "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
               "steps": [],
               "location": {
@@ -86,13 +86,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:39:43.350Z",
-              "duration": 152,
+              "startTime": "2021-10-23T02:18:29.359Z",
+              "duration": 117,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:39:43.485Z",
-                  "duration": 16,
+                  "startTime": "2021-10-23T02:18:29.454Z",
+                  "duration": 21,
                   "steps": []
                 }
               ]
@@ -114,7 +114,7 @@
         "line": 15,
         "column": 5
       },
-      "duration": 2874,
+      "duration": 3488,
       "outcome": "expected",
       "path": [
         "completed.spec.js:15",
@@ -122,27 +122,27 @@
       ],
       "results": [
         {
-          "duration": 2874,
-          "startTime": "2021-10-22T01:39:42.147Z",
+          "duration": 3488,
+          "startTime": "2021-10-23T02:18:29.477Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:39:42.148Z",
-              "duration": 45,
+              "startTime": "2021-10-23T02:18:29.477Z",
+              "duration": 80,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:39:42.156Z",
-                  "duration": 37,
+                  "startTime": "2021-10-23T02:18:29.486Z",
+                  "duration": 71,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:39:42.194Z",
-              "duration": 1044,
+              "startTime": "2021-10-23T02:18:29.558Z",
+              "duration": 1145,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -153,8 +153,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:39:43.239Z",
-              "duration": 5,
+              "startTime": "2021-10-23T02:18:30.703Z",
+              "duration": 6,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -165,8 +165,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:39:43.245Z",
-              "duration": 709,
+              "startTime": "2021-10-23T02:18:30.709Z",
+              "duration": 720,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -177,8 +177,8 @@
             },
             {
               "title": "locator.click(data-test=button-back-to-products)",
-              "startTime": "2021-10-22T01:39:43.955Z",
-              "duration": 172,
+              "startTime": "2021-10-23T02:18:31.430Z",
+              "duration": 235,
               "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
               "steps": [],
               "location": {
@@ -189,8 +189,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:39:44.128Z",
-              "duration": 28,
+              "startTime": "2021-10-23T02:18:31.666Z",
+              "duration": 65,
               "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
               "steps": [],
               "location": {
@@ -201,13 +201,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:39:44.157Z",
-              "duration": 864,
+              "startTime": "2021-10-23T02:18:31.731Z",
+              "duration": 1233,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:39:45.015Z",
-                  "duration": 6,
+                  "startTime": "2021-10-23T02:18:32.949Z",
+                  "duration": 15,
                   "steps": []
                 }
               ]
@@ -229,7 +229,7 @@
         "line": 28,
         "column": 5
       },
-      "duration": 1929,
+      "duration": 2321,
       "outcome": "expected",
       "path": [
         "completed.spec.js:28",
@@ -237,27 +237,27 @@
       ],
       "results": [
         {
-          "duration": 1929,
-          "startTime": "2021-10-22T01:39:43.502Z",
+          "duration": 2321,
+          "startTime": "2021-10-23T02:18:29.487Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:39:43.502Z",
-              "duration": 46,
+              "startTime": "2021-10-23T02:18:29.487Z",
+              "duration": 60,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:39:43.506Z",
-                  "duration": 42,
+                  "startTime": "2021-10-23T02:18:29.493Z",
+                  "duration": 54,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:39:43.549Z",
-              "duration": 991,
+              "startTime": "2021-10-23T02:18:29.547Z",
+              "duration": 1199,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -268,7 +268,7 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:39:44.540Z",
+              "startTime": "2021-10-23T02:18:30.747Z",
               "duration": 6,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
@@ -280,7 +280,7 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:39:44.547Z",
+              "startTime": "2021-10-23T02:18:30.753Z",
               "duration": 742,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
@@ -292,8 +292,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:39:45.290Z",
-              "duration": 30,
+              "startTime": "2021-10-23T02:18:31.495Z",
+              "duration": 24,
               "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
               "steps": [],
               "location": {
@@ -304,13 +304,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:39:45.320Z",
-              "duration": 111,
+              "startTime": "2021-10-23T02:18:31.519Z",
+              "duration": 289,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:39:45.418Z",
-                  "duration": 13,
+                  "startTime": "2021-10-23T02:18:31.782Z",
+                  "duration": 26,
                   "steps": []
                 }
               ]
@@ -332,7 +332,7 @@
         "line": 36,
         "column": 5
       },
-      "duration": 2067,
+      "duration": 2316,
       "outcome": "expected",
       "path": [
         "completed.spec.js:36",
@@ -340,27 +340,27 @@
       ],
       "results": [
         {
-          "duration": 2067,
-          "startTime": "2021-10-22T01:39:45.022Z",
+          "duration": 2316,
+          "startTime": "2021-10-23T02:18:31.808Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:39:45.022Z",
-              "duration": 53,
+              "startTime": "2021-10-23T02:18:31.809Z",
+              "duration": 92,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:39:45.026Z",
-                  "duration": 45,
+                  "startTime": "2021-10-23T02:18:31.819Z",
+                  "duration": 82,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:39:45.075Z",
-              "duration": 1157,
+              "startTime": "2021-10-23T02:18:31.901Z",
+              "duration": 1185,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -371,7 +371,7 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:39:46.233Z",
+              "startTime": "2021-10-23T02:18:33.087Z",
               "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
@@ -383,8 +383,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:39:46.238Z",
-              "duration": 717,
+              "startTime": "2021-10-23T02:18:33.092Z",
+              "duration": 910,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -395,8 +395,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:39:46.955Z",
-              "duration": 24,
+              "startTime": "2021-10-23T02:18:34.003Z",
+              "duration": 21,
               "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
               "steps": [],
               "location": {
@@ -407,13 +407,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:39:46.979Z",
-              "duration": 110,
+              "startTime": "2021-10-23T02:18:34.024Z",
+              "duration": 100,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:39:47.081Z",
-                  "duration": 7,
+                  "startTime": "2021-10-23T02:18:34.118Z",
+                  "duration": 6,
                   "steps": []
                 }
               ]
@@ -435,7 +435,7 @@
         "line": 44,
         "column": 5
       },
-      "duration": 2037,
+      "duration": 2361,
       "outcome": "expected",
       "path": [
         "completed.spec.js:44",
@@ -443,27 +443,27 @@
       ],
       "results": [
         {
-          "duration": 2037,
-          "startTime": "2021-10-22T01:39:45.432Z",
+          "duration": 2361,
+          "startTime": "2021-10-23T02:18:32.965Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:39:45.432Z",
-              "duration": 73,
+              "startTime": "2021-10-23T02:18:32.965Z",
+              "duration": 53,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:39:45.441Z",
-                  "duration": 63,
+                  "startTime": "2021-10-23T02:18:32.972Z",
+                  "duration": 46,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:39:45.505Z",
-              "duration": 1100,
+              "startTime": "2021-10-23T02:18:33.018Z",
+              "duration": 1205,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -474,8 +474,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:39:46.606Z",
-              "duration": 5,
+              "startTime": "2021-10-23T02:18:34.223Z",
+              "duration": 7,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -486,8 +486,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:39:46.611Z",
-              "duration": 683,
+              "startTime": "2021-10-23T02:18:34.231Z",
+              "duration": 851,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -498,8 +498,8 @@
             },
             {
               "title": "expect.toHaveAttribute",
-              "startTime": "2021-10-22T01:39:47.295Z",
-              "duration": 30,
+              "startTime": "2021-10-23T02:18:35.083Z",
+              "duration": 46,
               "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
               "steps": [],
               "location": {
@@ -510,12 +510,12 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:39:47.325Z",
-              "duration": 144,
+              "startTime": "2021-10-23T02:18:35.129Z",
+              "duration": 197,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:39:47.447Z",
+                  "startTime": "2021-10-23T02:18:35.310Z",
                   "duration": 16,
                   "steps": []
                 }
@@ -538,7 +538,7 @@
         "line": 7,
         "column": 5
       },
-      "duration": 2121,
+      "duration": 2129,
       "outcome": "expected",
       "path": [
         "completed.spec.js:7",
@@ -546,27 +546,27 @@
       ],
       "results": [
         {
-          "duration": 2121,
-          "startTime": "2021-10-22T01:41:26.334Z",
+          "duration": 2129,
+          "startTime": "2021-10-23T02:19:44.264Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:41:26.334Z",
-              "duration": 58,
+              "startTime": "2021-10-23T02:19:44.264Z",
+              "duration": 64,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:41:26.342Z",
-                  "duration": 50,
+                  "startTime": "2021-10-23T02:19:44.271Z",
+                  "duration": 57,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:41:26.393Z",
-              "duration": 1127,
+              "startTime": "2021-10-23T02:19:44.328Z",
+              "duration": 979,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -577,7 +577,7 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:41:27.520Z",
+              "startTime": "2021-10-23T02:19:45.307Z",
               "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
@@ -589,8 +589,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:41:27.525Z",
-              "duration": 678,
+              "startTime": "2021-10-23T02:19:45.313Z",
+              "duration": 681,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -601,8 +601,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:41:28.203Z",
-              "duration": 25,
+              "startTime": "2021-10-23T02:19:45.995Z",
+              "duration": 39,
               "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
               "steps": [],
               "location": {
@@ -613,13 +613,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:41:28.228Z",
-              "duration": 227,
+              "startTime": "2021-10-23T02:19:46.034Z",
+              "duration": 359,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:41:28.431Z",
-                  "duration": 24,
+                  "startTime": "2021-10-23T02:19:46.361Z",
+                  "duration": 31,
                   "steps": []
                 }
               ]
@@ -641,7 +641,7 @@
         "line": 15,
         "column": 5
       },
-      "duration": 3480,
+      "duration": 3313,
       "outcome": "expected",
       "path": [
         "completed.spec.js:15",
@@ -649,27 +649,27 @@
       ],
       "results": [
         {
-          "duration": 3480,
-          "startTime": "2021-10-22T01:41:28.441Z",
+          "duration": 3313,
+          "startTime": "2021-10-23T02:19:45.986Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:41:28.441Z",
-              "duration": 89,
+              "startTime": "2021-10-23T02:19:45.986Z",
+              "duration": 92,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:41:28.465Z",
-                  "duration": 65,
+                  "startTime": "2021-10-23T02:19:45.995Z",
+                  "duration": 83,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:41:28.531Z",
-              "duration": 1220,
+              "startTime": "2021-10-23T02:19:46.079Z",
+              "duration": 1182,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -680,8 +680,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:41:29.752Z",
-              "duration": 8,
+              "startTime": "2021-10-23T02:19:47.262Z",
+              "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -692,8 +692,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:41:29.761Z",
-              "duration": 785,
+              "startTime": "2021-10-23T02:19:47.268Z",
+              "duration": 692,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -704,8 +704,8 @@
             },
             {
               "title": "locator.click(data-test=button-back-to-products)",
-              "startTime": "2021-10-22T01:41:30.546Z",
-              "duration": 194,
+              "startTime": "2021-10-23T02:19:47.961Z",
+              "duration": 131,
               "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
               "steps": [],
               "location": {
@@ -716,8 +716,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:41:30.741Z",
-              "duration": 69,
+              "startTime": "2021-10-23T02:19:48.093Z",
+              "duration": 24,
               "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
               "steps": [],
               "location": {
@@ -728,13 +728,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:41:30.810Z",
-              "duration": 1111,
+              "startTime": "2021-10-23T02:19:48.118Z",
+              "duration": 1181,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:41:31.909Z",
-                  "duration": 11,
+                  "startTime": "2021-10-23T02:19:49.292Z",
+                  "duration": 6,
                   "steps": []
                 }
               ]
@@ -756,7 +756,7 @@
         "line": 28,
         "column": 5
       },
-      "duration": 2342,
+      "duration": 2161,
       "outcome": "expected",
       "path": [
         "completed.spec.js:28",
@@ -764,27 +764,27 @@
       ],
       "results": [
         {
-          "duration": 2342,
-          "startTime": "2021-10-22T01:41:28.456Z",
+          "duration": 2161,
+          "startTime": "2021-10-23T02:19:46.394Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:41:28.456Z",
-              "duration": 70,
+              "startTime": "2021-10-23T02:19:46.394Z",
+              "duration": 58,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:41:28.469Z",
-                  "duration": 57,
+                  "startTime": "2021-10-23T02:19:46.406Z",
+                  "duration": 46,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:41:28.527Z",
-              "duration": 1214,
+              "startTime": "2021-10-23T02:19:46.453Z",
+              "duration": 1045,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -795,7 +795,7 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:41:29.742Z",
+              "startTime": "2021-10-23T02:19:47.498Z",
               "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
@@ -807,8 +807,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:41:29.748Z",
-              "duration": 774,
+              "startTime": "2021-10-23T02:19:47.504Z",
+              "duration": 795,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -819,8 +819,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:41:30.523Z",
-              "duration": 30,
+              "startTime": "2021-10-23T02:19:48.300Z",
+              "duration": 25,
               "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
               "steps": [],
               "location": {
@@ -831,13 +831,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:41:30.553Z",
-              "duration": 245,
+              "startTime": "2021-10-23T02:19:48.325Z",
+              "duration": 229,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:41:30.785Z",
-                  "duration": 12,
+                  "startTime": "2021-10-23T02:19:48.540Z",
+                  "duration": 14,
                   "steps": []
                 }
               ]
@@ -859,7 +859,7 @@
         "line": 36,
         "column": 5
       },
-      "duration": 2259,
+      "duration": 2208,
       "outcome": "expected",
       "path": [
         "completed.spec.js:36",
@@ -867,27 +867,27 @@
       ],
       "results": [
         {
-          "duration": 2259,
-          "startTime": "2021-10-22T01:41:30.798Z",
+          "duration": 2208,
+          "startTime": "2021-10-23T02:19:48.555Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:41:30.799Z",
-              "duration": 75,
+              "startTime": "2021-10-23T02:19:48.555Z",
+              "duration": 56,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:41:30.807Z",
-                  "duration": 67,
+                  "startTime": "2021-10-23T02:19:48.562Z",
+                  "duration": 48,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:41:30.875Z",
-              "duration": 1156,
+              "startTime": "2021-10-23T02:19:48.611Z",
+              "duration": 1084,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -898,8 +898,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:41:32.032Z",
-              "duration": 5,
+              "startTime": "2021-10-23T02:19:49.696Z",
+              "duration": 7,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -910,8 +910,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:41:32.037Z",
-              "duration": 791,
+              "startTime": "2021-10-23T02:19:49.704Z",
+              "duration": 760,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -922,8 +922,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:41:32.829Z",
-              "duration": 24,
+              "startTime": "2021-10-23T02:19:50.465Z",
+              "duration": 31,
               "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
               "steps": [],
               "location": {
@@ -934,12 +934,12 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:41:32.853Z",
-              "duration": 204,
+              "startTime": "2021-10-23T02:19:50.496Z",
+              "duration": 267,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:41:33.047Z",
+                  "startTime": "2021-10-23T02:19:50.754Z",
                   "duration": 8,
                   "steps": []
                 }
@@ -962,7 +962,7 @@
         "line": 44,
         "column": 5
       },
-      "duration": 2303,
+      "duration": 2095,
       "outcome": "expected",
       "path": [
         "completed.spec.js:44",
@@ -970,27 +970,27 @@
       ],
       "results": [
         {
-          "duration": 2303,
-          "startTime": "2021-10-22T01:41:31.921Z",
+          "duration": 2095,
+          "startTime": "2021-10-23T02:19:49.299Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:41:31.922Z",
-              "duration": 53,
+              "startTime": "2021-10-23T02:19:49.299Z",
+              "duration": 58,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:41:31.926Z",
-                  "duration": 49,
+                  "startTime": "2021-10-23T02:19:49.305Z",
+                  "duration": 52,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:41:31.976Z",
-              "duration": 1084,
+              "startTime": "2021-10-23T02:19:49.358Z",
+              "duration": 1034,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -1001,8 +1001,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:41:33.060Z",
-              "duration": 6,
+              "startTime": "2021-10-23T02:19:50.393Z",
+              "duration": 4,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -1013,8 +1013,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:41:33.066Z",
-              "duration": 832,
+              "startTime": "2021-10-23T02:19:50.398Z",
+              "duration": 708,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -1025,8 +1025,8 @@
             },
             {
               "title": "expect.toHaveAttribute",
-              "startTime": "2021-10-22T01:41:33.899Z",
-              "duration": 29,
+              "startTime": "2021-10-23T02:19:51.107Z",
+              "duration": 28,
               "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
               "steps": [],
               "location": {
@@ -1037,13 +1037,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:41:33.928Z",
-              "duration": 296,
+              "startTime": "2021-10-23T02:19:51.135Z",
+              "duration": 259,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:41:34.199Z",
-                  "duration": 25,
+                  "startTime": "2021-10-23T02:19:51.370Z",
+                  "duration": 24,
                   "steps": []
                 }
               ]
@@ -1065,7 +1065,7 @@
         "line": 7,
         "column": 5
       },
-      "duration": 1939,
+      "duration": 1897,
       "outcome": "expected",
       "path": [
         "completed.spec.js:7",
@@ -1073,27 +1073,27 @@
       ],
       "results": [
         {
-          "duration": 1939,
-          "startTime": "2021-10-22T01:43:08.378Z",
+          "duration": 1897,
+          "startTime": "2021-10-23T02:20:55.776Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:43:08.378Z",
-              "duration": 40,
+              "startTime": "2021-10-23T02:20:55.776Z",
+              "duration": 42,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:43:08.385Z",
-                  "duration": 33,
+                  "startTime": "2021-10-23T02:20:55.781Z",
+                  "duration": 37,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:43:08.419Z",
-              "duration": 993,
+              "startTime": "2021-10-23T02:20:55.819Z",
+              "duration": 982,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -1104,7 +1104,7 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:43:09.413Z",
+              "startTime": "2021-10-23T02:20:56.801Z",
               "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
@@ -1116,8 +1116,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:43:09.418Z",
-              "duration": 735,
+              "startTime": "2021-10-23T02:20:56.806Z",
+              "duration": 697,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -1128,8 +1128,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:43:10.153Z",
-              "duration": 28,
+              "startTime": "2021-10-23T02:20:57.503Z",
+              "duration": 36,
               "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
               "steps": [],
               "location": {
@@ -1140,13 +1140,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:43:10.182Z",
-              "duration": 135,
+              "startTime": "2021-10-23T02:20:57.539Z",
+              "duration": 134,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:43:10.300Z",
-                  "duration": 16,
+                  "startTime": "2021-10-23T02:20:57.653Z",
+                  "duration": 20,
                   "steps": []
                 }
               ]
@@ -1168,7 +1168,7 @@
         "line": 15,
         "column": 5
       },
-      "duration": 2571,
+      "duration": 2905,
       "outcome": "expected",
       "path": [
         "completed.spec.js:15",
@@ -1176,27 +1176,27 @@
       ],
       "results": [
         {
-          "duration": 2571,
-          "startTime": "2021-10-22T01:43:09.099Z",
+          "duration": 2905,
+          "startTime": "2021-10-23T02:20:57.313Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:43:09.099Z",
-              "duration": 42,
+              "startTime": "2021-10-23T02:20:57.313Z",
+              "duration": 40,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:43:09.105Z",
-                  "duration": 36,
+                  "startTime": "2021-10-23T02:20:57.321Z",
+                  "duration": 32,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:43:09.142Z",
-              "duration": 996,
+              "startTime": "2021-10-23T02:20:57.354Z",
+              "duration": 1050,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -1207,8 +1207,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:43:10.141Z",
-              "duration": 5,
+              "startTime": "2021-10-23T02:20:58.404Z",
+              "duration": 6,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -1219,8 +1219,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:43:10.147Z",
-              "duration": 754,
+              "startTime": "2021-10-23T02:20:58.411Z",
+              "duration": 767,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -1231,8 +1231,8 @@
             },
             {
               "title": "locator.click(data-test=button-back-to-products)",
-              "startTime": "2021-10-22T01:43:10.902Z",
-              "duration": 113,
+              "startTime": "2021-10-23T02:20:59.179Z",
+              "duration": 126,
               "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
               "steps": [],
               "location": {
@@ -1243,8 +1243,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:43:11.016Z",
-              "duration": 37,
+              "startTime": "2021-10-23T02:20:59.306Z",
+              "duration": 31,
               "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
               "steps": [],
               "location": {
@@ -1255,13 +1255,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:43:11.053Z",
-              "duration": 617,
+              "startTime": "2021-10-23T02:20:59.338Z",
+              "duration": 880,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:43:11.656Z",
-                  "duration": 12,
+                  "startTime": "2021-10-23T02:21:00.209Z",
+                  "duration": 8,
                   "steps": []
                 }
               ]
@@ -1283,7 +1283,7 @@
         "line": 28,
         "column": 5
       },
-      "duration": 1989,
+      "duration": 1888,
       "outcome": "expected",
       "path": [
         "completed.spec.js:28",
@@ -1291,27 +1291,27 @@
       ],
       "results": [
         {
-          "duration": 1989,
-          "startTime": "2021-10-22T01:43:10.318Z",
+          "duration": 1888,
+          "startTime": "2021-10-23T02:20:57.674Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:43:10.318Z",
-              "duration": 82,
+              "startTime": "2021-10-23T02:20:57.674Z",
+              "duration": 62,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:43:10.327Z",
-                  "duration": 73,
+                  "startTime": "2021-10-23T02:20:57.682Z",
+                  "duration": 54,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:43:10.401Z",
-              "duration": 1028,
+              "startTime": "2021-10-23T02:20:57.737Z",
+              "duration": 996,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -1322,8 +1322,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:43:11.429Z",
-              "duration": 5,
+              "startTime": "2021-10-23T02:20:58.734Z",
+              "duration": 4,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -1334,8 +1334,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:43:11.435Z",
-              "duration": 704,
+              "startTime": "2021-10-23T02:20:58.738Z",
+              "duration": 655,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -1346,8 +1346,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:43:12.140Z",
-              "duration": 24,
+              "startTime": "2021-10-23T02:20:59.393Z",
+              "duration": 22,
               "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
               "steps": [],
               "location": {
@@ -1358,13 +1358,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:43:12.164Z",
-              "duration": 143,
+              "startTime": "2021-10-23T02:20:59.415Z",
+              "duration": 147,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:43:12.295Z",
-                  "duration": 10,
+                  "startTime": "2021-10-23T02:20:59.530Z",
+                  "duration": 31,
                   "steps": []
                 }
               ]
@@ -1386,7 +1386,7 @@
         "line": 36,
         "column": 5
       },
-      "duration": 1961,
+      "duration": 2038,
       "outcome": "expected",
       "path": [
         "completed.spec.js:36",
@@ -1394,27 +1394,27 @@
       ],
       "results": [
         {
-          "duration": 1961,
-          "startTime": "2021-10-22T01:43:11.672Z",
+          "duration": 2038,
+          "startTime": "2021-10-23T02:20:59.562Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:43:11.672Z",
-              "duration": 41,
+              "startTime": "2021-10-23T02:20:59.563Z",
+              "duration": 57,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:43:11.678Z",
-                  "duration": 35,
+                  "startTime": "2021-10-23T02:20:59.570Z",
+                  "duration": 50,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:43:11.714Z",
-              "duration": 1012,
+              "startTime": "2021-10-23T02:20:59.621Z",
+              "duration": 1152,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -1425,8 +1425,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:43:12.727Z",
-              "duration": 6,
+              "startTime": "2021-10-23T02:21:00.775Z",
+              "duration": 14,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -1437,8 +1437,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:43:12.733Z",
-              "duration": 738,
+              "startTime": "2021-10-23T02:21:00.789Z",
+              "duration": 692,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -1449,8 +1449,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:43:13.472Z",
-              "duration": 24,
+              "startTime": "2021-10-23T02:21:01.481Z",
+              "duration": 20,
               "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
               "steps": [],
               "location": {
@@ -1461,12 +1461,12 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:43:13.496Z",
-              "duration": 137,
+              "startTime": "2021-10-23T02:21:01.501Z",
+              "duration": 99,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:43:13.625Z",
+                  "startTime": "2021-10-23T02:21:01.592Z",
                   "duration": 7,
                   "steps": []
                 }
@@ -1489,7 +1489,7 @@
         "line": 44,
         "column": 5
       },
-      "duration": 1908,
+      "duration": 1887,
       "outcome": "expected",
       "path": [
         "completed.spec.js:44",
@@ -1497,27 +1497,27 @@
       ],
       "results": [
         {
-          "duration": 1908,
-          "startTime": "2021-10-22T01:43:12.308Z",
+          "duration": 1887,
+          "startTime": "2021-10-23T02:21:00.218Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:43:12.308Z",
-              "duration": 39,
+              "startTime": "2021-10-23T02:21:00.218Z",
+              "duration": 73,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:43:12.313Z",
-                  "duration": 34,
+                  "startTime": "2021-10-23T02:21:00.228Z",
+                  "duration": 63,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:43:12.347Z",
-              "duration": 993,
+              "startTime": "2021-10-23T02:21:00.291Z",
+              "duration": 994,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -1528,8 +1528,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:43:13.341Z",
-              "duration": 4,
+              "startTime": "2021-10-23T02:21:01.285Z",
+              "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -1540,8 +1540,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:43:13.346Z",
-              "duration": 685,
+              "startTime": "2021-10-23T02:21:01.290Z",
+              "duration": 672,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -1552,8 +1552,8 @@
             },
             {
               "title": "expect.toHaveAttribute",
-              "startTime": "2021-10-22T01:43:14.031Z",
-              "duration": 29,
+              "startTime": "2021-10-23T02:21:01.963Z",
+              "duration": 21,
               "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
               "steps": [],
               "location": {
@@ -1564,13 +1564,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:43:14.061Z",
-              "duration": 155,
+              "startTime": "2021-10-23T02:21:01.984Z",
+              "duration": 121,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:43:14.192Z",
-                  "duration": 23,
+                  "startTime": "2021-10-23T02:21:02.090Z",
+                  "duration": 15,
                   "steps": []
                 }
               ]
@@ -1592,7 +1592,7 @@
         "line": 7,
         "column": 5
       },
-      "duration": 2976,
+      "duration": 2899,
       "outcome": "expected",
       "path": [
         "completed.spec.js:7",
@@ -1600,27 +1600,27 @@
       ],
       "results": [
         {
-          "duration": 2976,
-          "startTime": "2021-10-22T01:45:01.677Z",
+          "duration": 2899,
+          "startTime": "2021-10-23T02:22:11.134Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:45:01.677Z",
-              "duration": 390,
+              "startTime": "2021-10-23T02:22:11.134Z",
+              "duration": 309,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:45:01.706Z",
-                  "duration": 361,
+                  "startTime": "2021-10-23T02:22:11.151Z",
+                  "duration": 292,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:45:02.068Z",
-              "duration": 1241,
+              "startTime": "2021-10-23T02:22:11.444Z",
+              "duration": 1303,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -1631,8 +1631,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:45:03.310Z",
-              "duration": 12,
+              "startTime": "2021-10-23T02:22:12.747Z",
+              "duration": 10,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -1643,8 +1643,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:45:03.323Z",
-              "duration": 1209,
+              "startTime": "2021-10-23T02:22:12.758Z",
+              "duration": 1124,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -1655,8 +1655,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:45:04.533Z",
-              "duration": 38,
+              "startTime": "2021-10-23T02:22:13.882Z",
+              "duration": 67,
               "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
               "steps": [],
               "location": {
@@ -1667,13 +1667,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:45:04.571Z",
-              "duration": 81,
+              "startTime": "2021-10-23T02:22:13.949Z",
+              "duration": 84,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:45:04.639Z",
-                  "duration": 13,
+                  "startTime": "2021-10-23T02:22:14.022Z",
+                  "duration": 11,
                   "steps": []
                 }
               ]
@@ -1695,7 +1695,7 @@
         "line": 15,
         "column": 5
       },
-      "duration": 3720,
+      "duration": 3682,
       "outcome": "expected",
       "path": [
         "completed.spec.js:15",
@@ -1703,27 +1703,27 @@
       ],
       "results": [
         {
-          "duration": 3720,
-          "startTime": "2021-10-22T01:45:03.077Z",
+          "duration": 3682,
+          "startTime": "2021-10-23T02:22:13.217Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:45:03.077Z",
-              "duration": 375,
+              "startTime": "2021-10-23T02:22:13.217Z",
+              "duration": 426,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:45:03.108Z",
-                  "duration": 343,
+                  "startTime": "2021-10-23T02:22:13.253Z",
+                  "duration": 389,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:45:03.452Z",
-              "duration": 1333,
+              "startTime": "2021-10-23T02:22:13.644Z",
+              "duration": 1311,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -1734,8 +1734,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:45:04.786Z",
-              "duration": 13,
+              "startTime": "2021-10-23T02:22:14.955Z",
+              "duration": 11,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -1746,8 +1746,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:45:04.812Z",
-              "duration": 1217,
+              "startTime": "2021-10-23T02:22:14.967Z",
+              "duration": 1078,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -1758,8 +1758,8 @@
             },
             {
               "title": "locator.click(data-test=button-back-to-products)",
-              "startTime": "2021-10-22T01:45:06.030Z",
-              "duration": 172,
+              "startTime": "2021-10-23T02:22:16.046Z",
+              "duration": 319,
               "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
               "steps": [],
               "location": {
@@ -1770,8 +1770,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:45:06.203Z",
-              "duration": 149,
+              "startTime": "2021-10-23T02:22:16.365Z",
+              "duration": 139,
               "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
               "steps": [],
               "location": {
@@ -1782,13 +1782,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:45:06.353Z",
-              "duration": 444,
+              "startTime": "2021-10-23T02:22:16.504Z",
+              "duration": 394,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:45:06.774Z",
-                  "duration": 22,
+                  "startTime": "2021-10-23T02:22:16.881Z",
+                  "duration": 17,
                   "steps": []
                 }
               ]
@@ -1810,7 +1810,7 @@
         "line": 28,
         "column": 5
       },
-      "duration": 2733,
+      "duration": 2888,
       "outcome": "expected",
       "path": [
         "completed.spec.js:28",
@@ -1818,27 +1818,27 @@
       ],
       "results": [
         {
-          "duration": 2733,
-          "startTime": "2021-10-22T01:45:04.653Z",
+          "duration": 2888,
+          "startTime": "2021-10-23T02:22:14.034Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:45:04.653Z",
-              "duration": 387,
+              "startTime": "2021-10-23T02:22:14.034Z",
+              "duration": 412,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:45:04.681Z",
-                  "duration": 358,
+                  "startTime": "2021-10-23T02:22:14.074Z",
+                  "duration": 371,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:45:05.040Z",
-              "duration": 1261,
+              "startTime": "2021-10-23T02:22:14.446Z",
+              "duration": 1286,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -1849,8 +1849,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:45:06.301Z",
-              "duration": 10,
+              "startTime": "2021-10-23T02:22:15.732Z",
+              "duration": 9,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -1861,8 +1861,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:45:06.312Z",
-              "duration": 748,
+              "startTime": "2021-10-23T02:22:15.742Z",
+              "duration": 1026,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -1873,8 +1873,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:45:07.061Z",
-              "duration": 197,
+              "startTime": "2021-10-23T02:22:16.769Z",
+              "duration": 39,
               "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
               "steps": [],
               "location": {
@@ -1885,13 +1885,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:45:07.258Z",
-              "duration": 128,
+              "startTime": "2021-10-23T02:22:16.808Z",
+              "duration": 114,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:45:07.377Z",
-                  "duration": 9,
+                  "startTime": "2021-10-23T02:22:16.908Z",
+                  "duration": 13,
                   "steps": []
                 }
               ]
@@ -1913,7 +1913,7 @@
         "line": 36,
         "column": 5
       },
-      "duration": 3134,
+      "duration": 2985,
       "outcome": "expected",
       "path": [
         "completed.spec.js:36",
@@ -1921,27 +1921,27 @@
       ],
       "results": [
         {
-          "duration": 3134,
-          "startTime": "2021-10-22T01:45:06.798Z",
+          "duration": 2985,
+          "startTime": "2021-10-23T02:22:16.900Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:45:06.798Z",
-              "duration": 484,
+              "startTime": "2021-10-23T02:22:16.901Z",
+              "duration": 407,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:45:06.847Z",
-                  "duration": 435,
+                  "startTime": "2021-10-23T02:22:16.951Z",
+                  "duration": 357,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:45:07.282Z",
-              "duration": 1416,
+              "startTime": "2021-10-23T02:22:17.309Z",
+              "duration": 1354,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -1952,8 +1952,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:45:08.699Z",
-              "duration": 7,
+              "startTime": "2021-10-23T02:22:18.665Z",
+              "duration": 9,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -1964,8 +1964,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:45:08.707Z",
-              "duration": 1101,
+              "startTime": "2021-10-23T02:22:18.676Z",
+              "duration": 1083,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -1976,8 +1976,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:45:09.810Z",
-              "duration": 38,
+              "startTime": "2021-10-23T02:22:19.760Z",
+              "duration": 39,
               "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
               "steps": [],
               "location": {
@@ -1988,13 +1988,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:45:09.848Z",
-              "duration": 84,
+              "startTime": "2021-10-23T02:22:19.799Z",
+              "duration": 86,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:45:09.922Z",
-                  "duration": 9,
+                  "startTime": "2021-10-23T02:22:19.871Z",
+                  "duration": 13,
                   "steps": []
                 }
               ]
@@ -2016,7 +2016,7 @@
         "line": 44,
         "column": 5
       },
-      "duration": 3081,
+      "duration": 2981,
       "outcome": "expected",
       "path": [
         "completed.spec.js:44",
@@ -2024,27 +2024,27 @@
       ],
       "results": [
         {
-          "duration": 3081,
-          "startTime": "2021-10-22T01:45:07.388Z",
+          "duration": 2981,
+          "startTime": "2021-10-23T02:22:16.922Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:45:07.388Z",
-              "duration": 439,
+              "startTime": "2021-10-23T02:22:16.923Z",
+              "duration": 403,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:45:07.441Z",
-                  "duration": 385,
+                  "startTime": "2021-10-23T02:22:16.972Z",
+                  "duration": 354,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:45:07.827Z",
-              "duration": 1246,
+              "startTime": "2021-10-23T02:22:17.327Z",
+              "duration": 1401,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -2055,8 +2055,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:45:09.077Z",
-              "duration": 13,
+              "startTime": "2021-10-23T02:22:18.728Z",
+              "duration": 7,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -2067,8 +2067,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:45:09.091Z",
-              "duration": 1148,
+              "startTime": "2021-10-23T02:22:18.737Z",
+              "duration": 1042,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -2079,8 +2079,8 @@
             },
             {
               "title": "expect.toHaveAttribute",
-              "startTime": "2021-10-22T01:45:10.240Z",
-              "duration": 62,
+              "startTime": "2021-10-23T02:22:19.779Z",
+              "duration": 42,
               "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
               "steps": [],
               "location": {
@@ -2091,13 +2091,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:45:10.302Z",
-              "duration": 167,
+              "startTime": "2021-10-23T02:22:19.821Z",
+              "duration": 82,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:45:10.455Z",
-                  "duration": 12,
+                  "startTime": "2021-10-23T02:22:19.889Z",
+                  "duration": 14,
                   "steps": []
                 }
               ]
@@ -2119,7 +2119,7 @@
         "line": 7,
         "column": 5
       },
-      "duration": 2246,
+      "duration": 2470,
       "outcome": "expected",
       "path": [
         "completed.spec.js:7",
@@ -2127,27 +2127,27 @@
       ],
       "results": [
         {
-          "duration": 2246,
-          "startTime": "2021-10-22T01:47:20.987Z",
+          "duration": 2470,
+          "startTime": "2021-10-23T02:23:45.026Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:47:20.987Z",
-              "duration": 250,
+              "startTime": "2021-10-23T02:23:45.026Z",
+              "duration": 292,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:47:21.017Z",
-                  "duration": 220,
+                  "startTime": "2021-10-23T02:23:45.050Z",
+                  "duration": 268,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:47:21.237Z",
-              "duration": 1187,
+              "startTime": "2021-10-23T02:23:45.319Z",
+              "duration": 1247,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -2158,7 +2158,7 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:47:22.424Z",
+              "startTime": "2021-10-23T02:23:46.567Z",
               "duration": 6,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
@@ -2170,8 +2170,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:47:22.430Z",
-              "duration": 675,
+              "startTime": "2021-10-23T02:23:46.574Z",
+              "duration": 716,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -2182,8 +2182,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:47:23.105Z",
-              "duration": 52,
+              "startTime": "2021-10-23T02:23:47.290Z",
+              "duration": 90,
               "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
               "steps": [],
               "location": {
@@ -2194,13 +2194,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:47:23.158Z",
-              "duration": 75,
+              "startTime": "2021-10-23T02:23:47.380Z",
+              "duration": 116,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:47:23.222Z",
-                  "duration": 10,
+                  "startTime": "2021-10-23T02:23:47.494Z",
+                  "duration": 2,
                   "steps": []
                 }
               ]
@@ -2222,7 +2222,7 @@
         "line": 15,
         "column": 5
       },
-      "duration": 3237,
+      "duration": 2844,
       "outcome": "expected",
       "path": [
         "completed.spec.js:15",
@@ -2230,27 +2230,27 @@
       ],
       "results": [
         {
-          "duration": 3237,
-          "startTime": "2021-10-22T01:47:23.151Z",
+          "duration": 2844,
+          "startTime": "2021-10-23T02:23:47.498Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:47:23.151Z",
-              "duration": 285,
+              "startTime": "2021-10-23T02:23:47.498Z",
+              "duration": 304,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:47:23.165Z",
-                  "duration": 270,
+                  "startTime": "2021-10-23T02:23:47.523Z",
+                  "duration": 279,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:47:23.437Z",
-              "duration": 1328,
+              "startTime": "2021-10-23T02:23:47.802Z",
+              "duration": 1263,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -2261,8 +2261,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:47:24.766Z",
-              "duration": 7,
+              "startTime": "2021-10-23T02:23:49.066Z",
+              "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -2273,8 +2273,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:47:24.774Z",
-              "duration": 845,
+              "startTime": "2021-10-23T02:23:49.071Z",
+              "duration": 708,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -2285,8 +2285,8 @@
             },
             {
               "title": "locator.click(data-test=button-back-to-products)",
-              "startTime": "2021-10-22T01:47:25.620Z",
-              "duration": 227,
+              "startTime": "2021-10-23T02:23:49.780Z",
+              "duration": 119,
               "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
               "steps": [],
               "location": {
@@ -2297,8 +2297,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:47:25.849Z",
-              "duration": 334,
+              "startTime": "2021-10-23T02:23:49.899Z",
+              "duration": 227,
               "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
               "steps": [],
               "location": {
@@ -2309,13 +2309,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:47:26.183Z",
-              "duration": 205,
+              "startTime": "2021-10-23T02:23:50.126Z",
+              "duration": 215,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:47:26.385Z",
-                  "duration": 3,
+                  "startTime": "2021-10-23T02:23:50.328Z",
+                  "duration": 6,
                   "steps": []
                 }
               ]
@@ -2337,7 +2337,7 @@
         "line": 28,
         "column": 5
       },
-      "duration": 2398,
+      "duration": 2340,
       "outcome": "expected",
       "path": [
         "completed.spec.js:28",
@@ -2345,27 +2345,27 @@
       ],
       "results": [
         {
-          "duration": 2398,
-          "startTime": "2021-10-22T01:47:23.233Z",
+          "duration": 2340,
+          "startTime": "2021-10-23T02:23:47.727Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:47:23.233Z",
-              "duration": 254,
+              "startTime": "2021-10-23T02:23:47.728Z",
+              "duration": 324,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:47:23.265Z",
-                  "duration": 213,
+                  "startTime": "2021-10-23T02:23:47.746Z",
+                  "duration": 305,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:47:23.487Z",
-              "duration": 1284,
+              "startTime": "2021-10-23T02:23:48.055Z",
+              "duration": 1182,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -2376,8 +2376,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:47:24.772Z",
-              "duration": 7,
+              "startTime": "2021-10-23T02:23:49.237Z",
+              "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -2388,8 +2388,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:47:24.780Z",
-              "duration": 746,
+              "startTime": "2021-10-23T02:23:49.242Z",
+              "duration": 717,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -2400,8 +2400,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:47:25.526Z",
-              "duration": 30,
+              "startTime": "2021-10-23T02:23:49.960Z",
+              "duration": 37,
               "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
               "steps": [],
               "location": {
@@ -2412,12 +2412,12 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:47:25.556Z",
-              "duration": 75,
+              "startTime": "2021-10-23T02:23:49.997Z",
+              "duration": 70,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:47:25.628Z",
+                  "startTime": "2021-10-23T02:23:50.064Z",
                   "duration": 3,
                   "steps": []
                 }
@@ -2440,7 +2440,7 @@
         "line": 36,
         "column": 5
       },
-      "duration": 2538,
+      "duration": 2464,
       "outcome": "expected",
       "path": [
         "completed.spec.js:36",
@@ -2448,27 +2448,27 @@
       ],
       "results": [
         {
-          "duration": 2538,
-          "startTime": "2021-10-22T01:47:25.632Z",
+          "duration": 2464,
+          "startTime": "2021-10-23T02:23:50.069Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:47:25.632Z",
-              "duration": 310,
+              "startTime": "2021-10-23T02:23:50.069Z",
+              "duration": 418,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:47:25.655Z",
-                  "duration": 287,
+                  "startTime": "2021-10-23T02:23:50.116Z",
+                  "duration": 371,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:47:25.943Z",
-              "duration": 1415,
+              "startTime": "2021-10-23T02:23:50.487Z",
+              "duration": 1261,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -2479,7 +2479,7 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:47:27.359Z",
+              "startTime": "2021-10-23T02:23:51.749Z",
               "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
@@ -2491,8 +2491,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:47:27.364Z",
-              "duration": 674,
+              "startTime": "2021-10-23T02:23:51.754Z",
+              "duration": 682,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -2503,8 +2503,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:47:28.038Z",
-              "duration": 73,
+              "startTime": "2021-10-23T02:23:52.437Z",
+              "duration": 34,
               "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
               "steps": [],
               "location": {
@@ -2515,13 +2515,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:47:28.111Z",
-              "duration": 59,
+              "startTime": "2021-10-23T02:23:52.471Z",
+              "duration": 62,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:47:28.167Z",
-                  "duration": 3,
+                  "startTime": "2021-10-23T02:23:52.525Z",
+                  "duration": 8,
                   "steps": []
                 }
               ]
@@ -2543,7 +2543,7 @@
         "line": 44,
         "column": 5
       },
-      "duration": 2284,
+      "duration": 2411,
       "outcome": "expected",
       "path": [
         "completed.spec.js:44",
@@ -2551,27 +2551,27 @@
       ],
       "results": [
         {
-          "duration": 2284,
-          "startTime": "2021-10-22T01:47:26.390Z",
+          "duration": 2411,
+          "startTime": "2021-10-23T02:23:50.343Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:47:26.390Z",
-              "duration": 298,
+              "startTime": "2021-10-23T02:23:50.343Z",
+              "duration": 320,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:47:26.427Z",
-                  "duration": 261,
+                  "startTime": "2021-10-23T02:23:50.361Z",
+                  "duration": 302,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:47:26.689Z",
-              "duration": 1164,
+              "startTime": "2021-10-23T02:23:50.664Z",
+              "duration": 1279,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -2582,7 +2582,7 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:47:27.854Z",
+              "startTime": "2021-10-23T02:23:51.944Z",
               "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
@@ -2594,8 +2594,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:47:27.860Z",
-              "duration": 706,
+              "startTime": "2021-10-23T02:23:51.949Z",
+              "duration": 707,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -2606,8 +2606,8 @@
             },
             {
               "title": "expect.toHaveAttribute",
-              "startTime": "2021-10-22T01:47:28.566Z",
-              "duration": 45,
+              "startTime": "2021-10-23T02:23:52.657Z",
+              "duration": 34,
               "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
               "steps": [],
               "location": {
@@ -2618,13 +2618,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:47:28.611Z",
-              "duration": 62,
+              "startTime": "2021-10-23T02:23:52.691Z",
+              "duration": 63,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:47:28.670Z",
-                  "duration": 3,
+                  "startTime": "2021-10-23T02:23:52.751Z",
+                  "duration": 2,
                   "steps": []
                 }
               ]
@@ -2646,7 +2646,7 @@
         "line": 7,
         "column": 5
       },
-      "duration": 2142,
+      "duration": 2261,
       "outcome": "expected",
       "path": [
         "completed.spec.js:7",
@@ -2654,27 +2654,27 @@
       ],
       "results": [
         {
-          "duration": 2142,
-          "startTime": "2021-10-22T01:49:24.091Z",
+          "duration": 2261,
+          "startTime": "2021-10-23T02:25:05.207Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:49:24.091Z",
-              "duration": 198,
+              "startTime": "2021-10-23T02:25:05.207Z",
+              "duration": 271,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:49:24.098Z",
-                  "duration": 190,
+                  "startTime": "2021-10-23T02:25:05.230Z",
+                  "duration": 248,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:49:24.289Z",
-              "duration": 1108,
+              "startTime": "2021-10-23T02:25:05.479Z",
+              "duration": 1159,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -2685,7 +2685,7 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:49:25.398Z",
+              "startTime": "2021-10-23T02:25:06.638Z",
               "duration": 6,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
@@ -2697,8 +2697,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:49:25.404Z",
-              "duration": 706,
+              "startTime": "2021-10-23T02:25:06.644Z",
+              "duration": 683,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -2709,8 +2709,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:49:26.111Z",
-              "duration": 31,
+              "startTime": "2021-10-23T02:25:07.327Z",
+              "duration": 62,
               "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
               "steps": [],
               "location": {
@@ -2721,12 +2721,12 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:49:26.142Z",
-              "duration": 91,
+              "startTime": "2021-10-23T02:25:07.389Z",
+              "duration": 79,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:49:26.227Z",
+                  "startTime": "2021-10-23T02:25:07.463Z",
                   "duration": 5,
                   "steps": []
                 }
@@ -2749,7 +2749,7 @@
         "line": 15,
         "column": 5
       },
-      "duration": 2782,
+      "duration": 3178,
       "outcome": "expected",
       "path": [
         "completed.spec.js:15",
@@ -2757,27 +2757,27 @@
       ],
       "results": [
         {
-          "duration": 2782,
-          "startTime": "2021-10-22T01:49:26.233Z",
+          "duration": 3178,
+          "startTime": "2021-10-23T02:25:07.421Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:49:26.234Z",
-              "duration": 244,
+              "startTime": "2021-10-23T02:25:07.421Z",
+              "duration": 351,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:49:26.249Z",
-                  "duration": 228,
+                  "startTime": "2021-10-23T02:25:07.448Z",
+                  "duration": 324,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:49:26.478Z",
-              "duration": 1273,
+              "startTime": "2021-10-23T02:25:07.773Z",
+              "duration": 1265,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -2788,8 +2788,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:49:27.751Z",
-              "duration": 7,
+              "startTime": "2021-10-23T02:25:09.039Z",
+              "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -2800,8 +2800,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:49:27.759Z",
-              "duration": 826,
+              "startTime": "2021-10-23T02:25:09.044Z",
+              "duration": 779,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -2812,8 +2812,8 @@
             },
             {
               "title": "locator.click(data-test=button-back-to-products)",
-              "startTime": "2021-10-22T01:49:28.586Z",
-              "duration": 150,
+              "startTime": "2021-10-23T02:25:09.824Z",
+              "duration": 129,
               "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
               "steps": [],
               "location": {
@@ -2824,8 +2824,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:49:28.737Z",
-              "duration": 139,
+              "startTime": "2021-10-23T02:25:09.955Z",
+              "duration": 307,
               "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
               "steps": [],
               "location": {
@@ -2836,13 +2836,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:49:28.877Z",
-              "duration": 138,
+              "startTime": "2021-10-23T02:25:10.262Z",
+              "duration": 337,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:49:29.012Z",
-                  "duration": 2,
+                  "startTime": "2021-10-23T02:25:10.594Z",
+                  "duration": 5,
                   "steps": []
                 }
               ]
@@ -2864,7 +2864,7 @@
         "line": 28,
         "column": 5
       },
-      "duration": 3001,
+      "duration": 2596,
       "outcome": "expected",
       "path": [
         "completed.spec.js:28",
@@ -2872,27 +2872,27 @@
       ],
       "results": [
         {
-          "duration": 3001,
-          "startTime": "2021-10-22T01:49:27.585Z",
+          "duration": 2596,
+          "startTime": "2021-10-23T02:25:07.469Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:49:27.586Z",
-              "duration": 772,
+              "startTime": "2021-10-23T02:25:07.469Z",
+              "duration": 323,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:49:28.079Z",
-                  "duration": 276,
+                  "startTime": "2021-10-23T02:25:07.514Z",
+                  "duration": 278,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:49:28.360Z",
-              "duration": 1324,
+              "startTime": "2021-10-23T02:25:07.792Z",
+              "duration": 1368,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -2903,8 +2903,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:49:29.685Z",
-              "duration": 7,
+              "startTime": "2021-10-23T02:25:09.160Z",
+              "duration": 6,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -2915,8 +2915,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:49:29.692Z",
-              "duration": 751,
+              "startTime": "2021-10-23T02:25:09.166Z",
+              "duration": 747,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -2927,8 +2927,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:49:30.445Z",
-              "duration": 43,
+              "startTime": "2021-10-23T02:25:09.913Z",
+              "duration": 44,
               "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
               "steps": [],
               "location": {
@@ -2939,13 +2939,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:49:30.489Z",
-              "duration": 97,
+              "startTime": "2021-10-23T02:25:09.958Z",
+              "duration": 106,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:49:30.576Z",
-                  "duration": 9,
+                  "startTime": "2021-10-23T02:25:10.054Z",
+                  "duration": 10,
                   "steps": []
                 }
               ]
@@ -2967,7 +2967,7 @@
         "line": 36,
         "column": 5
       },
-      "duration": 2521,
+      "duration": 2552,
       "outcome": "expected",
       "path": [
         "completed.spec.js:36",
@@ -2975,27 +2975,27 @@
       ],
       "results": [
         {
-          "duration": 2521,
-          "startTime": "2021-10-22T01:49:29.016Z",
+          "duration": 2552,
+          "startTime": "2021-10-23T02:25:10.068Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:49:29.016Z",
-              "duration": 335,
+              "startTime": "2021-10-23T02:25:10.069Z",
+              "duration": 392,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:49:29.050Z",
-                  "duration": 301,
+                  "startTime": "2021-10-23T02:25:10.102Z",
+                  "duration": 359,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:49:29.352Z",
-              "duration": 1255,
+              "startTime": "2021-10-23T02:25:10.462Z",
+              "duration": 1336,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -3006,7 +3006,7 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:49:30.608Z",
+              "startTime": "2021-10-23T02:25:11.799Z",
               "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
@@ -3018,8 +3018,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:49:30.613Z",
-              "duration": 785,
+              "startTime": "2021-10-23T02:25:11.804Z",
+              "duration": 703,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -3030,8 +3030,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:49:31.399Z",
-              "duration": 37,
+              "startTime": "2021-10-23T02:25:12.508Z",
+              "duration": 32,
               "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
               "steps": [],
               "location": {
@@ -3042,13 +3042,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:49:31.436Z",
-              "duration": 101,
+              "startTime": "2021-10-23T02:25:12.540Z",
+              "duration": 80,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:49:31.524Z",
-                  "duration": 4,
+                  "startTime": "2021-10-23T02:25:12.619Z",
+                  "duration": 1,
                   "steps": []
                 }
               ]
@@ -3070,7 +3070,7 @@
         "line": 44,
         "column": 5
       },
-      "duration": 2485,
+      "duration": 2428,
       "outcome": "expected",
       "path": [
         "completed.spec.js:44",
@@ -3078,27 +3078,27 @@
       ],
       "results": [
         {
-          "duration": 2485,
-          "startTime": "2021-10-22T01:49:30.587Z",
+          "duration": 2428,
+          "startTime": "2021-10-23T02:25:10.602Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:49:30.589Z",
-              "duration": 319,
+              "startTime": "2021-10-23T02:25:10.602Z",
+              "duration": 359,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:49:30.601Z",
-                  "duration": 307,
+                  "startTime": "2021-10-23T02:25:10.648Z",
+                  "duration": 313,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:49:30.909Z",
-              "duration": 1199,
+              "startTime": "2021-10-23T02:25:10.961Z",
+              "duration": 1201,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -3109,8 +3109,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:49:32.108Z",
-              "duration": 8,
+              "startTime": "2021-10-23T02:25:12.163Z",
+              "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -3121,8 +3121,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:49:32.116Z",
-              "duration": 766,
+              "startTime": "2021-10-23T02:25:12.168Z",
+              "duration": 698,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -3133,8 +3133,8 @@
             },
             {
               "title": "expect.toHaveAttribute",
-              "startTime": "2021-10-22T01:49:32.883Z",
-              "duration": 74,
+              "startTime": "2021-10-23T02:25:12.866Z",
+              "duration": 75,
               "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
               "steps": [],
               "location": {
@@ -3145,13 +3145,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:49:32.957Z",
-              "duration": 115,
+              "startTime": "2021-10-23T02:25:12.941Z",
+              "duration": 89,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:49:33.067Z",
-                  "duration": 3,
+                  "startTime": "2021-10-23T02:25:13.026Z",
+                  "duration": 1,
                   "steps": []
                 }
               ]
@@ -3173,7 +3173,7 @@
         "line": 7,
         "column": 5
       },
-      "duration": 2271,
+      "duration": 2218,
       "outcome": "expected",
       "path": [
         "completed.spec.js:7",
@@ -3181,27 +3181,27 @@
       ],
       "results": [
         {
-          "duration": 2271,
-          "startTime": "2021-10-22T01:51:14.441Z",
+          "duration": 2218,
+          "startTime": "2021-10-23T02:26:24.326Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:51:14.442Z",
-              "duration": 47,
+              "startTime": "2021-10-23T02:26:24.326Z",
+              "duration": 63,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:51:14.446Z",
-                  "duration": 42,
+                  "startTime": "2021-10-23T02:26:24.339Z",
+                  "duration": 50,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:51:14.489Z",
-              "duration": 1022,
+              "startTime": "2021-10-23T02:26:24.390Z",
+              "duration": 1104,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -3212,8 +3212,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:51:15.512Z",
-              "duration": 7,
+              "startTime": "2021-10-23T02:26:25.494Z",
+              "duration": 6,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -3224,8 +3224,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:51:15.519Z",
-              "duration": 867,
+              "startTime": "2021-10-23T02:26:25.500Z",
+              "duration": 676,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -3236,8 +3236,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:51:16.387Z",
-              "duration": 30,
+              "startTime": "2021-10-23T02:26:26.177Z",
+              "duration": 25,
               "snippet": "  11 |         })\n  12 |         await expect(page).toHaveURL(`${baseURL}${PAGES.COMPLETED}`)\n     |                            ^\n  13 |     })",
               "steps": [],
               "location": {
@@ -3248,13 +3248,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:51:16.417Z",
-              "duration": 295,
+              "startTime": "2021-10-23T02:26:26.202Z",
+              "duration": 342,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:51:16.695Z",
-                  "duration": 17,
+                  "startTime": "2021-10-23T02:26:26.518Z",
+                  "duration": 26,
                   "steps": []
                 }
               ]
@@ -3276,7 +3276,7 @@
         "line": 15,
         "column": 5
       },
-      "duration": 2983,
+      "duration": 3097,
       "outcome": "expected",
       "path": [
         "completed.spec.js:15",
@@ -3284,27 +3284,27 @@
       ],
       "results": [
         {
-          "duration": 2983,
-          "startTime": "2021-10-22T01:51:15.442Z",
+          "duration": 3097,
+          "startTime": "2021-10-23T02:26:26.512Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:51:15.442Z",
-              "duration": 48,
+              "startTime": "2021-10-23T02:26:26.512Z",
+              "duration": 80,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:51:15.447Z",
-                  "duration": 43,
+                  "startTime": "2021-10-23T02:26:26.524Z",
+                  "duration": 67,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:51:15.491Z",
-              "duration": 1109,
+              "startTime": "2021-10-23T02:26:26.592Z",
+              "duration": 1188,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -3315,7 +3315,7 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:51:16.600Z",
+              "startTime": "2021-10-23T02:26:27.781Z",
               "duration": 6,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
@@ -3327,8 +3327,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:51:16.606Z",
-              "duration": 811,
+              "startTime": "2021-10-23T02:26:27.787Z",
+              "duration": 697,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -3339,8 +3339,8 @@
             },
             {
               "title": "locator.click(data-test=button-back-to-products)",
-              "startTime": "2021-10-22T01:51:17.418Z",
-              "duration": 109,
+              "startTime": "2021-10-23T02:26:28.485Z",
+              "duration": 164,
               "snippet": "  43 |         const backHomeButton = this.components.completedBackButton()\n  44 |         await backHomeButton.click()\n     |                              ^\n  45 |     }",
               "steps": [],
               "location": {
@@ -3351,8 +3351,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-22T01:51:17.528Z",
-              "duration": 37,
+              "startTime": "2021-10-23T02:26:28.652Z",
+              "duration": 33,
               "snippet": "  24 |         await completedController.navigateBackHome()\n  25 |         await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                            ^\n  26 |     })",
               "steps": [],
               "location": {
@@ -3363,13 +3363,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:51:17.566Z",
-              "duration": 859,
+              "startTime": "2021-10-23T02:26:28.686Z",
+              "duration": 923,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:51:18.413Z",
-                  "duration": 11,
+                  "startTime": "2021-10-23T02:26:29.592Z",
+                  "duration": 16,
                   "steps": []
                 }
               ]
@@ -3391,7 +3391,7 @@
         "line": 28,
         "column": 5
       },
-      "duration": 2391,
+      "duration": 2513,
       "outcome": "expected",
       "path": [
         "completed.spec.js:28",
@@ -3399,27 +3399,27 @@
       ],
       "results": [
         {
-          "duration": 2391,
-          "startTime": "2021-10-22T01:51:16.713Z",
+          "duration": 2513,
+          "startTime": "2021-10-23T02:26:26.545Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:51:16.713Z",
-              "duration": 94,
+              "startTime": "2021-10-23T02:26:26.545Z",
+              "duration": 76,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:51:16.725Z",
-                  "duration": 82,
+                  "startTime": "2021-10-23T02:26:26.553Z",
+                  "duration": 68,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:51:16.808Z",
-              "duration": 1047,
+              "startTime": "2021-10-23T02:26:26.622Z",
+              "duration": 1242,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -3430,7 +3430,7 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:51:17.856Z",
+              "startTime": "2021-10-23T02:26:27.864Z",
               "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
@@ -3442,8 +3442,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:51:17.861Z",
-              "duration": 868,
+              "startTime": "2021-10-23T02:26:27.872Z",
+              "duration": 731,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -3454,8 +3454,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:51:18.730Z",
-              "duration": 28,
+              "startTime": "2021-10-23T02:26:28.604Z",
+              "duration": 82,
               "snippet": "  32 |         })\n  33 |         await expect(await completedController.components.completedHeaderText()).toHaveText(MESSAGES.COMPLETED_THANKS)\n     |                                                                                  ^\n  34 |     })",
               "steps": [],
               "location": {
@@ -3466,13 +3466,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:51:18.758Z",
-              "duration": 346,
+              "startTime": "2021-10-23T02:26:28.688Z",
+              "duration": 370,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:51:19.085Z",
-                  "duration": 19,
+                  "startTime": "2021-10-23T02:26:29.038Z",
+                  "duration": 20,
                   "steps": []
                 }
               ]
@@ -3494,7 +3494,7 @@
         "line": 36,
         "column": 5
       },
-      "duration": 2249,
+      "duration": 2265,
       "outcome": "expected",
       "path": [
         "completed.spec.js:36",
@@ -3502,27 +3502,27 @@
       ],
       "results": [
         {
-          "duration": 2249,
-          "startTime": "2021-10-22T01:51:18.425Z",
+          "duration": 2265,
+          "startTime": "2021-10-23T02:26:29.059Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:51:18.426Z",
-              "duration": 43,
+              "startTime": "2021-10-23T02:26:29.059Z",
+              "duration": 85,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:51:18.430Z",
-                  "duration": 38,
+                  "startTime": "2021-10-23T02:26:29.073Z",
+                  "duration": 71,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:51:18.469Z",
-              "duration": 1031,
+              "startTime": "2021-10-23T02:26:29.144Z",
+              "duration": 1187,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -3533,7 +3533,7 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:51:19.501Z",
+              "startTime": "2021-10-23T02:26:30.331Z",
               "duration": 6,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
@@ -3545,8 +3545,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:51:19.508Z",
-              "duration": 767,
+              "startTime": "2021-10-23T02:26:30.337Z",
+              "duration": 676,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -3557,8 +3557,8 @@
             },
             {
               "title": "expect.toHaveText",
-              "startTime": "2021-10-22T01:51:20.276Z",
-              "duration": 48,
+              "startTime": "2021-10-23T02:26:31.013Z",
+              "duration": 24,
               "snippet": "  40 |         })\n  41 |         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)\n     |                                                                            ^\n  42 |     })",
               "steps": [],
               "location": {
@@ -3569,13 +3569,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:51:20.324Z",
-              "duration": 350,
+              "startTime": "2021-10-23T02:26:31.037Z",
+              "duration": 287,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:51:20.665Z",
-                  "duration": 8,
+                  "startTime": "2021-10-23T02:26:31.309Z",
+                  "duration": 15,
                   "steps": []
                 }
               ]
@@ -3597,7 +3597,7 @@
         "line": 44,
         "column": 5
       },
-      "duration": 2299,
+      "duration": 2263,
       "outcome": "expected",
       "path": [
         "completed.spec.js:44",
@@ -3605,27 +3605,27 @@
       ],
       "results": [
         {
-          "duration": 2299,
-          "startTime": "2021-10-22T01:51:19.105Z",
+          "duration": 2263,
+          "startTime": "2021-10-23T02:26:29.610Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-22T01:51:19.105Z",
-              "duration": 42,
+              "startTime": "2021-10-23T02:26:29.610Z",
+              "duration": 88,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-22T01:51:19.110Z",
-                  "duration": 37,
+                  "startTime": "2021-10-23T02:26:29.626Z",
+                  "duration": 72,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto(/)",
-              "startTime": "2021-10-22T01:51:19.147Z",
-              "duration": 1117,
+              "startTime": "2021-10-23T02:26:29.699Z",
+              "duration": 1042,
               "snippet": "  27 |\n  28 |     await page.goto(\"/\", { waitUntil: \"networkidle\" })\n     |                ^\n  29 |",
               "steps": [],
               "location": {
@@ -3636,8 +3636,8 @@
             },
             {
               "title": "page.evaluate",
-              "startTime": "2021-10-22T01:51:20.265Z",
-              "duration": 6,
+              "startTime": "2021-10-23T02:26:30.742Z",
+              "duration": 5,
               "snippet": "  29 |\n  30 |     await page.evaluate(\n     |                ^\n  31 |         ([username, productsContent]) => {",
               "steps": [],
               "location": {
@@ -3648,8 +3648,8 @@
             },
             {
               "title": "page.goto(/checkout-complete.html)",
-              "startTime": "2021-10-22T01:51:20.272Z",
-              "duration": 746,
+              "startTime": "2021-10-23T02:26:30.749Z",
+              "duration": 706,
               "snippet": "  40 |     )\n  41 |     await page.goto(`${path}`, { waitUntil: \"networkidle\" })\n     |                ^\n  42 | }",
               "steps": [],
               "location": {
@@ -3660,8 +3660,8 @@
             },
             {
               "title": "expect.toHaveAttribute",
-              "startTime": "2021-10-22T01:51:21.019Z",
-              "duration": 23,
+              "startTime": "2021-10-23T02:26:31.456Z",
+              "duration": 36,
               "snippet": "  48 |         })\n  49 |         await expect(await completedController.components.completedImage()).toHaveAttribute(\"src\", IMAGES.PANY_EXPRESS)\n     |                                                                             ^\n  50 |     })",
               "steps": [],
               "location": {
@@ -3672,13 +3672,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-22T01:51:21.042Z",
-              "duration": 362,
+              "startTime": "2021-10-23T02:26:31.492Z",
+              "duration": 380,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-22T01:51:21.376Z",
-                  "duration": 28,
+                  "startTime": "2021-10-23T02:26:31.862Z",
+                  "duration": 9,
                   "steps": []
                 }
               ]
