@@ -11,34 +11,34 @@
         "line": 10,
         "column": 1
       },
-      "duration": 8314,
+      "duration": 7855,
       "outcome": "expected",
       "path": [
         "failSample.spec.js:10"
       ],
       "results": [
         {
-          "duration": 8314,
-          "startTime": "2021-10-28T01:25:15.071Z",
+          "duration": 7855,
+          "startTime": "2021-11-03T02:08:56.598Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T01:25:15.072Z",
-              "duration": 434,
+              "startTime": "2021-11-03T02:08:56.598Z",
+              "duration": 347,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-28T01:25:15.385Z",
-                  "duration": 120,
+                  "startTime": "2021-11-03T02:08:56.856Z",
+                  "duration": 87,
                   "steps": []
                 }
               ]
             },
             {
               "title": "page.goto",
-              "startTime": "2021-10-28T01:25:15.507Z",
-              "duration": 1570,
+              "startTime": "2021-11-03T02:08:56.946Z",
+              "duration": 1370,
               "snippet": "   41 |     async navigate() {\n   42 |         await this.page.goto(`${PAGES.LOGIN}`, { waitUntil: \"networkidle\" })\n      |                         ^\n   43 |     }",
               "steps": [],
               "location": {
@@ -49,8 +49,8 @@
             },
             {
               "title": "locator.type(data-test=input-username)",
-              "startTime": "2021-10-28T01:25:17.079Z",
-              "duration": 41,
+              "startTime": "2021-11-03T02:08:58.317Z",
+              "duration": 32,
               "snippet": "   60 |         const usernameSelector = this.components.usernameInput()\n   61 |         await usernameSelector.type(username)\n      |                                ^\n   62 |     }",
               "steps": [],
               "location": {
@@ -61,8 +61,8 @@
             },
             {
               "title": "locator.type(data-test=input-password, secret_sauce)",
-              "startTime": "2021-10-28T01:25:17.120Z",
-              "duration": 96,
+              "startTime": "2021-11-03T02:08:58.349Z",
+              "duration": 74,
               "snippet": "   68 |         const passwordSelector = this.components.passwordInput()\n   69 |         await passwordSelector.type(password)\n      |                                ^\n   70 |     }",
               "steps": [],
               "location": {
@@ -73,8 +73,8 @@
             },
             {
               "title": "locator.click(data-test=button-login)",
-              "startTime": "2021-10-28T01:25:17.218Z",
-              "duration": 91,
+              "startTime": "2021-11-03T02:08:58.424Z",
+              "duration": 58,
               "snippet": "   76 |         const loginSelector = this.components.loginButton()\n   77 |         await loginSelector.click()\n      |                             ^\n   78 |     }",
               "steps": [],
               "location": {
@@ -85,8 +85,8 @@
             },
             {
               "title": "expect.toHaveURL",
-              "startTime": "2021-10-28T01:25:17.311Z",
-              "duration": 5010,
+              "startTime": "2021-11-03T02:08:58.483Z",
+              "duration": 5012,
               "snippet": "  17 |     await loginController.loginWithoutUser()\n  18 |     await expect(inventoryController.page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)\n     |                                            ^\n  19 | })",
               "steps": [],
               "location": {
@@ -98,13 +98,13 @@
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T01:25:22.322Z",
-              "duration": 1063,
+              "startTime": "2021-11-03T02:09:03.498Z",
+              "duration": 955,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-28T01:25:22.508Z",
-                  "duration": 873,
+                  "startTime": "2021-11-03T02:09:03.711Z",
+                  "duration": 740,
                   "steps": []
                 }
               ]
@@ -116,12 +116,12 @@
             {
               "name": "video",
               "contentType": "video/webm",
-              "path": "data/e52da159886ddc6207337ff44399acc1caeb6d09.webm"
+              "path": "data/16877ba992ac3fc97b823f0db8f9f950340ac977.webm"
             },
             {
               "name": "trace",
               "contentType": "application/zip",
-              "path": "data/27ad4dc1b401e6055ec598c551f5ab620794641a.zip"
+              "path": "data/7ac7d7f0217991645031b9116de3e93fb750e814.zip"
             },
             {
               "name": "screenshot",
@@ -142,39 +142,39 @@
         "line": 10,
         "column": 1
       },
-      "duration": 787,
+      "duration": 618,
       "outcome": "skipped",
       "path": [
         "failSample.spec.js:10"
       ],
       "results": [
         {
-          "duration": 787,
-          "startTime": "2021-10-28T01:26:30.855Z",
+          "duration": 618,
+          "startTime": "2021-11-03T02:10:02.311Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T01:26:30.856Z",
-              "duration": 435,
+              "startTime": "2021-11-03T02:10:02.312Z",
+              "duration": 349,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-28T01:26:31.187Z",
-                  "duration": 104,
+                  "startTime": "2021-11-03T02:10:02.565Z",
+                  "duration": 95,
                   "steps": []
                 }
               ]
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T01:26:31.298Z",
-              "duration": 344,
+              "startTime": "2021-11-03T02:10:02.661Z",
+              "duration": 267,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-28T01:26:31.558Z",
-                  "duration": 70,
+                  "startTime": "2021-11-03T02:10:02.887Z",
+                  "duration": 39,
                   "steps": []
                 }
               ]
@@ -186,12 +186,12 @@
             {
               "name": "video",
               "contentType": "video/webm",
-              "path": "data/f8cdd8de16fd17beb207e97f141a19f1354208f4.webm"
+              "path": "data/d52388adeb8adc0b4892605ae151d62ba8c83ea3.webm"
             },
             {
               "name": "trace",
               "contentType": "application/zip",
-              "path": "data/0eb31027e52b94cac896b118970412850af40277.zip"
+              "path": "data/e82d77c57c22af5468ace5e71e3db73694178d75.zip"
             },
             {
               "name": "screenshot",
@@ -212,38 +212,38 @@
         "line": 10,
         "column": 1
       },
-      "duration": 367,
+      "duration": 324,
       "outcome": "skipped",
       "path": [
         "failSample.spec.js:10"
       ],
       "results": [
         {
-          "duration": 367,
-          "startTime": "2021-10-28T01:27:34.740Z",
+          "duration": 324,
+          "startTime": "2021-11-03T02:11:01.206Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T01:27:34.741Z",
-              "duration": 193,
+              "startTime": "2021-11-03T02:11:01.207Z",
+              "duration": 172,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-28T01:27:34.855Z",
-                  "duration": 78,
+                  "startTime": "2021-11-03T02:11:01.308Z",
+                  "duration": 71,
                   "steps": []
                 }
               ]
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T01:27:34.935Z",
-              "duration": 172,
+              "startTime": "2021-11-03T02:11:01.380Z",
+              "duration": 150,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-28T01:27:35.072Z",
+                  "startTime": "2021-11-03T02:11:01.489Z",
                   "duration": 32,
                   "steps": []
                 }
@@ -256,12 +256,12 @@
             {
               "name": "video",
               "contentType": "video/webm",
-              "path": "data/4b0df394365d7df3766dadcafb7deadc209013f2.webm"
+              "path": "data/964199ff658c863507082b4a53845ce9b525ebc9.webm"
             },
             {
               "name": "trace",
               "contentType": "application/zip",
-              "path": "data/e7991312a581a9ae70f68aa7fceb7e098d269e9d.zip"
+              "path": "data/8e820240e9070f0be989d06fbc40cfd25198c2fd.zip"
             },
             {
               "name": "screenshot",
@@ -282,40 +282,41 @@
         "line": 10,
         "column": 1
       },
-      "duration": 2345,
+      "duration": 2468,
       "outcome": "skipped",
       "path": [
         "failSample.spec.js:10"
       ],
       "results": [
         {
-          "duration": 2345,
-          "startTime": "2021-10-28T01:29:12.086Z",
+          "duration": 2468,
+          "startTime": "2021-11-03T02:12:23.663Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T01:29:12.086Z",
-              "duration": 2062,
+              "startTime": "2021-11-03T02:12:23.663Z",
+              "duration": 2171,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-28T01:29:13.517Z",
-                  "duration": 630,
+                  "startTime": "2021-11-03T02:12:25.049Z",
+                  "duration": 783,
                   "steps": []
                 }
               ]
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T01:29:14.149Z",
-              "duration": 281,
+              "startTime": "2021-11-03T02:12:25.834Z",
+              "duration": 297,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-28T01:29:14.346Z",
-                  "duration": 77,
-                  "steps": []
+                  "startTime": "2021-11-03T02:12:26.121Z",
+                  "duration": 1,
+                  "steps": [],
+                  "error": "browserContext.close: Target page, context or browser has been closed"
                 }
               ]
             }
@@ -324,19 +325,14 @@
           "status": "skipped",
           "attachments": [
             {
-              "name": "video",
-              "contentType": "video/webm",
-              "path": "data/36404f1eb5f8cbec8331769a525316af248d3c74.webm"
-            },
-            {
               "name": "trace",
               "contentType": "application/zip",
-              "path": "data/702770db69bacceb5736394333398991d52e2409.zip"
+              "path": "data/5e329333e0b62b0fa1f61903e96c8898c6771937.zip"
             },
             {
               "name": "screenshot",
               "contentType": "image/png",
-              "path": "data/8fc43d271bb01ae1a9adcf08f56c245808fba602.png"
+              "path": "/home/runner/work/playwright-study/test-results/firefox-hd/failSample-marked-as-should-fail-on-purpose-to-show-expected-error-evidences-login-should-fail-firefox-hd/test-finished-1.png"
             }
           ]
         }
@@ -352,39 +348,39 @@
         "line": 10,
         "column": 1
       },
-      "duration": 788,
+      "duration": 928,
       "outcome": "skipped",
       "path": [
         "failSample.spec.js:10"
       ],
       "results": [
         {
-          "duration": 788,
-          "startTime": "2021-10-28T01:30:28.530Z",
+          "duration": 928,
+          "startTime": "2021-11-03T02:13:34.107Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T01:30:28.531Z",
-              "duration": 636,
+              "startTime": "2021-11-03T02:13:34.108Z",
+              "duration": 695,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-28T01:30:28.990Z",
-                  "duration": 177,
+                  "startTime": "2021-11-03T02:13:34.537Z",
+                  "duration": 266,
                   "steps": []
                 }
               ]
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T01:30:29.168Z",
-              "duration": 150,
+              "startTime": "2021-11-03T02:13:34.803Z",
+              "duration": 232,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-28T01:30:29.290Z",
-                  "duration": 12,
+                  "startTime": "2021-11-03T02:13:35.024Z",
+                  "duration": 8,
                   "steps": []
                 }
               ]
@@ -396,12 +392,12 @@
             {
               "name": "video",
               "contentType": "video/webm",
-              "path": "data/9bed49f33f89ec3bd7e9cd6c8d43fb6070a53443.webm"
+              "path": "data/6c6b38b396907c068a23b1e41903b3a24f82dc24.webm"
             },
             {
               "name": "trace",
               "contentType": "application/zip",
-              "path": "data/236979befca76ed808dbd1483ed8f9d017932607.zip"
+              "path": "data/95791bfcc9429421bb3e2d9685d7e64b3b9bbc91.zip"
             },
             {
               "name": "screenshot",
@@ -422,39 +418,39 @@
         "line": 10,
         "column": 1
       },
-      "duration": 886,
+      "duration": 732,
       "outcome": "skipped",
       "path": [
         "failSample.spec.js:10"
       ],
       "results": [
         {
-          "duration": 886,
-          "startTime": "2021-10-28T01:31:44.329Z",
+          "duration": 732,
+          "startTime": "2021-11-03T02:14:44.010Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T01:31:44.330Z",
-              "duration": 747,
+              "startTime": "2021-11-03T02:14:44.010Z",
+              "duration": 587,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-28T01:31:44.823Z",
-                  "duration": 253,
+                  "startTime": "2021-11-03T02:14:44.403Z",
+                  "duration": 194,
                   "steps": []
                 }
               ]
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T01:31:45.078Z",
-              "duration": 137,
+              "startTime": "2021-11-03T02:14:44.598Z",
+              "duration": 144,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-28T01:31:45.202Z",
-                  "duration": 5,
+                  "startTime": "2021-11-03T02:14:44.727Z",
+                  "duration": 9,
                   "steps": []
                 }
               ]
@@ -466,7 +462,7 @@
             {
               "name": "video",
               "contentType": "video/webm",
-              "path": "/home/runner/work/playwright-study/playwright-study/test-results/failSample-marked-as-should-fail-on-purpose-to-show-expected-error-evidences-login-should-fail-iphone-8/1e840d88584485114b74a8da6bffc350.webm"
+              "path": "/home/runner/work/playwright-study/playwright-study/test-results/failSample-marked-as-should-fail-on-purpose-to-show-expected-error-evidences-login-should-fail-iphone-8/a357b551fb82ef774c2c03a68fe3651b.webm"
             },
             {
               "name": "trace",
@@ -492,39 +488,39 @@
         "line": 10,
         "column": 1
       },
-      "duration": 666,
+      "duration": 615,
       "outcome": "skipped",
       "path": [
         "failSample.spec.js:10"
       ],
       "results": [
         {
-          "duration": 666,
-          "startTime": "2021-10-28T01:32:53.688Z",
+          "duration": 615,
+          "startTime": "2021-11-03T02:15:48.668Z",
           "retry": 0,
           "steps": [
             {
               "title": "Before Hooks",
-              "startTime": "2021-10-28T01:32:53.688Z",
-              "duration": 382,
+              "startTime": "2021-11-03T02:15:48.668Z",
+              "duration": 378,
               "steps": [
                 {
                   "title": "browserContext.newPage",
-                  "startTime": "2021-10-28T01:32:53.965Z",
-                  "duration": 105,
+                  "startTime": "2021-11-03T02:15:48.968Z",
+                  "duration": 78,
                   "steps": []
                 }
               ]
             },
             {
               "title": "After Hooks",
-              "startTime": "2021-10-28T01:32:54.071Z",
-              "duration": 283,
+              "startTime": "2021-11-03T02:15:49.047Z",
+              "duration": 235,
               "steps": [
                 {
                   "title": "browserContext.close",
-                  "startTime": "2021-10-28T01:32:54.311Z",
-                  "duration": 39,
+                  "startTime": "2021-11-03T02:15:49.249Z",
+                  "duration": 31,
                   "steps": []
                 }
               ]
@@ -536,7 +532,7 @@
             {
               "name": "video",
               "contentType": "video/webm",
-              "path": "/home/runner/work/playwright-study/playwright-study/test-results/failSample-marked-as-should-fail-on-purpose-to-show-expected-error-evidences-login-should-fail-pixel-4/5ce3a8e83ce9fc6d4b6d3f171ada6777.webm"
+              "path": "/home/runner/work/playwright-study/playwright-study/test-results/failSample-marked-as-should-fail-on-purpose-to-show-expected-error-evidences-login-should-fail-pixel-4/a870fb39faeba391724ebb8d7a85a7df.webm"
             },
             {
               "name": "trace",

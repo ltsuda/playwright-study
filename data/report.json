@@ -13,7 +13,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 17800,
+          "duration": 15585,
           "outcome": "expected",
           "path": [
             "cart.spec.js:7",
@@ -30,7 +30,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 3245,
+          "duration": 2694,
           "outcome": "expected",
           "path": [
             "cart.spec.js:7",
@@ -47,7 +47,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 3852,
+          "duration": 3375,
           "outcome": "expected",
           "path": [
             "cart.spec.js:7",
@@ -64,7 +64,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 6329,
+          "duration": 5251,
           "outcome": "expected",
           "path": [
             "cart.spec.js:7",
@@ -81,7 +81,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 5145,
+          "duration": 4575,
           "outcome": "expected",
           "path": [
             "cart.spec.js:7",
@@ -98,7 +98,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 3565,
+          "duration": 3067,
           "outcome": "expected",
           "path": [
             "cart.spec.js:7",
@@ -115,7 +115,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 3095,
+          "duration": 2859,
           "outcome": "expected",
           "path": [
             "cart.spec.js:7",
@@ -132,7 +132,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 16092,
+          "duration": 14345,
           "outcome": "expected",
           "path": [
             "cart.spec.js:20",
@@ -149,7 +149,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 2034,
+          "duration": 1914,
           "outcome": "expected",
           "path": [
             "cart.spec.js:20",
@@ -166,7 +166,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 2525,
+          "duration": 2310,
           "outcome": "expected",
           "path": [
             "cart.spec.js:20",
@@ -183,7 +183,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 5734,
+          "duration": 4809,
           "outcome": "expected",
           "path": [
             "cart.spec.js:20",
@@ -200,7 +200,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 2839,
+          "duration": 2835,
           "outcome": "expected",
           "path": [
             "cart.spec.js:20",
@@ -217,7 +217,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 3032,
+          "duration": 2666,
           "outcome": "expected",
           "path": [
             "cart.spec.js:20",
@@ -234,7 +234,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 2572,
+          "duration": 2405,
           "outcome": "expected",
           "path": [
             "cart.spec.js:20",
@@ -251,7 +251,7 @@
             "line": 29,
             "column": 5
           },
-          "duration": 1914,
+          "duration": 1973,
           "outcome": "expected",
           "path": [
             "cart.spec.js:29",
@@ -268,7 +268,7 @@
             "line": 29,
             "column": 5
           },
-          "duration": 2003,
+          "duration": 1819,
           "outcome": "expected",
           "path": [
             "cart.spec.js:29",
@@ -285,7 +285,7 @@
             "line": 29,
             "column": 5
           },
-          "duration": 2168,
+          "duration": 1759,
           "outcome": "expected",
           "path": [
             "cart.spec.js:29",
@@ -302,7 +302,7 @@
             "line": 29,
             "column": 5
           },
-          "duration": 2812,
+          "duration": 2454,
           "outcome": "expected",
           "path": [
             "cart.spec.js:29",
@@ -319,7 +319,7 @@
             "line": 29,
             "column": 5
           },
-          "duration": 2314,
+          "duration": 2355,
           "outcome": "expected",
           "path": [
             "cart.spec.js:29",
@@ -336,7 +336,7 @@
             "line": 29,
             "column": 5
           },
-          "duration": 2580,
+          "duration": 2164,
           "outcome": "expected",
           "path": [
             "cart.spec.js:29",
@@ -353,7 +353,7 @@
             "line": 29,
             "column": 5
           },
-          "duration": 2231,
+          "duration": 2016,
           "outcome": "expected",
           "path": [
             "cart.spec.js:29",
@@ -370,7 +370,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2272,
+          "duration": 2110,
           "outcome": "expected",
           "path": [
             "cart.spec.js:43",
@@ -387,7 +387,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2567,
+          "duration": 2236,
           "outcome": "expected",
           "path": [
             "cart.spec.js:43",
@@ -404,7 +404,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2148,
+          "duration": 1911,
           "outcome": "expected",
           "path": [
             "cart.spec.js:43",
@@ -421,7 +421,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 3553,
+          "duration": 3031,
           "outcome": "expected",
           "path": [
             "cart.spec.js:43",
@@ -438,7 +438,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2793,
+          "duration": 2781,
           "outcome": "expected",
           "path": [
             "cart.spec.js:43",
@@ -455,7 +455,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 3226,
+          "duration": 2523,
           "outcome": "expected",
           "path": [
             "cart.spec.js:43",
@@ -472,7 +472,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2609,
+          "duration": 2355,
           "outcome": "expected",
           "path": [
             "cart.spec.js:43",
@@ -489,7 +489,7 @@
             "line": 58,
             "column": 5
           },
-          "duration": 2138,
+          "duration": 2031,
           "outcome": "expected",
           "path": [
             "cart.spec.js:58",
@@ -506,7 +506,7 @@
             "line": 58,
             "column": 5
           },
-          "duration": 2595,
+          "duration": 2475,
           "outcome": "expected",
           "path": [
             "cart.spec.js:58",
@@ -523,7 +523,7 @@
             "line": 58,
             "column": 5
           },
-          "duration": 2096,
+          "duration": 1904,
           "outcome": "expected",
           "path": [
             "cart.spec.js:58",
@@ -540,7 +540,7 @@
             "line": 58,
             "column": 5
           },
-          "duration": 3073,
+          "duration": 2511,
           "outcome": "expected",
           "path": [
             "cart.spec.js:58",
@@ -557,7 +557,7 @@
             "line": 58,
             "column": 5
           },
-          "duration": 2465,
+          "duration": 2192,
           "outcome": "expected",
           "path": [
             "cart.spec.js:58",
@@ -574,7 +574,7 @@
             "line": 58,
             "column": 5
           },
-          "duration": 2526,
+          "duration": 2442,
           "outcome": "expected",
           "path": [
             "cart.spec.js:58",
@@ -591,7 +591,7 @@
             "line": 58,
             "column": 5
           },
-          "duration": 2138,
+          "duration": 2074,
           "outcome": "expected",
           "path": [
             "cart.spec.js:58",
@@ -608,7 +608,7 @@
             "line": 73,
             "column": 5
           },
-          "duration": 2047,
+          "duration": 1936,
           "outcome": "expected",
           "path": [
             "cart.spec.js:73",
@@ -625,7 +625,7 @@
             "line": 73,
             "column": 5
           },
-          "duration": 2620,
+          "duration": 1935,
           "outcome": "expected",
           "path": [
             "cart.spec.js:73",
@@ -642,7 +642,7 @@
             "line": 73,
             "column": 5
           },
-          "duration": 1984,
+          "duration": 1757,
           "outcome": "expected",
           "path": [
             "cart.spec.js:73",
@@ -659,7 +659,7 @@
             "line": 73,
             "column": 5
           },
-          "duration": 2902,
+          "duration": 2470,
           "outcome": "expected",
           "path": [
             "cart.spec.js:73",
@@ -676,7 +676,7 @@
             "line": 73,
             "column": 5
           },
-          "duration": 2331,
+          "duration": 2115,
           "outcome": "expected",
           "path": [
             "cart.spec.js:73",
@@ -693,7 +693,7 @@
             "line": 73,
             "column": 5
           },
-          "duration": 2223,
+          "duration": 2137,
           "outcome": "expected",
           "path": [
             "cart.spec.js:73",
@@ -710,7 +710,7 @@
             "line": 73,
             "column": 5
           },
-          "duration": 2133,
+          "duration": 2073,
           "outcome": "expected",
           "path": [
             "cart.spec.js:73",
@@ -727,7 +727,7 @@
             "line": 82,
             "column": 5
           },
-          "duration": 3155,
+          "duration": 2956,
           "outcome": "expected",
           "path": [
             "cart.spec.js:82",
@@ -744,7 +744,7 @@
             "line": 82,
             "column": 5
           },
-          "duration": 3849,
+          "duration": 3047,
           "outcome": "expected",
           "path": [
             "cart.spec.js:82",
@@ -761,7 +761,7 @@
             "line": 82,
             "column": 5
           },
-          "duration": 3042,
+          "duration": 2891,
           "outcome": "expected",
           "path": [
             "cart.spec.js:82",
@@ -778,7 +778,7 @@
             "line": 82,
             "column": 5
           },
-          "duration": 4253,
+          "duration": 3159,
           "outcome": "expected",
           "path": [
             "cart.spec.js:82",
@@ -795,7 +795,7 @@
             "line": 82,
             "column": 5
           },
-          "duration": 3512,
+          "duration": 3303,
           "outcome": "expected",
           "path": [
             "cart.spec.js:82",
@@ -812,7 +812,7 @@
             "line": 82,
             "column": 5
           },
-          "duration": 3496,
+          "duration": 3383,
           "outcome": "expected",
           "path": [
             "cart.spec.js:82",
@@ -829,7 +829,7 @@
             "line": 82,
             "column": 5
           },
-          "duration": 3202,
+          "duration": 3174,
           "outcome": "expected",
           "path": [
             "cart.spec.js:82",
@@ -846,7 +846,7 @@
             "line": 99,
             "column": 5
           },
-          "duration": 2609,
+          "duration": 2421,
           "outcome": "expected",
           "path": [
             "cart.spec.js:99",
@@ -863,7 +863,7 @@
             "line": 99,
             "column": 5
           },
-          "duration": 2853,
+          "duration": 2506,
           "outcome": "expected",
           "path": [
             "cart.spec.js:99",
@@ -880,7 +880,7 @@
             "line": 99,
             "column": 5
           },
-          "duration": 2510,
+          "duration": 2362,
           "outcome": "expected",
           "path": [
             "cart.spec.js:99",
@@ -897,7 +897,7 @@
             "line": 99,
             "column": 5
           },
-          "duration": 3092,
+          "duration": 2600,
           "outcome": "expected",
           "path": [
             "cart.spec.js:99",
@@ -914,7 +914,7 @@
             "line": 99,
             "column": 5
           },
-          "duration": 3063,
+          "duration": 2773,
           "outcome": "expected",
           "path": [
             "cart.spec.js:99",
@@ -931,7 +931,7 @@
             "line": 99,
             "column": 5
           },
-          "duration": 2936,
+          "duration": 2754,
           "outcome": "expected",
           "path": [
             "cart.spec.js:99",
@@ -948,7 +948,7 @@
             "line": 99,
             "column": 5
           },
-          "duration": 2570,
+          "duration": 2509,
           "outcome": "expected",
           "path": [
             "cart.spec.js:99",
@@ -965,7 +965,7 @@
             "line": 117,
             "column": 5
           },
-          "duration": 3243,
+          "duration": 2993,
           "outcome": "expected",
           "path": [
             "cart.spec.js:117",
@@ -982,7 +982,7 @@
             "line": 117,
             "column": 5
           },
-          "duration": 3292,
+          "duration": 3245,
           "outcome": "expected",
           "path": [
             "cart.spec.js:117",
@@ -999,7 +999,7 @@
             "line": 117,
             "column": 5
           },
-          "duration": 3144,
+          "duration": 3176,
           "outcome": "expected",
           "path": [
             "cart.spec.js:117",
@@ -1016,7 +1016,7 @@
             "line": 117,
             "column": 5
           },
-          "duration": 3586,
+          "duration": 3821,
           "outcome": "expected",
           "path": [
             "cart.spec.js:117",
@@ -1033,7 +1033,7 @@
             "line": 117,
             "column": 5
           },
-          "duration": 3451,
+          "duration": 3290,
           "outcome": "expected",
           "path": [
             "cart.spec.js:117",
@@ -1050,7 +1050,7 @@
             "line": 117,
             "column": 5
           },
-          "duration": 3307,
+          "duration": 3085,
           "outcome": "expected",
           "path": [
             "cart.spec.js:117",
@@ -1067,7 +1067,7 @@
             "line": 117,
             "column": 5
           },
-          "duration": 3345,
+          "duration": 3206,
           "outcome": "expected",
           "path": [
             "cart.spec.js:117",
@@ -1084,7 +1084,7 @@
             "line": 131,
             "column": 5
           },
-          "duration": 1968,
+          "duration": 1813,
           "outcome": "expected",
           "path": [
             "cart.spec.js:131",
@@ -1101,7 +1101,7 @@
             "line": 131,
             "column": 5
           },
-          "duration": 2034,
+          "duration": 2104,
           "outcome": "expected",
           "path": [
             "cart.spec.js:131",
@@ -1118,7 +1118,7 @@
             "line": 131,
             "column": 5
           },
-          "duration": 1946,
+          "duration": 1967,
           "outcome": "expected",
           "path": [
             "cart.spec.js:131",
@@ -1135,7 +1135,7 @@
             "line": 131,
             "column": 5
           },
-          "duration": 3082,
+          "duration": 2777,
           "outcome": "expected",
           "path": [
             "cart.spec.js:131",
@@ -1152,7 +1152,7 @@
             "line": 131,
             "column": 5
           },
-          "duration": 2428,
+          "duration": 2180,
           "outcome": "expected",
           "path": [
             "cart.spec.js:131",
@@ -1169,7 +1169,7 @@
             "line": 131,
             "column": 5
           },
-          "duration": 2565,
+          "duration": 2406,
           "outcome": "expected",
           "path": [
             "cart.spec.js:131",
@@ -1186,7 +1186,7 @@
             "line": 131,
             "column": 5
           },
-          "duration": 2237,
+          "duration": 2040,
           "outcome": "expected",
           "path": [
             "cart.spec.js:131",
@@ -1203,7 +1203,7 @@
             "line": 143,
             "column": 5
           },
-          "duration": 2657,
+          "duration": 2476,
           "outcome": "expected",
           "path": [
             "cart.spec.js:143",
@@ -1220,7 +1220,7 @@
             "line": 143,
             "column": 5
           },
-          "duration": 2823,
+          "duration": 2538,
           "outcome": "expected",
           "path": [
             "cart.spec.js:143",
@@ -1237,7 +1237,7 @@
             "line": 143,
             "column": 5
           },
-          "duration": 2531,
+          "duration": 2324,
           "outcome": "expected",
           "path": [
             "cart.spec.js:143",
@@ -1254,7 +1254,7 @@
             "line": 143,
             "column": 5
           },
-          "duration": 3020,
+          "duration": 3272,
           "outcome": "expected",
           "path": [
             "cart.spec.js:143",
@@ -1271,7 +1271,7 @@
             "line": 143,
             "column": 5
           },
-          "duration": 3147,
+          "duration": 2877,
           "outcome": "expected",
           "path": [
             "cart.spec.js:143",
@@ -1288,7 +1288,7 @@
             "line": 143,
             "column": 5
           },
-          "duration": 3155,
+          "duration": 3046,
           "outcome": "expected",
           "path": [
             "cart.spec.js:143",
@@ -1305,7 +1305,7 @@
             "line": 143,
             "column": 5
           },
-          "duration": 2816,
+          "duration": 2687,
           "outcome": "expected",
           "path": [
             "cart.spec.js:143",
@@ -1321,7 +1321,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 250239
+        "duration": 227390
       }
     },
     {
@@ -1337,7 +1337,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2011,
+          "duration": 1834,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:7",
@@ -1354,7 +1354,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 1961,
+          "duration": 1895,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:7",
@@ -1371,7 +1371,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 1901,
+          "duration": 1694,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:7",
@@ -1388,7 +1388,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2929,
+          "duration": 2359,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:7",
@@ -1405,7 +1405,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2086,
+          "duration": 1944,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:7",
@@ -1422,7 +1422,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2186,
+          "duration": 2079,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:7",
@@ -1439,7 +1439,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2118,
+          "duration": 2009,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:7",
@@ -1456,7 +1456,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2769,
+          "duration": 1915,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:15",
@@ -1473,7 +1473,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2197,
+          "duration": 1905,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:15",
@@ -1490,7 +1490,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2050,
+          "duration": 1772,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:15",
@@ -1507,7 +1507,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 3059,
+          "duration": 2648,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:15",
@@ -1524,7 +1524,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2404,
+          "duration": 2162,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:15",
@@ -1541,7 +1541,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2455,
+          "duration": 2323,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:15",
@@ -1558,7 +1558,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2211,
+          "duration": 2075,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:15",
@@ -1575,7 +1575,7 @@
             "line": 24,
             "column": 5
           },
-          "duration": 2430,
+          "duration": 1964,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:24",
@@ -1592,7 +1592,7 @@
             "line": 24,
             "column": 5
           },
-          "duration": 2395,
+          "duration": 1912,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:24",
@@ -1609,7 +1609,7 @@
             "line": 24,
             "column": 5
           },
-          "duration": 2073,
+          "duration": 1744,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:24",
@@ -1626,7 +1626,7 @@
             "line": 24,
             "column": 5
           },
-          "duration": 3149,
+          "duration": 2828,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:24",
@@ -1643,7 +1643,7 @@
             "line": 24,
             "column": 5
           },
-          "duration": 2443,
+          "duration": 2265,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:24",
@@ -1660,7 +1660,7 @@
             "line": 24,
             "column": 5
           },
-          "duration": 2368,
+          "duration": 2390,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:24",
@@ -1677,7 +1677,7 @@
             "line": 24,
             "column": 5
           },
-          "duration": 2198,
+          "duration": 2139,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:24",
@@ -1694,7 +1694,7 @@
             "line": 33,
             "column": 5
           },
-          "duration": 2108,
+          "duration": 1980,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:33",
@@ -1711,7 +1711,7 @@
             "line": 33,
             "column": 5
           },
-          "duration": 2398,
+          "duration": 1949,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:33",
@@ -1728,7 +1728,7 @@
             "line": 33,
             "column": 5
           },
-          "duration": 2117,
+          "duration": 1942,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:33",
@@ -1745,7 +1745,7 @@
             "line": 33,
             "column": 5
           },
-          "duration": 3019,
+          "duration": 2665,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:33",
@@ -1762,7 +1762,7 @@
             "line": 33,
             "column": 5
           },
-          "duration": 2515,
+          "duration": 2339,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:33",
@@ -1779,7 +1779,7 @@
             "line": 33,
             "column": 5
           },
-          "duration": 2427,
+          "duration": 2232,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:33",
@@ -1796,7 +1796,7 @@
             "line": 33,
             "column": 5
           },
-          "duration": 2277,
+          "duration": 2143,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:33",
@@ -1813,7 +1813,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2157,
+          "duration": 2027,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:43",
@@ -1830,7 +1830,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2337,
+          "duration": 2006,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:43",
@@ -1847,7 +1847,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2065,
+          "duration": 1986,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:43",
@@ -1864,7 +1864,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 3528,
+          "duration": 3040,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:43",
@@ -1881,7 +1881,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2709,
+          "duration": 2363,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:43",
@@ -1898,7 +1898,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2747,
+          "duration": 2470,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:43",
@@ -1915,7 +1915,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2393,
+          "duration": 2189,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:43",
@@ -1932,7 +1932,7 @@
             "line": 54,
             "column": 5
           },
-          "duration": 2236,
+          "duration": 2153,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:54",
@@ -1949,7 +1949,7 @@
             "line": 54,
             "column": 5
           },
-          "duration": 2511,
+          "duration": 2082,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:54",
@@ -1966,7 +1966,7 @@
             "line": 54,
             "column": 5
           },
-          "duration": 2134,
+          "duration": 1916,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:54",
@@ -1983,7 +1983,7 @@
             "line": 54,
             "column": 5
           },
-          "duration": 3443,
+          "duration": 2827,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:54",
@@ -2000,7 +2000,7 @@
             "line": 54,
             "column": 5
           },
-          "duration": 3002,
+          "duration": 2695,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:54",
@@ -2017,7 +2017,7 @@
             "line": 54,
             "column": 5
           },
-          "duration": 2706,
+          "duration": 2564,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:54",
@@ -2034,7 +2034,7 @@
             "line": 54,
             "column": 5
           },
-          "duration": 2331,
+          "duration": 2199,
           "outcome": "expected",
           "path": [
             "checkout.spec.js:54",
@@ -2050,7 +2050,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 102553
+        "duration": 91623
       }
     },
     {
@@ -2066,7 +2066,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 1917,
+          "duration": 1789,
           "outcome": "expected",
           "path": [
             "completed.spec.js:7",
@@ -2083,7 +2083,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2120,
+          "duration": 1928,
           "outcome": "expected",
           "path": [
             "completed.spec.js:7",
@@ -2100,7 +2100,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 1916,
+          "duration": 1709,
           "outcome": "expected",
           "path": [
             "completed.spec.js:7",
@@ -2117,7 +2117,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2698,
+          "duration": 2365,
           "outcome": "expected",
           "path": [
             "completed.spec.js:7",
@@ -2134,7 +2134,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2463,
+          "duration": 2197,
           "outcome": "expected",
           "path": [
             "completed.spec.js:7",
@@ -2151,7 +2151,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2172,
+          "duration": 2083,
           "outcome": "expected",
           "path": [
             "completed.spec.js:7",
@@ -2168,7 +2168,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2116,
+          "duration": 1988,
           "outcome": "expected",
           "path": [
             "completed.spec.js:7",
@@ -2185,7 +2185,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2997,
+          "duration": 2595,
           "outcome": "expected",
           "path": [
             "completed.spec.js:15",
@@ -2202,7 +2202,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 3196,
+          "duration": 2629,
           "outcome": "expected",
           "path": [
             "completed.spec.js:15",
@@ -2219,7 +2219,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2963,
+          "duration": 2221,
           "outcome": "expected",
           "path": [
             "completed.spec.js:15",
@@ -2236,7 +2236,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 3596,
+          "duration": 3010,
           "outcome": "expected",
           "path": [
             "completed.spec.js:15",
@@ -2253,7 +2253,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 3015,
+          "duration": 2576,
           "outcome": "expected",
           "path": [
             "completed.spec.js:15",
@@ -2270,7 +2270,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2524,
+          "duration": 2401,
           "outcome": "expected",
           "path": [
             "completed.spec.js:15",
@@ -2287,7 +2287,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 3742,
+          "duration": 2696,
           "outcome": "expected",
           "path": [
             "completed.spec.js:15",
@@ -2304,7 +2304,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 2018,
+          "duration": 2021,
           "outcome": "expected",
           "path": [
             "completed.spec.js:28",
@@ -2321,7 +2321,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 2228,
+          "duration": 1903,
           "outcome": "expected",
           "path": [
             "completed.spec.js:28",
@@ -2338,7 +2338,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 2187,
+          "duration": 1739,
           "outcome": "expected",
           "path": [
             "completed.spec.js:28",
@@ -2355,7 +2355,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 3102,
+          "duration": 2646,
           "outcome": "expected",
           "path": [
             "completed.spec.js:28",
@@ -2372,7 +2372,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 2427,
+          "duration": 2335,
           "outcome": "expected",
           "path": [
             "completed.spec.js:28",
@@ -2389,7 +2389,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 2545,
+          "duration": 2230,
           "outcome": "expected",
           "path": [
             "completed.spec.js:28",
@@ -2406,7 +2406,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 2135,
+          "duration": 2007,
           "outcome": "expected",
           "path": [
             "completed.spec.js:28",
@@ -2423,7 +2423,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 2018,
+          "duration": 1828,
           "outcome": "expected",
           "path": [
             "completed.spec.js:36",
@@ -2440,7 +2440,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 2184,
+          "duration": 2022,
           "outcome": "expected",
           "path": [
             "completed.spec.js:36",
@@ -2457,7 +2457,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 2036,
+          "duration": 1900,
           "outcome": "expected",
           "path": [
             "completed.spec.js:36",
@@ -2474,7 +2474,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 2892,
+          "duration": 2644,
           "outcome": "expected",
           "path": [
             "completed.spec.js:36",
@@ -2491,7 +2491,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 2228,
+          "duration": 2273,
           "outcome": "expected",
           "path": [
             "completed.spec.js:36",
@@ -2508,7 +2508,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 2442,
+          "duration": 2262,
           "outcome": "expected",
           "path": [
             "completed.spec.js:36",
@@ -2525,7 +2525,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 2181,
+          "duration": 1988,
           "outcome": "expected",
           "path": [
             "completed.spec.js:36",
@@ -2542,7 +2542,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2187,
+          "duration": 1776,
           "outcome": "expected",
           "path": [
             "completed.spec.js:44",
@@ -2559,7 +2559,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2157,
+          "duration": 1949,
           "outcome": "expected",
           "path": [
             "completed.spec.js:44",
@@ -2576,7 +2576,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 1826,
+          "duration": 1923,
           "outcome": "expected",
           "path": [
             "completed.spec.js:44",
@@ -2593,7 +2593,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2953,
+          "duration": 2630,
           "outcome": "expected",
           "path": [
             "completed.spec.js:44",
@@ -2610,7 +2610,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2170,
+          "duration": 2127,
           "outcome": "expected",
           "path": [
             "completed.spec.js:44",
@@ -2627,7 +2627,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2517,
+          "duration": 2315,
           "outcome": "expected",
           "path": [
             "completed.spec.js:44",
@@ -2644,7 +2644,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2233,
+          "duration": 1907,
           "outcome": "expected",
           "path": [
             "completed.spec.js:44",
@@ -2660,7 +2660,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 86101
+        "duration": 76612
       }
     },
     {
@@ -2676,7 +2676,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 1882,
+          "duration": 1407,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:10",
@@ -2693,7 +2693,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 1988,
+          "duration": 1749,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:10",
@@ -2710,7 +2710,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 2038,
+          "duration": 1676,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:10",
@@ -2727,7 +2727,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 2585,
+          "duration": 2204,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:10",
@@ -2744,7 +2744,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 2490,
+          "duration": 2220,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:10",
@@ -2761,7 +2761,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 1994,
+          "duration": 2059,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:10",
@@ -2778,7 +2778,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 1773,
+          "duration": 1811,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:10",
@@ -2795,7 +2795,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 2979,
+          "duration": 2696,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:19",
@@ -2812,7 +2812,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 3374,
+          "duration": 2579,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:19",
@@ -2829,7 +2829,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 3643,
+          "duration": 2548,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:19",
@@ -2846,7 +2846,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 5042,
+          "duration": 4191,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:19",
@@ -2863,7 +2863,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 4193,
+          "duration": 3710,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:19",
@@ -2880,7 +2880,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 4516,
+          "duration": 4076,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:19",
@@ -2897,7 +2897,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 2502,
+          "duration": 2429,
           "outcome": "expected",
           "path": [
             "e2e.spec.js:19",
@@ -2913,7 +2913,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 40999
+        "duration": 35355
       }
     },
     {
@@ -2929,7 +2929,7 @@
             "line": 10,
             "column": 1
           },
-          "duration": 8314,
+          "duration": 7855,
           "outcome": "expected",
           "path": [
             "failSample.spec.js:10"
@@ -2945,7 +2945,7 @@
             "line": 10,
             "column": 1
           },
-          "duration": 787,
+          "duration": 618,
           "outcome": "skipped",
           "path": [
             "failSample.spec.js:10"
@@ -2961,7 +2961,7 @@
             "line": 10,
             "column": 1
           },
-          "duration": 367,
+          "duration": 324,
           "outcome": "skipped",
           "path": [
             "failSample.spec.js:10"
@@ -2977,7 +2977,7 @@
             "line": 10,
             "column": 1
           },
-          "duration": 2345,
+          "duration": 2468,
           "outcome": "skipped",
           "path": [
             "failSample.spec.js:10"
@@ -2993,7 +2993,7 @@
             "line": 10,
             "column": 1
           },
-          "duration": 788,
+          "duration": 928,
           "outcome": "skipped",
           "path": [
             "failSample.spec.js:10"
@@ -3009,7 +3009,7 @@
             "line": 10,
             "column": 1
           },
-          "duration": 886,
+          "duration": 732,
           "outcome": "skipped",
           "path": [
             "failSample.spec.js:10"
@@ -3025,7 +3025,7 @@
             "line": 10,
             "column": 1
           },
-          "duration": 666,
+          "duration": 615,
           "outcome": "skipped",
           "path": [
             "failSample.spec.js:10"
@@ -3040,7 +3040,7 @@
         "flaky": 0,
         "skipped": 6,
         "ok": true,
-        "duration": 14153
+        "duration": 13540
       }
     },
     {
@@ -3056,7 +3056,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2187,
+          "duration": 2180,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:15",
@@ -3073,7 +3073,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2372,
+          "duration": 2178,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:15",
@@ -3090,7 +3090,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2574,
+          "duration": 2194,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:15",
@@ -3107,7 +3107,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 3558,
+          "duration": 2931,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:15",
@@ -3124,7 +3124,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2702,
+          "duration": 2448,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:15",
@@ -3141,7 +3141,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 3095,
+          "duration": 2628,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:15",
@@ -3158,7 +3158,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2595,
+          "duration": 2356,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:15",
@@ -3175,7 +3175,7 @@
             "line": 23,
             "column": 5
           },
-          "duration": 2362,
+          "duration": 2090,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:23",
@@ -3192,7 +3192,7 @@
             "line": 23,
             "column": 5
           },
-          "duration": 2558,
+          "duration": 2182,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:23",
@@ -3209,7 +3209,7 @@
             "line": 23,
             "column": 5
           },
-          "duration": 2081,
+          "duration": 2460,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:23",
@@ -3226,7 +3226,7 @@
             "line": 23,
             "column": 5
           },
-          "duration": 3436,
+          "duration": 2946,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:23",
@@ -3243,7 +3243,7 @@
             "line": 23,
             "column": 5
           },
-          "duration": 2580,
+          "duration": 2444,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:23",
@@ -3260,7 +3260,7 @@
             "line": 23,
             "column": 5
           },
-          "duration": 2490,
+          "duration": 2399,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:23",
@@ -3277,7 +3277,7 @@
             "line": 23,
             "column": 5
           },
-          "duration": 2216,
+          "duration": 2110,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:23",
@@ -3294,7 +3294,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 2472,
+          "duration": 2121,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:36",
@@ -3311,7 +3311,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 2667,
+          "duration": 2431,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:36",
@@ -3328,7 +3328,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 2229,
+          "duration": 2454,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:36",
@@ -3345,7 +3345,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 3621,
+          "duration": 2959,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:36",
@@ -3362,7 +3362,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 2492,
+          "duration": 2242,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:36",
@@ -3379,7 +3379,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 2608,
+          "duration": 2384,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:36",
@@ -3396,7 +3396,7 @@
             "line": 36,
             "column": 5
           },
-          "duration": 2504,
+          "duration": 2428,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:36",
@@ -3413,7 +3413,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2614,
+          "duration": 2102,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:44",
@@ -3430,7 +3430,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2401,
+          "duration": 2449,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:44",
@@ -3447,7 +3447,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2087,
+          "duration": 2317,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:44",
@@ -3464,7 +3464,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 3510,
+          "duration": 3130,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:44",
@@ -3481,7 +3481,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2532,
+          "duration": 2400,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:44",
@@ -3498,7 +3498,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2730,
+          "duration": 2477,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:44",
@@ -3515,7 +3515,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2515,
+          "duration": 2365,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:44",
@@ -3532,7 +3532,7 @@
             "line": 52,
             "column": 5
           },
-          "duration": 2863,
+          "duration": 2175,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:52",
@@ -3549,7 +3549,7 @@
             "line": 52,
             "column": 5
           },
-          "duration": 2781,
+          "duration": 2291,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:52",
@@ -3566,7 +3566,7 @@
             "line": 52,
             "column": 5
           },
-          "duration": 2190,
+          "duration": 2317,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:52",
@@ -3583,7 +3583,7 @@
             "line": 52,
             "column": 5
           },
-          "duration": 3497,
+          "duration": 3074,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:52",
@@ -3600,7 +3600,7 @@
             "line": 52,
             "column": 5
           },
-          "duration": 2627,
+          "duration": 2299,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:52",
@@ -3617,7 +3617,7 @@
             "line": 52,
             "column": 5
           },
-          "duration": 2560,
+          "duration": 2566,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:52",
@@ -3634,7 +3634,7 @@
             "line": 52,
             "column": 5
           },
-          "duration": 2673,
+          "duration": 2581,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:52",
@@ -3651,7 +3651,7 @@
             "line": 65,
             "column": 5
           },
-          "duration": 2576,
+          "duration": 1994,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:65",
@@ -3668,7 +3668,7 @@
             "line": 65,
             "column": 5
           },
-          "duration": 2488,
+          "duration": 2307,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:65",
@@ -3685,7 +3685,7 @@
             "line": 65,
             "column": 5
           },
-          "duration": 2173,
+          "duration": 2191,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:65",
@@ -3702,7 +3702,7 @@
             "line": 65,
             "column": 5
           },
-          "duration": 3727,
+          "duration": 3248,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:65",
@@ -3719,7 +3719,7 @@
             "line": 65,
             "column": 5
           },
-          "duration": 2659,
+          "duration": 2509,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:65",
@@ -3736,7 +3736,7 @@
             "line": 65,
             "column": 5
           },
-          "duration": 2809,
+          "duration": 2669,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:65",
@@ -3753,7 +3753,7 @@
             "line": 65,
             "column": 5
           },
-          "duration": 2524,
+          "duration": 2455,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:65",
@@ -3770,7 +3770,7 @@
             "line": 79,
             "column": 5
           },
-          "duration": 2540,
+          "duration": 2081,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:79",
@@ -3787,7 +3787,7 @@
             "line": 79,
             "column": 5
           },
-          "duration": 3382,
+          "duration": 2307,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:79",
@@ -3804,7 +3804,7 @@
             "line": 79,
             "column": 5
           },
-          "duration": 2238,
+          "duration": 2048,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:79",
@@ -3821,7 +3821,7 @@
             "line": 79,
             "column": 5
           },
-          "duration": 3828,
+          "duration": 3285,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:79",
@@ -3838,7 +3838,7 @@
             "line": 79,
             "column": 5
           },
-          "duration": 2520,
+          "duration": 2336,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:79",
@@ -3855,7 +3855,7 @@
             "line": 79,
             "column": 5
           },
-          "duration": 2997,
+          "duration": 2546,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:79",
@@ -3872,7 +3872,7 @@
             "line": 79,
             "column": 5
           },
-          "duration": 2672,
+          "duration": 2402,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:79",
@@ -3889,7 +3889,7 @@
             "line": 93,
             "column": 5
           },
-          "duration": 2200,
+          "duration": 2032,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:93",
@@ -3906,7 +3906,7 @@
             "line": 93,
             "column": 5
           },
-          "duration": 2790,
+          "duration": 2363,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:93",
@@ -3923,7 +3923,7 @@
             "line": 93,
             "column": 5
           },
-          "duration": 2230,
+          "duration": 2155,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:93",
@@ -3940,7 +3940,7 @@
             "line": 93,
             "column": 5
           },
-          "duration": 3543,
+          "duration": 2834,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:93",
@@ -3957,7 +3957,7 @@
             "line": 93,
             "column": 5
           },
-          "duration": 2699,
+          "duration": 2627,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:93",
@@ -3974,7 +3974,7 @@
             "line": 93,
             "column": 5
           },
-          "duration": 2924,
+          "duration": 2713,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:93",
@@ -3991,7 +3991,7 @@
             "line": 93,
             "column": 5
           },
-          "duration": 2645,
+          "duration": 2467,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:93",
@@ -4008,7 +4008,7 @@
             "line": 106,
             "column": 5
           },
-          "duration": 2344,
+          "duration": 2147,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:106",
@@ -4025,7 +4025,7 @@
             "line": 106,
             "column": 5
           },
-          "duration": 2654,
+          "duration": 2433,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:106",
@@ -4042,7 +4042,7 @@
             "line": 106,
             "column": 5
           },
-          "duration": 2131,
+          "duration": 2116,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:106",
@@ -4059,7 +4059,7 @@
             "line": 106,
             "column": 5
           },
-          "duration": 3243,
+          "duration": 3058,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:106",
@@ -4076,7 +4076,7 @@
             "line": 106,
             "column": 5
           },
-          "duration": 2794,
+          "duration": 2779,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:106",
@@ -4093,7 +4093,7 @@
             "line": 106,
             "column": 5
           },
-          "duration": 2560,
+          "duration": 2430,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:106",
@@ -4110,7 +4110,7 @@
             "line": 106,
             "column": 5
           },
-          "duration": 2463,
+          "duration": 2281,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:106",
@@ -4127,7 +4127,7 @@
             "line": 121,
             "column": 5
           },
-          "duration": 2223,
+          "duration": 2244,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:121",
@@ -4144,7 +4144,7 @@
             "line": 121,
             "column": 5
           },
-          "duration": 2949,
+          "duration": 2228,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:121",
@@ -4161,7 +4161,7 @@
             "line": 121,
             "column": 5
           },
-          "duration": 2191,
+          "duration": 2020,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:121",
@@ -4178,7 +4178,7 @@
             "line": 121,
             "column": 5
           },
-          "duration": 3846,
+          "duration": 3061,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:121",
@@ -4195,7 +4195,7 @@
             "line": 121,
             "column": 5
           },
-          "duration": 2504,
+          "duration": 2362,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:121",
@@ -4212,7 +4212,7 @@
             "line": 121,
             "column": 5
           },
-          "duration": 2630,
+          "duration": 2609,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:121",
@@ -4229,7 +4229,7 @@
             "line": 121,
             "column": 5
           },
-          "duration": 2517,
+          "duration": 2313,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:121",
@@ -4246,7 +4246,7 @@
             "line": 129,
             "column": 5
           },
-          "duration": 2241,
+          "duration": 2236,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:129",
@@ -4263,7 +4263,7 @@
             "line": 129,
             "column": 5
           },
-          "duration": 2958,
+          "duration": 2212,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:129",
@@ -4280,7 +4280,7 @@
             "line": 129,
             "column": 5
           },
-          "duration": 2231,
+          "duration": 2076,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:129",
@@ -4297,7 +4297,7 @@
             "line": 129,
             "column": 5
           },
-          "duration": 3524,
+          "duration": 2740,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:129",
@@ -4314,7 +4314,7 @@
             "line": 129,
             "column": 5
           },
-          "duration": 2410,
+          "duration": 2294,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:129",
@@ -4331,7 +4331,7 @@
             "line": 129,
             "column": 5
           },
-          "duration": 2820,
+          "duration": 2780,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:129",
@@ -4348,7 +4348,7 @@
             "line": 129,
             "column": 5
           },
-          "duration": 2642,
+          "duration": 2432,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:129",
@@ -4365,7 +4365,7 @@
             "line": 137,
             "column": 5
           },
-          "duration": 2201,
+          "duration": 2095,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:137",
@@ -4382,7 +4382,7 @@
             "line": 137,
             "column": 5
           },
-          "duration": 3379,
+          "duration": 2255,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:137",
@@ -4399,7 +4399,7 @@
             "line": 137,
             "column": 5
           },
-          "duration": 2095,
+          "duration": 2083,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:137",
@@ -4416,7 +4416,7 @@
             "line": 137,
             "column": 5
           },
-          "duration": 3633,
+          "duration": 2905,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:137",
@@ -4433,7 +4433,7 @@
             "line": 137,
             "column": 5
           },
-          "duration": 2520,
+          "duration": 2290,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:137",
@@ -4450,7 +4450,7 @@
             "line": 137,
             "column": 5
           },
-          "duration": 2695,
+          "duration": 2482,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:137",
@@ -4467,7 +4467,7 @@
             "line": 137,
             "column": 5
           },
-          "duration": 2674,
+          "duration": 2537,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:137",
@@ -4484,7 +4484,7 @@
             "line": 145,
             "column": 5
           },
-          "duration": 2275,
+          "duration": 2034,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:145",
@@ -4501,7 +4501,7 @@
             "line": 145,
             "column": 5
           },
-          "duration": 2508,
+          "duration": 2236,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:145",
@@ -4518,7 +4518,7 @@
             "line": 145,
             "column": 5
           },
-          "duration": 2017,
+          "duration": 2034,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:145",
@@ -4535,7 +4535,7 @@
             "line": 145,
             "column": 5
           },
-          "duration": 3479,
+          "duration": 2779,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:145",
@@ -4552,7 +4552,7 @@
             "line": 145,
             "column": 5
           },
-          "duration": 2665,
+          "duration": 2290,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:145",
@@ -4569,7 +4569,7 @@
             "line": 145,
             "column": 5
           },
-          "duration": 2678,
+          "duration": 2524,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:145",
@@ -4586,7 +4586,7 @@
             "line": 145,
             "column": 5
           },
-          "duration": 2628,
+          "duration": 2522,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:145",
@@ -4603,7 +4603,7 @@
             "line": 153,
             "column": 5
           },
-          "duration": 2180,
+          "duration": 2008,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:153",
@@ -4620,7 +4620,7 @@
             "line": 153,
             "column": 5
           },
-          "duration": 2323,
+          "duration": 2197,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:153",
@@ -4637,7 +4637,7 @@
             "line": 153,
             "column": 5
           },
-          "duration": 2099,
+          "duration": 2014,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:153",
@@ -4654,7 +4654,7 @@
             "line": 153,
             "column": 5
           },
-          "duration": 4171,
+          "duration": 2690,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:153",
@@ -4671,7 +4671,7 @@
             "line": 153,
             "column": 5
           },
-          "duration": 2393,
+          "duration": 2316,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:153",
@@ -4688,7 +4688,7 @@
             "line": 153,
             "column": 5
           },
-          "duration": 2560,
+          "duration": 2415,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:153",
@@ -4705,7 +4705,7 @@
             "line": 153,
             "column": 5
           },
-          "duration": 2564,
+          "duration": 2383,
           "outcome": "expected",
           "path": [
             "inventory.spec.js:153",
@@ -4721,7 +4721,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 262755
+        "duration": 236617
       }
     },
     {
@@ -4737,7 +4737,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2718,
+          "duration": 2291,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:7",
@@ -4754,7 +4754,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2837,
+          "duration": 2720,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:7",
@@ -4771,7 +4771,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2584,
+          "duration": 2423,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:7",
@@ -4788,7 +4788,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 4079,
+          "duration": 3219,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:7",
@@ -4805,7 +4805,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2800,
+          "duration": 2614,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:7",
@@ -4822,7 +4822,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2707,
+          "duration": 2483,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:7",
@@ -4839,7 +4839,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2685,
+          "duration": 2534,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:7",
@@ -4856,7 +4856,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 2968,
+          "duration": 2263,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:20",
@@ -4873,7 +4873,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 2636,
+          "duration": 2460,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:20",
@@ -4890,7 +4890,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 2453,
+          "duration": 2295,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:20",
@@ -4907,7 +4907,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 4060,
+          "duration": 3713,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:20",
@@ -4924,7 +4924,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 2868,
+          "duration": 2679,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:20",
@@ -4941,7 +4941,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 2813,
+          "duration": 2876,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:20",
@@ -4958,7 +4958,7 @@
             "line": 20,
             "column": 5
           },
-          "duration": 2904,
+          "duration": 2730,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:20",
@@ -4975,7 +4975,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 2378,
+          "duration": 2036,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:31",
@@ -4992,7 +4992,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 2556,
+          "duration": 2221,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:31",
@@ -5009,7 +5009,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 2147,
+          "duration": 1974,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:31",
@@ -5026,7 +5026,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 3229,
+          "duration": 2904,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:31",
@@ -5043,7 +5043,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 2357,
+          "duration": 2287,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:31",
@@ -5060,7 +5060,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 2582,
+          "duration": 2423,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:31",
@@ -5077,7 +5077,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 2544,
+          "duration": 2322,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:31",
@@ -5094,7 +5094,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2242,
+          "duration": 2090,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:44",
@@ -5111,7 +5111,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2449,
+          "duration": 2072,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:44",
@@ -5128,7 +5128,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2208,
+          "duration": 2119,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:44",
@@ -5145,7 +5145,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 3390,
+          "duration": 2976,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:44",
@@ -5162,7 +5162,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 3213,
+          "duration": 2465,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:44",
@@ -5179,7 +5179,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2714,
+          "duration": 2549,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:44",
@@ -5196,7 +5196,7 @@
             "line": 44,
             "column": 5
           },
-          "duration": 2551,
+          "duration": 2243,
           "outcome": "expected",
           "path": [
             "inventoryDetails.spec.js:44",
@@ -5212,7 +5212,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 77672
+        "duration": 69981
       }
     },
     {
@@ -5228,7 +5228,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 1145,
+          "duration": 1088,
           "outcome": "expected",
           "path": [
             "login.spec.js:10",
@@ -5245,7 +5245,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 1395,
+          "duration": 1204,
           "outcome": "expected",
           "path": [
             "login.spec.js:10",
@@ -5262,7 +5262,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 1227,
+          "duration": 1135,
           "outcome": "expected",
           "path": [
             "login.spec.js:10",
@@ -5279,7 +5279,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 1769,
+          "duration": 1602,
           "outcome": "expected",
           "path": [
             "login.spec.js:10",
@@ -5296,7 +5296,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 2188,
+          "duration": 1409,
           "outcome": "expected",
           "path": [
             "login.spec.js:10",
@@ -5313,7 +5313,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 1597,
+          "duration": 1550,
           "outcome": "expected",
           "path": [
             "login.spec.js:10",
@@ -5330,7 +5330,7 @@
             "line": 10,
             "column": 5
           },
-          "duration": 1306,
+          "duration": 1241,
           "outcome": "expected",
           "path": [
             "login.spec.js:10",
@@ -5347,7 +5347,7 @@
             "line": 14,
             "column": 5
           },
-          "duration": 1332,
+          "duration": 1206,
           "outcome": "expected",
           "path": [
             "login.spec.js:14",
@@ -5364,7 +5364,7 @@
             "line": 14,
             "column": 5
           },
-          "duration": 1565,
+          "duration": 1169,
           "outcome": "expected",
           "path": [
             "login.spec.js:14",
@@ -5381,7 +5381,7 @@
             "line": 14,
             "column": 5
           },
-          "duration": 1374,
+          "duration": 1216,
           "outcome": "expected",
           "path": [
             "login.spec.js:14",
@@ -5398,7 +5398,7 @@
             "line": 14,
             "column": 5
           },
-          "duration": 1630,
+          "duration": 1697,
           "outcome": "expected",
           "path": [
             "login.spec.js:14",
@@ -5415,7 +5415,7 @@
             "line": 14,
             "column": 5
           },
-          "duration": 1649,
+          "duration": 1280,
           "outcome": "expected",
           "path": [
             "login.spec.js:14",
@@ -5432,7 +5432,7 @@
             "line": 14,
             "column": 5
           },
-          "duration": 1489,
+          "duration": 1459,
           "outcome": "expected",
           "path": [
             "login.spec.js:14",
@@ -5449,7 +5449,7 @@
             "line": 14,
             "column": 5
           },
-          "duration": 1437,
+          "duration": 1309,
           "outcome": "expected",
           "path": [
             "login.spec.js:14",
@@ -5466,7 +5466,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 1209,
+          "duration": 1162,
           "outcome": "expected",
           "path": [
             "login.spec.js:19",
@@ -5483,7 +5483,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 1473,
+          "duration": 1164,
           "outcome": "expected",
           "path": [
             "login.spec.js:19",
@@ -5500,7 +5500,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 1362,
+          "duration": 1281,
           "outcome": "expected",
           "path": [
             "login.spec.js:19",
@@ -5517,7 +5517,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 1634,
+          "duration": 1526,
           "outcome": "expected",
           "path": [
             "login.spec.js:19",
@@ -5534,7 +5534,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 1496,
+          "duration": 1326,
           "outcome": "expected",
           "path": [
             "login.spec.js:19",
@@ -5551,7 +5551,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 1537,
+          "duration": 1390,
           "outcome": "expected",
           "path": [
             "login.spec.js:19",
@@ -5568,7 +5568,7 @@
             "line": 19,
             "column": 5
           },
-          "duration": 1373,
+          "duration": 1276,
           "outcome": "expected",
           "path": [
             "login.spec.js:19",
@@ -5585,7 +5585,7 @@
             "line": 25,
             "column": 5
           },
-          "duration": 1392,
+          "duration": 1365,
           "outcome": "expected",
           "path": [
             "login.spec.js:25",
@@ -5602,7 +5602,7 @@
             "line": 25,
             "column": 5
           },
-          "duration": 1824,
+          "duration": 1337,
           "outcome": "expected",
           "path": [
             "login.spec.js:25",
@@ -5619,7 +5619,7 @@
             "line": 25,
             "column": 5
           },
-          "duration": 1542,
+          "duration": 1353,
           "outcome": "expected",
           "path": [
             "login.spec.js:25",
@@ -5636,7 +5636,7 @@
             "line": 25,
             "column": 5
           },
-          "duration": 2231,
+          "duration": 1837,
           "outcome": "expected",
           "path": [
             "login.spec.js:25",
@@ -5653,7 +5653,7 @@
             "line": 25,
             "column": 5
           },
-          "duration": 1858,
+          "duration": 1661,
           "outcome": "expected",
           "path": [
             "login.spec.js:25",
@@ -5670,7 +5670,7 @@
             "line": 25,
             "column": 5
           },
-          "duration": 1990,
+          "duration": 1727,
           "outcome": "expected",
           "path": [
             "login.spec.js:25",
@@ -5687,7 +5687,7 @@
             "line": 25,
             "column": 5
           },
-          "duration": 1521,
+          "duration": 1553,
           "outcome": "expected",
           "path": [
             "login.spec.js:25",
@@ -5704,7 +5704,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 1384,
+          "duration": 1316,
           "outcome": "expected",
           "path": [
             "login.spec.js:31",
@@ -5721,7 +5721,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 1748,
+          "duration": 1298,
           "outcome": "expected",
           "path": [
             "login.spec.js:31",
@@ -5738,7 +5738,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 1423,
+          "duration": 1371,
           "outcome": "expected",
           "path": [
             "login.spec.js:31",
@@ -5755,7 +5755,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 2476,
+          "duration": 1668,
           "outcome": "expected",
           "path": [
             "login.spec.js:31",
@@ -5772,7 +5772,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 1772,
+          "duration": 1720,
           "outcome": "expected",
           "path": [
             "login.spec.js:31",
@@ -5789,7 +5789,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 1931,
+          "duration": 1849,
           "outcome": "expected",
           "path": [
             "login.spec.js:31",
@@ -5806,7 +5806,7 @@
             "line": 31,
             "column": 5
           },
-          "duration": 1605,
+          "duration": 1542,
           "outcome": "expected",
           "path": [
             "login.spec.js:31",
@@ -5823,7 +5823,7 @@
             "line": 37,
             "column": 5
           },
-          "duration": 1591,
+          "duration": 1420,
           "outcome": "expected",
           "path": [
             "login.spec.js:37",
@@ -5840,7 +5840,7 @@
             "line": 37,
             "column": 5
           },
-          "duration": 1782,
+          "duration": 1332,
           "outcome": "expected",
           "path": [
             "login.spec.js:37",
@@ -5857,7 +5857,7 @@
             "line": 37,
             "column": 5
           },
-          "duration": 1588,
+          "duration": 1399,
           "outcome": "expected",
           "path": [
             "login.spec.js:37",
@@ -5874,7 +5874,7 @@
             "line": 37,
             "column": 5
           },
-          "duration": 2612,
+          "duration": 1663,
           "outcome": "expected",
           "path": [
             "login.spec.js:37",
@@ -5891,7 +5891,7 @@
             "line": 37,
             "column": 5
           },
-          "duration": 2135,
+          "duration": 1567,
           "outcome": "expected",
           "path": [
             "login.spec.js:37",
@@ -5908,7 +5908,7 @@
             "line": 37,
             "column": 5
           },
-          "duration": 1971,
+          "duration": 1864,
           "outcome": "expected",
           "path": [
             "login.spec.js:37",
@@ -5925,7 +5925,7 @@
             "line": 37,
             "column": 5
           },
-          "duration": 1656,
+          "duration": 1535,
           "outcome": "expected",
           "path": [
             "login.spec.js:37",
@@ -5942,7 +5942,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2526,
+          "duration": 2106,
           "outcome": "expected",
           "path": [
             "login.spec.js:43",
@@ -5959,7 +5959,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2795,
+          "duration": 1910,
           "outcome": "expected",
           "path": [
             "login.spec.js:43",
@@ -5976,7 +5976,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2339,
+          "duration": 2093,
           "outcome": "expected",
           "path": [
             "login.spec.js:43",
@@ -5993,7 +5993,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 3168,
+          "duration": 2236,
           "outcome": "expected",
           "path": [
             "login.spec.js:43",
@@ -6010,7 +6010,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2822,
+          "duration": 2106,
           "outcome": "expected",
           "path": [
             "login.spec.js:43",
@@ -6027,7 +6027,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2289,
+          "duration": 1982,
           "outcome": "expected",
           "path": [
             "login.spec.js:43",
@@ -6044,7 +6044,7 @@
             "line": 43,
             "column": 5
           },
-          "duration": 2224,
+          "duration": 2025,
           "outcome": "expected",
           "path": [
             "login.spec.js:43",
@@ -6060,7 +6060,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 87382
+        "duration": 74525
       }
     },
     {
@@ -6076,7 +6076,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2088,
+          "duration": 1907,
           "outcome": "expected",
           "path": [
             "overview.spec.js:7",
@@ -6093,7 +6093,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2181,
+          "duration": 1846,
           "outcome": "expected",
           "path": [
             "overview.spec.js:7",
@@ -6110,7 +6110,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 1986,
+          "duration": 1823,
           "outcome": "expected",
           "path": [
             "overview.spec.js:7",
@@ -6127,7 +6127,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 3023,
+          "duration": 2560,
           "outcome": "expected",
           "path": [
             "overview.spec.js:7",
@@ -6144,7 +6144,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2399,
+          "duration": 2045,
           "outcome": "expected",
           "path": [
             "overview.spec.js:7",
@@ -6161,7 +6161,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2278,
+          "duration": 2177,
           "outcome": "expected",
           "path": [
             "overview.spec.js:7",
@@ -6178,7 +6178,7 @@
             "line": 7,
             "column": 5
           },
-          "duration": 2189,
+          "duration": 2009,
           "outcome": "expected",
           "path": [
             "overview.spec.js:7",
@@ -6195,7 +6195,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2773,
+          "duration": 2368,
           "outcome": "expected",
           "path": [
             "overview.spec.js:15",
@@ -6212,7 +6212,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2826,
+          "duration": 2423,
           "outcome": "expected",
           "path": [
             "overview.spec.js:15",
@@ -6229,7 +6229,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2455,
+          "duration": 2398,
           "outcome": "expected",
           "path": [
             "overview.spec.js:15",
@@ -6246,7 +6246,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 3689,
+          "duration": 3205,
           "outcome": "expected",
           "path": [
             "overview.spec.js:15",
@@ -6263,7 +6263,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2732,
+          "duration": 2424,
           "outcome": "expected",
           "path": [
             "overview.spec.js:15",
@@ -6280,7 +6280,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2709,
+          "duration": 2262,
           "outcome": "expected",
           "path": [
             "overview.spec.js:15",
@@ -6297,7 +6297,7 @@
             "line": 15,
             "column": 5
           },
-          "duration": 2634,
+          "duration": 2402,
           "outcome": "expected",
           "path": [
             "overview.spec.js:15",
@@ -6314,7 +6314,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 2042,
+          "duration": 1915,
           "outcome": "expected",
           "path": [
             "overview.spec.js:28",
@@ -6331,7 +6331,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 2317,
+          "duration": 2097,
           "outcome": "expected",
           "path": [
             "overview.spec.js:28",
@@ -6348,7 +6348,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 2007,
+          "duration": 1902,
           "outcome": "expected",
           "path": [
             "overview.spec.js:28",
@@ -6365,7 +6365,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 2993,
+          "duration": 2715,
           "outcome": "expected",
           "path": [
             "overview.spec.js:28",
@@ -6382,7 +6382,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 2330,
+          "duration": 2133,
           "outcome": "expected",
           "path": [
             "overview.spec.js:28",
@@ -6399,7 +6399,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 2535,
+          "duration": 2235,
           "outcome": "expected",
           "path": [
             "overview.spec.js:28",
@@ -6416,7 +6416,7 @@
             "line": 28,
             "column": 5
           },
-          "duration": 2196,
+          "duration": 1966,
           "outcome": "expected",
           "path": [
             "overview.spec.js:28",
@@ -6433,7 +6433,7 @@
             "line": 41,
             "column": 5
           },
-          "duration": 2100,
+          "duration": 1742,
           "outcome": "expected",
           "path": [
             "overview.spec.js:41",
@@ -6450,7 +6450,7 @@
             "line": 41,
             "column": 5
           },
-          "duration": 2193,
+          "duration": 1984,
           "outcome": "expected",
           "path": [
             "overview.spec.js:41",
@@ -6467,7 +6467,7 @@
             "line": 41,
             "column": 5
           },
-          "duration": 1926,
+          "duration": 1741,
           "outcome": "expected",
           "path": [
             "overview.spec.js:41",
@@ -6484,7 +6484,7 @@
             "line": 41,
             "column": 5
           },
-          "duration": 2962,
+          "duration": 2406,
           "outcome": "expected",
           "path": [
             "overview.spec.js:41",
@@ -6501,7 +6501,7 @@
             "line": 41,
             "column": 5
           },
-          "duration": 2198,
+          "duration": 2087,
           "outcome": "expected",
           "path": [
             "overview.spec.js:41",
@@ -6518,7 +6518,7 @@
             "line": 41,
             "column": 5
           },
-          "duration": 2196,
+          "duration": 2090,
           "outcome": "expected",
           "path": [
             "overview.spec.js:41",
@@ -6535,7 +6535,7 @@
             "line": 41,
             "column": 5
           },
-          "duration": 2011,
+          "duration": 1932,
           "outcome": "expected",
           "path": [
             "overview.spec.js:41",
@@ -6552,7 +6552,7 @@
             "line": 51,
             "column": 5
           },
-          "duration": 2216,
+          "duration": 1732,
           "outcome": "expected",
           "path": [
             "overview.spec.js:51",
@@ -6569,7 +6569,7 @@
             "line": 51,
             "column": 5
           },
-          "duration": 2216,
+          "duration": 1897,
           "outcome": "expected",
           "path": [
             "overview.spec.js:51",
@@ -6586,7 +6586,7 @@
             "line": 51,
             "column": 5
           },
-          "duration": 1840,
+          "duration": 1759,
           "outcome": "expected",
           "path": [
             "overview.spec.js:51",
@@ -6603,7 +6603,7 @@
             "line": 51,
             "column": 5
           },
-          "duration": 2789,
+          "duration": 2441,
           "outcome": "expected",
           "path": [
             "overview.spec.js:51",
@@ -6620,7 +6620,7 @@
             "line": 51,
             "column": 5
           },
-          "duration": 2085,
+          "duration": 1993,
           "outcome": "expected",
           "path": [
             "overview.spec.js:51",
@@ -6637,7 +6637,7 @@
             "line": 51,
             "column": 5
           },
-          "duration": 2246,
+          "duration": 2083,
           "outcome": "expected",
           "path": [
             "overview.spec.js:51",
@@ -6654,7 +6654,7 @@
             "line": 51,
             "column": 5
           },
-          "duration": 1960,
+          "duration": 1843,
           "outcome": "expected",
           "path": [
             "overview.spec.js:51",
@@ -6671,7 +6671,7 @@
             "line": 59,
             "column": 5
           },
-          "duration": 2037,
+          "duration": 1731,
           "outcome": "expected",
           "path": [
             "overview.spec.js:59",
@@ -6688,7 +6688,7 @@
             "line": 59,
             "column": 5
           },
-          "duration": 2051,
+          "duration": 1900,
           "outcome": "expected",
           "path": [
             "overview.spec.js:59",
@@ -6705,7 +6705,7 @@
             "line": 59,
             "column": 5
           },
-          "duration": 1875,
+          "duration": 1678,
           "outcome": "expected",
           "path": [
             "overview.spec.js:59",
@@ -6722,7 +6722,7 @@
             "line": 59,
             "column": 5
           },
-          "duration": 2801,
+          "duration": 2378,
           "outcome": "expected",
           "path": [
             "overview.spec.js:59",
@@ -6739,7 +6739,7 @@
             "line": 59,
             "column": 5
           },
-          "duration": 2105,
+          "duration": 2073,
           "outcome": "expected",
           "path": [
             "overview.spec.js:59",
@@ -6756,7 +6756,7 @@
             "line": 59,
             "column": 5
           },
-          "duration": 2222,
+          "duration": 2102,
           "outcome": "expected",
           "path": [
             "overview.spec.js:59",
@@ -6773,7 +6773,7 @@
             "line": 59,
             "column": 5
           },
-          "duration": 1936,
+          "duration": 1856,
           "outcome": "expected",
           "path": [
             "overview.spec.js:59",
@@ -6790,7 +6790,7 @@
             "line": 67,
             "column": 5
           },
-          "duration": 2087,
+          "duration": 1697,
           "outcome": "expected",
           "path": [
             "overview.spec.js:67",
@@ -6807,7 +6807,7 @@
             "line": 67,
             "column": 5
           },
-          "duration": 2044,
+          "duration": 1949,
           "outcome": "expected",
           "path": [
             "overview.spec.js:67",
@@ -6824,7 +6824,7 @@
             "line": 67,
             "column": 5
           },
-          "duration": 1797,
+          "duration": 1704,
           "outcome": "expected",
           "path": [
             "overview.spec.js:67",
@@ -6841,7 +6841,7 @@
             "line": 67,
             "column": 5
           },
-          "duration": 2837,
+          "duration": 2500,
           "outcome": "expected",
           "path": [
             "overview.spec.js:67",
@@ -6858,7 +6858,7 @@
             "line": 67,
             "column": 5
           },
-          "duration": 2257,
+          "duration": 2141,
           "outcome": "expected",
           "path": [
             "overview.spec.js:67",
@@ -6875,7 +6875,7 @@
             "line": 67,
             "column": 5
           },
-          "duration": 2396,
+          "duration": 2021,
           "outcome": "expected",
           "path": [
             "overview.spec.js:67",
@@ -6892,7 +6892,7 @@
             "line": 67,
             "column": 5
           },
-          "duration": 2019,
+          "duration": 1902,
           "outcome": "expected",
           "path": [
             "overview.spec.js:67",
@@ -6909,7 +6909,7 @@
             "line": 77,
             "column": 5
           },
-          "duration": 2018,
+          "duration": 1733,
           "outcome": "expected",
           "path": [
             "overview.spec.js:77",
@@ -6926,7 +6926,7 @@
             "line": 77,
             "column": 5
           },
-          "duration": 2070,
+          "duration": 1930,
           "outcome": "expected",
           "path": [
             "overview.spec.js:77",
@@ -6943,7 +6943,7 @@
             "line": 77,
             "column": 5
           },
-          "duration": 1887,
+          "duration": 1662,
           "outcome": "expected",
           "path": [
             "overview.spec.js:77",
@@ -6960,7 +6960,7 @@
             "line": 77,
             "column": 5
           },
-          "duration": 2846,
+          "duration": 2434,
           "outcome": "expected",
           "path": [
             "overview.spec.js:77",
@@ -6977,7 +6977,7 @@
             "line": 77,
             "column": 5
           },
-          "duration": 2085,
+          "duration": 2063,
           "outcome": "expected",
           "path": [
             "overview.spec.js:77",
@@ -6994,7 +6994,7 @@
             "line": 77,
             "column": 5
           },
-          "duration": 2321,
+          "duration": 2029,
           "outcome": "expected",
           "path": [
             "overview.spec.js:77",
@@ -7011,7 +7011,7 @@
             "line": 77,
             "column": 5
           },
-          "duration": 1998,
+          "duration": 1939,
           "outcome": "expected",
           "path": [
             "overview.spec.js:77",
@@ -7028,7 +7028,7 @@
             "line": 86,
             "column": 5
           },
-          "duration": 1994,
+          "duration": 1770,
           "outcome": "expected",
           "path": [
             "overview.spec.js:86",
@@ -7045,7 +7045,7 @@
             "line": 86,
             "column": 5
           },
-          "duration": 2090,
+          "duration": 1921,
           "outcome": "expected",
           "path": [
             "overview.spec.js:86",
@@ -7062,7 +7062,7 @@
             "line": 86,
             "column": 5
           },
-          "duration": 1948,
+          "duration": 1730,
           "outcome": "expected",
           "path": [
             "overview.spec.js:86",
@@ -7079,7 +7079,7 @@
             "line": 86,
             "column": 5
           },
-          "duration": 2702,
+          "duration": 2668,
           "outcome": "expected",
           "path": [
             "overview.spec.js:86",
@@ -7096,7 +7096,7 @@
             "line": 86,
             "column": 5
           },
-          "duration": 2154,
+          "duration": 2029,
           "outcome": "expected",
           "path": [
             "overview.spec.js:86",
@@ -7113,7 +7113,7 @@
             "line": 86,
             "column": 5
           },
-          "duration": 2197,
+          "duration": 2101,
           "outcome": "expected",
           "path": [
             "overview.spec.js:86",
@@ -7130,7 +7130,7 @@
             "line": 86,
             "column": 5
           },
-          "duration": 2185,
+          "duration": 1972,
           "outcome": "expected",
           "path": [
             "overview.spec.js:86",
@@ -7146,7 +7146,7 @@
         "flaky": 0,
         "skipped": 0,
         "ok": true,
-        "duration": 144279
+        "duration": 130155
       }
     }
   ],
@@ -7166,6 +7166,6 @@
     "flaky": 0,
     "skipped": 6,
     "ok": true,
-    "duration": 1066133
+    "duration": 955798
   }
 }
