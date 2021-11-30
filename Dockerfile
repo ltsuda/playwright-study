@@ -1,8 +1,13 @@
-FROM mcr.microsoft.com/playwright:focal
+FROM mcr.microsoft.com/playwright:v1.17.0-focal
 
 WORKDIR /tester
 
 COPY package*.json ./
+
+RUN apt-get update && \
+apt-get autoclean -y && \
+apt-get purge -y && \
+apt-get clean -y
 
 RUN npm ci
 RUN npx playwright install chrome
