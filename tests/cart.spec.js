@@ -114,7 +114,7 @@ test.describe.parallel("Saucedemo CartPage: @cart", () => {
         await expect(await navigationBarController.components.cartBadgeText()).toHaveCount(0)
     })
 
-    test("should back at Invetory page when clicking at the all items link on menu", async ({
+    test("should back at Inventory page when clicking at the all items link on menu", async ({
         baseURL,
         navigationBarController,
         page,

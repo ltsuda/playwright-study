@@ -46,6 +46,6 @@ test.describe.parallel("Saucedemo CompletedPage:  @completed", () => {
             path: PAGES.COMPLETED,
             username: CREDENTIALS.USERS.STANDARD,
         })
-        await expect(await completedController.components.completedImage()).toHaveAttribute("src", IMAGES.PANY_EXPRESS)
+        await expect(await completedController.components.completedImage()).toHaveAttribute("src", IMAGES.PONY_EXPRESS)
     })
 })

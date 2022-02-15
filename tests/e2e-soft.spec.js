@@ -2,18 +2,14 @@ const { expect } = require("@playwright/test")
 const test = require("../saucedemo/pages/pageFixtures")
 const { PAGES, MESSAGES, IMAGES, PERSONAL_INFO } = require("../saucedemo/utils/consts")
 
-test.describe.parallel("Saucedemo E2E: @e2e", () => {
+// enable video, screenshot and trace as test.fail() will result as 'passed' with the expected failed step,
+// so we overwrite the playwright.config.js to force the recording
+test.use({ video: "on", screenshot: "on", trace: "on" })
+test.fail()
+
+test.describe("Saucedemo E2E with soft assertions and messages from v1.19: @e2e-soft", () => {
     test.beforeEach(async ({ baseURL, page }) => {
         await page.goto(baseURL)
-    })
-
-    test("User should be able to login with a valid credentials @e2e-login", async ({
-        baseURL,
-        loginController,
-        page,
-    }) => {
-        await loginController.loginWithStandardUser()
-        await expect(page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`)
     })
 
     test("User should be able to complete a purchase @e2e-purchase", async ({
@@ -26,7 +22,8 @@ test.describe.parallel("Saucedemo E2E: @e2e", () => {
         navigationBarController,
         overviewController,
         page,
-    }) => {
+    }, testInfo) => {
+        test.skip(testInfo.project.name !== "chromium-hd")
         let item
 
         await test.step("User login with valid credential", async () => {
@@ -36,6 +33,9 @@ test.describe.parallel("Saucedemo E2E: @e2e", () => {
 
         await test.step("user adds an random item to cart", async () => {
             item = await inventoryItemController.addRandomItemToCart()
+            await expect
+                .soft(await navigationBarController.components.cartBadgeText(), "Should soft fail on purpose")
+                .toHaveText("0")
         })
 
         await test.step("navigate to cart", async () => {
@@ -46,7 +46,9 @@ test.describe.parallel("Saucedemo E2E: @e2e", () => {
         await test.step("validate item in cart is the same as the one added from inventory", async () => {
             const cartItems = await inventoryItemController.getItemsObject()
             expect(cartItems[0]).toStrictEqual(item)
-            await expect(await navigationBarController.components.cartBadgeText()).toHaveText(String(cartItems.length))
+            await expect
+                .soft(await navigationBarController.components.cartBadgeText(), "Should soft fail on purpose")
+                .toHaveText(String(cartItems.length + 1))
         })
 
         await test.step("navigate to checkout", async () => {
@@ -59,7 +61,7 @@ test.describe.parallel("Saucedemo E2E: @e2e", () => {
             await checkoutController.fillLastName(PERSONAL_INFO.USER1.LAST_NAME)
             await checkoutController.fillPostalCode(PERSONAL_INFO.USER1.ZIP)
             await checkoutController.continueCheckout()
-            await expect(page).toHaveURL(`${baseURL}${PAGES.OVERVIEW}`)
+            await expect.soft(page, "Should soft fail on purpose").toHaveURL(`${baseURL}/invalid`)
         })
 
         await test.step("validate item, payment and shipping information", async () => {
@@ -67,6 +69,9 @@ test.describe.parallel("Saucedemo E2E: @e2e", () => {
             expect(overviewItems[0]).toBe(item.name)
             await expect(await overviewController.components.paymentInfoText()).toHaveText(MESSAGES.OVERVIEW_CARD)
             await expect(await overviewController.components.shippingInfoText()).toHaveText(MESSAGES.OVERVIEW_SHIPMENT)
+            await expect
+                .soft(await overviewController.components.shippingInfoText(), "Should soft fail on purpose")
+                .toHaveText("Soft fail message")
         })
 
         await test.step("validate subtotal, tax and total prices", async () => {
@@ -76,6 +81,7 @@ test.describe.parallel("Saucedemo E2E: @e2e", () => {
             const calculatedTotal = await overviewController.calculateTotal()
             const totalFromPage = await overviewController.getTotalPrice()
             expect(String(totalFromPage)).toBe(calculatedTotal.toFixed(2))
+            expect.soft(String(totalFromPage)).toBe("0.00")
         })
 
         await test.step("finish purchase and validate completion page", async () => {

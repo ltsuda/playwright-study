@@ -72,7 +72,7 @@ test.describe.parallel("Saucedemo Visual: @visual", () => {
         expect(await page.screenshot({ fullPage: true })).toMatchSnapshot("cart-empty-screen.png")
     })
 
-    test("Cart with item page shows correct elements @bla", async ({
+    test("Cart with item page shows correct elements", async ({
         cartController,
         inventoryItemController,
         page,
