@@ -3,6 +3,7 @@ const { devices } = require("@playwright/test")
 const config = {
     testDir: "tests",
     retries: 1,
+    fullyParallel: true,
     reporter: process.env.CI
         ? [["dot"], ["html", { outputFolder: "test-results", open: "never" }]]
         : [["line"], ["html", { outputFolder: "test-results", open: "never" }]],
