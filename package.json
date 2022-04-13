@@ -7,7 +7,7 @@
         "test": "test"
     },
     "devDependencies": {
-        "@playwright/test": "^1.20.0"
+        "@playwright/test": "^1.21.0"
     },
     "scripts": {
         "beforetest": "cd webapp && npm install",
@@ -18,7 +18,7 @@
         "test:e2e": "npx playwright test --grep @e2e --project 'chromium-hd'",
         "test:smoke": "npx playwright test --grep @smoke --project 'chromium-hd'",
         "test:ci": "npx playwright test --grep-invert '@visual' ||:",
-        "test:docker": "npx playwright test --grep-invert '@visual' --reporter=dot,html ||:",
+        "test:docker": "npx playwright test --grep-invert '@visual' --reporter=dot,html -c playwright.config-docker.js ||:",
         "posttest:docker": "npx playwright show-report test-results"
     },
     "repository": {
