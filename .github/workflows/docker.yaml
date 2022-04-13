@@ -45,12 +45,12 @@ jobs:
 
       - name: Get webapp container's health and set environment variable
         run: |
-          for i in {1..12}; do if [ $(docker inspect --format='{{json .State.Health.Status}}' web) == '"healthy"' ]; then echo $? && break; else sleep 10 && echo "QUIT=1" >> $GITHUB_ENV;fi;done
+          for i in {1..6}; do if [ $(docker inspect --format='{{json .State.Health.Status}}' web) == '"healthy"' ]; then echo "QUIT=0" >> $GITHUB_ENV && break; else sleep 10 && echo "QUIT=1" >> $GITHUB_ENV;fi;done
           echo $(docker inspect --format='{{json .State.Health.Status}}' web)
 
       - name: "Say Hello Mona it's Monday"
         if: ${{ env.QUIT == 1 }}
-        run: echo $(docker inspect --format='{{json .State.Health.Status}}' web) && echo "${{ env.QUIT }}" && exit 1
+        run: exit 1
 
       - name: Start Testing container
         run: |
@@ -95,12 +95,12 @@ jobs:
 
       - name: Get webapp container's health and set environment variable
         run: |
-          for i in {1..12}; do if [ $(docker inspect --format='{{json .State.Health.Status}}' web) == '"healthy"' ]; then echo $? && break; else sleep 10 && echo "QUIT=1" >> $GITHUB_ENV;fi;done
+          for i in {1..6}; do if [ $(docker inspect --format='{{json .State.Health.Status}}' web) == '"healthy"' ]; then echo "QUIT=0" >> $GITHUB_ENV && break; else sleep 10 && echo "QUIT=1" >> $GITHUB_ENV;fi;done
           echo $(docker inspect --format='{{json .State.Health.Status}}' web)
 
       - name: "Say Hello Mona it's Monday"
         if: ${{ env.QUIT == 1 }}
-        run: echo $(docker inspect --format='{{json .State.Health.Status}}' web) && echo "${{ env.QUIT }}" && exit 1
+        run: exit 1
 
       - name: Start Testing container for visual testing
         run: |
