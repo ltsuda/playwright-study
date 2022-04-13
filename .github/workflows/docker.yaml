@@ -48,7 +48,7 @@ jobs:
           for i in {1..6}; do if [ $(docker inspect --format='{{json .State.Health.Status}}' web) == '"healthy"' ]; then echo "QUIT=0" >> $GITHUB_ENV && break; else sleep 10 && echo "QUIT=1" >> $GITHUB_ENV;fi;done
           echo $(docker inspect --format='{{json .State.Health.Status}}' web)
 
-      - name: "Say Hello Mona it's Monday"
+      - name: "Exit if webapp container is unhealthy"
         if: ${{ env.QUIT == 1 }}
         run: exit 1
 
@@ -98,7 +98,7 @@ jobs:
           for i in {1..6}; do if [ $(docker inspect --format='{{json .State.Health.Status}}' web) == '"healthy"' ]; then echo "QUIT=0" >> $GITHUB_ENV && break; else sleep 10 && echo "QUIT=1" >> $GITHUB_ENV;fi;done
           echo $(docker inspect --format='{{json .State.Health.Status}}' web)
 
-      - name: "Say Hello Mona it's Monday"
+      - name: "Exit if webapp container is unhealthy"
         if: ${{ env.QUIT == 1 }}
         run: exit 1
 
@@ -106,4 +106,4 @@ jobs:
         run: |
           docker run --network=net-webapp --name=testing --rm \
             ltsuda/playwright-study:visual \
-            npx playwright test --grep @visual --project 'chromium-hd' --reporter 'dot'
+            npx playwright test --grep @e2e --project 'chromium-hd' --reporter 'dot' -c playwright.config-docker.js
