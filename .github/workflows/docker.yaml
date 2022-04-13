@@ -39,16 +39,14 @@ jobs:
             --health-cmd='curl --fail http://localhost:3000' \
             --health-interval=5s \
             --health-retries=3 \
-            --health-start-period=20s \
-            --health-timeout=120s \
+            --health-start-period=10s \
+            --health-timeout=60s \
             ltsuda/playwright-study:webapp
 
       - name: Get webapp container's health and exits if unhealthy
         run: |
-          STATUS=$(docker inspect --format='{{json .State.Health.Status}}' web)
-          if ${STATUS} != "health";then
-            exit 1
-          fi
+          for i in {1..6}; do if [ $(docker inspect --format='{{json .State.Health.Status}}' web) == '"healthy"' ]; then echo $? && break; else sleep 2 && QUIT=1;fi;done
+          if [[ -v QUIT ]] && [ $QUIT -eq 1 ]; then exit 1;fi;
 
       - name: Start Testing container
         run: |
@@ -93,10 +91,8 @@ jobs:
 
       - name: Get webapp container's health and exits if unhealthy
         run: |
-          STATUS=$(docker inspect --format='{{json .State.Health.Status}}' web)
-          if ${STATUS} != "health";then
-            exit 1
-          fi
+          for i in {1..6}; do if [ $(docker inspect --format='{{json .State.Health.Status}}' web) == '"healthy"' ]; then echo $? && break; else sleep 2 && QUIT=1;fi;done
+          if [[ -v QUIT ]] && [ $QUIT -eq 1 ]; then exit 1;fi;
 
       - name: Start Testing container for visual testing
         run: |
