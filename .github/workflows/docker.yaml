@@ -45,7 +45,7 @@ jobs:
 
       - name: Get webapp container's health and set environment variable
         run: |
-          for i in {1..6}; do if [ $(docker inspect --format='{{json .State.Health.Status}}' web) == '"healthy"' ]; then echo $? && break; else sleep 10 && echo "QUIT=1" >> $GITHUB_ENV;fi;done
+          for i in {1..12}; do if [ $(docker inspect --format='{{json .State.Health.Status}}' web) == '"healthy"' ]; then echo $? && break; else sleep 10 && echo "QUIT=1" >> $GITHUB_ENV;fi;done
 
       - name: "Say Hello Mona it's Monday"
         if: ${{ env.QUIT == 1 }}
@@ -94,7 +94,7 @@ jobs:
 
       - name: Get webapp container's health and set environment variable
         run: |
-          for i in {1..6}; do if [ $(docker inspect --format='{{json .State.Health.Status}}' web) == '"healthy"' ]; then echo $? && break; else sleep 10 && echo "QUIT=1" >> $GITHUB_ENV;fi;done
+          for i in {1..12}; do if [ $(docker inspect --format='{{json .State.Health.Status}}' web) == '"healthy"' ]; then echo $? && break; else sleep 10 && echo "QUIT=1" >> $GITHUB_ENV;fi;done
 
       - name: "Say Hello Mona it's Monday"
         if: ${{ env.QUIT == 1 }}
