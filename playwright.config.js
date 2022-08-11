@@ -4,9 +4,7 @@ const config = {
     testDir: "tests",
     retries: 1,
     fullyParallel: true,
-    reporter: process.env.CI
-        ? [["dot"], ["html", { outputFolder: "test-results", open: "never" }]]
-        : [["line"], ["html", { outputFolder: "test-results", open: "never" }]],
+    reporter: process.env.CI ? [["dot"], ["html", { open: "never" }]] : [["line"], ["html", { open: "never" }]],
     workers: process.env.CI ? 2 : undefined,
     expect: {
         toMatchSnapshot: { threshold: 0.2 },
@@ -31,7 +29,6 @@ const config = {
     projects: [
         {
             name: "chromium-hd",
-            outputDir: "../test-results/chromium-hd/",
             use: {
                 viewport: { width: 1280, height: 720 },
                 browserName: "chromium",
@@ -39,7 +36,6 @@ const config = {
         },
         {
             name: "chromium-fhd",
-            outputDir: "../test-results/chromium-fhd/",
             use: {
                 viewport: { width: 1920, height: 1080 },
                 browserName: "chromium",
@@ -47,7 +43,6 @@ const config = {
         },
         {
             name: "chrome-hd",
-            outputDir: "../test-results/chrome-hd/",
             use: {
                 viewport: { width: 1280, height: 720 },
                 browserName: "chromium",
@@ -56,7 +51,6 @@ const config = {
         },
         {
             name: "firefox-hd",
-            outputDir: "../test-results/firefox-hd/",
             use: {
                 viewport: { width: 1280, height: 720 },
                 browserName: "firefox",
@@ -64,7 +58,6 @@ const config = {
         },
         {
             name: "webkit-hd",
-            outputDir: "../test-results/webkit-hd/",
             use: {
                 viewport: { width: 1280, height: 720 },
                 browserName: "webkit",

@@ -61,8 +61,7 @@ npx playwright test --grep <tag>
 All test scripts will generate the tests results using the HTML Reporter. To show the report, use the following scripts:
 
 ```bash
-npx playwright show-report test-results
-# directory 'test-results' is configured on playwright.config.js
+npx playwright show-report
 ```
 
 This will start a webserver with the tests report, just ctrl+click or open the URL that is showing on your terminal
@@ -119,7 +118,7 @@ docker build -f Dockerfile -t test:docker .
 
 # To run the default node script, use the following command
 # The container will continue running with the webserver open, navigate to http://localhost to see the test reports and press CTRL+C to stop the webserver and remove the container
-# optionally, if you want the test results in case some test fails, bind a volume to host with "-v /fullpath:/tester/test-results/" on the docker command
+# optionally, if you want the test results in case some test fails, bind a volume to host with "-v /fullpath:/tester" on the docker command
 docker run --network=net-webapp --name=testing -p 80:9323 --ipc=host --rm test:docker
 
 > playwright-study@1.0.0 test:docker
@@ -142,7 +141,7 @@ To open last HTML report run:
 
 
 > playwright-study@1.0.0 posttest:docker
-> npx playwright show-report test-results
+> npx playwright show-report
 
 
 Serving HTML report at http://127.0.0.1:9323. Press Ctrl+C to quit.

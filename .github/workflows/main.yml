@@ -30,8 +30,8 @@ jobs:
         uses: actions/upload-artifact@v2.2.4
         if: ${{ github.event_name == 'push' && always() }}
         with:
-          name: test-results
-          path: test-results
+          name: playwright-report
+          path: playwright-report
 
       - name: Deploy report to Github Pages
         if: ${{ github.event_name == 'push' && always() }}
@@ -39,4 +39,4 @@ jobs:
         env:
           PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: test-results
+          PUBLISH_DIR: playwright-report

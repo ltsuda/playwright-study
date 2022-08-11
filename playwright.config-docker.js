@@ -21,7 +21,6 @@ const config = {
     projects: [
         {
             name: "chromium-hd",
-            outputDir: "../test-results/chromium-hd/",
             use: {
                 viewport: { width: 1280, height: 720 },
                 browserName: "chromium",
@@ -29,7 +28,6 @@ const config = {
         },
         {
             name: "chromium-fhd",
-            outputDir: "../test-results/chromium-fhd/",
             use: {
                 viewport: { width: 1920, height: 1080 },
                 browserName: "chromium",
@@ -37,7 +35,6 @@ const config = {
         },
         {
             name: "chrome-hd",
-            outputDir: "../test-results/chrome-hd/",
             use: {
                 viewport: { width: 1280, height: 720 },
                 browserName: "chromium",
@@ -46,7 +43,6 @@ const config = {
         },
         {
             name: "firefox-hd",
-            outputDir: "../test-results/firefox-hd/",
             use: {
                 viewport: { width: 1280, height: 720 },
                 browserName: "firefox",
@@ -54,7 +50,6 @@ const config = {
         },
         {
             name: "webkit-hd",
-            outputDir: "../test-results/webkit-hd/",
             use: {
                 viewport: { width: 1280, height: 720 },
                 browserName: "webkit",
