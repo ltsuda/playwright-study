@@ -1,15 +1,16 @@
 [![Playwright-CI](https://github.com/ltsuda/playwright-study/actions/workflows/main.yml/badge.svg)](https://github.com/ltsuda/playwright-study/actions/workflows/main.yml)
 [![](https://img.shields.io/badge/README-Portuguese%7CBR-blue)](https://github.com/ltsuda/playwright-study/blob/main/README-ptbr.md)
 
+
+# PROJECT STATUS
+THIS PROJECT WILL BE UPDATED AS SAUCELABS DEMO WEBSITE WAS UPDATED RECENTLY (FEB/23)
+
+
 # [Playwright Study](https://playwright.dev/)
 
 Repository with the purpose of learning a new E2E testing framework using Microsoft's 🎭 Playwright with Javascript
 
 ## System Under Test
-
-<a href="https://www.saucedemo.com/">
-<img src="https://www.saucedemo.com/static/media/Login_Bot_graphic.20658452.png" width=120>
-</a>
 
 The website used in this repository is e-commerce sample from [SauceLabs Demo](https://www.saucedemo.com/) but running locally using [Sample-app-web](https://github.com/ltsuda/sample-app-web) that is a fork from the original code
 
