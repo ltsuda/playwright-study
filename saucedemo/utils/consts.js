@@ -63,7 +63,7 @@ const ERRORS = {
 const MESSAGES = {
     COMPLETED_THANKS: "THANK YOU FOR YOUR ORDER",
     COMPLETED_DISPATCH: "Your order has been dispatched, and will arrive just as fast as the pony can get there!",
-    COPYRIGHT: "© 2022 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
+    COPYRIGHT: "© 2023 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy",
     OVERVIEW_CARD: "SauceCard #31337",
     OVERVIEW_SHIPMENT: "FREE PONY EXPRESS DELIVERY!",
 }
