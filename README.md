@@ -2,10 +2,6 @@
 [![](https://img.shields.io/badge/README-Portuguese%7CBR-blue)](https://github.com/ltsuda/playwright-study/blob/main/README-ptbr.md)
 
 
-# PROJECT STATUS
-THIS PROJECT WILL BE UPDATED AS SAUCELABS DEMO WEBSITE WAS UPDATED RECENTLY (FEB/23) AND USE THE LATEST PLAYWRIGHT TEST FEATURES
-
-
 # [Playwright Study](https://playwright.dev/)
 
 Repository with the purpose of learning a new E2E testing framework using Microsoft's 🎭 Playwright with Javascript
@@ -19,7 +15,7 @@ The website used in this repository is e-commerce sample from [SauceLabs Demo](h
 ### Requirements
 
 -   [git](https://git-scm.com/downloads)
--   [node 14+](https://nodejs.org/en/)
+-   [node 14-16](https://nodejs.org/en/)
     -   or use [nvm](https://github.com/nvm-sh/nvm) to manage multiple node versions
 -   Docker (Optional) for running tests on container
 
@@ -33,7 +29,7 @@ git clone https://github.com/ltsuda/playwright-study.git --recursive
 
 ```bash
 # this will install all necessary development packages to run the tests. See package.json to see all packages installed
-npm install
+npm ci
 # to install playwright's browsers
 npx playwright install && npx playwright install-deps
 # to install playwright's chrome

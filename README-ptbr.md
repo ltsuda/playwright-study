@@ -17,7 +17,7 @@ O website utilizado nesse repositório é um e-commerce de demonstração da [Sa
 ### Requerimentos
 
 -   [git](https://git-scm.com/downloads)
--   [node 14+](https://nodejs.org/en/)
+-   [node 14-16](https://nodejs.org/en/)
     -   ou use [nvm](https://github.com/nvm-sh/nvm) para gerenciar múltiplas versões do NodeJS
 -   Docker (Opcional) para executar os testes em container
 
@@ -30,7 +30,7 @@ git clone https://github.com/ltsuda/playwright-study.git --recursive
 #### Instalando dependências
 
 ```bash
-npm install
+npm ci
 npx playwright install && npx playwright install-deps
 npx playwright install chrome
 npm run beforetest
