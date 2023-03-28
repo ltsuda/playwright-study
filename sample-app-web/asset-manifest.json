@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b84f2117.chunk.css",
+    "main.js": "/static/js/main.a6c0829e.chunk.js",
+    "main.js.map": "/static/js/main.a6c0829e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7bfd0a48.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7bfd0a48.js.map",
+    "static/js/2.88f6e73d.chunk.js": "/static/js/2.88f6e73d.chunk.js",
+    "static/js/2.88f6e73d.chunk.js.map": "/static/js/2.88f6e73d.chunk.js.map",
+    "index.html": "/index.html",
+    "service-worker.js": "/service-worker.js",
+    "service-worker.js.map": "/service-worker.js.map",
+    "static/css/main.b84f2117.chunk.css.map": "/static/css/main.b84f2117.chunk.css.map",
+    "static/js/2.88f6e73d.chunk.js.LICENSE.txt": "/static/js/2.88f6e73d.chunk.js.LICENSE.txt",
+    "static/media/Select.css": "/static/media/filter3x.2943df5b.svg",
+    "static/media/bike-light-1200x1500.jpg": "/static/media/bike-light-1200x1500.37c843b0.jpg",
+    "static/media/bolt-shirt-1200x1500.jpg": "/static/media/bolt-shirt-1200x1500.c2599ac5.jpg",
+    "static/media/CartButton.css": "/static/media/cart3x.3669d74a.svg",
+    "static/media/close@3x.a30a8a1d.svg": "/static/media/close@3x.a30a8a1d.svg",
+    "static/media/menu3x.52cc17a3.svg": "/static/media/menu3x.52cc17a3.svg",
+    "static/media/pony-express.png": "/static/media/pony-express.46394a5d.png",
+    "static/media/red-onesie-1200x1500.jpg": "/static/media/red-onesie-1200x1500.2ec615b2.jpg",
+    "static/media/red-tatt-1200x1500.jpg": "/static/media/red-tatt-1200x1500.30dadef4.jpg",
+    "static/media/sauce-backpack-1200x1500.jpg": "/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg",
+    "static/media/sauce-pullover-1200x1500.jpg": "/static/media/sauce-pullover-1200x1500.51d7ffaf.jpg",
+    "static/media/sl-404.jpg": "/static/media/sl-404.168b1cce.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7bfd0a48.js",
+    "static/js/2.88f6e73d.chunk.js",
+    "static/css/main.b84f2117.chunk.css",
+    "static/js/main.a6c0829e.chunk.js"
+  ]
+}
