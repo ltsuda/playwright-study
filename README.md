@@ -8,7 +8,7 @@ Repository with the purpose of learning a new E2E testing framework using Micros
 
 ## System Under Test
 
-The website used in this repository is e-commerce sample from [SauceLabs Demo](https://www.saucedemo.com/) but running locally using [Sample-app-web](https://github.com/ltsuda/sample-app-web) that is a fork from the original code
+The website used in this repository is e-commerce sample from [SauceLabs Demo](https://www.saucedemo.com/) but running locally, using [Sample-app-web](https://github.com/ltsuda/sample-app-web) that is a fork from the original code
 
 ## Installation and execution
 
@@ -22,7 +22,7 @@ The website used in this repository is e-commerce sample from [SauceLabs Demo](h
 #### Cloning repository with submodule
 
 ```text
-git clone https://github.com/ltsuda/playwright-study.git --recursive
+git clone https://github.com/ltsuda/playwright-study.git
 ```
 
 #### Installing dependencies
@@ -32,10 +32,7 @@ git clone https://github.com/ltsuda/playwright-study.git --recursive
 npm ci
 # to install playwright's browsers
 npx playwright install && npx playwright install-deps
-# to install playwright's chrome
-npx playwright install chrome
 # this will install all dependencies for the Webapp submodule
-npm run beforetest
 ```
 
 #### Running the tests
@@ -116,25 +113,27 @@ docker build -f Dockerfile -t test:docker .
 # To run the default node script, use the following command
 # The container will continue running with the webserver open, navigate to http://localhost to see the test reports and press CTRL+C to stop the webserver and remove the container
 # optionally, if you want the test results in case some test fails, bind a volume to host with "-v /fullpath:/tester" on the docker command
-docker run --network=net-webapp --name=testing -p 80:9323 --ipc=host --rm test:docker
+docker run --network=net-webapp --name=testing -p 80:9323 --rm test:docker
 
 > playwright-study@1.0.0 test:docker
 > npx playwright test --grep-invert '@visual' --reporter=dot,html -c playwright.config-docker.js ||:
 
-Running 420 tests using 2 workers
+Running 348 tests using 8 workers
 ················································································
-·····································°°·········································
-·················°°··························································°·°
-·························································°°·····················
-·····································°°·········································
-·················°°·
-
-  12 skipped
-  408 passed (6m)
+·······························°·°··············································
+············°°·······················································°·°········
+···············································°·°······························
+························°·°·
+  10 skipped
+  338 passed (1.6m)
 
 To open last HTML report run:
 
   npx playwright show-report
+
+
+> playwright-study@1.0.0 posttest:docker
+> npx playwright show-report
 
 
 > playwright-study@1.0.0 posttest:docker
@@ -182,7 +181,7 @@ docker run --network=net-webapp --name=testing -p 80:9323 --ipc=host --rm test:d
 │   ├── *.spec.js
 │   └── visual.spec.js-snapshots
 │      └── *.png
-└── webapp
+└── sample-app-web
 ```
 
 -   [.github/workflows](https://github.com/ltsuda/playwright-study/tree/main/.github/workflows): directory with github workflows that runs at every `push` to main or every `pull request` open.
@@ -190,10 +189,10 @@ docker run --network=net-webapp --name=testing -p 80:9323 --ipc=host --rm test:d
     -   docker.yaml: build image `Dockerfile`, run respective scripts for both e2e and visual tags. This workflow runs on every `pull request` or push to the `main` branch.
 -   [Dockerfile](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile): docker image file with playwright to run locally in case of node it's not installed.
 -   [Dockerfile.webapp](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile.webapp): docker image file with the Webapp application.
--   [playwright.config.js](https://github.com/ltsuda/playwright-study/blob/main/playwright.config.js): playwright's configuration file to setup things like which reporter library to use, how many test workers to be used, creation of test's project with specific settings. There are five test projects configured, two of them using chromium with 1280x720 and 1920x1080 viewports and three others with Chrome/Firefox/Webkit and 1280x720 resolution.
+-   [playwright.config.js](https://github.com/ltsuda/playwright-study/blob/main/playwright.config.js): playwright's configuration file to setup things like which reporter library to use, how many test workers to be used, creation of test's project with specific settings. There are five test projects configured, two of them using chromium with 1280x720 and 1920x1080 viewports and two others with Firefox/Webkit and 1280x720 resolution.
 -   [saucedemo/pages](https://github.com/ltsuda/playwright-study/tree/main/saucedemo/pages): directory with all page objects and controllers files. The components file holds each page/component' selectors and functions that returns its [Locator](https://playwright.dev/docs/api/class-locator). The controller file is the one responsible for interacting with the page' elements or manipulate page's data.
 -   [saucedemo/pageFixtures.js](https://github.com/ltsuda/playwright-study/blob/main/saucedemo/pages/pageFixtures.js): file with shared functions [Fixtures](https://playwright.dev/docs/test-fixtures) that extends playwright's `test` to instantiate all page's controller so each test case loads only the controller it needs.
 -   [saucedemo/utils](https://github.com/ltsuda/playwright-study/tree/main/saucedemo/utils): directory with a file containing all constants used in the tests like all the path URLs, error messages, etc. And the other file with some utilities functions like the one that sets the page's cookie to start some tests already authenticated.
 -   [tests](https://github.com/ltsuda/playwright-study/tree/main/tests): directory with all test specs files, including the e2e and visual ones.
 -   [tests/visual.spec.js-snapshots](https://github.com/ltsuda/playwright-study/tree/main/tests/visual.spec.js-snapshots): directory with the golden images for the visual test cases using the chromium-hd project.
--   [webapp](https://github.com/ltsuda/playwright-study/tree/main/webapp): directory with the saucelabs demo source code that it's used to startup the webserver to run the tests, instead of using the public website https://www.saucedemo.com/
+-   [sample-app-web](https://github.com/ltsuda/playwright-study/tree/main/sample-app-web): directory with the saucelabs demo built code that it's used to startup the webserver to run the tests, instead of using the public website https://www.saucedemo.com/
