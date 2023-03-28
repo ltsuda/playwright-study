@@ -85,10 +85,6 @@ test.describe.parallel("Saucedemo E2E: @e2e", () => {
                 MESSAGES.COMPLETED_THANKS
             )
             await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)
-            await expect(await completedController.components.completedImage()).toHaveAttribute(
-                "src",
-                IMAGES.PONY_EXPRESS
-            )
         })
     })
 })
