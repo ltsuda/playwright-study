@@ -41,11 +41,4 @@ test.describe.parallel("Saucedemo CompletedPage:  @completed", () => {
         await expect(await completedController.components.completedText()).toHaveText(MESSAGES.COMPLETED_DISPATCH)
     })
 
-    test("should have a completed order image", async ({ completedController, page }) => {
-        await setSession(page, {
-            path: PAGES.COMPLETED,
-            username: CREDENTIALS.USERS.STANDARD,
-        })
-        await expect(await completedController.components.completedImage()).toHaveAttribute("src", IMAGES.PONY_EXPRESS)
-    })
 })

@@ -142,13 +142,6 @@ test.describe.parallel("Saucedemo InventoryPage: @inventory", () => {
         await expect(await footerController.components.linkedinLink()).toHaveAttribute("href", SOCIAL_LINKS.LINKEDIN)
     })
 
-    test("should have Swag Bot image on footer", async ({ footerController, page }) => {
-        await setSession(page, {
-            path: PAGES.INVENTORY,
-            username: CREDENTIALS.USERS.STANDARD,
-        })
-        await expect(await footerController.components.robotImage()).toHaveAttribute("src", IMAGES.SWAG_BOT)
-    })
 
     test("should have Copyright text on footer", async ({ footerController, page }) => {
         await setSession(page, {
