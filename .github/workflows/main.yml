@@ -23,7 +23,6 @@ jobs:
       - run: npm ci
       - run: npx playwright install
       - run: npx playwright install-deps
-      - run: npm run beforetest:ci
       - run: npm run test:ci
 
       - name: Upload html reporter results
