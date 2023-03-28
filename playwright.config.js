@@ -5,7 +5,7 @@ const config = {
     retries: 1,
     fullyParallel: true,
     reporter: process.env.CI ? [["dot"], ["html", { open: "never" }]] : [["line"], ["html", { open: "never" }]],
-    workers: process.env.CI ? 2 : undefined,
+    workers: process.env.CI ? '20%' : undefined,
     expect: {
         toMatchSnapshot: { threshold: 0.2 },
     },
@@ -20,7 +20,10 @@ const config = {
     use: {
         headless: true,
         baseURL: "http://localhost:3000",
-        screenshot: "only-on-failure",
+        screenshot: {
+            mode: "only-on-failure",
+            fullPage: true
+        },
         trace: "on-first-retry",
         video: "on-first-retry",
     },
@@ -38,14 +41,6 @@ const config = {
             use: {
                 viewport: { width: 1920, height: 1080 },
                 browserName: "chromium",
-            },
-        },
-        {
-            name: "chrome-hd",
-            use: {
-                viewport: { width: 1280, height: 720 },
-                browserName: "chromium",
-                channel: "chrome",
             },
         },
         {
