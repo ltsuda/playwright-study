@@ -17,8 +17,7 @@
         "test:e2e": "npx playwright test --grep @e2e --project 'chromium-hd'",
         "test:smoke": "npx playwright test --grep @smoke --project 'chromium-hd'",
         "test:ci": "npx playwright test --grep-invert '@visual' ||:",
-        "test:docker": "npx playwright test --grep-invert '@visual' --reporter=dot,html -c playwright.config-docker.js ||:",
-        "posttest:docker": "npx playwright show-report"
+        "test:docker": "npx playwright test --grep-invert '@visual' -c playwright.config-docker.js ||:"
     },
     "repository": {
         "type": "git",

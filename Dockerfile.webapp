@@ -1,13 +1,11 @@
-FROM node:12
+FROM node:14
 
 WORKDIR /app
 
-COPY ./webapp/package*.json ./
+RUN npm i serve
 
-RUN npm ci
-
-COPY webapp ./
+COPY sample-app-web ./
 
 EXPOSE 3000
 
-CMD [ "npm", "start" ]
+CMD [ "npx", "serve", "-c", "./serve.json", "-s", "."]
