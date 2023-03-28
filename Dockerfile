@@ -1,11 +1,10 @@
-FROM mcr.microsoft.com/playwright:v1.25.0-jammy
+FROM mcr.microsoft.com/playwright:v1.32.1-jammy
 
 WORKDIR /tester
 
 COPY package*.json ./
 
 RUN npm ci
-RUN npx playwright install chrome
 
 COPY . .
 
