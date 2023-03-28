@@ -11,11 +11,10 @@ const config = {
     },
 
     webServer: {
-        command: "npm start",
+        command: "serve -c ./serve.json -s ./sample-app-web",
         port: 3000,
         timeout: 60 * 1000,
         reuseExistingServer: !process.env.CI,
-        cwd: "webapp",
     },
 
     use: {
