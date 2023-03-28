@@ -7,11 +7,10 @@
         "test": "test"
     },
     "devDependencies": {
-        "@playwright/test": "1.25.0"
+        "@playwright/test": "^1.32",
+        "serve": "^14.2.0"
     },
     "scripts": {
-        "beforetest": "cd webapp && npm ci",
-        "beforetest:ci": "cd webapp && npm ci",
         "test": "npx playwright test --grep-invert '@visual' --project 'chromium-hd' --workers 8",
         "test:match": "npx playwright test --grep-invert '@visual' --grep $MATCH --project 'chromium-hd'",
         "test:visual": "npx playwright test --grep @visual --project 'chromium-hd'",
