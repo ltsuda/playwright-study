@@ -1,5 +1,14 @@
 [![Playwright-CI](https://github.com/ltsuda/playwright-study/actions/workflows/main.yml/badge.svg)](https://github.com/ltsuda/playwright-study/actions/workflows/main.yml) [![README Portuguese](https://img.shields.io/badge/README-Portuguese-blue)](https://github.com/ltsuda/playwright-study/blob/main/README-ptbr.md)
 
+# IMPORTANTE
+
+* Para utilizar o antigo projeto utilizando Playwright Test com JavaScript e o antigo design da Saucelabs, vá para a branch [old-design](https://github.com/ltsuda/playwright-study/tree/old-
+* Para utilizar o antigo projeto utilizando Playwright Test com JavaScript e o novo design da Saucelabs, vá para a branch [new-design-js](https://github.com/ltsuda/playwright-study/tree/new-design-js)
+
+NOTA:
+* A branch `main` utilizará Playwright Test com TypeScript e todo código de teste será criado do zero, utilizando novos padrões e aproveitar as últimas funcionalidades do Playwright
+
+
 # [Playwright Study](https://playwright.dev/)
 
 Repositório com objetivo de aprender um novo framework de testes E2E utilizando Microsoft 🎭 Playwright com TypeScript

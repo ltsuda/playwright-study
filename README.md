@@ -1,6 +1,14 @@
 [![Playwright-CI](https://github.com/ltsuda/playwright-study/actions/workflows/main.yml/badge.svg)](https://github.com/ltsuda/playwright-study/actions/workflows/main.yml)
 [![](https://img.shields.io/badge/README-Portuguese%7CBR-blue)](https://github.com/ltsuda/playwright-study/blob/main/README-ptbr.md)
 
+# IMPORTANT
+
+* For the old project using Playwright Test with JavaScript and old Saucelabs design, go to [old-design](https://github.com/ltsuda/playwright-study/tree/old-design) branch
+* For the old project using Playwright Test with JavaScript and newest Saucelabs design, go to [new-design-js](https://github.com/ltsuda/playwright-study/tree/new-design-js) branch
+
+NOTE:
+* The `main` branch will use Playwright Test with TypeScript and all test code will be created from scratch, using new approach and take advantage of the latest features from Playwright
+
 
 # [Playwright Study](https://playwright.dev/)
 
