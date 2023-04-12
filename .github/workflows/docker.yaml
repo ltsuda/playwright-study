@@ -56,7 +56,7 @@ jobs:
         run: |
           docker run --network=net-webapp --name=testing --rm \
           ltsuda/playwright-study:e2e \
-          npx playwright test --grep-invert '@visual' --reporter 'dot' -c playwright.config-docker.js
+          npx playwright test --grep-invert '@visual' --reporter 'dot' -c playwright.config-docker.ts
 
   run_visual:
     runs-on: ubuntu-latest
@@ -106,4 +106,4 @@ jobs:
         run: |
           docker run --network=net-webapp --name=testing --rm \
             ltsuda/playwright-study:visual \
-            npx playwright test --grep @e2e --project 'chromium-hd' --reporter 'dot' -c playwright.config-docker.js
+            npx playwright test --grep @e2e --project 'chromium-hd' --reporter 'dot' -c playwright.config-docker.ts
