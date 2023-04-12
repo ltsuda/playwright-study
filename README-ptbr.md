@@ -2,7 +2,7 @@
 
 # IMPORTANTE
 
-* Para utilizar o antigo projeto utilizando Playwright Test com JavaScript e o antigo design da Saucelabs, vá para a branch [old-design](https://github.com/ltsuda/playwright-study/tree/old-
+* Para utilizar o antigo projeto utilizando Playwright Test com JavaScript e o antigo design da Saucelabs, vá para a branch [old-design](https://github.com/ltsuda/playwright-study/tree/old-design)
 * Para utilizar o antigo projeto utilizando Playwright Test com JavaScript e o novo design da Saucelabs, vá para a branch [new-design-js](https://github.com/ltsuda/playwright-study/tree/new-design-js)
 
 NOTA:
