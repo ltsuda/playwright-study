@@ -1,10 +1,11 @@
 name: test-docker
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  # DISABLED UNTIL NEW TEST IMPLEMENTATION
+  # push:
+  #   branches: [main]
+  # pull_request:
+  #   branches: [main]
   workflow_dispatch:
 
 jobs:
