@@ -7,7 +7,7 @@
         "test": "test"
     },
     "devDependencies": {
-        "@playwright/test": "^1.32",
+        "@playwright/test": "^1.32.3",
         "serve": "^14.2.0"
     },
     "scripts": {
