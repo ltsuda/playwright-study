@@ -1,10 +1,10 @@
 import { test as base } from "@playwright/test"
-import { LoginPage } from "./pages/login"
 import { CartPage } from "./pages/cart"
 import { CheckoutPage } from "./pages/checkout"
 import { CompletedPage } from "./pages/completed"
-import { InventoryItemPage } from "./pages/inventory-item"
 import { InventoryPage } from "./pages/inventory"
+import { InventoryItemPage } from "./pages/inventory-item"
+import { LoginPage } from "./pages/login"
 import { ReviewPage } from "./pages/review"
 
 
@@ -44,4 +44,4 @@ export const test = base.extend<MyPagesFixtures>({
     },
 })
 
-export { expect } from '@playwright/test';
+export { expect } from '@playwright/test'
