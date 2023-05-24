@@ -16,3 +16,29 @@ export type DemoPages = {
     inventoryPage: InventoryPage,
     reviewPage: ReviewPage,
 }
+
+type MyPages<T> = T[keyof T]
+
+type SessionData = {
+    path: string,
+    productsIndex?: string[],
+    username: string
+}
+
+
+export async function setSession(targetPage: MyPages<DemoPages>, data: SessionData): Promise<void> {
+    const { path, productsIndex = [], username = "" } = data
+    const productsContent = productsIndex.length > 0 ? JSON.stringify(productsIndex) : "[]"
+
+    await targetPage.page.goto("/")
+
+    await targetPage.page.evaluate(
+        ([username, productsContent]) => {
+            const cookie = `session-username=${username}`
+            document.cookie = cookie
+            window.localStorage.setItem("cart-contents", productsContent)
+        },
+        [username, productsContent]
+    )
+    await targetPage.page.goto(path)
+}
