@@ -1,4 +1,5 @@
 import { test as base } from "@playwright/test"
+import { DemoPages } from "./common"
 import { CartPage } from "./pages/cart"
 import { CheckoutPage } from "./pages/checkout"
 import { CompletedPage } from "./pages/completed"
@@ -8,18 +9,7 @@ import { LoginPage } from "./pages/login"
 import { ReviewPage } from "./pages/review"
 
 
-type MyPagesFixtures = {
-    loginPage: LoginPage,
-    cartPage: CartPage,
-    checkoutPage: CheckoutPage,
-    completedPage: CompletedPage,
-    inventoryItemPage: InventoryItemPage,
-    inventoryPage: InventoryPage,
-    reviewPage: ReviewPage,
-}
-
-
-export const test = base.extend<MyPagesFixtures>({
+export const test = base.extend<DemoPages>({
     loginPage: async ({ page }, use) => {
         await use(new LoginPage(page))
     },
