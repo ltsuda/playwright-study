@@ -1,18 +1,44 @@
 export const PAGES = {
-    LOGIN: "",
     INVENTORY: "/inventory.html",
     INVENTORY_ITEM: "/inventory-item.html",
     CART: "/cart.html",
     CHECKOUT: "/checkout-step-one.html",
     OVERVIEW: "/checkout-step-two.html",
     COMPLETED: "/checkout-complete.html",
-    ABOUT: "https://saucelabs.com/",
+}
+
+export const SECONDARY_HEADER_BY_PAGE = {
+    INVENTORY: {
+        PAGE: PAGES.INVENTORY,
+        TITLE: "Products"
+    },
+    INVENTORY_ITEM: {
+        PAGE: PAGES.INVENTORY_ITEM,
+        TITLE: "Back to products"
+    },
+    CART: {
+        PAGE: PAGES.CART,
+        TITLE: "Your Cart"
+    },
+    CHECKOUT: {
+        PAGE: PAGES.CHECKOUT,
+        TITLE: "Checkout: Your Information"
+    },
+    OVERVIEW: {
+        PAGE: PAGES.OVERVIEW,
+        TITLE: "Checkout: Overview"
+    },
+    COMPLETED: {
+        PAGE: PAGES.COMPLETED,
+        TITLE: "Checkout: Complete!"
+    },
 }
 
 export const SOCIAL_LINKS = {
     TWITTER: "https://twitter.com/saucelabs",
     FACEBOOK: "https://www.facebook.com/saucelabs",
     LINKEDIN: "https://www.linkedin.com/company/sauce-labs/",
+    ABOUT: "https://saucelabs.com/",
 }
 
 export const CREDENTIALS = {
