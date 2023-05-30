@@ -1,7 +1,7 @@
 import { Page } from "../abstracts";
 import { CompletedContainer } from "../components/completed-container";
 import { Footer } from "../components/footer";
-import { SecondaryHeader } from "../components/secondaryHeader";
+import { SecondaryHeader } from "../components/secondary-header";
 
 export class CompletedPage extends Page {
     public readonly thankyouContainer = new CompletedContainer(this.page.getByTestId("checkout-complete-container"))
