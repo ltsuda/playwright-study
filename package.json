@@ -28,6 +28,7 @@
     "test:ci": "npx playwright test --grep-invert '@visual' ||:",
     "test:docker": "npx playwright test --grep-invert '@visual' -c playwright.config-docker.js ||:",
     "lint": "eslint . --max-warnings 0 --report-unused-disable-directives",
+    "lint-staged": "eslint --max-warnings 0 --report-unused-disable-directives",
     "prepare": "husky install"
   },
   "repository": {
@@ -43,7 +44,7 @@
   "homepage": "https://github.com/ltsuda/playwright-study#readme",
   "lint-staged": {
     "**/*.{js,ts,md}": [
-      "npm run lint",
+      "npm run lint-staged",
       "prettier --write"
     ]
   }
