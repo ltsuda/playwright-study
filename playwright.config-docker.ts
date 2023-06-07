@@ -20,7 +20,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? '20%' : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: process.env.CI ? [["dot"], ["html", { open: "never" }]] : [["line"], ["html", { open: "never" }]],
+  reporter: process.env.CI ? [['dot'], ['html', { open: 'never' }]] : [['line'], ['html', { open: 'never' }]],
 
   expect: {
     toMatchSnapshot: { threshold: 0.2 },
@@ -30,59 +30,59 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     headless: true,
-    baseURL: "http://web:3000",
+    baseURL: 'http://web:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: "on-first-retry",
+    trace: 'on-first-retry',
     screenshot: {
-      mode: "only-on-failure",
-      fullPage: true
+      mode: 'only-on-failure',
+      fullPage: true,
     },
-    video: "on-first-retry",
+    video: 'on-first-retry',
   },
 
   /* Configure projects for major browsers */
   projects: [
     {
-      name: "chromium-hd",
+      name: 'chromium-hd',
       use: {
         viewport: { width: 1280, height: 720 },
-        browserName: "chromium",
+        browserName: 'chromium',
       },
     },
     {
-      name: "chromium-fhd",
+      name: 'chromium-fhd',
       use: {
         viewport: { width: 1920, height: 1080 },
-        browserName: "chromium",
+        browserName: 'chromium',
       },
     },
     {
-      name: "firefox-hd",
+      name: 'firefox-hd',
       use: {
         viewport: { width: 1280, height: 720 },
-        browserName: "firefox",
+        browserName: 'firefox',
       },
     },
     {
-      name: "webkit-hd",
+      name: 'webkit-hd',
       use: {
         viewport: { width: 1280, height: 720 },
-        browserName: "webkit",
+        browserName: 'webkit',
       },
     },
     {
-      name: "iphone-8",
+      name: 'iphone-8',
       use: {
-        browserName: "webkit",
-        ...devices["iPhone 8"],
+        browserName: 'webkit',
+        ...devices['iPhone 8'],
       },
     },
     {
-      name: "pixel-4",
+      name: 'pixel-4',
       use: {
-        browserName: "chromium",
-        ...devices["Pixel 4"],
+        browserName: 'chromium',
+        ...devices['Pixel 4'],
       },
     },
   ],
