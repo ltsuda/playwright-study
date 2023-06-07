@@ -2,12 +2,12 @@
 
 # IMPORTANTE
 
-* Para utilizar o antigo projeto utilizando Playwright Test com JavaScript e o antigo design da Saucelabs, vá para a branch [old-design](https://github.com/ltsuda/playwright-study/tree/old-design)
-* Para utilizar o antigo projeto utilizando Playwright Test com JavaScript e o novo design da Saucelabs, vá para a branch [new-design-js](https://github.com/ltsuda/playwright-study/tree/new-design-js)
+- Para utilizar o antigo projeto utilizando Playwright Test com JavaScript e o antigo design da Saucelabs, vá para a branch [old-design](https://github.com/ltsuda/playwright-study/tree/old-design)
+- Para utilizar o antigo projeto utilizando Playwright Test com JavaScript e o novo design da Saucelabs, vá para a branch [new-design-js](https://github.com/ltsuda/playwright-study/tree/new-design-js)
 
 NOTA:
-* A branch `main` utilizará Playwright Test com TypeScript e todo código de teste será criado do zero, utilizando novos padrões e aproveitar as últimas funcionalidades do Playwright
 
+- A branch `main` utilizará Playwright Test com TypeScript e todo código de teste será criado do zero, utilizando novos padrões e aproveitar as últimas funcionalidades do Playwright
 
 # [Playwright Study](https://playwright.dev/)
 
@@ -21,10 +21,10 @@ O website utilizado nesse repositório é um e-commerce de demonstração da [Sa
 
 ### Requerimentos
 
--   [git](https://git-scm.com/downloads)
--   [node 16-18](https://nodejs.org/en/)
-    -   ou use [nvm](https://github.com/nvm-sh/nvm) para gerenciar múltiplas versões do NodeJS
--   Docker (Opcional) para executar os testes em container
+- [git](https://git-scm.com/downloads)
+- [node 16-18](https://nodejs.org/en/)
+  - ou use [nvm](https://github.com/nvm-sh/nvm) para gerenciar múltiplas versões do NodeJS
+- Docker (Opcional) para executar os testes em container
 
 #### Clonando o repositório
 
@@ -155,12 +155,12 @@ Serving HTML report at http://127.0.0.1:9323. Press Ctrl+C to quit.
 <TBD>
 ```
 
--   [.github/workflows](https://github.com/ltsuda/playwright-study/tree/main/.github/workflows): diretório com arquivos de fluxo de trabalho que são executados em todo evento `push` para a branch `main` ou em todo evento de `pull request` aberto.
-    -   main.yaml: executa todos os projetos de testes no Ubuntu, exceto os com tag @visual, gerando o relatório de resultados para o github-pages.
-    -   docker.yaml: cria a imagem `Dockerfile`, executa os respectivos scripts das tags e2e e visual. Este fluxo de trabalho é executado em todo evento `pull request` e se o código é mergeado para a branch `main`.
--   [Dockerfile](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile): arquivo de imagem docker com playwright para executar localmente no caso em que o NodeJS não esteja instalado no sistema.
--   [Dockerfile.webapp](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile.webapp): arquivo de imagem docker com a aplicação web.
--   [playwright.config.ts](https://github.com/ltsuda/playwright-study/blob/main/playwright.config.ts): arquivo de configuração do Playwright para configurar coisas como a biblioteca de reporte de resultado, quantos `workers` a serem utilizados, criação dos projetos de teste com configurações específicas. Existem cinco projetos de testes, dois deles utilizando Chromium com resolução 1280x720 e 1920x1080 e os outros dois utilizando o Firefox/Webkit na resolução 1280x720. Veja [Configuração do Playwright](https://playwright.dev/docs/test-configuration) para aprender mais sobre as configurações disponíveis.
--   [tests](https://github.com/ltsuda/playwright-study/tree/main/tests): diretório com todos os arquivos de teste, incluindo os testes E2E e visuais.
--   [tests/visual.spec.ts-snapshots](https://github.com/ltsuda/playwright-study/tree/main/tests/visual.spec.ts-snapshots): diretório com os arquivos de imagem padrões para os testes visuais onde são comparadas durante a execução dos testes.
--   [sample-app-web](https://github.com/ltsuda/playwright-study/tree/main/sample-app-web): diretório com o código buildado do website saucelabs demo que é utilizado para inicializar o servidor web para execução dos testes, ao invés de utilizar o website público https://www.saucedemo.com/
+- [.github/workflows](https://github.com/ltsuda/playwright-study/tree/main/.github/workflows): diretório com arquivos de fluxo de trabalho que são executados em todo evento `push` para a branch `main` ou em todo evento de `pull request` aberto.
+  - main.yaml: executa todos os projetos de testes no Ubuntu, exceto os com tag @visual, gerando o relatório de resultados para o github-pages.
+  - docker.yaml: cria a imagem `Dockerfile`, executa os respectivos scripts das tags e2e e visual. Este fluxo de trabalho é executado em todo evento `pull request` e se o código é mergeado para a branch `main`.
+- [Dockerfile](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile): arquivo de imagem docker com playwright para executar localmente no caso em que o NodeJS não esteja instalado no sistema.
+- [Dockerfile.webapp](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile.webapp): arquivo de imagem docker com a aplicação web.
+- [playwright.config.ts](https://github.com/ltsuda/playwright-study/blob/main/playwright.config.ts): arquivo de configuração do Playwright para configurar coisas como a biblioteca de reporte de resultado, quantos `workers` a serem utilizados, criação dos projetos de teste com configurações específicas. Existem cinco projetos de testes, dois deles utilizando Chromium com resolução 1280x720 e 1920x1080 e os outros dois utilizando o Firefox/Webkit na resolução 1280x720. Veja [Configuração do Playwright](https://playwright.dev/docs/test-configuration) para aprender mais sobre as configurações disponíveis.
+- [tests](https://github.com/ltsuda/playwright-study/tree/main/tests): diretório com todos os arquivos de teste, incluindo os testes E2E e visuais.
+- [tests/visual.spec.ts-snapshots](https://github.com/ltsuda/playwright-study/tree/main/tests/visual.spec.ts-snapshots): diretório com os arquivos de imagem padrões para os testes visuais onde são comparadas durante a execução dos testes.
+- [sample-app-web](https://github.com/ltsuda/playwright-study/tree/main/sample-app-web): diretório com o código buildado do website saucelabs demo que é utilizado para inicializar o servidor web para execução dos testes, ao invés de utilizar o website público https://www.saucedemo.com/
