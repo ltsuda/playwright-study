@@ -3,12 +3,12 @@
 
 # IMPORTANT
 
-* For the old project using Playwright Test with JavaScript and old Saucelabs design, go to [old-design](https://github.com/ltsuda/playwright-study/tree/old-design) branch
-* For the old project using Playwright Test with JavaScript and newest Saucelabs design, go to [new-design-js](https://github.com/ltsuda/playwright-study/tree/new-design-js) branch
+- For the old project using Playwright Test with JavaScript and old Saucelabs design, go to [old-design](https://github.com/ltsuda/playwright-study/tree/old-design) branch
+- For the old project using Playwright Test with JavaScript and newest Saucelabs design, go to [new-design-js](https://github.com/ltsuda/playwright-study/tree/new-design-js) branch
 
 NOTE:
-* The `main` branch will use Playwright Test with TypeScript and all test code will be created from scratch, using new approach and take advantage of the latest features from Playwright
 
+- The `main` branch will use Playwright Test with TypeScript and all test code will be created from scratch, using new approach and take advantage of the latest features from Playwright
 
 # [Playwright Study](https://playwright.dev/)
 
@@ -22,10 +22,10 @@ The website used in this repository is e-commerce sample from [SauceLabs Demo](h
 
 ### Requirements
 
--   [git](https://git-scm.com/downloads)
--   [node 16-18](https://nodejs.org/en/)
-    -   or use [nvm](https://github.com/nvm-sh/nvm) to manage multiple node versions
--   Docker (Optional) for running tests on container
+- [git](https://git-scm.com/downloads)
+- [node 16-18](https://nodejs.org/en/)
+  - or use [nvm](https://github.com/nvm-sh/nvm) to manage multiple node versions
+- Docker (Optional) for running tests on container
 
 #### Cloning repository
 
@@ -162,12 +162,12 @@ docker run --network=net-webapp --name=testing -p 80:9323 --ipc=host --rm test:d
 <TBD>
 ```
 
--   [.github/workflows](https://github.com/ltsuda/playwright-study/tree/main/.github/workflows): directory with github workflows that runs at every `push` to main or every `pull request` open.
-    -   main.yaml: run all test projects on Ubuntu, except the ones with tag @visual, generates the HTML report and posts to github-pages
-    -   docker.yaml: build image `Dockerfile`, run respective scripts for both e2e and visual tags. This workflow runs on every `pull request` or push to the `main` branch.
--   [Dockerfile](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile): docker image file with playwright to run locally in case of node it's not installed.
--   [Dockerfile.webapp](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile.webapp): docker image file with the Webapp application.
--   [playwright.config.ts](https://github.com/ltsuda/playwright-study/blob/main/playwright.config.ts): playwright's configuration file to setup things like which reporter library to use, how many test workers to be used, creation of test's project with specific settings. There are five test projects configured, two of them using chromium with 1280x720 and 1920x1080 viewports and two others with Firefox/Webkit and 1280x720 resolution.
--   [tests](https://github.com/ltsuda/playwright-study/tree/main/tests): directory with all test specs files, including the e2e and visual ones.
--   [tests/visual.spec.ts-snapshots](https://github.com/ltsuda/playwright-study/tree/main/tests/visual.spec.ts-snapshots): directory with the golden images for the visual test cases using the chromium-hd project.
--   [sample-app-web](https://github.com/ltsuda/playwright-study/tree/main/sample-app-web): directory with the saucelabs demo built code that it's used to startup the webserver to run the tests, instead of using the public website https://www.saucedemo.com/
+- [.github/workflows](https://github.com/ltsuda/playwright-study/tree/main/.github/workflows): directory with github workflows that runs at every `push` to main or every `pull request` open.
+  - main.yaml: run all test projects on Ubuntu, except the ones with tag @visual, generates the HTML report and posts to github-pages
+  - docker.yaml: build image `Dockerfile`, run respective scripts for both e2e and visual tags. This workflow runs on every `pull request` or push to the `main` branch.
+- [Dockerfile](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile): docker image file with playwright to run locally in case of node it's not installed.
+- [Dockerfile.webapp](https://github.com/ltsuda/playwright-study/blob/main/Dockerfile.webapp): docker image file with the Webapp application.
+- [playwright.config.ts](https://github.com/ltsuda/playwright-study/blob/main/playwright.config.ts): playwright's configuration file to setup things like which reporter library to use, how many test workers to be used, creation of test's project with specific settings. There are five test projects configured, two of them using chromium with 1280x720 and 1920x1080 viewports and two others with Firefox/Webkit and 1280x720 resolution.
+- [tests](https://github.com/ltsuda/playwright-study/tree/main/tests): directory with all test specs files, including the e2e and visual ones.
+- [tests/visual.spec.ts-snapshots](https://github.com/ltsuda/playwright-study/tree/main/tests/visual.spec.ts-snapshots): directory with the golden images for the visual test cases using the chromium-hd project.
+- [sample-app-web](https://github.com/ltsuda/playwright-study/tree/main/sample-app-web): directory with the saucelabs demo built code that it's used to startup the webserver to run the tests, instead of using the public website https://www.saucedemo.com/

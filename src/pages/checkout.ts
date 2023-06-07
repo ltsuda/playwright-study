@@ -1,4 +1,3 @@
-import { Page } from "../abstracts";
+import { Page } from '../abstracts';
 
-export class CheckoutPage extends Page {
-}
+export class CheckoutPage extends Page {}
