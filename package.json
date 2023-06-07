@@ -4,30 +4,47 @@
   "description": "Multipurpose Playwright study repository",
   "main": ".",
   "directories": {
-      "test": "test"
+    "test": "test"
   },
   "devDependencies": {
-      "@playwright/test": "^1.32.3",
-      "serve": "^14.2.0"
+    "@playwright/test": "^1.32.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "@typescript-eslint/parser": "^5.59.9",
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-playwright": "^0.12.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "2.8.8",
+    "serve": "^14.2.0"
   },
   "scripts": {
-      "test": "npx playwright test --grep-invert '@visual' --project 'chromium-hd' --workers 8",
-      "test:match": "npx playwright test --grep-invert '@visual' --grep $MATCH --project 'chromium-hd'",
-      "test:visual": "npx playwright test --grep @visual --project 'chromium-hd'",
-      "test:e2e": "npx playwright test --grep @e2e --project 'chromium-hd'",
-      "test:smoke": "npx playwright test --grep @smoke --project 'chromium-hd'",
-      "test:ci": "npx playwright test --grep-invert '@visual' ||:",
-      "test:docker": "npx playwright test --grep-invert '@visual' -c playwright.config-docker.js ||:"
+    "test": "npx playwright test --grep-invert '@visual' --project 'chromium-hd' --workers 8",
+    "test:match": "npx playwright test --grep-invert '@visual' --grep $MATCH --project 'chromium-hd'",
+    "test:visual": "npx playwright test --grep @visual --project 'chromium-hd'",
+    "test:e2e": "npx playwright test --grep @e2e --project 'chromium-hd'",
+    "test:smoke": "npx playwright test --grep @smoke --project 'chromium-hd'",
+    "test:ci": "npx playwright test --grep-invert '@visual' ||:",
+    "test:docker": "npx playwright test --grep-invert '@visual' -c playwright.config-docker.js ||:",
+    "lint": "eslint . --max-warnings 0 --report-unused-disable-directives",
+    "prepare": "husky install"
   },
   "repository": {
-      "type": "git",
-      "url": "git+https://github.com/ltsuda/playwright-study.git"
+    "type": "git",
+    "url": "git+https://github.com/ltsuda/playwright-study.git"
   },
   "keywords": [],
   "author": "Leonardo Tsuda",
   "license": "ISC",
   "bugs": {
-      "url": "https://github.com/ltsuda/playwright-study/issues"
+    "url": "https://github.com/ltsuda/playwright-study/issues"
   },
-  "homepage": "https://github.com/ltsuda/playwright-study#readme"
+  "homepage": "https://github.com/ltsuda/playwright-study#readme",
+  "lint-staged": {
+    "**/*.{js,ts,md}": [
+      "npm run lint",
+      "prettier --write"
+    ]
+  }
 }
