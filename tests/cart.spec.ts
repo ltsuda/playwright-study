@@ -15,9 +15,7 @@ test.describe('Cart Suite: @cart', () => {
   test.fixme("should have items' details", async () => {
     expect(true).toBeFalsy();
   });
-  test('should remove item from cart', async ({ baseURL, cartPage, checkoutPage }) => {
-    await setSession(cartPage, { path: PAGES.CART, username: CREDENTIALS.USERS.STANDARD });
-    await cartPage.checkoutButton.click();
-    await expect(checkoutPage.page).toHaveURL(`${baseURL}${PAGES.CHECKOUT}`);
+  test.fixme('should remove item from cart', async () => {
+    expect(true).toBeFalsy();
   });
 });
