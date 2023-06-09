@@ -20,12 +20,13 @@ type MyPages<T> = T[keyof T];
 
 type SessionData = {
   path: string;
-  productsIndex?: string[];
+  productsIndex?: number[];
   username: string;
 };
 
 export async function setSession(targetPage: MyPages<DemoPages>, data: SessionData): Promise<void> {
-  const { path, productsIndex = [], username = '' } = data;
+  const { productsIndex = [], username = '' } = data;
+  let { path } = data;
   const productsContent = productsIndex.length > 0 ? JSON.stringify(productsIndex) : '[]';
 
   await targetPage.page.goto('/');
@@ -38,5 +39,8 @@ export async function setSession(targetPage: MyPages<DemoPages>, data: SessionDa
     },
     [username, productsContent]
   );
+  if (productsContent != '[]' && targetPage instanceof InventoryItemPage) {
+    path = `${path}?id=${productsContent.slice(1, 2)}`;
+  }
   await targetPage.page.goto(path);
 }
