@@ -17,13 +17,13 @@ test.describe('Inventory Item Suite: @inventory-item', () => {
     });
     await expect(inventoryItemPage.page).toHaveURL(`${baseURL}${PAGES.INVENTORY_ITEM}?id=${randomItemId}`);
   });
-  test('should have item details', async () => {
+  test.fixme('should have item details', async () => {
     expect(true).toBeFalsy();
   });
-  test('should add item to cart', async () => {
+  test.fixme('should add item to cart', async () => {
     expect(true).toBeFalsy();
   });
-  test('should remove item from cart', async () => {
+  test.fixme('should remove item from cart', async () => {
     expect(true).toBeFalsy();
   });
   test('should be at inventory page if click at back to products', async ({

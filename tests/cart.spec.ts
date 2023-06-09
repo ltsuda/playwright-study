@@ -12,7 +12,7 @@ test.describe('Cart Suite: @cart', () => {
     await cartPage.continueShoppingButton.click();
     await expect(inventoryPage.page).toHaveURL(`${baseURL}${PAGES.INVENTORY}`);
   });
-  test("should have items' details", async () => {
+  test.fixme("should have items' details", async () => {
     expect(true).toBeFalsy();
   });
   test('should remove item from cart', async ({ baseURL, cartPage, checkoutPage }) => {

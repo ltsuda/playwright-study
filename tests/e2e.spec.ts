@@ -1,7 +1,7 @@
 import { expect, test } from '../src/fixtures';
 
 test.describe('E2E Suite: @e2e', () => {
-  test('purchase item from item detail path', async () => {
+  test.fixme('purchase item from item detail path', async () => {
     await test.step('login into application', async () => {
       // input and submit
       // expect inventory page
@@ -38,7 +38,7 @@ test.describe('E2E Suite: @e2e', () => {
     });
     expect(true).toBeFalsy();
   });
-  test('purchase item from inventory path', async () => {
+  test.fixme('purchase item from inventory path', async () => {
     await test.step('login into application', async () => {
       // input and submit
       // expect inventory page

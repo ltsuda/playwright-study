@@ -31,7 +31,7 @@ test.describe('Side Menu Suite: @side-menu', () => {
     await cartPage.primaryHeader.sideMenu.logout();
     await expect(loginPage.page).toHaveURL(`${baseURL}/`);
   });
-  test('should reset cart badge', async ({ cartPage }) => {
+  test.fixme('should reset cart badge', async ({ cartPage }) => {
     await setSession(cartPage, { path: PAGES.CHECKOUT, username: CREDENTIALS.USERS.STANDARD });
     expect(true).toBeFalsy();
   });

@@ -1,6 +1,6 @@
 import { expect, test } from '../src/fixtures';
 
-test.describe('Review Purchase Suite: @review', () => {
+test.describe.fixme('Review Purchase Suite: @review', () => {
   test('should be at review item page url', async () => {
     expect(true).toBeFalsy();
   });
