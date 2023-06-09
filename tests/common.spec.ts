@@ -19,7 +19,7 @@ for (const item of Object.values(SECONDARY_HEADER_BY_PAGE)) {
 
     // Primary Header
     await expect.soft(primaryHeader.host).toBeVisible();
-    await expect.soft(primaryHeader.sideMenu.openButton).toBeVisible();
+    await expect.soft(primaryHeader.openSideMenuButton).toBeVisible();
     await expect.soft(primaryHeader.cart.cartLink).toBeVisible();
     await expect.soft(primaryHeader.appLogo).toBeVisible();
 
