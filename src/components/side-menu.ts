@@ -7,7 +7,6 @@ export class SideMenu extends ComponentObject {
   public readonly aboutLink: Locator = this.host.getByTestId('link-about');
   public readonly logoutLink: Locator = this.host.getByTestId('link-logout');
   public readonly resetStateLink: Locator = this.host.getByTestId('link-reset-state');
-  public readonly menu: Locator = this.host.getByTestId('link-reset-state');
 
   public async close() {
     await this.closeButton.click();
