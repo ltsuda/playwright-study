@@ -59,7 +59,7 @@ export const PERSONAL_INFO = {
   },
 };
 
-export const PRODUCTS_NAMES = {
+export const PRODUCTS = {
   BACKPACK: { name: 'Sauce Labs Backpack', index: '4' },
   BIKELIGHT: { name: 'Sauce Labs Bike Light', index: '0' },
   BOLT_TSHIRT: { name: 'Sauce Labs Bolt T-Shirt', index: '1' },

@@ -1,6 +1,6 @@
 import { setSession } from '../src/common';
 import { expect, test } from '../src/fixtures';
-import { CREDENTIALS, PAGES } from '../src/consts';
+import { CREDENTIALS, PAGES, PRODUCTS } from '../src/consts';
 
 test.describe('Side Menu Suite: @side-menu', () => {
   test('should open side menu', async ({ cartPage }) => {
@@ -31,8 +31,16 @@ test.describe('Side Menu Suite: @side-menu', () => {
     await cartPage.primaryHeader.sideMenu.logout();
     await expect(loginPage.page).toHaveURL(`${baseURL}/`);
   });
-  test.fixme('should reset cart badge', async ({ cartPage }) => {
-    await setSession(cartPage, { path: PAGES.CHECKOUT, username: CREDENTIALS.USERS.STANDARD });
-    expect(true).toBeFalsy();
+  test('should reset cart badge', async ({ cartPage }) => {
+    await setSession(cartPage, {
+      path: PAGES.CART,
+      username: CREDENTIALS.USERS.STANDARD,
+      productsIndex: [parseInt(PRODUCTS.ALL_TSHIRT.index)],
+    });
+    await expect(cartPage.primaryHeader.cart.cartBadge).toBeVisible();
+    await cartPage.primaryHeader.openSideMenu();
+    await cartPage.primaryHeader.sideMenu.resetStateLink.click();
+
+    await expect(cartPage.primaryHeader.cart.cartBadge).toBeHidden();
   });
 });

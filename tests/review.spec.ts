@@ -1,14 +1,14 @@
 import { setSession } from '../src/common';
-import { CREDENTIALS, PAGES, PRODUCTS_NAMES } from '../src/consts';
+import { CREDENTIALS, PAGES, PRODUCTS } from '../src/consts';
 import { expect, test } from '../src/fixtures';
 
 test.describe('Review Purchase Suite: @review', () => {
-  const products = [PRODUCTS_NAMES.ALL_TSHIRT.index, PRODUCTS_NAMES.BOLT_TSHIRT.index].reduce(
+  const products = [PRODUCTS.ALL_TSHIRT.index, PRODUCTS.BOLT_TSHIRT.index].reduce(
     (productsIndexAsInt: number[], productIndex) => {
       productsIndexAsInt.push(parseInt(productIndex, 10));
       return productsIndexAsInt;
     },
-    []
+    [],
   );
 
   test('should be at review item page url', async ({ baseURL, reviewPage }) => {
@@ -34,6 +34,7 @@ test.describe('Review Purchase Suite: @review', () => {
       username: CREDENTIALS.USERS.STANDARD,
       productsIndex: products,
     });
+    expect(true).toBeFalsy();
   });
   test.fixme('should have tax value (8%) item total', async () => {
     expect(true).toBeFalsy();
