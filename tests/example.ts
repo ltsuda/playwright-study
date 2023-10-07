@@ -46,9 +46,7 @@ test('has title', async ({ page }) => {
   // Header primary
   const primaryHeader = headerContainer.getByTestId('header-primary');
   await expect(primaryHeader).toBeVisible();
-  const openMenuButton = primaryHeader.getByRole('button', {
-    name: 'Open Menu',
-  });
+  const openMenuButton = primaryHeader.getByRole('button', { name: 'Open Menu' });
   await expect(openMenuButton).toBeVisible();
   await openMenuButton.click();
   // Side menu

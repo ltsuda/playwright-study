@@ -35,12 +35,12 @@ export default defineConfig({
     baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'off',
     screenshot: {
-      mode: 'only-on-failure',
+      mode: 'on',
       fullPage: true,
     },
-    video: 'on-first-retry',
+    video: 'off',
   },
 
   /* Configure projects for major browsers */
@@ -52,41 +52,41 @@ export default defineConfig({
         browserName: 'chromium',
       },
     },
-    {
-      name: 'chromium-fhd',
-      use: {
-        viewport: { width: 1920, height: 1080 },
-        browserName: 'chromium',
-      },
-    },
-    {
-      name: 'firefox-hd',
-      use: {
-        viewport: { width: 1280, height: 720 },
-        browserName: 'firefox',
-      },
-    },
-    {
-      name: 'webkit-hd',
-      use: {
-        viewport: { width: 1280, height: 720 },
-        browserName: 'webkit',
-      },
-    },
-    {
-      name: 'iphone-8',
-      use: {
-        browserName: 'webkit',
-        ...devices['iPhone 8'],
-      },
-    },
-    {
-      name: 'pixel-4',
-      use: {
-        browserName: 'chromium',
-        ...devices['Pixel 4'],
-      },
-    },
+    // {
+    //   name: 'chromium-fhd',
+    //   use: {
+    //     viewport: { width: 1920, height: 1080 },
+    //     browserName: 'chromium',
+    //   },
+    // },
+    // {
+    //   name: 'firefox-hd',
+    //   use: {
+    //     viewport: { width: 1280, height: 720 },
+    //     browserName: 'firefox',
+    //   },
+    // },
+    // {
+    //   name: 'webkit-hd',
+    //   use: {
+    //     viewport: { width: 1280, height: 720 },
+    //     browserName: 'webkit',
+    //   },
+    // },
+    // {
+    //   name: 'iphone-8',
+    //   use: {
+    //     browserName: 'webkit',
+    //     ...devices['iPhone 8'],
+    //   },
+    // },
+    // {
+    //   name: 'pixel-4',
+    //   use: {
+    //     browserName: 'chromium',
+    //     ...devices['Pixel 4'],
+    //   },
+    // },
   ],
 
   /* Run your local dev server before starting the tests */
